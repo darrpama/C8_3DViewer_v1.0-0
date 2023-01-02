@@ -4,5 +4,5 @@ all:
 #all:
 #	gcc mainwindow.c libs/raylib/libraylib.a -o a.out -lraylib -lm -ldl -lpthread
 
-test:
-	gcc opengl_example.c libs/raylib/libraylib.a -o a.out -lraylib -lm -ldl -lpthread
+#test:
+#	gcc opengl_example.c libs/raylib/libraylib.a -o a.out -lraylib -lm -ldl -lpthread
