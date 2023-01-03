@@ -7,9 +7,15 @@
 // FONTS (deprecated)
 #define BASE_FONT "./assets/fonts/RobotoSlab-Regular.ttf"
 
-// GENERAL
-#define APP_SCREEN_WIDTH 1680
-#define APP_SCREEN_HEIGHT 900
+// CALC
+#ifdef __linux__
+  #define APP_SCREEN_WIDTH 1366
+  #define APP_SCREEN_HEIGHT 768
+#else
+  #define APP_SCREEN_WIDTH 1460
+  #define APP_SCREEN_HEIGHT 800
+#endif
+
 
 // KEYBOARDS
 #define SHIFT_NOT_PRESSED \
