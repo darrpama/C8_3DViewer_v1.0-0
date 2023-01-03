@@ -21,18 +21,45 @@
 
 // UI STRUCTS
 // ==========================================================================================
+enum inputTextCategories {
+  DOUBLE_NUMBER_INPUT,
+  INT_NUMBER_INPUT,
+  DATE_DAY_INPUT,
+  DATE_MONTH_INPUT,
+  DATE_YEAR_INPUT,
+  TEXT_INPUT
+};
 
 typedef struct IconButton {
   bool mouseOn;
-  bool isPressed;
   Texture2D icon;
   Rectangle area;
   Color bgColor;
   Color textColor;
 } IconButton;
 
+typedef struct InputText {
+  int type;
+  int category;
+  bool mouseOn;
+  bool updated;
+  Rectangle area;
+  float fontSize;
+  char text[128];
+  char label[128];
+  Vector2 textPosition;
+  Vector2 labelPosition;
+} InputText;
+
 // APP STRUCT
 // ==========================================================================================
+enum textInputs {
+  NO_ACTIVE_INPUT,
+  TRANSFORM_POSITION_X,
+  TRANSFORM_POSITION_Y,
+  TRANSFORM_POSITION_Z,
+};
+
 typedef struct UploadButton {
   IconButton button;
   GuiFileDialogState fileDialogState;
@@ -40,7 +67,11 @@ typedef struct UploadButton {
 } UploadButton;
 
 typedef struct UI {
+  int currentInputText;
   UploadButton uploadBtn;
+  InputText transform_pos_x;
+  InputText transform_pos_y;
+  InputText transform_pos_z;
 } UI;
 
 typedef struct Icons {
@@ -66,13 +97,44 @@ typedef struct App {
   Scene scene;
 } App;
 
+
 // view/ui.c
-void InitUI(App *app);
+// IconButton
 void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgColor);
 void DrawIconButton(IconButton *btn);
+// InputText
+void InitInputText(InputText *inputText, int type, int category, Rectangle area, char *label, char *text);
+void DrawInputText(InputText *inputText, int *currentInputText);
+void HandleInputText(InputText *inputText, int *currentInputText);
+void HandleKeys(App *app, InputText *input, int currentInputText);
+void RemoveLastCharFromInputText(int currentInputText, InputText *input);
+void CleanInputText(int currentInputText, InputText *input);
+double GetDoubleValueFromInputText(InputText input);
 
 // view/scene.c
 void InitScene(App *app);
 void DrawScene(App *app);
-void HandleScene(App *app);
+void UpdateScene(App *app);
+
+// view/scene/model.c
+void InitModel(App *app);
+void DrawModelOnScene(App *app);
+void UpdateModel(App *app);
+
+// view/scene/camera.c
+void InitCamera(App *app);
+
+// view/scene/upload_file.c
+void InitUploadFile(App *app);
+void DrawUploadFile(App *app);
+void UpdateUploadFile(App *app);
+
+// view/scene/info_panels.c
+void DrawInfo(App *app);
+
+// view/scene/transform_panel.c
+void InitTransformPanel(App *app);
+void DrawTransformPanel(App *app);
+void UpdateTransformPanel(App *app);
+
 #endif  // __S21_3D_VIEWER_H_

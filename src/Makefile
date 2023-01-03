@@ -10,6 +10,11 @@ SRC=$(PROJECT_NAME).c \
 	libs/raygui/raygui.c \
 	libs/gui_file_dialog/gui_file_dialog.c \
 	view/scene.c \
+	view/scene/camera.c \
+	view/scene/info_panels.c \
+	view/scene/model.c \
+	view/scene/transform_panel.c \
+	view/scene/upload_file.c \
 	view/ui.c
 
 all: clean $(PROJECT_NAME) 
