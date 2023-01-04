@@ -69,14 +69,23 @@ void updateModelScale(App *app) {
 
 void DrawModelOnScene(App *app) {
   drawBounds(app);
-  DrawModelEx(
-    app->scene.model.rModel, 
-    app->scene.model.position, 
-    app->scene.model.rotation, 
-    app->scene.model.rotationAngle, 
-    app->scene.model.scale, 
-    ColorAlpha(BLACK, 0.5)
-  );
+  Model *model = &app->scene.model.rModel;
+  Mesh *mesh = &model->meshes[0];
+  if (model->meshCount == 1) {
+    for (int i = 0; i < model->meshes[0].vertexCount; i += 3) {
+      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
+      // DrawPoint3D(pointVector, GREEN);
+      DrawCube(pointVector, 0.05f, 0.05f, 0.05f, GREEN);
+    }
+  }
+  // DrawModelWiresEx(
+  //   app->scene.model.rModel, 
+  //   app->scene.model.position, 
+  //   app->scene.model.rotation, 
+  //   app->scene.model.rotationAngle, 
+  //   app->scene.model.scale, 
+  //   ColorAlpha(BLACK, 0.5)
+  // );
 }
 
 void UpdateModel(App *app) {
