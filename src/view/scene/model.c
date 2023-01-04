@@ -16,6 +16,29 @@ void drawBounds(App *app) {
   }
 }
 
+void drawDots(App *app, float size, Color color) {
+  Model *model = &app->scene.model.rModel;
+  Mesh *mesh = &model->meshes[0];
+  if (model->meshCount == 1) {
+    for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
+      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
+      // DrawPoint3D(pointVector, GREEN);
+      DrawCube(pointVector, size, size, size, color);
+    }
+  }
+}
+
+void drawSpheres(App *app, float radius, Color color) {
+  Model *model = &app->scene.model.rModel;
+  Mesh *mesh = &model->meshes[0];
+  if (model->meshCount == 1) {
+    for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
+      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
+      DrawSphere(pointVector, radius, color);
+    }
+  }
+}
+
 void updateModelPosition(App *app) {
   if (app->ui.transform_position_x.updated == true) {
     app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.transform_position_x);
@@ -69,14 +92,16 @@ void updateModelScale(App *app) {
 
 void DrawModelOnScene(App *app) {
   drawBounds(app);
-  DrawModelEx(
-    app->scene.model.rModel, 
-    app->scene.model.position, 
-    app->scene.model.rotation, 
-    app->scene.model.rotationAngle, 
-    app->scene.model.scale, 
-    ColorAlpha(BLACK, 0.5)
-  );
+  drawDots(app, 0.05f, GREEN);
+  // drawSpheres(app, 0.05f, BLUE);
+  // DrawModelWiresEx(
+  //   app->scene.model.rModel, 
+  //   app->scene.model.position, 
+  //   app->scene.model.rotation, 
+  //   app->scene.model.rotationAngle, 
+  //   app->scene.model.scale, 
+  //   ColorAlpha(BLACK, 0.5)
+  // );
 }
 
 void UpdateModel(App *app) {
