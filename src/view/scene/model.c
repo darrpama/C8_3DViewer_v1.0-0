@@ -16,14 +16,25 @@ void drawBounds(App *app) {
   }
 }
 
-void drawDots(App *app) {
+void drawDots(App *app, float size, Color color) {
   Model *model = &app->scene.model.rModel;
   Mesh *mesh = &model->meshes[0];
   if (model->meshCount == 1) {
     for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
       Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
       // DrawPoint3D(pointVector, GREEN);
-      DrawCube(pointVector, 0.05f, 0.05f, 0.05f, GREEN);
+      DrawCube(pointVector, size, size, size, color);
+    }
+  }
+}
+
+void drawSpheres(App *app, float radius, Color color) {
+  Model *model = &app->scene.model.rModel;
+  Mesh *mesh = &model->meshes[0];
+  if (model->meshCount == 1) {
+    for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
+      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
+      DrawSphere(pointVector, radius, color);
     }
   }
 }
@@ -81,7 +92,8 @@ void updateModelScale(App *app) {
 
 void DrawModelOnScene(App *app) {
   drawBounds(app);
-  drawDots(app);
+  drawDots(app, 0.05f, GREEN);
+  // drawSpheres(app, 0.05f, BLUE);
   // DrawModelWiresEx(
   //   app->scene.model.rModel, 
   //   app->scene.model.position, 
