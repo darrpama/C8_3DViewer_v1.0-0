@@ -62,6 +62,9 @@ enum textInputs {
   TRANSFORM_ROTATION_X,
   TRANSFORM_ROTATION_Y,
   TRANSFORM_ROTATION_Z,
+  TRANSFORM_SCALE_X,
+  TRANSFORM_SCALE_Y,
+  TRANSFORM_SCALE_Z,
 };
 
 typedef struct UploadButton {
@@ -79,6 +82,9 @@ typedef struct UI {
   InputText transform_rotation_x;
   InputText transform_rotation_y;
   InputText transform_rotation_z;
+  InputText transform_scale_x;
+  InputText transform_scale_y;
+  InputText transform_scale_z;
 } UI;
 
 typedef struct Icons {

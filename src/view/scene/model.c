@@ -52,6 +52,21 @@ void updateModelRotation(App *app) {
   }
 }
 
+void updateModelScale(App *app) {
+  if (app->ui.transform_scale_x.updated == true) {
+    app->scene.model.scale.x = GetDoubleValueFromInputText(app->ui.transform_scale_x);
+    app->ui.transform_scale_x.updated = false;
+  }
+  if (app->ui.transform_scale_y.updated == true) {
+    app->scene.model.scale.y = GetDoubleValueFromInputText(app->ui.transform_scale_y);
+    app->ui.transform_scale_y.updated = false;
+  }
+  if (app->ui.transform_scale_z.updated == true) {
+    app->scene.model.scale.z = GetDoubleValueFromInputText(app->ui.transform_scale_z);
+    app->ui.transform_scale_z.updated = false;
+  }
+}
+
 void DrawModelOnScene(App *app) {
   drawBounds(app);
   DrawModelEx(
@@ -68,6 +83,7 @@ void UpdateModel(App *app) {
   selectModelHandler(app);
   updateModelPosition(app);
   updateModelRotation(app);
+  updateModelScale(app);
 }
 
 void InitModel(App *app) {

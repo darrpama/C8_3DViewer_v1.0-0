@@ -6,7 +6,7 @@
 
 // STYLES
 #define TRANSFORM_PANEL_WIDTH 400
-#define TRANSFORM_PANEL_HEIGHT 150
+#define TRANSFORM_PANEL_HEIGHT 180
 
 // FONTS (deprecated)
 #define BASE_FONT "./assets/fonts/RobotoSlab-Regular.ttf"
