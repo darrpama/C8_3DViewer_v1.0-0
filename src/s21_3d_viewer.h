@@ -18,6 +18,7 @@
 #include "libs/raylib/raylib.h"
 #include "libs/raygui/raygui.h"
 #include "libs/gui_file_dialog/gui_file_dialog.h"
+#include "libs/raymath/raymath.h"
 
 // UI STRUCTS
 // ==========================================================================================
@@ -58,6 +59,9 @@ enum textInputs {
   TRANSFORM_POSITION_X,
   TRANSFORM_POSITION_Y,
   TRANSFORM_POSITION_Z,
+  TRANSFORM_ROTATION_X,
+  TRANSFORM_ROTATION_Y,
+  TRANSFORM_ROTATION_Z,
 };
 
 typedef struct UploadButton {
@@ -69,9 +73,12 @@ typedef struct UploadButton {
 typedef struct UI {
   int currentInputText;
   UploadButton uploadBtn;
-  InputText transform_pos_x;
-  InputText transform_pos_y;
-  InputText transform_pos_z;
+  InputText transform_position_x;
+  InputText transform_position_y;
+  InputText transform_position_z;
+  InputText transform_rotation_x;
+  InputText transform_rotation_y;
+  InputText transform_rotation_z;
 } UI;
 
 typedef struct Icons {
@@ -87,6 +94,7 @@ typedef struct s21_model {
   Model rModel;
   Vector3 position;
   Vector3 rotation;
+  float rotationAngle;
   Vector3 scale;
   BoundingBox bounds;
 } s21_model;

@@ -17,28 +17,57 @@ void drawBounds(App *app) {
 }
 
 void updateModelPosition(App *app) {
-  if (app->ui.transform_pos_x.updated == true) {
-    app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.transform_pos_x);
-    app->ui.transform_pos_x.updated = false;
+  if (app->ui.transform_position_x.updated == true) {
+    app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.transform_position_x);
+    app->ui.transform_position_x.updated = false;
   }
-  if (app->ui.transform_pos_y.updated == true) {
-    app->scene.model.position.y = GetDoubleValueFromInputText(app->ui.transform_pos_y);
-    app->ui.transform_pos_y.updated = false;
+  if (app->ui.transform_position_y.updated == true) {
+    app->scene.model.position.y = GetDoubleValueFromInputText(app->ui.transform_position_y);
+    app->ui.transform_position_y.updated = false;
   }
-  if (app->ui.transform_pos_z.updated == true) {
-    app->scene.model.position.z = GetDoubleValueFromInputText(app->ui.transform_pos_z);
-    app->ui.transform_pos_z.updated = false;
+  if (app->ui.transform_position_z.updated == true) {
+    app->scene.model.position.z = GetDoubleValueFromInputText(app->ui.transform_position_z);
+    app->ui.transform_position_z.updated = false;
+  }
+}
+
+void updateModelRotation(App *app) {
+  if (app->ui.transform_rotation_x.updated == true) {
+    double val = GetDoubleValueFromInputText(app->ui.transform_rotation_x);
+    app->scene.model.rotation.x = val;
+    app->scene.model.rModel.transform = MatrixRotateXYZ(app->scene.model.rotation);
+    app->ui.transform_rotation_x.updated = false;
+  }
+  if (app->ui.transform_rotation_y.updated == true) {
+    double val = GetDoubleValueFromInputText(app->ui.transform_rotation_y);
+    app->scene.model.rotation.y = val;
+    app->scene.model.rModel.transform = MatrixRotateXYZ(app->scene.model.rotation);
+    app->ui.transform_rotation_y.updated = false;
+  }
+  if (app->ui.transform_rotation_z.updated == true) {
+    double val = GetDoubleValueFromInputText(app->ui.transform_rotation_z);
+    app->scene.model.rotation.z = val;
+    app->scene.model.rModel.transform = MatrixRotateXYZ(app->scene.model.rotation);
+    app->ui.transform_rotation_z.updated = false;
   }
 }
 
 void DrawModelOnScene(App *app) {
   drawBounds(app);
-  DrawModelEx(app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 45.0, app->scene.model.scale, ColorAlpha(BLACK, 0.5));
+  DrawModelEx(
+    app->scene.model.rModel, 
+    app->scene.model.position, 
+    app->scene.model.rotation, 
+    app->scene.model.rotationAngle, 
+    app->scene.model.scale, 
+    ColorAlpha(BLACK, 0.5)
+  );
 }
 
 void UpdateModel(App *app) {
   selectModelHandler(app);
   updateModelPosition(app);
+  updateModelRotation(app);
 }
 
 void InitModel(App *app) {
@@ -49,6 +78,7 @@ void InitModel(App *app) {
   app->scene.model.rModel = model;
   app->scene.model.position = default_val;
   app->scene.model.rotation = default_val;
+  app->scene.model.rotationAngle = 0.0f;
   app->scene.model.scale = scale;
   app->scene.model.bounds = bounds;
 }

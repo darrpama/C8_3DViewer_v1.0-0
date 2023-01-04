@@ -51,3 +51,4 @@ Module.symvers
 Mkfile.old
 dkms.conf
 src/s21_3d_viewer
+.DS_Store
