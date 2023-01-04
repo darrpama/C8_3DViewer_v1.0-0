@@ -7,23 +7,24 @@ void InitApp(App *app) {
   SetTargetFPS(60);
 
   InitScene(app);
-  InitUI(app);
 }
 
 int main() {
   App app;
   InitApp(&app);
+
   while (!WindowShouldClose()) {
-    // HandleFullscreen(&app);
+  
     UpdateCamera(&app.scene.camera);
-    HandleScene(&app);
+    UpdateScene(&app);
     
     BeginDrawing();
-      // DrawTestPage(&app);
       DrawScene(&app);
     EndDrawing();
   }
-  UnloadModel(app.scene.model);
+  
+  UnloadModel(app.scene.model.rModel);
   CloseWindow();
+  
   return 0;
 }

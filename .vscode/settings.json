@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "ios": "c",
+        "s21_3d_viewer.h": "c"
+    }
+}
