@@ -4,6 +4,10 @@
 
 #define INPUT_MAX 32
 
+// STYLES
+#define TRANSFORM_PANEL_WIDTH 400
+#define TRANSFORM_PANEL_HEIGHT 150
+
 // FONTS (deprecated)
 #define BASE_FONT "./assets/fonts/RobotoSlab-Regular.ttf"
 

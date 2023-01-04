@@ -2,6 +2,8 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "ios": "c",
-        "s21_3d_viewer.h": "c"
+        "s21_3d_viewer.h": "c",
+        "raylib.h": "c",
+        "configs.h": "c"
     }
 }
