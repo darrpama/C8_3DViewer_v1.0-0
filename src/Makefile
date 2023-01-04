@@ -1,15 +1,10 @@
 CC = gcc
 FLAGS=-Wall -Wextra -Werror -std=c11
+LIBS=-lcheck
+EVAL_TEST=tests/eval_tests.c
+RPN_TEST=tests/rpn_tests.c
 PROJECT_NAME=s21_3d_viewer
 RAYLIB=libs/raylib/libraylib.a
-
-ifeq ($(OS), Darwin)
-	LIBS = -lcheck
-	LIBS2 = -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL
-else
-	LIBS = -lcheck -lrt -lm -pthread -lsubunit -lraylib -ldl
-	LIBS2 =
-endif
 
 SRC=$(PROJECT_NAME).c \
 	libs/raygui/raygui.c \
@@ -27,7 +22,7 @@ all: clean $(PROJECT_NAME)
 
 
 $(PROJECT_NAME): 
-	$(CC) $(FLAGS) $(LIBS2) $(RAYLIB) $(SRC) -o $(PROJECT_NAME) $(LIBS)
+	$(CC) $(FLAGS) -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL $(RAYLIB) $(SRC) -o $(PROJECT_NAME)
 
 clean:
 	rm -rf s21_3d_viewer

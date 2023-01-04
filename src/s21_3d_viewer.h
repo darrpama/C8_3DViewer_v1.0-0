@@ -83,11 +83,17 @@ typedef struct Settings {
   Icons icons;
 } Settings;
 
-typedef struct Scene {
-  Model model;
-  Camera camera;
-  BoundingBox bounds;
+typedef struct s21_model {
+  Model rModel;
   Vector3 position;
+  Vector3 rotation;
+  Vector3 scale;
+  BoundingBox bounds;
+} s21_model;
+
+typedef struct Scene {
+  s21_model model;
+  Camera camera;
   bool selected;
 } Scene;
 
