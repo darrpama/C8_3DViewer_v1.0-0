@@ -16,6 +16,18 @@ void drawBounds(App *app) {
   }
 }
 
+void drawDots(App *app) {
+  Model *model = &app->scene.model.rModel;
+  Mesh *mesh = &model->meshes[0];
+  if (model->meshCount == 1) {
+    for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
+      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
+      // DrawPoint3D(pointVector, GREEN);
+      DrawCube(pointVector, 0.05f, 0.05f, 0.05f, GREEN);
+    }
+  }
+}
+
 void updateModelPosition(App *app) {
   if (app->ui.transform_position_x.updated == true) {
     app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.transform_position_x);
@@ -69,15 +81,7 @@ void updateModelScale(App *app) {
 
 void DrawModelOnScene(App *app) {
   drawBounds(app);
-  Model *model = &app->scene.model.rModel;
-  Mesh *mesh = &model->meshes[0];
-  if (model->meshCount == 1) {
-    for (int i = 0; i < model->meshes[0].vertexCount; i += 3) {
-      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
-      // DrawPoint3D(pointVector, GREEN);
-      DrawCube(pointVector, 0.05f, 0.05f, 0.05f, GREEN);
-    }
-  }
+  drawDots(app);
   // DrawModelWiresEx(
   //   app->scene.model.rModel, 
   //   app->scene.model.position, 
