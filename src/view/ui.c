@@ -174,7 +174,23 @@ void HandleKeys(App *app, InputText *input, int currentInputText) {
     decreaseInputTextValue(currentInputText, input, 0.1);
   if ((CTRL_PRESSED == true) && (SHIFT_PRESSED == true) && (IsKeyDown(KEY_DOWN) == true) && (IsKeyUp(KEY_DOWN) == false))
     decreaseInputTextValue(currentInputText, input, 1.0);
-  
+}
+
+
+void HandleTransformButton(int type, SubmitButton *btn, TransformValue *transform) {
+  if (CheckCollisionPointRec(GetMousePosition(), btn->area)) {
+    btn->mouseOn = true;
+  } else {
+    btn->mouseOn = false;
+  }
+  if (btn->mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+    if (type == INCREASE_VALUE) {
+      increaseInputTextValue(transform->input.type, &transform->input, 0.5);
+    }
+    if (type == DECREASE_VALUE) {
+      decreaseInputTextValue(transform->input.type, &transform->input, 0.5);
+    }
+  }
 }
 
 void RemoveLastCharFromInputText(int currentInputText, InputText *input) {
@@ -267,7 +283,6 @@ void HandleInputText(InputText *inputText, int *currentInputText) {
 void DrawIconButton(IconButton *btn) {
   DrawRectangle(btn->area.x,btn->area.y,btn->area.width,btn->area.height, btn->bgColor);
   DrawTexture(btn->icon, btn->area.x+8, btn->area.y+8, WHITE);
-
 }
 
 void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgColor) {
@@ -275,6 +290,29 @@ void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgCol
   btn->area = area;
   btn->bgColor = bgColor;
   btn->icon = icon;
+}
+
+void DrawSubmitButton(SubmitButton *btn) {
+  DrawRectangleRounded(btn->area, 1.0, 8, btn->bgColor);
+  DrawText(btn->text, btn->textPosition.x, btn->textPosition.y, btn->fontSize, ColorAlpha(btn->textColor, 0.8));
+}
+
+void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor) {
+  btn->mouseOn = false;
+  btn->fontSize = 22;
+  btn->text[0] = '\0';
+  btn->area = area;
+  strcat(btn->text, label);
+
+  int textSize = MeasureText(label, 22);
+  float halfTextSize = textSize / 2;
+  float halfAreaWidthSize = area.width / 2;
+  btn->textPosition = (Vector2){
+    (area.x + (halfAreaWidthSize - halfTextSize)),
+    area.y + ((area.height / 2) - (btn->fontSize / 2))
+  };
+  btn->bgColor = bgColor;
+  btn->textColor = textColor;
 }
 
 double GetDoubleValueFromInputText(InputText input) {

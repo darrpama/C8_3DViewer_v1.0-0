@@ -5,8 +5,8 @@
 #define INPUT_MAX 32
 
 // STYLES
-#define TRANSFORM_PANEL_WIDTH 400
-#define TRANSFORM_PANEL_HEIGHT 180
+#define TRANSFORM_PANEL_WIDTH 190
+#define TRANSFORM_PANEL_HEIGHT 360
 
 // FONTS (deprecated)
 #define BASE_FONT "./assets/fonts/RobotoSlab-Regular.ttf"
@@ -16,8 +16,8 @@
   #define APP_SCREEN_WIDTH 1366
   #define APP_SCREEN_HEIGHT 768
 #else
-  #define APP_SCREEN_WIDTH 1460
-  #define APP_SCREEN_HEIGHT 800
+  #define APP_SCREEN_WIDTH 1366
+  #define APP_SCREEN_HEIGHT 768
 #endif
 
 
