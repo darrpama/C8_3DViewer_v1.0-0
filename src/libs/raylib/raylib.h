@@ -381,6 +381,7 @@ typedef struct BoneInfo {
 typedef struct Model {
     Matrix transform;       // Local transform matrix
 
+    int vertexCount;
     int meshCount;          // Number of meshes
     int materialCount;      // Number of materials
     Mesh *meshes;           // Meshes array
