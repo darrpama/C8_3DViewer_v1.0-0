@@ -80,6 +80,14 @@ void DrawModelOnScene(App *app) {
       app->scene.model.vertices.size
     );
   }
+  DrawModelEx(
+    app->scene.model.rModel, 
+    app->scene.model.position, 
+    app->scene.model.rotation, 
+    0.0f,
+    app->scene.model.scale, 
+    ColorAlpha(BLACK, 0.4)
+  );
 }
 
 void UpdateModel(App *app) {
