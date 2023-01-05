@@ -80,7 +80,7 @@ enum textInputs {
 
 enum pointTypes {
   SQUARE_POINTS,
-  SPHERE_POINTS
+  SPHERE_POINTS,
 };
 
 enum transformButtonTypes {
