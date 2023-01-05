@@ -23,11 +23,14 @@ void uploadButtonHandler(App *app) {
 }
 
 void DrawUploadFile(App *app) {
-    DrawText(app->ui.uploadBtn.fileNameToLoad, 208, GetScreenHeight() - 20, 10, GRAY);
-    if (app->ui.uploadBtn.fileDialogState.windowActive) GuiLock();
-    DrawIconButton(&app->ui.uploadBtn.button);
-    GuiUnlock();
-    GuiFileDialog(&app->ui.uploadBtn.fileDialogState);
+  int textSize = MeasureText(app->ui.uploadBtn.fileNameToLoad, 20);
+  DrawRectangle(94, GetScreenHeight() - 50, textSize + 20, 30, WHITE);
+  DrawRectangleLines(94, GetScreenHeight() - 50, textSize + 20, 30, GRAY);
+  DrawText(app->ui.uploadBtn.fileNameToLoad, 104, GetScreenHeight() - 45, 20, GRAY);
+  if (app->ui.uploadBtn.fileDialogState.windowActive) GuiLock();
+  DrawIconButton(&app->ui.uploadBtn.button);
+  GuiUnlock();
+  GuiFileDialog(&app->ui.uploadBtn.fileDialogState);
 }
 
 void UpdateUploadFile(App *app) {
@@ -39,6 +42,14 @@ void InitUploadFile(App *app) {
   app->ui.uploadBtn.fileDialogState = InitGuiFileDialog(GetWorkingDirectory());
   app->ui.uploadBtn.fileNameToLoad[0] = '\0';
   Texture2D icon = LoadTexture("./assets/icons/upload.png");
-  InitIconButton(icon, &app->ui.uploadBtn.button, (Rectangle){30,30,64,64}, ColorAlpha(GRAY, 0.2));
+  InitIconButton(
+    icon, 
+    &app->ui.uploadBtn.button, 
+    (Rectangle){20, APP_SCREEN_HEIGHT - 84 ,64,64}, 
+    ColorBrightness(SKYBLUE, -0.1)
+  );
   app->ui.uploadBtn.fileDialogState = InitGuiFileDialog(GetWorkingDirectory());
+  app->ui.uploadBtn.fileNameToLoad[0] = '\0';
+  strcat(app->ui.uploadBtn.fileNameToLoad, "assets/models/tyan.obj");
+
 }

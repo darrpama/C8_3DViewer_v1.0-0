@@ -100,6 +100,7 @@ void UpdateModel(App *app) {
 void InitModel(App *app) {
   Model model = { 0 };
   model = LoadModel("assets/models/tyan.obj");
+  
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
   Vector3 scale = { 1.0f, 1.0f, 1.0f };
   BoundingBox bounds = { 0 };
