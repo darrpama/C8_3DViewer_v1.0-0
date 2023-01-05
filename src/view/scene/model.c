@@ -40,53 +40,53 @@ void drawSpheres(App *app, float radius, Color color) {
 }
 
 void updateModelPosition(App *app) {
-  if (app->ui.transform_position_x.updated == true) {
-    app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.transform_position_x);
-    app->ui.transform_position_x.updated = false;
+  if (app->ui.position_x.input.updated == true) {
+    app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.position_x.input);
+    app->ui.position_x.input.updated = false;
   }
-  if (app->ui.transform_position_y.updated == true) {
-    app->scene.model.position.y = GetDoubleValueFromInputText(app->ui.transform_position_y);
-    app->ui.transform_position_y.updated = false;
+  if (app->ui.position_y.input.updated == true) {
+    app->scene.model.position.y = GetDoubleValueFromInputText(app->ui.position_y.input);
+    app->ui.position_y.input.updated = false;
   }
-  if (app->ui.transform_position_z.updated == true) {
-    app->scene.model.position.z = GetDoubleValueFromInputText(app->ui.transform_position_z);
-    app->ui.transform_position_z.updated = false;
+  if (app->ui.position_z.input.updated == true) {
+    app->scene.model.position.z = GetDoubleValueFromInputText(app->ui.position_z.input);
+    app->ui.position_z.input.updated = false;
   }
 }
 
 void updateModelRotation(App *app) {
-  if (app->ui.transform_rotation_x.updated == true) {
-    double val = GetDoubleValueFromInputText(app->ui.transform_rotation_x);
+  if (app->ui.rotation_x.input.updated == true) {
+    double val = GetDoubleValueFromInputText(app->ui.rotation_x.input);
     app->scene.model.rotation.x = val;
     app->scene.model.rModel.transform = MatrixRotateXYZ(app->scene.model.rotation);
-    app->ui.transform_rotation_x.updated = false;
+    app->ui.rotation_x.input.updated = false;
   }
-  if (app->ui.transform_rotation_y.updated == true) {
-    double val = GetDoubleValueFromInputText(app->ui.transform_rotation_y);
+  if (app->ui.rotation_y.input.updated == true) {
+    double val = GetDoubleValueFromInputText(app->ui.rotation_y.input);
     app->scene.model.rotation.y = val;
     app->scene.model.rModel.transform = MatrixRotateXYZ(app->scene.model.rotation);
-    app->ui.transform_rotation_y.updated = false;
+    app->ui.rotation_y.input.updated = false;
   }
-  if (app->ui.transform_rotation_z.updated == true) {
-    double val = GetDoubleValueFromInputText(app->ui.transform_rotation_z);
+  if (app->ui.rotation_z.input.updated == true) {
+    double val = GetDoubleValueFromInputText(app->ui.rotation_z.input);
     app->scene.model.rotation.z = val;
     app->scene.model.rModel.transform = MatrixRotateXYZ(app->scene.model.rotation);
-    app->ui.transform_rotation_z.updated = false;
+    app->ui.rotation_z.input.updated = false;
   }
 }
 
 void updateModelScale(App *app) {
-  if (app->ui.transform_scale_x.updated == true) {
-    app->scene.model.scale.x = GetDoubleValueFromInputText(app->ui.transform_scale_x);
-    app->ui.transform_scale_x.updated = false;
+  if (app->ui.scale_x.input.updated == true) {
+    app->scene.model.scale.x = GetDoubleValueFromInputText(app->ui.scale_x.input);
+    app->ui.scale_x.input.updated = false;
   }
-  if (app->ui.transform_scale_y.updated == true) {
-    app->scene.model.scale.y = GetDoubleValueFromInputText(app->ui.transform_scale_y);
-    app->ui.transform_scale_y.updated = false;
+  if (app->ui.scale_y.input.updated == true) {
+    app->scene.model.scale.y = GetDoubleValueFromInputText(app->ui.scale_y.input);
+    app->ui.scale_y.input.updated = false;
   }
-  if (app->ui.transform_scale_z.updated == true) {
-    app->scene.model.scale.z = GetDoubleValueFromInputText(app->ui.transform_scale_z);
-    app->ui.transform_scale_z.updated = false;
+  if (app->ui.scale_z.input.updated == true) {
+    app->scene.model.scale.z = GetDoubleValueFromInputText(app->ui.scale_z.input);
+    app->ui.scale_z.input.updated = false;
   }
 }
 
@@ -125,7 +125,7 @@ void InitModel(App *app) {
   Model model = { 0 };
   model = LoadModel("assets/models/tyan.obj");
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
-  Vector3 scale = { 10.0f, 10.0f, 10.0f };
+  Vector3 scale = { 1.0f, 1.0f, 1.0f };
   BoundingBox bounds = { 0 };
   app->scene.model.rModel = model;
   app->scene.model.position = default_val;

@@ -40,6 +40,16 @@ typedef struct IconButton {
   Color textColor;
 } IconButton;
 
+typedef struct SubmitButton {
+  bool mouseOn;
+  Rectangle area;
+  float fontSize;
+  char text[32];
+  Vector2 textPosition;
+  Color bgColor;
+  Color textColor;
+} SubmitButton;
+
 typedef struct InputText {
   int type;
   int category;
@@ -68,24 +78,35 @@ enum textInputs {
   TRANSFORM_SCALE_Z,
 };
 
+enum transformButtonTypes {
+  INCREASE_VALUE,
+  DECREASE_VALUE,
+};
+
 typedef struct UploadButton {
   IconButton button;
   GuiFileDialogState fileDialogState;
   char fileNameToLoad[512];
 } UploadButton;
 
+typedef struct TransformValue {
+  InputText input;
+  SubmitButton minusBtn;
+  SubmitButton plusBtn;
+} TransformValue;
+
 typedef struct UI {
   int currentInputText;
   UploadButton uploadBtn;
-  InputText transform_position_x;
-  InputText transform_position_y;
-  InputText transform_position_z;
-  InputText transform_rotation_x;
-  InputText transform_rotation_y;
-  InputText transform_rotation_z;
-  InputText transform_scale_x;
-  InputText transform_scale_y;
-  InputText transform_scale_z;
+  TransformValue position_x;
+  TransformValue position_y;
+  TransformValue position_z;
+  TransformValue rotation_x;
+  TransformValue rotation_y;
+  TransformValue rotation_z;
+  TransformValue scale_x;
+  TransformValue scale_y;
+  TransformValue scale_z;
 } UI;
 
 typedef struct Icons {
@@ -120,6 +141,10 @@ typedef struct App {
 
 
 // view/ui.c
+// SubmitButton
+void DrawSubmitButton(SubmitButton *btn);
+void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor);
+void HandleTransformButton(int type, SubmitButton *btn, TransformValue *transform);
 // IconButton
 void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgColor);
 void DrawIconButton(IconButton *btn);
