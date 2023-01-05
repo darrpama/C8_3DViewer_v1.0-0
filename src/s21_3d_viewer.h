@@ -19,6 +19,7 @@
 #include "libs/raygui/raygui.h"
 #include "libs/gui_file_dialog/gui_file_dialog.h"
 #include "libs/raymath/raymath.h"
+#include "libs/rlgl/rlgl.h"
 
 // UI STRUCTS
 // ==========================================================================================
