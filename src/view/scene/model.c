@@ -3,39 +3,16 @@
 void selectModelHandler(App *app) {
   if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
     if (GetRayCollisionBox(GetMouseRay(GetMousePosition(), app->scene.camera), app->scene.model.bounds).hit) {
-      app->scene.selected = !app->scene.selected;
+      app->scene.model.selected = !app->scene.model.selected;
     } else {
-      app->scene.selected = false;
+      app->scene.model.selected = false;
     }
   }
 }
 
 void drawBounds(App *app) {
-  if (app->scene.selected) {
+  if (app->scene.model.selected) {
     DrawBoundingBox(app->scene.model.bounds, GREEN);
-  }
-}
-
-void drawDots(App *app, float size, Color color) {
-  Model *model = &app->scene.model.rModel;
-  Mesh *mesh = &model->meshes[0];
-  if (model->meshCount == 1) {
-    for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
-      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
-      // DrawPoint3D(pointVector, GREEN);
-      DrawCube(pointVector, size, size, size, color);
-    }
-  }
-}
-
-void drawSpheres(App *app, float radius, Color color) {
-  Model *model = &app->scene.model.rModel;
-  Mesh *mesh = &model->meshes[0];
-  if (model->meshCount == 1) {
-    for (int i = 0; i < model->meshes[0].vertexCount * 3; i += 3) {
-      Vector3 pointVector = {mesh->vertices[i], mesh->vertices[i+1], mesh->vertices[i+2]};
-      DrawSphere(pointVector, radius, color);
-    }
   }
 }
 
@@ -92,26 +69,17 @@ void updateModelScale(App *app) {
 
 void DrawModelOnScene(App *app) {
   drawBounds(app);
-  // drawDots(app, 0.5f, GREEN);
-  // drawSpheres(app, 0.05f, BLUE);
-  
-  DrawModelDotsEx(
-    app->scene.model.rModel, 
-    app->scene.model.position, 
-    app->scene.model.rotation, 
-    app->scene.model.rotationAngle, 
-    app->scene.model.scale, 
-    ColorAlpha(BLACK, 1)
-  );
-
-  // DrawModelWiresEx(
-  //   app->scene.model.rModel, 
-  //   app->scene.model.position, 
-  //   app->scene.model.rotation, 
-  //   app->scene.model.rotationAngle, 
-  //   app->scene.model.scale, 
-  //   ColorAlpha(BLACK, 0.5)
-  // );
+  if (app->scene.model.vertices.visible == true) {
+    DrawModelDotsEx(
+      app->scene.model.rModel, 
+      app->scene.model.position, 
+      app->scene.model.rotation, 
+      0.0f,
+      app->scene.model.scale, 
+      app->scene.model.vertices.color,
+      app->scene.model.vertices.size
+    );
+  }
 }
 
 void UpdateModel(App *app) {
@@ -127,10 +95,17 @@ void InitModel(App *app) {
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
   Vector3 scale = { 10.0f, 10.0f, 10.0f };
   BoundingBox bounds = { 0 };
+  // MODEL GENERAL
   app->scene.model.rModel = model;
+  app->scene.model.bounds = bounds;
+  app->scene.model.selected = false;
+  // MODEL TRANSFORMATION
   app->scene.model.position = default_val;
   app->scene.model.rotation = default_val;
-  app->scene.model.rotationAngle = 0.0f;
   app->scene.model.scale = scale;
-  app->scene.model.bounds = bounds;
+  // MODEL VERTICES
+  app->scene.model.vertices.color = DARKPURPLE;
+  app->scene.model.vertices.size = 1;
+  app->scene.model.vertices.viewType = SQUARE_POINTS;
+  app->scene.model.vertices.visible = true;
 }

@@ -68,6 +68,11 @@ enum textInputs {
   TRANSFORM_SCALE_Z,
 };
 
+enum pointTypes {
+  SQUARE_POINTS,
+  SPHERE_POINTS
+};
+
 typedef struct UploadButton {
   IconButton button;
   GuiFileDialogState fileDialogState;
@@ -97,19 +102,26 @@ typedef struct Settings {
   Icons icons;
 } Settings;
 
+typedef struct Vertices {
+  bool visible;
+  int viewType;
+  Color color;
+  int size;
+} Vertices;
+
 typedef struct s21_model {
   Model rModel;
+  bool selected;
+  BoundingBox bounds;
   Vector3 position;
   Vector3 rotation;
-  float rotationAngle;
   Vector3 scale;
-  BoundingBox bounds;
+  Vertices vertices;
 } s21_model;
 
 typedef struct Scene {
   s21_model model;
   Camera camera;
-  bool selected;
 } Scene;
 
 typedef struct App {
