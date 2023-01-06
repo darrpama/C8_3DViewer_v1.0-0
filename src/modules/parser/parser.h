@@ -65,5 +65,6 @@ int fixIndex(int idx, unsigned int n);
 // Parse
 Obj ParseObj(const char *fileName);
 void UnloadObj(Obj *obj);
+int GetEdgesCount(const char *fileName);
 
 #endif  // __PARSER_H

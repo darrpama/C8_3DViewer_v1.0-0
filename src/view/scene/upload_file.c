@@ -7,6 +7,7 @@ void uploadFileHandler(App *app) {
       // UnloadObj(&app->scene.model.obj);
       UnloadModel(app->scene.model.rModel);
       app->scene.model.rModel = LoadModel(app->ui.uploadBtn.fileNameToLoad);
+      app->scene.model.edgeCount = GetEdgesCount(app->ui.uploadBtn.fileNameToLoad);
       // app->scene.model.bounds = GetMeshBoundingBox(app->scene.model.rModel.meshes[0]);   // Set model bounds
     }
     app->ui.uploadBtn.fileDialogState.SelectFilePressed = false;
@@ -52,5 +53,7 @@ void InitUploadFile(App *app) {
   app->ui.uploadBtn.fileDialogState = InitGuiFileDialog(GetWorkingDirectory());
   app->ui.uploadBtn.fileNameToLoad[0] = '\0';
   strcat(app->ui.uploadBtn.fileNameToLoad, "assets/models/tyan.obj");
-
+  UnloadModel(app->scene.model.rModel);
+  app->scene.model.rModel = LoadModel(app->ui.uploadBtn.fileNameToLoad);
+  app->scene.model.edgeCount = GetEdgesCount("assets/models/tyan.obj");
 }
