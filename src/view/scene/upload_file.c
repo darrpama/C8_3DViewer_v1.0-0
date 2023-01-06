@@ -53,5 +53,7 @@ void InitUploadFile(App *app) {
   app->ui.uploadBtn.fileDialogState = InitGuiFileDialog(GetWorkingDirectory());
   app->ui.uploadBtn.fileNameToLoad[0] = '\0';
   strcat(app->ui.uploadBtn.fileNameToLoad, "assets/models/tyan.obj");
-
+  UnloadModel(app->scene.model.rModel);
+  app->scene.model.rModel = LoadModel(app->ui.uploadBtn.fileNameToLoad);
+  app->scene.model.edgeCount = GetEdgesCount("assets/models/tyan.obj");
 }

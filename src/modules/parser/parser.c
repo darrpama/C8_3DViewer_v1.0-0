@@ -1,6 +1,7 @@
 #include "parser.h"
 #include <stdlib.h>
 #include <stdbool.h>
+#include <limits.h>
 
 char *LoadObjFileText(const char *fileName) {
     char *text = NULL;
@@ -246,6 +247,27 @@ unsigned intConcat(unsigned x, unsigned y) {
     return x * pow + y;        
 }
 
+int compare(const void *a, const void *b)
+{
+    const char **ia = (const char **)a;
+    const char **ib = (const char **)b;
+    return strcmp(*ia, *ib);
+}
+
+int numPlaces (int n) {
+    if (n < 0) n = (n == INT_MIN) ? INT_MAX : -n;
+    if (n < 10) return 1;
+    if (n < 100) return 2;
+    if (n < 1000) return 3;
+    if (n < 10000) return 4;
+    if (n < 100000) return 5;
+    if (n < 1000000) return 6;
+    if (n < 10000000) return 7;
+    if (n < 100000000) return 8;
+    if (n < 1000000000) return 9;
+    return 10;
+}
+
 int GetEdgesCount(const char *fileName) {
     Obj obj = ParseObj(fileName);
     printf("\n\nnum_face_num_verts: %d\n", obj.num_face_num_verts);
@@ -253,9 +275,16 @@ int GetEdgesCount(const char *fileName) {
     int k = 0;
     int a = 0;
     int b = 0;
-    unsigned edges[obj.num_face_num_verts-1];
+
+    // unsigned int edges[obj.num_face_num_verts-1];
+    char **edges;
+    edges = malloc((obj.num_face_num_verts) * sizeof(char *));
+    
+    int numSize = 0;
+
     for (unsigned int i = 0; i < obj.num_faces; i++)
     {
+        
         for (int j = 0; j < obj.face_num_verts[i]; j++)
         {
             a = obj.faces[k].v_idx + 1;
@@ -264,46 +293,31 @@ int GetEdgesCount(const char *fileName) {
             } else {
                 b = obj.faces[k + 1].v_idx + 1;
             }
+
+            numSize = numPlaces(a) + numPlaces(b);
+            edges[k] = malloc(numSize * sizeof(char));
+            char str_num[numSize+1];
             if (a < b) {
-                edges[k] = intConcat(a, b);
+                sprintf(str_num, "%d%d", a, b);
             } else {
-                edges[k] = intConcat(b, a);
+                sprintf(str_num, "%d%d", b, a);
             }
+            strcpy(edges[k], str_num);
+            str_num[0] = '\0';
             k++;
         }
     }
-    
-    // find max element
-    unsigned int max = edges[0];
-    printf("MAX VALUE = %d\n", max);
-    for (unsigned int i = 0; i < obj.num_face_num_verts; i++) {
-        if (max < edges[i]) {
-            max = edges[i];
-        }
-    }
-
-    // print max
-    printf("MAX VALUE = %d\n", max);
-
-
-    int seen[max+1];
-    memset(seen, 0, sizeof seen);
-
-    for (unsigned int i = 0; i < obj.num_face_num_verts; i++)
+    int n = obj.num_face_num_verts;
+    qsort(edges, n, sizeof(edges[0]), compare);
+    char *current = edges[0];
+    int count = 1;
+    for (int i = 1; i < n; i++)
     {
-        if (!seen[edges[i]]) {
-            seen[edges[i]] = 1;
+        if (strcmp(edges[i], current) != 0)
+        {
+            current = edges[i];
+            count++;
         }
-    }
-
-    // print hash table
-    int uniq_edges = 0;
-    for (unsigned int i=0; i < max+1; i++) {
-        if (seen[i] == 1) {
-            uniq_edges += 1;
-        }
-    }
-    printf("EDGES COUNT = %d\n\n\n", uniq_edges);
-    
-    return 1;
+    }    
+    return count;
 }

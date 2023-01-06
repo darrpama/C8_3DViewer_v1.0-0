@@ -51,7 +51,7 @@ void drawFileInfo(App *app) {
   char edges[64];
   edges[0] = '\0';
   sprintf(edges, "%d", app->scene.model.edgeCount);
-  DrawText("12", 170, top + 68, 14, BLACK);
+  DrawText(edges, 170, top + 68, 14, BLACK);
 }
 
 void DrawInfo(App *app) {
