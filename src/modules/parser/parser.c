@@ -1,4 +1,6 @@
 #include "parser.h"
+#include <stdlib.h>
+#include <stdbool.h>
 
 char *LoadObjFileText(const char *fileName) {
     char *text = NULL;
@@ -235,4 +237,73 @@ void UnloadObj(Obj *obj) {
     if (obj->vertices) free(obj->vertices);
     if (obj->faces) free(obj->faces);
     if (obj->face_num_verts) free(obj->face_num_verts);
+}
+
+unsigned intConcat(unsigned x, unsigned y) {
+    unsigned pow = 10;
+    while(y >= pow)
+        pow *= 10;
+    return x * pow + y;        
+}
+
+int GetEdgesCount(const char *fileName) {
+    Obj obj = ParseObj(fileName);
+    printf("\n\nnum_face_num_verts: %d\n", obj.num_face_num_verts);
+    printf("num_faces: %d\n", obj.num_faces);
+    int k = 0;
+    int a = 0;
+    int b = 0;
+    unsigned edges[obj.num_face_num_verts-1];
+    for (unsigned int i = 0; i < obj.num_faces; i++)
+    {
+        for (int j = 0; j < obj.face_num_verts[i]; j++)
+        {
+            a = obj.faces[k].v_idx + 1;
+            if (j == obj.face_num_verts[i] -1) {
+                b = obj.faces[k - j].v_idx + 1;
+            } else {
+                b = obj.faces[k + 1].v_idx + 1;
+            }
+            if (a < b) {
+                edges[k] = intConcat(a, b);
+            } else {
+                edges[k] = intConcat(b, a);
+            }
+            k++;
+        }
+    }
+    
+    // find max element
+    unsigned int max = edges[0];
+    printf("MAX VALUE = %d\n", max);
+    for (unsigned int i = 0; i < obj.num_face_num_verts; i++) {
+        if (max < edges[i]) {
+            max = edges[i];
+        }
+    }
+
+    // print max
+    printf("MAX VALUE = %d\n", max);
+
+
+    int seen[max+1];
+    memset(seen, 0, sizeof seen);
+
+    for (unsigned int i = 0; i < obj.num_face_num_verts; i++)
+    {
+        if (!seen[edges[i]]) {
+            seen[edges[i]] = 1;
+        }
+    }
+
+    // print hash table
+    int uniq_edges = 0;
+    for (unsigned int i=0; i < max+1; i++) {
+        if (seen[i] == 1) {
+            uniq_edges += 1;
+        }
+    }
+    printf("EDGES COUNT = %d\n\n\n", uniq_edges);
+    
+    return 1;
 }

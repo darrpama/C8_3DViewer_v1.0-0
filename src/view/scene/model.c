@@ -104,13 +104,14 @@ void InitModel(App *app) {
   // Obj obj = { 0 };
   // obj = ParseObj("assets/models/tyan.obj");
   Model model = { 0 };
-  model = LoadModel("assets/models/tyan.obj");
-  
+  model = LoadModel("assets/models/cube.obj");
+  int edgeCount = GetEdgesCount("assets/models/cube.obj");
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
   Vector3 scale = { 1.0f, 1.0f, 1.0f };
   // BoundingBox bounds = { 0 };
   // MODEL GENERAL
   app->scene.model.rModel = model;
+  app->scene.model.edgeCount = edgeCount;
   // app->scene.model.bounds = bounds;
   app->scene.model.selected = false;
   // MODEL TRANSFORMATION

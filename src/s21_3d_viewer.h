@@ -142,6 +142,7 @@ typedef struct s21_model {
   Vector3 rotation;
   Vector3 scale;
   Vertices vertices;
+  int edgeCount;
 } s21_model;
 
 typedef struct Scene {

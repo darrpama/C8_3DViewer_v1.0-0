@@ -7,6 +7,7 @@ void uploadFileHandler(App *app) {
       // UnloadObj(&app->scene.model.obj);
       UnloadModel(app->scene.model.rModel);
       app->scene.model.rModel = LoadModel(app->ui.uploadBtn.fileNameToLoad);
+      app->scene.model.edgeCount = GetEdgesCount(app->ui.uploadBtn.fileNameToLoad);
       // app->scene.model.bounds = GetMeshBoundingBox(app->scene.model.rModel.meshes[0]);   // Set model bounds
     }
     app->ui.uploadBtn.fileDialogState.SelectFilePressed = false;

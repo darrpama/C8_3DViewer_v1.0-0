@@ -39,13 +39,19 @@ void drawFileInfo(App *app) {
   DrawRectangleLines(left, top, 320, 133, BLUE);
   DrawText("Uploaded File information:", 30, top + 10, 10, BLACK);
   DrawText("FILENAME:", 108, top + 30, 10, DARKGRAY);
-  DrawText(basename(app->ui.uploadBtn.fileNameToLoad), 170, top + 26, 14, BLACK);
+  DrawText(basename(app->ui.uploadBtn.fileNameToLoad), 170, top + 28, 14, BLACK);
+  
   DrawText("NUMBER OF VERTICES:", 40, top + 50, 10, DARKGRAY);
   char vertices[64];
   vertices[0] = '\0';
   sprintf(vertices, "%d", app->scene.model.rModel.vertexCount);
-  DrawText(vertices, 170, top + 46, 14, BLACK);
-  DrawText("NUMBER OF EDGES", 40, top + 70, 10, DARKGRAY);
+  DrawText(vertices, 170, top + 48, 14, BLACK);
+  
+  DrawText("NUMBER OF EDGES:", 59, top + 70, 10, DARKGRAY);
+  char edges[64];
+  edges[0] = '\0';
+  sprintf(edges, "%d", app->scene.model.edgeCount);
+  DrawText("12", 170, top + 68, 14, BLACK);
 }
 
 void DrawInfo(App *app) {
