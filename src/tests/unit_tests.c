@@ -7,7 +7,7 @@
 
 START_TEST(test01) {
     Obj obj = {0};
-    const char *fileName = testCube.obj
+    const char *fileName = "testCube.obj";
     const char *fileText = "\
     v 0.000000 2.000000 2.000000 1\n\
     v 0.000000 0.000000 2.000000 1\n\
@@ -28,7 +28,7 @@ START_TEST(test01) {
     fclose(file);
     obj = ParseObj(fileName);
     printf("%u %u %u\n", obj.num_vertices, obj.num_faces, obj.num_face_num_verts);
-
+    remove(fileName);
 }
 END_TEST
 

@@ -1,10 +1,9 @@
 OS := $(shell uname -s)
 CC = gcc
 FLAGS=-Wall -Wextra -Werror -std=c11
-EVAL_TEST=tests/eval_tests.c
-RPN_TEST=tests/rpn_tests.c
 PROJECT_NAME=s21_3d_viewer
 RAYLIB=libs/raylib/libraylib.a
+UNIT_TESTS=tests/unit_tests.c
 
 ifeq ($(OS), Darwin)
 	LIBS = -lcheck
@@ -27,12 +26,19 @@ SRC=$(PROJECT_NAME).c \
 	view/scene/upload_file.c \
 	view/ui.c
 
+TEST_SRC =\
+	modules/parser/parser.c \
+	modules/parser/helpers.c
+
+
 all: clean $(PROJECT_NAME) 
 	./$(PROJECT_NAME)
 
-
 $(PROJECT_NAME): 
 	$(CC) $(FLAGS) $(LIBS2) $(RAYLIB) $(SRC) -o $(PROJECT_NAME) $(LIBS)
+
+test:
+	$(CC) $(FLAGS) $(LIBS2) $(RAYLIB) $(TEST_SRC) $(UNIT_TESTS) -o unit_tests.out $(LIBS)
 
 clean:
 	rm -rf s21_3d_viewer
