@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <string.h>
+#include <libgen.h>
 
 #include "configs.h"
 
@@ -20,6 +21,9 @@
 #include "libs/gui_file_dialog/gui_file_dialog.h"
 #include "libs/raymath/raymath.h"
 #include "libs/rlgl/rlgl.h"
+
+// modules
+#include "modules/parser/parser.h"
 
 // UI STRUCTS
 // ==========================================================================================
@@ -131,9 +135,9 @@ typedef struct Vertices {
 } Vertices;
 
 typedef struct s21_model {
-  Model rModel;
+  Obj obj;
   bool selected;
-  BoundingBox bounds;
+  // BoundingBox bounds;
   Vector3 position;
   Vector3 rotation;
   Vector3 scale;
