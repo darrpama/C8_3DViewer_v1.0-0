@@ -23,21 +23,31 @@ START_TEST(test01) {
     f 5 1 4 8\n\
     f 5 6 2 1\n\
     f 2 6 7 3\0";
+
     FILE *file = fopen(fileName, "w");
     fputs(fileText, file);
     fclose(file);
+
     obj = ParseObj(fileName);
-    printf("%u %u %u\n", obj.num_vertices, obj.num_faces, obj.num_face_num_verts);
+    ck_assert_uint_eq(obj.num_vertices, 8);
+
     remove(fileName);
+    UnloadObj(&obj);
+}
+END_TEST
+
+START_TEST(test02) {
+    ck_assert_int_eq(1, 2);
 }
 END_TEST
 
 int main(void) {
     Suite *s1 = suite_create("Core");
-    TCase *tc1_1 = tcase_create("Core");
+    TCase *tc1 = tcase_create("Core");
     SRunner *sr = srunner_create(s1);
-    suite_add_tcase(s1, tc1_1);
-    tcase_add_test(tc1_1, test01);
+    suite_add_tcase(s1, tc1);
+    tcase_add_test(tc1, test01);
+    tcase_add_test(tc1, test02);
 
     srunner_run_all(sr, CK_ENV);
     srunner_free(sr);
