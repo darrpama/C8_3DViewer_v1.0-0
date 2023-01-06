@@ -17,6 +17,8 @@ endif
 SRC=$(PROJECT_NAME).c \
 	libs/raygui/raygui.c \
 	libs/gui_file_dialog/gui_file_dialog.c \
+	modules/parser/parser.c \
+	modules/parser/helpers.c \
 	view/scene.c \
 	view/scene/camera.c \
 	view/scene/info_panels.c \

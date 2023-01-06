@@ -4,9 +4,9 @@ void uploadFileHandler(App *app) {
   if (app->ui.uploadBtn.fileDialogState.SelectFilePressed) {
     if (IsFileExtension(app->ui.uploadBtn.fileDialogState.fileNameText, ".obj")) {
       strcpy(app->ui.uploadBtn.fileNameToLoad, TextFormat("%s/%s", app->ui.uploadBtn.fileDialogState.dirPathText, app->ui.uploadBtn.fileDialogState.fileNameText));
-      UnloadModel(app->scene.model.rModel);
-      app->scene.model.rModel = LoadModel(app->ui.uploadBtn.fileNameToLoad);
-      app->scene.model.bounds = GetMeshBoundingBox(app->scene.model.rModel.meshes[0]);   // Set model bounds
+      UnloadObj(&app->scene.model.obj);
+      app->scene.model.obj = ParseObj(app->ui.uploadBtn.fileNameToLoad);
+      // app->scene.model.bounds = GetMeshBoundingBox(app->scene.model.rModel.meshes[0]);   // Set model bounds
     }
     app->ui.uploadBtn.fileDialogState.SelectFilePressed = false;
   }

@@ -32,8 +32,25 @@ void drawCameraInfo(App *app) {
   DrawText(up, 40, 250+120, 10, DARKGRAY);
 }
 
+void drawFileInfo(App *app) {
+  int left = 20;
+  int top = 410;
+  DrawRectangle(left, top, 320, 133, Fade(SKYBLUE, 0.3f));
+  DrawRectangleLines(left, top, 320, 133, BLUE);
+  DrawText("Uploaded File information:", 30, top + 10, 10, BLACK);
+  DrawText("FILENAME:", 108, top + 30, 10, DARKGRAY);
+  DrawText(basename(app->ui.uploadBtn.fileNameToLoad), 170, top + 26, 14, BLACK);
+  DrawText("NUMBER OF VERTICES:", 40, top + 50, 10, DARKGRAY);
+  char vertices[64];
+  vertices[0] = '\0';
+  sprintf(vertices, "%d", app->scene.model.obj.num_vertices);
+  DrawText(vertices, 170, top + 46, 14, BLACK);
+  DrawText("NUMBER OF EDGES", 40, top + 70, 10, DARKGRAY);
+}
+
 void DrawInfo(App *app) {
   DrawFPS(20, 10);
   drawHelpInfo();
   drawCameraInfo(app);
+  drawFileInfo(app);
 }
