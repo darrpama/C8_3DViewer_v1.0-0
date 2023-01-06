@@ -256,9 +256,11 @@
 #define RL_TEXTURE                              0x1702      // GL_TEXTURE
 
 // Primitive assembly draw modes
+#define RL_POINTS                               0x0000      // GL_POINTS
 #define RL_LINES                                0x0001      // GL_LINES
 #define RL_TRIANGLES                            0x0004      // GL_TRIANGLES
 #define RL_QUADS                                0x0007      // GL_QUADS
+#define RL_POINT                                0x1B00      // GL_POINT
 
 // GL equivalent data types
 #define RL_UNSIGNED_BYTE                        0x1401      // GL_UNSIGNED_BYTE
