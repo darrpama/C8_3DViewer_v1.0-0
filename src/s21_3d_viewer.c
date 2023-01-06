@@ -23,7 +23,8 @@ int main() {
     EndDrawing();
   }
   
-  UnloadObj(&app.scene.model.obj);
+  // UnloadObj(&app.scene.model.obj);
+  UnloadModel(app.scene.model.rModel);
 
   CloseWindow();
   

@@ -15,6 +15,12 @@
 typedef struct { int v_idx; } vertex_index_t;
 
 typedef struct {
+  float x;
+  float y;
+  float z;
+} Vertex;
+
+typedef struct {
   unsigned int num_vertices;
   unsigned int num_faces;
   unsigned int num_face_num_verts;

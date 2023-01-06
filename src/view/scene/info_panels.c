@@ -43,7 +43,7 @@ void drawFileInfo(App *app) {
   DrawText("NUMBER OF VERTICES:", 40, top + 50, 10, DARKGRAY);
   char vertices[64];
   vertices[0] = '\0';
-  sprintf(vertices, "%d", app->scene.model.obj.num_vertices);
+  sprintf(vertices, "%d", app->scene.model.rModel.vertexCount);
   DrawText(vertices, 170, top + 46, 14, BLACK);
   DrawText("NUMBER OF EDGES", 40, top + 70, 10, DARKGRAY);
 }

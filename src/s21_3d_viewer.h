@@ -20,7 +20,6 @@
 #include "libs/raygui/raygui.h"
 #include "libs/gui_file_dialog/gui_file_dialog.h"
 #include "libs/raymath/raymath.h"
-#include "libs/rlgl/rlgl.h"
 
 // modules
 #include "modules/parser/parser.h"
@@ -135,7 +134,8 @@ typedef struct Vertices {
 } Vertices;
 
 typedef struct s21_model {
-  Obj obj;
+  // Obj obj;
+  Model rModel;
   bool selected;
   // BoundingBox bounds;
   Vector3 position;
