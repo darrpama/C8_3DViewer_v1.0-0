@@ -13,7 +13,7 @@ void orthographicCameraHandler(App *app) {
   if (app->ui.orthographicCamera.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
     app->scene.camera.projection = CAMERA_ORTHOGRAPHIC;
   }
-  if (app->scene.camera.projection == CAMERA_ORTHOGRAPHIC && GetMouseWheelMove() < 1) {
+  if (app->scene.camera.projection == CAMERA_ORTHOGRAPHIC && GetMouseWheelMove() < 0) {
     app->scene.camera.fovy -= 3.0f;
   } else if (app->scene.camera.projection == CAMERA_ORTHOGRAPHIC && GetMouseWheelMove() > 0) {
     app->scene.camera.fovy += 3.0f;
@@ -33,12 +33,11 @@ void perspectiveCameraHandler(App *app) {
 void UpdateCameraSettingsButtons(App *app) {
   orthographicCameraHandler(app);
   perspectiveCameraHandler(app);
-  UpdateCamera(&app->scene.camera);
 }
 
 void InitCameraSettingsButtons(App *app) {
   InitSubmitButton(&app->ui.orthographicCamera, (Rectangle){GetScreenWidth() - 185, 390, 140, 20}, "Orthographic", LIGHTGRAY, BLACK, 12);
-  InitSubmitButton(&app->ui.perspectiveCamera, (Rectangle){GetScreenWidth() - 186, 415, 140, 20}, "Perspective", LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.perspectiveCamera, (Rectangle){GetScreenWidth() - 185, 415, 140, 20}, "Perspective", LIGHTGRAY, BLACK, 12);
 }
 
 void InitCamera(App *app) {
