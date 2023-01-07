@@ -4,12 +4,13 @@ FLAGS=-Wall -Wextra -Werror -std=c11
 EVAL_TEST=tests/eval_tests.c
 RPN_TEST=tests/rpn_tests.c
 PROJECT_NAME=s21_3d_viewer
-RAYLIB=libs/raylib/libraylib.a
 
 ifeq ($(OS), Darwin)
+	RAYLIB=libs/raylib/libraylib.a
 	LIBS = -lcheck
 	LIBS2 = -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL
 else
+	RAYLIB=
 	LIBS = -lcheck -lrt -lm -pthread -lsubunit -lraylib -ldl
 	LIBS2 =
 endif
@@ -19,6 +20,7 @@ SRC=$(PROJECT_NAME).c \
 	libs/gui_file_dialog/gui_file_dialog.c \
 	modules/parser/parser.c \
 	modules/parser/helpers.c \
+	modules/rlwrapper/rlwrapper.c \
 	view/scene.c \
 	view/scene/camera.c \
 	view/scene/info_panels.c \

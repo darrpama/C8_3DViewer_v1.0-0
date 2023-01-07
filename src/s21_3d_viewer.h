@@ -13,16 +13,9 @@
 
 #include "configs.h"
 
-#define RAYGUI_WINDOWBOX_STATUSBAR_HEIGHT 24
-
-// ray libs
-#include "libs/raylib/raylib.h"
-#include "libs/raygui/raygui.h"
-#include "libs/gui_file_dialog/gui_file_dialog.h"
-#include "libs/raymath/raymath.h"
-
 // modules
 #include "modules/parser/parser.h"
+#include "modules/rlwrapper/rlwrapper.h"
 
 // UI STRUCTS
 // ==========================================================================================
