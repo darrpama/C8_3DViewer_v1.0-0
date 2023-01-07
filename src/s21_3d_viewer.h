@@ -115,6 +115,9 @@ typedef struct UI {
   TransformValue scale_x;
   TransformValue scale_y;
   TransformValue scale_z;
+  
+  SubmitButton perspectiveCamera;
+  SubmitButton orthographicCamera;
 } UI;
 
 typedef struct Icons {
@@ -160,7 +163,7 @@ typedef struct App {
 // view/ui.c
 // SubmitButton
 void DrawSubmitButton(SubmitButton *btn);
-void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor);
+void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor, int fontSize);
 void HandleTransformButton(int type, SubmitButton *btn, TransformValue *transform);
 // IconButton
 void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgColor);
@@ -186,6 +189,8 @@ void UpdateModel(App *app);
 
 // view/scene/camera.c
 void InitCamera(App *app);
+void UpdateCameraSettingsButtons(App *app);
+void DrawCameraSettingsButtons(App *app);
 
 // view/scene/upload_file.c
 void InitUploadFile(App *app);

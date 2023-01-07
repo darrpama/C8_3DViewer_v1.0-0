@@ -297,14 +297,14 @@ void DrawSubmitButton(SubmitButton *btn) {
   DrawText(btn->text, btn->textPosition.x, btn->textPosition.y, btn->fontSize, ColorAlpha(btn->textColor, 0.8));
 }
 
-void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor) {
+void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor, int fontSize) {
   btn->mouseOn = false;
-  btn->fontSize = 22;
+  btn->fontSize = fontSize;
   btn->text[0] = '\0';
   btn->area = area;
   strcat(btn->text, label);
 
-  int textSize = MeasureText(label, 22);
+  int textSize = MeasureText(label, fontSize);
   float halfTextSize = textSize / 2;
   float halfAreaWidthSize = area.width / 2;
   btn->textPosition = (Vector2){
