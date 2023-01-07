@@ -33,7 +33,6 @@ void perspectiveCameraHandler(App *app) {
 void UpdateCameraSettingsButtons(App *app) {
   orthographicCameraHandler(app);
   perspectiveCameraHandler(app);
-  UpdateCamera(&app->scene.camera);
 }
 
 void InitCameraSettingsButtons(App *app) {
