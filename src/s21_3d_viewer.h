@@ -226,5 +226,6 @@ void UpdateVerticesUI(App *app);
 void InitSaveGifButton(App *app);
 void DrawSaveGifButton(App *app);
 void UpdateSaveGifButton(App *app);
+void SaveGif(App *app, int frames);
 
 #endif  // __S21_3D_VIEWER_H_

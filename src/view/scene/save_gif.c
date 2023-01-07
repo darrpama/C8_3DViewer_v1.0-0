@@ -20,9 +20,7 @@ void saveGifButtonHandler(App *app) {
   else
     app->ui.saveGifBtn.mouseOn = false;
   if (app->ui.saveGifBtn.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-    Image image = LoadImageFromScreen();
-    ExportImage(image, "aboba.png");
-    UnloadImage(image);
+    SaveGif(app, 4);
   }
 }
 
@@ -43,4 +41,21 @@ void InitSaveGifButton(App *app) {
     (Rectangle){20, APP_SCREEN_HEIGHT - 84 - 84, 64, 64},
     ColorBrightness(SKYBLUE, -0.1)
   );
+}
+
+void SaveGif(App *app, int frames) {
+  /* Need to add function to hide ui here */
+  for (int i = 0; i < frames; i++) {
+    Image image = LoadImageFromScreen();
+    char filename[20];
+    sprintf(filename, "%d", i);
+    strncat(filename, ".png", 5);
+    ExportImage(image, filename);
+    UnloadImage(image);
+    /* Need to add move camera or rotate model here */
+    app->scene.camera.fovy += 5.0f;
+    UpdateCamera(&app->scene.camera);
+  }
+
+  /* Here we collect our .png's to .gif file */
 }
