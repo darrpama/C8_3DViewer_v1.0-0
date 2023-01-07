@@ -127,8 +127,8 @@ void initTransformPosition(App *app) {
   int inputTextWidth = 100;
   int inputTextTop = 65;
 
-  InitSubmitButton(&app->ui.position_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.position_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.position_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.position_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.position_x.input,
     TRANSFORM_POSITION_X,
@@ -138,8 +138,8 @@ void initTransformPosition(App *app) {
   );
 
   inputTextTop += 30;
-  InitSubmitButton(&app->ui.position_y.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.position_y.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.position_y.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.position_y.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.position_y.input,
     TRANSFORM_POSITION_Y,
@@ -149,8 +149,8 @@ void initTransformPosition(App *app) {
   );
 
   inputTextTop += 30;
-  InitSubmitButton(&app->ui.position_z.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.position_z.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.position_z.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.position_z.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.position_z.input,
     TRANSFORM_POSITION_Z,
@@ -164,8 +164,8 @@ void initTransformRotation(App *app) {
   int inputTextWidth = 100;
   int inputTextTop = 175;
 
-  InitSubmitButton(&app->ui.rotation_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.rotation_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.rotation_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.rotation_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.rotation_x.input,
     TRANSFORM_ROTATION_X,
@@ -175,8 +175,8 @@ void initTransformRotation(App *app) {
   );
 
   inputTextTop += 30;
-  InitSubmitButton(&app->ui.rotation_y.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.rotation_y.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.rotation_y.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.rotation_y.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.rotation_y.input,
     TRANSFORM_ROTATION_Y,
@@ -186,8 +186,8 @@ void initTransformRotation(App *app) {
   );
 
   inputTextTop += 30;
-  InitSubmitButton(&app->ui.rotation_z.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.rotation_z.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.rotation_z.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.rotation_z.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.rotation_z.input,
     TRANSFORM_ROTATION_Z,
@@ -201,8 +201,8 @@ void initTransformScale(App *app) {
   int inputTextWidth = 100;
   int inputTextTop = 285;
   
-  InitSubmitButton(&app->ui.scale_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.scale_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.scale_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.scale_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
 
   InitInputText(
     &app->ui.scale_x.input,
@@ -212,8 +212,8 @@ void initTransformScale(App *app) {
     "x", "0"
   );
   inputTextTop += 30;
-  InitSubmitButton(&app->ui.scale_y.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.scale_y.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.scale_y.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.scale_y.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.scale_y.input,
     TRANSFORM_SCALE_Y,
@@ -223,8 +223,8 @@ void initTransformScale(App *app) {
   );
 
   inputTextTop += 30;
-  InitSubmitButton(&app->ui.scale_z.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK);
-  InitSubmitButton(&app->ui.scale_z.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK);
+  InitSubmitButton(&app->ui.scale_z.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.scale_z.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitInputText(
     &app->ui.scale_z.input,
     TRANSFORM_SCALE_Z,

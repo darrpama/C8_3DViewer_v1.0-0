@@ -11,12 +11,14 @@ void DrawScene(App *app) {
   DrawUploadFile(app);
   DrawInfo(app);
   DrawTransformPanel(app);
+  DrawCameraSettingsButtons(app);
 }
 
 void UpdateScene(App *app) {
   UpdateModel(app);
   UpdateTransformPanel(app);
   UpdateUploadFile(app);
+  UpdateCameraSettingsButtons(app);
 }
 
 void InitScene(App *app) {
