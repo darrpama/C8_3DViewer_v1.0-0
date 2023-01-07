@@ -20,8 +20,6 @@ void orthographicCameraHandler(App *app) {
   if (app->ui.orthographicCamera.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
     app->scene.camera.projection = CAMERA_ORTHOGRAPHIC;
   }
-
-  //  BUG: camera goes to infinity zoom
   if (app->scene.camera.projection == CAMERA_ORTHOGRAPHIC && GetMouseWheelMove() < 0) {
     app->scene.camera.fovy -= 3.0f;
   } else if (app->scene.camera.projection == CAMERA_ORTHOGRAPHIC && GetMouseWheelMove() > 0) {
