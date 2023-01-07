@@ -131,6 +131,8 @@ typedef struct UI {
   SubmitButton circleViewButton;
   SubmitButton squareViewButton;
   InputTextWithButtons dotSize;
+  // gif ui
+  SubmitButton saveGif;
 } UI;
 
 typedef struct Icons {
