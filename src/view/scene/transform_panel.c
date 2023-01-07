@@ -1,34 +1,6 @@
 #include "../../s21_3d_viewer.h"
 
-void handleTransformPanelTabPressed(App *app) {
-  if (IsKeyPressed(KEY_TAB) == true) {
-    if (app->ui.currentInputText == TRANSFORM_POSITION_X) {
-      app->ui.currentInputText = TRANSFORM_POSITION_Y;
-    } else if (app->ui.currentInputText == TRANSFORM_POSITION_Y) {
-      app->ui.currentInputText = TRANSFORM_POSITION_Z;
-    } else if (app->ui.currentInputText == TRANSFORM_POSITION_Z) {
-      app->ui.currentInputText = TRANSFORM_ROTATION_X;
-    } else if (app->ui.currentInputText == TRANSFORM_ROTATION_X) {
-      app->ui.currentInputText = TRANSFORM_ROTATION_Y;
-    } else if (app->ui.currentInputText == TRANSFORM_ROTATION_Y) {
-      app->ui.currentInputText = TRANSFORM_ROTATION_Z;
-    } else if (app->ui.currentInputText == TRANSFORM_ROTATION_Z) {
-      app->ui.currentInputText = TRANSFORM_SCALE_X;
-    } else if (app->ui.currentInputText == TRANSFORM_SCALE_X) {
-      app->ui.currentInputText = TRANSFORM_SCALE_Y;
-    } else if (app->ui.currentInputText == TRANSFORM_SCALE_Y) {
-      app->ui.currentInputText = TRANSFORM_SCALE_Z;
-    } else if (app->ui.currentInputText == TRANSFORM_SCALE_Z) {
-      app->ui.currentInputText = TRANSFORM_POSITION_X;
-    } else {
-      app->ui.currentInputText = TRANSFORM_POSITION_X;
-    }
-  }
-}
-
 void UpdateTransformPanel(App *app) {
-  // handle tab pressed
-  handleTransformPanelTabPressed(app);
   // position
   HandleInputText(&app->ui.position_x.input, &app->ui.currentInputText);
   HandleInputText(&app->ui.position_y.input, &app->ui.currentInputText);
@@ -36,12 +8,12 @@ void UpdateTransformPanel(App *app) {
   HandleKeys(app, &app->ui.position_x.input, app->ui.currentInputText);
   HandleKeys(app, &app->ui.position_y.input, app->ui.currentInputText);
   HandleKeys(app, &app->ui.position_z.input, app->ui.currentInputText);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.position_x.plusBtn, &app->ui.position_x);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.position_x.minusBtn, &app->ui.position_x);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.position_y.plusBtn, &app->ui.position_y);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.position_y.minusBtn, &app->ui.position_y);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.position_z.plusBtn, &app->ui.position_z);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.position_z.minusBtn, &app->ui.position_z);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.position_x.plusBtn, &app->ui.position_x);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.position_x.minusBtn, &app->ui.position_x);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.position_y.plusBtn, &app->ui.position_y);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.position_y.minusBtn, &app->ui.position_y);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.position_z.plusBtn, &app->ui.position_z);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.position_z.minusBtn, &app->ui.position_z);
   // rotation
   HandleInputText(&app->ui.rotation_x.input, &app->ui.currentInputText);
   HandleInputText(&app->ui.rotation_y.input, &app->ui.currentInputText);
@@ -49,12 +21,12 @@ void UpdateTransformPanel(App *app) {
   HandleKeys(app, &app->ui.rotation_x.input, app->ui.currentInputText);
   HandleKeys(app, &app->ui.rotation_y.input, app->ui.currentInputText);
   HandleKeys(app, &app->ui.rotation_z.input, app->ui.currentInputText);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.rotation_x.plusBtn, &app->ui.rotation_x);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.rotation_x.minusBtn, &app->ui.rotation_x);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.rotation_y.plusBtn, &app->ui.rotation_y);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.rotation_y.minusBtn, &app->ui.rotation_y);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.rotation_z.plusBtn, &app->ui.rotation_z);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.rotation_z.minusBtn, &app->ui.rotation_z);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.rotation_x.plusBtn, &app->ui.rotation_x);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.rotation_x.minusBtn, &app->ui.rotation_x);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.rotation_y.plusBtn, &app->ui.rotation_y);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.rotation_y.minusBtn, &app->ui.rotation_y);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.rotation_z.plusBtn, &app->ui.rotation_z);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.rotation_z.minusBtn, &app->ui.rotation_z);
   // scale
   HandleInputText(&app->ui.scale_x.input, &app->ui.currentInputText);
   HandleInputText(&app->ui.scale_y.input, &app->ui.currentInputText);
@@ -62,12 +34,12 @@ void UpdateTransformPanel(App *app) {
   HandleKeys(app, &app->ui.scale_x.input, app->ui.currentInputText);
   HandleKeys(app, &app->ui.scale_y.input, app->ui.currentInputText);
   HandleKeys(app, &app->ui.scale_z.input, app->ui.currentInputText);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.scale_x.plusBtn, &app->ui.scale_x);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.scale_x.minusBtn, &app->ui.scale_x);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.scale_y.plusBtn, &app->ui.scale_y);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.scale_y.minusBtn, &app->ui.scale_y);
-  HandleTransformButton(INCREASE_VALUE, &app->ui.scale_z.plusBtn, &app->ui.scale_z);
-  HandleTransformButton(DECREASE_VALUE, &app->ui.scale_z.minusBtn, &app->ui.scale_z);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.scale_x.plusBtn, &app->ui.scale_x);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.scale_x.minusBtn, &app->ui.scale_x);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.scale_y.plusBtn, &app->ui.scale_y);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.scale_y.minusBtn, &app->ui.scale_y);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.scale_z.plusBtn, &app->ui.scale_z);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.scale_z.minusBtn, &app->ui.scale_z);
 }
 
 void drawTransformPosition(App *app, int left, int top) {

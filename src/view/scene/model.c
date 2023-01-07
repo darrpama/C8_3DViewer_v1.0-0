@@ -51,18 +51,30 @@ void updateModelScale(App *app) {
   }
 }
 
+static void updateDotSize(App *app) {
+  if (app->ui.dotSize.input.updated == true) {
+    app->scene.model.vertices.size = GetDoubleValueFromInputText(app->ui.dotSize.input);
+    app->ui.dotSize.input.updated = false;
+  }
+}
+
 void DrawModelOnScene(App *app) {
   
   if (app->scene.model.vertices.visible == true) {
-    DrawModelDotsEx(
-      app->scene.model.rModel, 
-      app->scene.model.position, 
-      app->scene.model.rotation, 
-      0.0f,
-      app->scene.model.scale, 
-      app->scene.model.vertices.color,
-      app->scene.model.vertices.size
-    );
+    if (app->scene.model.vertices.viewType == SQUARE_POINTS) {
+      // TODO add square mode
+      DrawModelDotsEx(
+        app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
+        app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size
+      );
+    }
+    if (app->scene.model.vertices.viewType == CIRCLE_POINTS) {
+      // TODO add circle mode
+      DrawModelDotsEx(
+        app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
+        app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size
+      );
+    }
   }
   if (app->scene.model.wires.visible == true) {
     DrawModelWiresEx(
@@ -80,6 +92,7 @@ void UpdateModel(App *app) {
   updateModelPosition(app);
   updateModelRotation(app);
   updateModelScale(app);
+  updateDotSize(app);
 }
 
 void InitModel(App *app) {
@@ -98,7 +111,7 @@ void InitModel(App *app) {
   app->scene.model.scale = scale;
   // MODEL VERTICES
   app->scene.model.vertices.color = DARKPURPLE;
-  app->scene.model.vertices.size = 2;
+  app->scene.model.vertices.size = 1;
   app->scene.model.vertices.viewType = SQUARE_POINTS;
   app->scene.model.vertices.visible = true;
   // MODEL WIRES
