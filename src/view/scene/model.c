@@ -1,21 +1,5 @@
 #include "../../s21_3d_viewer.h"
 
-// void selectModelHandler(App *app) {
-//   if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-//     if (GetRayCollisionBox(GetMouseRay(GetMousePosition(), app->scene.camera), app->scene.model.bounds).hit) {
-//       app->scene.model.selected = !app->scene.model.selected;
-//     } else {
-//       app->scene.model.selected = false;
-//     }
-//   }
-// }
-
-// void drawBounds(App *app) {
-//   if (app->scene.model.selected) {
-//     DrawBoundingBox(app->scene.model.bounds, GREEN);
-//   }
-// }
-
 void updateModelPosition(App *app) {
   if (app->ui.position_x.input.updated == true) {
     app->scene.model.position.x = GetDoubleValueFromInputText(app->ui.position_x.input);
@@ -67,51 +51,58 @@ void updateModelScale(App *app) {
   }
 }
 
+static void updateDotSize(App *app) {
+  if (app->ui.dotSize.input.updated == true) {
+    app->scene.model.vertices.size = GetDoubleValueFromInputText(app->ui.dotSize.input);
+    app->ui.dotSize.input.updated = false;
+  }
+}
+
 void DrawModelOnScene(App *app) {
-  // drawBounds(app);
   
   if (app->scene.model.vertices.visible == true) {
-    DrawModelDotsEx(
+    if (app->scene.model.vertices.viewType == SQUARE_POINTS) {
+      // TODO add square mode
+      DrawModelDotsEx(
+        app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
+        app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size
+      );
+    }
+    if (app->scene.model.vertices.viewType == CIRCLE_POINTS) {
+      // TODO add circle mode
+      DrawModelDotsEx(
+        app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
+        app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size
+      );
+    }
+  }
+  if (app->scene.model.wires.visible == true) {
+    DrawModelWiresEx(
       app->scene.model.rModel, 
       app->scene.model.position, 
       app->scene.model.rotation, 
       0.0f,
       app->scene.model.scale, 
-      app->scene.model.vertices.color,
-      app->scene.model.vertices.size
+      ColorAlpha(BLACK, 0.4)
     );
   }
-  DrawModelEx(
-    app->scene.model.rModel, 
-    app->scene.model.position, 
-    app->scene.model.rotation, 
-    0.0f,
-    app->scene.model.scale, 
-    ColorAlpha(BLACK, 0.4)
-  );
 }
 
 void UpdateModel(App *app) {
-  (void)app;
-  
-  // selectModelHandler(app);
   updateModelPosition(app);
   updateModelRotation(app);
   updateModelScale(app);
+  updateDotSize(app);
 }
 
 void InitModel(App *app) {
-  // Obj obj = { 0 };
-  // obj = ParseObj("assets/models/tyan.obj");
-  Model model = { 0 };
-  model = LoadModel("assets/models/cube.obj");
-  int edgeCount = GetEdgesCount("assets/models/cube.obj");
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
   Vector3 scale = { 1.0f, 1.0f, 1.0f };
-  // BoundingBox bounds = { 0 };
   // MODEL GENERAL
+  Model model = { 0 };
+  model = LoadModel("assets/models/cube.obj");
   app->scene.model.rModel = model;
-  app->scene.model.edgeCount = edgeCount;
+  app->scene.model.edgeCount = GetEdgesCount("assets/models/cube.obj");
   // app->scene.model.bounds = bounds;
   app->scene.model.selected = false;
   // MODEL TRANSFORMATION
@@ -123,4 +114,8 @@ void InitModel(App *app) {
   app->scene.model.vertices.size = 1;
   app->scene.model.vertices.viewType = SQUARE_POINTS;
   app->scene.model.vertices.visible = true;
+  // MODEL WIRES
+  app->scene.model.wires.color = LIGHTGRAY;
+  app->scene.model.wires.viewType = SOLID_LINES;
+  app->scene.model.wires.visible = false;
 }

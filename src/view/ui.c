@@ -177,7 +177,7 @@ void HandleKeys(App *app, InputText *input, int currentInputText) {
 }
 
 
-void HandleTransformButton(int type, SubmitButton *btn, TransformValue *transform) {
+void HandleIncreaseDecreaseButton(int type, SubmitButton *btn, InputTextWithButtons *transform) {
   if (CheckCollisionPointRec(GetMousePosition(), btn->area)) {
     btn->mouseOn = true;
   } else {

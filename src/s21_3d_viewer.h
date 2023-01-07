@@ -79,11 +79,17 @@ enum textInputs {
   TRANSFORM_SCALE_X,
   TRANSFORM_SCALE_Y,
   TRANSFORM_SCALE_Z,
+  POINT_SIZE,
+};
+
+enum wireTypes {
+  SOLID_LINES,
+  DASHED_LINES,
 };
 
 enum pointTypes {
   SQUARE_POINTS,
-  SPHERE_POINTS,
+  CIRCLE_POINTS,
 };
 
 enum transformButtonTypes {
@@ -97,27 +103,34 @@ typedef struct UploadButton {
   char fileNameToLoad[512];
 } UploadButton;
 
-typedef struct TransformValue {
+typedef struct InputTextWithButtons {
   InputText input;
   SubmitButton minusBtn;
   SubmitButton plusBtn;
-} TransformValue;
+} InputTextWithButtons;
 
 typedef struct UI {
   int currentInputText;
+  // upload ui
   UploadButton uploadBtn;
-  TransformValue position_x;
-  TransformValue position_y;
-  TransformValue position_z;
-  TransformValue rotation_x;
-  TransformValue rotation_y;
-  TransformValue rotation_z;
-  TransformValue scale_x;
-  TransformValue scale_y;
-  TransformValue scale_z;
-  
+  // transforn ui
+  InputTextWithButtons position_x;
+  InputTextWithButtons position_y;
+  InputTextWithButtons position_z;
+  InputTextWithButtons rotation_x;
+  InputTextWithButtons rotation_y;
+  InputTextWithButtons rotation_z;
+  InputTextWithButtons scale_x;
+  InputTextWithButtons scale_y;
+  InputTextWithButtons scale_z;
+  // camera ui
   SubmitButton perspectiveCamera;
   SubmitButton orthographicCamera;
+  // vertices ui
+  SubmitButton noViewButton;
+  SubmitButton circleViewButton;
+  SubmitButton squareViewButton;
+  InputTextWithButtons dotSize;
 } UI;
 
 typedef struct Icons {
@@ -125,26 +138,30 @@ typedef struct Icons {
 } Icons;
 
 typedef struct Settings {
-  // Font baseFont;
   Icons icons;
 } Settings;
+
+typedef struct Wires {
+  bool visible;
+  int viewType;
+  Color color;
+} Wires;
 
 typedef struct Vertices {
   bool visible;
   int viewType;
   Color color;
-  int size;
+  float size;
 } Vertices;
 
 typedef struct s21_model {
-  // Obj obj;
   Model rModel;
   bool selected;
-  // BoundingBox bounds;
   Vector3 position;
   Vector3 rotation;
   Vector3 scale;
   Vertices vertices;
+  Wires wires;
   int edgeCount;
 } s21_model;
 
@@ -161,10 +178,10 @@ typedef struct App {
 
 
 // view/ui.c
+void HandleIncreaseDecreaseButton(int type, SubmitButton *btn, InputTextWithButtons *transform);
 // SubmitButton
 void DrawSubmitButton(SubmitButton *btn);
 void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor, int fontSize);
-void HandleTransformButton(int type, SubmitButton *btn, TransformValue *transform);
 // IconButton
 void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgColor);
 void DrawIconButton(IconButton *btn);
@@ -204,5 +221,11 @@ void DrawInfo(App *app);
 void InitTransformPanel(App *app);
 void DrawTransformPanel(App *app);
 void UpdateTransformPanel(App *app);
+
+// view/scene/vertices.c
+void InitVerticesUI(App *app);
+void DrawVerticesUI(App *app);
+void UpdateVerticesUI(App *app);
+
 
 #endif  // __S21_3D_VIEWER_H_

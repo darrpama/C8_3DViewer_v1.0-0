@@ -1,6 +1,13 @@
 #include "../../s21_3d_viewer.h"
 
 void DrawCameraSettingsButtons(App *app) {
+  int width = TRANSFORM_PANEL_WIDTH;
+  int height = 85;
+  int left = GetScreenWidth() - 20 - width;
+  int top = 385;
+  DrawRectangle(left, top, width, height, Fade(LIGHTGRAY, 0.4f));
+  DrawRectangleLines(left, top, width, height, Fade(LIGHTGRAY, 0.8f));
+  DrawText("PROJECTION", left + 5, top + 5, 14, BLACK);
   DrawSubmitButton(&app->ui.perspectiveCamera);
   DrawSubmitButton(&app->ui.orthographicCamera);
 }
@@ -36,8 +43,8 @@ void UpdateCameraSettingsButtons(App *app) {
 }
 
 void InitCameraSettingsButtons(App *app) {
-  InitSubmitButton(&app->ui.orthographicCamera, (Rectangle){GetScreenWidth() - 185, 390, 140, 20}, "Orthographic", LIGHTGRAY, BLACK, 12);
-  InitSubmitButton(&app->ui.perspectiveCamera, (Rectangle){GetScreenWidth() - 185, 415, 140, 20}, "Perspective", LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.orthographicCamera, (Rectangle){GetScreenWidth() - 185, 410, 140, 20}, "Orthographic", LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.perspectiveCamera, (Rectangle){GetScreenWidth() - 185, 435, 140, 20}, "Perspective", LIGHTGRAY, BLACK, 12);
 }
 
 void InitCamera(App *app) {
