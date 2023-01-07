@@ -81,6 +81,11 @@ enum textInputs {
   TRANSFORM_SCALE_Z,
 };
 
+enum wireTypes {
+  SOLID_LINES,
+  DASHED_LINES,
+};
+
 enum pointTypes {
   SQUARE_POINTS,
   SPHERE_POINTS,
@@ -105,7 +110,9 @@ typedef struct TransformValue {
 
 typedef struct UI {
   int currentInputText;
+  // upload ui
   UploadButton uploadBtn;
+  // transforn ui
   TransformValue position_x;
   TransformValue position_y;
   TransformValue position_z;
@@ -115,9 +122,13 @@ typedef struct UI {
   TransformValue scale_x;
   TransformValue scale_y;
   TransformValue scale_z;
-  
+  // camera ui
   SubmitButton perspectiveCamera;
   SubmitButton orthographicCamera;
+  // vertices ui
+  SubmitButton noViewButton;
+  SubmitButton circleViewButton;
+  SubmitButton squareViewButton;
 } UI;
 
 typedef struct Icons {
@@ -128,6 +139,12 @@ typedef struct Settings {
   // Font baseFont;
   Icons icons;
 } Settings;
+
+typedef struct Wires {
+  bool visible;
+  int viewType;
+  Color color;
+} Wires;
 
 typedef struct Vertices {
   bool visible;
@@ -145,6 +162,7 @@ typedef struct s21_model {
   Vector3 rotation;
   Vector3 scale;
   Vertices vertices;
+  Wires wires;
   int edgeCount;
 } s21_model;
 
@@ -204,5 +222,10 @@ void DrawInfo(App *app);
 void InitTransformPanel(App *app);
 void DrawTransformPanel(App *app);
 void UpdateTransformPanel(App *app);
+
+// view/scene/vertices.c
+void DrawVerticesUI(App *app);
+void InitVerticesUI(App *app);
+
 
 #endif  // __S21_3D_VIEWER_H_

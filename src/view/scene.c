@@ -12,6 +12,7 @@ void DrawScene(App *app) {
   DrawInfo(app);
   DrawTransformPanel(app);
   DrawCameraSettingsButtons(app);
+  DrawVerticesUI(app);
 }
 
 void UpdateScene(App *app) {
@@ -26,4 +27,5 @@ void InitScene(App *app) {
   InitCamera(app);
   InitUploadFile(app);
   InitTransformPanel(app);
+  InitVerticesUI(app);
 }

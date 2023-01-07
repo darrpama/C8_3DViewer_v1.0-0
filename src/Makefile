@@ -25,6 +25,7 @@ SRC=$(PROJECT_NAME).c \
 	view/scene/model.c \
 	view/scene/transform_panel.c \
 	view/scene/upload_file.c \
+	view/scene/vertices.c \
 	view/ui.c
 
 all: clean $(PROJECT_NAME) 
