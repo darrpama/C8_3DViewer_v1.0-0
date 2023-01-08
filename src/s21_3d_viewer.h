@@ -124,6 +124,8 @@ typedef struct UI {
   SubmitButton circleViewButton;
   SubmitButton squareViewButton;
   InputTextWithButtons dotSize;
+  // gif ui
+  IconButton saveGifBtn;
 } UI;
 
 typedef struct Icons {
@@ -220,5 +222,10 @@ void InitVerticesUI(App *app);
 void DrawVerticesUI(App *app);
 void UpdateVerticesUI(App *app);
 
+// view/scene/save_gif.c
+void InitSaveGifButton(App *app);
+void DrawSaveGifButton(App *app);
+void UpdateSaveGifButton(App *app);
+void SaveGif(App *app, int frames);
 
 #endif  // __S21_3D_VIEWER_H_
