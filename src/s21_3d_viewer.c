@@ -12,6 +12,8 @@ void InitApp(App *app) {
 int main() {
   App app;
   InitApp(&app);
+  
+  SetConfigFlags(FLAG_MSAA_4X_HINT);
 
   while (!WindowShouldClose()) {
   

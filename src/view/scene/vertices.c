@@ -46,6 +46,16 @@ void circleViewButtonHandler(App *app) {
     app->scene.model.vertices.viewType = CIRCLE_POINTS;
   }
 }
+void squareViewButtonHandler(App *app) {
+  if (CheckCollisionPointRec(GetMousePosition(), app->ui.squareViewButton.area))
+    app->ui.squareViewButton.mouseOn = true;
+  else
+    app->ui.squareViewButton.mouseOn = false;
+  if (app->ui.squareViewButton.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+    app->scene.model.vertices.visible = true;
+    app->scene.model.vertices.viewType = SQUARE_POINTS;
+  }
+}
 
 static void updateDotSize(App *app) {
   HandleInputText(&app->ui.dotSize.input, &app->ui.currentInputText);
@@ -57,7 +67,7 @@ static void updateDotSize(App *app) {
 void updateDotButtons(App *app) {
   noViewButtonHandler(app);
   circleViewButtonHandler(app);
-  // squareViewButtonHandler(app);
+  squareViewButtonHandler(app);
 }
 
 void initVerticeViewButtons(App *app) {

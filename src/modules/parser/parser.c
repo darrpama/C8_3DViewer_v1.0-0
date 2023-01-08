@@ -270,13 +270,10 @@ int numPlaces (int n) {
 
 int GetEdgesCount(const char *fileName) {
     Obj obj = ParseObj(fileName);
-    printf("\n\nnum_face_num_verts: %d\n", obj.num_face_num_verts);
-    printf("num_faces: %d\n", obj.num_faces);
     int k = 0;
     int a = 0;
     int b = 0;
 
-    // unsigned int edges[obj.num_face_num_verts-1];
     char **edges;
     edges = malloc((obj.num_face_num_verts) * sizeof(char *));
     
@@ -284,7 +281,6 @@ int GetEdgesCount(const char *fileName) {
 
     for (unsigned int i = 0; i < obj.num_faces; i++)
     {
-        
         for (int j = 0; j < obj.face_num_verts[i]; j++)
         {
             a = obj.faces[k].v_idx + 1;
