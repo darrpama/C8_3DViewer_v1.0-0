@@ -42,6 +42,7 @@ void DrawScene(App *app) {
   DrawCameraSettingsButtons(app);
   DrawVerticesUI(app);
   DrawSaveGifButton(app); // gif button
+  DrawWiresUI(app);
 }
 
 void UpdateScene(App *app) {
@@ -54,6 +55,7 @@ void UpdateScene(App *app) {
   UpdateCameraSettingsButtons(app);
   UpdateVerticesUI(app);
   UpdateSaveGifButton(app); // gif button
+  UpdateWiresUI(app);
 }
 
 void InitScene(App *app) {
@@ -63,4 +65,5 @@ void InitScene(App *app) {
   InitTransformPanel(app);
   InitVerticesUI(app);
   InitSaveGifButton(app); // gif button
+  InitWiresUI(app);
 }
