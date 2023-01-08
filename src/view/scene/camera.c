@@ -3,8 +3,8 @@
 void DrawCameraSettingsButtons(App *app) {
   int width = TRANSFORM_PANEL_WIDTH;
   int height = 85;
-  int left = GetScreenWidth() - 20 - width;
-  int top = 385;
+  int left = GetScreenWidth() - 25 - (width + width);
+  int top = 5;
   DrawRectangle(left, top, width, height, Fade(LIGHTGRAY, 0.4f));
   DrawRectangleLines(left, top, width, height, Fade(LIGHTGRAY, 0.8f));
   DrawText("PROJECTION", left + 5, top + 5, 14, BLACK);
@@ -43,8 +43,9 @@ void UpdateCameraSettingsButtons(App *app) {
 }
 
 void InitCameraSettingsButtons(App *app) {
-  InitSubmitButton(&app->ui.orthographicCamera, (Rectangle){GetScreenWidth() - 185, 410, 140, 20}, "Orthographic", LIGHTGRAY, BLACK, 12);
-  InitSubmitButton(&app->ui.perspectiveCamera, (Rectangle){GetScreenWidth() - 185, 435, 140, 20}, "Perspective", LIGHTGRAY, BLACK, 12);
+  int top = 30;
+  InitSubmitButton(&app->ui.orthographicCamera, (Rectangle){GetScreenWidth() - 185 - TRANSFORM_PANEL_WIDTH, top, 140, 20}, "Orthographic", LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.perspectiveCamera, (Rectangle){GetScreenWidth() - 185 - TRANSFORM_PANEL_WIDTH, top + 25, 140, 20}, "Perspective", LIGHTGRAY, BLACK, 12);
 }
 
 void InitCamera(App *app) {

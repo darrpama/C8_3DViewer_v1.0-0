@@ -85,7 +85,7 @@ void DrawTransformPanel(App *app) {
   int width = TRANSFORM_PANEL_WIDTH;
   int height = TRANSFORM_PANEL_HEIGHT;
   int left = GetScreenWidth() - 20 - width;
-  int top = 20;
+  int top = 5;
   DrawRectangle(left, top, width, height, Fade(LIGHTGRAY, 0.4f));
   DrawRectangleLines(left, top, width, height, Fade(LIGHTGRAY, 0.8f));
   DrawText("TRANSFORM", left + 5, top + 5, 14, BLACK);
@@ -97,7 +97,7 @@ void DrawTransformPanel(App *app) {
 void initTransformPosition(App *app) {
 
   int inputTextWidth = 100;
-  int inputTextTop = 65;
+  int inputTextTop = 50;
 
   InitSubmitButton(&app->ui.position_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitSubmitButton(&app->ui.position_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
@@ -134,7 +134,7 @@ void initTransformPosition(App *app) {
 
 void initTransformRotation(App *app) {
   int inputTextWidth = 100;
-  int inputTextTop = 175;
+  int inputTextTop = 160;
 
   InitSubmitButton(&app->ui.rotation_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitSubmitButton(&app->ui.rotation_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
@@ -171,7 +171,7 @@ void initTransformRotation(App *app) {
 
 void initTransformScale(App *app) {
   int inputTextWidth = 100;
-  int inputTextTop = 285;
+  int inputTextTop = 270;
   
   InitSubmitButton(&app->ui.scale_x.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitSubmitButton(&app->ui.scale_x.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);

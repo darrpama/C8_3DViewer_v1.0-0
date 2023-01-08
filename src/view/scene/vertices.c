@@ -3,9 +3,9 @@
 void drawVerticePanel(App *app) {
   (void)app;
   int width = TRANSFORM_PANEL_WIDTH;
-  int height = 220;
+  int height = 200;
   int left = GetScreenWidth() - 20 - width;
-  int top = 475;
+  int top = 370;
   DrawRectangle(left, top, width, height, Fade(LIGHTGRAY, 0.4f));
   DrawRectangleLines(left, top, width, height, Fade(LIGHTGRAY, 0.8f));
   DrawText("POINTS", left + 5, top + 5, 14, BLACK);
@@ -19,7 +19,7 @@ void drawVerticeViewButtons(App *app) {
 
 void drawDotSizeInput(App *app) {
   int width = TRANSFORM_PANEL_WIDTH;
-  int top = 580;
+  int top = 470;
   int left = GetScreenWidth() - 20 - width;
   DrawText("Point size", left + TRANSFORM_PANEL_WIDTH - 120, top, 14, Fade(BLACK, 0.5f));
   DrawSubmitButton(&app->ui.dotSize.minusBtn);
@@ -29,7 +29,7 @@ void drawDotSizeInput(App *app) {
 
 void drawDotColors(App *app) {
   int width = TRANSFORM_PANEL_WIDTH;
-  int top = 630;
+  int top = 515;
   int left = GetScreenWidth() - 20 - width;
   DrawText("Point colors", left + TRANSFORM_PANEL_WIDTH - 120, top, 14, Fade(BLACK, 0.5f));
   DrawSubmitButton(&app->ui.colorRed);
@@ -40,33 +40,14 @@ void drawDotColors(App *app) {
   DrawSubmitButton(&app->ui.colorBlack);
 }
 
-void noViewButtonHandler(App *app) {
-  if (CheckCollisionPointRec(GetMousePosition(), app->ui.noViewButton.area))
-    app->ui.noViewButton.mouseOn = true;
+void changeViewButtonHandler(App *app, SubmitButton btn, bool visible, int viewType) {
+  if (CheckCollisionPointRec(GetMousePosition(), btn.area))
+    btn.mouseOn = true;
   else
-    app->ui.noViewButton.mouseOn = false;
-  if (app->ui.noViewButton.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-    app->scene.model.vertices.visible = false;
-  }
-}
-void circleViewButtonHandler(App *app) {
-  if (CheckCollisionPointRec(GetMousePosition(), app->ui.circleViewButton.area))
-    app->ui.circleViewButton.mouseOn = true;
-  else
-    app->ui.circleViewButton.mouseOn = false;
-  if (app->ui.circleViewButton.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-    app->scene.model.vertices.visible = true;
-    app->scene.model.vertices.viewType = CIRCLE_POINTS;
-  }
-}
-void squareViewButtonHandler(App *app) {
-  if (CheckCollisionPointRec(GetMousePosition(), app->ui.squareViewButton.area))
-    app->ui.squareViewButton.mouseOn = true;
-  else
-    app->ui.squareViewButton.mouseOn = false;
-  if (app->ui.squareViewButton.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-    app->scene.model.vertices.visible = true;
-    app->scene.model.vertices.viewType = SQUARE_POINTS;
+    btn.mouseOn = false;
+  if (btn.mouseOn && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+    app->scene.model.vertices.visible = visible;
+    app->scene.model.vertices.viewType = viewType;
   }
 }
 
@@ -97,13 +78,13 @@ static void updateDotColors(App *app) {
 }
 
 void updateDotButtons(App *app) {
-  noViewButtonHandler(app);
-  circleViewButtonHandler(app);
-  squareViewButtonHandler(app);
+  changeViewButtonHandler(app, app->ui.noViewButton, false, CIRCLE_POINTS);
+  changeViewButtonHandler(app, app->ui.circleViewButton, true, CIRCLE_POINTS);
+  changeViewButtonHandler(app, app->ui.squareViewButton, true, SQUARE_POINTS);
 }
 
 void initVerticeViewButtons(App *app) {
-  int top = 500;
+  int top = 394;
   InitSubmitButton(&app->ui.noViewButton, (Rectangle){GetScreenWidth() - 185, top, 140, 20}, "No", LIGHTGRAY, BLACK, 12);
   InitSubmitButton(&app->ui.circleViewButton, (Rectangle){GetScreenWidth() - 185, top + 25, 140, 20}, "Circle", LIGHTGRAY, BLACK, 12);
   InitSubmitButton(&app->ui.squareViewButton, (Rectangle){GetScreenWidth() - 185, top + 50, 140, 20}, "Square", LIGHTGRAY, BLACK, 12);
@@ -111,7 +92,7 @@ void initVerticeViewButtons(App *app) {
 
 void initDotSizeUI(App *app) {
   int inputTextWidth = 100;
-  int inputTextTop = 600;
+  int inputTextTop = 485;
 
   InitSubmitButton(&app->ui.dotSize.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
   InitSubmitButton(&app->ui.dotSize.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
@@ -126,7 +107,7 @@ void initDotSizeUI(App *app) {
 
 void initDotColors(App *app) {
   int inputTextWidth = 100;
-  int inputTextTop = 650;
+  int inputTextTop = 535;
 
   InitSubmitButton(&app->ui.colorRed, (Rectangle){ GetScreenWidth() - inputTextWidth - 95, inputTextTop, 24, 24 }, " ", ColorAlpha(RED, 0.7), BLACK, 12);
   InitSubmitButton(&app->ui.colorGreen, (Rectangle){ GetScreenWidth() - inputTextWidth - 95 + 26, inputTextTop, 24, 24 }, " ", ColorAlpha(GREEN, 0.7), BLACK, 12);
