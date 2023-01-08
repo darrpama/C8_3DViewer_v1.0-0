@@ -61,21 +61,13 @@ static void updateDotSize(App *app) {
 void DrawModelOnScene(App *app) {
   
   if (app->scene.model.vertices.visible == true) {
-    if (app->scene.model.vertices.viewType == SQUARE_POINTS) {
-      // TODO add square mode
-      DrawModelDotsEx(
-        app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
-        app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size
-      );
-    }
-    if (app->scene.model.vertices.viewType == CIRCLE_POINTS) {
-      // TODO add circle mode
-      DrawModelDotsEx(
-        app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
-        app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size
-      );
-    }
+    DrawModelDotsEx(
+      app->scene.model.rModel, app->scene.model.position, app->scene.model.rotation, 0.0f,
+      app->scene.model.scale, app->scene.model.vertices.color, app->scene.model.vertices.size, 
+      app->scene.model.vertices.viewType
+    );
   }
+
   if (app->scene.model.wires.visible == true) {
     DrawModelWiresEx(
       app->scene.model.rModel, 
@@ -84,6 +76,17 @@ void DrawModelOnScene(App *app) {
       0.0f,
       app->scene.model.scale, 
       ColorAlpha(BLACK, 0.4)
+    );
+  }
+
+  if (app->scene.model.wires.visible == true) {
+    DrawModelEx(
+      app->scene.model.rModel, 
+      app->scene.model.position, 
+      app->scene.model.rotation, 
+      0.0f,
+      app->scene.model.scale, 
+      ColorAlpha(PINK, 1)
     );
   }
 }
@@ -97,7 +100,7 @@ void UpdateModel(App *app) {
 
 void InitModel(App *app) {
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
-  Vector3 scale = { 1.0f, 1.0f, 1.0f };
+  Vector3 scale = { 25.0f, 25.0f, 25.0f };
   // MODEL GENERAL
   Model model = { 0 };
   model = LoadModel("assets/models/cube.obj");
@@ -110,9 +113,9 @@ void InitModel(App *app) {
   app->scene.model.rotation = default_val;
   app->scene.model.scale = scale;
   // MODEL VERTICES
-  app->scene.model.vertices.color = DARKPURPLE;
-  app->scene.model.vertices.size = 1;
-  app->scene.model.vertices.viewType = SQUARE_POINTS;
+  app->scene.model.vertices.color = ColorAlpha(DARKPURPLE, 0.5);
+  app->scene.model.vertices.size = 20;
+  app->scene.model.vertices.viewType = CIRCLE_POINTS;
   app->scene.model.vertices.visible = true;
   // MODEL WIRES
   app->scene.model.wires.color = LIGHTGRAY;
