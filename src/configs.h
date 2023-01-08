@@ -11,7 +11,7 @@
 // FONTS (deprecated)
 #define BASE_FONT "./assets/fonts/RobotoSlab-Regular.ttf"
 
-// CALC
+// SIZES
 #ifdef __linux__
   #define APP_SCREEN_WIDTH 1366
   #define APP_SCREEN_HEIGHT 768
@@ -19,6 +19,9 @@
   #define APP_SCREEN_WIDTH 1366
   #define APP_SCREEN_HEIGHT 768
 #endif
+
+#define GIF_SCREEN_WIDTH 640
+#define GIF_SCREEN_HEIGHT 480
 
 
 // KEYBOARDS
