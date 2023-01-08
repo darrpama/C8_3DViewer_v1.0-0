@@ -124,8 +124,12 @@ typedef struct UI {
   SubmitButton circleViewButton;
   SubmitButton squareViewButton;
   InputTextWithButtons dotSize;
-  // gif ui
-  IconButton saveGifBtn;
+  SubmitButton colorRed;
+  SubmitButton colorGreen;
+  SubmitButton colorBlue;
+  SubmitButton colorViolet;
+  SubmitButton colorGray;
+  SubmitButton colorBlack;
 } UI;
 
 typedef struct Icons {

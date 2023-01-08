@@ -623,8 +623,6 @@ RLAPI void rlDisableScissorTest(void);                  // Disable scissor test
 RLAPI void rlScissor(int x, int y, int width, int height); // Scissor test
 RLAPI void rlEnableWireMode(void);                      // Enable wire mode
 RLAPI void rlDisableWireMode(void);                     // Disable wire mode
-RLAPI void rlEnableDotMode(void);                       // Enable dot mode
-RLAPI void rlDisableDotMode(void);                      // Disable dot mode
 RLAPI void rlSetLineWidth(float width);                 // Set the line drawing width
 RLAPI float rlGetLineWidth(void);                       // Get the line drawing width
 RLAPI void rlEnableSmoothLines(void);                   // Enable line aliasing
@@ -1752,24 +1750,6 @@ void rlDisableWireMode(void)
 #endif
 }
 
-// Enable dot mode
-void rlEnableDotMode(void)
-{
-#if defined(GRAPHICS_API_OPENGL_11) || defined(GRAPHICS_API_OPENGL_33)
-    // NOTE: glPolygonMode() not available on OpenGL ES
-    glPolygonMode(GL_FRONT_AND_BACK, GL_POINT);
-#endif
-}
-
-// Disable dot mode
-void rlDisableDotMode(void)
-{
-#if defined(GRAPHICS_API_OPENGL_11) || defined(GRAPHICS_API_OPENGL_33)
-    // NOTE: glPolygonMode() not available on OpenGL ES
-    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-#endif
-}
-
 // Set the line drawing width
 void rlSetLineWidth(float width) { glLineWidth(width); }
 
@@ -2063,7 +2043,7 @@ void rlglInit(int width, int height)
     // Init state: Blending mode
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);      // Color blending function (how colors are mixed)
     glEnable(GL_BLEND);                                     // Enable color blending (required to work with transparencies)
-
+    
     // Init state: Culling
     // NOTE: All shapes/models triangles are drawn CCW
     glCullFace(GL_BACK);                                    // Cull the back face (default)
