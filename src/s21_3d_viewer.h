@@ -120,18 +120,28 @@ typedef struct UI {
   SubmitButton perspectiveCamera;
   SubmitButton orthographicCamera;
   // vertices ui
-  SubmitButton noViewButton;
+  SubmitButton noPointViewButton;
   SubmitButton circleViewButton;
   SubmitButton squareViewButton;
   InputTextWithButtons dotSize;
+  SubmitButton pointColorRed;
+  SubmitButton pointColorGreen;
+  SubmitButton pointColorBlue;
+  SubmitButton pointColorViolet;
+  SubmitButton pointColorGray;
+  SubmitButton pointColorBlack;
+  // wires ui
+  SubmitButton noWireViewButton;
+  SubmitButton solidViewButton;
+  SubmitButton dashedViewButton;
+  SubmitButton wireColorRed;
+  SubmitButton wireColorGreen;
+  SubmitButton wireColorBlue;
+  SubmitButton wireColorViolet;
+  SubmitButton wireColorGray;
+  SubmitButton wireColorBlack;
   // gif ui
   IconButton saveGifBtn;
-  SubmitButton colorRed;
-  SubmitButton colorGreen;
-  SubmitButton colorBlue;
-  SubmitButton colorViolet;
-  SubmitButton colorGray;
-  SubmitButton colorBlack;
 } UI;
 
 typedef struct Icons {
@@ -227,6 +237,11 @@ void UpdateTransformPanel(App *app);
 void InitVerticesUI(App *app);
 void DrawVerticesUI(App *app);
 void UpdateVerticesUI(App *app);
+
+// view/scene/wires.c
+void UpdateWiresUI(App *app);
+void DrawWiresUI(App *app);
+void InitWiresUI(App *app);
 
 // view/scene/save_gif.c
 void InitSaveGifButton(App *app);

@@ -14,13 +14,26 @@ void rlDisableDotMode(void)
     glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 }
 
+// Enable dashed wires mode
+void rlEnableDashedMode(void)
+{
+    glLineWidth(5);
+    glEnable(GL_LINE_SMOOTH);
+    glEnable(GL_ALIASED_LINE_WIDTH_RANGE);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE_STRIP);
+}
+
+// Enable dashed wires mode
+void rlDisableDashedMode(void)
+{
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+}
+
 void rlEnableSmoothDots(void)
 {
     glEnable(GL_POINT_SMOOTH);
     glHint(GL_POINT_SMOOTH_HINT, GL_NICEST); 
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); 
-    // int res = glIsEnabled(GL_POINT_SMOOTH);
-    // printf("%d\n", res); // 
 }
 
 // Disable line aliasing
@@ -50,4 +63,14 @@ void DrawModelDotsEx(Model model, Vector3 position, Vector3 rotationAxis, float 
     
     if (dotType == 1) { rlDisableSmoothDots(); }
     rlDisableDotMode();
+}
+
+// Draw a model wires dashed with extended parameters
+void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint)
+{
+    rlEnableDashedMode();
+    
+    DrawModelEx(model, position, rotationAxis, rotationAngle, scale, ColorAlpha(tint,0.9));
+    
+    rlDisableDashedMode();
 }

@@ -16,13 +16,17 @@
 #define GL_COORD_REPLACE 0x8862
 #define GL_TEXTURE_ENV 0x2300
 #define GL_TEXTURE_ENV_MODE 0x2200
+#define GL_LINE_STIPPLE 0x0B24
 
 void rlEnableDotMode(int size);
 void rlDisableDotMode(void);
 void rlEnableSmoothDots(void);
 void rlDisableSmoothDots(void);
+void rlEnableDashedMode(void);
+void rlDisableDashedMode(void);
 
 void DrawModelDots(Model model, Vector3 position, float scale, Color tint, int size, int dotType);
 void DrawModelDotsEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size, int dotType);
+void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint);
 
 #endif  // __RLWRAPPER_H

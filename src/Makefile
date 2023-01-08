@@ -28,6 +28,7 @@ SRC=$(PROJECT_NAME).c \
 	view/scene/transform_panel.c \
 	view/scene/upload_file.c \
 	view/scene/vertices.c \
+	view/scene/wires.c \
 	view/ui.c \
 	view/scene/save_gif.c
 
