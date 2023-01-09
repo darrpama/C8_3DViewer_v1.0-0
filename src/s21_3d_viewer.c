@@ -13,6 +13,7 @@ void ClearMemory(App *app) {
   UnloadModel(app->scene.model.rModel);
   UnloadTexture(app->ui.saveGifBtn.icon);
   UnloadTexture(app->ui.uploadBtn.button.icon);
+  UnloadTexture(app->ui.saveGifBtn.icon);
 }
 
 int main() {

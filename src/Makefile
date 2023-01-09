@@ -44,6 +44,19 @@ TEST_SRC_O =\
 all: clean $(PROJECT_NAME) 
 	./$(PROJECT_NAME)
 
+dist:
+	rm -rf ./../s21_3d_viewer_1_0/
+	mkdir ./../s21_3d_viewer_1_0/
+	cp -a ./ ./../s21_3d_viewer_1_0
+	tar -cvzf ./../s21_3d_viewer_1_0.tar.gz -C ./../s21_3d_viewer_1_0 .
+	rm -rf ./../s21_3d_viewer_1_0/
+
+uninstall:
+	rm -rf ~/Desktop/s21_3d_viewer
+
+install: $(PROJECT_NAME)
+	cp $(PROJECT_NAME) ~/Desktop
+
 $(PROJECT_NAME): 
 	$(CC) $(FLAGS) $(LIBS2) $(RAYLIB) $(SRC) -o $(PROJECT_NAME) $(LIBS)
 
@@ -63,5 +76,14 @@ test_lib.a: parser.o helpers.o
 	ar rcs test_lib.a parser.o helpers.o
 	ranlib test_lib.a
 
+gcov_report:
+	$(CC) $(FLAGS) --coverage modules/parser/parser.c modules/parser/helpers.c tests/unit_tests.c -o gcov_report -lcheck
+	./gcov_report
+	lcov -t "./gcov_report" -o gcov_report.info --no-external -c -d .
+	genhtml -o eval_report gcov_report.info
+	open ./gcov_report/index.html
+
 clean:
 	rm -rf s21_3d_viewer
+	rm -rf *.o *.gch *.a *.gcda *.gcno *.info gcov_report report \
+	CPPLINT.cfg *.dSYM evaluate main test gcov_test eval-test
