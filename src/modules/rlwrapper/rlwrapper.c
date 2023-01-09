@@ -17,6 +17,7 @@ void rlDisableDotMode(void)
 // Enable dashed wires mode
 void rlEnableDashedMode(void)
 {
+    glEnable(GL_ALIASED_LINE_WIDTH_RANGE);
     glLineWidth(5);
     glEnable(GL_LINE_SMOOTH);
     glEnable(GL_ALIASED_LINE_WIDTH_RANGE);
@@ -66,10 +67,22 @@ void DrawModelDotsEx(Model model, Vector3 position, Vector3 rotationAxis, float 
 }
 
 // Draw a model wires dashed with extended parameters
-void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint)
+void DrawModelSolidWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size)
+{
+    // GLfloat lineWidthRange[2] = {0.0f, 0.0f};
+    // glGetFloatv(GL_ALIASED_LINE_WIDTH_RANGE, lineWidthRange);
+    // printf("0: %f; ", lineWidthRange[0]);
+    // printf("1: %f;\n", lineWidthRange[1]);
+    
+    glLineWidth(size);
+    DrawModelWiresEx(model, position, rotationAxis, rotationAngle, scale, ColorAlpha(tint,0.9));
+
+}
+
+void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size)
 {
     rlEnableDashedMode();
-    
+    glLineWidth(size);
     DrawModelEx(model, position, rotationAxis, rotationAngle, scale, ColorAlpha(tint,0.9));
     
     rlDisableDashedMode();

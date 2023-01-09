@@ -27,6 +27,7 @@ void rlDisableDashedMode(void);
 
 void DrawModelDots(Model model, Vector3 position, float scale, Color tint, int size, int dotType);
 void DrawModelDotsEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size, int dotType);
-void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint);
+void DrawModelSolidWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size);
+void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size);
 
 #endif  // __RLWRAPPER_H

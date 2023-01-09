@@ -294,6 +294,12 @@ void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgCol
 
 void DrawSubmitButton(SubmitButton *btn) {
   DrawRectangleRounded(btn->area, 1.0, 8, btn->bgColor);
+  float x = btn->area.x - 0.5;
+  float y = btn->area.y - 0.5;
+  float width = btn->area.width + 1;
+  float height = btn->area.height + 1;
+  DrawRectangleRounded(btn->area, 1.0, 8, btn->bgColor);
+  DrawRectangleRoundedLines((Rectangle){x,y,width,height}, 1.0, 8, 1, ColorAlpha(GRAY, 0.7));
   DrawText(btn->text, btn->textPosition.x, btn->textPosition.y, btn->fontSize, ColorAlpha(btn->textColor, 0.8));
 }
 

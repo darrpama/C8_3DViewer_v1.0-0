@@ -29,7 +29,7 @@ void handleTransformPanelTabPressed(App *app) {
 }
 
 void DrawScene(App *app) {
-  ClearBackground(GetColor(GuiGetStyle(DEFAULT, BACKGROUND_COLOR)));
+  ClearBackground(app->settings.bgColor);
 
   BeginMode3D(app->scene.camera);
     DrawGrid(20, 10.0f);
@@ -43,6 +43,7 @@ void DrawScene(App *app) {
   DrawVerticesUI(app);
   DrawSaveGifButton(app); // gif button
   DrawWiresUI(app);
+  DrawBgColor(app);
 }
 
 void UpdateScene(App *app) {
@@ -56,9 +57,11 @@ void UpdateScene(App *app) {
   UpdateVerticesUI(app);
   UpdateSaveGifButton(app); // gif button
   UpdateWiresUI(app);
+  UpdateBgColor(app);
 }
 
 void InitScene(App *app) {
+  InitBgColor(app);
   InitModel(app);
   InitCamera(app);
   InitUploadFile(app);
