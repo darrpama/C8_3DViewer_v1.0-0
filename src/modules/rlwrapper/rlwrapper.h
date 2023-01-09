@@ -2,9 +2,9 @@
 #define __RLWRAPPER_H
 
 // ray libs
-#include "../../libs/raylib/raylib.h"
-#include "../../libs/raygui/raygui.h"
 #include "../../libs/gui_file_dialog/gui_file_dialog.h"
+#include "../../libs/raygui/raygui.h"
+#include "../../libs/raylib/raylib.h"
 #include "../../libs/raymath/raymath.h"
 #include "../../libs/rlgl/rlgl.h"
 #include "glad.h"
@@ -25,9 +25,16 @@ void rlDisableSmoothDots(void);
 void rlEnableDashedMode(void);
 void rlDisableDashedMode(void);
 
-void DrawModelDots(Model model, Vector3 position, float scale, Color tint, int size, int dotType);
-void DrawModelDotsEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size, int dotType);
-void DrawModelSolidWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size);
-void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis, float rotationAngle, Vector3 scale, Color tint, int size);
+void DrawModelDots(Model model, Vector3 position, float scale, Color tint,
+                   int size, int dotType);
+void DrawModelDotsEx(Model model, Vector3 position, Vector3 rotationAxis,
+                     float rotationAngle, Vector3 scale, Color tint, int size,
+                     int dotType);
+void DrawModelSolidWiresEx(Model model, Vector3 position, Vector3 rotationAxis,
+                           float rotationAngle, Vector3 scale, Color tint,
+                           int size);
+void DrawModelDashedWiresEx(Model model, Vector3 position, Vector3 rotationAxis,
+                            float rotationAngle, Vector3 scale, Color tint,
+                            int size);
 
 #endif  // __RLWRAPPER_H

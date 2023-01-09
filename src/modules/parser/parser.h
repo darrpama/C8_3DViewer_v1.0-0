@@ -1,10 +1,10 @@
 #ifndef __PARSER_H
 #define __PARSER_H
 
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <assert.h>
 
 #define MAX_FACES_PER_F_LINE (16)
 #define HASH_TABLE_DEFAULT_SIZE 10
@@ -12,7 +12,9 @@
 #define IS_DIGIT(x) ((unsigned int)((x) - '0') < (unsigned int)(10))
 #define IS_NEW_LINE(x) (((x) == '\r') || ((x) == '\n') || ((x) == '\0'))
 
-typedef struct { int v_idx; } vertex_index_t;
+typedef struct {
+  int v_idx;
+} vertex_index_t;
 
 typedef struct {
   float x;

@@ -18,7 +18,9 @@
  *  - ON_DEMAND = False
  *
  * Commandline:
- *    --api='gl:core=4.3' --extensions='GL_ARB_ES2_compatibility,GL_ARB_ES3_1_compatibility,GL_ARB_ES3_2_compatibility,GL_ARB_ES3_compatibility,GL_ARB_blend_func_extended,GL_ARB_buffer_storage,GL_ARB_clear_buffer_object,GL_ARB_clear_texture,GL_ARB_color_buffer_float,GL_ARB_compatibility,GL_ARB_compressed_texture_pixel_storage,GL_ARB_compute_shader,GL_ARB_compute_variable_group_size,GL_ARB_copy_buffer,GL_ARB_copy_image,GL_ARB_debug_output,GL_ARB_depth_buffer_float,GL_ARB_depth_clamp,GL_ARB_depth_texture,GL_ARB_direct_state_access,GL_ARB_draw_buffers,GL_ARB_draw_buffers_blend,GL_ARB_draw_elements_base_vertex,GL_ARB_draw_indirect,GL_ARB_draw_instanced,GL_ARB_enhanced_layouts,GL_ARB_explicit_attrib_location,GL_ARB_explicit_uniform_location,GL_ARB_fragment_coord_conventions,GL_ARB_fragment_layer_viewport,GL_ARB_fragment_program,GL_ARB_fragment_program_shadow,GL_ARB_fragment_shader,GL_ARB_fragment_shader_interlock,GL_ARB_framebuffer_no_attachments,GL_ARB_framebuffer_object,GL_ARB_framebuffer_sRGB,GL_ARB_geometry_shader4,GL_ARB_get_program_binary,GL_ARB_get_texture_sub_image,GL_ARB_gl_spirv,GL_ARB_gpu_shader5,GL_ARB_gpu_shader_fp64,GL_ARB_gpu_shader_int64,GL_ARB_half_float_pixel,GL_ARB_half_float_vertex,GL_ARB_instanced_arrays,GL_ARB_internalformat_query,GL_ARB_internalformat_query2,GL_ARB_map_buffer_range,GL_ARB_multi_bind,GL_ARB_multi_draw_indirect,GL_ARB_multisample,GL_ARB_multitexture,GL_ARB_occlusion_query,GL_ARB_occlusion_query2,GL_ARB_pipeline_statistics_query,GL_ARB_query_buffer_object,GL_ARB_sample_locations,GL_ARB_sample_shading,GL_ARB_seamless_cube_map,GL_ARB_seamless_cubemap_per_texture,GL_ARB_shader_atomic_counter_ops,GL_ARB_shader_atomic_counters,GL_ARB_shader_bit_encoding,GL_ARB_shader_clock,GL_ARB_shader_image_load_store,GL_ARB_shader_image_size,GL_ARB_shader_objects,GL_ARB_shader_storage_buffer_object,GL_ARB_shader_texture_lod,GL_ARB_shading_language_100,GL_ARB_shading_language_420pack,GL_ARB_shading_language_include,GL_ARB_shading_language_packing,GL_ARB_spirv_extensions,GL_ARB_tessellation_shader,GL_ARB_texture_border_clamp,GL_ARB_texture_buffer_object_rgb32,GL_ARB_texture_compression,GL_ARB_texture_cube_map,GL_ARB_texture_cube_map_array,GL_ARB_texture_env_add,GL_ARB_texture_filter_anisotropic,GL_ARB_texture_filter_minmax,GL_ARB_texture_float,GL_ARB_texture_mirror_clamp_to_edge,GL_ARB_texture_mirrored_repeat,GL_ARB_texture_multisample,GL_ARB_texture_non_power_of_two,GL_ARB_texture_rg,GL_ARB_texture_storage,GL_ARB_texture_swizzle,GL_ARB_texture_view,GL_ARB_timer_query,GL_ARB_transpose_matrix,GL_ARB_uniform_buffer_object,GL_ARB_vertex_array_bgra,GL_ARB_vertex_array_object,GL_ARB_vertex_attrib_binding,GL_ARB_vertex_buffer_object,GL_ARB_vertex_program,GL_ARB_vertex_shader,GL_EXT_draw_instanced,GL_EXT_fog_coord,GL_EXT_framebuffer_blit,GL_EXT_framebuffer_multisample,GL_EXT_framebuffer_object,GL_EXT_framebuffer_sRGB,GL_EXT_texture_compression_s3tc,GL_EXT_texture_filter_anisotropic,GL_EXT_texture_mirror_clamp,GL_KHR_texture_compression_astc_hdr,GL_KHR_texture_compression_astc_ldr,GL_OES_compressed_paletted_texture,GL_OES_fixed_point' c --header-only
+ *    --api='gl:core=4.3'
+ * --extensions='GL_ARB_ES2_compatibility,GL_ARB_ES3_1_compatibility,GL_ARB_ES3_2_compatibility,GL_ARB_ES3_compatibility,GL_ARB_blend_func_extended,GL_ARB_buffer_storage,GL_ARB_clear_buffer_object,GL_ARB_clear_texture,GL_ARB_color_buffer_float,GL_ARB_compatibility,GL_ARB_compressed_texture_pixel_storage,GL_ARB_compute_shader,GL_ARB_compute_variable_group_size,GL_ARB_copy_buffer,GL_ARB_copy_image,GL_ARB_debug_output,GL_ARB_depth_buffer_float,GL_ARB_depth_clamp,GL_ARB_depth_texture,GL_ARB_direct_state_access,GL_ARB_draw_buffers,GL_ARB_draw_buffers_blend,GL_ARB_draw_elements_base_vertex,GL_ARB_draw_indirect,GL_ARB_draw_instanced,GL_ARB_enhanced_layouts,GL_ARB_explicit_attrib_location,GL_ARB_explicit_uniform_location,GL_ARB_fragment_coord_conventions,GL_ARB_fragment_layer_viewport,GL_ARB_fragment_program,GL_ARB_fragment_program_shadow,GL_ARB_fragment_shader,GL_ARB_fragment_shader_interlock,GL_ARB_framebuffer_no_attachments,GL_ARB_framebuffer_object,GL_ARB_framebuffer_sRGB,GL_ARB_geometry_shader4,GL_ARB_get_program_binary,GL_ARB_get_texture_sub_image,GL_ARB_gl_spirv,GL_ARB_gpu_shader5,GL_ARB_gpu_shader_fp64,GL_ARB_gpu_shader_int64,GL_ARB_half_float_pixel,GL_ARB_half_float_vertex,GL_ARB_instanced_arrays,GL_ARB_internalformat_query,GL_ARB_internalformat_query2,GL_ARB_map_buffer_range,GL_ARB_multi_bind,GL_ARB_multi_draw_indirect,GL_ARB_multisample,GL_ARB_multitexture,GL_ARB_occlusion_query,GL_ARB_occlusion_query2,GL_ARB_pipeline_statistics_query,GL_ARB_query_buffer_object,GL_ARB_sample_locations,GL_ARB_sample_shading,GL_ARB_seamless_cube_map,GL_ARB_seamless_cubemap_per_texture,GL_ARB_shader_atomic_counter_ops,GL_ARB_shader_atomic_counters,GL_ARB_shader_bit_encoding,GL_ARB_shader_clock,GL_ARB_shader_image_load_store,GL_ARB_shader_image_size,GL_ARB_shader_objects,GL_ARB_shader_storage_buffer_object,GL_ARB_shader_texture_lod,GL_ARB_shading_language_100,GL_ARB_shading_language_420pack,GL_ARB_shading_language_include,GL_ARB_shading_language_packing,GL_ARB_spirv_extensions,GL_ARB_tessellation_shader,GL_ARB_texture_border_clamp,GL_ARB_texture_buffer_object_rgb32,GL_ARB_texture_compression,GL_ARB_texture_cube_map,GL_ARB_texture_cube_map_array,GL_ARB_texture_env_add,GL_ARB_texture_filter_anisotropic,GL_ARB_texture_filter_minmax,GL_ARB_texture_float,GL_ARB_texture_mirror_clamp_to_edge,GL_ARB_texture_mirrored_repeat,GL_ARB_texture_multisample,GL_ARB_texture_non_power_of_two,GL_ARB_texture_rg,GL_ARB_texture_storage,GL_ARB_texture_swizzle,GL_ARB_texture_view,GL_ARB_timer_query,GL_ARB_transpose_matrix,GL_ARB_uniform_buffer_object,GL_ARB_vertex_array_bgra,GL_ARB_vertex_array_object,GL_ARB_vertex_attrib_binding,GL_ARB_vertex_buffer_object,GL_ARB_vertex_program,GL_ARB_vertex_shader,GL_EXT_draw_instanced,GL_EXT_fog_coord,GL_EXT_framebuffer_blit,GL_EXT_framebuffer_multisample,GL_EXT_framebuffer_object,GL_EXT_framebuffer_sRGB,GL_EXT_texture_compression_s3tc,GL_EXT_texture_filter_anisotropic,GL_EXT_texture_mirror_clamp,GL_KHR_texture_compression_astc_hdr,GL_KHR_texture_compression_astc_ldr,GL_OES_compressed_paletted_texture,GL_OES_fixed_point'
+ * c --header-only
  *
  * Online:
  *    http://glad.sh/#api=gl%3Acore%3D4.3&generator=c&options=HEADER_ONLY
@@ -33,19 +35,19 @@
 #pragma clang diagnostic ignored "-Wreserved-id-macro"
 #endif
 #ifdef __gl_h_
-  #error OpenGL (gl.h) header already included (API: gl), remove previous include!
+#error OpenGL (gl.h) header already included (API: gl), remove previous include!
 #endif
 #define __gl_h_ 1
 #ifdef __gl3_h_
-  #error OpenGL (gl3.h) header already included (API: gl), remove previous include!
+#error OpenGL (gl3.h) header already included (API: gl), remove previous include!
 #endif
 #define __gl3_h_ 1
 #ifdef __glext_h_
-  #error OpenGL (glext.h) header already included (API: gl), remove previous include!
+#error OpenGL (glext.h) header already included (API: gl), remove previous include!
 #endif
 #define __glext_h_ 1
 #ifdef __gl3ext_h_
-  #error OpenGL (gl3ext.h) header already included (API: gl), remove previous include!
+#error OpenGL (gl3ext.h) header already included (API: gl), remove previous include!
 #endif
 #define __gl3ext_h_ 1
 #ifdef __clang__
@@ -63,90 +65,92 @@ extern "C" {
 #define GLAD_PLATFORM_H_
 
 #ifndef GLAD_PLATFORM_WIN32
-  #if defined(_WIN32) || defined(__WIN32__) || defined(WIN32) || defined(__MINGW32__)
-    #define GLAD_PLATFORM_WIN32 1
-  #else
-    #define GLAD_PLATFORM_WIN32 0
-  #endif
+#if defined(_WIN32) || defined(__WIN32__) || defined(WIN32) || \
+    defined(__MINGW32__)
+#define GLAD_PLATFORM_WIN32 1
+#else
+#define GLAD_PLATFORM_WIN32 0
+#endif
 #endif
 
 #ifndef GLAD_PLATFORM_APPLE
-  #ifdef __APPLE__
-    #define GLAD_PLATFORM_APPLE 1
-  #else
-    #define GLAD_PLATFORM_APPLE 0
-  #endif
+#ifdef __APPLE__
+#define GLAD_PLATFORM_APPLE 1
+#else
+#define GLAD_PLATFORM_APPLE 0
+#endif
 #endif
 
 #ifndef GLAD_PLATFORM_EMSCRIPTEN
-  #ifdef __EMSCRIPTEN__
-    #define GLAD_PLATFORM_EMSCRIPTEN 1
-  #else
-    #define GLAD_PLATFORM_EMSCRIPTEN 0
-  #endif
+#ifdef __EMSCRIPTEN__
+#define GLAD_PLATFORM_EMSCRIPTEN 1
+#else
+#define GLAD_PLATFORM_EMSCRIPTEN 0
+#endif
 #endif
 
 #ifndef GLAD_PLATFORM_UWP
-  #if defined(_MSC_VER) && !defined(GLAD_INTERNAL_HAVE_WINAPIFAMILY)
-    #ifdef __has_include
-      #if __has_include(<winapifamily.h>)
-        #define GLAD_INTERNAL_HAVE_WINAPIFAMILY 1
-      #endif
-    #elif _MSC_VER >= 1700 && !_USING_V110_SDK71_
-      #define GLAD_INTERNAL_HAVE_WINAPIFAMILY 1
-    #endif
-  #endif
+#if defined(_MSC_VER) && !defined(GLAD_INTERNAL_HAVE_WINAPIFAMILY)
+#ifdef __has_include
+#if __has_include(<winapifamily.h>)
+#define GLAD_INTERNAL_HAVE_WINAPIFAMILY 1
+#endif
+#elif _MSC_VER >= 1700 && !_USING_V110_SDK71_
+#define GLAD_INTERNAL_HAVE_WINAPIFAMILY 1
+#endif
+#endif
 
-  #ifdef GLAD_INTERNAL_HAVE_WINAPIFAMILY
-    #include <winapifamily.h>
-    #if !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) && WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_APP)
-      #define GLAD_PLATFORM_UWP 1
-    #endif
-  #endif
+#ifdef GLAD_INTERNAL_HAVE_WINAPIFAMILY
+#include <winapifamily.h>
+#if !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) && \
+    WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_APP)
+#define GLAD_PLATFORM_UWP 1
+#endif
+#endif
 
-  #ifndef GLAD_PLATFORM_UWP
-    #define GLAD_PLATFORM_UWP 0
-  #endif
+#ifndef GLAD_PLATFORM_UWP
+#define GLAD_PLATFORM_UWP 0
+#endif
 #endif
 
 #ifdef __GNUC__
-  #define GLAD_GNUC_EXTENSION __extension__
+#define GLAD_GNUC_EXTENSION __extension__
 #else
-  #define GLAD_GNUC_EXTENSION
+#define GLAD_GNUC_EXTENSION
 #endif
 
 #ifndef GLAD_API_CALL
-  #if defined(GLAD_API_CALL_EXPORT)
-    #if GLAD_PLATFORM_WIN32 || defined(__CYGWIN__)
-      #if defined(GLAD_API_CALL_EXPORT_BUILD)
-        #if defined(__GNUC__)
-          #define GLAD_API_CALL __attribute__ ((dllexport)) extern
-        #else
-          #define GLAD_API_CALL __declspec(dllexport) extern
-        #endif
-      #else
-        #if defined(__GNUC__)
-          #define GLAD_API_CALL __attribute__ ((dllimport)) extern
-        #else
-          #define GLAD_API_CALL __declspec(dllimport) extern
-        #endif
-      #endif
-    #elif defined(__GNUC__) && defined(GLAD_API_CALL_EXPORT_BUILD)
-      #define GLAD_API_CALL __attribute__ ((visibility ("default"))) extern
-    #else
-      #define GLAD_API_CALL extern
-    #endif
-  #else
-    #define GLAD_API_CALL extern
-  #endif
+#if defined(GLAD_API_CALL_EXPORT)
+#if GLAD_PLATFORM_WIN32 || defined(__CYGWIN__)
+#if defined(GLAD_API_CALL_EXPORT_BUILD)
+#if defined(__GNUC__)
+#define GLAD_API_CALL __attribute__((dllexport)) extern
+#else
+#define GLAD_API_CALL __declspec(dllexport) extern
+#endif
+#else
+#if defined(__GNUC__)
+#define GLAD_API_CALL __attribute__((dllimport)) extern
+#else
+#define GLAD_API_CALL __declspec(dllimport) extern
+#endif
+#endif
+#elif defined(__GNUC__) && defined(GLAD_API_CALL_EXPORT_BUILD)
+#define GLAD_API_CALL __attribute__((visibility("default"))) extern
+#else
+#define GLAD_API_CALL extern
+#endif
+#else
+#define GLAD_API_CALL extern
+#endif
 #endif
 
 #ifdef APIENTRY
-  #define GLAD_API_PTR APIENTRY
+#define GLAD_API_PTR APIENTRY
 #elif GLAD_PLATFORM_WIN32
-  #define GLAD_API_PTR __stdcall
+#define GLAD_API_PTR __stdcall
 #else
-  #define GLAD_API_PTR
+#define GLAD_API_PTR
 #endif
 
 #ifndef GLAPI
@@ -168,8 +172,10 @@ typedef void (*GLADapiproc)(void);
 typedef GLADapiproc (*GLADloadfunc)(const char *name);
 typedef GLADapiproc (*GLADuserptrloadfunc)(void *userptr, const char *name);
 
-typedef void (*GLADprecallback)(const char *name, GLADapiproc apiproc, int len_args, ...);
-typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apiproc, int len_args, ...);
+typedef void (*GLADprecallback)(const char *name, GLADapiproc apiproc,
+                                int len_args, ...);
+typedef void (*GLADpostcallback)(void *ret, const char *name,
+                                 GLADapiproc apiproc, int len_args, ...);
 
 #endif /* GLAD_PLATFORM_H_ */
 
@@ -2043,7 +2049,6 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
 #define GL_XOR 0x1506
 #define GL_ZERO 0
 
-
 #ifndef __khrplatform_h_
 #define __khrplatform_h_
 
@@ -2137,7 +2142,7 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
  */
 
 #if defined(__SCITECH_SNAP__) && !defined(KHRONOS_STATIC)
-#   define KHRONOS_STATIC 1
+#define KHRONOS_STATIC 1
 #endif
 
 /*-------------------------------------------------------------------------
@@ -2146,17 +2151,17 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
  * This precedes the return type of the function in the function prototype.
  */
 #if defined(KHRONOS_STATIC)
-    /* If the preprocessor constant KHRONOS_STATIC is defined, make the
-     * header compatible with static linking. */
-#   define KHRONOS_APICALL
+/* If the preprocessor constant KHRONOS_STATIC is defined, make the
+ * header compatible with static linking. */
+#define KHRONOS_APICALL
 #elif defined(_WIN32)
-#   define KHRONOS_APICALL __declspec(dllimport)
-#elif defined (__SYMBIAN32__)
-#   define KHRONOS_APICALL IMPORT_C
+#define KHRONOS_APICALL __declspec(dllimport)
+#elif defined(__SYMBIAN32__)
+#define KHRONOS_APICALL IMPORT_C
 #elif defined(__ANDROID__)
-#   define KHRONOS_APICALL __attribute__((visibility("default")))
+#define KHRONOS_APICALL __attribute__((visibility("default")))
 #else
-#   define KHRONOS_APICALL
+#define KHRONOS_APICALL
 #endif
 
 /*-------------------------------------------------------------------------
@@ -2166,10 +2171,10 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
  * name in the function prototype.
  */
 #if defined(_WIN32) && !defined(_WIN32_WCE) && !defined(__SCITECH_SNAP__)
-    /* Win32 but not WinCE */
-#   define KHRONOS_GLAD_API_PTR __stdcall
+/* Win32 but not WinCE */
+#define KHRONOS_GLAD_API_PTR __stdcall
 #else
-#   define KHRONOS_GLAD_API_PTR
+#define KHRONOS_GLAD_API_PTR
 #endif
 
 /*-------------------------------------------------------------------------
@@ -2177,7 +2182,7 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
  *-------------------------------------------------------------------------
  * This follows the closing parenthesis of the function prototype arguments.
  */
-#if defined (__ARMCC_2__)
+#if defined(__ARMCC_2__)
 #define KHRONOS_APIATTRIBUTES __softfp
 #else
 #define KHRONOS_APIATTRIBUTES
@@ -2186,19 +2191,19 @@ typedef void (*GLADpostcallback)(void *ret, const char *name, GLADapiproc apipro
 /*-------------------------------------------------------------------------
  * basic type definitions
  *-----------------------------------------------------------------------*/
-#if (defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L) || defined(__GNUC__) || defined(__SCO__) || defined(__USLC__)
-
+#if (defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L) || \
+    defined(__GNUC__) || defined(__SCO__) || defined(__USLC__)
 
 /*
  * Using <stdint.h>
  */
 #include <stdint.h>
-typedef int32_t                 khronos_int32_t;
-typedef uint32_t                khronos_uint32_t;
-typedef int64_t                 khronos_int64_t;
-typedef uint64_t                khronos_uint64_t;
-#define KHRONOS_SUPPORT_INT64   1
-#define KHRONOS_SUPPORT_FLOAT   1
+typedef int32_t khronos_int32_t;
+typedef uint32_t khronos_uint32_t;
+typedef int64_t khronos_int64_t;
+typedef uint64_t khronos_uint64_t;
+#define KHRONOS_SUPPORT_INT64 1
+#define KHRONOS_SUPPORT_FLOAT 1
 /*
  * To support platform where unsigned long cannot be used interchangeably with
  * inptr_t (e.g. CHERI-extended ISAs), we can use the stdint.h intptr_t.
@@ -2214,57 +2219,57 @@ typedef uint64_t                khronos_uint64_t;
 #endif
 #endif
 
-#elif defined(__VMS ) || defined(__sgi)
+#elif defined(__VMS) || defined(__sgi)
 
 /*
  * Using <inttypes.h>
  */
 #include <inttypes.h>
-typedef int32_t                 khronos_int32_t;
-typedef uint32_t                khronos_uint32_t;
-typedef int64_t                 khronos_int64_t;
-typedef uint64_t                khronos_uint64_t;
-#define KHRONOS_SUPPORT_INT64   1
-#define KHRONOS_SUPPORT_FLOAT   1
+typedef int32_t khronos_int32_t;
+typedef uint32_t khronos_uint32_t;
+typedef int64_t khronos_int64_t;
+typedef uint64_t khronos_uint64_t;
+#define KHRONOS_SUPPORT_INT64 1
+#define KHRONOS_SUPPORT_FLOAT 1
 
 #elif defined(_WIN32) && !defined(__SCITECH_SNAP__)
 
 /*
  * Win32
  */
-typedef __int32                 khronos_int32_t;
-typedef unsigned __int32        khronos_uint32_t;
-typedef __int64                 khronos_int64_t;
-typedef unsigned __int64        khronos_uint64_t;
-#define KHRONOS_SUPPORT_INT64   1
-#define KHRONOS_SUPPORT_FLOAT   1
+typedef __int32 khronos_int32_t;
+typedef unsigned __int32 khronos_uint32_t;
+typedef __int64 khronos_int64_t;
+typedef unsigned __int64 khronos_uint64_t;
+#define KHRONOS_SUPPORT_INT64 1
+#define KHRONOS_SUPPORT_FLOAT 1
 
 #elif defined(__sun__) || defined(__digital__)
 
 /*
  * Sun or Digital
  */
-typedef int                     khronos_int32_t;
-typedef unsigned int            khronos_uint32_t;
+typedef int khronos_int32_t;
+typedef unsigned int khronos_uint32_t;
 #if defined(__arch64__) || defined(_LP64)
-typedef long int                khronos_int64_t;
-typedef unsigned long int       khronos_uint64_t;
+typedef long int khronos_int64_t;
+typedef unsigned long int khronos_uint64_t;
 #else
-typedef long long int           khronos_int64_t;
-typedef unsigned long long int  khronos_uint64_t;
+typedef long long int khronos_int64_t;
+typedef unsigned long long int khronos_uint64_t;
 #endif /* __arch64__ */
-#define KHRONOS_SUPPORT_INT64   1
-#define KHRONOS_SUPPORT_FLOAT   1
+#define KHRONOS_SUPPORT_INT64 1
+#define KHRONOS_SUPPORT_FLOAT 1
 
 #elif 0
 
 /*
  * Hypothetical platform with no float or int64 support
  */
-typedef int                     khronos_int32_t;
-typedef unsigned int            khronos_uint32_t;
-#define KHRONOS_SUPPORT_INT64   0
-#define KHRONOS_SUPPORT_FLOAT   0
+typedef int khronos_int32_t;
+typedef unsigned int khronos_uint32_t;
+#define KHRONOS_SUPPORT_INT64 0
+#define KHRONOS_SUPPORT_FLOAT 0
 
 #else
 
@@ -2272,23 +2277,22 @@ typedef unsigned int            khronos_uint32_t;
  * Generic fallback
  */
 #include <stdint.h>
-typedef int32_t                 khronos_int32_t;
-typedef uint32_t                khronos_uint32_t;
-typedef int64_t                 khronos_int64_t;
-typedef uint64_t                khronos_uint64_t;
-#define KHRONOS_SUPPORT_INT64   1
-#define KHRONOS_SUPPORT_FLOAT   1
+typedef int32_t khronos_int32_t;
+typedef uint32_t khronos_uint32_t;
+typedef int64_t khronos_int64_t;
+typedef uint64_t khronos_uint64_t;
+#define KHRONOS_SUPPORT_INT64 1
+#define KHRONOS_SUPPORT_FLOAT 1
 
 #endif
-
 
 /*
  * Types that are (so far) the same on all platforms
  */
-typedef signed   char          khronos_int8_t;
-typedef unsigned char          khronos_uint8_t;
-typedef signed   short int     khronos_int16_t;
-typedef unsigned short int     khronos_uint16_t;
+typedef signed char khronos_int8_t;
+typedef unsigned char khronos_uint8_t;
+typedef signed short int khronos_int16_t;
+typedef unsigned short int khronos_uint16_t;
 
 /*
  * Types that differ between LLP64 and LP64 architectures - in LLP64,
@@ -2296,29 +2300,29 @@ typedef unsigned short int     khronos_uint16_t;
  * to be the only LLP64 architecture in current use.
  */
 #ifdef KHRONOS_USE_INTPTR_T
-typedef intptr_t               khronos_intptr_t;
-typedef uintptr_t              khronos_uintptr_t;
+typedef intptr_t khronos_intptr_t;
+typedef uintptr_t khronos_uintptr_t;
 #elif defined(_WIN64)
-typedef signed   long long int khronos_intptr_t;
+typedef signed long long int khronos_intptr_t;
 typedef unsigned long long int khronos_uintptr_t;
 #else
-typedef signed   long  int     khronos_intptr_t;
-typedef unsigned long  int     khronos_uintptr_t;
+typedef signed long int khronos_intptr_t;
+typedef unsigned long int khronos_uintptr_t;
 #endif
 
 #if defined(_WIN64)
-typedef signed   long long int khronos_ssize_t;
+typedef signed long long int khronos_ssize_t;
 typedef unsigned long long int khronos_usize_t;
 #else
-typedef signed   long  int     khronos_ssize_t;
-typedef unsigned long  int     khronos_usize_t;
+typedef signed long int khronos_ssize_t;
+typedef unsigned long int khronos_usize_t;
 #endif
 
 #if KHRONOS_SUPPORT_FLOAT
 /*
  * Float type
  */
-typedef          float         khronos_float_t;
+typedef float khronos_float_t;
 #endif
 
 #if KHRONOS_SUPPORT_INT64
@@ -2331,8 +2335,8 @@ typedef          float         khronos_float_t;
  * 64 bit value that wraps back to 0 every 584 years.  Time intervals
  * may be either signed or unsigned.
  */
-typedef khronos_uint64_t       khronos_utime_nanoseconds_t;
-typedef khronos_int64_t        khronos_stime_nanoseconds_t;
+typedef khronos_uint64_t khronos_utime_nanoseconds_t;
+typedef khronos_int64_t khronos_stime_nanoseconds_t;
 #endif
 
 /*
@@ -2349,9 +2353,9 @@ typedef khronos_int64_t        khronos_stime_nanoseconds_t;
  * comparisons should not be made against KHRONOS_TRUE.
  */
 typedef enum {
-    KHRONOS_FALSE = 0,
-    KHRONOS_TRUE  = 1,
-    KHRONOS_BOOLEAN_ENUM_FORCE_SIZE = KHRONOS_MAX_ENUM
+  KHRONOS_FALSE = 0,
+  KHRONOS_TRUE = 1,
+  KHRONOS_BOOLEAN_ENUM_FORCE_SIZE = KHRONOS_MAX_ENUM
 } khronos_boolean_enum_t;
 
 #endif /* __khrplatform_h_ */
@@ -2383,22 +2387,26 @@ typedef unsigned int GLhandleARB;
 typedef khronos_uint16_t GLhalf;
 typedef khronos_uint16_t GLhalfARB;
 typedef khronos_int32_t GLfixed;
-#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
+#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && \
+    (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
 typedef khronos_intptr_t GLintptr;
 #else
 typedef khronos_intptr_t GLintptr;
 #endif
-#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
+#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && \
+    (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
 typedef khronos_intptr_t GLintptrARB;
 #else
 typedef khronos_intptr_t GLintptrARB;
 #endif
-#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
+#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && \
+    (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
 typedef khronos_ssize_t GLsizeiptr;
 #else
 typedef khronos_ssize_t GLsizeiptr;
 #endif
-#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
+#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && \
+    (__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ > 1060)
 typedef khronos_ssize_t GLsizeiptrARB;
 #else
 typedef khronos_ssize_t GLsizeiptrARB;
@@ -2410,14 +2418,27 @@ typedef khronos_uint64_t GLuint64EXT;
 typedef struct __GLsync *GLsync;
 struct _cl_context;
 struct _cl_event;
-typedef void (GLAD_API_PTR *GLDEBUGPROC)(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,const GLchar *message,const void *userParam);
-typedef void (GLAD_API_PTR *GLDEBUGPROCARB)(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,const GLchar *message,const void *userParam);
-typedef void (GLAD_API_PTR *GLDEBUGPROCKHR)(GLenum source,GLenum type,GLuint id,GLenum severity,GLsizei length,const GLchar *message,const void *userParam);
-typedef void (GLAD_API_PTR *GLDEBUGPROCAMD)(GLuint id,GLenum category,GLenum severity,GLsizei length,const GLchar *message,void *userParam);
+typedef void(GLAD_API_PTR *GLDEBUGPROC)(GLenum source, GLenum type, GLuint id,
+                                        GLenum severity, GLsizei length,
+                                        const GLchar *message,
+                                        const void *userParam);
+typedef void(GLAD_API_PTR *GLDEBUGPROCARB)(GLenum source, GLenum type,
+                                           GLuint id, GLenum severity,
+                                           GLsizei length,
+                                           const GLchar *message,
+                                           const void *userParam);
+typedef void(GLAD_API_PTR *GLDEBUGPROCKHR)(GLenum source, GLenum type,
+                                           GLuint id, GLenum severity,
+                                           GLsizei length,
+                                           const GLchar *message,
+                                           const void *userParam);
+typedef void(GLAD_API_PTR *GLDEBUGPROCAMD)(GLuint id, GLenum category,
+                                           GLenum severity, GLsizei length,
+                                           const GLchar *message,
+                                           void *userParam);
 typedef unsigned short GLhalfNV;
 typedef GLintptr GLvdpauSurfaceNV;
-typedef void (GLAD_API_PTR *GLVULKANPROCNV)(void);
-
+typedef void(GLAD_API_PTR *GLVULKANPROCNV)(void);
 
 #define GL_VERSION_1_0 1
 GLAD_API_CALL int GLAD_GL_VERSION_1_0;
@@ -2684,1014 +2705,2458 @@ GLAD_API_CALL int GLAD_GL_OES_compressed_paletted_texture;
 #define GL_OES_fixed_point 1
 GLAD_API_CALL int GLAD_GL_OES_fixed_point;
 
-
-typedef void (GLAD_API_PTR *PFNGLACCUMXOESPROC)(GLenum op, GLfixed value);
-typedef void (GLAD_API_PTR *PFNGLACTIVESHADERPROGRAMPROC)(GLuint pipeline, GLuint program);
-typedef void (GLAD_API_PTR *PFNGLACTIVETEXTUREPROC)(GLenum texture);
-typedef void (GLAD_API_PTR *PFNGLACTIVETEXTUREARBPROC)(GLenum texture);
-typedef void (GLAD_API_PTR *PFNGLALPHAFUNCXOESPROC)(GLenum func, GLfixed ref);
-typedef void (GLAD_API_PTR *PFNGLATTACHOBJECTARBPROC)(GLhandleARB containerObj, GLhandleARB obj);
-typedef void (GLAD_API_PTR *PFNGLATTACHSHADERPROC)(GLuint program, GLuint shader);
-typedef void (GLAD_API_PTR *PFNGLBEGINCONDITIONALRENDERPROC)(GLuint id, GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLBEGINQUERYPROC)(GLenum target, GLuint id);
-typedef void (GLAD_API_PTR *PFNGLBEGINQUERYARBPROC)(GLenum target, GLuint id);
-typedef void (GLAD_API_PTR *PFNGLBEGINQUERYINDEXEDPROC)(GLenum target, GLuint index, GLuint id);
-typedef void (GLAD_API_PTR *PFNGLBEGINTRANSFORMFEEDBACKPROC)(GLenum primitiveMode);
-typedef void (GLAD_API_PTR *PFNGLBINDATTRIBLOCATIONPROC)(GLuint program, GLuint index, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLBINDATTRIBLOCATIONARBPROC)(GLhandleARB programObj, GLuint index, const GLcharARB * name);
-typedef void (GLAD_API_PTR *PFNGLBINDBUFFERPROC)(GLenum target, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLBINDBUFFERARBPROC)(GLenum target, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLBINDBUFFERBASEPROC)(GLenum target, GLuint index, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLBINDBUFFERRANGEPROC)(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
-typedef void (GLAD_API_PTR *PFNGLBINDBUFFERSBASEPROC)(GLenum target, GLuint first, GLsizei count, const GLuint * buffers);
-typedef void (GLAD_API_PTR *PFNGLBINDBUFFERSRANGEPROC)(GLenum target, GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizeiptr * sizes);
-typedef void (GLAD_API_PTR *PFNGLBINDFRAGDATALOCATIONPROC)(GLuint program, GLuint color, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLBINDFRAGDATALOCATIONINDEXEDPROC)(GLuint program, GLuint colorNumber, GLuint index, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLBINDFRAMEBUFFERPROC)(GLenum target, GLuint framebuffer);
-typedef void (GLAD_API_PTR *PFNGLBINDFRAMEBUFFEREXTPROC)(GLenum target, GLuint framebuffer);
-typedef void (GLAD_API_PTR *PFNGLBINDIMAGETEXTUREPROC)(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format);
-typedef void (GLAD_API_PTR *PFNGLBINDIMAGETEXTURESPROC)(GLuint first, GLsizei count, const GLuint * textures);
-typedef void (GLAD_API_PTR *PFNGLBINDPROGRAMARBPROC)(GLenum target, GLuint program);
-typedef void (GLAD_API_PTR *PFNGLBINDPROGRAMPIPELINEPROC)(GLuint pipeline);
-typedef void (GLAD_API_PTR *PFNGLBINDRENDERBUFFERPROC)(GLenum target, GLuint renderbuffer);
-typedef void (GLAD_API_PTR *PFNGLBINDRENDERBUFFEREXTPROC)(GLenum target, GLuint renderbuffer);
-typedef void (GLAD_API_PTR *PFNGLBINDSAMPLERPROC)(GLuint unit, GLuint sampler);
-typedef void (GLAD_API_PTR *PFNGLBINDSAMPLERSPROC)(GLuint first, GLsizei count, const GLuint * samplers);
-typedef void (GLAD_API_PTR *PFNGLBINDTEXTUREPROC)(GLenum target, GLuint texture);
-typedef void (GLAD_API_PTR *PFNGLBINDTEXTUREUNITPROC)(GLuint unit, GLuint texture);
-typedef void (GLAD_API_PTR *PFNGLBINDTEXTURESPROC)(GLuint first, GLsizei count, const GLuint * textures);
-typedef void (GLAD_API_PTR *PFNGLBINDTRANSFORMFEEDBACKPROC)(GLenum target, GLuint id);
-typedef void (GLAD_API_PTR *PFNGLBINDVERTEXARRAYPROC)(GLuint array);
-typedef void (GLAD_API_PTR *PFNGLBINDVERTEXBUFFERPROC)(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
-typedef void (GLAD_API_PTR *PFNGLBINDVERTEXBUFFERSPROC)(GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizei * strides);
-typedef void (GLAD_API_PTR *PFNGLBITMAPXOESPROC)(GLsizei width, GLsizei height, GLfixed xorig, GLfixed yorig, GLfixed xmove, GLfixed ymove, const GLubyte * bitmap);
-typedef void (GLAD_API_PTR *PFNGLBLENDCOLORPROC)(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDCOLORXOESPROC)(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDEQUATIONPROC)(GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLBLENDEQUATIONSEPARATEPROC)(GLenum modeRGB, GLenum modeAlpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDEQUATIONSEPARATEIPROC)(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDEQUATIONSEPARATEIARBPROC)(GLuint buf, GLenum modeRGB, GLenum modeAlpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDEQUATIONIPROC)(GLuint buf, GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLBLENDEQUATIONIARBPROC)(GLuint buf, GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLBLENDFUNCPROC)(GLenum sfactor, GLenum dfactor);
-typedef void (GLAD_API_PTR *PFNGLBLENDFUNCSEPARATEPROC)(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDFUNCSEPARATEIPROC)(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDFUNCSEPARATEIARBPROC)(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
-typedef void (GLAD_API_PTR *PFNGLBLENDFUNCIPROC)(GLuint buf, GLenum src, GLenum dst);
-typedef void (GLAD_API_PTR *PFNGLBLENDFUNCIARBPROC)(GLuint buf, GLenum src, GLenum dst);
-typedef void (GLAD_API_PTR *PFNGLBLITFRAMEBUFFERPROC)(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
-typedef void (GLAD_API_PTR *PFNGLBLITFRAMEBUFFEREXTPROC)(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
-typedef void (GLAD_API_PTR *PFNGLBLITNAMEDFRAMEBUFFERPROC)(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
-typedef void (GLAD_API_PTR *PFNGLBUFFERDATAPROC)(GLenum target, GLsizeiptr size, const void * data, GLenum usage);
-typedef void (GLAD_API_PTR *PFNGLBUFFERDATAARBPROC)(GLenum target, GLsizeiptrARB size, const void * data, GLenum usage);
-typedef void (GLAD_API_PTR *PFNGLBUFFERSTORAGEPROC)(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags);
-typedef void (GLAD_API_PTR *PFNGLBUFFERSUBDATAPROC)(GLenum target, GLintptr offset, GLsizeiptr size, const void * data);
-typedef void (GLAD_API_PTR *PFNGLBUFFERSUBDATAARBPROC)(GLenum target, GLintptrARB offset, GLsizeiptrARB size, const void * data);
-typedef GLenum (GLAD_API_PTR *PFNGLCHECKFRAMEBUFFERSTATUSPROC)(GLenum target);
-typedef GLenum (GLAD_API_PTR *PFNGLCHECKFRAMEBUFFERSTATUSEXTPROC)(GLenum target);
-typedef GLenum (GLAD_API_PTR *PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC)(GLuint framebuffer, GLenum target);
-typedef void (GLAD_API_PTR *PFNGLCLAMPCOLORPROC)(GLenum target, GLenum clamp);
-typedef void (GLAD_API_PTR *PFNGLCLAMPCOLORARBPROC)(GLenum target, GLenum clamp);
-typedef void (GLAD_API_PTR *PFNGLCLEARPROC)(GLbitfield mask);
-typedef void (GLAD_API_PTR *PFNGLCLEARACCUMXOESPROC)(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
-typedef void (GLAD_API_PTR *PFNGLCLEARBUFFERDATAPROC)(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCLEARBUFFERSUBDATAPROC)(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCLEARBUFFERFIPROC)(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);
-typedef void (GLAD_API_PTR *PFNGLCLEARBUFFERFVPROC)(GLenum buffer, GLint drawbuffer, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLCLEARBUFFERIVPROC)(GLenum buffer, GLint drawbuffer, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLCLEARBUFFERUIVPROC)(GLenum buffer, GLint drawbuffer, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLCLEARCOLORPROC)(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha);
-typedef void (GLAD_API_PTR *PFNGLCLEARCOLORXOESPROC)(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
-typedef void (GLAD_API_PTR *PFNGLCLEARDEPTHPROC)(GLdouble depth);
-typedef void (GLAD_API_PTR *PFNGLCLEARDEPTHFPROC)(GLfloat d);
-typedef void (GLAD_API_PTR *PFNGLCLEARDEPTHXOESPROC)(GLfixed depth);
-typedef void (GLAD_API_PTR *PFNGLCLEARNAMEDBUFFERDATAPROC)(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCLEARNAMEDBUFFERSUBDATAPROC)(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERFIPROC)(GLuint framebuffer, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);
-typedef void (GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERFVPROC)(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERIVPROC)(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC)(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLCLEARSTENCILPROC)(GLint s);
-typedef void (GLAD_API_PTR *PFNGLCLEARTEXIMAGEPROC)(GLuint texture, GLint level, GLenum format, GLenum type, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCLEARTEXSUBIMAGEPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCLIENTACTIVETEXTUREARBPROC)(GLenum texture);
-typedef GLenum (GLAD_API_PTR *PFNGLCLIENTWAITSYNCPROC)(GLsync sync, GLbitfield flags, GLuint64 timeout);
-typedef void (GLAD_API_PTR *PFNGLCLIPPLANEXOESPROC)(GLenum plane, const GLfixed * equation);
-typedef void (GLAD_API_PTR *PFNGLCOLOR3XOESPROC)(GLfixed red, GLfixed green, GLfixed blue);
-typedef void (GLAD_API_PTR *PFNGLCOLOR3XVOESPROC)(const GLfixed * components);
-typedef void (GLAD_API_PTR *PFNGLCOLOR4XOESPROC)(GLfixed red, GLfixed green, GLfixed blue, GLfixed alpha);
-typedef void (GLAD_API_PTR *PFNGLCOLOR4XVOESPROC)(const GLfixed * components);
-typedef void (GLAD_API_PTR *PFNGLCOLORMASKPROC)(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha);
-typedef void (GLAD_API_PTR *PFNGLCOLORMASKIPROC)(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a);
-typedef void (GLAD_API_PTR *PFNGLCOMPILESHADERPROC)(GLuint shader);
-typedef void (GLAD_API_PTR *PFNGLCOMPILESHADERARBPROC)(GLhandleARB shaderObj);
-typedef void (GLAD_API_PTR *PFNGLCOMPILESHADERINCLUDEARBPROC)(GLuint shader, GLsizei count, const GLchar *const* path, const GLint * length);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE1DPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE1DARBPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE2DPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE2DARBPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE3DPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE3DARBPROC)(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC)(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC)(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC)(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data);
-typedef void (GLAD_API_PTR *PFNGLCONVOLUTIONPARAMETERXOESPROC)(GLenum target, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLCONVOLUTIONPARAMETERXVOESPROC)(GLenum target, GLenum pname, const GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLCOPYBUFFERSUBDATAPROC)(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
-typedef void (GLAD_API_PTR *PFNGLCOPYIMAGESUBDATAPROC)(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth);
-typedef void (GLAD_API_PTR *PFNGLCOPYNAMEDBUFFERSUBDATAPROC)(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXIMAGE1DPROC)(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXIMAGE2DPROC)(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXSUBIMAGE1DPROC)(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXSUBIMAGE2DPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXSUBIMAGE3DPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXTURESUBIMAGE1DPROC)(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXTURESUBIMAGE2DPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLCOPYTEXTURESUBIMAGE3DPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLCREATEBUFFERSPROC)(GLsizei n, GLuint * buffers);
-typedef void (GLAD_API_PTR *PFNGLCREATEFRAMEBUFFERSPROC)(GLsizei n, GLuint * framebuffers);
-typedef GLuint (GLAD_API_PTR *PFNGLCREATEPROGRAMPROC)(void);
-typedef GLhandleARB (GLAD_API_PTR *PFNGLCREATEPROGRAMOBJECTARBPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLCREATEPROGRAMPIPELINESPROC)(GLsizei n, GLuint * pipelines);
-typedef void (GLAD_API_PTR *PFNGLCREATEQUERIESPROC)(GLenum target, GLsizei n, GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLCREATERENDERBUFFERSPROC)(GLsizei n, GLuint * renderbuffers);
-typedef void (GLAD_API_PTR *PFNGLCREATESAMPLERSPROC)(GLsizei n, GLuint * samplers);
-typedef GLuint (GLAD_API_PTR *PFNGLCREATESHADERPROC)(GLenum type);
-typedef GLhandleARB (GLAD_API_PTR *PFNGLCREATESHADEROBJECTARBPROC)(GLenum shaderType);
-typedef GLuint (GLAD_API_PTR *PFNGLCREATESHADERPROGRAMVPROC)(GLenum type, GLsizei count, const GLchar *const* strings);
-typedef void (GLAD_API_PTR *PFNGLCREATETEXTURESPROC)(GLenum target, GLsizei n, GLuint * textures);
-typedef void (GLAD_API_PTR *PFNGLCREATETRANSFORMFEEDBACKSPROC)(GLsizei n, GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLCREATEVERTEXARRAYSPROC)(GLsizei n, GLuint * arrays);
-typedef void (GLAD_API_PTR *PFNGLCULLFACEPROC)(GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLDEBUGMESSAGECALLBACKPROC)(GLDEBUGPROC callback, const void * userParam);
-typedef void (GLAD_API_PTR *PFNGLDEBUGMESSAGECALLBACKARBPROC)(GLDEBUGPROCARB callback, const void * userParam);
-typedef void (GLAD_API_PTR *PFNGLDEBUGMESSAGECONTROLPROC)(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint * ids, GLboolean enabled);
-typedef void (GLAD_API_PTR *PFNGLDEBUGMESSAGECONTROLARBPROC)(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint * ids, GLboolean enabled);
-typedef void (GLAD_API_PTR *PFNGLDEBUGMESSAGEINSERTPROC)(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar * buf);
-typedef void (GLAD_API_PTR *PFNGLDEBUGMESSAGEINSERTARBPROC)(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar * buf);
-typedef void (GLAD_API_PTR *PFNGLDELETEBUFFERSPROC)(GLsizei n, const GLuint * buffers);
-typedef void (GLAD_API_PTR *PFNGLDELETEBUFFERSARBPROC)(GLsizei n, const GLuint * buffers);
-typedef void (GLAD_API_PTR *PFNGLDELETEFRAMEBUFFERSPROC)(GLsizei n, const GLuint * framebuffers);
-typedef void (GLAD_API_PTR *PFNGLDELETEFRAMEBUFFERSEXTPROC)(GLsizei n, const GLuint * framebuffers);
-typedef void (GLAD_API_PTR *PFNGLDELETENAMEDSTRINGARBPROC)(GLint namelen, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLDELETEOBJECTARBPROC)(GLhandleARB obj);
-typedef void (GLAD_API_PTR *PFNGLDELETEPROGRAMPROC)(GLuint program);
-typedef void (GLAD_API_PTR *PFNGLDELETEPROGRAMPIPELINESPROC)(GLsizei n, const GLuint * pipelines);
-typedef void (GLAD_API_PTR *PFNGLDELETEPROGRAMSARBPROC)(GLsizei n, const GLuint * programs);
-typedef void (GLAD_API_PTR *PFNGLDELETEQUERIESPROC)(GLsizei n, const GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLDELETEQUERIESARBPROC)(GLsizei n, const GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLDELETERENDERBUFFERSPROC)(GLsizei n, const GLuint * renderbuffers);
-typedef void (GLAD_API_PTR *PFNGLDELETERENDERBUFFERSEXTPROC)(GLsizei n, const GLuint * renderbuffers);
-typedef void (GLAD_API_PTR *PFNGLDELETESAMPLERSPROC)(GLsizei count, const GLuint * samplers);
-typedef void (GLAD_API_PTR *PFNGLDELETESHADERPROC)(GLuint shader);
-typedef void (GLAD_API_PTR *PFNGLDELETESYNCPROC)(GLsync sync);
-typedef void (GLAD_API_PTR *PFNGLDELETETEXTURESPROC)(GLsizei n, const GLuint * textures);
-typedef void (GLAD_API_PTR *PFNGLDELETETRANSFORMFEEDBACKSPROC)(GLsizei n, const GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLDELETEVERTEXARRAYSPROC)(GLsizei n, const GLuint * arrays);
-typedef void (GLAD_API_PTR *PFNGLDEPTHFUNCPROC)(GLenum func);
-typedef void (GLAD_API_PTR *PFNGLDEPTHMASKPROC)(GLboolean flag);
-typedef void (GLAD_API_PTR *PFNGLDEPTHRANGEPROC)(GLdouble n, GLdouble f);
-typedef void (GLAD_API_PTR *PFNGLDEPTHRANGEARRAYVPROC)(GLuint first, GLsizei count, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLDEPTHRANGEINDEXEDPROC)(GLuint index, GLdouble n, GLdouble f);
-typedef void (GLAD_API_PTR *PFNGLDEPTHRANGEFPROC)(GLfloat n, GLfloat f);
-typedef void (GLAD_API_PTR *PFNGLDEPTHRANGEXOESPROC)(GLfixed n, GLfixed f);
-typedef void (GLAD_API_PTR *PFNGLDETACHOBJECTARBPROC)(GLhandleARB containerObj, GLhandleARB attachedObj);
-typedef void (GLAD_API_PTR *PFNGLDETACHSHADERPROC)(GLuint program, GLuint shader);
-typedef void (GLAD_API_PTR *PFNGLDISABLEPROC)(GLenum cap);
-typedef void (GLAD_API_PTR *PFNGLDISABLEVERTEXARRAYATTRIBPROC)(GLuint vaobj, GLuint index);
-typedef void (GLAD_API_PTR *PFNGLDISABLEVERTEXATTRIBARRAYPROC)(GLuint index);
-typedef void (GLAD_API_PTR *PFNGLDISABLEVERTEXATTRIBARRAYARBPROC)(GLuint index);
-typedef void (GLAD_API_PTR *PFNGLDISABLEIPROC)(GLenum target, GLuint index);
-typedef void (GLAD_API_PTR *PFNGLDISPATCHCOMPUTEPROC)(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z);
-typedef void (GLAD_API_PTR *PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC)(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z, GLuint group_size_x, GLuint group_size_y, GLuint group_size_z);
-typedef void (GLAD_API_PTR *PFNGLDISPATCHCOMPUTEINDIRECTPROC)(GLintptr indirect);
-typedef void (GLAD_API_PTR *PFNGLDRAWARRAYSPROC)(GLenum mode, GLint first, GLsizei count);
-typedef void (GLAD_API_PTR *PFNGLDRAWARRAYSINDIRECTPROC)(GLenum mode, const void * indirect);
-typedef void (GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDPROC)(GLenum mode, GLint first, GLsizei count, GLsizei instancecount);
-typedef void (GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDARBPROC)(GLenum mode, GLint first, GLsizei count, GLsizei primcount);
-typedef void (GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC)(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance);
-typedef void (GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDEXTPROC)(GLenum mode, GLint start, GLsizei count, GLsizei primcount);
-typedef void (GLAD_API_PTR *PFNGLDRAWBUFFERPROC)(GLenum buf);
-typedef void (GLAD_API_PTR *PFNGLDRAWBUFFERSPROC)(GLsizei n, const GLenum * bufs);
-typedef void (GLAD_API_PTR *PFNGLDRAWBUFFERSARBPROC)(GLsizei n, const GLenum * bufs);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSBASEVERTEXPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLint basevertex);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINDIRECTPROC)(GLenum mode, GLenum type, const void * indirect);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDARBPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei primcount);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLint basevertex);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance);
-typedef void (GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDEXTPROC)(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei primcount);
-typedef void (GLAD_API_PTR *PFNGLDRAWRANGEELEMENTSPROC)(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices);
-typedef void (GLAD_API_PTR *PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC)(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices, GLint basevertex);
-typedef void (GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKPROC)(GLenum mode, GLuint id);
-typedef void (GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC)(GLenum mode, GLuint id, GLsizei instancecount);
-typedef void (GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC)(GLenum mode, GLuint id, GLuint stream);
-typedef void (GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC)(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount);
-typedef void (GLAD_API_PTR *PFNGLENABLEPROC)(GLenum cap);
-typedef void (GLAD_API_PTR *PFNGLENABLEVERTEXARRAYATTRIBPROC)(GLuint vaobj, GLuint index);
-typedef void (GLAD_API_PTR *PFNGLENABLEVERTEXATTRIBARRAYPROC)(GLuint index);
-typedef void (GLAD_API_PTR *PFNGLENABLEVERTEXATTRIBARRAYARBPROC)(GLuint index);
-typedef void (GLAD_API_PTR *PFNGLENABLEIPROC)(GLenum target, GLuint index);
-typedef void (GLAD_API_PTR *PFNGLENDCONDITIONALRENDERPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLENDQUERYPROC)(GLenum target);
-typedef void (GLAD_API_PTR *PFNGLENDQUERYARBPROC)(GLenum target);
-typedef void (GLAD_API_PTR *PFNGLENDQUERYINDEXEDPROC)(GLenum target, GLuint index);
-typedef void (GLAD_API_PTR *PFNGLENDTRANSFORMFEEDBACKPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLEVALCOORD1XOESPROC)(GLfixed u);
-typedef void (GLAD_API_PTR *PFNGLEVALCOORD1XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLEVALCOORD2XOESPROC)(GLfixed u, GLfixed v);
-typedef void (GLAD_API_PTR *PFNGLEVALCOORD2XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLEVALUATEDEPTHVALUESARBPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLFEEDBACKBUFFERXOESPROC)(GLsizei n, GLenum type, const GLfixed * buffer);
-typedef GLsync (GLAD_API_PTR *PFNGLFENCESYNCPROC)(GLenum condition, GLbitfield flags);
-typedef void (GLAD_API_PTR *PFNGLFINISHPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLFLUSHPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLFLUSHMAPPEDBUFFERRANGEPROC)(GLenum target, GLintptr offset, GLsizeiptr length);
-typedef void (GLAD_API_PTR *PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC)(GLuint buffer, GLintptr offset, GLsizeiptr length);
-typedef void (GLAD_API_PTR *PFNGLFOGCOORDPOINTEREXTPROC)(GLenum type, GLsizei stride, const void * pointer);
-typedef void (GLAD_API_PTR *PFNGLFOGCOORDDEXTPROC)(GLdouble coord);
-typedef void (GLAD_API_PTR *PFNGLFOGCOORDDVEXTPROC)(const GLdouble * coord);
-typedef void (GLAD_API_PTR *PFNGLFOGCOORDFEXTPROC)(GLfloat coord);
-typedef void (GLAD_API_PTR *PFNGLFOGCOORDFVEXTPROC)(const GLfloat * coord);
-typedef void (GLAD_API_PTR *PFNGLFOGXOESPROC)(GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLFOGXVOESPROC)(GLenum pname, const GLfixed * param);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERPARAMETERIPROC)(GLenum target, GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERRENDERBUFFERPROC)(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC)(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)(GLenum target, GLuint start, GLsizei count, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTUREPROC)(GLenum target, GLenum attachment, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE1DPROC)(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE1DEXTPROC)(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE2DPROC)(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE2DEXTPROC)(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE3DPROC)(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE3DEXTPROC)(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTUREARBPROC)(GLenum target, GLenum attachment, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTUREFACEARBPROC)(GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURELAYERPROC)(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
-typedef void (GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURELAYERARBPROC)(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
-typedef void (GLAD_API_PTR *PFNGLFRONTFACEPROC)(GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLFRUSTUMXOESPROC)(GLfixed l, GLfixed r, GLfixed b, GLfixed t, GLfixed n, GLfixed f);
-typedef void (GLAD_API_PTR *PFNGLGENBUFFERSPROC)(GLsizei n, GLuint * buffers);
-typedef void (GLAD_API_PTR *PFNGLGENBUFFERSARBPROC)(GLsizei n, GLuint * buffers);
-typedef void (GLAD_API_PTR *PFNGLGENFRAMEBUFFERSPROC)(GLsizei n, GLuint * framebuffers);
-typedef void (GLAD_API_PTR *PFNGLGENFRAMEBUFFERSEXTPROC)(GLsizei n, GLuint * framebuffers);
-typedef void (GLAD_API_PTR *PFNGLGENPROGRAMPIPELINESPROC)(GLsizei n, GLuint * pipelines);
-typedef void (GLAD_API_PTR *PFNGLGENPROGRAMSARBPROC)(GLsizei n, GLuint * programs);
-typedef void (GLAD_API_PTR *PFNGLGENQUERIESPROC)(GLsizei n, GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLGENQUERIESARBPROC)(GLsizei n, GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLGENRENDERBUFFERSPROC)(GLsizei n, GLuint * renderbuffers);
-typedef void (GLAD_API_PTR *PFNGLGENRENDERBUFFERSEXTPROC)(GLsizei n, GLuint * renderbuffers);
-typedef void (GLAD_API_PTR *PFNGLGENSAMPLERSPROC)(GLsizei count, GLuint * samplers);
-typedef void (GLAD_API_PTR *PFNGLGENTEXTURESPROC)(GLsizei n, GLuint * textures);
-typedef void (GLAD_API_PTR *PFNGLGENTRANSFORMFEEDBACKSPROC)(GLsizei n, GLuint * ids);
-typedef void (GLAD_API_PTR *PFNGLGENVERTEXARRAYSPROC)(GLsizei n, GLuint * arrays);
-typedef void (GLAD_API_PTR *PFNGLGENERATEMIPMAPPROC)(GLenum target);
-typedef void (GLAD_API_PTR *PFNGLGENERATEMIPMAPEXTPROC)(GLenum target);
-typedef void (GLAD_API_PTR *PFNGLGENERATETEXTUREMIPMAPPROC)(GLuint texture);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC)(GLuint program, GLuint bufferIndex, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEATTRIBPROC)(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEATTRIBARBPROC)(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei * length, GLint * size, GLenum * type, GLcharARB * name);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVESUBROUTINENAMEPROC)(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei * length, GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC)(GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize, GLsizei * length, GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint * values);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEUNIFORMPROC)(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEUNIFORMARBPROC)(GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei * length, GLint * size, GLenum * type, GLcharARB * name);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC)(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei * length, GLchar * uniformBlockName);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEUNIFORMBLOCKIVPROC)(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEUNIFORMNAMEPROC)(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei * length, GLchar * uniformName);
-typedef void (GLAD_API_PTR *PFNGLGETACTIVEUNIFORMSIVPROC)(GLuint program, GLsizei uniformCount, const GLuint * uniformIndices, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETATTACHEDOBJECTSARBPROC)(GLhandleARB containerObj, GLsizei maxCount, GLsizei * count, GLhandleARB * obj);
-typedef void (GLAD_API_PTR *PFNGLGETATTACHEDSHADERSPROC)(GLuint program, GLsizei maxCount, GLsizei * count, GLuint * shaders);
-typedef GLint (GLAD_API_PTR *PFNGLGETATTRIBLOCATIONPROC)(GLuint program, const GLchar * name);
-typedef GLint (GLAD_API_PTR *PFNGLGETATTRIBLOCATIONARBPROC)(GLhandleARB programObj, const GLcharARB * name);
-typedef void (GLAD_API_PTR *PFNGLGETBOOLEANI_VPROC)(GLenum target, GLuint index, GLboolean * data);
-typedef void (GLAD_API_PTR *PFNGLGETBOOLEANVPROC)(GLenum pname, GLboolean * data);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERPARAMETERI64VPROC)(GLenum target, GLenum pname, GLint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERPARAMETERIVPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERPARAMETERIVARBPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERPOINTERVPROC)(GLenum target, GLenum pname, void ** params);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERPOINTERVARBPROC)(GLenum target, GLenum pname, void ** params);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERSUBDATAPROC)(GLenum target, GLintptr offset, GLsizeiptr size, void * data);
-typedef void (GLAD_API_PTR *PFNGLGETBUFFERSUBDATAARBPROC)(GLenum target, GLintptrARB offset, GLsizeiptrARB size, void * data);
-typedef void (GLAD_API_PTR *PFNGLGETCLIPPLANEXOESPROC)(GLenum plane, GLfixed * equation);
-typedef void (GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXIMAGEPROC)(GLenum target, GLint level, void * img);
-typedef void (GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXIMAGEARBPROC)(GLenum target, GLint level, void * img);
-typedef void (GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC)(GLuint texture, GLint level, GLsizei bufSize, void * pixels);
-typedef void (GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void * pixels);
-typedef void (GLAD_API_PTR *PFNGLGETCONVOLUTIONPARAMETERXVOESPROC)(GLenum target, GLenum pname, GLfixed * params);
-typedef GLuint (GLAD_API_PTR *PFNGLGETDEBUGMESSAGELOGPROC)(GLuint count, GLsizei bufSize, GLenum * sources, GLenum * types, GLuint * ids, GLenum * severities, GLsizei * lengths, GLchar * messageLog);
-typedef GLuint (GLAD_API_PTR *PFNGLGETDEBUGMESSAGELOGARBPROC)(GLuint count, GLsizei bufSize, GLenum * sources, GLenum * types, GLuint * ids, GLenum * severities, GLsizei * lengths, GLchar * messageLog);
-typedef void (GLAD_API_PTR *PFNGLGETDOUBLEI_VPROC)(GLenum target, GLuint index, GLdouble * data);
-typedef void (GLAD_API_PTR *PFNGLGETDOUBLEVPROC)(GLenum pname, GLdouble * data);
-typedef GLenum (GLAD_API_PTR *PFNGLGETERRORPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLGETFIXEDVOESPROC)(GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETFLOATI_VPROC)(GLenum target, GLuint index, GLfloat * data);
-typedef void (GLAD_API_PTR *PFNGLGETFLOATVPROC)(GLenum pname, GLfloat * data);
-typedef GLint (GLAD_API_PTR *PFNGLGETFRAGDATAINDEXPROC)(GLuint program, const GLchar * name);
-typedef GLint (GLAD_API_PTR *PFNGLGETFRAGDATALOCATIONPROC)(GLuint program, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC)(GLenum target, GLenum attachment, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC)(GLenum target, GLenum attachment, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETFRAMEBUFFERPARAMETERIVPROC)(GLenum target, GLenum pname, GLint * params);
-typedef GLhandleARB (GLAD_API_PTR *PFNGLGETHANDLEARBPROC)(GLenum pname);
-typedef void (GLAD_API_PTR *PFNGLGETHISTOGRAMPARAMETERXVOESPROC)(GLenum target, GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETINFOLOGARBPROC)(GLhandleARB obj, GLsizei maxLength, GLsizei * length, GLcharARB * infoLog);
-typedef void (GLAD_API_PTR *PFNGLGETINTEGER64I_VPROC)(GLenum target, GLuint index, GLint64 * data);
-typedef void (GLAD_API_PTR *PFNGLGETINTEGER64VPROC)(GLenum pname, GLint64 * data);
-typedef void (GLAD_API_PTR *PFNGLGETINTEGERI_VPROC)(GLenum target, GLuint index, GLint * data);
-typedef void (GLAD_API_PTR *PFNGLGETINTEGERVPROC)(GLenum pname, GLint * data);
-typedef void (GLAD_API_PTR *PFNGLGETINTERNALFORMATI64VPROC)(GLenum target, GLenum internalformat, GLenum pname, GLsizei count, GLint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETINTERNALFORMATIVPROC)(GLenum target, GLenum internalformat, GLenum pname, GLsizei count, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETLIGHTXOESPROC)(GLenum light, GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETMAPXVOESPROC)(GLenum target, GLenum query, GLfixed * v);
-typedef void (GLAD_API_PTR *PFNGLGETMATERIALXOESPROC)(GLenum face, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLGETMULTISAMPLEFVPROC)(GLenum pname, GLuint index, GLfloat * val);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDBUFFERPARAMETERI64VPROC)(GLuint buffer, GLenum pname, GLint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDBUFFERPARAMETERIVPROC)(GLuint buffer, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDBUFFERPOINTERVPROC)(GLuint buffer, GLenum pname, void ** params);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDBUFFERSUBDATAPROC)(GLuint buffer, GLintptr offset, GLsizeiptr size, void * data);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC)(GLuint framebuffer, GLenum attachment, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC)(GLuint framebuffer, GLenum pname, GLint * param);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC)(GLuint renderbuffer, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDSTRINGARBPROC)(GLint namelen, const GLchar * name, GLsizei bufSize, GLint * stringlen, GLchar * string);
-typedef void (GLAD_API_PTR *PFNGLGETNAMEDSTRINGIVARBPROC)(GLint namelen, const GLchar * name, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETOBJECTLABELPROC)(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, GLchar * label);
-typedef void (GLAD_API_PTR *PFNGLGETOBJECTPARAMETERFVARBPROC)(GLhandleARB obj, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETOBJECTPARAMETERIVARBPROC)(GLhandleARB obj, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETOBJECTPTRLABELPROC)(const void * ptr, GLsizei bufSize, GLsizei * length, GLchar * label);
-typedef void (GLAD_API_PTR *PFNGLGETPIXELMAPXVPROC)(GLenum map, GLint size, GLfixed * values);
-typedef void (GLAD_API_PTR *PFNGLGETPOINTERVPROC)(GLenum pname, void ** params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMBINARYPROC)(GLuint program, GLsizei bufSize, GLsizei * length, GLenum * binaryFormat, void * binary);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMENVPARAMETERDVARBPROC)(GLenum target, GLuint index, GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMENVPARAMETERFVARBPROC)(GLenum target, GLuint index, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMINFOLOGPROC)(GLuint program, GLsizei bufSize, GLsizei * length, GLchar * infoLog);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMINTERFACEIVPROC)(GLuint program, GLenum programInterface, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC)(GLenum target, GLuint index, GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC)(GLenum target, GLuint index, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMPIPELINEINFOLOGPROC)(GLuint pipeline, GLsizei bufSize, GLsizei * length, GLchar * infoLog);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMPIPELINEIVPROC)(GLuint pipeline, GLenum pname, GLint * params);
-typedef GLuint (GLAD_API_PTR *PFNGLGETPROGRAMRESOURCEINDEXPROC)(GLuint program, GLenum programInterface, const GLchar * name);
-typedef GLint (GLAD_API_PTR *PFNGLGETPROGRAMRESOURCELOCATIONPROC)(GLuint program, GLenum programInterface, const GLchar * name);
-typedef GLint (GLAD_API_PTR *PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC)(GLuint program, GLenum programInterface, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMRESOURCENAMEPROC)(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMRESOURCEIVPROC)(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum * props, GLsizei count, GLsizei * length, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMSTAGEIVPROC)(GLuint program, GLenum shadertype, GLenum pname, GLint * values);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMSTRINGARBPROC)(GLenum target, GLenum pname, void * string);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMIVPROC)(GLuint program, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETPROGRAMIVARBPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTI64VPROC)(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTIVPROC)(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTUI64VPROC)(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTUIVPROC)(GLuint id, GLuint buffer, GLenum pname, GLintptr offset);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYINDEXEDIVPROC)(GLenum target, GLuint index, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYOBJECTI64VPROC)(GLuint id, GLenum pname, GLint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYOBJECTIVPROC)(GLuint id, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYOBJECTIVARBPROC)(GLuint id, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYOBJECTUI64VPROC)(GLuint id, GLenum pname, GLuint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYOBJECTUIVPROC)(GLuint id, GLenum pname, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYOBJECTUIVARBPROC)(GLuint id, GLenum pname, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYIVPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETQUERYIVARBPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETRENDERBUFFERPARAMETERIVPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERIIVPROC)(GLuint sampler, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERIUIVPROC)(GLuint sampler, GLenum pname, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERFVPROC)(GLuint sampler, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERIVPROC)(GLuint sampler, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETSHADERINFOLOGPROC)(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * infoLog);
-typedef void (GLAD_API_PTR *PFNGLGETSHADERPRECISIONFORMATPROC)(GLenum shadertype, GLenum precisiontype, GLint * range, GLint * precision);
-typedef void (GLAD_API_PTR *PFNGLGETSHADERSOURCEPROC)(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * source);
-typedef void (GLAD_API_PTR *PFNGLGETSHADERSOURCEARBPROC)(GLhandleARB obj, GLsizei maxLength, GLsizei * length, GLcharARB * source);
-typedef void (GLAD_API_PTR *PFNGLGETSHADERIVPROC)(GLuint shader, GLenum pname, GLint * params);
-typedef const GLubyte * (GLAD_API_PTR *PFNGLGETSTRINGPROC)(GLenum name);
-typedef const GLubyte * (GLAD_API_PTR *PFNGLGETSTRINGIPROC)(GLenum name, GLuint index);
-typedef GLuint (GLAD_API_PTR *PFNGLGETSUBROUTINEINDEXPROC)(GLuint program, GLenum shadertype, const GLchar * name);
-typedef GLint (GLAD_API_PTR *PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC)(GLuint program, GLenum shadertype, const GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETSYNCIVPROC)(GLsync sync, GLenum pname, GLsizei count, GLsizei * length, GLint * values);
-typedef void (GLAD_API_PTR *PFNGLGETTEXENVXVOESPROC)(GLenum target, GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXGENXVOESPROC)(GLenum coord, GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXIMAGEPROC)(GLenum target, GLint level, GLenum format, GLenum type, void * pixels);
-typedef void (GLAD_API_PTR *PFNGLGETTEXLEVELPARAMETERFVPROC)(GLenum target, GLint level, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXLEVELPARAMETERIVPROC)(GLenum target, GLint level, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXLEVELPARAMETERXVOESPROC)(GLenum target, GLint level, GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXPARAMETERIIVPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXPARAMETERIUIVPROC)(GLenum target, GLenum pname, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXPARAMETERFVPROC)(GLenum target, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXPARAMETERIVPROC)(GLenum target, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXPARAMETERXVOESPROC)(GLenum target, GLenum pname, GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTUREIMAGEPROC)(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void * pixels);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTURELEVELPARAMETERFVPROC)(GLuint texture, GLint level, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTURELEVELPARAMETERIVPROC)(GLuint texture, GLint level, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERIIVPROC)(GLuint texture, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERIUIVPROC)(GLuint texture, GLenum pname, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERFVPROC)(GLuint texture, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERIVPROC)(GLuint texture, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETTEXTURESUBIMAGEPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void * pixels);
-typedef void (GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKVARYINGPROC)(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLsizei * size, GLenum * type, GLchar * name);
-typedef void (GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKI64_VPROC)(GLuint xfb, GLenum pname, GLuint index, GLint64 * param);
-typedef void (GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKI_VPROC)(GLuint xfb, GLenum pname, GLuint index, GLint * param);
-typedef void (GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKIVPROC)(GLuint xfb, GLenum pname, GLint * param);
-typedef GLuint (GLAD_API_PTR *PFNGLGETUNIFORMBLOCKINDEXPROC)(GLuint program, const GLchar * uniformBlockName);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMINDICESPROC)(GLuint program, GLsizei uniformCount, const GLchar *const* uniformNames, GLuint * uniformIndices);
-typedef GLint (GLAD_API_PTR *PFNGLGETUNIFORMLOCATIONPROC)(GLuint program, const GLchar * name);
-typedef GLint (GLAD_API_PTR *PFNGLGETUNIFORMLOCATIONARBPROC)(GLhandleARB programObj, const GLcharARB * name);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMSUBROUTINEUIVPROC)(GLenum shadertype, GLint location, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMDVPROC)(GLuint program, GLint location, GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMFVPROC)(GLuint program, GLint location, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMFVARBPROC)(GLhandleARB programObj, GLint location, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMI64VARBPROC)(GLuint program, GLint location, GLint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMIVPROC)(GLuint program, GLint location, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMIVARBPROC)(GLhandleARB programObj, GLint location, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMUI64VARBPROC)(GLuint program, GLint location, GLuint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETUNIFORMUIVPROC)(GLuint program, GLint location, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXARRAYINDEXED64IVPROC)(GLuint vaobj, GLuint index, GLenum pname, GLint64 * param);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXARRAYINDEXEDIVPROC)(GLuint vaobj, GLuint index, GLenum pname, GLint * param);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXARRAYIVPROC)(GLuint vaobj, GLenum pname, GLint * param);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBIIVPROC)(GLuint index, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBIUIVPROC)(GLuint index, GLenum pname, GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBLDVPROC)(GLuint index, GLenum pname, GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBPOINTERVPROC)(GLuint index, GLenum pname, void ** pointer);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBPOINTERVARBPROC)(GLuint index, GLenum pname, void ** pointer);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBDVPROC)(GLuint index, GLenum pname, GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBDVARBPROC)(GLuint index, GLenum pname, GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBFVPROC)(GLuint index, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBFVARBPROC)(GLuint index, GLenum pname, GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBIVPROC)(GLuint index, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETVERTEXATTRIBIVARBPROC)(GLuint index, GLenum pname, GLint * params);
-typedef void (GLAD_API_PTR *PFNGLGETNUNIFORMI64VARBPROC)(GLuint program, GLint location, GLsizei bufSize, GLint64 * params);
-typedef void (GLAD_API_PTR *PFNGLGETNUNIFORMUI64VARBPROC)(GLuint program, GLint location, GLsizei bufSize, GLuint64 * params);
-typedef void (GLAD_API_PTR *PFNGLHINTPROC)(GLenum target, GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLINDEXXOESPROC)(GLfixed component);
-typedef void (GLAD_API_PTR *PFNGLINDEXXVOESPROC)(const GLfixed * component);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATEBUFFERDATAPROC)(GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATEBUFFERSUBDATAPROC)(GLuint buffer, GLintptr offset, GLsizeiptr length);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATEFRAMEBUFFERPROC)(GLenum target, GLsizei numAttachments, const GLenum * attachments);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC)(GLuint framebuffer, GLsizei numAttachments, const GLenum * attachments);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC)(GLuint framebuffer, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATESUBFRAMEBUFFERPROC)(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATETEXIMAGEPROC)(GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLINVALIDATETEXSUBIMAGEPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth);
-typedef GLboolean (GLAD_API_PTR *PFNGLISBUFFERPROC)(GLuint buffer);
-typedef GLboolean (GLAD_API_PTR *PFNGLISBUFFERARBPROC)(GLuint buffer);
-typedef GLboolean (GLAD_API_PTR *PFNGLISENABLEDPROC)(GLenum cap);
-typedef GLboolean (GLAD_API_PTR *PFNGLISENABLEDIPROC)(GLenum target, GLuint index);
-typedef GLboolean (GLAD_API_PTR *PFNGLISFRAMEBUFFERPROC)(GLuint framebuffer);
-typedef GLboolean (GLAD_API_PTR *PFNGLISFRAMEBUFFEREXTPROC)(GLuint framebuffer);
-typedef GLboolean (GLAD_API_PTR *PFNGLISNAMEDSTRINGARBPROC)(GLint namelen, const GLchar * name);
-typedef GLboolean (GLAD_API_PTR *PFNGLISPROGRAMPROC)(GLuint program);
-typedef GLboolean (GLAD_API_PTR *PFNGLISPROGRAMARBPROC)(GLuint program);
-typedef GLboolean (GLAD_API_PTR *PFNGLISPROGRAMPIPELINEPROC)(GLuint pipeline);
-typedef GLboolean (GLAD_API_PTR *PFNGLISQUERYPROC)(GLuint id);
-typedef GLboolean (GLAD_API_PTR *PFNGLISQUERYARBPROC)(GLuint id);
-typedef GLboolean (GLAD_API_PTR *PFNGLISRENDERBUFFERPROC)(GLuint renderbuffer);
-typedef GLboolean (GLAD_API_PTR *PFNGLISRENDERBUFFEREXTPROC)(GLuint renderbuffer);
-typedef GLboolean (GLAD_API_PTR *PFNGLISSAMPLERPROC)(GLuint sampler);
-typedef GLboolean (GLAD_API_PTR *PFNGLISSHADERPROC)(GLuint shader);
-typedef GLboolean (GLAD_API_PTR *PFNGLISSYNCPROC)(GLsync sync);
-typedef GLboolean (GLAD_API_PTR *PFNGLISTEXTUREPROC)(GLuint texture);
-typedef GLboolean (GLAD_API_PTR *PFNGLISTRANSFORMFEEDBACKPROC)(GLuint id);
-typedef GLboolean (GLAD_API_PTR *PFNGLISVERTEXARRAYPROC)(GLuint array);
-typedef void (GLAD_API_PTR *PFNGLLIGHTMODELXOESPROC)(GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLLIGHTMODELXVOESPROC)(GLenum pname, const GLfixed * param);
-typedef void (GLAD_API_PTR *PFNGLLIGHTXOESPROC)(GLenum light, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLLIGHTXVOESPROC)(GLenum light, GLenum pname, const GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLLINEWIDTHPROC)(GLfloat width);
-typedef void (GLAD_API_PTR *PFNGLLINEWIDTHXOESPROC)(GLfixed width);
-typedef void (GLAD_API_PTR *PFNGLLINKPROGRAMPROC)(GLuint program);
-typedef void (GLAD_API_PTR *PFNGLLINKPROGRAMARBPROC)(GLhandleARB programObj);
-typedef void (GLAD_API_PTR *PFNGLLOADMATRIXXOESPROC)(const GLfixed * m);
-typedef void (GLAD_API_PTR *PFNGLLOADTRANSPOSEMATRIXDARBPROC)(const GLdouble * m);
-typedef void (GLAD_API_PTR *PFNGLLOADTRANSPOSEMATRIXFARBPROC)(const GLfloat * m);
-typedef void (GLAD_API_PTR *PFNGLLOADTRANSPOSEMATRIXXOESPROC)(const GLfixed * m);
-typedef void (GLAD_API_PTR *PFNGLLOGICOPPROC)(GLenum opcode);
-typedef void (GLAD_API_PTR *PFNGLMAP1XOESPROC)(GLenum target, GLfixed u1, GLfixed u2, GLint stride, GLint order, GLfixed points);
-typedef void (GLAD_API_PTR *PFNGLMAP2XOESPROC)(GLenum target, GLfixed u1, GLfixed u2, GLint ustride, GLint uorder, GLfixed v1, GLfixed v2, GLint vstride, GLint vorder, GLfixed points);
-typedef void * (GLAD_API_PTR *PFNGLMAPBUFFERPROC)(GLenum target, GLenum access);
-typedef void * (GLAD_API_PTR *PFNGLMAPBUFFERARBPROC)(GLenum target, GLenum access);
-typedef void * (GLAD_API_PTR *PFNGLMAPBUFFERRANGEPROC)(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access);
-typedef void (GLAD_API_PTR *PFNGLMAPGRID1XOESPROC)(GLint n, GLfixed u1, GLfixed u2);
-typedef void (GLAD_API_PTR *PFNGLMAPGRID2XOESPROC)(GLint n, GLfixed u1, GLfixed u2, GLfixed v1, GLfixed v2);
-typedef void * (GLAD_API_PTR *PFNGLMAPNAMEDBUFFERPROC)(GLuint buffer, GLenum access);
-typedef void * (GLAD_API_PTR *PFNGLMAPNAMEDBUFFERRANGEPROC)(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access);
-typedef void (GLAD_API_PTR *PFNGLMATERIALXOESPROC)(GLenum face, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLMATERIALXVOESPROC)(GLenum face, GLenum pname, const GLfixed * param);
-typedef void (GLAD_API_PTR *PFNGLMEMORYBARRIERPROC)(GLbitfield barriers);
-typedef void (GLAD_API_PTR *PFNGLMEMORYBARRIERBYREGIONPROC)(GLbitfield barriers);
-typedef void (GLAD_API_PTR *PFNGLMINSAMPLESHADINGPROC)(GLfloat value);
-typedef void (GLAD_API_PTR *PFNGLMINSAMPLESHADINGARBPROC)(GLfloat value);
-typedef void (GLAD_API_PTR *PFNGLMULTMATRIXXOESPROC)(const GLfixed * m);
-typedef void (GLAD_API_PTR *PFNGLMULTTRANSPOSEMATRIXDARBPROC)(const GLdouble * m);
-typedef void (GLAD_API_PTR *PFNGLMULTTRANSPOSEMATRIXFARBPROC)(const GLfloat * m);
-typedef void (GLAD_API_PTR *PFNGLMULTTRANSPOSEMATRIXXOESPROC)(const GLfixed * m);
-typedef void (GLAD_API_PTR *PFNGLMULTIDRAWARRAYSPROC)(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount);
-typedef void (GLAD_API_PTR *PFNGLMULTIDRAWARRAYSINDIRECTPROC)(GLenum mode, const void * indirect, GLsizei drawcount, GLsizei stride);
-typedef void (GLAD_API_PTR *PFNGLMULTIDRAWELEMENTSPROC)(GLenum mode, const GLsizei * count, GLenum type, const void *const* indices, GLsizei drawcount);
-typedef void (GLAD_API_PTR *PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC)(GLenum mode, const GLsizei * count, GLenum type, const void *const* indices, GLsizei drawcount, const GLint * basevertex);
-typedef void (GLAD_API_PTR *PFNGLMULTIDRAWELEMENTSINDIRECTPROC)(GLenum mode, GLenum type, const void * indirect, GLsizei drawcount, GLsizei stride);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1DARBPROC)(GLenum target, GLdouble s);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1DVARBPROC)(GLenum target, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1FARBPROC)(GLenum target, GLfloat s);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1FVARBPROC)(GLenum target, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1IARBPROC)(GLenum target, GLint s);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1IVARBPROC)(GLenum target, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1SARBPROC)(GLenum target, GLshort s);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1SVARBPROC)(GLenum target, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1XOESPROC)(GLenum texture, GLfixed s);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD1XVOESPROC)(GLenum texture, const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2DARBPROC)(GLenum target, GLdouble s, GLdouble t);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2DVARBPROC)(GLenum target, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2FARBPROC)(GLenum target, GLfloat s, GLfloat t);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2FVARBPROC)(GLenum target, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2IARBPROC)(GLenum target, GLint s, GLint t);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2IVARBPROC)(GLenum target, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2SARBPROC)(GLenum target, GLshort s, GLshort t);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2SVARBPROC)(GLenum target, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2XOESPROC)(GLenum texture, GLfixed s, GLfixed t);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD2XVOESPROC)(GLenum texture, const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3DARBPROC)(GLenum target, GLdouble s, GLdouble t, GLdouble r);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3DVARBPROC)(GLenum target, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3FARBPROC)(GLenum target, GLfloat s, GLfloat t, GLfloat r);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3FVARBPROC)(GLenum target, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3IARBPROC)(GLenum target, GLint s, GLint t, GLint r);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3IVARBPROC)(GLenum target, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3SARBPROC)(GLenum target, GLshort s, GLshort t, GLshort r);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3SVARBPROC)(GLenum target, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3XOESPROC)(GLenum texture, GLfixed s, GLfixed t, GLfixed r);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD3XVOESPROC)(GLenum texture, const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4DARBPROC)(GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4DVARBPROC)(GLenum target, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4FARBPROC)(GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4FVARBPROC)(GLenum target, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4IARBPROC)(GLenum target, GLint s, GLint t, GLint r, GLint q);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4IVARBPROC)(GLenum target, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4SARBPROC)(GLenum target, GLshort s, GLshort t, GLshort r, GLshort q);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4SVARBPROC)(GLenum target, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4XOESPROC)(GLenum texture, GLfixed s, GLfixed t, GLfixed r, GLfixed q);
-typedef void (GLAD_API_PTR *PFNGLMULTITEXCOORD4XVOESPROC)(GLenum texture, const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLNAMEDBUFFERDATAPROC)(GLuint buffer, GLsizeiptr size, const void * data, GLenum usage);
-typedef void (GLAD_API_PTR *PFNGLNAMEDBUFFERSTORAGEPROC)(GLuint buffer, GLsizeiptr size, const void * data, GLbitfield flags);
-typedef void (GLAD_API_PTR *PFNGLNAMEDBUFFERSUBDATAPROC)(GLuint buffer, GLintptr offset, GLsizeiptr size, const void * data);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC)(GLuint framebuffer, GLenum buf);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC)(GLuint framebuffer, GLsizei n, const GLenum * bufs);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC)(GLuint framebuffer, GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC)(GLuint framebuffer, GLenum src);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC)(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)(GLuint framebuffer, GLuint start, GLsizei count, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERTEXTUREPROC)(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level);
-typedef void (GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC)(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer);
-typedef void (GLAD_API_PTR *PFNGLNAMEDRENDERBUFFERSTORAGEPROC)(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC)(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLNAMEDSTRINGARBPROC)(GLenum type, GLint namelen, const GLchar * name, GLint stringlen, const GLchar * string);
-typedef void (GLAD_API_PTR *PFNGLNORMAL3XOESPROC)(GLfixed nx, GLfixed ny, GLfixed nz);
-typedef void (GLAD_API_PTR *PFNGLNORMAL3XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLOBJECTLABELPROC)(GLenum identifier, GLuint name, GLsizei length, const GLchar * label);
-typedef void (GLAD_API_PTR *PFNGLOBJECTPTRLABELPROC)(const void * ptr, GLsizei length, const GLchar * label);
-typedef void (GLAD_API_PTR *PFNGLORTHOXOESPROC)(GLfixed l, GLfixed r, GLfixed b, GLfixed t, GLfixed n, GLfixed f);
-typedef void (GLAD_API_PTR *PFNGLPASSTHROUGHXOESPROC)(GLfixed token);
-typedef void (GLAD_API_PTR *PFNGLPATCHPARAMETERFVPROC)(GLenum pname, const GLfloat * values);
-typedef void (GLAD_API_PTR *PFNGLPATCHPARAMETERIPROC)(GLenum pname, GLint value);
-typedef void (GLAD_API_PTR *PFNGLPAUSETRANSFORMFEEDBACKPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLPIXELMAPXPROC)(GLenum map, GLint size, const GLfixed * values);
-typedef void (GLAD_API_PTR *PFNGLPIXELSTOREFPROC)(GLenum pname, GLfloat param);
-typedef void (GLAD_API_PTR *PFNGLPIXELSTOREIPROC)(GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLPIXELSTOREXPROC)(GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLPIXELTRANSFERXOESPROC)(GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLPIXELZOOMXOESPROC)(GLfixed xfactor, GLfixed yfactor);
-typedef void (GLAD_API_PTR *PFNGLPOINTPARAMETERFPROC)(GLenum pname, GLfloat param);
-typedef void (GLAD_API_PTR *PFNGLPOINTPARAMETERFVPROC)(GLenum pname, const GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLPOINTPARAMETERIPROC)(GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLPOINTPARAMETERIVPROC)(GLenum pname, const GLint * params);
-typedef void (GLAD_API_PTR *PFNGLPOINTPARAMETERXVOESPROC)(GLenum pname, const GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLPOINTSIZEPROC)(GLfloat size);
-typedef void (GLAD_API_PTR *PFNGLPOINTSIZEXOESPROC)(GLfixed size);
-typedef void (GLAD_API_PTR *PFNGLPOLYGONMODEPROC)(GLenum face, GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLPOLYGONOFFSETPROC)(GLfloat factor, GLfloat units);
-typedef void (GLAD_API_PTR *PFNGLPOLYGONOFFSETXOESPROC)(GLfixed factor, GLfixed units);
-typedef void (GLAD_API_PTR *PFNGLPOPDEBUGGROUPPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLPRIMITIVEBOUNDINGBOXARBPROC)(GLfloat minX, GLfloat minY, GLfloat minZ, GLfloat minW, GLfloat maxX, GLfloat maxY, GLfloat maxZ, GLfloat maxW);
-typedef void (GLAD_API_PTR *PFNGLPRIMITIVERESTARTINDEXPROC)(GLuint index);
-typedef void (GLAD_API_PTR *PFNGLPRIORITIZETEXTURESXOESPROC)(GLsizei n, const GLuint * textures, const GLfixed * priorities);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMBINARYPROC)(GLuint program, GLenum binaryFormat, const void * binary, GLsizei length);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4DARBPROC)(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4DVARBPROC)(GLenum target, GLuint index, const GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4FARBPROC)(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4FVARBPROC)(GLenum target, GLuint index, const GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4DARBPROC)(GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4DVARBPROC)(GLenum target, GLuint index, const GLdouble * params);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4FARBPROC)(GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4FVARBPROC)(GLenum target, GLuint index, const GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMPARAMETERIPROC)(GLuint program, GLenum pname, GLint value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMPARAMETERIARBPROC)(GLuint program, GLenum pname, GLint value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMSTRINGARBPROC)(GLenum target, GLenum format, GLsizei len, const void * string);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1DPROC)(GLuint program, GLint location, GLdouble v0);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1DVPROC)(GLuint program, GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1FPROC)(GLuint program, GLint location, GLfloat v0);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1FVPROC)(GLuint program, GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1IPROC)(GLuint program, GLint location, GLint v0);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1I64ARBPROC)(GLuint program, GLint location, GLint64 x);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1I64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1IVPROC)(GLuint program, GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UIPROC)(GLuint program, GLint location, GLuint v0);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UI64ARBPROC)(GLuint program, GLint location, GLuint64 x);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UI64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UIVPROC)(GLuint program, GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2DPROC)(GLuint program, GLint location, GLdouble v0, GLdouble v1);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2DVPROC)(GLuint program, GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2FPROC)(GLuint program, GLint location, GLfloat v0, GLfloat v1);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2FVPROC)(GLuint program, GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2IPROC)(GLuint program, GLint location, GLint v0, GLint v1);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2I64ARBPROC)(GLuint program, GLint location, GLint64 x, GLint64 y);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2I64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2IVPROC)(GLuint program, GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UIPROC)(GLuint program, GLint location, GLuint v0, GLuint v1);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UI64ARBPROC)(GLuint program, GLint location, GLuint64 x, GLuint64 y);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UI64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UIVPROC)(GLuint program, GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3DPROC)(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3DVPROC)(GLuint program, GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3FPROC)(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3FVPROC)(GLuint program, GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3IPROC)(GLuint program, GLint location, GLint v0, GLint v1, GLint v2);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3I64ARBPROC)(GLuint program, GLint location, GLint64 x, GLint64 y, GLint64 z);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3I64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3IVPROC)(GLuint program, GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UIPROC)(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UI64ARBPROC)(GLuint program, GLint location, GLuint64 x, GLuint64 y, GLuint64 z);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UI64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UIVPROC)(GLuint program, GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4DPROC)(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4DVPROC)(GLuint program, GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4FPROC)(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4FVPROC)(GLuint program, GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4IPROC)(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4I64ARBPROC)(GLuint program, GLint location, GLint64 x, GLint64 y, GLint64 z, GLint64 w);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4I64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4IVPROC)(GLuint program, GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UIPROC)(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UI64ARBPROC)(GLuint program, GLint location, GLuint64 x, GLuint64 y, GLuint64 z, GLuint64 w);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UI64VARBPROC)(GLuint program, GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UIVPROC)(GLuint program, GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC)(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLPROVOKINGVERTEXPROC)(GLenum mode);
-typedef void (GLAD_API_PTR *PFNGLPUSHDEBUGGROUPPROC)(GLenum source, GLuint id, GLsizei length, const GLchar * message);
-typedef void (GLAD_API_PTR *PFNGLQUERYCOUNTERPROC)(GLuint id, GLenum target);
-typedef void (GLAD_API_PTR *PFNGLRASTERPOS2XOESPROC)(GLfixed x, GLfixed y);
-typedef void (GLAD_API_PTR *PFNGLRASTERPOS2XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLRASTERPOS3XOESPROC)(GLfixed x, GLfixed y, GLfixed z);
-typedef void (GLAD_API_PTR *PFNGLRASTERPOS3XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLRASTERPOS4XOESPROC)(GLfixed x, GLfixed y, GLfixed z, GLfixed w);
-typedef void (GLAD_API_PTR *PFNGLRASTERPOS4XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLREADBUFFERPROC)(GLenum src);
-typedef void (GLAD_API_PTR *PFNGLREADPIXELSPROC)(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * pixels);
-typedef void (GLAD_API_PTR *PFNGLRECTXOESPROC)(GLfixed x1, GLfixed y1, GLfixed x2, GLfixed y2);
-typedef void (GLAD_API_PTR *PFNGLRECTXVOESPROC)(const GLfixed * v1, const GLfixed * v2);
-typedef void (GLAD_API_PTR *PFNGLRELEASESHADERCOMPILERPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEPROC)(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEEXTPROC)(GLenum target, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC)(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC)(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLRESUMETRANSFORMFEEDBACKPROC)(void);
-typedef void (GLAD_API_PTR *PFNGLROTATEXOESPROC)(GLfixed angle, GLfixed x, GLfixed y, GLfixed z);
-typedef void (GLAD_API_PTR *PFNGLSAMPLECOVERAGEPROC)(GLfloat value, GLboolean invert);
-typedef void (GLAD_API_PTR *PFNGLSAMPLECOVERAGEARBPROC)(GLfloat value, GLboolean invert);
-typedef void (GLAD_API_PTR *PFNGLSAMPLEMASKIPROC)(GLuint maskNumber, GLbitfield mask);
-typedef void (GLAD_API_PTR *PFNGLSAMPLERPARAMETERIIVPROC)(GLuint sampler, GLenum pname, const GLint * param);
-typedef void (GLAD_API_PTR *PFNGLSAMPLERPARAMETERIUIVPROC)(GLuint sampler, GLenum pname, const GLuint * param);
-typedef void (GLAD_API_PTR *PFNGLSAMPLERPARAMETERFPROC)(GLuint sampler, GLenum pname, GLfloat param);
-typedef void (GLAD_API_PTR *PFNGLSAMPLERPARAMETERFVPROC)(GLuint sampler, GLenum pname, const GLfloat * param);
-typedef void (GLAD_API_PTR *PFNGLSAMPLERPARAMETERIPROC)(GLuint sampler, GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLSAMPLERPARAMETERIVPROC)(GLuint sampler, GLenum pname, const GLint * param);
-typedef void (GLAD_API_PTR *PFNGLSCALEXOESPROC)(GLfixed x, GLfixed y, GLfixed z);
-typedef void (GLAD_API_PTR *PFNGLSCISSORPROC)(GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLSCISSORARRAYVPROC)(GLuint first, GLsizei count, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLSCISSORINDEXEDPROC)(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLSCISSORINDEXEDVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLSHADERBINARYPROC)(GLsizei count, const GLuint * shaders, GLenum binaryFormat, const void * binary, GLsizei length);
-typedef void (GLAD_API_PTR *PFNGLSHADERSOURCEPROC)(GLuint shader, GLsizei count, const GLchar *const* string, const GLint * length);
-typedef void (GLAD_API_PTR *PFNGLSHADERSOURCEARBPROC)(GLhandleARB shaderObj, GLsizei count, const GLcharARB ** string, const GLint * length);
-typedef void (GLAD_API_PTR *PFNGLSHADERSTORAGEBLOCKBINDINGPROC)(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding);
-typedef void (GLAD_API_PTR *PFNGLSPECIALIZESHADERARBPROC)(GLuint shader, const GLchar * pEntryPoint, GLuint numSpecializationConstants, const GLuint * pConstantIndex, const GLuint * pConstantValue);
-typedef void (GLAD_API_PTR *PFNGLSTENCILFUNCPROC)(GLenum func, GLint ref, GLuint mask);
-typedef void (GLAD_API_PTR *PFNGLSTENCILFUNCSEPARATEPROC)(GLenum face, GLenum func, GLint ref, GLuint mask);
-typedef void (GLAD_API_PTR *PFNGLSTENCILMASKPROC)(GLuint mask);
-typedef void (GLAD_API_PTR *PFNGLSTENCILMASKSEPARATEPROC)(GLenum face, GLuint mask);
-typedef void (GLAD_API_PTR *PFNGLSTENCILOPPROC)(GLenum fail, GLenum zfail, GLenum zpass);
-typedef void (GLAD_API_PTR *PFNGLSTENCILOPSEPARATEPROC)(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass);
-typedef void (GLAD_API_PTR *PFNGLTEXBUFFERPROC)(GLenum target, GLenum internalformat, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLTEXBUFFERRANGEPROC)(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD1XOESPROC)(GLfixed s);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD1XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD2XOESPROC)(GLfixed s, GLfixed t);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD2XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD3XOESPROC)(GLfixed s, GLfixed t, GLfixed r);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD3XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD4XOESPROC)(GLfixed s, GLfixed t, GLfixed r, GLfixed q);
-typedef void (GLAD_API_PTR *PFNGLTEXCOORD4XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLTEXENVXOESPROC)(GLenum target, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLTEXENVXVOESPROC)(GLenum target, GLenum pname, const GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLTEXGENXOESPROC)(GLenum coord, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLTEXGENXVOESPROC)(GLenum coord, GLenum pname, const GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLTEXIMAGE1DPROC)(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXIMAGE2DPROC)(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXIMAGE2DMULTISAMPLEPROC)(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-typedef void (GLAD_API_PTR *PFNGLTEXIMAGE3DPROC)(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXIMAGE3DMULTISAMPLEPROC)(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERIIVPROC)(GLenum target, GLenum pname, const GLint * params);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERIUIVPROC)(GLenum target, GLenum pname, const GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERFPROC)(GLenum target, GLenum pname, GLfloat param);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERFVPROC)(GLenum target, GLenum pname, const GLfloat * params);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERIPROC)(GLenum target, GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERIVPROC)(GLenum target, GLenum pname, const GLint * params);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERXOESPROC)(GLenum target, GLenum pname, GLfixed param);
-typedef void (GLAD_API_PTR *PFNGLTEXPARAMETERXVOESPROC)(GLenum target, GLenum pname, const GLfixed * params);
-typedef void (GLAD_API_PTR *PFNGLTEXSTORAGE1DPROC)(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width);
-typedef void (GLAD_API_PTR *PFNGLTEXSTORAGE2DPROC)(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLTEXSTORAGE2DMULTISAMPLEPROC)(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-typedef void (GLAD_API_PTR *PFNGLTEXSTORAGE3DPROC)(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
-typedef void (GLAD_API_PTR *PFNGLTEXSTORAGE3DMULTISAMPLEPROC)(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
-typedef void (GLAD_API_PTR *PFNGLTEXSUBIMAGE1DPROC)(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXSUBIMAGE2DPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXSUBIMAGE3DPROC)(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREBUFFERPROC)(GLuint texture, GLenum internalformat, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREBUFFERRANGEPROC)(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREPARAMETERIIVPROC)(GLuint texture, GLenum pname, const GLint * params);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREPARAMETERIUIVPROC)(GLuint texture, GLenum pname, const GLuint * params);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREPARAMETERFPROC)(GLuint texture, GLenum pname, GLfloat param);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREPARAMETERFVPROC)(GLuint texture, GLenum pname, const GLfloat * param);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREPARAMETERIPROC)(GLuint texture, GLenum pname, GLint param);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREPARAMETERIVPROC)(GLuint texture, GLenum pname, const GLint * param);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESTORAGE1DPROC)(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESTORAGE2DPROC)(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC)(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESTORAGE3DPROC)(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC)(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESUBIMAGE1DPROC)(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESUBIMAGE2DPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXTURESUBIMAGE3DPROC)(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels);
-typedef void (GLAD_API_PTR *PFNGLTEXTUREVIEWPROC)(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers);
-typedef void (GLAD_API_PTR *PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC)(GLuint xfb, GLuint index, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC)(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
-typedef void (GLAD_API_PTR *PFNGLTRANSFORMFEEDBACKVARYINGSPROC)(GLuint program, GLsizei count, const GLchar *const* varyings, GLenum bufferMode);
-typedef void (GLAD_API_PTR *PFNGLTRANSLATEXOESPROC)(GLfixed x, GLfixed y, GLfixed z);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1DPROC)(GLint location, GLdouble x);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1DVPROC)(GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1FPROC)(GLint location, GLfloat v0);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1FARBPROC)(GLint location, GLfloat v0);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1FVPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1FVARBPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1IPROC)(GLint location, GLint v0);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1I64ARBPROC)(GLint location, GLint64 x);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1I64VARBPROC)(GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1IARBPROC)(GLint location, GLint v0);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1IVPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1IVARBPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1UIPROC)(GLint location, GLuint v0);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1UI64ARBPROC)(GLint location, GLuint64 x);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1UI64VARBPROC)(GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM1UIVPROC)(GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2DPROC)(GLint location, GLdouble x, GLdouble y);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2DVPROC)(GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2FPROC)(GLint location, GLfloat v0, GLfloat v1);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2FARBPROC)(GLint location, GLfloat v0, GLfloat v1);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2FVPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2FVARBPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2IPROC)(GLint location, GLint v0, GLint v1);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2I64ARBPROC)(GLint location, GLint64 x, GLint64 y);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2I64VARBPROC)(GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2IARBPROC)(GLint location, GLint v0, GLint v1);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2IVPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2IVARBPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2UIPROC)(GLint location, GLuint v0, GLuint v1);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2UI64ARBPROC)(GLint location, GLuint64 x, GLuint64 y);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2UI64VARBPROC)(GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM2UIVPROC)(GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3DPROC)(GLint location, GLdouble x, GLdouble y, GLdouble z);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3DVPROC)(GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3FPROC)(GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3FARBPROC)(GLint location, GLfloat v0, GLfloat v1, GLfloat v2);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3FVPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3FVARBPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3IPROC)(GLint location, GLint v0, GLint v1, GLint v2);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3I64ARBPROC)(GLint location, GLint64 x, GLint64 y, GLint64 z);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3I64VARBPROC)(GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3IARBPROC)(GLint location, GLint v0, GLint v1, GLint v2);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3IVPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3IVARBPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3UIPROC)(GLint location, GLuint v0, GLuint v1, GLuint v2);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3UI64ARBPROC)(GLint location, GLuint64 x, GLuint64 y, GLuint64 z);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3UI64VARBPROC)(GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM3UIVPROC)(GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4DPROC)(GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4DVPROC)(GLint location, GLsizei count, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4FPROC)(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4FARBPROC)(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4FVPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4FVARBPROC)(GLint location, GLsizei count, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4IPROC)(GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4I64ARBPROC)(GLint location, GLint64 x, GLint64 y, GLint64 z, GLint64 w);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4I64VARBPROC)(GLint location, GLsizei count, const GLint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4IARBPROC)(GLint location, GLint v0, GLint v1, GLint v2, GLint v3);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4IVPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4IVARBPROC)(GLint location, GLsizei count, const GLint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4UIPROC)(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4UI64ARBPROC)(GLint location, GLuint64 x, GLuint64 y, GLuint64 z, GLuint64 w);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4UI64VARBPROC)(GLint location, GLsizei count, const GLuint64 * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORM4UIVPROC)(GLint location, GLsizei count, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMBLOCKBINDINGPROC)(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2FVARBPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2X3DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2X3FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2X4DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX2X4FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3FVARBPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3X2DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3X2FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3X4DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX3X4FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4FVARBPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4X2DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4X2FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4X3DVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMMATRIX4X3FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value);
-typedef void (GLAD_API_PTR *PFNGLUNIFORMSUBROUTINESUIVPROC)(GLenum shadertype, GLsizei count, const GLuint * indices);
-typedef GLboolean (GLAD_API_PTR *PFNGLUNMAPBUFFERPROC)(GLenum target);
-typedef GLboolean (GLAD_API_PTR *PFNGLUNMAPBUFFERARBPROC)(GLenum target);
-typedef GLboolean (GLAD_API_PTR *PFNGLUNMAPNAMEDBUFFERPROC)(GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLUSEPROGRAMPROC)(GLuint program);
-typedef void (GLAD_API_PTR *PFNGLUSEPROGRAMOBJECTARBPROC)(GLhandleARB programObj);
-typedef void (GLAD_API_PTR *PFNGLUSEPROGRAMSTAGESPROC)(GLuint pipeline, GLbitfield stages, GLuint program);
-typedef void (GLAD_API_PTR *PFNGLVALIDATEPROGRAMPROC)(GLuint program);
-typedef void (GLAD_API_PTR *PFNGLVALIDATEPROGRAMARBPROC)(GLhandleARB programObj);
-typedef void (GLAD_API_PTR *PFNGLVALIDATEPROGRAMPIPELINEPROC)(GLuint pipeline);
-typedef void (GLAD_API_PTR *PFNGLVERTEX2XOESPROC)(GLfixed x);
-typedef void (GLAD_API_PTR *PFNGLVERTEX2XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLVERTEX3XOESPROC)(GLfixed x, GLfixed y);
-typedef void (GLAD_API_PTR *PFNGLVERTEX3XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLVERTEX4XOESPROC)(GLfixed x, GLfixed y, GLfixed z);
-typedef void (GLAD_API_PTR *PFNGLVERTEX4XVOESPROC)(const GLfixed * coords);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBBINDINGPROC)(GLuint vaobj, GLuint attribindex, GLuint bindingindex);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBFORMATPROC)(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBIFORMATPROC)(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBLFORMATPROC)(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYBINDINGDIVISORPROC)(GLuint vaobj, GLuint bindingindex, GLuint divisor);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYELEMENTBUFFERPROC)(GLuint vaobj, GLuint buffer);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYVERTEXBUFFERPROC)(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride);
-typedef void (GLAD_API_PTR *PFNGLVERTEXARRAYVERTEXBUFFERSPROC)(GLuint vaobj, GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizei * strides);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1DPROC)(GLuint index, GLdouble x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1DARBPROC)(GLuint index, GLdouble x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1DVARBPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1FPROC)(GLuint index, GLfloat x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1FARBPROC)(GLuint index, GLfloat x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1FVPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1FVARBPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1SPROC)(GLuint index, GLshort x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1SARBPROC)(GLuint index, GLshort x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1SVPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB1SVARBPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2DPROC)(GLuint index, GLdouble x, GLdouble y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2DARBPROC)(GLuint index, GLdouble x, GLdouble y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2DVARBPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2FPROC)(GLuint index, GLfloat x, GLfloat y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2FARBPROC)(GLuint index, GLfloat x, GLfloat y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2FVPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2FVARBPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2SPROC)(GLuint index, GLshort x, GLshort y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2SARBPROC)(GLuint index, GLshort x, GLshort y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2SVPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB2SVARBPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3DPROC)(GLuint index, GLdouble x, GLdouble y, GLdouble z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3DARBPROC)(GLuint index, GLdouble x, GLdouble y, GLdouble z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3DVARBPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3FPROC)(GLuint index, GLfloat x, GLfloat y, GLfloat z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3FARBPROC)(GLuint index, GLfloat x, GLfloat y, GLfloat z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3FVPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3FVARBPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3SPROC)(GLuint index, GLshort x, GLshort y, GLshort z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3SARBPROC)(GLuint index, GLshort x, GLshort y, GLshort z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3SVPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB3SVARBPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NBVPROC)(GLuint index, const GLbyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NBVARBPROC)(GLuint index, const GLbyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NIVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NIVARBPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NSVPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NSVARBPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBPROC)(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBARBPROC)(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBVPROC)(GLuint index, const GLubyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBVARBPROC)(GLuint index, const GLubyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUIVPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUIVARBPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUSVPROC)(GLuint index, const GLushort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4NUSVARBPROC)(GLuint index, const GLushort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4BVPROC)(GLuint index, const GLbyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4BVARBPROC)(GLuint index, const GLbyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4DPROC)(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4DARBPROC)(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4DVARBPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4FPROC)(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4FARBPROC)(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4FVPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4FVARBPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4IVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4IVARBPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4SPROC)(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4SARBPROC)(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4SVPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4SVARBPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4UBVPROC)(GLuint index, const GLubyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4UBVARBPROC)(GLuint index, const GLubyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4UIVPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4UIVARBPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4USVPROC)(GLuint index, const GLushort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIB4USVARBPROC)(GLuint index, const GLushort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBBINDINGPROC)(GLuint attribindex, GLuint bindingindex);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBDIVISORPROC)(GLuint index, GLuint divisor);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBDIVISORARBPROC)(GLuint index, GLuint divisor);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBFORMATPROC)(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI1IPROC)(GLuint index, GLint x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI1IVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI1UIPROC)(GLuint index, GLuint x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI1UIVPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI2IPROC)(GLuint index, GLint x, GLint y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI2IVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI2UIPROC)(GLuint index, GLuint x, GLuint y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI2UIVPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI3IPROC)(GLuint index, GLint x, GLint y, GLint z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI3IVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI3UIPROC)(GLuint index, GLuint x, GLuint y, GLuint z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI3UIVPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4BVPROC)(GLuint index, const GLbyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4IPROC)(GLuint index, GLint x, GLint y, GLint z, GLint w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4IVPROC)(GLuint index, const GLint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4SVPROC)(GLuint index, const GLshort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4UBVPROC)(GLuint index, const GLubyte * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4UIPROC)(GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4UIVPROC)(GLuint index, const GLuint * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBI4USVPROC)(GLuint index, const GLushort * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBIFORMATPROC)(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBIPOINTERPROC)(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL1DPROC)(GLuint index, GLdouble x);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL1DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL2DPROC)(GLuint index, GLdouble x, GLdouble y);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL2DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL3DPROC)(GLuint index, GLdouble x, GLdouble y, GLdouble z);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL3DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL4DPROC)(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBL4DVPROC)(GLuint index, const GLdouble * v);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBLFORMATPROC)(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBLPOINTERPROC)(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP1UIPROC)(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP1UIVPROC)(GLuint index, GLenum type, GLboolean normalized, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP2UIPROC)(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP2UIVPROC)(GLuint index, GLenum type, GLboolean normalized, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP3UIPROC)(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP3UIVPROC)(GLuint index, GLenum type, GLboolean normalized, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP4UIPROC)(GLuint index, GLenum type, GLboolean normalized, GLuint value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBP4UIVPROC)(GLuint index, GLenum type, GLboolean normalized, const GLuint * value);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBPOINTERPROC)(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer);
-typedef void (GLAD_API_PTR *PFNGLVERTEXATTRIBPOINTERARBPROC)(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer);
-typedef void (GLAD_API_PTR *PFNGLVERTEXBINDINGDIVISORPROC)(GLuint bindingindex, GLuint divisor);
-typedef void (GLAD_API_PTR *PFNGLVIEWPORTPROC)(GLint x, GLint y, GLsizei width, GLsizei height);
-typedef void (GLAD_API_PTR *PFNGLVIEWPORTARRAYVPROC)(GLuint first, GLsizei count, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLVIEWPORTINDEXEDFPROC)(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h);
-typedef void (GLAD_API_PTR *PFNGLVIEWPORTINDEXEDFVPROC)(GLuint index, const GLfloat * v);
-typedef void (GLAD_API_PTR *PFNGLWAITSYNCPROC)(GLsync sync, GLbitfield flags, GLuint64 timeout);
+typedef void(GLAD_API_PTR *PFNGLACCUMXOESPROC)(GLenum op, GLfixed value);
+typedef void(GLAD_API_PTR *PFNGLACTIVESHADERPROGRAMPROC)(GLuint pipeline,
+                                                         GLuint program);
+typedef void(GLAD_API_PTR *PFNGLACTIVETEXTUREPROC)(GLenum texture);
+typedef void(GLAD_API_PTR *PFNGLACTIVETEXTUREARBPROC)(GLenum texture);
+typedef void(GLAD_API_PTR *PFNGLALPHAFUNCXOESPROC)(GLenum func, GLfixed ref);
+typedef void(GLAD_API_PTR *PFNGLATTACHOBJECTARBPROC)(GLhandleARB containerObj,
+                                                     GLhandleARB obj);
+typedef void(GLAD_API_PTR *PFNGLATTACHSHADERPROC)(GLuint program,
+                                                  GLuint shader);
+typedef void(GLAD_API_PTR *PFNGLBEGINCONDITIONALRENDERPROC)(GLuint id,
+                                                            GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLBEGINQUERYPROC)(GLenum target, GLuint id);
+typedef void(GLAD_API_PTR *PFNGLBEGINQUERYARBPROC)(GLenum target, GLuint id);
+typedef void(GLAD_API_PTR *PFNGLBEGINQUERYINDEXEDPROC)(GLenum target,
+                                                       GLuint index, GLuint id);
+typedef void(GLAD_API_PTR *PFNGLBEGINTRANSFORMFEEDBACKPROC)(
+    GLenum primitiveMode);
+typedef void(GLAD_API_PTR *PFNGLBINDATTRIBLOCATIONPROC)(GLuint program,
+                                                        GLuint index,
+                                                        const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLBINDATTRIBLOCATIONARBPROC)(
+    GLhandleARB programObj, GLuint index, const GLcharARB *name);
+typedef void(GLAD_API_PTR *PFNGLBINDBUFFERPROC)(GLenum target, GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLBINDBUFFERARBPROC)(GLenum target,
+                                                   GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLBINDBUFFERBASEPROC)(GLenum target, GLuint index,
+                                                    GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLBINDBUFFERRANGEPROC)(GLenum target,
+                                                     GLuint index,
+                                                     GLuint buffer,
+                                                     GLintptr offset,
+                                                     GLsizeiptr size);
+typedef void(GLAD_API_PTR *PFNGLBINDBUFFERSBASEPROC)(GLenum target,
+                                                     GLuint first,
+                                                     GLsizei count,
+                                                     const GLuint *buffers);
+typedef void(GLAD_API_PTR *PFNGLBINDBUFFERSRANGEPROC)(
+    GLenum target, GLuint first, GLsizei count, const GLuint *buffers,
+    const GLintptr *offsets, const GLsizeiptr *sizes);
+typedef void(GLAD_API_PTR *PFNGLBINDFRAGDATALOCATIONPROC)(GLuint program,
+                                                          GLuint color,
+                                                          const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLBINDFRAGDATALOCATIONINDEXEDPROC)(
+    GLuint program, GLuint colorNumber, GLuint index, const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLBINDFRAMEBUFFERPROC)(GLenum target,
+                                                     GLuint framebuffer);
+typedef void(GLAD_API_PTR *PFNGLBINDFRAMEBUFFEREXTPROC)(GLenum target,
+                                                        GLuint framebuffer);
+typedef void(GLAD_API_PTR *PFNGLBINDIMAGETEXTUREPROC)(
+    GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer,
+    GLenum access, GLenum format);
+typedef void(GLAD_API_PTR *PFNGLBINDIMAGETEXTURESPROC)(GLuint first,
+                                                       GLsizei count,
+                                                       const GLuint *textures);
+typedef void(GLAD_API_PTR *PFNGLBINDPROGRAMARBPROC)(GLenum target,
+                                                    GLuint program);
+typedef void(GLAD_API_PTR *PFNGLBINDPROGRAMPIPELINEPROC)(GLuint pipeline);
+typedef void(GLAD_API_PTR *PFNGLBINDRENDERBUFFERPROC)(GLenum target,
+                                                      GLuint renderbuffer);
+typedef void(GLAD_API_PTR *PFNGLBINDRENDERBUFFEREXTPROC)(GLenum target,
+                                                         GLuint renderbuffer);
+typedef void(GLAD_API_PTR *PFNGLBINDSAMPLERPROC)(GLuint unit, GLuint sampler);
+typedef void(GLAD_API_PTR *PFNGLBINDSAMPLERSPROC)(GLuint first, GLsizei count,
+                                                  const GLuint *samplers);
+typedef void(GLAD_API_PTR *PFNGLBINDTEXTUREPROC)(GLenum target, GLuint texture);
+typedef void(GLAD_API_PTR *PFNGLBINDTEXTUREUNITPROC)(GLuint unit,
+                                                     GLuint texture);
+typedef void(GLAD_API_PTR *PFNGLBINDTEXTURESPROC)(GLuint first, GLsizei count,
+                                                  const GLuint *textures);
+typedef void(GLAD_API_PTR *PFNGLBINDTRANSFORMFEEDBACKPROC)(GLenum target,
+                                                           GLuint id);
+typedef void(GLAD_API_PTR *PFNGLBINDVERTEXARRAYPROC)(GLuint array);
+typedef void(GLAD_API_PTR *PFNGLBINDVERTEXBUFFERPROC)(GLuint bindingindex,
+                                                      GLuint buffer,
+                                                      GLintptr offset,
+                                                      GLsizei stride);
+typedef void(GLAD_API_PTR *PFNGLBINDVERTEXBUFFERSPROC)(GLuint first,
+                                                       GLsizei count,
+                                                       const GLuint *buffers,
+                                                       const GLintptr *offsets,
+                                                       const GLsizei *strides);
+typedef void(GLAD_API_PTR *PFNGLBITMAPXOESPROC)(GLsizei width, GLsizei height,
+                                                GLfixed xorig, GLfixed yorig,
+                                                GLfixed xmove, GLfixed ymove,
+                                                const GLubyte *bitmap);
+typedef void(GLAD_API_PTR *PFNGLBLENDCOLORPROC)(GLfloat red, GLfloat green,
+                                                GLfloat blue, GLfloat alpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDCOLORXOESPROC)(GLfixed red, GLfixed green,
+                                                    GLfixed blue,
+                                                    GLfixed alpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDEQUATIONPROC)(GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLBLENDEQUATIONSEPARATEPROC)(GLenum modeRGB,
+                                                           GLenum modeAlpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDEQUATIONSEPARATEIPROC)(GLuint buf,
+                                                            GLenum modeRGB,
+                                                            GLenum modeAlpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDEQUATIONSEPARATEIARBPROC)(
+    GLuint buf, GLenum modeRGB, GLenum modeAlpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDEQUATIONIPROC)(GLuint buf, GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLBLENDEQUATIONIARBPROC)(GLuint buf, GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLBLENDFUNCPROC)(GLenum sfactor, GLenum dfactor);
+typedef void(GLAD_API_PTR *PFNGLBLENDFUNCSEPARATEPROC)(GLenum sfactorRGB,
+                                                       GLenum dfactorRGB,
+                                                       GLenum sfactorAlpha,
+                                                       GLenum dfactorAlpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDFUNCSEPARATEIPROC)(
+    GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDFUNCSEPARATEIARBPROC)(
+    GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
+typedef void(GLAD_API_PTR *PFNGLBLENDFUNCIPROC)(GLuint buf, GLenum src,
+                                                GLenum dst);
+typedef void(GLAD_API_PTR *PFNGLBLENDFUNCIARBPROC)(GLuint buf, GLenum src,
+                                                   GLenum dst);
+typedef void(GLAD_API_PTR *PFNGLBLITFRAMEBUFFERPROC)(
+    GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0,
+    GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
+typedef void(GLAD_API_PTR *PFNGLBLITFRAMEBUFFEREXTPROC)(
+    GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0,
+    GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);
+typedef void(GLAD_API_PTR *PFNGLBLITNAMEDFRAMEBUFFERPROC)(
+    GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0,
+    GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1,
+    GLint dstY1, GLbitfield mask, GLenum filter);
+typedef void(GLAD_API_PTR *PFNGLBUFFERDATAPROC)(GLenum target, GLsizeiptr size,
+                                                const void *data, GLenum usage);
+typedef void(GLAD_API_PTR *PFNGLBUFFERDATAARBPROC)(GLenum target,
+                                                   GLsizeiptrARB size,
+                                                   const void *data,
+                                                   GLenum usage);
+typedef void(GLAD_API_PTR *PFNGLBUFFERSTORAGEPROC)(GLenum target,
+                                                   GLsizeiptr size,
+                                                   const void *data,
+                                                   GLbitfield flags);
+typedef void(GLAD_API_PTR *PFNGLBUFFERSUBDATAPROC)(GLenum target,
+                                                   GLintptr offset,
+                                                   GLsizeiptr size,
+                                                   const void *data);
+typedef void(GLAD_API_PTR *PFNGLBUFFERSUBDATAARBPROC)(GLenum target,
+                                                      GLintptrARB offset,
+                                                      GLsizeiptrARB size,
+                                                      const void *data);
+typedef GLenum(GLAD_API_PTR *PFNGLCHECKFRAMEBUFFERSTATUSPROC)(GLenum target);
+typedef GLenum(GLAD_API_PTR *PFNGLCHECKFRAMEBUFFERSTATUSEXTPROC)(GLenum target);
+typedef GLenum(GLAD_API_PTR *PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC)(
+    GLuint framebuffer, GLenum target);
+typedef void(GLAD_API_PTR *PFNGLCLAMPCOLORPROC)(GLenum target, GLenum clamp);
+typedef void(GLAD_API_PTR *PFNGLCLAMPCOLORARBPROC)(GLenum target, GLenum clamp);
+typedef void(GLAD_API_PTR *PFNGLCLEARPROC)(GLbitfield mask);
+typedef void(GLAD_API_PTR *PFNGLCLEARACCUMXOESPROC)(GLfixed red, GLfixed green,
+                                                    GLfixed blue,
+                                                    GLfixed alpha);
+typedef void(GLAD_API_PTR *PFNGLCLEARBUFFERDATAPROC)(GLenum target,
+                                                     GLenum internalformat,
+                                                     GLenum format, GLenum type,
+                                                     const void *data);
+typedef void(GLAD_API_PTR *PFNGLCLEARBUFFERSUBDATAPROC)(
+    GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size,
+    GLenum format, GLenum type, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCLEARBUFFERFIPROC)(GLenum buffer,
+                                                   GLint drawbuffer,
+                                                   GLfloat depth,
+                                                   GLint stencil);
+typedef void(GLAD_API_PTR *PFNGLCLEARBUFFERFVPROC)(GLenum buffer,
+                                                   GLint drawbuffer,
+                                                   const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLCLEARBUFFERIVPROC)(GLenum buffer,
+                                                   GLint drawbuffer,
+                                                   const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLCLEARBUFFERUIVPROC)(GLenum buffer,
+                                                    GLint drawbuffer,
+                                                    const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLCLEARCOLORPROC)(GLfloat red, GLfloat green,
+                                                GLfloat blue, GLfloat alpha);
+typedef void(GLAD_API_PTR *PFNGLCLEARCOLORXOESPROC)(GLfixed red, GLfixed green,
+                                                    GLfixed blue,
+                                                    GLfixed alpha);
+typedef void(GLAD_API_PTR *PFNGLCLEARDEPTHPROC)(GLdouble depth);
+typedef void(GLAD_API_PTR *PFNGLCLEARDEPTHFPROC)(GLfloat d);
+typedef void(GLAD_API_PTR *PFNGLCLEARDEPTHXOESPROC)(GLfixed depth);
+typedef void(GLAD_API_PTR *PFNGLCLEARNAMEDBUFFERDATAPROC)(GLuint buffer,
+                                                          GLenum internalformat,
+                                                          GLenum format,
+                                                          GLenum type,
+                                                          const void *data);
+typedef void(GLAD_API_PTR *PFNGLCLEARNAMEDBUFFERSUBDATAPROC)(
+    GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size,
+    GLenum format, GLenum type, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERFIPROC)(GLuint framebuffer,
+                                                             GLenum buffer,
+                                                             GLint drawbuffer,
+                                                             GLfloat depth,
+                                                             GLint stencil);
+typedef void(GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERFVPROC)(
+    GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERIVPROC)(
+    GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC)(
+    GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLCLEARSTENCILPROC)(GLint s);
+typedef void(GLAD_API_PTR *PFNGLCLEARTEXIMAGEPROC)(GLuint texture, GLint level,
+                                                   GLenum format, GLenum type,
+                                                   const void *data);
+typedef void(GLAD_API_PTR *PFNGLCLEARTEXSUBIMAGEPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type,
+    const void *data);
+typedef void(GLAD_API_PTR *PFNGLCLIENTACTIVETEXTUREARBPROC)(GLenum texture);
+typedef GLenum(GLAD_API_PTR *PFNGLCLIENTWAITSYNCPROC)(GLsync sync,
+                                                      GLbitfield flags,
+                                                      GLuint64 timeout);
+typedef void(GLAD_API_PTR *PFNGLCLIPPLANEXOESPROC)(GLenum plane,
+                                                   const GLfixed *equation);
+typedef void(GLAD_API_PTR *PFNGLCOLOR3XOESPROC)(GLfixed red, GLfixed green,
+                                                GLfixed blue);
+typedef void(GLAD_API_PTR *PFNGLCOLOR3XVOESPROC)(const GLfixed *components);
+typedef void(GLAD_API_PTR *PFNGLCOLOR4XOESPROC)(GLfixed red, GLfixed green,
+                                                GLfixed blue, GLfixed alpha);
+typedef void(GLAD_API_PTR *PFNGLCOLOR4XVOESPROC)(const GLfixed *components);
+typedef void(GLAD_API_PTR *PFNGLCOLORMASKPROC)(GLboolean red, GLboolean green,
+                                               GLboolean blue, GLboolean alpha);
+typedef void(GLAD_API_PTR *PFNGLCOLORMASKIPROC)(GLuint index, GLboolean r,
+                                                GLboolean g, GLboolean b,
+                                                GLboolean a);
+typedef void(GLAD_API_PTR *PFNGLCOMPILESHADERPROC)(GLuint shader);
+typedef void(GLAD_API_PTR *PFNGLCOMPILESHADERARBPROC)(GLhandleARB shaderObj);
+typedef void(GLAD_API_PTR *PFNGLCOMPILESHADERINCLUDEARBPROC)(
+    GLuint shader, GLsizei count, const GLchar *const *path,
+    const GLint *length);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE1DPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLsizei width,
+    GLint border, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE1DARBPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLsizei width,
+    GLint border, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE2DPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLsizei width,
+    GLsizei height, GLint border, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE2DARBPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLsizei width,
+    GLsizei height, GLint border, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE3DPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLsizei width,
+    GLsizei height, GLsizei depth, GLint border, GLsizei imageSize,
+    const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXIMAGE3DARBPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLsizei width,
+    GLsizei height, GLsizei depth, GLint border, GLsizei imageSize,
+    const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format,
+    GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC)(
+    GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format,
+    GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width,
+    GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width,
+    GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format,
+    GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format,
+    GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format,
+    GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width,
+    GLsizei height, GLenum format, GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format,
+    GLsizei imageSize, const void *data);
+typedef void(GLAD_API_PTR *PFNGLCONVOLUTIONPARAMETERXOESPROC)(GLenum target,
+                                                              GLenum pname,
+                                                              GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLCONVOLUTIONPARAMETERXVOESPROC)(
+    GLenum target, GLenum pname, const GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLCOPYBUFFERSUBDATAPROC)(GLenum readTarget,
+                                                       GLenum writeTarget,
+                                                       GLintptr readOffset,
+                                                       GLintptr writeOffset,
+                                                       GLsizeiptr size);
+typedef void(GLAD_API_PTR *PFNGLCOPYIMAGESUBDATAPROC)(
+    GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY,
+    GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX,
+    GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight,
+    GLsizei srcDepth);
+typedef void(GLAD_API_PTR *PFNGLCOPYNAMEDBUFFERSUBDATAPROC)(
+    GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset,
+    GLintptr writeOffset, GLsizeiptr size);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXIMAGE1DPROC)(GLenum target, GLint level,
+                                                    GLenum internalformat,
+                                                    GLint x, GLint y,
+                                                    GLsizei width,
+                                                    GLint border);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXIMAGE2DPROC)(
+    GLenum target, GLint level, GLenum internalformat, GLint x, GLint y,
+    GLsizei width, GLsizei height, GLint border);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXSUBIMAGE1DPROC)(GLenum target,
+                                                       GLint level,
+                                                       GLint xoffset, GLint x,
+                                                       GLint y, GLsizei width);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXSUBIMAGE2DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y,
+    GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXSUBIMAGE3DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLint x, GLint y, GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXTURESUBIMAGE1DPROC)(GLuint texture,
+                                                           GLint level,
+                                                           GLint xoffset,
+                                                           GLint x, GLint y,
+                                                           GLsizei width);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXTURESUBIMAGE2DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y,
+    GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLCOPYTEXTURESUBIMAGE3DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLint x, GLint y, GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLCREATEBUFFERSPROC)(GLsizei n, GLuint *buffers);
+typedef void(GLAD_API_PTR *PFNGLCREATEFRAMEBUFFERSPROC)(GLsizei n,
+                                                        GLuint *framebuffers);
+typedef GLuint(GLAD_API_PTR *PFNGLCREATEPROGRAMPROC)(void);
+typedef GLhandleARB(GLAD_API_PTR *PFNGLCREATEPROGRAMOBJECTARBPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLCREATEPROGRAMPIPELINESPROC)(GLsizei n,
+                                                            GLuint *pipelines);
+typedef void(GLAD_API_PTR *PFNGLCREATEQUERIESPROC)(GLenum target, GLsizei n,
+                                                   GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLCREATERENDERBUFFERSPROC)(GLsizei n,
+                                                         GLuint *renderbuffers);
+typedef void(GLAD_API_PTR *PFNGLCREATESAMPLERSPROC)(GLsizei n,
+                                                    GLuint *samplers);
+typedef GLuint(GLAD_API_PTR *PFNGLCREATESHADERPROC)(GLenum type);
+typedef GLhandleARB(GLAD_API_PTR *PFNGLCREATESHADEROBJECTARBPROC)(
+    GLenum shaderType);
+typedef GLuint(GLAD_API_PTR *PFNGLCREATESHADERPROGRAMVPROC)(
+    GLenum type, GLsizei count, const GLchar *const *strings);
+typedef void(GLAD_API_PTR *PFNGLCREATETEXTURESPROC)(GLenum target, GLsizei n,
+                                                    GLuint *textures);
+typedef void(GLAD_API_PTR *PFNGLCREATETRANSFORMFEEDBACKSPROC)(GLsizei n,
+                                                              GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLCREATEVERTEXARRAYSPROC)(GLsizei n,
+                                                        GLuint *arrays);
+typedef void(GLAD_API_PTR *PFNGLCULLFACEPROC)(GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLDEBUGMESSAGECALLBACKPROC)(
+    GLDEBUGPROC callback, const void *userParam);
+typedef void(GLAD_API_PTR *PFNGLDEBUGMESSAGECALLBACKARBPROC)(
+    GLDEBUGPROCARB callback, const void *userParam);
+typedef void(GLAD_API_PTR *PFNGLDEBUGMESSAGECONTROLPROC)(
+    GLenum source, GLenum type, GLenum severity, GLsizei count,
+    const GLuint *ids, GLboolean enabled);
+typedef void(GLAD_API_PTR *PFNGLDEBUGMESSAGECONTROLARBPROC)(
+    GLenum source, GLenum type, GLenum severity, GLsizei count,
+    const GLuint *ids, GLboolean enabled);
+typedef void(GLAD_API_PTR *PFNGLDEBUGMESSAGEINSERTPROC)(GLenum source,
+                                                        GLenum type, GLuint id,
+                                                        GLenum severity,
+                                                        GLsizei length,
+                                                        const GLchar *buf);
+typedef void(GLAD_API_PTR *PFNGLDEBUGMESSAGEINSERTARBPROC)(
+    GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length,
+    const GLchar *buf);
+typedef void(GLAD_API_PTR *PFNGLDELETEBUFFERSPROC)(GLsizei n,
+                                                   const GLuint *buffers);
+typedef void(GLAD_API_PTR *PFNGLDELETEBUFFERSARBPROC)(GLsizei n,
+                                                      const GLuint *buffers);
+typedef void(GLAD_API_PTR *PFNGLDELETEFRAMEBUFFERSPROC)(
+    GLsizei n, const GLuint *framebuffers);
+typedef void(GLAD_API_PTR *PFNGLDELETEFRAMEBUFFERSEXTPROC)(
+    GLsizei n, const GLuint *framebuffers);
+typedef void(GLAD_API_PTR *PFNGLDELETENAMEDSTRINGARBPROC)(GLint namelen,
+                                                          const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLDELETEOBJECTARBPROC)(GLhandleARB obj);
+typedef void(GLAD_API_PTR *PFNGLDELETEPROGRAMPROC)(GLuint program);
+typedef void(GLAD_API_PTR *PFNGLDELETEPROGRAMPIPELINESPROC)(
+    GLsizei n, const GLuint *pipelines);
+typedef void(GLAD_API_PTR *PFNGLDELETEPROGRAMSARBPROC)(GLsizei n,
+                                                       const GLuint *programs);
+typedef void(GLAD_API_PTR *PFNGLDELETEQUERIESPROC)(GLsizei n,
+                                                   const GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLDELETEQUERIESARBPROC)(GLsizei n,
+                                                      const GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLDELETERENDERBUFFERSPROC)(
+    GLsizei n, const GLuint *renderbuffers);
+typedef void(GLAD_API_PTR *PFNGLDELETERENDERBUFFERSEXTPROC)(
+    GLsizei n, const GLuint *renderbuffers);
+typedef void(GLAD_API_PTR *PFNGLDELETESAMPLERSPROC)(GLsizei count,
+                                                    const GLuint *samplers);
+typedef void(GLAD_API_PTR *PFNGLDELETESHADERPROC)(GLuint shader);
+typedef void(GLAD_API_PTR *PFNGLDELETESYNCPROC)(GLsync sync);
+typedef void(GLAD_API_PTR *PFNGLDELETETEXTURESPROC)(GLsizei n,
+                                                    const GLuint *textures);
+typedef void(GLAD_API_PTR *PFNGLDELETETRANSFORMFEEDBACKSPROC)(
+    GLsizei n, const GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLDELETEVERTEXARRAYSPROC)(GLsizei n,
+                                                        const GLuint *arrays);
+typedef void(GLAD_API_PTR *PFNGLDEPTHFUNCPROC)(GLenum func);
+typedef void(GLAD_API_PTR *PFNGLDEPTHMASKPROC)(GLboolean flag);
+typedef void(GLAD_API_PTR *PFNGLDEPTHRANGEPROC)(GLdouble n, GLdouble f);
+typedef void(GLAD_API_PTR *PFNGLDEPTHRANGEARRAYVPROC)(GLuint first,
+                                                      GLsizei count,
+                                                      const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLDEPTHRANGEINDEXEDPROC)(GLuint index, GLdouble n,
+                                                       GLdouble f);
+typedef void(GLAD_API_PTR *PFNGLDEPTHRANGEFPROC)(GLfloat n, GLfloat f);
+typedef void(GLAD_API_PTR *PFNGLDEPTHRANGEXOESPROC)(GLfixed n, GLfixed f);
+typedef void(GLAD_API_PTR *PFNGLDETACHOBJECTARBPROC)(GLhandleARB containerObj,
+                                                     GLhandleARB attachedObj);
+typedef void(GLAD_API_PTR *PFNGLDETACHSHADERPROC)(GLuint program,
+                                                  GLuint shader);
+typedef void(GLAD_API_PTR *PFNGLDISABLEPROC)(GLenum cap);
+typedef void(GLAD_API_PTR *PFNGLDISABLEVERTEXARRAYATTRIBPROC)(GLuint vaobj,
+                                                              GLuint index);
+typedef void(GLAD_API_PTR *PFNGLDISABLEVERTEXATTRIBARRAYPROC)(GLuint index);
+typedef void(GLAD_API_PTR *PFNGLDISABLEVERTEXATTRIBARRAYARBPROC)(GLuint index);
+typedef void(GLAD_API_PTR *PFNGLDISABLEIPROC)(GLenum target, GLuint index);
+typedef void(GLAD_API_PTR *PFNGLDISPATCHCOMPUTEPROC)(GLuint num_groups_x,
+                                                     GLuint num_groups_y,
+                                                     GLuint num_groups_z);
+typedef void(GLAD_API_PTR *PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC)(
+    GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z,
+    GLuint group_size_x, GLuint group_size_y, GLuint group_size_z);
+typedef void(GLAD_API_PTR *PFNGLDISPATCHCOMPUTEINDIRECTPROC)(GLintptr indirect);
+typedef void(GLAD_API_PTR *PFNGLDRAWARRAYSPROC)(GLenum mode, GLint first,
+                                                GLsizei count);
+typedef void(GLAD_API_PTR *PFNGLDRAWARRAYSINDIRECTPROC)(GLenum mode,
+                                                        const void *indirect);
+typedef void(GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDPROC)(GLenum mode,
+                                                         GLint first,
+                                                         GLsizei count,
+                                                         GLsizei instancecount);
+typedef void(GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDARBPROC)(GLenum mode,
+                                                            GLint first,
+                                                            GLsizei count,
+                                                            GLsizei primcount);
+typedef void(GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC)(
+    GLenum mode, GLint first, GLsizei count, GLsizei instancecount,
+    GLuint baseinstance);
+typedef void(GLAD_API_PTR *PFNGLDRAWARRAYSINSTANCEDEXTPROC)(GLenum mode,
+                                                            GLint start,
+                                                            GLsizei count,
+                                                            GLsizei primcount);
+typedef void(GLAD_API_PTR *PFNGLDRAWBUFFERPROC)(GLenum buf);
+typedef void(GLAD_API_PTR *PFNGLDRAWBUFFERSPROC)(GLsizei n, const GLenum *bufs);
+typedef void(GLAD_API_PTR *PFNGLDRAWBUFFERSARBPROC)(GLsizei n,
+                                                    const GLenum *bufs);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSPROC)(GLenum mode, GLsizei count,
+                                                  GLenum type,
+                                                  const void *indices);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSBASEVERTEXPROC)(GLenum mode,
+                                                            GLsizei count,
+                                                            GLenum type,
+                                                            const void *indices,
+                                                            GLint basevertex);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSINDIRECTPROC)(GLenum mode,
+                                                          GLenum type,
+                                                          const void *indirect);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDPROC)(
+    GLenum mode, GLsizei count, GLenum type, const void *indices,
+    GLsizei instancecount);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDARBPROC)(
+    GLenum mode, GLsizei count, GLenum type, const void *indices,
+    GLsizei primcount);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC)(
+    GLenum mode, GLsizei count, GLenum type, const void *indices,
+    GLsizei instancecount, GLuint baseinstance);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC)(
+    GLenum mode, GLsizei count, GLenum type, const void *indices,
+    GLsizei instancecount, GLint basevertex);
+typedef void(
+    GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC)(
+    GLenum mode, GLsizei count, GLenum type, const void *indices,
+    GLsizei instancecount, GLint basevertex, GLuint baseinstance);
+typedef void(GLAD_API_PTR *PFNGLDRAWELEMENTSINSTANCEDEXTPROC)(
+    GLenum mode, GLsizei count, GLenum type, const void *indices,
+    GLsizei primcount);
+typedef void(GLAD_API_PTR *PFNGLDRAWRANGEELEMENTSPROC)(GLenum mode,
+                                                       GLuint start, GLuint end,
+                                                       GLsizei count,
+                                                       GLenum type,
+                                                       const void *indices);
+typedef void(GLAD_API_PTR *PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC)(
+    GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type,
+    const void *indices, GLint basevertex);
+typedef void(GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKPROC)(GLenum mode,
+                                                           GLuint id);
+typedef void(GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC)(
+    GLenum mode, GLuint id, GLsizei instancecount);
+typedef void(GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC)(GLenum mode,
+                                                                 GLuint id,
+                                                                 GLuint stream);
+typedef void(GLAD_API_PTR *PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC)(
+    GLenum mode, GLuint id, GLuint stream, GLsizei instancecount);
+typedef void(GLAD_API_PTR *PFNGLENABLEPROC)(GLenum cap);
+typedef void(GLAD_API_PTR *PFNGLENABLEVERTEXARRAYATTRIBPROC)(GLuint vaobj,
+                                                             GLuint index);
+typedef void(GLAD_API_PTR *PFNGLENABLEVERTEXATTRIBARRAYPROC)(GLuint index);
+typedef void(GLAD_API_PTR *PFNGLENABLEVERTEXATTRIBARRAYARBPROC)(GLuint index);
+typedef void(GLAD_API_PTR *PFNGLENABLEIPROC)(GLenum target, GLuint index);
+typedef void(GLAD_API_PTR *PFNGLENDCONDITIONALRENDERPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLENDQUERYPROC)(GLenum target);
+typedef void(GLAD_API_PTR *PFNGLENDQUERYARBPROC)(GLenum target);
+typedef void(GLAD_API_PTR *PFNGLENDQUERYINDEXEDPROC)(GLenum target,
+                                                     GLuint index);
+typedef void(GLAD_API_PTR *PFNGLENDTRANSFORMFEEDBACKPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLEVALCOORD1XOESPROC)(GLfixed u);
+typedef void(GLAD_API_PTR *PFNGLEVALCOORD1XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLEVALCOORD2XOESPROC)(GLfixed u, GLfixed v);
+typedef void(GLAD_API_PTR *PFNGLEVALCOORD2XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLEVALUATEDEPTHVALUESARBPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLFEEDBACKBUFFERXOESPROC)(GLsizei n, GLenum type,
+                                                        const GLfixed *buffer);
+typedef GLsync(GLAD_API_PTR *PFNGLFENCESYNCPROC)(GLenum condition,
+                                                 GLbitfield flags);
+typedef void(GLAD_API_PTR *PFNGLFINISHPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLFLUSHPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLFLUSHMAPPEDBUFFERRANGEPROC)(GLenum target,
+                                                            GLintptr offset,
+                                                            GLsizeiptr length);
+typedef void(GLAD_API_PTR *PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC)(
+    GLuint buffer, GLintptr offset, GLsizeiptr length);
+typedef void(GLAD_API_PTR *PFNGLFOGCOORDPOINTEREXTPROC)(GLenum type,
+                                                        GLsizei stride,
+                                                        const void *pointer);
+typedef void(GLAD_API_PTR *PFNGLFOGCOORDDEXTPROC)(GLdouble coord);
+typedef void(GLAD_API_PTR *PFNGLFOGCOORDDVEXTPROC)(const GLdouble *coord);
+typedef void(GLAD_API_PTR *PFNGLFOGCOORDFEXTPROC)(GLfloat coord);
+typedef void(GLAD_API_PTR *PFNGLFOGCOORDFVEXTPROC)(const GLfloat *coord);
+typedef void(GLAD_API_PTR *PFNGLFOGXOESPROC)(GLenum pname, GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLFOGXVOESPROC)(GLenum pname,
+                                              const GLfixed *param);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERPARAMETERIPROC)(GLenum target,
+                                                           GLenum pname,
+                                                           GLint param);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERRENDERBUFFERPROC)(
+    GLenum target, GLenum attachment, GLenum renderbuffertarget,
+    GLuint renderbuffer);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC)(
+    GLenum target, GLenum attachment, GLenum renderbuffertarget,
+    GLuint renderbuffer);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)(
+    GLenum target, GLuint start, GLsizei count, const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTUREPROC)(GLenum target,
+                                                        GLenum attachment,
+                                                        GLuint texture,
+                                                        GLint level);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE1DPROC)(GLenum target,
+                                                          GLenum attachment,
+                                                          GLenum textarget,
+                                                          GLuint texture,
+                                                          GLint level);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE1DEXTPROC)(GLenum target,
+                                                             GLenum attachment,
+                                                             GLenum textarget,
+                                                             GLuint texture,
+                                                             GLint level);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE2DPROC)(GLenum target,
+                                                          GLenum attachment,
+                                                          GLenum textarget,
+                                                          GLuint texture,
+                                                          GLint level);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE2DEXTPROC)(GLenum target,
+                                                             GLenum attachment,
+                                                             GLenum textarget,
+                                                             GLuint texture,
+                                                             GLint level);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE3DPROC)(
+    GLenum target, GLenum attachment, GLenum textarget, GLuint texture,
+    GLint level, GLint zoffset);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURE3DEXTPROC)(
+    GLenum target, GLenum attachment, GLenum textarget, GLuint texture,
+    GLint level, GLint zoffset);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTUREARBPROC)(GLenum target,
+                                                           GLenum attachment,
+                                                           GLuint texture,
+                                                           GLint level);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTUREFACEARBPROC)(
+    GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURELAYERPROC)(
+    GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
+typedef void(GLAD_API_PTR *PFNGLFRAMEBUFFERTEXTURELAYERARBPROC)(
+    GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
+typedef void(GLAD_API_PTR *PFNGLFRONTFACEPROC)(GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLFRUSTUMXOESPROC)(GLfixed l, GLfixed r,
+                                                 GLfixed b, GLfixed t,
+                                                 GLfixed n, GLfixed f);
+typedef void(GLAD_API_PTR *PFNGLGENBUFFERSPROC)(GLsizei n, GLuint *buffers);
+typedef void(GLAD_API_PTR *PFNGLGENBUFFERSARBPROC)(GLsizei n, GLuint *buffers);
+typedef void(GLAD_API_PTR *PFNGLGENFRAMEBUFFERSPROC)(GLsizei n,
+                                                     GLuint *framebuffers);
+typedef void(GLAD_API_PTR *PFNGLGENFRAMEBUFFERSEXTPROC)(GLsizei n,
+                                                        GLuint *framebuffers);
+typedef void(GLAD_API_PTR *PFNGLGENPROGRAMPIPELINESPROC)(GLsizei n,
+                                                         GLuint *pipelines);
+typedef void(GLAD_API_PTR *PFNGLGENPROGRAMSARBPROC)(GLsizei n,
+                                                    GLuint *programs);
+typedef void(GLAD_API_PTR *PFNGLGENQUERIESPROC)(GLsizei n, GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLGENQUERIESARBPROC)(GLsizei n, GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLGENRENDERBUFFERSPROC)(GLsizei n,
+                                                      GLuint *renderbuffers);
+typedef void(GLAD_API_PTR *PFNGLGENRENDERBUFFERSEXTPROC)(GLsizei n,
+                                                         GLuint *renderbuffers);
+typedef void(GLAD_API_PTR *PFNGLGENSAMPLERSPROC)(GLsizei count,
+                                                 GLuint *samplers);
+typedef void(GLAD_API_PTR *PFNGLGENTEXTURESPROC)(GLsizei n, GLuint *textures);
+typedef void(GLAD_API_PTR *PFNGLGENTRANSFORMFEEDBACKSPROC)(GLsizei n,
+                                                           GLuint *ids);
+typedef void(GLAD_API_PTR *PFNGLGENVERTEXARRAYSPROC)(GLsizei n, GLuint *arrays);
+typedef void(GLAD_API_PTR *PFNGLGENERATEMIPMAPPROC)(GLenum target);
+typedef void(GLAD_API_PTR *PFNGLGENERATEMIPMAPEXTPROC)(GLenum target);
+typedef void(GLAD_API_PTR *PFNGLGENERATETEXTUREMIPMAPPROC)(GLuint texture);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC)(
+    GLuint program, GLuint bufferIndex, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEATTRIBPROC)(
+    GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size,
+    GLenum *type, GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEATTRIBARBPROC)(
+    GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length,
+    GLint *size, GLenum *type, GLcharARB *name);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVESUBROUTINENAMEPROC)(
+    GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize,
+    GLsizei *length, GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC)(
+    GLuint program, GLenum shadertype, GLuint index, GLsizei bufSize,
+    GLsizei *length, GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)(
+    GLuint program, GLenum shadertype, GLuint index, GLenum pname,
+    GLint *values);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEUNIFORMPROC)(
+    GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size,
+    GLenum *type, GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEUNIFORMARBPROC)(
+    GLhandleARB programObj, GLuint index, GLsizei maxLength, GLsizei *length,
+    GLint *size, GLenum *type, GLcharARB *name);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC)(
+    GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei *length,
+    GLchar *uniformBlockName);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEUNIFORMBLOCKIVPROC)(
+    GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEUNIFORMNAMEPROC)(GLuint program,
+                                                          GLuint uniformIndex,
+                                                          GLsizei bufSize,
+                                                          GLsizei *length,
+                                                          GLchar *uniformName);
+typedef void(GLAD_API_PTR *PFNGLGETACTIVEUNIFORMSIVPROC)(
+    GLuint program, GLsizei uniformCount, const GLuint *uniformIndices,
+    GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETATTACHEDOBJECTSARBPROC)(
+    GLhandleARB containerObj, GLsizei maxCount, GLsizei *count,
+    GLhandleARB *obj);
+typedef void(GLAD_API_PTR *PFNGLGETATTACHEDSHADERSPROC)(GLuint program,
+                                                        GLsizei maxCount,
+                                                        GLsizei *count,
+                                                        GLuint *shaders);
+typedef GLint(GLAD_API_PTR *PFNGLGETATTRIBLOCATIONPROC)(GLuint program,
+                                                        const GLchar *name);
+typedef GLint(GLAD_API_PTR *PFNGLGETATTRIBLOCATIONARBPROC)(
+    GLhandleARB programObj, const GLcharARB *name);
+typedef void(GLAD_API_PTR *PFNGLGETBOOLEANI_VPROC)(GLenum target, GLuint index,
+                                                   GLboolean *data);
+typedef void(GLAD_API_PTR *PFNGLGETBOOLEANVPROC)(GLenum pname, GLboolean *data);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERPARAMETERI64VPROC)(GLenum target,
+                                                            GLenum pname,
+                                                            GLint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERPARAMETERIVPROC)(GLenum target,
+                                                          GLenum pname,
+                                                          GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERPARAMETERIVARBPROC)(GLenum target,
+                                                             GLenum pname,
+                                                             GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERPOINTERVPROC)(GLenum target,
+                                                       GLenum pname,
+                                                       void **params);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERPOINTERVARBPROC)(GLenum target,
+                                                          GLenum pname,
+                                                          void **params);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERSUBDATAPROC)(GLenum target,
+                                                      GLintptr offset,
+                                                      GLsizeiptr size,
+                                                      void *data);
+typedef void(GLAD_API_PTR *PFNGLGETBUFFERSUBDATAARBPROC)(GLenum target,
+                                                         GLintptrARB offset,
+                                                         GLsizeiptrARB size,
+                                                         void *data);
+typedef void(GLAD_API_PTR *PFNGLGETCLIPPLANEXOESPROC)(GLenum plane,
+                                                      GLfixed *equation);
+typedef void(GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXIMAGEPROC)(GLenum target,
+                                                           GLint level,
+                                                           void *img);
+typedef void(GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXIMAGEARBPROC)(GLenum target,
+                                                              GLint level,
+                                                              void *img);
+typedef void(GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC)(GLuint texture,
+                                                               GLint level,
+                                                               GLsizei bufSize,
+                                                               void *pixels);
+typedef void(GLAD_API_PTR *PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize,
+    void *pixels);
+typedef void(GLAD_API_PTR *PFNGLGETCONVOLUTIONPARAMETERXVOESPROC)(
+    GLenum target, GLenum pname, GLfixed *params);
+typedef GLuint(GLAD_API_PTR *PFNGLGETDEBUGMESSAGELOGPROC)(
+    GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids,
+    GLenum *severities, GLsizei *lengths, GLchar *messageLog);
+typedef GLuint(GLAD_API_PTR *PFNGLGETDEBUGMESSAGELOGARBPROC)(
+    GLuint count, GLsizei bufSize, GLenum *sources, GLenum *types, GLuint *ids,
+    GLenum *severities, GLsizei *lengths, GLchar *messageLog);
+typedef void(GLAD_API_PTR *PFNGLGETDOUBLEI_VPROC)(GLenum target, GLuint index,
+                                                  GLdouble *data);
+typedef void(GLAD_API_PTR *PFNGLGETDOUBLEVPROC)(GLenum pname, GLdouble *data);
+typedef GLenum(GLAD_API_PTR *PFNGLGETERRORPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLGETFIXEDVOESPROC)(GLenum pname,
+                                                  GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETFLOATI_VPROC)(GLenum target, GLuint index,
+                                                 GLfloat *data);
+typedef void(GLAD_API_PTR *PFNGLGETFLOATVPROC)(GLenum pname, GLfloat *data);
+typedef GLint(GLAD_API_PTR *PFNGLGETFRAGDATAINDEXPROC)(GLuint program,
+                                                       const GLchar *name);
+typedef GLint(GLAD_API_PTR *PFNGLGETFRAGDATALOCATIONPROC)(GLuint program,
+                                                          const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC)(
+    GLenum target, GLenum attachment, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC)(
+    GLenum target, GLenum attachment, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETFRAMEBUFFERPARAMETERIVPROC)(GLenum target,
+                                                               GLenum pname,
+                                                               GLint *params);
+typedef GLhandleARB(GLAD_API_PTR *PFNGLGETHANDLEARBPROC)(GLenum pname);
+typedef void(GLAD_API_PTR *PFNGLGETHISTOGRAMPARAMETERXVOESPROC)(
+    GLenum target, GLenum pname, GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETINFOLOGARBPROC)(GLhandleARB obj,
+                                                   GLsizei maxLength,
+                                                   GLsizei *length,
+                                                   GLcharARB *infoLog);
+typedef void(GLAD_API_PTR *PFNGLGETINTEGER64I_VPROC)(GLenum target,
+                                                     GLuint index,
+                                                     GLint64 *data);
+typedef void(GLAD_API_PTR *PFNGLGETINTEGER64VPROC)(GLenum pname, GLint64 *data);
+typedef void(GLAD_API_PTR *PFNGLGETINTEGERI_VPROC)(GLenum target, GLuint index,
+                                                   GLint *data);
+typedef void(GLAD_API_PTR *PFNGLGETINTEGERVPROC)(GLenum pname, GLint *data);
+typedef void(GLAD_API_PTR *PFNGLGETINTERNALFORMATI64VPROC)(
+    GLenum target, GLenum internalformat, GLenum pname, GLsizei count,
+    GLint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETINTERNALFORMATIVPROC)(GLenum target,
+                                                         GLenum internalformat,
+                                                         GLenum pname,
+                                                         GLsizei count,
+                                                         GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETLIGHTXOESPROC)(GLenum light, GLenum pname,
+                                                  GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETMAPXVOESPROC)(GLenum target, GLenum query,
+                                                 GLfixed *v);
+typedef void(GLAD_API_PTR *PFNGLGETMATERIALXOESPROC)(GLenum face, GLenum pname,
+                                                     GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLGETMULTISAMPLEFVPROC)(GLenum pname,
+                                                      GLuint index,
+                                                      GLfloat *val);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDBUFFERPARAMETERI64VPROC)(
+    GLuint buffer, GLenum pname, GLint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDBUFFERPARAMETERIVPROC)(GLuint buffer,
+                                                               GLenum pname,
+                                                               GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDBUFFERPOINTERVPROC)(GLuint buffer,
+                                                            GLenum pname,
+                                                            void **params);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDBUFFERSUBDATAPROC)(GLuint buffer,
+                                                           GLintptr offset,
+                                                           GLsizeiptr size,
+                                                           void *data);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC)(
+    GLuint framebuffer, GLenum attachment, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC)(
+    GLuint framebuffer, GLenum pname, GLint *param);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC)(
+    GLuint renderbuffer, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDSTRINGARBPROC)(GLint namelen,
+                                                       const GLchar *name,
+                                                       GLsizei bufSize,
+                                                       GLint *stringlen,
+                                                       GLchar *string);
+typedef void(GLAD_API_PTR *PFNGLGETNAMEDSTRINGIVARBPROC)(GLint namelen,
+                                                         const GLchar *name,
+                                                         GLenum pname,
+                                                         GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETOBJECTLABELPROC)(GLenum identifier,
+                                                    GLuint name,
+                                                    GLsizei bufSize,
+                                                    GLsizei *length,
+                                                    GLchar *label);
+typedef void(GLAD_API_PTR *PFNGLGETOBJECTPARAMETERFVARBPROC)(GLhandleARB obj,
+                                                             GLenum pname,
+                                                             GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETOBJECTPARAMETERIVARBPROC)(GLhandleARB obj,
+                                                             GLenum pname,
+                                                             GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETOBJECTPTRLABELPROC)(const void *ptr,
+                                                       GLsizei bufSize,
+                                                       GLsizei *length,
+                                                       GLchar *label);
+typedef void(GLAD_API_PTR *PFNGLGETPIXELMAPXVPROC)(GLenum map, GLint size,
+                                                   GLfixed *values);
+typedef void(GLAD_API_PTR *PFNGLGETPOINTERVPROC)(GLenum pname, void **params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMBINARYPROC)(GLuint program,
+                                                      GLsizei bufSize,
+                                                      GLsizei *length,
+                                                      GLenum *binaryFormat,
+                                                      void *binary);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMENVPARAMETERDVARBPROC)(
+    GLenum target, GLuint index, GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMENVPARAMETERFVARBPROC)(
+    GLenum target, GLuint index, GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMINFOLOGPROC)(GLuint program,
+                                                       GLsizei bufSize,
+                                                       GLsizei *length,
+                                                       GLchar *infoLog);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMINTERFACEIVPROC)(
+    GLuint program, GLenum programInterface, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC)(
+    GLenum target, GLuint index, GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC)(
+    GLenum target, GLuint index, GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMPIPELINEINFOLOGPROC)(GLuint pipeline,
+                                                               GLsizei bufSize,
+                                                               GLsizei *length,
+                                                               GLchar *infoLog);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMPIPELINEIVPROC)(GLuint pipeline,
+                                                          GLenum pname,
+                                                          GLint *params);
+typedef GLuint(GLAD_API_PTR *PFNGLGETPROGRAMRESOURCEINDEXPROC)(
+    GLuint program, GLenum programInterface, const GLchar *name);
+typedef GLint(GLAD_API_PTR *PFNGLGETPROGRAMRESOURCELOCATIONPROC)(
+    GLuint program, GLenum programInterface, const GLchar *name);
+typedef GLint(GLAD_API_PTR *PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC)(
+    GLuint program, GLenum programInterface, const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMRESOURCENAMEPROC)(
+    GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize,
+    GLsizei *length, GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMRESOURCEIVPROC)(
+    GLuint program, GLenum programInterface, GLuint index, GLsizei propCount,
+    const GLenum *props, GLsizei count, GLsizei *length, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMSTAGEIVPROC)(GLuint program,
+                                                       GLenum shadertype,
+                                                       GLenum pname,
+                                                       GLint *values);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMSTRINGARBPROC)(GLenum target,
+                                                         GLenum pname,
+                                                         void *string);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMIVPROC)(GLuint program, GLenum pname,
+                                                  GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETPROGRAMIVARBPROC)(GLenum target,
+                                                     GLenum pname,
+                                                     GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTI64VPROC)(GLuint id,
+                                                              GLuint buffer,
+                                                              GLenum pname,
+                                                              GLintptr offset);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTIVPROC)(GLuint id,
+                                                            GLuint buffer,
+                                                            GLenum pname,
+                                                            GLintptr offset);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTUI64VPROC)(GLuint id,
+                                                               GLuint buffer,
+                                                               GLenum pname,
+                                                               GLintptr offset);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYBUFFEROBJECTUIVPROC)(GLuint id,
+                                                             GLuint buffer,
+                                                             GLenum pname,
+                                                             GLintptr offset);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYINDEXEDIVPROC)(GLenum target,
+                                                       GLuint index,
+                                                       GLenum pname,
+                                                       GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYOBJECTI64VPROC)(GLuint id, GLenum pname,
+                                                        GLint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYOBJECTIVPROC)(GLuint id, GLenum pname,
+                                                      GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYOBJECTIVARBPROC)(GLuint id,
+                                                         GLenum pname,
+                                                         GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYOBJECTUI64VPROC)(GLuint id,
+                                                         GLenum pname,
+                                                         GLuint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYOBJECTUIVPROC)(GLuint id, GLenum pname,
+                                                       GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYOBJECTUIVARBPROC)(GLuint id,
+                                                          GLenum pname,
+                                                          GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYIVPROC)(GLenum target, GLenum pname,
+                                                GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETQUERYIVARBPROC)(GLenum target, GLenum pname,
+                                                   GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETRENDERBUFFERPARAMETERIVPROC)(GLenum target,
+                                                                GLenum pname,
+                                                                GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC)(
+    GLenum target, GLenum pname, GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERIIVPROC)(GLuint sampler,
+                                                            GLenum pname,
+                                                            GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERIUIVPROC)(GLuint sampler,
+                                                             GLenum pname,
+                                                             GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERFVPROC)(GLuint sampler,
+                                                           GLenum pname,
+                                                           GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETSAMPLERPARAMETERIVPROC)(GLuint sampler,
+                                                           GLenum pname,
+                                                           GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETSHADERINFOLOGPROC)(GLuint shader,
+                                                      GLsizei bufSize,
+                                                      GLsizei *length,
+                                                      GLchar *infoLog);
+typedef void(GLAD_API_PTR *PFNGLGETSHADERPRECISIONFORMATPROC)(
+    GLenum shadertype, GLenum precisiontype, GLint *range, GLint *precision);
+typedef void(GLAD_API_PTR *PFNGLGETSHADERSOURCEPROC)(GLuint shader,
+                                                     GLsizei bufSize,
+                                                     GLsizei *length,
+                                                     GLchar *source);
+typedef void(GLAD_API_PTR *PFNGLGETSHADERSOURCEARBPROC)(GLhandleARB obj,
+                                                        GLsizei maxLength,
+                                                        GLsizei *length,
+                                                        GLcharARB *source);
+typedef void(GLAD_API_PTR *PFNGLGETSHADERIVPROC)(GLuint shader, GLenum pname,
+                                                 GLint *params);
+typedef const GLubyte *(GLAD_API_PTR *PFNGLGETSTRINGPROC)(GLenum name);
+typedef const GLubyte *(GLAD_API_PTR *PFNGLGETSTRINGIPROC)(GLenum name,
+                                                           GLuint index);
+typedef GLuint(GLAD_API_PTR *PFNGLGETSUBROUTINEINDEXPROC)(GLuint program,
+                                                          GLenum shadertype,
+                                                          const GLchar *name);
+typedef GLint(GLAD_API_PTR *PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC)(
+    GLuint program, GLenum shadertype, const GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETSYNCIVPROC)(GLsync sync, GLenum pname,
+                                               GLsizei count, GLsizei *length,
+                                               GLint *values);
+typedef void(GLAD_API_PTR *PFNGLGETTEXENVXVOESPROC)(GLenum target, GLenum pname,
+                                                    GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXGENXVOESPROC)(GLenum coord, GLenum pname,
+                                                    GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXIMAGEPROC)(GLenum target, GLint level,
+                                                 GLenum format, GLenum type,
+                                                 void *pixels);
+typedef void(GLAD_API_PTR *PFNGLGETTEXLEVELPARAMETERFVPROC)(GLenum target,
+                                                            GLint level,
+                                                            GLenum pname,
+                                                            GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXLEVELPARAMETERIVPROC)(GLenum target,
+                                                            GLint level,
+                                                            GLenum pname,
+                                                            GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXLEVELPARAMETERXVOESPROC)(GLenum target,
+                                                               GLint level,
+                                                               GLenum pname,
+                                                               GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXPARAMETERIIVPROC)(GLenum target,
+                                                        GLenum pname,
+                                                        GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXPARAMETERIUIVPROC)(GLenum target,
+                                                         GLenum pname,
+                                                         GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXPARAMETERFVPROC)(GLenum target,
+                                                       GLenum pname,
+                                                       GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXPARAMETERIVPROC)(GLenum target,
+                                                       GLenum pname,
+                                                       GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXPARAMETERXVOESPROC)(GLenum target,
+                                                          GLenum pname,
+                                                          GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTUREIMAGEPROC)(GLuint texture,
+                                                     GLint level, GLenum format,
+                                                     GLenum type,
+                                                     GLsizei bufSize,
+                                                     void *pixels);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTURELEVELPARAMETERFVPROC)(
+    GLuint texture, GLint level, GLenum pname, GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTURELEVELPARAMETERIVPROC)(GLuint texture,
+                                                                GLint level,
+                                                                GLenum pname,
+                                                                GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERIIVPROC)(GLuint texture,
+                                                            GLenum pname,
+                                                            GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERIUIVPROC)(GLuint texture,
+                                                             GLenum pname,
+                                                             GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERFVPROC)(GLuint texture,
+                                                           GLenum pname,
+                                                           GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTUREPARAMETERIVPROC)(GLuint texture,
+                                                           GLenum pname,
+                                                           GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETTEXTURESUBIMAGEPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type,
+    GLsizei bufSize, void *pixels);
+typedef void(GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKVARYINGPROC)(
+    GLuint program, GLuint index, GLsizei bufSize, GLsizei *length,
+    GLsizei *size, GLenum *type, GLchar *name);
+typedef void(GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKI64_VPROC)(GLuint xfb,
+                                                               GLenum pname,
+                                                               GLuint index,
+                                                               GLint64 *param);
+typedef void(GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKI_VPROC)(GLuint xfb,
+                                                             GLenum pname,
+                                                             GLuint index,
+                                                             GLint *param);
+typedef void(GLAD_API_PTR *PFNGLGETTRANSFORMFEEDBACKIVPROC)(GLuint xfb,
+                                                            GLenum pname,
+                                                            GLint *param);
+typedef GLuint(GLAD_API_PTR *PFNGLGETUNIFORMBLOCKINDEXPROC)(
+    GLuint program, const GLchar *uniformBlockName);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMINDICESPROC)(
+    GLuint program, GLsizei uniformCount, const GLchar *const *uniformNames,
+    GLuint *uniformIndices);
+typedef GLint(GLAD_API_PTR *PFNGLGETUNIFORMLOCATIONPROC)(GLuint program,
+                                                         const GLchar *name);
+typedef GLint(GLAD_API_PTR *PFNGLGETUNIFORMLOCATIONARBPROC)(
+    GLhandleARB programObj, const GLcharARB *name);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMSUBROUTINEUIVPROC)(GLenum shadertype,
+                                                             GLint location,
+                                                             GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMDVPROC)(GLuint program,
+                                                  GLint location,
+                                                  GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMFVPROC)(GLuint program,
+                                                  GLint location,
+                                                  GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMFVARBPROC)(GLhandleARB programObj,
+                                                     GLint location,
+                                                     GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMI64VARBPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMIVPROC)(GLuint program,
+                                                  GLint location,
+                                                  GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMIVARBPROC)(GLhandleARB programObj,
+                                                     GLint location,
+                                                     GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMUI64VARBPROC)(GLuint program,
+                                                        GLint location,
+                                                        GLuint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETUNIFORMUIVPROC)(GLuint program,
+                                                   GLint location,
+                                                   GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXARRAYINDEXED64IVPROC)(GLuint vaobj,
+                                                               GLuint index,
+                                                               GLenum pname,
+                                                               GLint64 *param);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXARRAYINDEXEDIVPROC)(GLuint vaobj,
+                                                             GLuint index,
+                                                             GLenum pname,
+                                                             GLint *param);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXARRAYIVPROC)(GLuint vaobj,
+                                                      GLenum pname,
+                                                      GLint *param);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBIIVPROC)(GLuint index,
+                                                        GLenum pname,
+                                                        GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBIUIVPROC)(GLuint index,
+                                                         GLenum pname,
+                                                         GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBLDVPROC)(GLuint index,
+                                                        GLenum pname,
+                                                        GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBPOINTERVPROC)(GLuint index,
+                                                             GLenum pname,
+                                                             void **pointer);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBPOINTERVARBPROC)(GLuint index,
+                                                                GLenum pname,
+                                                                void **pointer);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBDVPROC)(GLuint index,
+                                                       GLenum pname,
+                                                       GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBDVARBPROC)(GLuint index,
+                                                          GLenum pname,
+                                                          GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBFVPROC)(GLuint index,
+                                                       GLenum pname,
+                                                       GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBFVARBPROC)(GLuint index,
+                                                          GLenum pname,
+                                                          GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBIVPROC)(GLuint index,
+                                                       GLenum pname,
+                                                       GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETVERTEXATTRIBIVARBPROC)(GLuint index,
+                                                          GLenum pname,
+                                                          GLint *params);
+typedef void(GLAD_API_PTR *PFNGLGETNUNIFORMI64VARBPROC)(GLuint program,
+                                                        GLint location,
+                                                        GLsizei bufSize,
+                                                        GLint64 *params);
+typedef void(GLAD_API_PTR *PFNGLGETNUNIFORMUI64VARBPROC)(GLuint program,
+                                                         GLint location,
+                                                         GLsizei bufSize,
+                                                         GLuint64 *params);
+typedef void(GLAD_API_PTR *PFNGLHINTPROC)(GLenum target, GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLINDEXXOESPROC)(GLfixed component);
+typedef void(GLAD_API_PTR *PFNGLINDEXXVOESPROC)(const GLfixed *component);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATEBUFFERDATAPROC)(GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATEBUFFERSUBDATAPROC)(GLuint buffer,
+                                                             GLintptr offset,
+                                                             GLsizeiptr length);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATEFRAMEBUFFERPROC)(
+    GLenum target, GLsizei numAttachments, const GLenum *attachments);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC)(
+    GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC)(
+    GLuint framebuffer, GLsizei numAttachments, const GLenum *attachments,
+    GLint x, GLint y, GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATESUBFRAMEBUFFERPROC)(
+    GLenum target, GLsizei numAttachments, const GLenum *attachments, GLint x,
+    GLint y, GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATETEXIMAGEPROC)(GLuint texture,
+                                                        GLint level);
+typedef void(GLAD_API_PTR *PFNGLINVALIDATETEXSUBIMAGEPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth);
+typedef GLboolean(GLAD_API_PTR *PFNGLISBUFFERPROC)(GLuint buffer);
+typedef GLboolean(GLAD_API_PTR *PFNGLISBUFFERARBPROC)(GLuint buffer);
+typedef GLboolean(GLAD_API_PTR *PFNGLISENABLEDPROC)(GLenum cap);
+typedef GLboolean(GLAD_API_PTR *PFNGLISENABLEDIPROC)(GLenum target,
+                                                     GLuint index);
+typedef GLboolean(GLAD_API_PTR *PFNGLISFRAMEBUFFERPROC)(GLuint framebuffer);
+typedef GLboolean(GLAD_API_PTR *PFNGLISFRAMEBUFFEREXTPROC)(GLuint framebuffer);
+typedef GLboolean(GLAD_API_PTR *PFNGLISNAMEDSTRINGARBPROC)(GLint namelen,
+                                                           const GLchar *name);
+typedef GLboolean(GLAD_API_PTR *PFNGLISPROGRAMPROC)(GLuint program);
+typedef GLboolean(GLAD_API_PTR *PFNGLISPROGRAMARBPROC)(GLuint program);
+typedef GLboolean(GLAD_API_PTR *PFNGLISPROGRAMPIPELINEPROC)(GLuint pipeline);
+typedef GLboolean(GLAD_API_PTR *PFNGLISQUERYPROC)(GLuint id);
+typedef GLboolean(GLAD_API_PTR *PFNGLISQUERYARBPROC)(GLuint id);
+typedef GLboolean(GLAD_API_PTR *PFNGLISRENDERBUFFERPROC)(GLuint renderbuffer);
+typedef GLboolean(GLAD_API_PTR *PFNGLISRENDERBUFFEREXTPROC)(
+    GLuint renderbuffer);
+typedef GLboolean(GLAD_API_PTR *PFNGLISSAMPLERPROC)(GLuint sampler);
+typedef GLboolean(GLAD_API_PTR *PFNGLISSHADERPROC)(GLuint shader);
+typedef GLboolean(GLAD_API_PTR *PFNGLISSYNCPROC)(GLsync sync);
+typedef GLboolean(GLAD_API_PTR *PFNGLISTEXTUREPROC)(GLuint texture);
+typedef GLboolean(GLAD_API_PTR *PFNGLISTRANSFORMFEEDBACKPROC)(GLuint id);
+typedef GLboolean(GLAD_API_PTR *PFNGLISVERTEXARRAYPROC)(GLuint array);
+typedef void(GLAD_API_PTR *PFNGLLIGHTMODELXOESPROC)(GLenum pname,
+                                                    GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLLIGHTMODELXVOESPROC)(GLenum pname,
+                                                     const GLfixed *param);
+typedef void(GLAD_API_PTR *PFNGLLIGHTXOESPROC)(GLenum light, GLenum pname,
+                                               GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLLIGHTXVOESPROC)(GLenum light, GLenum pname,
+                                                const GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLLINEWIDTHPROC)(GLfloat width);
+typedef void(GLAD_API_PTR *PFNGLLINEWIDTHXOESPROC)(GLfixed width);
+typedef void(GLAD_API_PTR *PFNGLLINKPROGRAMPROC)(GLuint program);
+typedef void(GLAD_API_PTR *PFNGLLINKPROGRAMARBPROC)(GLhandleARB programObj);
+typedef void(GLAD_API_PTR *PFNGLLOADMATRIXXOESPROC)(const GLfixed *m);
+typedef void(GLAD_API_PTR *PFNGLLOADTRANSPOSEMATRIXDARBPROC)(const GLdouble *m);
+typedef void(GLAD_API_PTR *PFNGLLOADTRANSPOSEMATRIXFARBPROC)(const GLfloat *m);
+typedef void(GLAD_API_PTR *PFNGLLOADTRANSPOSEMATRIXXOESPROC)(const GLfixed *m);
+typedef void(GLAD_API_PTR *PFNGLLOGICOPPROC)(GLenum opcode);
+typedef void(GLAD_API_PTR *PFNGLMAP1XOESPROC)(GLenum target, GLfixed u1,
+                                              GLfixed u2, GLint stride,
+                                              GLint order, GLfixed points);
+typedef void(GLAD_API_PTR *PFNGLMAP2XOESPROC)(GLenum target, GLfixed u1,
+                                              GLfixed u2, GLint ustride,
+                                              GLint uorder, GLfixed v1,
+                                              GLfixed v2, GLint vstride,
+                                              GLint vorder, GLfixed points);
+typedef void *(GLAD_API_PTR *PFNGLMAPBUFFERPROC)(GLenum target, GLenum access);
+typedef void *(GLAD_API_PTR *PFNGLMAPBUFFERARBPROC)(GLenum target,
+                                                    GLenum access);
+typedef void *(GLAD_API_PTR *PFNGLMAPBUFFERRANGEPROC)(GLenum target,
+                                                      GLintptr offset,
+                                                      GLsizeiptr length,
+                                                      GLbitfield access);
+typedef void(GLAD_API_PTR *PFNGLMAPGRID1XOESPROC)(GLint n, GLfixed u1,
+                                                  GLfixed u2);
+typedef void(GLAD_API_PTR *PFNGLMAPGRID2XOESPROC)(GLint n, GLfixed u1,
+                                                  GLfixed u2, GLfixed v1,
+                                                  GLfixed v2);
+typedef void *(GLAD_API_PTR *PFNGLMAPNAMEDBUFFERPROC)(GLuint buffer,
+                                                      GLenum access);
+typedef void *(GLAD_API_PTR *PFNGLMAPNAMEDBUFFERRANGEPROC)(GLuint buffer,
+                                                           GLintptr offset,
+                                                           GLsizeiptr length,
+                                                           GLbitfield access);
+typedef void(GLAD_API_PTR *PFNGLMATERIALXOESPROC)(GLenum face, GLenum pname,
+                                                  GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLMATERIALXVOESPROC)(GLenum face, GLenum pname,
+                                                   const GLfixed *param);
+typedef void(GLAD_API_PTR *PFNGLMEMORYBARRIERPROC)(GLbitfield barriers);
+typedef void(GLAD_API_PTR *PFNGLMEMORYBARRIERBYREGIONPROC)(GLbitfield barriers);
+typedef void(GLAD_API_PTR *PFNGLMINSAMPLESHADINGPROC)(GLfloat value);
+typedef void(GLAD_API_PTR *PFNGLMINSAMPLESHADINGARBPROC)(GLfloat value);
+typedef void(GLAD_API_PTR *PFNGLMULTMATRIXXOESPROC)(const GLfixed *m);
+typedef void(GLAD_API_PTR *PFNGLMULTTRANSPOSEMATRIXDARBPROC)(const GLdouble *m);
+typedef void(GLAD_API_PTR *PFNGLMULTTRANSPOSEMATRIXFARBPROC)(const GLfloat *m);
+typedef void(GLAD_API_PTR *PFNGLMULTTRANSPOSEMATRIXXOESPROC)(const GLfixed *m);
+typedef void(GLAD_API_PTR *PFNGLMULTIDRAWARRAYSPROC)(GLenum mode,
+                                                     const GLint *first,
+                                                     const GLsizei *count,
+                                                     GLsizei drawcount);
+typedef void(GLAD_API_PTR *PFNGLMULTIDRAWARRAYSINDIRECTPROC)(
+    GLenum mode, const void *indirect, GLsizei drawcount, GLsizei stride);
+typedef void(GLAD_API_PTR *PFNGLMULTIDRAWELEMENTSPROC)(
+    GLenum mode, const GLsizei *count, GLenum type, const void *const *indices,
+    GLsizei drawcount);
+typedef void(GLAD_API_PTR *PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC)(
+    GLenum mode, const GLsizei *count, GLenum type, const void *const *indices,
+    GLsizei drawcount, const GLint *basevertex);
+typedef void(GLAD_API_PTR *PFNGLMULTIDRAWELEMENTSINDIRECTPROC)(
+    GLenum mode, GLenum type, const void *indirect, GLsizei drawcount,
+    GLsizei stride);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1DARBPROC)(GLenum target,
+                                                        GLdouble s);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1DVARBPROC)(GLenum target,
+                                                         const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1FARBPROC)(GLenum target,
+                                                        GLfloat s);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1FVARBPROC)(GLenum target,
+                                                         const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1IARBPROC)(GLenum target, GLint s);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1IVARBPROC)(GLenum target,
+                                                         const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1SARBPROC)(GLenum target,
+                                                        GLshort s);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1SVARBPROC)(GLenum target,
+                                                         const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1XOESPROC)(GLenum texture,
+                                                        GLfixed s);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD1XVOESPROC)(GLenum texture,
+                                                         const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2DARBPROC)(GLenum target,
+                                                        GLdouble s, GLdouble t);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2DVARBPROC)(GLenum target,
+                                                         const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2FARBPROC)(GLenum target,
+                                                        GLfloat s, GLfloat t);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2FVARBPROC)(GLenum target,
+                                                         const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2IARBPROC)(GLenum target, GLint s,
+                                                        GLint t);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2IVARBPROC)(GLenum target,
+                                                         const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2SARBPROC)(GLenum target,
+                                                        GLshort s, GLshort t);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2SVARBPROC)(GLenum target,
+                                                         const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2XOESPROC)(GLenum texture,
+                                                        GLfixed s, GLfixed t);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD2XVOESPROC)(GLenum texture,
+                                                         const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3DARBPROC)(GLenum target,
+                                                        GLdouble s, GLdouble t,
+                                                        GLdouble r);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3DVARBPROC)(GLenum target,
+                                                         const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3FARBPROC)(GLenum target,
+                                                        GLfloat s, GLfloat t,
+                                                        GLfloat r);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3FVARBPROC)(GLenum target,
+                                                         const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3IARBPROC)(GLenum target, GLint s,
+                                                        GLint t, GLint r);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3IVARBPROC)(GLenum target,
+                                                         const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3SARBPROC)(GLenum target,
+                                                        GLshort s, GLshort t,
+                                                        GLshort r);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3SVARBPROC)(GLenum target,
+                                                         const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3XOESPROC)(GLenum texture,
+                                                        GLfixed s, GLfixed t,
+                                                        GLfixed r);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD3XVOESPROC)(GLenum texture,
+                                                         const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4DARBPROC)(GLenum target,
+                                                        GLdouble s, GLdouble t,
+                                                        GLdouble r, GLdouble q);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4DVARBPROC)(GLenum target,
+                                                         const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4FARBPROC)(GLenum target,
+                                                        GLfloat s, GLfloat t,
+                                                        GLfloat r, GLfloat q);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4FVARBPROC)(GLenum target,
+                                                         const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4IARBPROC)(GLenum target, GLint s,
+                                                        GLint t, GLint r,
+                                                        GLint q);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4IVARBPROC)(GLenum target,
+                                                         const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4SARBPROC)(GLenum target,
+                                                        GLshort s, GLshort t,
+                                                        GLshort r, GLshort q);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4SVARBPROC)(GLenum target,
+                                                         const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4XOESPROC)(GLenum texture,
+                                                        GLfixed s, GLfixed t,
+                                                        GLfixed r, GLfixed q);
+typedef void(GLAD_API_PTR *PFNGLMULTITEXCOORD4XVOESPROC)(GLenum texture,
+                                                         const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLNAMEDBUFFERDATAPROC)(GLuint buffer,
+                                                     GLsizeiptr size,
+                                                     const void *data,
+                                                     GLenum usage);
+typedef void(GLAD_API_PTR *PFNGLNAMEDBUFFERSTORAGEPROC)(GLuint buffer,
+                                                        GLsizeiptr size,
+                                                        const void *data,
+                                                        GLbitfield flags);
+typedef void(GLAD_API_PTR *PFNGLNAMEDBUFFERSUBDATAPROC)(GLuint buffer,
+                                                        GLintptr offset,
+                                                        GLsizeiptr size,
+                                                        const void *data);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC)(
+    GLuint framebuffer, GLenum buf);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC)(
+    GLuint framebuffer, GLsizei n, const GLenum *bufs);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC)(
+    GLuint framebuffer, GLenum pname, GLint param);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC)(
+    GLuint framebuffer, GLenum src);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC)(
+    GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget,
+    GLuint renderbuffer);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)(
+    GLuint framebuffer, GLuint start, GLsizei count, const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERTEXTUREPROC)(GLuint framebuffer,
+                                                             GLenum attachment,
+                                                             GLuint texture,
+                                                             GLint level);
+typedef void(GLAD_API_PTR *PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC)(
+    GLuint framebuffer, GLenum attachment, GLuint texture, GLint level,
+    GLint layer);
+typedef void(GLAD_API_PTR *PFNGLNAMEDRENDERBUFFERSTORAGEPROC)(
+    GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC)(
+    GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLNAMEDSTRINGARBPROC)(GLenum type, GLint namelen,
+                                                    const GLchar *name,
+                                                    GLint stringlen,
+                                                    const GLchar *string);
+typedef void(GLAD_API_PTR *PFNGLNORMAL3XOESPROC)(GLfixed nx, GLfixed ny,
+                                                 GLfixed nz);
+typedef void(GLAD_API_PTR *PFNGLNORMAL3XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLOBJECTLABELPROC)(GLenum identifier, GLuint name,
+                                                 GLsizei length,
+                                                 const GLchar *label);
+typedef void(GLAD_API_PTR *PFNGLOBJECTPTRLABELPROC)(const void *ptr,
+                                                    GLsizei length,
+                                                    const GLchar *label);
+typedef void(GLAD_API_PTR *PFNGLORTHOXOESPROC)(GLfixed l, GLfixed r, GLfixed b,
+                                               GLfixed t, GLfixed n, GLfixed f);
+typedef void(GLAD_API_PTR *PFNGLPASSTHROUGHXOESPROC)(GLfixed token);
+typedef void(GLAD_API_PTR *PFNGLPATCHPARAMETERFVPROC)(GLenum pname,
+                                                      const GLfloat *values);
+typedef void(GLAD_API_PTR *PFNGLPATCHPARAMETERIPROC)(GLenum pname, GLint value);
+typedef void(GLAD_API_PTR *PFNGLPAUSETRANSFORMFEEDBACKPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLPIXELMAPXPROC)(GLenum map, GLint size,
+                                               const GLfixed *values);
+typedef void(GLAD_API_PTR *PFNGLPIXELSTOREFPROC)(GLenum pname, GLfloat param);
+typedef void(GLAD_API_PTR *PFNGLPIXELSTOREIPROC)(GLenum pname, GLint param);
+typedef void(GLAD_API_PTR *PFNGLPIXELSTOREXPROC)(GLenum pname, GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLPIXELTRANSFERXOESPROC)(GLenum pname,
+                                                       GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLPIXELZOOMXOESPROC)(GLfixed xfactor,
+                                                   GLfixed yfactor);
+typedef void(GLAD_API_PTR *PFNGLPOINTPARAMETERFPROC)(GLenum pname,
+                                                     GLfloat param);
+typedef void(GLAD_API_PTR *PFNGLPOINTPARAMETERFVPROC)(GLenum pname,
+                                                      const GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLPOINTPARAMETERIPROC)(GLenum pname, GLint param);
+typedef void(GLAD_API_PTR *PFNGLPOINTPARAMETERIVPROC)(GLenum pname,
+                                                      const GLint *params);
+typedef void(GLAD_API_PTR *PFNGLPOINTPARAMETERXVOESPROC)(GLenum pname,
+                                                         const GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLPOINTSIZEPROC)(GLfloat size);
+typedef void(GLAD_API_PTR *PFNGLPOINTSIZEXOESPROC)(GLfixed size);
+typedef void(GLAD_API_PTR *PFNGLPOLYGONMODEPROC)(GLenum face, GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLPOLYGONOFFSETPROC)(GLfloat factor,
+                                                   GLfloat units);
+typedef void(GLAD_API_PTR *PFNGLPOLYGONOFFSETXOESPROC)(GLfixed factor,
+                                                       GLfixed units);
+typedef void(GLAD_API_PTR *PFNGLPOPDEBUGGROUPPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLPRIMITIVEBOUNDINGBOXARBPROC)(
+    GLfloat minX, GLfloat minY, GLfloat minZ, GLfloat minW, GLfloat maxX,
+    GLfloat maxY, GLfloat maxZ, GLfloat maxW);
+typedef void(GLAD_API_PTR *PFNGLPRIMITIVERESTARTINDEXPROC)(GLuint index);
+typedef void(GLAD_API_PTR *PFNGLPRIORITIZETEXTURESXOESPROC)(
+    GLsizei n, const GLuint *textures, const GLfixed *priorities);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMBINARYPROC)(GLuint program,
+                                                   GLenum binaryFormat,
+                                                   const void *binary,
+                                                   GLsizei length);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4DARBPROC)(
+    GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z,
+    GLdouble w);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4DVARBPROC)(
+    GLenum target, GLuint index, const GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4FARBPROC)(
+    GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMENVPARAMETER4FVARBPROC)(
+    GLenum target, GLuint index, const GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4DARBPROC)(
+    GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z,
+    GLdouble w);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4DVARBPROC)(
+    GLenum target, GLuint index, const GLdouble *params);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4FARBPROC)(
+    GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMLOCALPARAMETER4FVARBPROC)(
+    GLenum target, GLuint index, const GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMPARAMETERIPROC)(GLuint program,
+                                                       GLenum pname,
+                                                       GLint value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMPARAMETERIARBPROC)(GLuint program,
+                                                          GLenum pname,
+                                                          GLint value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMSTRINGARBPROC)(GLenum target,
+                                                      GLenum format,
+                                                      GLsizei len,
+                                                      const void *string);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1DPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLdouble v0);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1DVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1FPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLfloat v0);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1FVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1IPROC)(GLuint program,
+                                                      GLint location, GLint v0);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1I64ARBPROC)(GLuint program,
+                                                           GLint location,
+                                                           GLint64 x);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1I64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1IVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UIPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLuint v0);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UI64ARBPROC)(GLuint program,
+                                                            GLint location,
+                                                            GLuint64 x);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UI64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM1UIVPROC)(GLuint program,
+                                                        GLint location,
+                                                        GLsizei count,
+                                                        const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2DPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLdouble v0, GLdouble v1);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2DVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2FPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLfloat v0, GLfloat v1);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2FVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2IPROC)(GLuint program,
+                                                      GLint location, GLint v0,
+                                                      GLint v1);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2I64ARBPROC)(GLuint program,
+                                                           GLint location,
+                                                           GLint64 x,
+                                                           GLint64 y);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2I64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2IVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UIPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLuint v0, GLuint v1);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UI64ARBPROC)(GLuint program,
+                                                            GLint location,
+                                                            GLuint64 x,
+                                                            GLuint64 y);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UI64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM2UIVPROC)(GLuint program,
+                                                        GLint location,
+                                                        GLsizei count,
+                                                        const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3DPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLdouble v0, GLdouble v1,
+                                                      GLdouble v2);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3DVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3FPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLfloat v0, GLfloat v1,
+                                                      GLfloat v2);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3FVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3IPROC)(GLuint program,
+                                                      GLint location, GLint v0,
+                                                      GLint v1, GLint v2);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3I64ARBPROC)(GLuint program,
+                                                           GLint location,
+                                                           GLint64 x, GLint64 y,
+                                                           GLint64 z);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3I64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3IVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UIPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLuint v0, GLuint v1,
+                                                       GLuint v2);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UI64ARBPROC)(
+    GLuint program, GLint location, GLuint64 x, GLuint64 y, GLuint64 z);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UI64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM3UIVPROC)(GLuint program,
+                                                        GLint location,
+                                                        GLsizei count,
+                                                        const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4DPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLdouble v0, GLdouble v1,
+                                                      GLdouble v2, GLdouble v3);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4DVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4FPROC)(GLuint program,
+                                                      GLint location,
+                                                      GLfloat v0, GLfloat v1,
+                                                      GLfloat v2, GLfloat v3);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4FVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4IPROC)(GLuint program,
+                                                      GLint location, GLint v0,
+                                                      GLint v1, GLint v2,
+                                                      GLint v3);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4I64ARBPROC)(
+    GLuint program, GLint location, GLint64 x, GLint64 y, GLint64 z, GLint64 w);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4I64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4IVPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLsizei count,
+                                                       const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UIPROC)(GLuint program,
+                                                       GLint location,
+                                                       GLuint v0, GLuint v1,
+                                                       GLuint v2, GLuint v3);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UI64ARBPROC)(
+    GLuint program, GLint location, GLuint64 x, GLuint64 y, GLuint64 z,
+    GLuint64 w);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UI64VARBPROC)(
+    GLuint program, GLint location, GLsizei count, const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORM4UIVPROC)(GLuint program,
+                                                        GLint location,
+                                                        GLsizei count,
+                                                        const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC)(
+    GLuint program, GLint location, GLsizei count, GLboolean transpose,
+    const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLPROVOKINGVERTEXPROC)(GLenum mode);
+typedef void(GLAD_API_PTR *PFNGLPUSHDEBUGGROUPPROC)(GLenum source, GLuint id,
+                                                    GLsizei length,
+                                                    const GLchar *message);
+typedef void(GLAD_API_PTR *PFNGLQUERYCOUNTERPROC)(GLuint id, GLenum target);
+typedef void(GLAD_API_PTR *PFNGLRASTERPOS2XOESPROC)(GLfixed x, GLfixed y);
+typedef void(GLAD_API_PTR *PFNGLRASTERPOS2XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLRASTERPOS3XOESPROC)(GLfixed x, GLfixed y,
+                                                    GLfixed z);
+typedef void(GLAD_API_PTR *PFNGLRASTERPOS3XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLRASTERPOS4XOESPROC)(GLfixed x, GLfixed y,
+                                                    GLfixed z, GLfixed w);
+typedef void(GLAD_API_PTR *PFNGLRASTERPOS4XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLREADBUFFERPROC)(GLenum src);
+typedef void(GLAD_API_PTR *PFNGLREADPIXELSPROC)(GLint x, GLint y, GLsizei width,
+                                                GLsizei height, GLenum format,
+                                                GLenum type, void *pixels);
+typedef void(GLAD_API_PTR *PFNGLRECTXOESPROC)(GLfixed x1, GLfixed y1,
+                                              GLfixed x2, GLfixed y2);
+typedef void(GLAD_API_PTR *PFNGLRECTXVOESPROC)(const GLfixed *v1,
+                                               const GLfixed *v2);
+typedef void(GLAD_API_PTR *PFNGLRELEASESHADERCOMPILERPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEPROC)(GLenum target,
+                                                         GLenum internalformat,
+                                                         GLsizei width,
+                                                         GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEEXTPROC)(
+    GLenum target, GLenum internalformat, GLsizei width, GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC)(
+    GLenum target, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC)(
+    GLenum target, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLRESUMETRANSFORMFEEDBACKPROC)(void);
+typedef void(GLAD_API_PTR *PFNGLROTATEXOESPROC)(GLfixed angle, GLfixed x,
+                                                GLfixed y, GLfixed z);
+typedef void(GLAD_API_PTR *PFNGLSAMPLECOVERAGEPROC)(GLfloat value,
+                                                    GLboolean invert);
+typedef void(GLAD_API_PTR *PFNGLSAMPLECOVERAGEARBPROC)(GLfloat value,
+                                                       GLboolean invert);
+typedef void(GLAD_API_PTR *PFNGLSAMPLEMASKIPROC)(GLuint maskNumber,
+                                                 GLbitfield mask);
+typedef void(GLAD_API_PTR *PFNGLSAMPLERPARAMETERIIVPROC)(GLuint sampler,
+                                                         GLenum pname,
+                                                         const GLint *param);
+typedef void(GLAD_API_PTR *PFNGLSAMPLERPARAMETERIUIVPROC)(GLuint sampler,
+                                                          GLenum pname,
+                                                          const GLuint *param);
+typedef void(GLAD_API_PTR *PFNGLSAMPLERPARAMETERFPROC)(GLuint sampler,
+                                                       GLenum pname,
+                                                       GLfloat param);
+typedef void(GLAD_API_PTR *PFNGLSAMPLERPARAMETERFVPROC)(GLuint sampler,
+                                                        GLenum pname,
+                                                        const GLfloat *param);
+typedef void(GLAD_API_PTR *PFNGLSAMPLERPARAMETERIPROC)(GLuint sampler,
+                                                       GLenum pname,
+                                                       GLint param);
+typedef void(GLAD_API_PTR *PFNGLSAMPLERPARAMETERIVPROC)(GLuint sampler,
+                                                        GLenum pname,
+                                                        const GLint *param);
+typedef void(GLAD_API_PTR *PFNGLSCALEXOESPROC)(GLfixed x, GLfixed y, GLfixed z);
+typedef void(GLAD_API_PTR *PFNGLSCISSORPROC)(GLint x, GLint y, GLsizei width,
+                                             GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLSCISSORARRAYVPROC)(GLuint first, GLsizei count,
+                                                   const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLSCISSORINDEXEDPROC)(GLuint index, GLint left,
+                                                    GLint bottom, GLsizei width,
+                                                    GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLSCISSORINDEXEDVPROC)(GLuint index,
+                                                     const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLSHADERBINARYPROC)(GLsizei count,
+                                                  const GLuint *shaders,
+                                                  GLenum binaryFormat,
+                                                  const void *binary,
+                                                  GLsizei length);
+typedef void(GLAD_API_PTR *PFNGLSHADERSOURCEPROC)(GLuint shader, GLsizei count,
+                                                  const GLchar *const *string,
+                                                  const GLint *length);
+typedef void(GLAD_API_PTR *PFNGLSHADERSOURCEARBPROC)(GLhandleARB shaderObj,
+                                                     GLsizei count,
+                                                     const GLcharARB **string,
+                                                     const GLint *length);
+typedef void(GLAD_API_PTR *PFNGLSHADERSTORAGEBLOCKBINDINGPROC)(
+    GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding);
+typedef void(GLAD_API_PTR *PFNGLSPECIALIZESHADERARBPROC)(
+    GLuint shader, const GLchar *pEntryPoint, GLuint numSpecializationConstants,
+    const GLuint *pConstantIndex, const GLuint *pConstantValue);
+typedef void(GLAD_API_PTR *PFNGLSTENCILFUNCPROC)(GLenum func, GLint ref,
+                                                 GLuint mask);
+typedef void(GLAD_API_PTR *PFNGLSTENCILFUNCSEPARATEPROC)(GLenum face,
+                                                         GLenum func, GLint ref,
+                                                         GLuint mask);
+typedef void(GLAD_API_PTR *PFNGLSTENCILMASKPROC)(GLuint mask);
+typedef void(GLAD_API_PTR *PFNGLSTENCILMASKSEPARATEPROC)(GLenum face,
+                                                         GLuint mask);
+typedef void(GLAD_API_PTR *PFNGLSTENCILOPPROC)(GLenum fail, GLenum zfail,
+                                               GLenum zpass);
+typedef void(GLAD_API_PTR *PFNGLSTENCILOPSEPARATEPROC)(GLenum face,
+                                                       GLenum sfail,
+                                                       GLenum dpfail,
+                                                       GLenum dppass);
+typedef void(GLAD_API_PTR *PFNGLTEXBUFFERPROC)(GLenum target,
+                                               GLenum internalformat,
+                                               GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLTEXBUFFERRANGEPROC)(GLenum target,
+                                                    GLenum internalformat,
+                                                    GLuint buffer,
+                                                    GLintptr offset,
+                                                    GLsizeiptr size);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD1XOESPROC)(GLfixed s);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD1XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD2XOESPROC)(GLfixed s, GLfixed t);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD2XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD3XOESPROC)(GLfixed s, GLfixed t,
+                                                   GLfixed r);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD3XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD4XOESPROC)(GLfixed s, GLfixed t,
+                                                   GLfixed r, GLfixed q);
+typedef void(GLAD_API_PTR *PFNGLTEXCOORD4XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLTEXENVXOESPROC)(GLenum target, GLenum pname,
+                                                GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLTEXENVXVOESPROC)(GLenum target, GLenum pname,
+                                                 const GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLTEXGENXOESPROC)(GLenum coord, GLenum pname,
+                                                GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLTEXGENXVOESPROC)(GLenum coord, GLenum pname,
+                                                 const GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLTEXIMAGE1DPROC)(GLenum target, GLint level,
+                                                GLint internalformat,
+                                                GLsizei width, GLint border,
+                                                GLenum format, GLenum type,
+                                                const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXIMAGE2DPROC)(GLenum target, GLint level,
+                                                GLint internalformat,
+                                                GLsizei width, GLsizei height,
+                                                GLint border, GLenum format,
+                                                GLenum type,
+                                                const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXIMAGE2DMULTISAMPLEPROC)(
+    GLenum target, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height, GLboolean fixedsamplelocations);
+typedef void(GLAD_API_PTR *PFNGLTEXIMAGE3DPROC)(GLenum target, GLint level,
+                                                GLint internalformat,
+                                                GLsizei width, GLsizei height,
+                                                GLsizei depth, GLint border,
+                                                GLenum format, GLenum type,
+                                                const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXIMAGE3DMULTISAMPLEPROC)(
+    GLenum target, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERIIVPROC)(GLenum target,
+                                                     GLenum pname,
+                                                     const GLint *params);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERIUIVPROC)(GLenum target,
+                                                      GLenum pname,
+                                                      const GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERFPROC)(GLenum target, GLenum pname,
+                                                   GLfloat param);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERFVPROC)(GLenum target, GLenum pname,
+                                                    const GLfloat *params);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERIPROC)(GLenum target, GLenum pname,
+                                                   GLint param);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERIVPROC)(GLenum target, GLenum pname,
+                                                    const GLint *params);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERXOESPROC)(GLenum target,
+                                                      GLenum pname,
+                                                      GLfixed param);
+typedef void(GLAD_API_PTR *PFNGLTEXPARAMETERXVOESPROC)(GLenum target,
+                                                       GLenum pname,
+                                                       const GLfixed *params);
+typedef void(GLAD_API_PTR *PFNGLTEXSTORAGE1DPROC)(GLenum target, GLsizei levels,
+                                                  GLenum internalformat,
+                                                  GLsizei width);
+typedef void(GLAD_API_PTR *PFNGLTEXSTORAGE2DPROC)(GLenum target, GLsizei levels,
+                                                  GLenum internalformat,
+                                                  GLsizei width,
+                                                  GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLTEXSTORAGE2DMULTISAMPLEPROC)(
+    GLenum target, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height, GLboolean fixedsamplelocations);
+typedef void(GLAD_API_PTR *PFNGLTEXSTORAGE3DPROC)(GLenum target, GLsizei levels,
+                                                  GLenum internalformat,
+                                                  GLsizei width, GLsizei height,
+                                                  GLsizei depth);
+typedef void(GLAD_API_PTR *PFNGLTEXSTORAGE3DMULTISAMPLEPROC)(
+    GLenum target, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+typedef void(GLAD_API_PTR *PFNGLTEXSUBIMAGE1DPROC)(GLenum target, GLint level,
+                                                   GLint xoffset, GLsizei width,
+                                                   GLenum format, GLenum type,
+                                                   const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXSUBIMAGE2DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width,
+    GLsizei height, GLenum format, GLenum type, const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXSUBIMAGE3DPROC)(
+    GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type,
+    const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREBUFFERPROC)(GLuint texture,
+                                                   GLenum internalformat,
+                                                   GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREBUFFERRANGEPROC)(GLuint texture,
+                                                        GLenum internalformat,
+                                                        GLuint buffer,
+                                                        GLintptr offset,
+                                                        GLsizeiptr size);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREPARAMETERIIVPROC)(GLuint texture,
+                                                         GLenum pname,
+                                                         const GLint *params);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREPARAMETERIUIVPROC)(GLuint texture,
+                                                          GLenum pname,
+                                                          const GLuint *params);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREPARAMETERFPROC)(GLuint texture,
+                                                       GLenum pname,
+                                                       GLfloat param);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREPARAMETERFVPROC)(GLuint texture,
+                                                        GLenum pname,
+                                                        const GLfloat *param);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREPARAMETERIPROC)(GLuint texture,
+                                                       GLenum pname,
+                                                       GLint param);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREPARAMETERIVPROC)(GLuint texture,
+                                                        GLenum pname,
+                                                        const GLint *param);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESTORAGE1DPROC)(GLuint texture,
+                                                      GLsizei levels,
+                                                      GLenum internalformat,
+                                                      GLsizei width);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESTORAGE2DPROC)(GLuint texture,
+                                                      GLsizei levels,
+                                                      GLenum internalformat,
+                                                      GLsizei width,
+                                                      GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC)(
+    GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height, GLboolean fixedsamplelocations);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESTORAGE3DPROC)(
+    GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width,
+    GLsizei height, GLsizei depth);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC)(
+    GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width,
+    GLsizei height, GLsizei depth, GLboolean fixedsamplelocations);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESUBIMAGE1DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format,
+    GLenum type, const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESUBIMAGE2DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width,
+    GLsizei height, GLenum format, GLenum type, const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXTURESUBIMAGE3DPROC)(
+    GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset,
+    GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type,
+    const void *pixels);
+typedef void(GLAD_API_PTR *PFNGLTEXTUREVIEWPROC)(
+    GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat,
+    GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers);
+typedef void(GLAD_API_PTR *PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC)(GLuint xfb,
+                                                                 GLuint index,
+                                                                 GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC)(
+    GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
+typedef void(GLAD_API_PTR *PFNGLTRANSFORMFEEDBACKVARYINGSPROC)(
+    GLuint program, GLsizei count, const GLchar *const *varyings,
+    GLenum bufferMode);
+typedef void(GLAD_API_PTR *PFNGLTRANSLATEXOESPROC)(GLfixed x, GLfixed y,
+                                                   GLfixed z);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1DPROC)(GLint location, GLdouble x);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1DVPROC)(GLint location, GLsizei count,
+                                                const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1FPROC)(GLint location, GLfloat v0);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1FARBPROC)(GLint location, GLfloat v0);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1FVPROC)(GLint location, GLsizei count,
+                                                const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1FVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1IPROC)(GLint location, GLint v0);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1I64ARBPROC)(GLint location, GLint64 x);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1I64VARBPROC)(GLint location,
+                                                     GLsizei count,
+                                                     const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1IARBPROC)(GLint location, GLint v0);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1IVPROC)(GLint location, GLsizei count,
+                                                const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1IVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1UIPROC)(GLint location, GLuint v0);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1UI64ARBPROC)(GLint location,
+                                                     GLuint64 x);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1UI64VARBPROC)(GLint location,
+                                                      GLsizei count,
+                                                      const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM1UIVPROC)(GLint location, GLsizei count,
+                                                 const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2DPROC)(GLint location, GLdouble x,
+                                               GLdouble y);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2DVPROC)(GLint location, GLsizei count,
+                                                const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2FPROC)(GLint location, GLfloat v0,
+                                               GLfloat v1);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2FARBPROC)(GLint location, GLfloat v0,
+                                                  GLfloat v1);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2FVPROC)(GLint location, GLsizei count,
+                                                const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2FVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2IPROC)(GLint location, GLint v0,
+                                               GLint v1);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2I64ARBPROC)(GLint location, GLint64 x,
+                                                    GLint64 y);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2I64VARBPROC)(GLint location,
+                                                     GLsizei count,
+                                                     const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2IARBPROC)(GLint location, GLint v0,
+                                                  GLint v1);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2IVPROC)(GLint location, GLsizei count,
+                                                const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2IVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2UIPROC)(GLint location, GLuint v0,
+                                                GLuint v1);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2UI64ARBPROC)(GLint location, GLuint64 x,
+                                                     GLuint64 y);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2UI64VARBPROC)(GLint location,
+                                                      GLsizei count,
+                                                      const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM2UIVPROC)(GLint location, GLsizei count,
+                                                 const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3DPROC)(GLint location, GLdouble x,
+                                               GLdouble y, GLdouble z);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3DVPROC)(GLint location, GLsizei count,
+                                                const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3FPROC)(GLint location, GLfloat v0,
+                                               GLfloat v1, GLfloat v2);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3FARBPROC)(GLint location, GLfloat v0,
+                                                  GLfloat v1, GLfloat v2);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3FVPROC)(GLint location, GLsizei count,
+                                                const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3FVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3IPROC)(GLint location, GLint v0,
+                                               GLint v1, GLint v2);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3I64ARBPROC)(GLint location, GLint64 x,
+                                                    GLint64 y, GLint64 z);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3I64VARBPROC)(GLint location,
+                                                     GLsizei count,
+                                                     const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3IARBPROC)(GLint location, GLint v0,
+                                                  GLint v1, GLint v2);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3IVPROC)(GLint location, GLsizei count,
+                                                const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3IVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3UIPROC)(GLint location, GLuint v0,
+                                                GLuint v1, GLuint v2);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3UI64ARBPROC)(GLint location, GLuint64 x,
+                                                     GLuint64 y, GLuint64 z);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3UI64VARBPROC)(GLint location,
+                                                      GLsizei count,
+                                                      const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM3UIVPROC)(GLint location, GLsizei count,
+                                                 const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4DPROC)(GLint location, GLdouble x,
+                                               GLdouble y, GLdouble z,
+                                               GLdouble w);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4DVPROC)(GLint location, GLsizei count,
+                                                const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4FPROC)(GLint location, GLfloat v0,
+                                               GLfloat v1, GLfloat v2,
+                                               GLfloat v3);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4FARBPROC)(GLint location, GLfloat v0,
+                                                  GLfloat v1, GLfloat v2,
+                                                  GLfloat v3);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4FVPROC)(GLint location, GLsizei count,
+                                                const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4FVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4IPROC)(GLint location, GLint v0,
+                                               GLint v1, GLint v2, GLint v3);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4I64ARBPROC)(GLint location, GLint64 x,
+                                                    GLint64 y, GLint64 z,
+                                                    GLint64 w);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4I64VARBPROC)(GLint location,
+                                                     GLsizei count,
+                                                     const GLint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4IARBPROC)(GLint location, GLint v0,
+                                                  GLint v1, GLint v2, GLint v3);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4IVPROC)(GLint location, GLsizei count,
+                                                const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4IVARBPROC)(GLint location,
+                                                   GLsizei count,
+                                                   const GLint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4UIPROC)(GLint location, GLuint v0,
+                                                GLuint v1, GLuint v2,
+                                                GLuint v3);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4UI64ARBPROC)(GLint location, GLuint64 x,
+                                                     GLuint64 y, GLuint64 z,
+                                                     GLuint64 w);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4UI64VARBPROC)(GLint location,
+                                                      GLsizei count,
+                                                      const GLuint64 *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORM4UIVPROC)(GLint location, GLsizei count,
+                                                 const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMBLOCKBINDINGPROC)(
+    GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2DVPROC)(GLint location,
+                                                      GLsizei count,
+                                                      GLboolean transpose,
+                                                      const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2FVPROC)(GLint location,
+                                                      GLsizei count,
+                                                      GLboolean transpose,
+                                                      const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2FVARBPROC)(GLint location,
+                                                         GLsizei count,
+                                                         GLboolean transpose,
+                                                         const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2X3DVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2X3FVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2X4DVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX2X4FVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3DVPROC)(GLint location,
+                                                      GLsizei count,
+                                                      GLboolean transpose,
+                                                      const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3FVPROC)(GLint location,
+                                                      GLsizei count,
+                                                      GLboolean transpose,
+                                                      const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3FVARBPROC)(GLint location,
+                                                         GLsizei count,
+                                                         GLboolean transpose,
+                                                         const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3X2DVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3X2FVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3X4DVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX3X4FVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4DVPROC)(GLint location,
+                                                      GLsizei count,
+                                                      GLboolean transpose,
+                                                      const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4FVPROC)(GLint location,
+                                                      GLsizei count,
+                                                      GLboolean transpose,
+                                                      const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4FVARBPROC)(GLint location,
+                                                         GLsizei count,
+                                                         GLboolean transpose,
+                                                         const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4X2DVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4X2FVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4X3DVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLdouble *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMMATRIX4X3FVPROC)(GLint location,
+                                                        GLsizei count,
+                                                        GLboolean transpose,
+                                                        const GLfloat *value);
+typedef void(GLAD_API_PTR *PFNGLUNIFORMSUBROUTINESUIVPROC)(
+    GLenum shadertype, GLsizei count, const GLuint *indices);
+typedef GLboolean(GLAD_API_PTR *PFNGLUNMAPBUFFERPROC)(GLenum target);
+typedef GLboolean(GLAD_API_PTR *PFNGLUNMAPBUFFERARBPROC)(GLenum target);
+typedef GLboolean(GLAD_API_PTR *PFNGLUNMAPNAMEDBUFFERPROC)(GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLUSEPROGRAMPROC)(GLuint program);
+typedef void(GLAD_API_PTR *PFNGLUSEPROGRAMOBJECTARBPROC)(
+    GLhandleARB programObj);
+typedef void(GLAD_API_PTR *PFNGLUSEPROGRAMSTAGESPROC)(GLuint pipeline,
+                                                      GLbitfield stages,
+                                                      GLuint program);
+typedef void(GLAD_API_PTR *PFNGLVALIDATEPROGRAMPROC)(GLuint program);
+typedef void(GLAD_API_PTR *PFNGLVALIDATEPROGRAMARBPROC)(GLhandleARB programObj);
+typedef void(GLAD_API_PTR *PFNGLVALIDATEPROGRAMPIPELINEPROC)(GLuint pipeline);
+typedef void(GLAD_API_PTR *PFNGLVERTEX2XOESPROC)(GLfixed x);
+typedef void(GLAD_API_PTR *PFNGLVERTEX2XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLVERTEX3XOESPROC)(GLfixed x, GLfixed y);
+typedef void(GLAD_API_PTR *PFNGLVERTEX3XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLVERTEX4XOESPROC)(GLfixed x, GLfixed y,
+                                                 GLfixed z);
+typedef void(GLAD_API_PTR *PFNGLVERTEX4XVOESPROC)(const GLfixed *coords);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBBINDINGPROC)(
+    GLuint vaobj, GLuint attribindex, GLuint bindingindex);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBFORMATPROC)(
+    GLuint vaobj, GLuint attribindex, GLint size, GLenum type,
+    GLboolean normalized, GLuint relativeoffset);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBIFORMATPROC)(
+    GLuint vaobj, GLuint attribindex, GLint size, GLenum type,
+    GLuint relativeoffset);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYATTRIBLFORMATPROC)(
+    GLuint vaobj, GLuint attribindex, GLint size, GLenum type,
+    GLuint relativeoffset);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYBINDINGDIVISORPROC)(
+    GLuint vaobj, GLuint bindingindex, GLuint divisor);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYELEMENTBUFFERPROC)(GLuint vaobj,
+                                                              GLuint buffer);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYVERTEXBUFFERPROC)(
+    GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset,
+    GLsizei stride);
+typedef void(GLAD_API_PTR *PFNGLVERTEXARRAYVERTEXBUFFERSPROC)(
+    GLuint vaobj, GLuint first, GLsizei count, const GLuint *buffers,
+    const GLintptr *offsets, const GLsizei *strides);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1DPROC)(GLuint index, GLdouble x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1DARBPROC)(GLuint index,
+                                                       GLdouble x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1DVPROC)(GLuint index,
+                                                     const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1DVARBPROC)(GLuint index,
+                                                        const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1FPROC)(GLuint index, GLfloat x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1FARBPROC)(GLuint index, GLfloat x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1FVPROC)(GLuint index,
+                                                     const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1FVARBPROC)(GLuint index,
+                                                        const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1SPROC)(GLuint index, GLshort x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1SARBPROC)(GLuint index, GLshort x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1SVPROC)(GLuint index,
+                                                     const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB1SVARBPROC)(GLuint index,
+                                                        const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2DPROC)(GLuint index, GLdouble x,
+                                                    GLdouble y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2DARBPROC)(GLuint index, GLdouble x,
+                                                       GLdouble y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2DVPROC)(GLuint index,
+                                                     const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2DVARBPROC)(GLuint index,
+                                                        const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2FPROC)(GLuint index, GLfloat x,
+                                                    GLfloat y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2FARBPROC)(GLuint index, GLfloat x,
+                                                       GLfloat y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2FVPROC)(GLuint index,
+                                                     const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2FVARBPROC)(GLuint index,
+                                                        const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2SPROC)(GLuint index, GLshort x,
+                                                    GLshort y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2SARBPROC)(GLuint index, GLshort x,
+                                                       GLshort y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2SVPROC)(GLuint index,
+                                                     const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB2SVARBPROC)(GLuint index,
+                                                        const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3DPROC)(GLuint index, GLdouble x,
+                                                    GLdouble y, GLdouble z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3DARBPROC)(GLuint index, GLdouble x,
+                                                       GLdouble y, GLdouble z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3DVPROC)(GLuint index,
+                                                     const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3DVARBPROC)(GLuint index,
+                                                        const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3FPROC)(GLuint index, GLfloat x,
+                                                    GLfloat y, GLfloat z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3FARBPROC)(GLuint index, GLfloat x,
+                                                       GLfloat y, GLfloat z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3FVPROC)(GLuint index,
+                                                     const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3FVARBPROC)(GLuint index,
+                                                        const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3SPROC)(GLuint index, GLshort x,
+                                                    GLshort y, GLshort z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3SARBPROC)(GLuint index, GLshort x,
+                                                       GLshort y, GLshort z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3SVPROC)(GLuint index,
+                                                     const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB3SVARBPROC)(GLuint index,
+                                                        const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NBVPROC)(GLuint index,
+                                                      const GLbyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NBVARBPROC)(GLuint index,
+                                                         const GLbyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NIVPROC)(GLuint index,
+                                                      const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NIVARBPROC)(GLuint index,
+                                                         const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NSVPROC)(GLuint index,
+                                                      const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NSVARBPROC)(GLuint index,
+                                                         const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBPROC)(GLuint index, GLubyte x,
+                                                      GLubyte y, GLubyte z,
+                                                      GLubyte w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBARBPROC)(GLuint index,
+                                                         GLubyte x, GLubyte y,
+                                                         GLubyte z, GLubyte w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBVPROC)(GLuint index,
+                                                       const GLubyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUBVARBPROC)(GLuint index,
+                                                          const GLubyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUIVPROC)(GLuint index,
+                                                       const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUIVARBPROC)(GLuint index,
+                                                          const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUSVPROC)(GLuint index,
+                                                       const GLushort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4NUSVARBPROC)(GLuint index,
+                                                          const GLushort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4BVPROC)(GLuint index,
+                                                     const GLbyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4BVARBPROC)(GLuint index,
+                                                        const GLbyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4DPROC)(GLuint index, GLdouble x,
+                                                    GLdouble y, GLdouble z,
+                                                    GLdouble w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4DARBPROC)(GLuint index, GLdouble x,
+                                                       GLdouble y, GLdouble z,
+                                                       GLdouble w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4DVPROC)(GLuint index,
+                                                     const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4DVARBPROC)(GLuint index,
+                                                        const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4FPROC)(GLuint index, GLfloat x,
+                                                    GLfloat y, GLfloat z,
+                                                    GLfloat w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4FARBPROC)(GLuint index, GLfloat x,
+                                                       GLfloat y, GLfloat z,
+                                                       GLfloat w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4FVPROC)(GLuint index,
+                                                     const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4FVARBPROC)(GLuint index,
+                                                        const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4IVPROC)(GLuint index,
+                                                     const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4IVARBPROC)(GLuint index,
+                                                        const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4SPROC)(GLuint index, GLshort x,
+                                                    GLshort y, GLshort z,
+                                                    GLshort w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4SARBPROC)(GLuint index, GLshort x,
+                                                       GLshort y, GLshort z,
+                                                       GLshort w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4SVPROC)(GLuint index,
+                                                     const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4SVARBPROC)(GLuint index,
+                                                        const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4UBVPROC)(GLuint index,
+                                                      const GLubyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4UBVARBPROC)(GLuint index,
+                                                         const GLubyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4UIVPROC)(GLuint index,
+                                                      const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4UIVARBPROC)(GLuint index,
+                                                         const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4USVPROC)(GLuint index,
+                                                      const GLushort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIB4USVARBPROC)(GLuint index,
+                                                         const GLushort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBBINDINGPROC)(GLuint attribindex,
+                                                         GLuint bindingindex);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBDIVISORPROC)(GLuint index,
+                                                         GLuint divisor);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBDIVISORARBPROC)(GLuint index,
+                                                            GLuint divisor);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBFORMATPROC)(GLuint attribindex,
+                                                        GLint size, GLenum type,
+                                                        GLboolean normalized,
+                                                        GLuint relativeoffset);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI1IPROC)(GLuint index, GLint x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI1IVPROC)(GLuint index,
+                                                      const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI1UIPROC)(GLuint index, GLuint x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI1UIVPROC)(GLuint index,
+                                                       const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI2IPROC)(GLuint index, GLint x,
+                                                     GLint y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI2IVPROC)(GLuint index,
+                                                      const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI2UIPROC)(GLuint index, GLuint x,
+                                                      GLuint y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI2UIVPROC)(GLuint index,
+                                                       const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI3IPROC)(GLuint index, GLint x,
+                                                     GLint y, GLint z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI3IVPROC)(GLuint index,
+                                                      const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI3UIPROC)(GLuint index, GLuint x,
+                                                      GLuint y, GLuint z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI3UIVPROC)(GLuint index,
+                                                       const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4BVPROC)(GLuint index,
+                                                      const GLbyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4IPROC)(GLuint index, GLint x,
+                                                     GLint y, GLint z, GLint w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4IVPROC)(GLuint index,
+                                                      const GLint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4SVPROC)(GLuint index,
+                                                      const GLshort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4UBVPROC)(GLuint index,
+                                                       const GLubyte *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4UIPROC)(GLuint index, GLuint x,
+                                                      GLuint y, GLuint z,
+                                                      GLuint w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4UIVPROC)(GLuint index,
+                                                       const GLuint *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBI4USVPROC)(GLuint index,
+                                                       const GLushort *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBIFORMATPROC)(GLuint attribindex,
+                                                         GLint size,
+                                                         GLenum type,
+                                                         GLuint relativeoffset);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBIPOINTERPROC)(
+    GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL1DPROC)(GLuint index, GLdouble x);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL1DVPROC)(GLuint index,
+                                                      const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL2DPROC)(GLuint index, GLdouble x,
+                                                     GLdouble y);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL2DVPROC)(GLuint index,
+                                                      const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL3DPROC)(GLuint index, GLdouble x,
+                                                     GLdouble y, GLdouble z);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL3DVPROC)(GLuint index,
+                                                      const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL4DPROC)(GLuint index, GLdouble x,
+                                                     GLdouble y, GLdouble z,
+                                                     GLdouble w);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBL4DVPROC)(GLuint index,
+                                                      const GLdouble *v);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBLFORMATPROC)(GLuint attribindex,
+                                                         GLint size,
+                                                         GLenum type,
+                                                         GLuint relativeoffset);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBLPOINTERPROC)(
+    GLuint index, GLint size, GLenum type, GLsizei stride, const void *pointer);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP1UIPROC)(GLuint index, GLenum type,
+                                                      GLboolean normalized,
+                                                      GLuint value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP1UIVPROC)(GLuint index,
+                                                       GLenum type,
+                                                       GLboolean normalized,
+                                                       const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP2UIPROC)(GLuint index, GLenum type,
+                                                      GLboolean normalized,
+                                                      GLuint value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP2UIVPROC)(GLuint index,
+                                                       GLenum type,
+                                                       GLboolean normalized,
+                                                       const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP3UIPROC)(GLuint index, GLenum type,
+                                                      GLboolean normalized,
+                                                      GLuint value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP3UIVPROC)(GLuint index,
+                                                       GLenum type,
+                                                       GLboolean normalized,
+                                                       const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP4UIPROC)(GLuint index, GLenum type,
+                                                      GLboolean normalized,
+                                                      GLuint value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBP4UIVPROC)(GLuint index,
+                                                       GLenum type,
+                                                       GLboolean normalized,
+                                                       const GLuint *value);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBPOINTERPROC)(
+    GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride,
+    const void *pointer);
+typedef void(GLAD_API_PTR *PFNGLVERTEXATTRIBPOINTERARBPROC)(
+    GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride,
+    const void *pointer);
+typedef void(GLAD_API_PTR *PFNGLVERTEXBINDINGDIVISORPROC)(GLuint bindingindex,
+                                                          GLuint divisor);
+typedef void(GLAD_API_PTR *PFNGLVIEWPORTPROC)(GLint x, GLint y, GLsizei width,
+                                              GLsizei height);
+typedef void(GLAD_API_PTR *PFNGLVIEWPORTARRAYVPROC)(GLuint first, GLsizei count,
+                                                    const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLVIEWPORTINDEXEDFPROC)(GLuint index, GLfloat x,
+                                                      GLfloat y, GLfloat w,
+                                                      GLfloat h);
+typedef void(GLAD_API_PTR *PFNGLVIEWPORTINDEXEDFVPROC)(GLuint index,
+                                                       const GLfloat *v);
+typedef void(GLAD_API_PTR *PFNGLWAITSYNCPROC)(GLsync sync, GLbitfield flags,
+                                              GLuint64 timeout);
 
 GLAD_API_CALL PFNGLACCUMXOESPROC glad_glAccumxOES;
 #define glAccumxOES glad_glAccumxOES
@@ -3735,7 +5200,8 @@ GLAD_API_CALL PFNGLBINDBUFFERSRANGEPROC glad_glBindBuffersRange;
 #define glBindBuffersRange glad_glBindBuffersRange
 GLAD_API_CALL PFNGLBINDFRAGDATALOCATIONPROC glad_glBindFragDataLocation;
 #define glBindFragDataLocation glad_glBindFragDataLocation
-GLAD_API_CALL PFNGLBINDFRAGDATALOCATIONINDEXEDPROC glad_glBindFragDataLocationIndexed;
+GLAD_API_CALL PFNGLBINDFRAGDATALOCATIONINDEXEDPROC
+    glad_glBindFragDataLocationIndexed;
 #define glBindFragDataLocationIndexed glad_glBindFragDataLocationIndexed
 GLAD_API_CALL PFNGLBINDFRAMEBUFFERPROC glad_glBindFramebuffer;
 #define glBindFramebuffer glad_glBindFramebuffer
@@ -3783,7 +5249,8 @@ GLAD_API_CALL PFNGLBLENDEQUATIONSEPARATEPROC glad_glBlendEquationSeparate;
 #define glBlendEquationSeparate glad_glBlendEquationSeparate
 GLAD_API_CALL PFNGLBLENDEQUATIONSEPARATEIPROC glad_glBlendEquationSeparatei;
 #define glBlendEquationSeparatei glad_glBlendEquationSeparatei
-GLAD_API_CALL PFNGLBLENDEQUATIONSEPARATEIARBPROC glad_glBlendEquationSeparateiARB;
+GLAD_API_CALL PFNGLBLENDEQUATIONSEPARATEIARBPROC
+    glad_glBlendEquationSeparateiARB;
 #define glBlendEquationSeparateiARB glad_glBlendEquationSeparateiARB
 GLAD_API_CALL PFNGLBLENDEQUATIONIPROC glad_glBlendEquationi;
 #define glBlendEquationi glad_glBlendEquationi
@@ -3819,9 +5286,11 @@ GLAD_API_CALL PFNGLBUFFERSUBDATAARBPROC glad_glBufferSubDataARB;
 #define glBufferSubDataARB glad_glBufferSubDataARB
 GLAD_API_CALL PFNGLCHECKFRAMEBUFFERSTATUSPROC glad_glCheckFramebufferStatus;
 #define glCheckFramebufferStatus glad_glCheckFramebufferStatus
-GLAD_API_CALL PFNGLCHECKFRAMEBUFFERSTATUSEXTPROC glad_glCheckFramebufferStatusEXT;
+GLAD_API_CALL PFNGLCHECKFRAMEBUFFERSTATUSEXTPROC
+    glad_glCheckFramebufferStatusEXT;
 #define glCheckFramebufferStatusEXT glad_glCheckFramebufferStatusEXT
-GLAD_API_CALL PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC glad_glCheckNamedFramebufferStatus;
+GLAD_API_CALL PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC
+    glad_glCheckNamedFramebufferStatus;
 #define glCheckNamedFramebufferStatus glad_glCheckNamedFramebufferStatus
 GLAD_API_CALL PFNGLCLAMPCOLORPROC glad_glClampColor;
 #define glClampColor glad_glClampColor
@@ -3909,25 +5378,32 @@ GLAD_API_CALL PFNGLCOMPRESSEDTEXIMAGE3DARBPROC glad_glCompressedTexImage3DARB;
 #define glCompressedTexImage3DARB glad_glCompressedTexImage3DARB
 GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC glad_glCompressedTexSubImage1D;
 #define glCompressedTexSubImage1D glad_glCompressedTexSubImage1D
-GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC glad_glCompressedTexSubImage1DARB;
+GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC
+    glad_glCompressedTexSubImage1DARB;
 #define glCompressedTexSubImage1DARB glad_glCompressedTexSubImage1DARB
 GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC glad_glCompressedTexSubImage2D;
 #define glCompressedTexSubImage2D glad_glCompressedTexSubImage2D
-GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC glad_glCompressedTexSubImage2DARB;
+GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC
+    glad_glCompressedTexSubImage2DARB;
 #define glCompressedTexSubImage2DARB glad_glCompressedTexSubImage2DARB
 GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC glad_glCompressedTexSubImage3D;
 #define glCompressedTexSubImage3D glad_glCompressedTexSubImage3D
-GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC glad_glCompressedTexSubImage3DARB;
+GLAD_API_CALL PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC
+    glad_glCompressedTexSubImage3DARB;
 #define glCompressedTexSubImage3DARB glad_glCompressedTexSubImage3DARB
-GLAD_API_CALL PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC glad_glCompressedTextureSubImage1D;
+GLAD_API_CALL PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC
+    glad_glCompressedTextureSubImage1D;
 #define glCompressedTextureSubImage1D glad_glCompressedTextureSubImage1D
-GLAD_API_CALL PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC glad_glCompressedTextureSubImage2D;
+GLAD_API_CALL PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC
+    glad_glCompressedTextureSubImage2D;
 #define glCompressedTextureSubImage2D glad_glCompressedTextureSubImage2D
-GLAD_API_CALL PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC glad_glCompressedTextureSubImage3D;
+GLAD_API_CALL PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC
+    glad_glCompressedTextureSubImage3D;
 #define glCompressedTextureSubImage3D glad_glCompressedTextureSubImage3D
 GLAD_API_CALL PFNGLCONVOLUTIONPARAMETERXOESPROC glad_glConvolutionParameterxOES;
 #define glConvolutionParameterxOES glad_glConvolutionParameterxOES
-GLAD_API_CALL PFNGLCONVOLUTIONPARAMETERXVOESPROC glad_glConvolutionParameterxvOES;
+GLAD_API_CALL PFNGLCONVOLUTIONPARAMETERXVOESPROC
+    glad_glConvolutionParameterxvOES;
 #define glConvolutionParameterxvOES glad_glConvolutionParameterxvOES
 GLAD_API_CALL PFNGLCOPYBUFFERSUBDATAPROC glad_glCopyBufferSubData;
 #define glCopyBufferSubData glad_glCopyBufferSubData
@@ -4055,13 +5531,15 @@ GLAD_API_CALL PFNGLDISABLEVERTEXARRAYATTRIBPROC glad_glDisableVertexArrayAttrib;
 #define glDisableVertexArrayAttrib glad_glDisableVertexArrayAttrib
 GLAD_API_CALL PFNGLDISABLEVERTEXATTRIBARRAYPROC glad_glDisableVertexAttribArray;
 #define glDisableVertexAttribArray glad_glDisableVertexAttribArray
-GLAD_API_CALL PFNGLDISABLEVERTEXATTRIBARRAYARBPROC glad_glDisableVertexAttribArrayARB;
+GLAD_API_CALL PFNGLDISABLEVERTEXATTRIBARRAYARBPROC
+    glad_glDisableVertexAttribArrayARB;
 #define glDisableVertexAttribArrayARB glad_glDisableVertexAttribArrayARB
 GLAD_API_CALL PFNGLDISABLEIPROC glad_glDisablei;
 #define glDisablei glad_glDisablei
 GLAD_API_CALL PFNGLDISPATCHCOMPUTEPROC glad_glDispatchCompute;
 #define glDispatchCompute glad_glDispatchCompute
-GLAD_API_CALL PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC glad_glDispatchComputeGroupSizeARB;
+GLAD_API_CALL PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC
+    glad_glDispatchComputeGroupSizeARB;
 #define glDispatchComputeGroupSizeARB glad_glDispatchComputeGroupSizeARB
 GLAD_API_CALL PFNGLDISPATCHCOMPUTEINDIRECTPROC glad_glDispatchComputeIndirect;
 #define glDispatchComputeIndirect glad_glDispatchComputeIndirect
@@ -4073,7 +5551,8 @@ GLAD_API_CALL PFNGLDRAWARRAYSINSTANCEDPROC glad_glDrawArraysInstanced;
 #define glDrawArraysInstanced glad_glDrawArraysInstanced
 GLAD_API_CALL PFNGLDRAWARRAYSINSTANCEDARBPROC glad_glDrawArraysInstancedARB;
 #define glDrawArraysInstancedARB glad_glDrawArraysInstancedARB
-GLAD_API_CALL PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC glad_glDrawArraysInstancedBaseInstance;
+GLAD_API_CALL PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC
+    glad_glDrawArraysInstancedBaseInstance;
 #define glDrawArraysInstancedBaseInstance glad_glDrawArraysInstancedBaseInstance
 GLAD_API_CALL PFNGLDRAWARRAYSINSTANCEDEXTPROC glad_glDrawArraysInstancedEXT;
 #define glDrawArraysInstancedEXT glad_glDrawArraysInstancedEXT
@@ -4093,33 +5572,44 @@ GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDPROC glad_glDrawElementsInstanced;
 #define glDrawElementsInstanced glad_glDrawElementsInstanced
 GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDARBPROC glad_glDrawElementsInstancedARB;
 #define glDrawElementsInstancedARB glad_glDrawElementsInstancedARB
-GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC glad_glDrawElementsInstancedBaseInstance;
-#define glDrawElementsInstancedBaseInstance glad_glDrawElementsInstancedBaseInstance
-GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC glad_glDrawElementsInstancedBaseVertex;
+GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC
+    glad_glDrawElementsInstancedBaseInstance;
+#define glDrawElementsInstancedBaseInstance \
+  glad_glDrawElementsInstancedBaseInstance
+GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC
+    glad_glDrawElementsInstancedBaseVertex;
 #define glDrawElementsInstancedBaseVertex glad_glDrawElementsInstancedBaseVertex
-GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC glad_glDrawElementsInstancedBaseVertexBaseInstance;
-#define glDrawElementsInstancedBaseVertexBaseInstance glad_glDrawElementsInstancedBaseVertexBaseInstance
+GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC
+    glad_glDrawElementsInstancedBaseVertexBaseInstance;
+#define glDrawElementsInstancedBaseVertexBaseInstance \
+  glad_glDrawElementsInstancedBaseVertexBaseInstance
 GLAD_API_CALL PFNGLDRAWELEMENTSINSTANCEDEXTPROC glad_glDrawElementsInstancedEXT;
 #define glDrawElementsInstancedEXT glad_glDrawElementsInstancedEXT
 GLAD_API_CALL PFNGLDRAWRANGEELEMENTSPROC glad_glDrawRangeElements;
 #define glDrawRangeElements glad_glDrawRangeElements
-GLAD_API_CALL PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC glad_glDrawRangeElementsBaseVertex;
+GLAD_API_CALL PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC
+    glad_glDrawRangeElementsBaseVertex;
 #define glDrawRangeElementsBaseVertex glad_glDrawRangeElementsBaseVertex
 GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKPROC glad_glDrawTransformFeedback;
 #define glDrawTransformFeedback glad_glDrawTransformFeedback
-GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC glad_glDrawTransformFeedbackInstanced;
+GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC
+    glad_glDrawTransformFeedbackInstanced;
 #define glDrawTransformFeedbackInstanced glad_glDrawTransformFeedbackInstanced
-GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC glad_glDrawTransformFeedbackStream;
+GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC
+    glad_glDrawTransformFeedbackStream;
 #define glDrawTransformFeedbackStream glad_glDrawTransformFeedbackStream
-GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC glad_glDrawTransformFeedbackStreamInstanced;
-#define glDrawTransformFeedbackStreamInstanced glad_glDrawTransformFeedbackStreamInstanced
+GLAD_API_CALL PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC
+    glad_glDrawTransformFeedbackStreamInstanced;
+#define glDrawTransformFeedbackStreamInstanced \
+  glad_glDrawTransformFeedbackStreamInstanced
 GLAD_API_CALL PFNGLENABLEPROC glad_glEnable;
 #define glEnable glad_glEnable
 GLAD_API_CALL PFNGLENABLEVERTEXARRAYATTRIBPROC glad_glEnableVertexArrayAttrib;
 #define glEnableVertexArrayAttrib glad_glEnableVertexArrayAttrib
 GLAD_API_CALL PFNGLENABLEVERTEXATTRIBARRAYPROC glad_glEnableVertexAttribArray;
 #define glEnableVertexAttribArray glad_glEnableVertexAttribArray
-GLAD_API_CALL PFNGLENABLEVERTEXATTRIBARRAYARBPROC glad_glEnableVertexAttribArrayARB;
+GLAD_API_CALL PFNGLENABLEVERTEXATTRIBARRAYARBPROC
+    glad_glEnableVertexAttribArrayARB;
 #define glEnableVertexAttribArrayARB glad_glEnableVertexAttribArrayARB
 GLAD_API_CALL PFNGLENABLEIPROC glad_glEnablei;
 #define glEnablei glad_glEnablei
@@ -4153,7 +5643,8 @@ GLAD_API_CALL PFNGLFLUSHPROC glad_glFlush;
 #define glFlush glad_glFlush
 GLAD_API_CALL PFNGLFLUSHMAPPEDBUFFERRANGEPROC glad_glFlushMappedBufferRange;
 #define glFlushMappedBufferRange glad_glFlushMappedBufferRange
-GLAD_API_CALL PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC glad_glFlushMappedNamedBufferRange;
+GLAD_API_CALL PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC
+    glad_glFlushMappedNamedBufferRange;
 #define glFlushMappedNamedBufferRange glad_glFlushMappedNamedBufferRange
 GLAD_API_CALL PFNGLFOGCOORDPOINTEREXTPROC glad_glFogCoordPointerEXT;
 #define glFogCoordPointerEXT glad_glFogCoordPointerEXT
@@ -4173,9 +5664,11 @@ GLAD_API_CALL PFNGLFRAMEBUFFERPARAMETERIPROC glad_glFramebufferParameteri;
 #define glFramebufferParameteri glad_glFramebufferParameteri
 GLAD_API_CALL PFNGLFRAMEBUFFERRENDERBUFFERPROC glad_glFramebufferRenderbuffer;
 #define glFramebufferRenderbuffer glad_glFramebufferRenderbuffer
-GLAD_API_CALL PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC glad_glFramebufferRenderbufferEXT;
+GLAD_API_CALL PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC
+    glad_glFramebufferRenderbufferEXT;
 #define glFramebufferRenderbufferEXT glad_glFramebufferRenderbufferEXT
-GLAD_API_CALL PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC glad_glFramebufferSampleLocationsfvARB;
+GLAD_API_CALL PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC
+    glad_glFramebufferSampleLocationsfvARB;
 #define glFramebufferSampleLocationsfvARB glad_glFramebufferSampleLocationsfvARB
 GLAD_API_CALL PFNGLFRAMEBUFFERTEXTUREPROC glad_glFramebufferTexture;
 #define glFramebufferTexture glad_glFramebufferTexture
@@ -4193,11 +5686,13 @@ GLAD_API_CALL PFNGLFRAMEBUFFERTEXTURE3DEXTPROC glad_glFramebufferTexture3DEXT;
 #define glFramebufferTexture3DEXT glad_glFramebufferTexture3DEXT
 GLAD_API_CALL PFNGLFRAMEBUFFERTEXTUREARBPROC glad_glFramebufferTextureARB;
 #define glFramebufferTextureARB glad_glFramebufferTextureARB
-GLAD_API_CALL PFNGLFRAMEBUFFERTEXTUREFACEARBPROC glad_glFramebufferTextureFaceARB;
+GLAD_API_CALL PFNGLFRAMEBUFFERTEXTUREFACEARBPROC
+    glad_glFramebufferTextureFaceARB;
 #define glFramebufferTextureFaceARB glad_glFramebufferTextureFaceARB
 GLAD_API_CALL PFNGLFRAMEBUFFERTEXTURELAYERPROC glad_glFramebufferTextureLayer;
 #define glFramebufferTextureLayer glad_glFramebufferTextureLayer
-GLAD_API_CALL PFNGLFRAMEBUFFERTEXTURELAYERARBPROC glad_glFramebufferTextureLayerARB;
+GLAD_API_CALL PFNGLFRAMEBUFFERTEXTURELAYERARBPROC
+    glad_glFramebufferTextureLayerARB;
 #define glFramebufferTextureLayerARB glad_glFramebufferTextureLayerARB
 GLAD_API_CALL PFNGLFRONTFACEPROC glad_glFrontFace;
 #define glFrontFace glad_glFrontFace
@@ -4237,7 +5732,8 @@ GLAD_API_CALL PFNGLGENERATEMIPMAPEXTPROC glad_glGenerateMipmapEXT;
 #define glGenerateMipmapEXT glad_glGenerateMipmapEXT
 GLAD_API_CALL PFNGLGENERATETEXTUREMIPMAPPROC glad_glGenerateTextureMipmap;
 #define glGenerateTextureMipmap glad_glGenerateTextureMipmap
-GLAD_API_CALL PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC glad_glGetActiveAtomicCounterBufferiv;
+GLAD_API_CALL PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC
+    glad_glGetActiveAtomicCounterBufferiv;
 #define glGetActiveAtomicCounterBufferiv glad_glGetActiveAtomicCounterBufferiv
 GLAD_API_CALL PFNGLGETACTIVEATTRIBPROC glad_glGetActiveAttrib;
 #define glGetActiveAttrib glad_glGetActiveAttrib
@@ -4245,15 +5741,18 @@ GLAD_API_CALL PFNGLGETACTIVEATTRIBARBPROC glad_glGetActiveAttribARB;
 #define glGetActiveAttribARB glad_glGetActiveAttribARB
 GLAD_API_CALL PFNGLGETACTIVESUBROUTINENAMEPROC glad_glGetActiveSubroutineName;
 #define glGetActiveSubroutineName glad_glGetActiveSubroutineName
-GLAD_API_CALL PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC glad_glGetActiveSubroutineUniformName;
+GLAD_API_CALL PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC
+    glad_glGetActiveSubroutineUniformName;
 #define glGetActiveSubroutineUniformName glad_glGetActiveSubroutineUniformName
-GLAD_API_CALL PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC glad_glGetActiveSubroutineUniformiv;
+GLAD_API_CALL PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC
+    glad_glGetActiveSubroutineUniformiv;
 #define glGetActiveSubroutineUniformiv glad_glGetActiveSubroutineUniformiv
 GLAD_API_CALL PFNGLGETACTIVEUNIFORMPROC glad_glGetActiveUniform;
 #define glGetActiveUniform glad_glGetActiveUniform
 GLAD_API_CALL PFNGLGETACTIVEUNIFORMARBPROC glad_glGetActiveUniformARB;
 #define glGetActiveUniformARB glad_glGetActiveUniformARB
-GLAD_API_CALL PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC glad_glGetActiveUniformBlockName;
+GLAD_API_CALL PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC
+    glad_glGetActiveUniformBlockName;
 #define glGetActiveUniformBlockName glad_glGetActiveUniformBlockName
 GLAD_API_CALL PFNGLGETACTIVEUNIFORMBLOCKIVPROC glad_glGetActiveUniformBlockiv;
 #define glGetActiveUniformBlockiv glad_glGetActiveUniformBlockiv
@@ -4293,11 +5792,14 @@ GLAD_API_CALL PFNGLGETCOMPRESSEDTEXIMAGEPROC glad_glGetCompressedTexImage;
 #define glGetCompressedTexImage glad_glGetCompressedTexImage
 GLAD_API_CALL PFNGLGETCOMPRESSEDTEXIMAGEARBPROC glad_glGetCompressedTexImageARB;
 #define glGetCompressedTexImageARB glad_glGetCompressedTexImageARB
-GLAD_API_CALL PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC glad_glGetCompressedTextureImage;
+GLAD_API_CALL PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC
+    glad_glGetCompressedTextureImage;
 #define glGetCompressedTextureImage glad_glGetCompressedTextureImage
-GLAD_API_CALL PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC glad_glGetCompressedTextureSubImage;
+GLAD_API_CALL PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC
+    glad_glGetCompressedTextureSubImage;
 #define glGetCompressedTextureSubImage glad_glGetCompressedTextureSubImage
-GLAD_API_CALL PFNGLGETCONVOLUTIONPARAMETERXVOESPROC glad_glGetConvolutionParameterxvOES;
+GLAD_API_CALL PFNGLGETCONVOLUTIONPARAMETERXVOESPROC
+    glad_glGetConvolutionParameterxvOES;
 #define glGetConvolutionParameterxvOES glad_glGetConvolutionParameterxvOES
 GLAD_API_CALL PFNGLGETDEBUGMESSAGELOGPROC glad_glGetDebugMessageLog;
 #define glGetDebugMessageLog glad_glGetDebugMessageLog
@@ -4319,15 +5821,21 @@ GLAD_API_CALL PFNGLGETFRAGDATAINDEXPROC glad_glGetFragDataIndex;
 #define glGetFragDataIndex glad_glGetFragDataIndex
 GLAD_API_CALL PFNGLGETFRAGDATALOCATIONPROC glad_glGetFragDataLocation;
 #define glGetFragDataLocation glad_glGetFragDataLocation
-GLAD_API_CALL PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC glad_glGetFramebufferAttachmentParameteriv;
-#define glGetFramebufferAttachmentParameteriv glad_glGetFramebufferAttachmentParameteriv
-GLAD_API_CALL PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC glad_glGetFramebufferAttachmentParameterivEXT;
-#define glGetFramebufferAttachmentParameterivEXT glad_glGetFramebufferAttachmentParameterivEXT
-GLAD_API_CALL PFNGLGETFRAMEBUFFERPARAMETERIVPROC glad_glGetFramebufferParameteriv;
+GLAD_API_CALL PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC
+    glad_glGetFramebufferAttachmentParameteriv;
+#define glGetFramebufferAttachmentParameteriv \
+  glad_glGetFramebufferAttachmentParameteriv
+GLAD_API_CALL PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC
+    glad_glGetFramebufferAttachmentParameterivEXT;
+#define glGetFramebufferAttachmentParameterivEXT \
+  glad_glGetFramebufferAttachmentParameterivEXT
+GLAD_API_CALL PFNGLGETFRAMEBUFFERPARAMETERIVPROC
+    glad_glGetFramebufferParameteriv;
 #define glGetFramebufferParameteriv glad_glGetFramebufferParameteriv
 GLAD_API_CALL PFNGLGETHANDLEARBPROC glad_glGetHandleARB;
 #define glGetHandleARB glad_glGetHandleARB
-GLAD_API_CALL PFNGLGETHISTOGRAMPARAMETERXVOESPROC glad_glGetHistogramParameterxvOES;
+GLAD_API_CALL PFNGLGETHISTOGRAMPARAMETERXVOESPROC
+    glad_glGetHistogramParameterxvOES;
 #define glGetHistogramParameterxvOES glad_glGetHistogramParameterxvOES
 GLAD_API_CALL PFNGLGETINFOLOGARBPROC glad_glGetInfoLogARB;
 #define glGetInfoLogARB glad_glGetInfoLogARB
@@ -4351,19 +5859,25 @@ GLAD_API_CALL PFNGLGETMATERIALXOESPROC glad_glGetMaterialxOES;
 #define glGetMaterialxOES glad_glGetMaterialxOES
 GLAD_API_CALL PFNGLGETMULTISAMPLEFVPROC glad_glGetMultisamplefv;
 #define glGetMultisamplefv glad_glGetMultisamplefv
-GLAD_API_CALL PFNGLGETNAMEDBUFFERPARAMETERI64VPROC glad_glGetNamedBufferParameteri64v;
+GLAD_API_CALL PFNGLGETNAMEDBUFFERPARAMETERI64VPROC
+    glad_glGetNamedBufferParameteri64v;
 #define glGetNamedBufferParameteri64v glad_glGetNamedBufferParameteri64v
-GLAD_API_CALL PFNGLGETNAMEDBUFFERPARAMETERIVPROC glad_glGetNamedBufferParameteriv;
+GLAD_API_CALL PFNGLGETNAMEDBUFFERPARAMETERIVPROC
+    glad_glGetNamedBufferParameteriv;
 #define glGetNamedBufferParameteriv glad_glGetNamedBufferParameteriv
 GLAD_API_CALL PFNGLGETNAMEDBUFFERPOINTERVPROC glad_glGetNamedBufferPointerv;
 #define glGetNamedBufferPointerv glad_glGetNamedBufferPointerv
 GLAD_API_CALL PFNGLGETNAMEDBUFFERSUBDATAPROC glad_glGetNamedBufferSubData;
 #define glGetNamedBufferSubData glad_glGetNamedBufferSubData
-GLAD_API_CALL PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC glad_glGetNamedFramebufferAttachmentParameteriv;
-#define glGetNamedFramebufferAttachmentParameteriv glad_glGetNamedFramebufferAttachmentParameteriv
-GLAD_API_CALL PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC glad_glGetNamedFramebufferParameteriv;
+GLAD_API_CALL PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC
+    glad_glGetNamedFramebufferAttachmentParameteriv;
+#define glGetNamedFramebufferAttachmentParameteriv \
+  glad_glGetNamedFramebufferAttachmentParameteriv
+GLAD_API_CALL PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC
+    glad_glGetNamedFramebufferParameteriv;
 #define glGetNamedFramebufferParameteriv glad_glGetNamedFramebufferParameteriv
-GLAD_API_CALL PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC glad_glGetNamedRenderbufferParameteriv;
+GLAD_API_CALL PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC
+    glad_glGetNamedRenderbufferParameteriv;
 #define glGetNamedRenderbufferParameteriv glad_glGetNamedRenderbufferParameteriv
 GLAD_API_CALL PFNGLGETNAMEDSTRINGARBPROC glad_glGetNamedStringARB;
 #define glGetNamedStringARB glad_glGetNamedStringARB
@@ -4383,27 +5897,34 @@ GLAD_API_CALL PFNGLGETPOINTERVPROC glad_glGetPointerv;
 #define glGetPointerv glad_glGetPointerv
 GLAD_API_CALL PFNGLGETPROGRAMBINARYPROC glad_glGetProgramBinary;
 #define glGetProgramBinary glad_glGetProgramBinary
-GLAD_API_CALL PFNGLGETPROGRAMENVPARAMETERDVARBPROC glad_glGetProgramEnvParameterdvARB;
+GLAD_API_CALL PFNGLGETPROGRAMENVPARAMETERDVARBPROC
+    glad_glGetProgramEnvParameterdvARB;
 #define glGetProgramEnvParameterdvARB glad_glGetProgramEnvParameterdvARB
-GLAD_API_CALL PFNGLGETPROGRAMENVPARAMETERFVARBPROC glad_glGetProgramEnvParameterfvARB;
+GLAD_API_CALL PFNGLGETPROGRAMENVPARAMETERFVARBPROC
+    glad_glGetProgramEnvParameterfvARB;
 #define glGetProgramEnvParameterfvARB glad_glGetProgramEnvParameterfvARB
 GLAD_API_CALL PFNGLGETPROGRAMINFOLOGPROC glad_glGetProgramInfoLog;
 #define glGetProgramInfoLog glad_glGetProgramInfoLog
 GLAD_API_CALL PFNGLGETPROGRAMINTERFACEIVPROC glad_glGetProgramInterfaceiv;
 #define glGetProgramInterfaceiv glad_glGetProgramInterfaceiv
-GLAD_API_CALL PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC glad_glGetProgramLocalParameterdvARB;
+GLAD_API_CALL PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC
+    glad_glGetProgramLocalParameterdvARB;
 #define glGetProgramLocalParameterdvARB glad_glGetProgramLocalParameterdvARB
-GLAD_API_CALL PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC glad_glGetProgramLocalParameterfvARB;
+GLAD_API_CALL PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC
+    glad_glGetProgramLocalParameterfvARB;
 #define glGetProgramLocalParameterfvARB glad_glGetProgramLocalParameterfvARB
-GLAD_API_CALL PFNGLGETPROGRAMPIPELINEINFOLOGPROC glad_glGetProgramPipelineInfoLog;
+GLAD_API_CALL PFNGLGETPROGRAMPIPELINEINFOLOGPROC
+    glad_glGetProgramPipelineInfoLog;
 #define glGetProgramPipelineInfoLog glad_glGetProgramPipelineInfoLog
 GLAD_API_CALL PFNGLGETPROGRAMPIPELINEIVPROC glad_glGetProgramPipelineiv;
 #define glGetProgramPipelineiv glad_glGetProgramPipelineiv
 GLAD_API_CALL PFNGLGETPROGRAMRESOURCEINDEXPROC glad_glGetProgramResourceIndex;
 #define glGetProgramResourceIndex glad_glGetProgramResourceIndex
-GLAD_API_CALL PFNGLGETPROGRAMRESOURCELOCATIONPROC glad_glGetProgramResourceLocation;
+GLAD_API_CALL PFNGLGETPROGRAMRESOURCELOCATIONPROC
+    glad_glGetProgramResourceLocation;
 #define glGetProgramResourceLocation glad_glGetProgramResourceLocation
-GLAD_API_CALL PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC glad_glGetProgramResourceLocationIndex;
+GLAD_API_CALL PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC
+    glad_glGetProgramResourceLocationIndex;
 #define glGetProgramResourceLocationIndex glad_glGetProgramResourceLocationIndex
 GLAD_API_CALL PFNGLGETPROGRAMRESOURCENAMEPROC glad_glGetProgramResourceName;
 #define glGetProgramResourceName glad_glGetProgramResourceName
@@ -4421,7 +5942,8 @@ GLAD_API_CALL PFNGLGETQUERYBUFFEROBJECTI64VPROC glad_glGetQueryBufferObjecti64v;
 #define glGetQueryBufferObjecti64v glad_glGetQueryBufferObjecti64v
 GLAD_API_CALL PFNGLGETQUERYBUFFEROBJECTIVPROC glad_glGetQueryBufferObjectiv;
 #define glGetQueryBufferObjectiv glad_glGetQueryBufferObjectiv
-GLAD_API_CALL PFNGLGETQUERYBUFFEROBJECTUI64VPROC glad_glGetQueryBufferObjectui64v;
+GLAD_API_CALL PFNGLGETQUERYBUFFEROBJECTUI64VPROC
+    glad_glGetQueryBufferObjectui64v;
 #define glGetQueryBufferObjectui64v glad_glGetQueryBufferObjectui64v
 GLAD_API_CALL PFNGLGETQUERYBUFFEROBJECTUIVPROC glad_glGetQueryBufferObjectuiv;
 #define glGetQueryBufferObjectuiv glad_glGetQueryBufferObjectuiv
@@ -4443,9 +5965,11 @@ GLAD_API_CALL PFNGLGETQUERYIVPROC glad_glGetQueryiv;
 #define glGetQueryiv glad_glGetQueryiv
 GLAD_API_CALL PFNGLGETQUERYIVARBPROC glad_glGetQueryivARB;
 #define glGetQueryivARB glad_glGetQueryivARB
-GLAD_API_CALL PFNGLGETRENDERBUFFERPARAMETERIVPROC glad_glGetRenderbufferParameteriv;
+GLAD_API_CALL PFNGLGETRENDERBUFFERPARAMETERIVPROC
+    glad_glGetRenderbufferParameteriv;
 #define glGetRenderbufferParameteriv glad_glGetRenderbufferParameteriv
-GLAD_API_CALL PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC glad_glGetRenderbufferParameterivEXT;
+GLAD_API_CALL PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC
+    glad_glGetRenderbufferParameterivEXT;
 #define glGetRenderbufferParameterivEXT glad_glGetRenderbufferParameterivEXT
 GLAD_API_CALL PFNGLGETSAMPLERPARAMETERIIVPROC glad_glGetSamplerParameterIiv;
 #define glGetSamplerParameterIiv glad_glGetSamplerParameterIiv
@@ -4471,7 +5995,8 @@ GLAD_API_CALL PFNGLGETSTRINGIPROC glad_glGetStringi;
 #define glGetStringi glad_glGetStringi
 GLAD_API_CALL PFNGLGETSUBROUTINEINDEXPROC glad_glGetSubroutineIndex;
 #define glGetSubroutineIndex glad_glGetSubroutineIndex
-GLAD_API_CALL PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC glad_glGetSubroutineUniformLocation;
+GLAD_API_CALL PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC
+    glad_glGetSubroutineUniformLocation;
 #define glGetSubroutineUniformLocation glad_glGetSubroutineUniformLocation
 GLAD_API_CALL PFNGLGETSYNCIVPROC glad_glGetSynciv;
 #define glGetSynciv glad_glGetSynciv
@@ -4485,7 +6010,8 @@ GLAD_API_CALL PFNGLGETTEXLEVELPARAMETERFVPROC glad_glGetTexLevelParameterfv;
 #define glGetTexLevelParameterfv glad_glGetTexLevelParameterfv
 GLAD_API_CALL PFNGLGETTEXLEVELPARAMETERIVPROC glad_glGetTexLevelParameteriv;
 #define glGetTexLevelParameteriv glad_glGetTexLevelParameteriv
-GLAD_API_CALL PFNGLGETTEXLEVELPARAMETERXVOESPROC glad_glGetTexLevelParameterxvOES;
+GLAD_API_CALL PFNGLGETTEXLEVELPARAMETERXVOESPROC
+    glad_glGetTexLevelParameterxvOES;
 #define glGetTexLevelParameterxvOES glad_glGetTexLevelParameterxvOES
 GLAD_API_CALL PFNGLGETTEXPARAMETERIIVPROC glad_glGetTexParameterIiv;
 #define glGetTexParameterIiv glad_glGetTexParameterIiv
@@ -4499,9 +6025,11 @@ GLAD_API_CALL PFNGLGETTEXPARAMETERXVOESPROC glad_glGetTexParameterxvOES;
 #define glGetTexParameterxvOES glad_glGetTexParameterxvOES
 GLAD_API_CALL PFNGLGETTEXTUREIMAGEPROC glad_glGetTextureImage;
 #define glGetTextureImage glad_glGetTextureImage
-GLAD_API_CALL PFNGLGETTEXTURELEVELPARAMETERFVPROC glad_glGetTextureLevelParameterfv;
+GLAD_API_CALL PFNGLGETTEXTURELEVELPARAMETERFVPROC
+    glad_glGetTextureLevelParameterfv;
 #define glGetTextureLevelParameterfv glad_glGetTextureLevelParameterfv
-GLAD_API_CALL PFNGLGETTEXTURELEVELPARAMETERIVPROC glad_glGetTextureLevelParameteriv;
+GLAD_API_CALL PFNGLGETTEXTURELEVELPARAMETERIVPROC
+    glad_glGetTextureLevelParameteriv;
 #define glGetTextureLevelParameteriv glad_glGetTextureLevelParameteriv
 GLAD_API_CALL PFNGLGETTEXTUREPARAMETERIIVPROC glad_glGetTextureParameterIiv;
 #define glGetTextureParameterIiv glad_glGetTextureParameterIiv
@@ -4513,9 +6041,11 @@ GLAD_API_CALL PFNGLGETTEXTUREPARAMETERIVPROC glad_glGetTextureParameteriv;
 #define glGetTextureParameteriv glad_glGetTextureParameteriv
 GLAD_API_CALL PFNGLGETTEXTURESUBIMAGEPROC glad_glGetTextureSubImage;
 #define glGetTextureSubImage glad_glGetTextureSubImage
-GLAD_API_CALL PFNGLGETTRANSFORMFEEDBACKVARYINGPROC glad_glGetTransformFeedbackVarying;
+GLAD_API_CALL PFNGLGETTRANSFORMFEEDBACKVARYINGPROC
+    glad_glGetTransformFeedbackVarying;
 #define glGetTransformFeedbackVarying glad_glGetTransformFeedbackVarying
-GLAD_API_CALL PFNGLGETTRANSFORMFEEDBACKI64_VPROC glad_glGetTransformFeedbacki64_v;
+GLAD_API_CALL PFNGLGETTRANSFORMFEEDBACKI64_VPROC
+    glad_glGetTransformFeedbacki64_v;
 #define glGetTransformFeedbacki64_v glad_glGetTransformFeedbacki64_v
 GLAD_API_CALL PFNGLGETTRANSFORMFEEDBACKI_VPROC glad_glGetTransformFeedbacki_v;
 #define glGetTransformFeedbacki_v glad_glGetTransformFeedbacki_v
@@ -4547,7 +6077,8 @@ GLAD_API_CALL PFNGLGETUNIFORMUI64VARBPROC glad_glGetUniformui64vARB;
 #define glGetUniformui64vARB glad_glGetUniformui64vARB
 GLAD_API_CALL PFNGLGETUNIFORMUIVPROC glad_glGetUniformuiv;
 #define glGetUniformuiv glad_glGetUniformuiv
-GLAD_API_CALL PFNGLGETVERTEXARRAYINDEXED64IVPROC glad_glGetVertexArrayIndexed64iv;
+GLAD_API_CALL PFNGLGETVERTEXARRAYINDEXED64IVPROC
+    glad_glGetVertexArrayIndexed64iv;
 #define glGetVertexArrayIndexed64iv glad_glGetVertexArrayIndexed64iv
 GLAD_API_CALL PFNGLGETVERTEXARRAYINDEXEDIVPROC glad_glGetVertexArrayIndexediv;
 #define glGetVertexArrayIndexediv glad_glGetVertexArrayIndexediv
@@ -4561,7 +6092,8 @@ GLAD_API_CALL PFNGLGETVERTEXATTRIBLDVPROC glad_glGetVertexAttribLdv;
 #define glGetVertexAttribLdv glad_glGetVertexAttribLdv
 GLAD_API_CALL PFNGLGETVERTEXATTRIBPOINTERVPROC glad_glGetVertexAttribPointerv;
 #define glGetVertexAttribPointerv glad_glGetVertexAttribPointerv
-GLAD_API_CALL PFNGLGETVERTEXATTRIBPOINTERVARBPROC glad_glGetVertexAttribPointervARB;
+GLAD_API_CALL PFNGLGETVERTEXATTRIBPOINTERVARBPROC
+    glad_glGetVertexAttribPointervARB;
 #define glGetVertexAttribPointervARB glad_glGetVertexAttribPointervARB
 GLAD_API_CALL PFNGLGETVERTEXATTRIBDVPROC glad_glGetVertexAttribdv;
 #define glGetVertexAttribdv glad_glGetVertexAttribdv
@@ -4591,10 +6123,13 @@ GLAD_API_CALL PFNGLINVALIDATEBUFFERSUBDATAPROC glad_glInvalidateBufferSubData;
 #define glInvalidateBufferSubData glad_glInvalidateBufferSubData
 GLAD_API_CALL PFNGLINVALIDATEFRAMEBUFFERPROC glad_glInvalidateFramebuffer;
 #define glInvalidateFramebuffer glad_glInvalidateFramebuffer
-GLAD_API_CALL PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC glad_glInvalidateNamedFramebufferData;
+GLAD_API_CALL PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC
+    glad_glInvalidateNamedFramebufferData;
 #define glInvalidateNamedFramebufferData glad_glInvalidateNamedFramebufferData
-GLAD_API_CALL PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC glad_glInvalidateNamedFramebufferSubData;
-#define glInvalidateNamedFramebufferSubData glad_glInvalidateNamedFramebufferSubData
+GLAD_API_CALL PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC
+    glad_glInvalidateNamedFramebufferSubData;
+#define glInvalidateNamedFramebufferSubData \
+  glad_glInvalidateNamedFramebufferSubData
 GLAD_API_CALL PFNGLINVALIDATESUBFRAMEBUFFERPROC glad_glInvalidateSubFramebuffer;
 #define glInvalidateSubFramebuffer glad_glInvalidateSubFramebuffer
 GLAD_API_CALL PFNGLINVALIDATETEXIMAGEPROC glad_glInvalidateTexImage;
@@ -4711,9 +6246,11 @@ GLAD_API_CALL PFNGLMULTIDRAWARRAYSINDIRECTPROC glad_glMultiDrawArraysIndirect;
 #define glMultiDrawArraysIndirect glad_glMultiDrawArraysIndirect
 GLAD_API_CALL PFNGLMULTIDRAWELEMENTSPROC glad_glMultiDrawElements;
 #define glMultiDrawElements glad_glMultiDrawElements
-GLAD_API_CALL PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC glad_glMultiDrawElementsBaseVertex;
+GLAD_API_CALL PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC
+    glad_glMultiDrawElementsBaseVertex;
 #define glMultiDrawElementsBaseVertex glad_glMultiDrawElementsBaseVertex
-GLAD_API_CALL PFNGLMULTIDRAWELEMENTSINDIRECTPROC glad_glMultiDrawElementsIndirect;
+GLAD_API_CALL PFNGLMULTIDRAWELEMENTSINDIRECTPROC
+    glad_glMultiDrawElementsIndirect;
 #define glMultiDrawElementsIndirect glad_glMultiDrawElementsIndirect
 GLAD_API_CALL PFNGLMULTITEXCOORD1DARBPROC glad_glMultiTexCoord1dARB;
 #define glMultiTexCoord1dARB glad_glMultiTexCoord1dARB
@@ -4801,26 +6338,36 @@ GLAD_API_CALL PFNGLNAMEDBUFFERSTORAGEPROC glad_glNamedBufferStorage;
 #define glNamedBufferStorage glad_glNamedBufferStorage
 GLAD_API_CALL PFNGLNAMEDBUFFERSUBDATAPROC glad_glNamedBufferSubData;
 #define glNamedBufferSubData glad_glNamedBufferSubData
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC glad_glNamedFramebufferDrawBuffer;
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC
+    glad_glNamedFramebufferDrawBuffer;
 #define glNamedFramebufferDrawBuffer glad_glNamedFramebufferDrawBuffer
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC glad_glNamedFramebufferDrawBuffers;
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC
+    glad_glNamedFramebufferDrawBuffers;
 #define glNamedFramebufferDrawBuffers glad_glNamedFramebufferDrawBuffers
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC glad_glNamedFramebufferParameteri;
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC
+    glad_glNamedFramebufferParameteri;
 #define glNamedFramebufferParameteri glad_glNamedFramebufferParameteri
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC glad_glNamedFramebufferReadBuffer;
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC
+    glad_glNamedFramebufferReadBuffer;
 #define glNamedFramebufferReadBuffer glad_glNamedFramebufferReadBuffer
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC glad_glNamedFramebufferRenderbuffer;
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC
+    glad_glNamedFramebufferRenderbuffer;
 #define glNamedFramebufferRenderbuffer glad_glNamedFramebufferRenderbuffer
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC glad_glNamedFramebufferSampleLocationsfvARB;
-#define glNamedFramebufferSampleLocationsfvARB glad_glNamedFramebufferSampleLocationsfvARB
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC
+    glad_glNamedFramebufferSampleLocationsfvARB;
+#define glNamedFramebufferSampleLocationsfvARB \
+  glad_glNamedFramebufferSampleLocationsfvARB
 GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERTEXTUREPROC glad_glNamedFramebufferTexture;
 #define glNamedFramebufferTexture glad_glNamedFramebufferTexture
-GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC glad_glNamedFramebufferTextureLayer;
+GLAD_API_CALL PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC
+    glad_glNamedFramebufferTextureLayer;
 #define glNamedFramebufferTextureLayer glad_glNamedFramebufferTextureLayer
 GLAD_API_CALL PFNGLNAMEDRENDERBUFFERSTORAGEPROC glad_glNamedRenderbufferStorage;
 #define glNamedRenderbufferStorage glad_glNamedRenderbufferStorage
-GLAD_API_CALL PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC glad_glNamedRenderbufferStorageMultisample;
-#define glNamedRenderbufferStorageMultisample glad_glNamedRenderbufferStorageMultisample
+GLAD_API_CALL PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC
+    glad_glNamedRenderbufferStorageMultisample;
+#define glNamedRenderbufferStorageMultisample \
+  glad_glNamedRenderbufferStorageMultisample
 GLAD_API_CALL PFNGLNAMEDSTRINGARBPROC glad_glNamedStringARB;
 #define glNamedStringARB glad_glNamedStringARB
 GLAD_API_CALL PFNGLNORMAL3XOESPROC glad_glNormal3xOES;
@@ -4885,19 +6432,25 @@ GLAD_API_CALL PFNGLPROGRAMBINARYPROC glad_glProgramBinary;
 #define glProgramBinary glad_glProgramBinary
 GLAD_API_CALL PFNGLPROGRAMENVPARAMETER4DARBPROC glad_glProgramEnvParameter4dARB;
 #define glProgramEnvParameter4dARB glad_glProgramEnvParameter4dARB
-GLAD_API_CALL PFNGLPROGRAMENVPARAMETER4DVARBPROC glad_glProgramEnvParameter4dvARB;
+GLAD_API_CALL PFNGLPROGRAMENVPARAMETER4DVARBPROC
+    glad_glProgramEnvParameter4dvARB;
 #define glProgramEnvParameter4dvARB glad_glProgramEnvParameter4dvARB
 GLAD_API_CALL PFNGLPROGRAMENVPARAMETER4FARBPROC glad_glProgramEnvParameter4fARB;
 #define glProgramEnvParameter4fARB glad_glProgramEnvParameter4fARB
-GLAD_API_CALL PFNGLPROGRAMENVPARAMETER4FVARBPROC glad_glProgramEnvParameter4fvARB;
+GLAD_API_CALL PFNGLPROGRAMENVPARAMETER4FVARBPROC
+    glad_glProgramEnvParameter4fvARB;
 #define glProgramEnvParameter4fvARB glad_glProgramEnvParameter4fvARB
-GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4DARBPROC glad_glProgramLocalParameter4dARB;
+GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4DARBPROC
+    glad_glProgramLocalParameter4dARB;
 #define glProgramLocalParameter4dARB glad_glProgramLocalParameter4dARB
-GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4DVARBPROC glad_glProgramLocalParameter4dvARB;
+GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4DVARBPROC
+    glad_glProgramLocalParameter4dvARB;
 #define glProgramLocalParameter4dvARB glad_glProgramLocalParameter4dvARB
-GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4FARBPROC glad_glProgramLocalParameter4fARB;
+GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4FARBPROC
+    glad_glProgramLocalParameter4fARB;
 #define glProgramLocalParameter4fARB glad_glProgramLocalParameter4fARB
-GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4FVARBPROC glad_glProgramLocalParameter4fvARB;
+GLAD_API_CALL PFNGLPROGRAMLOCALPARAMETER4FVARBPROC
+    glad_glProgramLocalParameter4fvARB;
 #define glProgramLocalParameter4fvARB glad_glProgramLocalParameter4fvARB
 GLAD_API_CALL PFNGLPROGRAMPARAMETERIPROC glad_glProgramParameteri;
 #define glProgramParameteri glad_glProgramParameteri
@@ -5005,37 +6558,49 @@ GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2DVPROC glad_glProgramUniformMatrix2dv;
 #define glProgramUniformMatrix2dv glad_glProgramUniformMatrix2dv
 GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2FVPROC glad_glProgramUniformMatrix2fv;
 #define glProgramUniformMatrix2fv glad_glProgramUniformMatrix2fv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC glad_glProgramUniformMatrix2x3dv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC
+    glad_glProgramUniformMatrix2x3dv;
 #define glProgramUniformMatrix2x3dv glad_glProgramUniformMatrix2x3dv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC glad_glProgramUniformMatrix2x3fv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC
+    glad_glProgramUniformMatrix2x3fv;
 #define glProgramUniformMatrix2x3fv glad_glProgramUniformMatrix2x3fv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC glad_glProgramUniformMatrix2x4dv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC
+    glad_glProgramUniformMatrix2x4dv;
 #define glProgramUniformMatrix2x4dv glad_glProgramUniformMatrix2x4dv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC glad_glProgramUniformMatrix2x4fv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC
+    glad_glProgramUniformMatrix2x4fv;
 #define glProgramUniformMatrix2x4fv glad_glProgramUniformMatrix2x4fv
 GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3DVPROC glad_glProgramUniformMatrix3dv;
 #define glProgramUniformMatrix3dv glad_glProgramUniformMatrix3dv
 GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3FVPROC glad_glProgramUniformMatrix3fv;
 #define glProgramUniformMatrix3fv glad_glProgramUniformMatrix3fv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC glad_glProgramUniformMatrix3x2dv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC
+    glad_glProgramUniformMatrix3x2dv;
 #define glProgramUniformMatrix3x2dv glad_glProgramUniformMatrix3x2dv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC glad_glProgramUniformMatrix3x2fv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC
+    glad_glProgramUniformMatrix3x2fv;
 #define glProgramUniformMatrix3x2fv glad_glProgramUniformMatrix3x2fv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC glad_glProgramUniformMatrix3x4dv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC
+    glad_glProgramUniformMatrix3x4dv;
 #define glProgramUniformMatrix3x4dv glad_glProgramUniformMatrix3x4dv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC glad_glProgramUniformMatrix3x4fv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC
+    glad_glProgramUniformMatrix3x4fv;
 #define glProgramUniformMatrix3x4fv glad_glProgramUniformMatrix3x4fv
 GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4DVPROC glad_glProgramUniformMatrix4dv;
 #define glProgramUniformMatrix4dv glad_glProgramUniformMatrix4dv
 GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4FVPROC glad_glProgramUniformMatrix4fv;
 #define glProgramUniformMatrix4fv glad_glProgramUniformMatrix4fv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC glad_glProgramUniformMatrix4x2dv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC
+    glad_glProgramUniformMatrix4x2dv;
 #define glProgramUniformMatrix4x2dv glad_glProgramUniformMatrix4x2dv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC glad_glProgramUniformMatrix4x2fv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC
+    glad_glProgramUniformMatrix4x2fv;
 #define glProgramUniformMatrix4x2fv glad_glProgramUniformMatrix4x2fv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC glad_glProgramUniformMatrix4x3dv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC
+    glad_glProgramUniformMatrix4x3dv;
 #define glProgramUniformMatrix4x3dv glad_glProgramUniformMatrix4x3dv
-GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC glad_glProgramUniformMatrix4x3fv;
+GLAD_API_CALL PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC
+    glad_glProgramUniformMatrix4x3fv;
 #define glProgramUniformMatrix4x3fv glad_glProgramUniformMatrix4x3fv
 GLAD_API_CALL PFNGLPROVOKINGVERTEXPROC glad_glProvokingVertex;
 #define glProvokingVertex glad_glProvokingVertex
@@ -5069,10 +6634,13 @@ GLAD_API_CALL PFNGLRENDERBUFFERSTORAGEPROC glad_glRenderbufferStorage;
 #define glRenderbufferStorage glad_glRenderbufferStorage
 GLAD_API_CALL PFNGLRENDERBUFFERSTORAGEEXTPROC glad_glRenderbufferStorageEXT;
 #define glRenderbufferStorageEXT glad_glRenderbufferStorageEXT
-GLAD_API_CALL PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC glad_glRenderbufferStorageMultisample;
+GLAD_API_CALL PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC
+    glad_glRenderbufferStorageMultisample;
 #define glRenderbufferStorageMultisample glad_glRenderbufferStorageMultisample
-GLAD_API_CALL PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC glad_glRenderbufferStorageMultisampleEXT;
-#define glRenderbufferStorageMultisampleEXT glad_glRenderbufferStorageMultisampleEXT
+GLAD_API_CALL PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC
+    glad_glRenderbufferStorageMultisampleEXT;
+#define glRenderbufferStorageMultisampleEXT \
+  glad_glRenderbufferStorageMultisampleEXT
 GLAD_API_CALL PFNGLRESUMETRANSFORMFEEDBACKPROC glad_glResumeTransformFeedback;
 #define glResumeTransformFeedback glad_glResumeTransformFeedback
 GLAD_API_CALL PFNGLROTATEXOESPROC glad_glRotatexOES;
@@ -5111,7 +6679,8 @@ GLAD_API_CALL PFNGLSHADERSOURCEPROC glad_glShaderSource;
 #define glShaderSource glad_glShaderSource
 GLAD_API_CALL PFNGLSHADERSOURCEARBPROC glad_glShaderSourceARB;
 #define glShaderSourceARB glad_glShaderSourceARB
-GLAD_API_CALL PFNGLSHADERSTORAGEBLOCKBINDINGPROC glad_glShaderStorageBlockBinding;
+GLAD_API_CALL PFNGLSHADERSTORAGEBLOCKBINDINGPROC
+    glad_glShaderStorageBlockBinding;
 #define glShaderStorageBlockBinding glad_glShaderStorageBlockBinding
 GLAD_API_CALL PFNGLSPECIALIZESHADERARBPROC glad_glSpecializeShaderARB;
 #define glSpecializeShaderARB glad_glSpecializeShaderARB
@@ -5217,11 +6786,13 @@ GLAD_API_CALL PFNGLTEXTURESTORAGE1DPROC glad_glTextureStorage1D;
 #define glTextureStorage1D glad_glTextureStorage1D
 GLAD_API_CALL PFNGLTEXTURESTORAGE2DPROC glad_glTextureStorage2D;
 #define glTextureStorage2D glad_glTextureStorage2D
-GLAD_API_CALL PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC glad_glTextureStorage2DMultisample;
+GLAD_API_CALL PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC
+    glad_glTextureStorage2DMultisample;
 #define glTextureStorage2DMultisample glad_glTextureStorage2DMultisample
 GLAD_API_CALL PFNGLTEXTURESTORAGE3DPROC glad_glTextureStorage3D;
 #define glTextureStorage3D glad_glTextureStorage3D
-GLAD_API_CALL PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC glad_glTextureStorage3DMultisample;
+GLAD_API_CALL PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC
+    glad_glTextureStorage3DMultisample;
 #define glTextureStorage3DMultisample glad_glTextureStorage3DMultisample
 GLAD_API_CALL PFNGLTEXTURESUBIMAGE1DPROC glad_glTextureSubImage1D;
 #define glTextureSubImage1D glad_glTextureSubImage1D
@@ -5231,11 +6802,14 @@ GLAD_API_CALL PFNGLTEXTURESUBIMAGE3DPROC glad_glTextureSubImage3D;
 #define glTextureSubImage3D glad_glTextureSubImage3D
 GLAD_API_CALL PFNGLTEXTUREVIEWPROC glad_glTextureView;
 #define glTextureView glad_glTextureView
-GLAD_API_CALL PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC glad_glTransformFeedbackBufferBase;
+GLAD_API_CALL PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC
+    glad_glTransformFeedbackBufferBase;
 #define glTransformFeedbackBufferBase glad_glTransformFeedbackBufferBase
-GLAD_API_CALL PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC glad_glTransformFeedbackBufferRange;
+GLAD_API_CALL PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC
+    glad_glTransformFeedbackBufferRange;
 #define glTransformFeedbackBufferRange glad_glTransformFeedbackBufferRange
-GLAD_API_CALL PFNGLTRANSFORMFEEDBACKVARYINGSPROC glad_glTransformFeedbackVaryings;
+GLAD_API_CALL PFNGLTRANSFORMFEEDBACKVARYINGSPROC
+    glad_glTransformFeedbackVaryings;
 #define glTransformFeedbackVaryings glad_glTransformFeedbackVaryings
 GLAD_API_CALL PFNGLTRANSLATEXOESPROC glad_glTranslatexOES;
 #define glTranslatexOES glad_glTranslatexOES
@@ -5451,7 +7025,8 @@ GLAD_API_CALL PFNGLVERTEXARRAYATTRIBIFORMATPROC glad_glVertexArrayAttribIFormat;
 #define glVertexArrayAttribIFormat glad_glVertexArrayAttribIFormat
 GLAD_API_CALL PFNGLVERTEXARRAYATTRIBLFORMATPROC glad_glVertexArrayAttribLFormat;
 #define glVertexArrayAttribLFormat glad_glVertexArrayAttribLFormat
-GLAD_API_CALL PFNGLVERTEXARRAYBINDINGDIVISORPROC glad_glVertexArrayBindingDivisor;
+GLAD_API_CALL PFNGLVERTEXARRAYBINDINGDIVISORPROC
+    glad_glVertexArrayBindingDivisor;
 #define glVertexArrayBindingDivisor glad_glVertexArrayBindingDivisor
 GLAD_API_CALL PFNGLVERTEXARRAYELEMENTBUFFERPROC glad_glVertexArrayElementBuffer;
 #define glVertexArrayElementBuffer glad_glVertexArrayElementBuffer
@@ -5708,14 +7283,8 @@ GLAD_API_CALL PFNGLVIEWPORTINDEXEDFVPROC glad_glViewportIndexedfv;
 GLAD_API_CALL PFNGLWAITSYNCPROC glad_glWaitSync;
 #define glWaitSync glad_glWaitSync
 
-
-
-
-
-GLAD_API_CALL int gladLoadGLUserPtr( GLADuserptrloadfunc load, void *userptr);
-GLAD_API_CALL int gladLoadGL( GLADloadfunc load);
-
-
+GLAD_API_CALL int gladLoadGLUserPtr(GLADuserptrloadfunc load, void *userptr);
+GLAD_API_CALL int gladLoadGL(GLADloadfunc load);
 
 #ifdef __cplusplus
 }
@@ -5742,8 +7311,6 @@ GLAD_API_CALL int gladLoadGL( GLADloadfunc load);
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-
 
 int GLAD_GL_VERSION_1_0 = 0;
 int GLAD_GL_VERSION_1_1 = 0;
@@ -5877,8 +7444,6 @@ int GLAD_GL_KHR_texture_compression_astc_hdr = 0;
 int GLAD_GL_KHR_texture_compression_astc_ldr = 0;
 int GLAD_GL_OES_compressed_paletted_texture = 0;
 int GLAD_GL_OES_fixed_point = 0;
-
-
 
 PFNGLACCUMXOESPROC glad_glAccumxOES = NULL;
 PFNGLACTIVESHADERPROGRAMPROC glad_glActiveShaderProgram = NULL;
@@ -6070,7 +7635,8 @@ PFNGLDRAWARRAYSPROC glad_glDrawArrays = NULL;
 PFNGLDRAWARRAYSINDIRECTPROC glad_glDrawArraysIndirect = NULL;
 PFNGLDRAWARRAYSINSTANCEDPROC glad_glDrawArraysInstanced = NULL;
 PFNGLDRAWARRAYSINSTANCEDARBPROC glad_glDrawArraysInstancedARB = NULL;
-PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC glad_glDrawArraysInstancedBaseInstance = NULL;
+PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC
+    glad_glDrawArraysInstancedBaseInstance = NULL;
 PFNGLDRAWARRAYSINSTANCEDEXTPROC glad_glDrawArraysInstancedEXT = NULL;
 PFNGLDRAWBUFFERPROC glad_glDrawBuffer = NULL;
 PFNGLDRAWBUFFERSPROC glad_glDrawBuffers = NULL;
@@ -6080,16 +7646,21 @@ PFNGLDRAWELEMENTSBASEVERTEXPROC glad_glDrawElementsBaseVertex = NULL;
 PFNGLDRAWELEMENTSINDIRECTPROC glad_glDrawElementsIndirect = NULL;
 PFNGLDRAWELEMENTSINSTANCEDPROC glad_glDrawElementsInstanced = NULL;
 PFNGLDRAWELEMENTSINSTANCEDARBPROC glad_glDrawElementsInstancedARB = NULL;
-PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC glad_glDrawElementsInstancedBaseInstance = NULL;
-PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC glad_glDrawElementsInstancedBaseVertex = NULL;
-PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC glad_glDrawElementsInstancedBaseVertexBaseInstance = NULL;
+PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC
+    glad_glDrawElementsInstancedBaseInstance = NULL;
+PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC
+    glad_glDrawElementsInstancedBaseVertex = NULL;
+PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC
+    glad_glDrawElementsInstancedBaseVertexBaseInstance = NULL;
 PFNGLDRAWELEMENTSINSTANCEDEXTPROC glad_glDrawElementsInstancedEXT = NULL;
 PFNGLDRAWRANGEELEMENTSPROC glad_glDrawRangeElements = NULL;
 PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC glad_glDrawRangeElementsBaseVertex = NULL;
 PFNGLDRAWTRANSFORMFEEDBACKPROC glad_glDrawTransformFeedback = NULL;
-PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC glad_glDrawTransformFeedbackInstanced = NULL;
+PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC glad_glDrawTransformFeedbackInstanced =
+    NULL;
 PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC glad_glDrawTransformFeedbackStream = NULL;
-PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC glad_glDrawTransformFeedbackStreamInstanced = NULL;
+PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC
+    glad_glDrawTransformFeedbackStreamInstanced = NULL;
 PFNGLENABLEPROC glad_glEnable = NULL;
 PFNGLENABLEVERTEXARRAYATTRIBPROC glad_glEnableVertexArrayAttrib = NULL;
 PFNGLENABLEVERTEXATTRIBARRAYPROC glad_glEnableVertexAttribArray = NULL;
@@ -6121,7 +7692,8 @@ PFNGLFOGXVOESPROC glad_glFogxvOES = NULL;
 PFNGLFRAMEBUFFERPARAMETERIPROC glad_glFramebufferParameteri = NULL;
 PFNGLFRAMEBUFFERRENDERBUFFERPROC glad_glFramebufferRenderbuffer = NULL;
 PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC glad_glFramebufferRenderbufferEXT = NULL;
-PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC glad_glFramebufferSampleLocationsfvARB = NULL;
+PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC
+    glad_glFramebufferSampleLocationsfvARB = NULL;
 PFNGLFRAMEBUFFERTEXTUREPROC glad_glFramebufferTexture = NULL;
 PFNGLFRAMEBUFFERTEXTURE1DPROC glad_glFramebufferTexture1D = NULL;
 PFNGLFRAMEBUFFERTEXTURE1DEXTPROC glad_glFramebufferTexture1DEXT = NULL;
@@ -6152,12 +7724,15 @@ PFNGLGENVERTEXARRAYSPROC glad_glGenVertexArrays = NULL;
 PFNGLGENERATEMIPMAPPROC glad_glGenerateMipmap = NULL;
 PFNGLGENERATEMIPMAPEXTPROC glad_glGenerateMipmapEXT = NULL;
 PFNGLGENERATETEXTUREMIPMAPPROC glad_glGenerateTextureMipmap = NULL;
-PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC glad_glGetActiveAtomicCounterBufferiv = NULL;
+PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC glad_glGetActiveAtomicCounterBufferiv =
+    NULL;
 PFNGLGETACTIVEATTRIBPROC glad_glGetActiveAttrib = NULL;
 PFNGLGETACTIVEATTRIBARBPROC glad_glGetActiveAttribARB = NULL;
 PFNGLGETACTIVESUBROUTINENAMEPROC glad_glGetActiveSubroutineName = NULL;
-PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC glad_glGetActiveSubroutineUniformName = NULL;
-PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC glad_glGetActiveSubroutineUniformiv = NULL;
+PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC glad_glGetActiveSubroutineUniformName =
+    NULL;
+PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC glad_glGetActiveSubroutineUniformiv =
+    NULL;
 PFNGLGETACTIVEUNIFORMPROC glad_glGetActiveUniform = NULL;
 PFNGLGETACTIVEUNIFORMARBPROC glad_glGetActiveUniformARB = NULL;
 PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC glad_glGetActiveUniformBlockName = NULL;
@@ -6181,8 +7756,10 @@ PFNGLGETCLIPPLANEXOESPROC glad_glGetClipPlanexOES = NULL;
 PFNGLGETCOMPRESSEDTEXIMAGEPROC glad_glGetCompressedTexImage = NULL;
 PFNGLGETCOMPRESSEDTEXIMAGEARBPROC glad_glGetCompressedTexImageARB = NULL;
 PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC glad_glGetCompressedTextureImage = NULL;
-PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC glad_glGetCompressedTextureSubImage = NULL;
-PFNGLGETCONVOLUTIONPARAMETERXVOESPROC glad_glGetConvolutionParameterxvOES = NULL;
+PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC glad_glGetCompressedTextureSubImage =
+    NULL;
+PFNGLGETCONVOLUTIONPARAMETERXVOESPROC glad_glGetConvolutionParameterxvOES =
+    NULL;
 PFNGLGETDEBUGMESSAGELOGPROC glad_glGetDebugMessageLog = NULL;
 PFNGLGETDEBUGMESSAGELOGARBPROC glad_glGetDebugMessageLogARB = NULL;
 PFNGLGETDOUBLEI_VPROC glad_glGetDoublei_v = NULL;
@@ -6193,8 +7770,10 @@ PFNGLGETFLOATI_VPROC glad_glGetFloati_v = NULL;
 PFNGLGETFLOATVPROC glad_glGetFloatv = NULL;
 PFNGLGETFRAGDATAINDEXPROC glad_glGetFragDataIndex = NULL;
 PFNGLGETFRAGDATALOCATIONPROC glad_glGetFragDataLocation = NULL;
-PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC glad_glGetFramebufferAttachmentParameteriv = NULL;
-PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC glad_glGetFramebufferAttachmentParameterivEXT = NULL;
+PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC
+    glad_glGetFramebufferAttachmentParameteriv = NULL;
+PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC
+    glad_glGetFramebufferAttachmentParameterivEXT = NULL;
 PFNGLGETFRAMEBUFFERPARAMETERIVPROC glad_glGetFramebufferParameteriv = NULL;
 PFNGLGETHANDLEARBPROC glad_glGetHandleARB = NULL;
 PFNGLGETHISTOGRAMPARAMETERXVOESPROC glad_glGetHistogramParameterxvOES = NULL;
@@ -6213,9 +7792,12 @@ PFNGLGETNAMEDBUFFERPARAMETERI64VPROC glad_glGetNamedBufferParameteri64v = NULL;
 PFNGLGETNAMEDBUFFERPARAMETERIVPROC glad_glGetNamedBufferParameteriv = NULL;
 PFNGLGETNAMEDBUFFERPOINTERVPROC glad_glGetNamedBufferPointerv = NULL;
 PFNGLGETNAMEDBUFFERSUBDATAPROC glad_glGetNamedBufferSubData = NULL;
-PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC glad_glGetNamedFramebufferAttachmentParameteriv = NULL;
-PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC glad_glGetNamedFramebufferParameteriv = NULL;
-PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC glad_glGetNamedRenderbufferParameteriv = NULL;
+PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC
+    glad_glGetNamedFramebufferAttachmentParameteriv = NULL;
+PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC glad_glGetNamedFramebufferParameteriv =
+    NULL;
+PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC
+    glad_glGetNamedRenderbufferParameteriv = NULL;
 PFNGLGETNAMEDSTRINGARBPROC glad_glGetNamedStringARB = NULL;
 PFNGLGETNAMEDSTRINGIVARBPROC glad_glGetNamedStringivARB = NULL;
 PFNGLGETOBJECTLABELPROC glad_glGetObjectLabel = NULL;
@@ -6229,13 +7811,16 @@ PFNGLGETPROGRAMENVPARAMETERDVARBPROC glad_glGetProgramEnvParameterdvARB = NULL;
 PFNGLGETPROGRAMENVPARAMETERFVARBPROC glad_glGetProgramEnvParameterfvARB = NULL;
 PFNGLGETPROGRAMINFOLOGPROC glad_glGetProgramInfoLog = NULL;
 PFNGLGETPROGRAMINTERFACEIVPROC glad_glGetProgramInterfaceiv = NULL;
-PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC glad_glGetProgramLocalParameterdvARB = NULL;
-PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC glad_glGetProgramLocalParameterfvARB = NULL;
+PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC glad_glGetProgramLocalParameterdvARB =
+    NULL;
+PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC glad_glGetProgramLocalParameterfvARB =
+    NULL;
 PFNGLGETPROGRAMPIPELINEINFOLOGPROC glad_glGetProgramPipelineInfoLog = NULL;
 PFNGLGETPROGRAMPIPELINEIVPROC glad_glGetProgramPipelineiv = NULL;
 PFNGLGETPROGRAMRESOURCEINDEXPROC glad_glGetProgramResourceIndex = NULL;
 PFNGLGETPROGRAMRESOURCELOCATIONPROC glad_glGetProgramResourceLocation = NULL;
-PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC glad_glGetProgramResourceLocationIndex = NULL;
+PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC
+    glad_glGetProgramResourceLocationIndex = NULL;
 PFNGLGETPROGRAMRESOURCENAMEPROC glad_glGetProgramResourceName = NULL;
 PFNGLGETPROGRAMRESOURCEIVPROC glad_glGetProgramResourceiv = NULL;
 PFNGLGETPROGRAMSTAGEIVPROC glad_glGetProgramStageiv = NULL;
@@ -6256,7 +7841,8 @@ PFNGLGETQUERYOBJECTUIVARBPROC glad_glGetQueryObjectuivARB = NULL;
 PFNGLGETQUERYIVPROC glad_glGetQueryiv = NULL;
 PFNGLGETQUERYIVARBPROC glad_glGetQueryivARB = NULL;
 PFNGLGETRENDERBUFFERPARAMETERIVPROC glad_glGetRenderbufferParameteriv = NULL;
-PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC glad_glGetRenderbufferParameterivEXT = NULL;
+PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC glad_glGetRenderbufferParameterivEXT =
+    NULL;
 PFNGLGETSAMPLERPARAMETERIIVPROC glad_glGetSamplerParameterIiv = NULL;
 PFNGLGETSAMPLERPARAMETERIUIVPROC glad_glGetSamplerParameterIuiv = NULL;
 PFNGLGETSAMPLERPARAMETERFVPROC glad_glGetSamplerParameterfv = NULL;
@@ -6269,7 +7855,8 @@ PFNGLGETSHADERIVPROC glad_glGetShaderiv = NULL;
 PFNGLGETSTRINGPROC glad_glGetString = NULL;
 PFNGLGETSTRINGIPROC glad_glGetStringi = NULL;
 PFNGLGETSUBROUTINEINDEXPROC glad_glGetSubroutineIndex = NULL;
-PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC glad_glGetSubroutineUniformLocation = NULL;
+PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC glad_glGetSubroutineUniformLocation =
+    NULL;
 PFNGLGETSYNCIVPROC glad_glGetSynciv = NULL;
 PFNGLGETTEXENVXVOESPROC glad_glGetTexEnvxvOES = NULL;
 PFNGLGETTEXGENXVOESPROC glad_glGetTexGenxvOES = NULL;
@@ -6329,8 +7916,10 @@ PFNGLINDEXXVOESPROC glad_glIndexxvOES = NULL;
 PFNGLINVALIDATEBUFFERDATAPROC glad_glInvalidateBufferData = NULL;
 PFNGLINVALIDATEBUFFERSUBDATAPROC glad_glInvalidateBufferSubData = NULL;
 PFNGLINVALIDATEFRAMEBUFFERPROC glad_glInvalidateFramebuffer = NULL;
-PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC glad_glInvalidateNamedFramebufferData = NULL;
-PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC glad_glInvalidateNamedFramebufferSubData = NULL;
+PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC glad_glInvalidateNamedFramebufferData =
+    NULL;
+PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC
+    glad_glInvalidateNamedFramebufferSubData = NULL;
 PFNGLINVALIDATESUBFRAMEBUFFERPROC glad_glInvalidateSubFramebuffer = NULL;
 PFNGLINVALIDATETEXIMAGEPROC glad_glInvalidateTexImage = NULL;
 PFNGLINVALIDATETEXSUBIMAGEPROC glad_glInvalidateTexSubImage = NULL;
@@ -6438,12 +8027,16 @@ PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC glad_glNamedFramebufferDrawBuffer = NULL;
 PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC glad_glNamedFramebufferDrawBuffers = NULL;
 PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC glad_glNamedFramebufferParameteri = NULL;
 PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC glad_glNamedFramebufferReadBuffer = NULL;
-PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC glad_glNamedFramebufferRenderbuffer = NULL;
-PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC glad_glNamedFramebufferSampleLocationsfvARB = NULL;
+PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC glad_glNamedFramebufferRenderbuffer =
+    NULL;
+PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC
+    glad_glNamedFramebufferSampleLocationsfvARB = NULL;
 PFNGLNAMEDFRAMEBUFFERTEXTUREPROC glad_glNamedFramebufferTexture = NULL;
-PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC glad_glNamedFramebufferTextureLayer = NULL;
+PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC glad_glNamedFramebufferTextureLayer =
+    NULL;
 PFNGLNAMEDRENDERBUFFERSTORAGEPROC glad_glNamedRenderbufferStorage = NULL;
-PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC glad_glNamedRenderbufferStorageMultisample = NULL;
+PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC
+    glad_glNamedRenderbufferStorageMultisample = NULL;
 PFNGLNAMEDSTRINGARBPROC glad_glNamedStringARB = NULL;
 PFNGLNORMAL3XOESPROC glad_glNormal3xOES = NULL;
 PFNGLNORMAL3XVOESPROC glad_glNormal3xvOES = NULL;
@@ -6568,8 +8161,10 @@ PFNGLRECTXVOESPROC glad_glRectxvOES = NULL;
 PFNGLRELEASESHADERCOMPILERPROC glad_glReleaseShaderCompiler = NULL;
 PFNGLRENDERBUFFERSTORAGEPROC glad_glRenderbufferStorage = NULL;
 PFNGLRENDERBUFFERSTORAGEEXTPROC glad_glRenderbufferStorageEXT = NULL;
-PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC glad_glRenderbufferStorageMultisample = NULL;
-PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC glad_glRenderbufferStorageMultisampleEXT = NULL;
+PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC glad_glRenderbufferStorageMultisample =
+    NULL;
+PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC
+    glad_glRenderbufferStorageMultisampleEXT = NULL;
 PFNGLRESUMETRANSFORMFEEDBACKPROC glad_glResumeTransformFeedback = NULL;
 PFNGLROTATEXOESPROC glad_glRotatexOES = NULL;
 PFNGLSAMPLECOVERAGEPROC glad_glSampleCoverage = NULL;
@@ -6650,7 +8245,8 @@ PFNGLTEXTURESUBIMAGE2DPROC glad_glTextureSubImage2D = NULL;
 PFNGLTEXTURESUBIMAGE3DPROC glad_glTextureSubImage3D = NULL;
 PFNGLTEXTUREVIEWPROC glad_glTextureView = NULL;
 PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC glad_glTransformFeedbackBufferBase = NULL;
-PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC glad_glTransformFeedbackBufferRange = NULL;
+PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC glad_glTransformFeedbackBufferRange =
+    NULL;
 PFNGLTRANSFORMFEEDBACKVARYINGSPROC glad_glTransformFeedbackVaryings = NULL;
 PFNGLTRANSLATEXOESPROC glad_glTranslatexOES = NULL;
 PFNGLUNIFORM1DPROC glad_glUniform1d = NULL;
@@ -6888,1424 +8484,2532 @@ PFNGLVIEWPORTINDEXEDFPROC glad_glViewportIndexedf = NULL;
 PFNGLVIEWPORTINDEXEDFVPROC glad_glViewportIndexedfv = NULL;
 PFNGLWAITSYNCPROC glad_glWaitSync = NULL;
 
-
-static void glad_gl_load_GL_VERSION_1_0( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_1_0) return;
-    glad_glBlendFunc = (PFNGLBLENDFUNCPROC) load(userptr, "glBlendFunc");
-    glad_glClear = (PFNGLCLEARPROC) load(userptr, "glClear");
-    glad_glClearColor = (PFNGLCLEARCOLORPROC) load(userptr, "glClearColor");
-    glad_glClearDepth = (PFNGLCLEARDEPTHPROC) load(userptr, "glClearDepth");
-    glad_glClearStencil = (PFNGLCLEARSTENCILPROC) load(userptr, "glClearStencil");
-    glad_glColorMask = (PFNGLCOLORMASKPROC) load(userptr, "glColorMask");
-    glad_glCullFace = (PFNGLCULLFACEPROC) load(userptr, "glCullFace");
-    glad_glDepthFunc = (PFNGLDEPTHFUNCPROC) load(userptr, "glDepthFunc");
-    glad_glDepthMask = (PFNGLDEPTHMASKPROC) load(userptr, "glDepthMask");
-    glad_glDepthRange = (PFNGLDEPTHRANGEPROC) load(userptr, "glDepthRange");
-    glad_glDisable = (PFNGLDISABLEPROC) load(userptr, "glDisable");
-    glad_glDrawBuffer = (PFNGLDRAWBUFFERPROC) load(userptr, "glDrawBuffer");
-    glad_glEnable = (PFNGLENABLEPROC) load(userptr, "glEnable");
-    glad_glFinish = (PFNGLFINISHPROC) load(userptr, "glFinish");
-    glad_glFlush = (PFNGLFLUSHPROC) load(userptr, "glFlush");
-    glad_glFrontFace = (PFNGLFRONTFACEPROC) load(userptr, "glFrontFace");
-    glad_glGetBooleanv = (PFNGLGETBOOLEANVPROC) load(userptr, "glGetBooleanv");
-    glad_glGetDoublev = (PFNGLGETDOUBLEVPROC) load(userptr, "glGetDoublev");
-    glad_glGetError = (PFNGLGETERRORPROC) load(userptr, "glGetError");
-    glad_glGetFloatv = (PFNGLGETFLOATVPROC) load(userptr, "glGetFloatv");
-    glad_glGetIntegerv = (PFNGLGETINTEGERVPROC) load(userptr, "glGetIntegerv");
-    glad_glGetString = (PFNGLGETSTRINGPROC) load(userptr, "glGetString");
-    glad_glGetTexImage = (PFNGLGETTEXIMAGEPROC) load(userptr, "glGetTexImage");
-    glad_glGetTexLevelParameterfv = (PFNGLGETTEXLEVELPARAMETERFVPROC) load(userptr, "glGetTexLevelParameterfv");
-    glad_glGetTexLevelParameteriv = (PFNGLGETTEXLEVELPARAMETERIVPROC) load(userptr, "glGetTexLevelParameteriv");
-    glad_glGetTexParameterfv = (PFNGLGETTEXPARAMETERFVPROC) load(userptr, "glGetTexParameterfv");
-    glad_glGetTexParameteriv = (PFNGLGETTEXPARAMETERIVPROC) load(userptr, "glGetTexParameteriv");
-    glad_glHint = (PFNGLHINTPROC) load(userptr, "glHint");
-    glad_glIsEnabled = (PFNGLISENABLEDPROC) load(userptr, "glIsEnabled");
-    glad_glLineWidth = (PFNGLLINEWIDTHPROC) load(userptr, "glLineWidth");
-    glad_glLogicOp = (PFNGLLOGICOPPROC) load(userptr, "glLogicOp");
-    glad_glPixelStoref = (PFNGLPIXELSTOREFPROC) load(userptr, "glPixelStoref");
-    glad_glPixelStorei = (PFNGLPIXELSTOREIPROC) load(userptr, "glPixelStorei");
-    glad_glPointSize = (PFNGLPOINTSIZEPROC) load(userptr, "glPointSize");
-    glad_glPolygonMode = (PFNGLPOLYGONMODEPROC) load(userptr, "glPolygonMode");
-    glad_glReadBuffer = (PFNGLREADBUFFERPROC) load(userptr, "glReadBuffer");
-    glad_glReadPixels = (PFNGLREADPIXELSPROC) load(userptr, "glReadPixels");
-    glad_glScissor = (PFNGLSCISSORPROC) load(userptr, "glScissor");
-    glad_glStencilFunc = (PFNGLSTENCILFUNCPROC) load(userptr, "glStencilFunc");
-    glad_glStencilMask = (PFNGLSTENCILMASKPROC) load(userptr, "glStencilMask");
-    glad_glStencilOp = (PFNGLSTENCILOPPROC) load(userptr, "glStencilOp");
-    glad_glTexImage1D = (PFNGLTEXIMAGE1DPROC) load(userptr, "glTexImage1D");
-    glad_glTexImage2D = (PFNGLTEXIMAGE2DPROC) load(userptr, "glTexImage2D");
-    glad_glTexParameterf = (PFNGLTEXPARAMETERFPROC) load(userptr, "glTexParameterf");
-    glad_glTexParameterfv = (PFNGLTEXPARAMETERFVPROC) load(userptr, "glTexParameterfv");
-    glad_glTexParameteri = (PFNGLTEXPARAMETERIPROC) load(userptr, "glTexParameteri");
-    glad_glTexParameteriv = (PFNGLTEXPARAMETERIVPROC) load(userptr, "glTexParameteriv");
-    glad_glViewport = (PFNGLVIEWPORTPROC) load(userptr, "glViewport");
-}
-static void glad_gl_load_GL_VERSION_1_1( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_1_1) return;
-    glad_glBindTexture = (PFNGLBINDTEXTUREPROC) load(userptr, "glBindTexture");
-    glad_glCopyTexImage1D = (PFNGLCOPYTEXIMAGE1DPROC) load(userptr, "glCopyTexImage1D");
-    glad_glCopyTexImage2D = (PFNGLCOPYTEXIMAGE2DPROC) load(userptr, "glCopyTexImage2D");
-    glad_glCopyTexSubImage1D = (PFNGLCOPYTEXSUBIMAGE1DPROC) load(userptr, "glCopyTexSubImage1D");
-    glad_glCopyTexSubImage2D = (PFNGLCOPYTEXSUBIMAGE2DPROC) load(userptr, "glCopyTexSubImage2D");
-    glad_glDeleteTextures = (PFNGLDELETETEXTURESPROC) load(userptr, "glDeleteTextures");
-    glad_glDrawArrays = (PFNGLDRAWARRAYSPROC) load(userptr, "glDrawArrays");
-    glad_glDrawElements = (PFNGLDRAWELEMENTSPROC) load(userptr, "glDrawElements");
-    glad_glGenTextures = (PFNGLGENTEXTURESPROC) load(userptr, "glGenTextures");
-    glad_glGetPointerv = (PFNGLGETPOINTERVPROC) load(userptr, "glGetPointerv");
-    glad_glIsTexture = (PFNGLISTEXTUREPROC) load(userptr, "glIsTexture");
-    glad_glPolygonOffset = (PFNGLPOLYGONOFFSETPROC) load(userptr, "glPolygonOffset");
-    glad_glTexSubImage1D = (PFNGLTEXSUBIMAGE1DPROC) load(userptr, "glTexSubImage1D");
-    glad_glTexSubImage2D = (PFNGLTEXSUBIMAGE2DPROC) load(userptr, "glTexSubImage2D");
-}
-static void glad_gl_load_GL_VERSION_1_2( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_1_2) return;
-    glad_glCopyTexSubImage3D = (PFNGLCOPYTEXSUBIMAGE3DPROC) load(userptr, "glCopyTexSubImage3D");
-    glad_glDrawRangeElements = (PFNGLDRAWRANGEELEMENTSPROC) load(userptr, "glDrawRangeElements");
-    glad_glTexImage3D = (PFNGLTEXIMAGE3DPROC) load(userptr, "glTexImage3D");
-    glad_glTexSubImage3D = (PFNGLTEXSUBIMAGE3DPROC) load(userptr, "glTexSubImage3D");
-}
-static void glad_gl_load_GL_VERSION_1_3( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_1_3) return;
-    glad_glActiveTexture = (PFNGLACTIVETEXTUREPROC) load(userptr, "glActiveTexture");
-    glad_glCompressedTexImage1D = (PFNGLCOMPRESSEDTEXIMAGE1DPROC) load(userptr, "glCompressedTexImage1D");
-    glad_glCompressedTexImage2D = (PFNGLCOMPRESSEDTEXIMAGE2DPROC) load(userptr, "glCompressedTexImage2D");
-    glad_glCompressedTexImage3D = (PFNGLCOMPRESSEDTEXIMAGE3DPROC) load(userptr, "glCompressedTexImage3D");
-    glad_glCompressedTexSubImage1D = (PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC) load(userptr, "glCompressedTexSubImage1D");
-    glad_glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC) load(userptr, "glCompressedTexSubImage2D");
-    glad_glCompressedTexSubImage3D = (PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC) load(userptr, "glCompressedTexSubImage3D");
-    glad_glGetCompressedTexImage = (PFNGLGETCOMPRESSEDTEXIMAGEPROC) load(userptr, "glGetCompressedTexImage");
-    glad_glSampleCoverage = (PFNGLSAMPLECOVERAGEPROC) load(userptr, "glSampleCoverage");
-}
-static void glad_gl_load_GL_VERSION_1_4( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_1_4) return;
-    glad_glBlendColor = (PFNGLBLENDCOLORPROC) load(userptr, "glBlendColor");
-    glad_glBlendEquation = (PFNGLBLENDEQUATIONPROC) load(userptr, "glBlendEquation");
-    glad_glBlendFuncSeparate = (PFNGLBLENDFUNCSEPARATEPROC) load(userptr, "glBlendFuncSeparate");
-    glad_glMultiDrawArrays = (PFNGLMULTIDRAWARRAYSPROC) load(userptr, "glMultiDrawArrays");
-    glad_glMultiDrawElements = (PFNGLMULTIDRAWELEMENTSPROC) load(userptr, "glMultiDrawElements");
-    glad_glPointParameterf = (PFNGLPOINTPARAMETERFPROC) load(userptr, "glPointParameterf");
-    glad_glPointParameterfv = (PFNGLPOINTPARAMETERFVPROC) load(userptr, "glPointParameterfv");
-    glad_glPointParameteri = (PFNGLPOINTPARAMETERIPROC) load(userptr, "glPointParameteri");
-    glad_glPointParameteriv = (PFNGLPOINTPARAMETERIVPROC) load(userptr, "glPointParameteriv");
-}
-static void glad_gl_load_GL_VERSION_1_5( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_1_5) return;
-    glad_glBeginQuery = (PFNGLBEGINQUERYPROC) load(userptr, "glBeginQuery");
-    glad_glBindBuffer = (PFNGLBINDBUFFERPROC) load(userptr, "glBindBuffer");
-    glad_glBufferData = (PFNGLBUFFERDATAPROC) load(userptr, "glBufferData");
-    glad_glBufferSubData = (PFNGLBUFFERSUBDATAPROC) load(userptr, "glBufferSubData");
-    glad_glDeleteBuffers = (PFNGLDELETEBUFFERSPROC) load(userptr, "glDeleteBuffers");
-    glad_glDeleteQueries = (PFNGLDELETEQUERIESPROC) load(userptr, "glDeleteQueries");
-    glad_glEndQuery = (PFNGLENDQUERYPROC) load(userptr, "glEndQuery");
-    glad_glGenBuffers = (PFNGLGENBUFFERSPROC) load(userptr, "glGenBuffers");
-    glad_glGenQueries = (PFNGLGENQUERIESPROC) load(userptr, "glGenQueries");
-    glad_glGetBufferParameteriv = (PFNGLGETBUFFERPARAMETERIVPROC) load(userptr, "glGetBufferParameteriv");
-    glad_glGetBufferPointerv = (PFNGLGETBUFFERPOINTERVPROC) load(userptr, "glGetBufferPointerv");
-    glad_glGetBufferSubData = (PFNGLGETBUFFERSUBDATAPROC) load(userptr, "glGetBufferSubData");
-    glad_glGetQueryObjectiv = (PFNGLGETQUERYOBJECTIVPROC) load(userptr, "glGetQueryObjectiv");
-    glad_glGetQueryObjectuiv = (PFNGLGETQUERYOBJECTUIVPROC) load(userptr, "glGetQueryObjectuiv");
-    glad_glGetQueryiv = (PFNGLGETQUERYIVPROC) load(userptr, "glGetQueryiv");
-    glad_glIsBuffer = (PFNGLISBUFFERPROC) load(userptr, "glIsBuffer");
-    glad_glIsQuery = (PFNGLISQUERYPROC) load(userptr, "glIsQuery");
-    glad_glMapBuffer = (PFNGLMAPBUFFERPROC) load(userptr, "glMapBuffer");
-    glad_glUnmapBuffer = (PFNGLUNMAPBUFFERPROC) load(userptr, "glUnmapBuffer");
-}
-static void glad_gl_load_GL_VERSION_2_0( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_2_0) return;
-    glad_glAttachShader = (PFNGLATTACHSHADERPROC) load(userptr, "glAttachShader");
-    glad_glBindAttribLocation = (PFNGLBINDATTRIBLOCATIONPROC) load(userptr, "glBindAttribLocation");
-    glad_glBlendEquationSeparate = (PFNGLBLENDEQUATIONSEPARATEPROC) load(userptr, "glBlendEquationSeparate");
-    glad_glCompileShader = (PFNGLCOMPILESHADERPROC) load(userptr, "glCompileShader");
-    glad_glCreateProgram = (PFNGLCREATEPROGRAMPROC) load(userptr, "glCreateProgram");
-    glad_glCreateShader = (PFNGLCREATESHADERPROC) load(userptr, "glCreateShader");
-    glad_glDeleteProgram = (PFNGLDELETEPROGRAMPROC) load(userptr, "glDeleteProgram");
-    glad_glDeleteShader = (PFNGLDELETESHADERPROC) load(userptr, "glDeleteShader");
-    glad_glDetachShader = (PFNGLDETACHSHADERPROC) load(userptr, "glDetachShader");
-    glad_glDisableVertexAttribArray = (PFNGLDISABLEVERTEXATTRIBARRAYPROC) load(userptr, "glDisableVertexAttribArray");
-    glad_glDrawBuffers = (PFNGLDRAWBUFFERSPROC) load(userptr, "glDrawBuffers");
-    glad_glEnableVertexAttribArray = (PFNGLENABLEVERTEXATTRIBARRAYPROC) load(userptr, "glEnableVertexAttribArray");
-    glad_glGetActiveAttrib = (PFNGLGETACTIVEATTRIBPROC) load(userptr, "glGetActiveAttrib");
-    glad_glGetActiveUniform = (PFNGLGETACTIVEUNIFORMPROC) load(userptr, "glGetActiveUniform");
-    glad_glGetAttachedShaders = (PFNGLGETATTACHEDSHADERSPROC) load(userptr, "glGetAttachedShaders");
-    glad_glGetAttribLocation = (PFNGLGETATTRIBLOCATIONPROC) load(userptr, "glGetAttribLocation");
-    glad_glGetProgramInfoLog = (PFNGLGETPROGRAMINFOLOGPROC) load(userptr, "glGetProgramInfoLog");
-    glad_glGetProgramiv = (PFNGLGETPROGRAMIVPROC) load(userptr, "glGetProgramiv");
-    glad_glGetShaderInfoLog = (PFNGLGETSHADERINFOLOGPROC) load(userptr, "glGetShaderInfoLog");
-    glad_glGetShaderSource = (PFNGLGETSHADERSOURCEPROC) load(userptr, "glGetShaderSource");
-    glad_glGetShaderiv = (PFNGLGETSHADERIVPROC) load(userptr, "glGetShaderiv");
-    glad_glGetUniformLocation = (PFNGLGETUNIFORMLOCATIONPROC) load(userptr, "glGetUniformLocation");
-    glad_glGetUniformfv = (PFNGLGETUNIFORMFVPROC) load(userptr, "glGetUniformfv");
-    glad_glGetUniformiv = (PFNGLGETUNIFORMIVPROC) load(userptr, "glGetUniformiv");
-    glad_glGetVertexAttribPointerv = (PFNGLGETVERTEXATTRIBPOINTERVPROC) load(userptr, "glGetVertexAttribPointerv");
-    glad_glGetVertexAttribdv = (PFNGLGETVERTEXATTRIBDVPROC) load(userptr, "glGetVertexAttribdv");
-    glad_glGetVertexAttribfv = (PFNGLGETVERTEXATTRIBFVPROC) load(userptr, "glGetVertexAttribfv");
-    glad_glGetVertexAttribiv = (PFNGLGETVERTEXATTRIBIVPROC) load(userptr, "glGetVertexAttribiv");
-    glad_glIsProgram = (PFNGLISPROGRAMPROC) load(userptr, "glIsProgram");
-    glad_glIsShader = (PFNGLISSHADERPROC) load(userptr, "glIsShader");
-    glad_glLinkProgram = (PFNGLLINKPROGRAMPROC) load(userptr, "glLinkProgram");
-    glad_glShaderSource = (PFNGLSHADERSOURCEPROC) load(userptr, "glShaderSource");
-    glad_glStencilFuncSeparate = (PFNGLSTENCILFUNCSEPARATEPROC) load(userptr, "glStencilFuncSeparate");
-    glad_glStencilMaskSeparate = (PFNGLSTENCILMASKSEPARATEPROC) load(userptr, "glStencilMaskSeparate");
-    glad_glStencilOpSeparate = (PFNGLSTENCILOPSEPARATEPROC) load(userptr, "glStencilOpSeparate");
-    glad_glUniform1f = (PFNGLUNIFORM1FPROC) load(userptr, "glUniform1f");
-    glad_glUniform1fv = (PFNGLUNIFORM1FVPROC) load(userptr, "glUniform1fv");
-    glad_glUniform1i = (PFNGLUNIFORM1IPROC) load(userptr, "glUniform1i");
-    glad_glUniform1iv = (PFNGLUNIFORM1IVPROC) load(userptr, "glUniform1iv");
-    glad_glUniform2f = (PFNGLUNIFORM2FPROC) load(userptr, "glUniform2f");
-    glad_glUniform2fv = (PFNGLUNIFORM2FVPROC) load(userptr, "glUniform2fv");
-    glad_glUniform2i = (PFNGLUNIFORM2IPROC) load(userptr, "glUniform2i");
-    glad_glUniform2iv = (PFNGLUNIFORM2IVPROC) load(userptr, "glUniform2iv");
-    glad_glUniform3f = (PFNGLUNIFORM3FPROC) load(userptr, "glUniform3f");
-    glad_glUniform3fv = (PFNGLUNIFORM3FVPROC) load(userptr, "glUniform3fv");
-    glad_glUniform3i = (PFNGLUNIFORM3IPROC) load(userptr, "glUniform3i");
-    glad_glUniform3iv = (PFNGLUNIFORM3IVPROC) load(userptr, "glUniform3iv");
-    glad_glUniform4f = (PFNGLUNIFORM4FPROC) load(userptr, "glUniform4f");
-    glad_glUniform4fv = (PFNGLUNIFORM4FVPROC) load(userptr, "glUniform4fv");
-    glad_glUniform4i = (PFNGLUNIFORM4IPROC) load(userptr, "glUniform4i");
-    glad_glUniform4iv = (PFNGLUNIFORM4IVPROC) load(userptr, "glUniform4iv");
-    glad_glUniformMatrix2fv = (PFNGLUNIFORMMATRIX2FVPROC) load(userptr, "glUniformMatrix2fv");
-    glad_glUniformMatrix3fv = (PFNGLUNIFORMMATRIX3FVPROC) load(userptr, "glUniformMatrix3fv");
-    glad_glUniformMatrix4fv = (PFNGLUNIFORMMATRIX4FVPROC) load(userptr, "glUniformMatrix4fv");
-    glad_glUseProgram = (PFNGLUSEPROGRAMPROC) load(userptr, "glUseProgram");
-    glad_glValidateProgram = (PFNGLVALIDATEPROGRAMPROC) load(userptr, "glValidateProgram");
-    glad_glVertexAttrib1d = (PFNGLVERTEXATTRIB1DPROC) load(userptr, "glVertexAttrib1d");
-    glad_glVertexAttrib1dv = (PFNGLVERTEXATTRIB1DVPROC) load(userptr, "glVertexAttrib1dv");
-    glad_glVertexAttrib1f = (PFNGLVERTEXATTRIB1FPROC) load(userptr, "glVertexAttrib1f");
-    glad_glVertexAttrib1fv = (PFNGLVERTEXATTRIB1FVPROC) load(userptr, "glVertexAttrib1fv");
-    glad_glVertexAttrib1s = (PFNGLVERTEXATTRIB1SPROC) load(userptr, "glVertexAttrib1s");
-    glad_glVertexAttrib1sv = (PFNGLVERTEXATTRIB1SVPROC) load(userptr, "glVertexAttrib1sv");
-    glad_glVertexAttrib2d = (PFNGLVERTEXATTRIB2DPROC) load(userptr, "glVertexAttrib2d");
-    glad_glVertexAttrib2dv = (PFNGLVERTEXATTRIB2DVPROC) load(userptr, "glVertexAttrib2dv");
-    glad_glVertexAttrib2f = (PFNGLVERTEXATTRIB2FPROC) load(userptr, "glVertexAttrib2f");
-    glad_glVertexAttrib2fv = (PFNGLVERTEXATTRIB2FVPROC) load(userptr, "glVertexAttrib2fv");
-    glad_glVertexAttrib2s = (PFNGLVERTEXATTRIB2SPROC) load(userptr, "glVertexAttrib2s");
-    glad_glVertexAttrib2sv = (PFNGLVERTEXATTRIB2SVPROC) load(userptr, "glVertexAttrib2sv");
-    glad_glVertexAttrib3d = (PFNGLVERTEXATTRIB3DPROC) load(userptr, "glVertexAttrib3d");
-    glad_glVertexAttrib3dv = (PFNGLVERTEXATTRIB3DVPROC) load(userptr, "glVertexAttrib3dv");
-    glad_glVertexAttrib3f = (PFNGLVERTEXATTRIB3FPROC) load(userptr, "glVertexAttrib3f");
-    glad_glVertexAttrib3fv = (PFNGLVERTEXATTRIB3FVPROC) load(userptr, "glVertexAttrib3fv");
-    glad_glVertexAttrib3s = (PFNGLVERTEXATTRIB3SPROC) load(userptr, "glVertexAttrib3s");
-    glad_glVertexAttrib3sv = (PFNGLVERTEXATTRIB3SVPROC) load(userptr, "glVertexAttrib3sv");
-    glad_glVertexAttrib4Nbv = (PFNGLVERTEXATTRIB4NBVPROC) load(userptr, "glVertexAttrib4Nbv");
-    glad_glVertexAttrib4Niv = (PFNGLVERTEXATTRIB4NIVPROC) load(userptr, "glVertexAttrib4Niv");
-    glad_glVertexAttrib4Nsv = (PFNGLVERTEXATTRIB4NSVPROC) load(userptr, "glVertexAttrib4Nsv");
-    glad_glVertexAttrib4Nub = (PFNGLVERTEXATTRIB4NUBPROC) load(userptr, "glVertexAttrib4Nub");
-    glad_glVertexAttrib4Nubv = (PFNGLVERTEXATTRIB4NUBVPROC) load(userptr, "glVertexAttrib4Nubv");
-    glad_glVertexAttrib4Nuiv = (PFNGLVERTEXATTRIB4NUIVPROC) load(userptr, "glVertexAttrib4Nuiv");
-    glad_glVertexAttrib4Nusv = (PFNGLVERTEXATTRIB4NUSVPROC) load(userptr, "glVertexAttrib4Nusv");
-    glad_glVertexAttrib4bv = (PFNGLVERTEXATTRIB4BVPROC) load(userptr, "glVertexAttrib4bv");
-    glad_glVertexAttrib4d = (PFNGLVERTEXATTRIB4DPROC) load(userptr, "glVertexAttrib4d");
-    glad_glVertexAttrib4dv = (PFNGLVERTEXATTRIB4DVPROC) load(userptr, "glVertexAttrib4dv");
-    glad_glVertexAttrib4f = (PFNGLVERTEXATTRIB4FPROC) load(userptr, "glVertexAttrib4f");
-    glad_glVertexAttrib4fv = (PFNGLVERTEXATTRIB4FVPROC) load(userptr, "glVertexAttrib4fv");
-    glad_glVertexAttrib4iv = (PFNGLVERTEXATTRIB4IVPROC) load(userptr, "glVertexAttrib4iv");
-    glad_glVertexAttrib4s = (PFNGLVERTEXATTRIB4SPROC) load(userptr, "glVertexAttrib4s");
-    glad_glVertexAttrib4sv = (PFNGLVERTEXATTRIB4SVPROC) load(userptr, "glVertexAttrib4sv");
-    glad_glVertexAttrib4ubv = (PFNGLVERTEXATTRIB4UBVPROC) load(userptr, "glVertexAttrib4ubv");
-    glad_glVertexAttrib4uiv = (PFNGLVERTEXATTRIB4UIVPROC) load(userptr, "glVertexAttrib4uiv");
-    glad_glVertexAttrib4usv = (PFNGLVERTEXATTRIB4USVPROC) load(userptr, "glVertexAttrib4usv");
-    glad_glVertexAttribPointer = (PFNGLVERTEXATTRIBPOINTERPROC) load(userptr, "glVertexAttribPointer");
-}
-static void glad_gl_load_GL_VERSION_2_1( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_2_1) return;
-    glad_glUniformMatrix2x3fv = (PFNGLUNIFORMMATRIX2X3FVPROC) load(userptr, "glUniformMatrix2x3fv");
-    glad_glUniformMatrix2x4fv = (PFNGLUNIFORMMATRIX2X4FVPROC) load(userptr, "glUniformMatrix2x4fv");
-    glad_glUniformMatrix3x2fv = (PFNGLUNIFORMMATRIX3X2FVPROC) load(userptr, "glUniformMatrix3x2fv");
-    glad_glUniformMatrix3x4fv = (PFNGLUNIFORMMATRIX3X4FVPROC) load(userptr, "glUniformMatrix3x4fv");
-    glad_glUniformMatrix4x2fv = (PFNGLUNIFORMMATRIX4X2FVPROC) load(userptr, "glUniformMatrix4x2fv");
-    glad_glUniformMatrix4x3fv = (PFNGLUNIFORMMATRIX4X3FVPROC) load(userptr, "glUniformMatrix4x3fv");
-}
-static void glad_gl_load_GL_VERSION_3_0( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_3_0) return;
-    glad_glBeginConditionalRender = (PFNGLBEGINCONDITIONALRENDERPROC) load(userptr, "glBeginConditionalRender");
-    glad_glBeginTransformFeedback = (PFNGLBEGINTRANSFORMFEEDBACKPROC) load(userptr, "glBeginTransformFeedback");
-    glad_glBindBufferBase = (PFNGLBINDBUFFERBASEPROC) load(userptr, "glBindBufferBase");
-    glad_glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC) load(userptr, "glBindBufferRange");
-    glad_glBindFragDataLocation = (PFNGLBINDFRAGDATALOCATIONPROC) load(userptr, "glBindFragDataLocation");
-    glad_glBindFramebuffer = (PFNGLBINDFRAMEBUFFERPROC) load(userptr, "glBindFramebuffer");
-    glad_glBindRenderbuffer = (PFNGLBINDRENDERBUFFERPROC) load(userptr, "glBindRenderbuffer");
-    glad_glBindVertexArray = (PFNGLBINDVERTEXARRAYPROC) load(userptr, "glBindVertexArray");
-    glad_glBlitFramebuffer = (PFNGLBLITFRAMEBUFFERPROC) load(userptr, "glBlitFramebuffer");
-    glad_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC) load(userptr, "glCheckFramebufferStatus");
-    glad_glClampColor = (PFNGLCLAMPCOLORPROC) load(userptr, "glClampColor");
-    glad_glClearBufferfi = (PFNGLCLEARBUFFERFIPROC) load(userptr, "glClearBufferfi");
-    glad_glClearBufferfv = (PFNGLCLEARBUFFERFVPROC) load(userptr, "glClearBufferfv");
-    glad_glClearBufferiv = (PFNGLCLEARBUFFERIVPROC) load(userptr, "glClearBufferiv");
-    glad_glClearBufferuiv = (PFNGLCLEARBUFFERUIVPROC) load(userptr, "glClearBufferuiv");
-    glad_glColorMaski = (PFNGLCOLORMASKIPROC) load(userptr, "glColorMaski");
-    glad_glDeleteFramebuffers = (PFNGLDELETEFRAMEBUFFERSPROC) load(userptr, "glDeleteFramebuffers");
-    glad_glDeleteRenderbuffers = (PFNGLDELETERENDERBUFFERSPROC) load(userptr, "glDeleteRenderbuffers");
-    glad_glDeleteVertexArrays = (PFNGLDELETEVERTEXARRAYSPROC) load(userptr, "glDeleteVertexArrays");
-    glad_glDisablei = (PFNGLDISABLEIPROC) load(userptr, "glDisablei");
-    glad_glEnablei = (PFNGLENABLEIPROC) load(userptr, "glEnablei");
-    glad_glEndConditionalRender = (PFNGLENDCONDITIONALRENDERPROC) load(userptr, "glEndConditionalRender");
-    glad_glEndTransformFeedback = (PFNGLENDTRANSFORMFEEDBACKPROC) load(userptr, "glEndTransformFeedback");
-    glad_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC) load(userptr, "glFlushMappedBufferRange");
-    glad_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC) load(userptr, "glFramebufferRenderbuffer");
-    glad_glFramebufferTexture1D = (PFNGLFRAMEBUFFERTEXTURE1DPROC) load(userptr, "glFramebufferTexture1D");
-    glad_glFramebufferTexture2D = (PFNGLFRAMEBUFFERTEXTURE2DPROC) load(userptr, "glFramebufferTexture2D");
-    glad_glFramebufferTexture3D = (PFNGLFRAMEBUFFERTEXTURE3DPROC) load(userptr, "glFramebufferTexture3D");
-    glad_glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC) load(userptr, "glFramebufferTextureLayer");
-    glad_glGenFramebuffers = (PFNGLGENFRAMEBUFFERSPROC) load(userptr, "glGenFramebuffers");
-    glad_glGenRenderbuffers = (PFNGLGENRENDERBUFFERSPROC) load(userptr, "glGenRenderbuffers");
-    glad_glGenVertexArrays = (PFNGLGENVERTEXARRAYSPROC) load(userptr, "glGenVertexArrays");
-    glad_glGenerateMipmap = (PFNGLGENERATEMIPMAPPROC) load(userptr, "glGenerateMipmap");
-    glad_glGetBooleani_v = (PFNGLGETBOOLEANI_VPROC) load(userptr, "glGetBooleani_v");
-    glad_glGetFragDataLocation = (PFNGLGETFRAGDATALOCATIONPROC) load(userptr, "glGetFragDataLocation");
-    glad_glGetFramebufferAttachmentParameteriv = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load(userptr, "glGetFramebufferAttachmentParameteriv");
-    glad_glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC) load(userptr, "glGetIntegeri_v");
-    glad_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC) load(userptr, "glGetRenderbufferParameteriv");
-    glad_glGetStringi = (PFNGLGETSTRINGIPROC) load(userptr, "glGetStringi");
-    glad_glGetTexParameterIiv = (PFNGLGETTEXPARAMETERIIVPROC) load(userptr, "glGetTexParameterIiv");
-    glad_glGetTexParameterIuiv = (PFNGLGETTEXPARAMETERIUIVPROC) load(userptr, "glGetTexParameterIuiv");
-    glad_glGetTransformFeedbackVarying = (PFNGLGETTRANSFORMFEEDBACKVARYINGPROC) load(userptr, "glGetTransformFeedbackVarying");
-    glad_glGetUniformuiv = (PFNGLGETUNIFORMUIVPROC) load(userptr, "glGetUniformuiv");
-    glad_glGetVertexAttribIiv = (PFNGLGETVERTEXATTRIBIIVPROC) load(userptr, "glGetVertexAttribIiv");
-    glad_glGetVertexAttribIuiv = (PFNGLGETVERTEXATTRIBIUIVPROC) load(userptr, "glGetVertexAttribIuiv");
-    glad_glIsEnabledi = (PFNGLISENABLEDIPROC) load(userptr, "glIsEnabledi");
-    glad_glIsFramebuffer = (PFNGLISFRAMEBUFFERPROC) load(userptr, "glIsFramebuffer");
-    glad_glIsRenderbuffer = (PFNGLISRENDERBUFFERPROC) load(userptr, "glIsRenderbuffer");
-    glad_glIsVertexArray = (PFNGLISVERTEXARRAYPROC) load(userptr, "glIsVertexArray");
-    glad_glMapBufferRange = (PFNGLMAPBUFFERRANGEPROC) load(userptr, "glMapBufferRange");
-    glad_glRenderbufferStorage = (PFNGLRENDERBUFFERSTORAGEPROC) load(userptr, "glRenderbufferStorage");
-    glad_glRenderbufferStorageMultisample = (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC) load(userptr, "glRenderbufferStorageMultisample");
-    glad_glTexParameterIiv = (PFNGLTEXPARAMETERIIVPROC) load(userptr, "glTexParameterIiv");
-    glad_glTexParameterIuiv = (PFNGLTEXPARAMETERIUIVPROC) load(userptr, "glTexParameterIuiv");
-    glad_glTransformFeedbackVaryings = (PFNGLTRANSFORMFEEDBACKVARYINGSPROC) load(userptr, "glTransformFeedbackVaryings");
-    glad_glUniform1ui = (PFNGLUNIFORM1UIPROC) load(userptr, "glUniform1ui");
-    glad_glUniform1uiv = (PFNGLUNIFORM1UIVPROC) load(userptr, "glUniform1uiv");
-    glad_glUniform2ui = (PFNGLUNIFORM2UIPROC) load(userptr, "glUniform2ui");
-    glad_glUniform2uiv = (PFNGLUNIFORM2UIVPROC) load(userptr, "glUniform2uiv");
-    glad_glUniform3ui = (PFNGLUNIFORM3UIPROC) load(userptr, "glUniform3ui");
-    glad_glUniform3uiv = (PFNGLUNIFORM3UIVPROC) load(userptr, "glUniform3uiv");
-    glad_glUniform4ui = (PFNGLUNIFORM4UIPROC) load(userptr, "glUniform4ui");
-    glad_glUniform4uiv = (PFNGLUNIFORM4UIVPROC) load(userptr, "glUniform4uiv");
-    glad_glVertexAttribI1i = (PFNGLVERTEXATTRIBI1IPROC) load(userptr, "glVertexAttribI1i");
-    glad_glVertexAttribI1iv = (PFNGLVERTEXATTRIBI1IVPROC) load(userptr, "glVertexAttribI1iv");
-    glad_glVertexAttribI1ui = (PFNGLVERTEXATTRIBI1UIPROC) load(userptr, "glVertexAttribI1ui");
-    glad_glVertexAttribI1uiv = (PFNGLVERTEXATTRIBI1UIVPROC) load(userptr, "glVertexAttribI1uiv");
-    glad_glVertexAttribI2i = (PFNGLVERTEXATTRIBI2IPROC) load(userptr, "glVertexAttribI2i");
-    glad_glVertexAttribI2iv = (PFNGLVERTEXATTRIBI2IVPROC) load(userptr, "glVertexAttribI2iv");
-    glad_glVertexAttribI2ui = (PFNGLVERTEXATTRIBI2UIPROC) load(userptr, "glVertexAttribI2ui");
-    glad_glVertexAttribI2uiv = (PFNGLVERTEXATTRIBI2UIVPROC) load(userptr, "glVertexAttribI2uiv");
-    glad_glVertexAttribI3i = (PFNGLVERTEXATTRIBI3IPROC) load(userptr, "glVertexAttribI3i");
-    glad_glVertexAttribI3iv = (PFNGLVERTEXATTRIBI3IVPROC) load(userptr, "glVertexAttribI3iv");
-    glad_glVertexAttribI3ui = (PFNGLVERTEXATTRIBI3UIPROC) load(userptr, "glVertexAttribI3ui");
-    glad_glVertexAttribI3uiv = (PFNGLVERTEXATTRIBI3UIVPROC) load(userptr, "glVertexAttribI3uiv");
-    glad_glVertexAttribI4bv = (PFNGLVERTEXATTRIBI4BVPROC) load(userptr, "glVertexAttribI4bv");
-    glad_glVertexAttribI4i = (PFNGLVERTEXATTRIBI4IPROC) load(userptr, "glVertexAttribI4i");
-    glad_glVertexAttribI4iv = (PFNGLVERTEXATTRIBI4IVPROC) load(userptr, "glVertexAttribI4iv");
-    glad_glVertexAttribI4sv = (PFNGLVERTEXATTRIBI4SVPROC) load(userptr, "glVertexAttribI4sv");
-    glad_glVertexAttribI4ubv = (PFNGLVERTEXATTRIBI4UBVPROC) load(userptr, "glVertexAttribI4ubv");
-    glad_glVertexAttribI4ui = (PFNGLVERTEXATTRIBI4UIPROC) load(userptr, "glVertexAttribI4ui");
-    glad_glVertexAttribI4uiv = (PFNGLVERTEXATTRIBI4UIVPROC) load(userptr, "glVertexAttribI4uiv");
-    glad_glVertexAttribI4usv = (PFNGLVERTEXATTRIBI4USVPROC) load(userptr, "glVertexAttribI4usv");
-    glad_glVertexAttribIPointer = (PFNGLVERTEXATTRIBIPOINTERPROC) load(userptr, "glVertexAttribIPointer");
-}
-static void glad_gl_load_GL_VERSION_3_1( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_3_1) return;
-    glad_glBindBufferBase = (PFNGLBINDBUFFERBASEPROC) load(userptr, "glBindBufferBase");
-    glad_glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC) load(userptr, "glBindBufferRange");
-    glad_glCopyBufferSubData = (PFNGLCOPYBUFFERSUBDATAPROC) load(userptr, "glCopyBufferSubData");
-    glad_glDrawArraysInstanced = (PFNGLDRAWARRAYSINSTANCEDPROC) load(userptr, "glDrawArraysInstanced");
-    glad_glDrawElementsInstanced = (PFNGLDRAWELEMENTSINSTANCEDPROC) load(userptr, "glDrawElementsInstanced");
-    glad_glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC) load(userptr, "glGetActiveUniformBlockName");
-    glad_glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC) load(userptr, "glGetActiveUniformBlockiv");
-    glad_glGetActiveUniformName = (PFNGLGETACTIVEUNIFORMNAMEPROC) load(userptr, "glGetActiveUniformName");
-    glad_glGetActiveUniformsiv = (PFNGLGETACTIVEUNIFORMSIVPROC) load(userptr, "glGetActiveUniformsiv");
-    glad_glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC) load(userptr, "glGetIntegeri_v");
-    glad_glGetUniformBlockIndex = (PFNGLGETUNIFORMBLOCKINDEXPROC) load(userptr, "glGetUniformBlockIndex");
-    glad_glGetUniformIndices = (PFNGLGETUNIFORMINDICESPROC) load(userptr, "glGetUniformIndices");
-    glad_glPrimitiveRestartIndex = (PFNGLPRIMITIVERESTARTINDEXPROC) load(userptr, "glPrimitiveRestartIndex");
-    glad_glTexBuffer = (PFNGLTEXBUFFERPROC) load(userptr, "glTexBuffer");
-    glad_glUniformBlockBinding = (PFNGLUNIFORMBLOCKBINDINGPROC) load(userptr, "glUniformBlockBinding");
-}
-static void glad_gl_load_GL_VERSION_3_2( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_3_2) return;
-    glad_glClientWaitSync = (PFNGLCLIENTWAITSYNCPROC) load(userptr, "glClientWaitSync");
-    glad_glDeleteSync = (PFNGLDELETESYNCPROC) load(userptr, "glDeleteSync");
-    glad_glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC) load(userptr, "glDrawElementsBaseVertex");
-    glad_glDrawElementsInstancedBaseVertex = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC) load(userptr, "glDrawElementsInstancedBaseVertex");
-    glad_glDrawRangeElementsBaseVertex = (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC) load(userptr, "glDrawRangeElementsBaseVertex");
-    glad_glFenceSync = (PFNGLFENCESYNCPROC) load(userptr, "glFenceSync");
-    glad_glFramebufferTexture = (PFNGLFRAMEBUFFERTEXTUREPROC) load(userptr, "glFramebufferTexture");
-    glad_glGetBufferParameteri64v = (PFNGLGETBUFFERPARAMETERI64VPROC) load(userptr, "glGetBufferParameteri64v");
-    glad_glGetInteger64i_v = (PFNGLGETINTEGER64I_VPROC) load(userptr, "glGetInteger64i_v");
-    glad_glGetInteger64v = (PFNGLGETINTEGER64VPROC) load(userptr, "glGetInteger64v");
-    glad_glGetMultisamplefv = (PFNGLGETMULTISAMPLEFVPROC) load(userptr, "glGetMultisamplefv");
-    glad_glGetSynciv = (PFNGLGETSYNCIVPROC) load(userptr, "glGetSynciv");
-    glad_glIsSync = (PFNGLISSYNCPROC) load(userptr, "glIsSync");
-    glad_glMultiDrawElementsBaseVertex = (PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC) load(userptr, "glMultiDrawElementsBaseVertex");
-    glad_glProvokingVertex = (PFNGLPROVOKINGVERTEXPROC) load(userptr, "glProvokingVertex");
-    glad_glSampleMaski = (PFNGLSAMPLEMASKIPROC) load(userptr, "glSampleMaski");
-    glad_glTexImage2DMultisample = (PFNGLTEXIMAGE2DMULTISAMPLEPROC) load(userptr, "glTexImage2DMultisample");
-    glad_glTexImage3DMultisample = (PFNGLTEXIMAGE3DMULTISAMPLEPROC) load(userptr, "glTexImage3DMultisample");
-    glad_glWaitSync = (PFNGLWAITSYNCPROC) load(userptr, "glWaitSync");
-}
-static void glad_gl_load_GL_VERSION_3_3( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_3_3) return;
-    glad_glBindFragDataLocationIndexed = (PFNGLBINDFRAGDATALOCATIONINDEXEDPROC) load(userptr, "glBindFragDataLocationIndexed");
-    glad_glBindSampler = (PFNGLBINDSAMPLERPROC) load(userptr, "glBindSampler");
-    glad_glDeleteSamplers = (PFNGLDELETESAMPLERSPROC) load(userptr, "glDeleteSamplers");
-    glad_glGenSamplers = (PFNGLGENSAMPLERSPROC) load(userptr, "glGenSamplers");
-    glad_glGetFragDataIndex = (PFNGLGETFRAGDATAINDEXPROC) load(userptr, "glGetFragDataIndex");
-    glad_glGetQueryObjecti64v = (PFNGLGETQUERYOBJECTI64VPROC) load(userptr, "glGetQueryObjecti64v");
-    glad_glGetQueryObjectui64v = (PFNGLGETQUERYOBJECTUI64VPROC) load(userptr, "glGetQueryObjectui64v");
-    glad_glGetSamplerParameterIiv = (PFNGLGETSAMPLERPARAMETERIIVPROC) load(userptr, "glGetSamplerParameterIiv");
-    glad_glGetSamplerParameterIuiv = (PFNGLGETSAMPLERPARAMETERIUIVPROC) load(userptr, "glGetSamplerParameterIuiv");
-    glad_glGetSamplerParameterfv = (PFNGLGETSAMPLERPARAMETERFVPROC) load(userptr, "glGetSamplerParameterfv");
-    glad_glGetSamplerParameteriv = (PFNGLGETSAMPLERPARAMETERIVPROC) load(userptr, "glGetSamplerParameteriv");
-    glad_glIsSampler = (PFNGLISSAMPLERPROC) load(userptr, "glIsSampler");
-    glad_glQueryCounter = (PFNGLQUERYCOUNTERPROC) load(userptr, "glQueryCounter");
-    glad_glSamplerParameterIiv = (PFNGLSAMPLERPARAMETERIIVPROC) load(userptr, "glSamplerParameterIiv");
-    glad_glSamplerParameterIuiv = (PFNGLSAMPLERPARAMETERIUIVPROC) load(userptr, "glSamplerParameterIuiv");
-    glad_glSamplerParameterf = (PFNGLSAMPLERPARAMETERFPROC) load(userptr, "glSamplerParameterf");
-    glad_glSamplerParameterfv = (PFNGLSAMPLERPARAMETERFVPROC) load(userptr, "glSamplerParameterfv");
-    glad_glSamplerParameteri = (PFNGLSAMPLERPARAMETERIPROC) load(userptr, "glSamplerParameteri");
-    glad_glSamplerParameteriv = (PFNGLSAMPLERPARAMETERIVPROC) load(userptr, "glSamplerParameteriv");
-    glad_glVertexAttribDivisor = (PFNGLVERTEXATTRIBDIVISORPROC) load(userptr, "glVertexAttribDivisor");
-    glad_glVertexAttribP1ui = (PFNGLVERTEXATTRIBP1UIPROC) load(userptr, "glVertexAttribP1ui");
-    glad_glVertexAttribP1uiv = (PFNGLVERTEXATTRIBP1UIVPROC) load(userptr, "glVertexAttribP1uiv");
-    glad_glVertexAttribP2ui = (PFNGLVERTEXATTRIBP2UIPROC) load(userptr, "glVertexAttribP2ui");
-    glad_glVertexAttribP2uiv = (PFNGLVERTEXATTRIBP2UIVPROC) load(userptr, "glVertexAttribP2uiv");
-    glad_glVertexAttribP3ui = (PFNGLVERTEXATTRIBP3UIPROC) load(userptr, "glVertexAttribP3ui");
-    glad_glVertexAttribP3uiv = (PFNGLVERTEXATTRIBP3UIVPROC) load(userptr, "glVertexAttribP3uiv");
-    glad_glVertexAttribP4ui = (PFNGLVERTEXATTRIBP4UIPROC) load(userptr, "glVertexAttribP4ui");
-    glad_glVertexAttribP4uiv = (PFNGLVERTEXATTRIBP4UIVPROC) load(userptr, "glVertexAttribP4uiv");
-}
-static void glad_gl_load_GL_VERSION_4_0( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_4_0) return;
-    glad_glBeginQueryIndexed = (PFNGLBEGINQUERYINDEXEDPROC) load(userptr, "glBeginQueryIndexed");
-    glad_glBindTransformFeedback = (PFNGLBINDTRANSFORMFEEDBACKPROC) load(userptr, "glBindTransformFeedback");
-    glad_glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC) load(userptr, "glBlendEquationSeparatei");
-    glad_glBlendEquationi = (PFNGLBLENDEQUATIONIPROC) load(userptr, "glBlendEquationi");
-    glad_glBlendFuncSeparatei = (PFNGLBLENDFUNCSEPARATEIPROC) load(userptr, "glBlendFuncSeparatei");
-    glad_glBlendFunci = (PFNGLBLENDFUNCIPROC) load(userptr, "glBlendFunci");
-    glad_glDeleteTransformFeedbacks = (PFNGLDELETETRANSFORMFEEDBACKSPROC) load(userptr, "glDeleteTransformFeedbacks");
-    glad_glDrawArraysIndirect = (PFNGLDRAWARRAYSINDIRECTPROC) load(userptr, "glDrawArraysIndirect");
-    glad_glDrawElementsIndirect = (PFNGLDRAWELEMENTSINDIRECTPROC) load(userptr, "glDrawElementsIndirect");
-    glad_glDrawTransformFeedback = (PFNGLDRAWTRANSFORMFEEDBACKPROC) load(userptr, "glDrawTransformFeedback");
-    glad_glDrawTransformFeedbackStream = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC) load(userptr, "glDrawTransformFeedbackStream");
-    glad_glEndQueryIndexed = (PFNGLENDQUERYINDEXEDPROC) load(userptr, "glEndQueryIndexed");
-    glad_glGenTransformFeedbacks = (PFNGLGENTRANSFORMFEEDBACKSPROC) load(userptr, "glGenTransformFeedbacks");
-    glad_glGetActiveSubroutineName = (PFNGLGETACTIVESUBROUTINENAMEPROC) load(userptr, "glGetActiveSubroutineName");
-    glad_glGetActiveSubroutineUniformName = (PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC) load(userptr, "glGetActiveSubroutineUniformName");
-    glad_glGetActiveSubroutineUniformiv = (PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC) load(userptr, "glGetActiveSubroutineUniformiv");
-    glad_glGetProgramStageiv = (PFNGLGETPROGRAMSTAGEIVPROC) load(userptr, "glGetProgramStageiv");
-    glad_glGetQueryIndexediv = (PFNGLGETQUERYINDEXEDIVPROC) load(userptr, "glGetQueryIndexediv");
-    glad_glGetSubroutineIndex = (PFNGLGETSUBROUTINEINDEXPROC) load(userptr, "glGetSubroutineIndex");
-    glad_glGetSubroutineUniformLocation = (PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC) load(userptr, "glGetSubroutineUniformLocation");
-    glad_glGetUniformSubroutineuiv = (PFNGLGETUNIFORMSUBROUTINEUIVPROC) load(userptr, "glGetUniformSubroutineuiv");
-    glad_glGetUniformdv = (PFNGLGETUNIFORMDVPROC) load(userptr, "glGetUniformdv");
-    glad_glIsTransformFeedback = (PFNGLISTRANSFORMFEEDBACKPROC) load(userptr, "glIsTransformFeedback");
-    glad_glMinSampleShading = (PFNGLMINSAMPLESHADINGPROC) load(userptr, "glMinSampleShading");
-    glad_glPatchParameterfv = (PFNGLPATCHPARAMETERFVPROC) load(userptr, "glPatchParameterfv");
-    glad_glPatchParameteri = (PFNGLPATCHPARAMETERIPROC) load(userptr, "glPatchParameteri");
-    glad_glPauseTransformFeedback = (PFNGLPAUSETRANSFORMFEEDBACKPROC) load(userptr, "glPauseTransformFeedback");
-    glad_glResumeTransformFeedback = (PFNGLRESUMETRANSFORMFEEDBACKPROC) load(userptr, "glResumeTransformFeedback");
-    glad_glUniform1d = (PFNGLUNIFORM1DPROC) load(userptr, "glUniform1d");
-    glad_glUniform1dv = (PFNGLUNIFORM1DVPROC) load(userptr, "glUniform1dv");
-    glad_glUniform2d = (PFNGLUNIFORM2DPROC) load(userptr, "glUniform2d");
-    glad_glUniform2dv = (PFNGLUNIFORM2DVPROC) load(userptr, "glUniform2dv");
-    glad_glUniform3d = (PFNGLUNIFORM3DPROC) load(userptr, "glUniform3d");
-    glad_glUniform3dv = (PFNGLUNIFORM3DVPROC) load(userptr, "glUniform3dv");
-    glad_glUniform4d = (PFNGLUNIFORM4DPROC) load(userptr, "glUniform4d");
-    glad_glUniform4dv = (PFNGLUNIFORM4DVPROC) load(userptr, "glUniform4dv");
-    glad_glUniformMatrix2dv = (PFNGLUNIFORMMATRIX2DVPROC) load(userptr, "glUniformMatrix2dv");
-    glad_glUniformMatrix2x3dv = (PFNGLUNIFORMMATRIX2X3DVPROC) load(userptr, "glUniformMatrix2x3dv");
-    glad_glUniformMatrix2x4dv = (PFNGLUNIFORMMATRIX2X4DVPROC) load(userptr, "glUniformMatrix2x4dv");
-    glad_glUniformMatrix3dv = (PFNGLUNIFORMMATRIX3DVPROC) load(userptr, "glUniformMatrix3dv");
-    glad_glUniformMatrix3x2dv = (PFNGLUNIFORMMATRIX3X2DVPROC) load(userptr, "glUniformMatrix3x2dv");
-    glad_glUniformMatrix3x4dv = (PFNGLUNIFORMMATRIX3X4DVPROC) load(userptr, "glUniformMatrix3x4dv");
-    glad_glUniformMatrix4dv = (PFNGLUNIFORMMATRIX4DVPROC) load(userptr, "glUniformMatrix4dv");
-    glad_glUniformMatrix4x2dv = (PFNGLUNIFORMMATRIX4X2DVPROC) load(userptr, "glUniformMatrix4x2dv");
-    glad_glUniformMatrix4x3dv = (PFNGLUNIFORMMATRIX4X3DVPROC) load(userptr, "glUniformMatrix4x3dv");
-    glad_glUniformSubroutinesuiv = (PFNGLUNIFORMSUBROUTINESUIVPROC) load(userptr, "glUniformSubroutinesuiv");
-}
-static void glad_gl_load_GL_VERSION_4_1( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_4_1) return;
-    glad_glActiveShaderProgram = (PFNGLACTIVESHADERPROGRAMPROC) load(userptr, "glActiveShaderProgram");
-    glad_glBindProgramPipeline = (PFNGLBINDPROGRAMPIPELINEPROC) load(userptr, "glBindProgramPipeline");
-    glad_glClearDepthf = (PFNGLCLEARDEPTHFPROC) load(userptr, "glClearDepthf");
-    glad_glCreateShaderProgramv = (PFNGLCREATESHADERPROGRAMVPROC) load(userptr, "glCreateShaderProgramv");
-    glad_glDeleteProgramPipelines = (PFNGLDELETEPROGRAMPIPELINESPROC) load(userptr, "glDeleteProgramPipelines");
-    glad_glDepthRangeArrayv = (PFNGLDEPTHRANGEARRAYVPROC) load(userptr, "glDepthRangeArrayv");
-    glad_glDepthRangeIndexed = (PFNGLDEPTHRANGEINDEXEDPROC) load(userptr, "glDepthRangeIndexed");
-    glad_glDepthRangef = (PFNGLDEPTHRANGEFPROC) load(userptr, "glDepthRangef");
-    glad_glGenProgramPipelines = (PFNGLGENPROGRAMPIPELINESPROC) load(userptr, "glGenProgramPipelines");
-    glad_glGetDoublei_v = (PFNGLGETDOUBLEI_VPROC) load(userptr, "glGetDoublei_v");
-    glad_glGetFloati_v = (PFNGLGETFLOATI_VPROC) load(userptr, "glGetFloati_v");
-    glad_glGetProgramBinary = (PFNGLGETPROGRAMBINARYPROC) load(userptr, "glGetProgramBinary");
-    glad_glGetProgramPipelineInfoLog = (PFNGLGETPROGRAMPIPELINEINFOLOGPROC) load(userptr, "glGetProgramPipelineInfoLog");
-    glad_glGetProgramPipelineiv = (PFNGLGETPROGRAMPIPELINEIVPROC) load(userptr, "glGetProgramPipelineiv");
-    glad_glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC) load(userptr, "glGetShaderPrecisionFormat");
-    glad_glGetVertexAttribLdv = (PFNGLGETVERTEXATTRIBLDVPROC) load(userptr, "glGetVertexAttribLdv");
-    glad_glIsProgramPipeline = (PFNGLISPROGRAMPIPELINEPROC) load(userptr, "glIsProgramPipeline");
-    glad_glProgramBinary = (PFNGLPROGRAMBINARYPROC) load(userptr, "glProgramBinary");
-    glad_glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC) load(userptr, "glProgramParameteri");
-    glad_glProgramUniform1d = (PFNGLPROGRAMUNIFORM1DPROC) load(userptr, "glProgramUniform1d");
-    glad_glProgramUniform1dv = (PFNGLPROGRAMUNIFORM1DVPROC) load(userptr, "glProgramUniform1dv");
-    glad_glProgramUniform1f = (PFNGLPROGRAMUNIFORM1FPROC) load(userptr, "glProgramUniform1f");
-    glad_glProgramUniform1fv = (PFNGLPROGRAMUNIFORM1FVPROC) load(userptr, "glProgramUniform1fv");
-    glad_glProgramUniform1i = (PFNGLPROGRAMUNIFORM1IPROC) load(userptr, "glProgramUniform1i");
-    glad_glProgramUniform1iv = (PFNGLPROGRAMUNIFORM1IVPROC) load(userptr, "glProgramUniform1iv");
-    glad_glProgramUniform1ui = (PFNGLPROGRAMUNIFORM1UIPROC) load(userptr, "glProgramUniform1ui");
-    glad_glProgramUniform1uiv = (PFNGLPROGRAMUNIFORM1UIVPROC) load(userptr, "glProgramUniform1uiv");
-    glad_glProgramUniform2d = (PFNGLPROGRAMUNIFORM2DPROC) load(userptr, "glProgramUniform2d");
-    glad_glProgramUniform2dv = (PFNGLPROGRAMUNIFORM2DVPROC) load(userptr, "glProgramUniform2dv");
-    glad_glProgramUniform2f = (PFNGLPROGRAMUNIFORM2FPROC) load(userptr, "glProgramUniform2f");
-    glad_glProgramUniform2fv = (PFNGLPROGRAMUNIFORM2FVPROC) load(userptr, "glProgramUniform2fv");
-    glad_glProgramUniform2i = (PFNGLPROGRAMUNIFORM2IPROC) load(userptr, "glProgramUniform2i");
-    glad_glProgramUniform2iv = (PFNGLPROGRAMUNIFORM2IVPROC) load(userptr, "glProgramUniform2iv");
-    glad_glProgramUniform2ui = (PFNGLPROGRAMUNIFORM2UIPROC) load(userptr, "glProgramUniform2ui");
-    glad_glProgramUniform2uiv = (PFNGLPROGRAMUNIFORM2UIVPROC) load(userptr, "glProgramUniform2uiv");
-    glad_glProgramUniform3d = (PFNGLPROGRAMUNIFORM3DPROC) load(userptr, "glProgramUniform3d");
-    glad_glProgramUniform3dv = (PFNGLPROGRAMUNIFORM3DVPROC) load(userptr, "glProgramUniform3dv");
-    glad_glProgramUniform3f = (PFNGLPROGRAMUNIFORM3FPROC) load(userptr, "glProgramUniform3f");
-    glad_glProgramUniform3fv = (PFNGLPROGRAMUNIFORM3FVPROC) load(userptr, "glProgramUniform3fv");
-    glad_glProgramUniform3i = (PFNGLPROGRAMUNIFORM3IPROC) load(userptr, "glProgramUniform3i");
-    glad_glProgramUniform3iv = (PFNGLPROGRAMUNIFORM3IVPROC) load(userptr, "glProgramUniform3iv");
-    glad_glProgramUniform3ui = (PFNGLPROGRAMUNIFORM3UIPROC) load(userptr, "glProgramUniform3ui");
-    glad_glProgramUniform3uiv = (PFNGLPROGRAMUNIFORM3UIVPROC) load(userptr, "glProgramUniform3uiv");
-    glad_glProgramUniform4d = (PFNGLPROGRAMUNIFORM4DPROC) load(userptr, "glProgramUniform4d");
-    glad_glProgramUniform4dv = (PFNGLPROGRAMUNIFORM4DVPROC) load(userptr, "glProgramUniform4dv");
-    glad_glProgramUniform4f = (PFNGLPROGRAMUNIFORM4FPROC) load(userptr, "glProgramUniform4f");
-    glad_glProgramUniform4fv = (PFNGLPROGRAMUNIFORM4FVPROC) load(userptr, "glProgramUniform4fv");
-    glad_glProgramUniform4i = (PFNGLPROGRAMUNIFORM4IPROC) load(userptr, "glProgramUniform4i");
-    glad_glProgramUniform4iv = (PFNGLPROGRAMUNIFORM4IVPROC) load(userptr, "glProgramUniform4iv");
-    glad_glProgramUniform4ui = (PFNGLPROGRAMUNIFORM4UIPROC) load(userptr, "glProgramUniform4ui");
-    glad_glProgramUniform4uiv = (PFNGLPROGRAMUNIFORM4UIVPROC) load(userptr, "glProgramUniform4uiv");
-    glad_glProgramUniformMatrix2dv = (PFNGLPROGRAMUNIFORMMATRIX2DVPROC) load(userptr, "glProgramUniformMatrix2dv");
-    glad_glProgramUniformMatrix2fv = (PFNGLPROGRAMUNIFORMMATRIX2FVPROC) load(userptr, "glProgramUniformMatrix2fv");
-    glad_glProgramUniformMatrix2x3dv = (PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC) load(userptr, "glProgramUniformMatrix2x3dv");
-    glad_glProgramUniformMatrix2x3fv = (PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC) load(userptr, "glProgramUniformMatrix2x3fv");
-    glad_glProgramUniformMatrix2x4dv = (PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC) load(userptr, "glProgramUniformMatrix2x4dv");
-    glad_glProgramUniformMatrix2x4fv = (PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC) load(userptr, "glProgramUniformMatrix2x4fv");
-    glad_glProgramUniformMatrix3dv = (PFNGLPROGRAMUNIFORMMATRIX3DVPROC) load(userptr, "glProgramUniformMatrix3dv");
-    glad_glProgramUniformMatrix3fv = (PFNGLPROGRAMUNIFORMMATRIX3FVPROC) load(userptr, "glProgramUniformMatrix3fv");
-    glad_glProgramUniformMatrix3x2dv = (PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC) load(userptr, "glProgramUniformMatrix3x2dv");
-    glad_glProgramUniformMatrix3x2fv = (PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC) load(userptr, "glProgramUniformMatrix3x2fv");
-    glad_glProgramUniformMatrix3x4dv = (PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC) load(userptr, "glProgramUniformMatrix3x4dv");
-    glad_glProgramUniformMatrix3x4fv = (PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC) load(userptr, "glProgramUniformMatrix3x4fv");
-    glad_glProgramUniformMatrix4dv = (PFNGLPROGRAMUNIFORMMATRIX4DVPROC) load(userptr, "glProgramUniformMatrix4dv");
-    glad_glProgramUniformMatrix4fv = (PFNGLPROGRAMUNIFORMMATRIX4FVPROC) load(userptr, "glProgramUniformMatrix4fv");
-    glad_glProgramUniformMatrix4x2dv = (PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC) load(userptr, "glProgramUniformMatrix4x2dv");
-    glad_glProgramUniformMatrix4x2fv = (PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC) load(userptr, "glProgramUniformMatrix4x2fv");
-    glad_glProgramUniformMatrix4x3dv = (PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC) load(userptr, "glProgramUniformMatrix4x3dv");
-    glad_glProgramUniformMatrix4x3fv = (PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC) load(userptr, "glProgramUniformMatrix4x3fv");
-    glad_glReleaseShaderCompiler = (PFNGLRELEASESHADERCOMPILERPROC) load(userptr, "glReleaseShaderCompiler");
-    glad_glScissorArrayv = (PFNGLSCISSORARRAYVPROC) load(userptr, "glScissorArrayv");
-    glad_glScissorIndexed = (PFNGLSCISSORINDEXEDPROC) load(userptr, "glScissorIndexed");
-    glad_glScissorIndexedv = (PFNGLSCISSORINDEXEDVPROC) load(userptr, "glScissorIndexedv");
-    glad_glShaderBinary = (PFNGLSHADERBINARYPROC) load(userptr, "glShaderBinary");
-    glad_glUseProgramStages = (PFNGLUSEPROGRAMSTAGESPROC) load(userptr, "glUseProgramStages");
-    glad_glValidateProgramPipeline = (PFNGLVALIDATEPROGRAMPIPELINEPROC) load(userptr, "glValidateProgramPipeline");
-    glad_glVertexAttribL1d = (PFNGLVERTEXATTRIBL1DPROC) load(userptr, "glVertexAttribL1d");
-    glad_glVertexAttribL1dv = (PFNGLVERTEXATTRIBL1DVPROC) load(userptr, "glVertexAttribL1dv");
-    glad_glVertexAttribL2d = (PFNGLVERTEXATTRIBL2DPROC) load(userptr, "glVertexAttribL2d");
-    glad_glVertexAttribL2dv = (PFNGLVERTEXATTRIBL2DVPROC) load(userptr, "glVertexAttribL2dv");
-    glad_glVertexAttribL3d = (PFNGLVERTEXATTRIBL3DPROC) load(userptr, "glVertexAttribL3d");
-    glad_glVertexAttribL3dv = (PFNGLVERTEXATTRIBL3DVPROC) load(userptr, "glVertexAttribL3dv");
-    glad_glVertexAttribL4d = (PFNGLVERTEXATTRIBL4DPROC) load(userptr, "glVertexAttribL4d");
-    glad_glVertexAttribL4dv = (PFNGLVERTEXATTRIBL4DVPROC) load(userptr, "glVertexAttribL4dv");
-    glad_glVertexAttribLPointer = (PFNGLVERTEXATTRIBLPOINTERPROC) load(userptr, "glVertexAttribLPointer");
-    glad_glViewportArrayv = (PFNGLVIEWPORTARRAYVPROC) load(userptr, "glViewportArrayv");
-    glad_glViewportIndexedf = (PFNGLVIEWPORTINDEXEDFPROC) load(userptr, "glViewportIndexedf");
-    glad_glViewportIndexedfv = (PFNGLVIEWPORTINDEXEDFVPROC) load(userptr, "glViewportIndexedfv");
-}
-static void glad_gl_load_GL_VERSION_4_2( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_4_2) return;
-    glad_glBindImageTexture = (PFNGLBINDIMAGETEXTUREPROC) load(userptr, "glBindImageTexture");
-    glad_glDrawArraysInstancedBaseInstance = (PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC) load(userptr, "glDrawArraysInstancedBaseInstance");
-    glad_glDrawElementsInstancedBaseInstance = (PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC) load(userptr, "glDrawElementsInstancedBaseInstance");
-    glad_glDrawElementsInstancedBaseVertexBaseInstance = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC) load(userptr, "glDrawElementsInstancedBaseVertexBaseInstance");
-    glad_glDrawTransformFeedbackInstanced = (PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC) load(userptr, "glDrawTransformFeedbackInstanced");
-    glad_glDrawTransformFeedbackStreamInstanced = (PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC) load(userptr, "glDrawTransformFeedbackStreamInstanced");
-    glad_glGetActiveAtomicCounterBufferiv = (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC) load(userptr, "glGetActiveAtomicCounterBufferiv");
-    glad_glGetInternalformativ = (PFNGLGETINTERNALFORMATIVPROC) load(userptr, "glGetInternalformativ");
-    glad_glMemoryBarrier = (PFNGLMEMORYBARRIERPROC) load(userptr, "glMemoryBarrier");
-    glad_glTexStorage1D = (PFNGLTEXSTORAGE1DPROC) load(userptr, "glTexStorage1D");
-    glad_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC) load(userptr, "glTexStorage2D");
-    glad_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC) load(userptr, "glTexStorage3D");
-}
-static void glad_gl_load_GL_VERSION_4_3( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_VERSION_4_3) return;
-    glad_glBindVertexBuffer = (PFNGLBINDVERTEXBUFFERPROC) load(userptr, "glBindVertexBuffer");
-    glad_glClearBufferData = (PFNGLCLEARBUFFERDATAPROC) load(userptr, "glClearBufferData");
-    glad_glClearBufferSubData = (PFNGLCLEARBUFFERSUBDATAPROC) load(userptr, "glClearBufferSubData");
-    glad_glCopyImageSubData = (PFNGLCOPYIMAGESUBDATAPROC) load(userptr, "glCopyImageSubData");
-    glad_glDebugMessageCallback = (PFNGLDEBUGMESSAGECALLBACKPROC) load(userptr, "glDebugMessageCallback");
-    glad_glDebugMessageControl = (PFNGLDEBUGMESSAGECONTROLPROC) load(userptr, "glDebugMessageControl");
-    glad_glDebugMessageInsert = (PFNGLDEBUGMESSAGEINSERTPROC) load(userptr, "glDebugMessageInsert");
-    glad_glDispatchCompute = (PFNGLDISPATCHCOMPUTEPROC) load(userptr, "glDispatchCompute");
-    glad_glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC) load(userptr, "glDispatchComputeIndirect");
-    glad_glFramebufferParameteri = (PFNGLFRAMEBUFFERPARAMETERIPROC) load(userptr, "glFramebufferParameteri");
-    glad_glGetDebugMessageLog = (PFNGLGETDEBUGMESSAGELOGPROC) load(userptr, "glGetDebugMessageLog");
-    glad_glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC) load(userptr, "glGetFramebufferParameteriv");
-    glad_glGetInternalformati64v = (PFNGLGETINTERNALFORMATI64VPROC) load(userptr, "glGetInternalformati64v");
-    glad_glGetObjectLabel = (PFNGLGETOBJECTLABELPROC) load(userptr, "glGetObjectLabel");
-    glad_glGetObjectPtrLabel = (PFNGLGETOBJECTPTRLABELPROC) load(userptr, "glGetObjectPtrLabel");
-    glad_glGetPointerv = (PFNGLGETPOINTERVPROC) load(userptr, "glGetPointerv");
-    glad_glGetProgramInterfaceiv = (PFNGLGETPROGRAMINTERFACEIVPROC) load(userptr, "glGetProgramInterfaceiv");
-    glad_glGetProgramResourceIndex = (PFNGLGETPROGRAMRESOURCEINDEXPROC) load(userptr, "glGetProgramResourceIndex");
-    glad_glGetProgramResourceLocation = (PFNGLGETPROGRAMRESOURCELOCATIONPROC) load(userptr, "glGetProgramResourceLocation");
-    glad_glGetProgramResourceLocationIndex = (PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC) load(userptr, "glGetProgramResourceLocationIndex");
-    glad_glGetProgramResourceName = (PFNGLGETPROGRAMRESOURCENAMEPROC) load(userptr, "glGetProgramResourceName");
-    glad_glGetProgramResourceiv = (PFNGLGETPROGRAMRESOURCEIVPROC) load(userptr, "glGetProgramResourceiv");
-    glad_glInvalidateBufferData = (PFNGLINVALIDATEBUFFERDATAPROC) load(userptr, "glInvalidateBufferData");
-    glad_glInvalidateBufferSubData = (PFNGLINVALIDATEBUFFERSUBDATAPROC) load(userptr, "glInvalidateBufferSubData");
-    glad_glInvalidateFramebuffer = (PFNGLINVALIDATEFRAMEBUFFERPROC) load(userptr, "glInvalidateFramebuffer");
-    glad_glInvalidateSubFramebuffer = (PFNGLINVALIDATESUBFRAMEBUFFERPROC) load(userptr, "glInvalidateSubFramebuffer");
-    glad_glInvalidateTexImage = (PFNGLINVALIDATETEXIMAGEPROC) load(userptr, "glInvalidateTexImage");
-    glad_glInvalidateTexSubImage = (PFNGLINVALIDATETEXSUBIMAGEPROC) load(userptr, "glInvalidateTexSubImage");
-    glad_glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC) load(userptr, "glMultiDrawArraysIndirect");
-    glad_glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC) load(userptr, "glMultiDrawElementsIndirect");
-    glad_glObjectLabel = (PFNGLOBJECTLABELPROC) load(userptr, "glObjectLabel");
-    glad_glObjectPtrLabel = (PFNGLOBJECTPTRLABELPROC) load(userptr, "glObjectPtrLabel");
-    glad_glPopDebugGroup = (PFNGLPOPDEBUGGROUPPROC) load(userptr, "glPopDebugGroup");
-    glad_glPushDebugGroup = (PFNGLPUSHDEBUGGROUPPROC) load(userptr, "glPushDebugGroup");
-    glad_glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC) load(userptr, "glShaderStorageBlockBinding");
-    glad_glTexBufferRange = (PFNGLTEXBUFFERRANGEPROC) load(userptr, "glTexBufferRange");
-    glad_glTexStorage2DMultisample = (PFNGLTEXSTORAGE2DMULTISAMPLEPROC) load(userptr, "glTexStorage2DMultisample");
-    glad_glTexStorage3DMultisample = (PFNGLTEXSTORAGE3DMULTISAMPLEPROC) load(userptr, "glTexStorage3DMultisample");
-    glad_glTextureView = (PFNGLTEXTUREVIEWPROC) load(userptr, "glTextureView");
-    glad_glVertexAttribBinding = (PFNGLVERTEXATTRIBBINDINGPROC) load(userptr, "glVertexAttribBinding");
-    glad_glVertexAttribFormat = (PFNGLVERTEXATTRIBFORMATPROC) load(userptr, "glVertexAttribFormat");
-    glad_glVertexAttribIFormat = (PFNGLVERTEXATTRIBIFORMATPROC) load(userptr, "glVertexAttribIFormat");
-    glad_glVertexAttribLFormat = (PFNGLVERTEXATTRIBLFORMATPROC) load(userptr, "glVertexAttribLFormat");
-    glad_glVertexBindingDivisor = (PFNGLVERTEXBINDINGDIVISORPROC) load(userptr, "glVertexBindingDivisor");
-}
-static void glad_gl_load_GL_ARB_ES2_compatibility( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_ES2_compatibility) return;
-    glad_glClearDepthf = (PFNGLCLEARDEPTHFPROC) load(userptr, "glClearDepthf");
-    glad_glDepthRangef = (PFNGLDEPTHRANGEFPROC) load(userptr, "glDepthRangef");
-    glad_glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC) load(userptr, "glGetShaderPrecisionFormat");
-    glad_glReleaseShaderCompiler = (PFNGLRELEASESHADERCOMPILERPROC) load(userptr, "glReleaseShaderCompiler");
-    glad_glShaderBinary = (PFNGLSHADERBINARYPROC) load(userptr, "glShaderBinary");
-}
-static void glad_gl_load_GL_ARB_ES3_1_compatibility( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_ES3_1_compatibility) return;
-    glad_glMemoryBarrierByRegion = (PFNGLMEMORYBARRIERBYREGIONPROC) load(userptr, "glMemoryBarrierByRegion");
-}
-static void glad_gl_load_GL_ARB_ES3_2_compatibility( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_ES3_2_compatibility) return;
-    glad_glPrimitiveBoundingBoxARB = (PFNGLPRIMITIVEBOUNDINGBOXARBPROC) load(userptr, "glPrimitiveBoundingBoxARB");
-}
-static void glad_gl_load_GL_ARB_blend_func_extended( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_blend_func_extended) return;
-    glad_glBindFragDataLocationIndexed = (PFNGLBINDFRAGDATALOCATIONINDEXEDPROC) load(userptr, "glBindFragDataLocationIndexed");
-    glad_glGetFragDataIndex = (PFNGLGETFRAGDATAINDEXPROC) load(userptr, "glGetFragDataIndex");
-}
-static void glad_gl_load_GL_ARB_buffer_storage( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_buffer_storage) return;
-    glad_glBufferStorage = (PFNGLBUFFERSTORAGEPROC) load(userptr, "glBufferStorage");
-}
-static void glad_gl_load_GL_ARB_clear_buffer_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_clear_buffer_object) return;
-    glad_glClearBufferData = (PFNGLCLEARBUFFERDATAPROC) load(userptr, "glClearBufferData");
-    glad_glClearBufferSubData = (PFNGLCLEARBUFFERSUBDATAPROC) load(userptr, "glClearBufferSubData");
-}
-static void glad_gl_load_GL_ARB_clear_texture( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_clear_texture) return;
-    glad_glClearTexImage = (PFNGLCLEARTEXIMAGEPROC) load(userptr, "glClearTexImage");
-    glad_glClearTexSubImage = (PFNGLCLEARTEXSUBIMAGEPROC) load(userptr, "glClearTexSubImage");
-}
-static void glad_gl_load_GL_ARB_color_buffer_float( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_color_buffer_float) return;
-    glad_glClampColorARB = (PFNGLCLAMPCOLORARBPROC) load(userptr, "glClampColorARB");
-}
-static void glad_gl_load_GL_ARB_compute_shader( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_compute_shader) return;
-    glad_glDispatchCompute = (PFNGLDISPATCHCOMPUTEPROC) load(userptr, "glDispatchCompute");
-    glad_glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC) load(userptr, "glDispatchComputeIndirect");
-}
-static void glad_gl_load_GL_ARB_compute_variable_group_size( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_compute_variable_group_size) return;
-    glad_glDispatchComputeGroupSizeARB = (PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC) load(userptr, "glDispatchComputeGroupSizeARB");
-}
-static void glad_gl_load_GL_ARB_copy_buffer( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_copy_buffer) return;
-    glad_glCopyBufferSubData = (PFNGLCOPYBUFFERSUBDATAPROC) load(userptr, "glCopyBufferSubData");
-}
-static void glad_gl_load_GL_ARB_copy_image( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_copy_image) return;
-    glad_glCopyImageSubData = (PFNGLCOPYIMAGESUBDATAPROC) load(userptr, "glCopyImageSubData");
-}
-static void glad_gl_load_GL_ARB_debug_output( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_debug_output) return;
-    glad_glDebugMessageCallbackARB = (PFNGLDEBUGMESSAGECALLBACKARBPROC) load(userptr, "glDebugMessageCallbackARB");
-    glad_glDebugMessageControlARB = (PFNGLDEBUGMESSAGECONTROLARBPROC) load(userptr, "glDebugMessageControlARB");
-    glad_glDebugMessageInsertARB = (PFNGLDEBUGMESSAGEINSERTARBPROC) load(userptr, "glDebugMessageInsertARB");
-    glad_glGetDebugMessageLogARB = (PFNGLGETDEBUGMESSAGELOGARBPROC) load(userptr, "glGetDebugMessageLogARB");
-}
-static void glad_gl_load_GL_ARB_direct_state_access( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_direct_state_access) return;
-    glad_glBindTextureUnit = (PFNGLBINDTEXTUREUNITPROC) load(userptr, "glBindTextureUnit");
-    glad_glBlitNamedFramebuffer = (PFNGLBLITNAMEDFRAMEBUFFERPROC) load(userptr, "glBlitNamedFramebuffer");
-    glad_glCheckNamedFramebufferStatus = (PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC) load(userptr, "glCheckNamedFramebufferStatus");
-    glad_glClearNamedBufferData = (PFNGLCLEARNAMEDBUFFERDATAPROC) load(userptr, "glClearNamedBufferData");
-    glad_glClearNamedBufferSubData = (PFNGLCLEARNAMEDBUFFERSUBDATAPROC) load(userptr, "glClearNamedBufferSubData");
-    glad_glClearNamedFramebufferfi = (PFNGLCLEARNAMEDFRAMEBUFFERFIPROC) load(userptr, "glClearNamedFramebufferfi");
-    glad_glClearNamedFramebufferfv = (PFNGLCLEARNAMEDFRAMEBUFFERFVPROC) load(userptr, "glClearNamedFramebufferfv");
-    glad_glClearNamedFramebufferiv = (PFNGLCLEARNAMEDFRAMEBUFFERIVPROC) load(userptr, "glClearNamedFramebufferiv");
-    glad_glClearNamedFramebufferuiv = (PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC) load(userptr, "glClearNamedFramebufferuiv");
-    glad_glCompressedTextureSubImage1D = (PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC) load(userptr, "glCompressedTextureSubImage1D");
-    glad_glCompressedTextureSubImage2D = (PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC) load(userptr, "glCompressedTextureSubImage2D");
-    glad_glCompressedTextureSubImage3D = (PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC) load(userptr, "glCompressedTextureSubImage3D");
-    glad_glCopyNamedBufferSubData = (PFNGLCOPYNAMEDBUFFERSUBDATAPROC) load(userptr, "glCopyNamedBufferSubData");
-    glad_glCopyTextureSubImage1D = (PFNGLCOPYTEXTURESUBIMAGE1DPROC) load(userptr, "glCopyTextureSubImage1D");
-    glad_glCopyTextureSubImage2D = (PFNGLCOPYTEXTURESUBIMAGE2DPROC) load(userptr, "glCopyTextureSubImage2D");
-    glad_glCopyTextureSubImage3D = (PFNGLCOPYTEXTURESUBIMAGE3DPROC) load(userptr, "glCopyTextureSubImage3D");
-    glad_glCreateBuffers = (PFNGLCREATEBUFFERSPROC) load(userptr, "glCreateBuffers");
-    glad_glCreateFramebuffers = (PFNGLCREATEFRAMEBUFFERSPROC) load(userptr, "glCreateFramebuffers");
-    glad_glCreateProgramPipelines = (PFNGLCREATEPROGRAMPIPELINESPROC) load(userptr, "glCreateProgramPipelines");
-    glad_glCreateQueries = (PFNGLCREATEQUERIESPROC) load(userptr, "glCreateQueries");
-    glad_glCreateRenderbuffers = (PFNGLCREATERENDERBUFFERSPROC) load(userptr, "glCreateRenderbuffers");
-    glad_glCreateSamplers = (PFNGLCREATESAMPLERSPROC) load(userptr, "glCreateSamplers");
-    glad_glCreateTextures = (PFNGLCREATETEXTURESPROC) load(userptr, "glCreateTextures");
-    glad_glCreateTransformFeedbacks = (PFNGLCREATETRANSFORMFEEDBACKSPROC) load(userptr, "glCreateTransformFeedbacks");
-    glad_glCreateVertexArrays = (PFNGLCREATEVERTEXARRAYSPROC) load(userptr, "glCreateVertexArrays");
-    glad_glDisableVertexArrayAttrib = (PFNGLDISABLEVERTEXARRAYATTRIBPROC) load(userptr, "glDisableVertexArrayAttrib");
-    glad_glEnableVertexArrayAttrib = (PFNGLENABLEVERTEXARRAYATTRIBPROC) load(userptr, "glEnableVertexArrayAttrib");
-    glad_glFlushMappedNamedBufferRange = (PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC) load(userptr, "glFlushMappedNamedBufferRange");
-    glad_glGenerateTextureMipmap = (PFNGLGENERATETEXTUREMIPMAPPROC) load(userptr, "glGenerateTextureMipmap");
-    glad_glGetCompressedTextureImage = (PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC) load(userptr, "glGetCompressedTextureImage");
-    glad_glGetNamedBufferParameteri64v = (PFNGLGETNAMEDBUFFERPARAMETERI64VPROC) load(userptr, "glGetNamedBufferParameteri64v");
-    glad_glGetNamedBufferParameteriv = (PFNGLGETNAMEDBUFFERPARAMETERIVPROC) load(userptr, "glGetNamedBufferParameteriv");
-    glad_glGetNamedBufferPointerv = (PFNGLGETNAMEDBUFFERPOINTERVPROC) load(userptr, "glGetNamedBufferPointerv");
-    glad_glGetNamedBufferSubData = (PFNGLGETNAMEDBUFFERSUBDATAPROC) load(userptr, "glGetNamedBufferSubData");
-    glad_glGetNamedFramebufferAttachmentParameteriv = (PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load(userptr, "glGetNamedFramebufferAttachmentParameteriv");
-    glad_glGetNamedFramebufferParameteriv = (PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC) load(userptr, "glGetNamedFramebufferParameteriv");
-    glad_glGetNamedRenderbufferParameteriv = (PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC) load(userptr, "glGetNamedRenderbufferParameteriv");
-    glad_glGetQueryBufferObjecti64v = (PFNGLGETQUERYBUFFEROBJECTI64VPROC) load(userptr, "glGetQueryBufferObjecti64v");
-    glad_glGetQueryBufferObjectiv = (PFNGLGETQUERYBUFFEROBJECTIVPROC) load(userptr, "glGetQueryBufferObjectiv");
-    glad_glGetQueryBufferObjectui64v = (PFNGLGETQUERYBUFFEROBJECTUI64VPROC) load(userptr, "glGetQueryBufferObjectui64v");
-    glad_glGetQueryBufferObjectuiv = (PFNGLGETQUERYBUFFEROBJECTUIVPROC) load(userptr, "glGetQueryBufferObjectuiv");
-    glad_glGetTextureImage = (PFNGLGETTEXTUREIMAGEPROC) load(userptr, "glGetTextureImage");
-    glad_glGetTextureLevelParameterfv = (PFNGLGETTEXTURELEVELPARAMETERFVPROC) load(userptr, "glGetTextureLevelParameterfv");
-    glad_glGetTextureLevelParameteriv = (PFNGLGETTEXTURELEVELPARAMETERIVPROC) load(userptr, "glGetTextureLevelParameteriv");
-    glad_glGetTextureParameterIiv = (PFNGLGETTEXTUREPARAMETERIIVPROC) load(userptr, "glGetTextureParameterIiv");
-    glad_glGetTextureParameterIuiv = (PFNGLGETTEXTUREPARAMETERIUIVPROC) load(userptr, "glGetTextureParameterIuiv");
-    glad_glGetTextureParameterfv = (PFNGLGETTEXTUREPARAMETERFVPROC) load(userptr, "glGetTextureParameterfv");
-    glad_glGetTextureParameteriv = (PFNGLGETTEXTUREPARAMETERIVPROC) load(userptr, "glGetTextureParameteriv");
-    glad_glGetTransformFeedbacki64_v = (PFNGLGETTRANSFORMFEEDBACKI64_VPROC) load(userptr, "glGetTransformFeedbacki64_v");
-    glad_glGetTransformFeedbacki_v = (PFNGLGETTRANSFORMFEEDBACKI_VPROC) load(userptr, "glGetTransformFeedbacki_v");
-    glad_glGetTransformFeedbackiv = (PFNGLGETTRANSFORMFEEDBACKIVPROC) load(userptr, "glGetTransformFeedbackiv");
-    glad_glGetVertexArrayIndexed64iv = (PFNGLGETVERTEXARRAYINDEXED64IVPROC) load(userptr, "glGetVertexArrayIndexed64iv");
-    glad_glGetVertexArrayIndexediv = (PFNGLGETVERTEXARRAYINDEXEDIVPROC) load(userptr, "glGetVertexArrayIndexediv");
-    glad_glGetVertexArrayiv = (PFNGLGETVERTEXARRAYIVPROC) load(userptr, "glGetVertexArrayiv");
-    glad_glInvalidateNamedFramebufferData = (PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC) load(userptr, "glInvalidateNamedFramebufferData");
-    glad_glInvalidateNamedFramebufferSubData = (PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC) load(userptr, "glInvalidateNamedFramebufferSubData");
-    glad_glMapNamedBuffer = (PFNGLMAPNAMEDBUFFERPROC) load(userptr, "glMapNamedBuffer");
-    glad_glMapNamedBufferRange = (PFNGLMAPNAMEDBUFFERRANGEPROC) load(userptr, "glMapNamedBufferRange");
-    glad_glNamedBufferData = (PFNGLNAMEDBUFFERDATAPROC) load(userptr, "glNamedBufferData");
-    glad_glNamedBufferStorage = (PFNGLNAMEDBUFFERSTORAGEPROC) load(userptr, "glNamedBufferStorage");
-    glad_glNamedBufferSubData = (PFNGLNAMEDBUFFERSUBDATAPROC) load(userptr, "glNamedBufferSubData");
-    glad_glNamedFramebufferDrawBuffer = (PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC) load(userptr, "glNamedFramebufferDrawBuffer");
-    glad_glNamedFramebufferDrawBuffers = (PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC) load(userptr, "glNamedFramebufferDrawBuffers");
-    glad_glNamedFramebufferParameteri = (PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC) load(userptr, "glNamedFramebufferParameteri");
-    glad_glNamedFramebufferReadBuffer = (PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC) load(userptr, "glNamedFramebufferReadBuffer");
-    glad_glNamedFramebufferRenderbuffer = (PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC) load(userptr, "glNamedFramebufferRenderbuffer");
-    glad_glNamedFramebufferTexture = (PFNGLNAMEDFRAMEBUFFERTEXTUREPROC) load(userptr, "glNamedFramebufferTexture");
-    glad_glNamedFramebufferTextureLayer = (PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC) load(userptr, "glNamedFramebufferTextureLayer");
-    glad_glNamedRenderbufferStorage = (PFNGLNAMEDRENDERBUFFERSTORAGEPROC) load(userptr, "glNamedRenderbufferStorage");
-    glad_glNamedRenderbufferStorageMultisample = (PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC) load(userptr, "glNamedRenderbufferStorageMultisample");
-    glad_glTextureBuffer = (PFNGLTEXTUREBUFFERPROC) load(userptr, "glTextureBuffer");
-    glad_glTextureBufferRange = (PFNGLTEXTUREBUFFERRANGEPROC) load(userptr, "glTextureBufferRange");
-    glad_glTextureParameterIiv = (PFNGLTEXTUREPARAMETERIIVPROC) load(userptr, "glTextureParameterIiv");
-    glad_glTextureParameterIuiv = (PFNGLTEXTUREPARAMETERIUIVPROC) load(userptr, "glTextureParameterIuiv");
-    glad_glTextureParameterf = (PFNGLTEXTUREPARAMETERFPROC) load(userptr, "glTextureParameterf");
-    glad_glTextureParameterfv = (PFNGLTEXTUREPARAMETERFVPROC) load(userptr, "glTextureParameterfv");
-    glad_glTextureParameteri = (PFNGLTEXTUREPARAMETERIPROC) load(userptr, "glTextureParameteri");
-    glad_glTextureParameteriv = (PFNGLTEXTUREPARAMETERIVPROC) load(userptr, "glTextureParameteriv");
-    glad_glTextureStorage1D = (PFNGLTEXTURESTORAGE1DPROC) load(userptr, "glTextureStorage1D");
-    glad_glTextureStorage2D = (PFNGLTEXTURESTORAGE2DPROC) load(userptr, "glTextureStorage2D");
-    glad_glTextureStorage2DMultisample = (PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC) load(userptr, "glTextureStorage2DMultisample");
-    glad_glTextureStorage3D = (PFNGLTEXTURESTORAGE3DPROC) load(userptr, "glTextureStorage3D");
-    glad_glTextureStorage3DMultisample = (PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC) load(userptr, "glTextureStorage3DMultisample");
-    glad_glTextureSubImage1D = (PFNGLTEXTURESUBIMAGE1DPROC) load(userptr, "glTextureSubImage1D");
-    glad_glTextureSubImage2D = (PFNGLTEXTURESUBIMAGE2DPROC) load(userptr, "glTextureSubImage2D");
-    glad_glTextureSubImage3D = (PFNGLTEXTURESUBIMAGE3DPROC) load(userptr, "glTextureSubImage3D");
-    glad_glTransformFeedbackBufferBase = (PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC) load(userptr, "glTransformFeedbackBufferBase");
-    glad_glTransformFeedbackBufferRange = (PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC) load(userptr, "glTransformFeedbackBufferRange");
-    glad_glUnmapNamedBuffer = (PFNGLUNMAPNAMEDBUFFERPROC) load(userptr, "glUnmapNamedBuffer");
-    glad_glVertexArrayAttribBinding = (PFNGLVERTEXARRAYATTRIBBINDINGPROC) load(userptr, "glVertexArrayAttribBinding");
-    glad_glVertexArrayAttribFormat = (PFNGLVERTEXARRAYATTRIBFORMATPROC) load(userptr, "glVertexArrayAttribFormat");
-    glad_glVertexArrayAttribIFormat = (PFNGLVERTEXARRAYATTRIBIFORMATPROC) load(userptr, "glVertexArrayAttribIFormat");
-    glad_glVertexArrayAttribLFormat = (PFNGLVERTEXARRAYATTRIBLFORMATPROC) load(userptr, "glVertexArrayAttribLFormat");
-    glad_glVertexArrayBindingDivisor = (PFNGLVERTEXARRAYBINDINGDIVISORPROC) load(userptr, "glVertexArrayBindingDivisor");
-    glad_glVertexArrayElementBuffer = (PFNGLVERTEXARRAYELEMENTBUFFERPROC) load(userptr, "glVertexArrayElementBuffer");
-    glad_glVertexArrayVertexBuffer = (PFNGLVERTEXARRAYVERTEXBUFFERPROC) load(userptr, "glVertexArrayVertexBuffer");
-    glad_glVertexArrayVertexBuffers = (PFNGLVERTEXARRAYVERTEXBUFFERSPROC) load(userptr, "glVertexArrayVertexBuffers");
-}
-static void glad_gl_load_GL_ARB_draw_buffers( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_draw_buffers) return;
-    glad_glDrawBuffersARB = (PFNGLDRAWBUFFERSARBPROC) load(userptr, "glDrawBuffersARB");
-}
-static void glad_gl_load_GL_ARB_draw_buffers_blend( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_draw_buffers_blend) return;
-    glad_glBlendEquationSeparateiARB = (PFNGLBLENDEQUATIONSEPARATEIARBPROC) load(userptr, "glBlendEquationSeparateiARB");
-    glad_glBlendEquationiARB = (PFNGLBLENDEQUATIONIARBPROC) load(userptr, "glBlendEquationiARB");
-    glad_glBlendFuncSeparateiARB = (PFNGLBLENDFUNCSEPARATEIARBPROC) load(userptr, "glBlendFuncSeparateiARB");
-    glad_glBlendFunciARB = (PFNGLBLENDFUNCIARBPROC) load(userptr, "glBlendFunciARB");
-}
-static void glad_gl_load_GL_ARB_draw_elements_base_vertex( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_draw_elements_base_vertex) return;
-    glad_glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC) load(userptr, "glDrawElementsBaseVertex");
-    glad_glDrawElementsInstancedBaseVertex = (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC) load(userptr, "glDrawElementsInstancedBaseVertex");
-    glad_glDrawRangeElementsBaseVertex = (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC) load(userptr, "glDrawRangeElementsBaseVertex");
-    glad_glMultiDrawElementsBaseVertex = (PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC) load(userptr, "glMultiDrawElementsBaseVertex");
-}
-static void glad_gl_load_GL_ARB_draw_indirect( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_draw_indirect) return;
-    glad_glDrawArraysIndirect = (PFNGLDRAWARRAYSINDIRECTPROC) load(userptr, "glDrawArraysIndirect");
-    glad_glDrawElementsIndirect = (PFNGLDRAWELEMENTSINDIRECTPROC) load(userptr, "glDrawElementsIndirect");
-}
-static void glad_gl_load_GL_ARB_draw_instanced( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_draw_instanced) return;
-    glad_glDrawArraysInstancedARB = (PFNGLDRAWARRAYSINSTANCEDARBPROC) load(userptr, "glDrawArraysInstancedARB");
-    glad_glDrawElementsInstancedARB = (PFNGLDRAWELEMENTSINSTANCEDARBPROC) load(userptr, "glDrawElementsInstancedARB");
-}
-static void glad_gl_load_GL_ARB_fragment_program( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_fragment_program) return;
-    glad_glBindProgramARB = (PFNGLBINDPROGRAMARBPROC) load(userptr, "glBindProgramARB");
-    glad_glDeleteProgramsARB = (PFNGLDELETEPROGRAMSARBPROC) load(userptr, "glDeleteProgramsARB");
-    glad_glGenProgramsARB = (PFNGLGENPROGRAMSARBPROC) load(userptr, "glGenProgramsARB");
-    glad_glGetProgramEnvParameterdvARB = (PFNGLGETPROGRAMENVPARAMETERDVARBPROC) load(userptr, "glGetProgramEnvParameterdvARB");
-    glad_glGetProgramEnvParameterfvARB = (PFNGLGETPROGRAMENVPARAMETERFVARBPROC) load(userptr, "glGetProgramEnvParameterfvARB");
-    glad_glGetProgramLocalParameterdvARB = (PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC) load(userptr, "glGetProgramLocalParameterdvARB");
-    glad_glGetProgramLocalParameterfvARB = (PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC) load(userptr, "glGetProgramLocalParameterfvARB");
-    glad_glGetProgramStringARB = (PFNGLGETPROGRAMSTRINGARBPROC) load(userptr, "glGetProgramStringARB");
-    glad_glGetProgramivARB = (PFNGLGETPROGRAMIVARBPROC) load(userptr, "glGetProgramivARB");
-    glad_glIsProgramARB = (PFNGLISPROGRAMARBPROC) load(userptr, "glIsProgramARB");
-    glad_glProgramEnvParameter4dARB = (PFNGLPROGRAMENVPARAMETER4DARBPROC) load(userptr, "glProgramEnvParameter4dARB");
-    glad_glProgramEnvParameter4dvARB = (PFNGLPROGRAMENVPARAMETER4DVARBPROC) load(userptr, "glProgramEnvParameter4dvARB");
-    glad_glProgramEnvParameter4fARB = (PFNGLPROGRAMENVPARAMETER4FARBPROC) load(userptr, "glProgramEnvParameter4fARB");
-    glad_glProgramEnvParameter4fvARB = (PFNGLPROGRAMENVPARAMETER4FVARBPROC) load(userptr, "glProgramEnvParameter4fvARB");
-    glad_glProgramLocalParameter4dARB = (PFNGLPROGRAMLOCALPARAMETER4DARBPROC) load(userptr, "glProgramLocalParameter4dARB");
-    glad_glProgramLocalParameter4dvARB = (PFNGLPROGRAMLOCALPARAMETER4DVARBPROC) load(userptr, "glProgramLocalParameter4dvARB");
-    glad_glProgramLocalParameter4fARB = (PFNGLPROGRAMLOCALPARAMETER4FARBPROC) load(userptr, "glProgramLocalParameter4fARB");
-    glad_glProgramLocalParameter4fvARB = (PFNGLPROGRAMLOCALPARAMETER4FVARBPROC) load(userptr, "glProgramLocalParameter4fvARB");
-    glad_glProgramStringARB = (PFNGLPROGRAMSTRINGARBPROC) load(userptr, "glProgramStringARB");
-}
-static void glad_gl_load_GL_ARB_framebuffer_no_attachments( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_framebuffer_no_attachments) return;
-    glad_glFramebufferParameteri = (PFNGLFRAMEBUFFERPARAMETERIPROC) load(userptr, "glFramebufferParameteri");
-    glad_glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC) load(userptr, "glGetFramebufferParameteriv");
-}
-static void glad_gl_load_GL_ARB_framebuffer_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_framebuffer_object) return;
-    glad_glBindFramebuffer = (PFNGLBINDFRAMEBUFFERPROC) load(userptr, "glBindFramebuffer");
-    glad_glBindRenderbuffer = (PFNGLBINDRENDERBUFFERPROC) load(userptr, "glBindRenderbuffer");
-    glad_glBlitFramebuffer = (PFNGLBLITFRAMEBUFFERPROC) load(userptr, "glBlitFramebuffer");
-    glad_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC) load(userptr, "glCheckFramebufferStatus");
-    glad_glDeleteFramebuffers = (PFNGLDELETEFRAMEBUFFERSPROC) load(userptr, "glDeleteFramebuffers");
-    glad_glDeleteRenderbuffers = (PFNGLDELETERENDERBUFFERSPROC) load(userptr, "glDeleteRenderbuffers");
-    glad_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC) load(userptr, "glFramebufferRenderbuffer");
-    glad_glFramebufferTexture1D = (PFNGLFRAMEBUFFERTEXTURE1DPROC) load(userptr, "glFramebufferTexture1D");
-    glad_glFramebufferTexture2D = (PFNGLFRAMEBUFFERTEXTURE2DPROC) load(userptr, "glFramebufferTexture2D");
-    glad_glFramebufferTexture3D = (PFNGLFRAMEBUFFERTEXTURE3DPROC) load(userptr, "glFramebufferTexture3D");
-    glad_glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC) load(userptr, "glFramebufferTextureLayer");
-    glad_glGenFramebuffers = (PFNGLGENFRAMEBUFFERSPROC) load(userptr, "glGenFramebuffers");
-    glad_glGenRenderbuffers = (PFNGLGENRENDERBUFFERSPROC) load(userptr, "glGenRenderbuffers");
-    glad_glGenerateMipmap = (PFNGLGENERATEMIPMAPPROC) load(userptr, "glGenerateMipmap");
-    glad_glGetFramebufferAttachmentParameteriv = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC) load(userptr, "glGetFramebufferAttachmentParameteriv");
-    glad_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC) load(userptr, "glGetRenderbufferParameteriv");
-    glad_glIsFramebuffer = (PFNGLISFRAMEBUFFERPROC) load(userptr, "glIsFramebuffer");
-    glad_glIsRenderbuffer = (PFNGLISRENDERBUFFERPROC) load(userptr, "glIsRenderbuffer");
-    glad_glRenderbufferStorage = (PFNGLRENDERBUFFERSTORAGEPROC) load(userptr, "glRenderbufferStorage");
-    glad_glRenderbufferStorageMultisample = (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC) load(userptr, "glRenderbufferStorageMultisample");
-}
-static void glad_gl_load_GL_ARB_geometry_shader4( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_geometry_shader4) return;
-    glad_glFramebufferTextureARB = (PFNGLFRAMEBUFFERTEXTUREARBPROC) load(userptr, "glFramebufferTextureARB");
-    glad_glFramebufferTextureFaceARB = (PFNGLFRAMEBUFFERTEXTUREFACEARBPROC) load(userptr, "glFramebufferTextureFaceARB");
-    glad_glFramebufferTextureLayerARB = (PFNGLFRAMEBUFFERTEXTURELAYERARBPROC) load(userptr, "glFramebufferTextureLayerARB");
-    glad_glProgramParameteriARB = (PFNGLPROGRAMPARAMETERIARBPROC) load(userptr, "glProgramParameteriARB");
-}
-static void glad_gl_load_GL_ARB_get_program_binary( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_get_program_binary) return;
-    glad_glGetProgramBinary = (PFNGLGETPROGRAMBINARYPROC) load(userptr, "glGetProgramBinary");
-    glad_glProgramBinary = (PFNGLPROGRAMBINARYPROC) load(userptr, "glProgramBinary");
-    glad_glProgramParameteri = (PFNGLPROGRAMPARAMETERIPROC) load(userptr, "glProgramParameteri");
-}
-static void glad_gl_load_GL_ARB_get_texture_sub_image( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_get_texture_sub_image) return;
-    glad_glGetCompressedTextureSubImage = (PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC) load(userptr, "glGetCompressedTextureSubImage");
-    glad_glGetTextureSubImage = (PFNGLGETTEXTURESUBIMAGEPROC) load(userptr, "glGetTextureSubImage");
-}
-static void glad_gl_load_GL_ARB_gl_spirv( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_gl_spirv) return;
-    glad_glSpecializeShaderARB = (PFNGLSPECIALIZESHADERARBPROC) load(userptr, "glSpecializeShaderARB");
-}
-static void glad_gl_load_GL_ARB_gpu_shader_fp64( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_gpu_shader_fp64) return;
-    glad_glGetUniformdv = (PFNGLGETUNIFORMDVPROC) load(userptr, "glGetUniformdv");
-    glad_glUniform1d = (PFNGLUNIFORM1DPROC) load(userptr, "glUniform1d");
-    glad_glUniform1dv = (PFNGLUNIFORM1DVPROC) load(userptr, "glUniform1dv");
-    glad_glUniform2d = (PFNGLUNIFORM2DPROC) load(userptr, "glUniform2d");
-    glad_glUniform2dv = (PFNGLUNIFORM2DVPROC) load(userptr, "glUniform2dv");
-    glad_glUniform3d = (PFNGLUNIFORM3DPROC) load(userptr, "glUniform3d");
-    glad_glUniform3dv = (PFNGLUNIFORM3DVPROC) load(userptr, "glUniform3dv");
-    glad_glUniform4d = (PFNGLUNIFORM4DPROC) load(userptr, "glUniform4d");
-    glad_glUniform4dv = (PFNGLUNIFORM4DVPROC) load(userptr, "glUniform4dv");
-    glad_glUniformMatrix2dv = (PFNGLUNIFORMMATRIX2DVPROC) load(userptr, "glUniformMatrix2dv");
-    glad_glUniformMatrix2x3dv = (PFNGLUNIFORMMATRIX2X3DVPROC) load(userptr, "glUniformMatrix2x3dv");
-    glad_glUniformMatrix2x4dv = (PFNGLUNIFORMMATRIX2X4DVPROC) load(userptr, "glUniformMatrix2x4dv");
-    glad_glUniformMatrix3dv = (PFNGLUNIFORMMATRIX3DVPROC) load(userptr, "glUniformMatrix3dv");
-    glad_glUniformMatrix3x2dv = (PFNGLUNIFORMMATRIX3X2DVPROC) load(userptr, "glUniformMatrix3x2dv");
-    glad_glUniformMatrix3x4dv = (PFNGLUNIFORMMATRIX3X4DVPROC) load(userptr, "glUniformMatrix3x4dv");
-    glad_glUniformMatrix4dv = (PFNGLUNIFORMMATRIX4DVPROC) load(userptr, "glUniformMatrix4dv");
-    glad_glUniformMatrix4x2dv = (PFNGLUNIFORMMATRIX4X2DVPROC) load(userptr, "glUniformMatrix4x2dv");
-    glad_glUniformMatrix4x3dv = (PFNGLUNIFORMMATRIX4X3DVPROC) load(userptr, "glUniformMatrix4x3dv");
-}
-static void glad_gl_load_GL_ARB_gpu_shader_int64( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_gpu_shader_int64) return;
-    glad_glGetUniformi64vARB = (PFNGLGETUNIFORMI64VARBPROC) load(userptr, "glGetUniformi64vARB");
-    glad_glGetUniformui64vARB = (PFNGLGETUNIFORMUI64VARBPROC) load(userptr, "glGetUniformui64vARB");
-    glad_glGetnUniformi64vARB = (PFNGLGETNUNIFORMI64VARBPROC) load(userptr, "glGetnUniformi64vARB");
-    glad_glGetnUniformui64vARB = (PFNGLGETNUNIFORMUI64VARBPROC) load(userptr, "glGetnUniformui64vARB");
-    glad_glProgramUniform1i64ARB = (PFNGLPROGRAMUNIFORM1I64ARBPROC) load(userptr, "glProgramUniform1i64ARB");
-    glad_glProgramUniform1i64vARB = (PFNGLPROGRAMUNIFORM1I64VARBPROC) load(userptr, "glProgramUniform1i64vARB");
-    glad_glProgramUniform1ui64ARB = (PFNGLPROGRAMUNIFORM1UI64ARBPROC) load(userptr, "glProgramUniform1ui64ARB");
-    glad_glProgramUniform1ui64vARB = (PFNGLPROGRAMUNIFORM1UI64VARBPROC) load(userptr, "glProgramUniform1ui64vARB");
-    glad_glProgramUniform2i64ARB = (PFNGLPROGRAMUNIFORM2I64ARBPROC) load(userptr, "glProgramUniform2i64ARB");
-    glad_glProgramUniform2i64vARB = (PFNGLPROGRAMUNIFORM2I64VARBPROC) load(userptr, "glProgramUniform2i64vARB");
-    glad_glProgramUniform2ui64ARB = (PFNGLPROGRAMUNIFORM2UI64ARBPROC) load(userptr, "glProgramUniform2ui64ARB");
-    glad_glProgramUniform2ui64vARB = (PFNGLPROGRAMUNIFORM2UI64VARBPROC) load(userptr, "glProgramUniform2ui64vARB");
-    glad_glProgramUniform3i64ARB = (PFNGLPROGRAMUNIFORM3I64ARBPROC) load(userptr, "glProgramUniform3i64ARB");
-    glad_glProgramUniform3i64vARB = (PFNGLPROGRAMUNIFORM3I64VARBPROC) load(userptr, "glProgramUniform3i64vARB");
-    glad_glProgramUniform3ui64ARB = (PFNGLPROGRAMUNIFORM3UI64ARBPROC) load(userptr, "glProgramUniform3ui64ARB");
-    glad_glProgramUniform3ui64vARB = (PFNGLPROGRAMUNIFORM3UI64VARBPROC) load(userptr, "glProgramUniform3ui64vARB");
-    glad_glProgramUniform4i64ARB = (PFNGLPROGRAMUNIFORM4I64ARBPROC) load(userptr, "glProgramUniform4i64ARB");
-    glad_glProgramUniform4i64vARB = (PFNGLPROGRAMUNIFORM4I64VARBPROC) load(userptr, "glProgramUniform4i64vARB");
-    glad_glProgramUniform4ui64ARB = (PFNGLPROGRAMUNIFORM4UI64ARBPROC) load(userptr, "glProgramUniform4ui64ARB");
-    glad_glProgramUniform4ui64vARB = (PFNGLPROGRAMUNIFORM4UI64VARBPROC) load(userptr, "glProgramUniform4ui64vARB");
-    glad_glUniform1i64ARB = (PFNGLUNIFORM1I64ARBPROC) load(userptr, "glUniform1i64ARB");
-    glad_glUniform1i64vARB = (PFNGLUNIFORM1I64VARBPROC) load(userptr, "glUniform1i64vARB");
-    glad_glUniform1ui64ARB = (PFNGLUNIFORM1UI64ARBPROC) load(userptr, "glUniform1ui64ARB");
-    glad_glUniform1ui64vARB = (PFNGLUNIFORM1UI64VARBPROC) load(userptr, "glUniform1ui64vARB");
-    glad_glUniform2i64ARB = (PFNGLUNIFORM2I64ARBPROC) load(userptr, "glUniform2i64ARB");
-    glad_glUniform2i64vARB = (PFNGLUNIFORM2I64VARBPROC) load(userptr, "glUniform2i64vARB");
-    glad_glUniform2ui64ARB = (PFNGLUNIFORM2UI64ARBPROC) load(userptr, "glUniform2ui64ARB");
-    glad_glUniform2ui64vARB = (PFNGLUNIFORM2UI64VARBPROC) load(userptr, "glUniform2ui64vARB");
-    glad_glUniform3i64ARB = (PFNGLUNIFORM3I64ARBPROC) load(userptr, "glUniform3i64ARB");
-    glad_glUniform3i64vARB = (PFNGLUNIFORM3I64VARBPROC) load(userptr, "glUniform3i64vARB");
-    glad_glUniform3ui64ARB = (PFNGLUNIFORM3UI64ARBPROC) load(userptr, "glUniform3ui64ARB");
-    glad_glUniform3ui64vARB = (PFNGLUNIFORM3UI64VARBPROC) load(userptr, "glUniform3ui64vARB");
-    glad_glUniform4i64ARB = (PFNGLUNIFORM4I64ARBPROC) load(userptr, "glUniform4i64ARB");
-    glad_glUniform4i64vARB = (PFNGLUNIFORM4I64VARBPROC) load(userptr, "glUniform4i64vARB");
-    glad_glUniform4ui64ARB = (PFNGLUNIFORM4UI64ARBPROC) load(userptr, "glUniform4ui64ARB");
-    glad_glUniform4ui64vARB = (PFNGLUNIFORM4UI64VARBPROC) load(userptr, "glUniform4ui64vARB");
-}
-static void glad_gl_load_GL_ARB_instanced_arrays( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_instanced_arrays) return;
-    glad_glVertexAttribDivisorARB = (PFNGLVERTEXATTRIBDIVISORARBPROC) load(userptr, "glVertexAttribDivisorARB");
-}
-static void glad_gl_load_GL_ARB_internalformat_query( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_internalformat_query) return;
-    glad_glGetInternalformativ = (PFNGLGETINTERNALFORMATIVPROC) load(userptr, "glGetInternalformativ");
-}
-static void glad_gl_load_GL_ARB_internalformat_query2( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_internalformat_query2) return;
-    glad_glGetInternalformati64v = (PFNGLGETINTERNALFORMATI64VPROC) load(userptr, "glGetInternalformati64v");
-}
-static void glad_gl_load_GL_ARB_map_buffer_range( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_map_buffer_range) return;
-    glad_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC) load(userptr, "glFlushMappedBufferRange");
-    glad_glMapBufferRange = (PFNGLMAPBUFFERRANGEPROC) load(userptr, "glMapBufferRange");
-}
-static void glad_gl_load_GL_ARB_multi_bind( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_multi_bind) return;
-    glad_glBindBuffersBase = (PFNGLBINDBUFFERSBASEPROC) load(userptr, "glBindBuffersBase");
-    glad_glBindBuffersRange = (PFNGLBINDBUFFERSRANGEPROC) load(userptr, "glBindBuffersRange");
-    glad_glBindImageTextures = (PFNGLBINDIMAGETEXTURESPROC) load(userptr, "glBindImageTextures");
-    glad_glBindSamplers = (PFNGLBINDSAMPLERSPROC) load(userptr, "glBindSamplers");
-    glad_glBindTextures = (PFNGLBINDTEXTURESPROC) load(userptr, "glBindTextures");
-    glad_glBindVertexBuffers = (PFNGLBINDVERTEXBUFFERSPROC) load(userptr, "glBindVertexBuffers");
-}
-static void glad_gl_load_GL_ARB_multi_draw_indirect( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_multi_draw_indirect) return;
-    glad_glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC) load(userptr, "glMultiDrawArraysIndirect");
-    glad_glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC) load(userptr, "glMultiDrawElementsIndirect");
-}
-static void glad_gl_load_GL_ARB_multisample( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_multisample) return;
-    glad_glSampleCoverageARB = (PFNGLSAMPLECOVERAGEARBPROC) load(userptr, "glSampleCoverageARB");
-}
-static void glad_gl_load_GL_ARB_multitexture( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_multitexture) return;
-    glad_glActiveTextureARB = (PFNGLACTIVETEXTUREARBPROC) load(userptr, "glActiveTextureARB");
-    glad_glClientActiveTextureARB = (PFNGLCLIENTACTIVETEXTUREARBPROC) load(userptr, "glClientActiveTextureARB");
-    glad_glMultiTexCoord1dARB = (PFNGLMULTITEXCOORD1DARBPROC) load(userptr, "glMultiTexCoord1dARB");
-    glad_glMultiTexCoord1dvARB = (PFNGLMULTITEXCOORD1DVARBPROC) load(userptr, "glMultiTexCoord1dvARB");
-    glad_glMultiTexCoord1fARB = (PFNGLMULTITEXCOORD1FARBPROC) load(userptr, "glMultiTexCoord1fARB");
-    glad_glMultiTexCoord1fvARB = (PFNGLMULTITEXCOORD1FVARBPROC) load(userptr, "glMultiTexCoord1fvARB");
-    glad_glMultiTexCoord1iARB = (PFNGLMULTITEXCOORD1IARBPROC) load(userptr, "glMultiTexCoord1iARB");
-    glad_glMultiTexCoord1ivARB = (PFNGLMULTITEXCOORD1IVARBPROC) load(userptr, "glMultiTexCoord1ivARB");
-    glad_glMultiTexCoord1sARB = (PFNGLMULTITEXCOORD1SARBPROC) load(userptr, "glMultiTexCoord1sARB");
-    glad_glMultiTexCoord1svARB = (PFNGLMULTITEXCOORD1SVARBPROC) load(userptr, "glMultiTexCoord1svARB");
-    glad_glMultiTexCoord2dARB = (PFNGLMULTITEXCOORD2DARBPROC) load(userptr, "glMultiTexCoord2dARB");
-    glad_glMultiTexCoord2dvARB = (PFNGLMULTITEXCOORD2DVARBPROC) load(userptr, "glMultiTexCoord2dvARB");
-    glad_glMultiTexCoord2fARB = (PFNGLMULTITEXCOORD2FARBPROC) load(userptr, "glMultiTexCoord2fARB");
-    glad_glMultiTexCoord2fvARB = (PFNGLMULTITEXCOORD2FVARBPROC) load(userptr, "glMultiTexCoord2fvARB");
-    glad_glMultiTexCoord2iARB = (PFNGLMULTITEXCOORD2IARBPROC) load(userptr, "glMultiTexCoord2iARB");
-    glad_glMultiTexCoord2ivARB = (PFNGLMULTITEXCOORD2IVARBPROC) load(userptr, "glMultiTexCoord2ivARB");
-    glad_glMultiTexCoord2sARB = (PFNGLMULTITEXCOORD2SARBPROC) load(userptr, "glMultiTexCoord2sARB");
-    glad_glMultiTexCoord2svARB = (PFNGLMULTITEXCOORD2SVARBPROC) load(userptr, "glMultiTexCoord2svARB");
-    glad_glMultiTexCoord3dARB = (PFNGLMULTITEXCOORD3DARBPROC) load(userptr, "glMultiTexCoord3dARB");
-    glad_glMultiTexCoord3dvARB = (PFNGLMULTITEXCOORD3DVARBPROC) load(userptr, "glMultiTexCoord3dvARB");
-    glad_glMultiTexCoord3fARB = (PFNGLMULTITEXCOORD3FARBPROC) load(userptr, "glMultiTexCoord3fARB");
-    glad_glMultiTexCoord3fvARB = (PFNGLMULTITEXCOORD3FVARBPROC) load(userptr, "glMultiTexCoord3fvARB");
-    glad_glMultiTexCoord3iARB = (PFNGLMULTITEXCOORD3IARBPROC) load(userptr, "glMultiTexCoord3iARB");
-    glad_glMultiTexCoord3ivARB = (PFNGLMULTITEXCOORD3IVARBPROC) load(userptr, "glMultiTexCoord3ivARB");
-    glad_glMultiTexCoord3sARB = (PFNGLMULTITEXCOORD3SARBPROC) load(userptr, "glMultiTexCoord3sARB");
-    glad_glMultiTexCoord3svARB = (PFNGLMULTITEXCOORD3SVARBPROC) load(userptr, "glMultiTexCoord3svARB");
-    glad_glMultiTexCoord4dARB = (PFNGLMULTITEXCOORD4DARBPROC) load(userptr, "glMultiTexCoord4dARB");
-    glad_glMultiTexCoord4dvARB = (PFNGLMULTITEXCOORD4DVARBPROC) load(userptr, "glMultiTexCoord4dvARB");
-    glad_glMultiTexCoord4fARB = (PFNGLMULTITEXCOORD4FARBPROC) load(userptr, "glMultiTexCoord4fARB");
-    glad_glMultiTexCoord4fvARB = (PFNGLMULTITEXCOORD4FVARBPROC) load(userptr, "glMultiTexCoord4fvARB");
-    glad_glMultiTexCoord4iARB = (PFNGLMULTITEXCOORD4IARBPROC) load(userptr, "glMultiTexCoord4iARB");
-    glad_glMultiTexCoord4ivARB = (PFNGLMULTITEXCOORD4IVARBPROC) load(userptr, "glMultiTexCoord4ivARB");
-    glad_glMultiTexCoord4sARB = (PFNGLMULTITEXCOORD4SARBPROC) load(userptr, "glMultiTexCoord4sARB");
-    glad_glMultiTexCoord4svARB = (PFNGLMULTITEXCOORD4SVARBPROC) load(userptr, "glMultiTexCoord4svARB");
-}
-static void glad_gl_load_GL_ARB_occlusion_query( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_occlusion_query) return;
-    glad_glBeginQueryARB = (PFNGLBEGINQUERYARBPROC) load(userptr, "glBeginQueryARB");
-    glad_glDeleteQueriesARB = (PFNGLDELETEQUERIESARBPROC) load(userptr, "glDeleteQueriesARB");
-    glad_glEndQueryARB = (PFNGLENDQUERYARBPROC) load(userptr, "glEndQueryARB");
-    glad_glGenQueriesARB = (PFNGLGENQUERIESARBPROC) load(userptr, "glGenQueriesARB");
-    glad_glGetQueryObjectivARB = (PFNGLGETQUERYOBJECTIVARBPROC) load(userptr, "glGetQueryObjectivARB");
-    glad_glGetQueryObjectuivARB = (PFNGLGETQUERYOBJECTUIVARBPROC) load(userptr, "glGetQueryObjectuivARB");
-    glad_glGetQueryivARB = (PFNGLGETQUERYIVARBPROC) load(userptr, "glGetQueryivARB");
-    glad_glIsQueryARB = (PFNGLISQUERYARBPROC) load(userptr, "glIsQueryARB");
-}
-static void glad_gl_load_GL_ARB_sample_locations( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_sample_locations) return;
-    glad_glEvaluateDepthValuesARB = (PFNGLEVALUATEDEPTHVALUESARBPROC) load(userptr, "glEvaluateDepthValuesARB");
-    glad_glFramebufferSampleLocationsfvARB = (PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC) load(userptr, "glFramebufferSampleLocationsfvARB");
-    glad_glNamedFramebufferSampleLocationsfvARB = (PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC) load(userptr, "glNamedFramebufferSampleLocationsfvARB");
-}
-static void glad_gl_load_GL_ARB_sample_shading( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_sample_shading) return;
-    glad_glMinSampleShadingARB = (PFNGLMINSAMPLESHADINGARBPROC) load(userptr, "glMinSampleShadingARB");
-}
-static void glad_gl_load_GL_ARB_shader_atomic_counters( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_shader_atomic_counters) return;
-    glad_glGetActiveAtomicCounterBufferiv = (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC) load(userptr, "glGetActiveAtomicCounterBufferiv");
-}
-static void glad_gl_load_GL_ARB_shader_image_load_store( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_shader_image_load_store) return;
-    glad_glBindImageTexture = (PFNGLBINDIMAGETEXTUREPROC) load(userptr, "glBindImageTexture");
-    glad_glMemoryBarrier = (PFNGLMEMORYBARRIERPROC) load(userptr, "glMemoryBarrier");
-}
-static void glad_gl_load_GL_ARB_shader_objects( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_shader_objects) return;
-    glad_glAttachObjectARB = (PFNGLATTACHOBJECTARBPROC) load(userptr, "glAttachObjectARB");
-    glad_glCompileShaderARB = (PFNGLCOMPILESHADERARBPROC) load(userptr, "glCompileShaderARB");
-    glad_glCreateProgramObjectARB = (PFNGLCREATEPROGRAMOBJECTARBPROC) load(userptr, "glCreateProgramObjectARB");
-    glad_glCreateShaderObjectARB = (PFNGLCREATESHADEROBJECTARBPROC) load(userptr, "glCreateShaderObjectARB");
-    glad_glDeleteObjectARB = (PFNGLDELETEOBJECTARBPROC) load(userptr, "glDeleteObjectARB");
-    glad_glDetachObjectARB = (PFNGLDETACHOBJECTARBPROC) load(userptr, "glDetachObjectARB");
-    glad_glGetActiveUniformARB = (PFNGLGETACTIVEUNIFORMARBPROC) load(userptr, "glGetActiveUniformARB");
-    glad_glGetAttachedObjectsARB = (PFNGLGETATTACHEDOBJECTSARBPROC) load(userptr, "glGetAttachedObjectsARB");
-    glad_glGetHandleARB = (PFNGLGETHANDLEARBPROC) load(userptr, "glGetHandleARB");
-    glad_glGetInfoLogARB = (PFNGLGETINFOLOGARBPROC) load(userptr, "glGetInfoLogARB");
-    glad_glGetObjectParameterfvARB = (PFNGLGETOBJECTPARAMETERFVARBPROC) load(userptr, "glGetObjectParameterfvARB");
-    glad_glGetObjectParameterivARB = (PFNGLGETOBJECTPARAMETERIVARBPROC) load(userptr, "glGetObjectParameterivARB");
-    glad_glGetShaderSourceARB = (PFNGLGETSHADERSOURCEARBPROC) load(userptr, "glGetShaderSourceARB");
-    glad_glGetUniformLocationARB = (PFNGLGETUNIFORMLOCATIONARBPROC) load(userptr, "glGetUniformLocationARB");
-    glad_glGetUniformfvARB = (PFNGLGETUNIFORMFVARBPROC) load(userptr, "glGetUniformfvARB");
-    glad_glGetUniformivARB = (PFNGLGETUNIFORMIVARBPROC) load(userptr, "glGetUniformivARB");
-    glad_glLinkProgramARB = (PFNGLLINKPROGRAMARBPROC) load(userptr, "glLinkProgramARB");
-    glad_glShaderSourceARB = (PFNGLSHADERSOURCEARBPROC) load(userptr, "glShaderSourceARB");
-    glad_glUniform1fARB = (PFNGLUNIFORM1FARBPROC) load(userptr, "glUniform1fARB");
-    glad_glUniform1fvARB = (PFNGLUNIFORM1FVARBPROC) load(userptr, "glUniform1fvARB");
-    glad_glUniform1iARB = (PFNGLUNIFORM1IARBPROC) load(userptr, "glUniform1iARB");
-    glad_glUniform1ivARB = (PFNGLUNIFORM1IVARBPROC) load(userptr, "glUniform1ivARB");
-    glad_glUniform2fARB = (PFNGLUNIFORM2FARBPROC) load(userptr, "glUniform2fARB");
-    glad_glUniform2fvARB = (PFNGLUNIFORM2FVARBPROC) load(userptr, "glUniform2fvARB");
-    glad_glUniform2iARB = (PFNGLUNIFORM2IARBPROC) load(userptr, "glUniform2iARB");
-    glad_glUniform2ivARB = (PFNGLUNIFORM2IVARBPROC) load(userptr, "glUniform2ivARB");
-    glad_glUniform3fARB = (PFNGLUNIFORM3FARBPROC) load(userptr, "glUniform3fARB");
-    glad_glUniform3fvARB = (PFNGLUNIFORM3FVARBPROC) load(userptr, "glUniform3fvARB");
-    glad_glUniform3iARB = (PFNGLUNIFORM3IARBPROC) load(userptr, "glUniform3iARB");
-    glad_glUniform3ivARB = (PFNGLUNIFORM3IVARBPROC) load(userptr, "glUniform3ivARB");
-    glad_glUniform4fARB = (PFNGLUNIFORM4FARBPROC) load(userptr, "glUniform4fARB");
-    glad_glUniform4fvARB = (PFNGLUNIFORM4FVARBPROC) load(userptr, "glUniform4fvARB");
-    glad_glUniform4iARB = (PFNGLUNIFORM4IARBPROC) load(userptr, "glUniform4iARB");
-    glad_glUniform4ivARB = (PFNGLUNIFORM4IVARBPROC) load(userptr, "glUniform4ivARB");
-    glad_glUniformMatrix2fvARB = (PFNGLUNIFORMMATRIX2FVARBPROC) load(userptr, "glUniformMatrix2fvARB");
-    glad_glUniformMatrix3fvARB = (PFNGLUNIFORMMATRIX3FVARBPROC) load(userptr, "glUniformMatrix3fvARB");
-    glad_glUniformMatrix4fvARB = (PFNGLUNIFORMMATRIX4FVARBPROC) load(userptr, "glUniformMatrix4fvARB");
-    glad_glUseProgramObjectARB = (PFNGLUSEPROGRAMOBJECTARBPROC) load(userptr, "glUseProgramObjectARB");
-    glad_glValidateProgramARB = (PFNGLVALIDATEPROGRAMARBPROC) load(userptr, "glValidateProgramARB");
-}
-static void glad_gl_load_GL_ARB_shader_storage_buffer_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_shader_storage_buffer_object) return;
-    glad_glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC) load(userptr, "glShaderStorageBlockBinding");
-}
-static void glad_gl_load_GL_ARB_shading_language_include( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_shading_language_include) return;
-    glad_glCompileShaderIncludeARB = (PFNGLCOMPILESHADERINCLUDEARBPROC) load(userptr, "glCompileShaderIncludeARB");
-    glad_glDeleteNamedStringARB = (PFNGLDELETENAMEDSTRINGARBPROC) load(userptr, "glDeleteNamedStringARB");
-    glad_glGetNamedStringARB = (PFNGLGETNAMEDSTRINGARBPROC) load(userptr, "glGetNamedStringARB");
-    glad_glGetNamedStringivARB = (PFNGLGETNAMEDSTRINGIVARBPROC) load(userptr, "glGetNamedStringivARB");
-    glad_glIsNamedStringARB = (PFNGLISNAMEDSTRINGARBPROC) load(userptr, "glIsNamedStringARB");
-    glad_glNamedStringARB = (PFNGLNAMEDSTRINGARBPROC) load(userptr, "glNamedStringARB");
-}
-static void glad_gl_load_GL_ARB_tessellation_shader( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_tessellation_shader) return;
-    glad_glPatchParameterfv = (PFNGLPATCHPARAMETERFVPROC) load(userptr, "glPatchParameterfv");
-    glad_glPatchParameteri = (PFNGLPATCHPARAMETERIPROC) load(userptr, "glPatchParameteri");
-}
-static void glad_gl_load_GL_ARB_texture_compression( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_texture_compression) return;
-    glad_glCompressedTexImage1DARB = (PFNGLCOMPRESSEDTEXIMAGE1DARBPROC) load(userptr, "glCompressedTexImage1DARB");
-    glad_glCompressedTexImage2DARB = (PFNGLCOMPRESSEDTEXIMAGE2DARBPROC) load(userptr, "glCompressedTexImage2DARB");
-    glad_glCompressedTexImage3DARB = (PFNGLCOMPRESSEDTEXIMAGE3DARBPROC) load(userptr, "glCompressedTexImage3DARB");
-    glad_glCompressedTexSubImage1DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC) load(userptr, "glCompressedTexSubImage1DARB");
-    glad_glCompressedTexSubImage2DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC) load(userptr, "glCompressedTexSubImage2DARB");
-    glad_glCompressedTexSubImage3DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC) load(userptr, "glCompressedTexSubImage3DARB");
-    glad_glGetCompressedTexImageARB = (PFNGLGETCOMPRESSEDTEXIMAGEARBPROC) load(userptr, "glGetCompressedTexImageARB");
-}
-static void glad_gl_load_GL_ARB_texture_multisample( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_texture_multisample) return;
-    glad_glGetMultisamplefv = (PFNGLGETMULTISAMPLEFVPROC) load(userptr, "glGetMultisamplefv");
-    glad_glSampleMaski = (PFNGLSAMPLEMASKIPROC) load(userptr, "glSampleMaski");
-    glad_glTexImage2DMultisample = (PFNGLTEXIMAGE2DMULTISAMPLEPROC) load(userptr, "glTexImage2DMultisample");
-    glad_glTexImage3DMultisample = (PFNGLTEXIMAGE3DMULTISAMPLEPROC) load(userptr, "glTexImage3DMultisample");
-}
-static void glad_gl_load_GL_ARB_texture_storage( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_texture_storage) return;
-    glad_glTexStorage1D = (PFNGLTEXSTORAGE1DPROC) load(userptr, "glTexStorage1D");
-    glad_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC) load(userptr, "glTexStorage2D");
-    glad_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC) load(userptr, "glTexStorage3D");
-}
-static void glad_gl_load_GL_ARB_texture_view( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_texture_view) return;
-    glad_glTextureView = (PFNGLTEXTUREVIEWPROC) load(userptr, "glTextureView");
-}
-static void glad_gl_load_GL_ARB_timer_query( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_timer_query) return;
-    glad_glGetQueryObjecti64v = (PFNGLGETQUERYOBJECTI64VPROC) load(userptr, "glGetQueryObjecti64v");
-    glad_glGetQueryObjectui64v = (PFNGLGETQUERYOBJECTUI64VPROC) load(userptr, "glGetQueryObjectui64v");
-    glad_glQueryCounter = (PFNGLQUERYCOUNTERPROC) load(userptr, "glQueryCounter");
-}
-static void glad_gl_load_GL_ARB_transpose_matrix( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_transpose_matrix) return;
-    glad_glLoadTransposeMatrixdARB = (PFNGLLOADTRANSPOSEMATRIXDARBPROC) load(userptr, "glLoadTransposeMatrixdARB");
-    glad_glLoadTransposeMatrixfARB = (PFNGLLOADTRANSPOSEMATRIXFARBPROC) load(userptr, "glLoadTransposeMatrixfARB");
-    glad_glMultTransposeMatrixdARB = (PFNGLMULTTRANSPOSEMATRIXDARBPROC) load(userptr, "glMultTransposeMatrixdARB");
-    glad_glMultTransposeMatrixfARB = (PFNGLMULTTRANSPOSEMATRIXFARBPROC) load(userptr, "glMultTransposeMatrixfARB");
-}
-static void glad_gl_load_GL_ARB_uniform_buffer_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_uniform_buffer_object) return;
-    glad_glBindBufferBase = (PFNGLBINDBUFFERBASEPROC) load(userptr, "glBindBufferBase");
-    glad_glBindBufferRange = (PFNGLBINDBUFFERRANGEPROC) load(userptr, "glBindBufferRange");
-    glad_glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC) load(userptr, "glGetActiveUniformBlockName");
-    glad_glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC) load(userptr, "glGetActiveUniformBlockiv");
-    glad_glGetActiveUniformName = (PFNGLGETACTIVEUNIFORMNAMEPROC) load(userptr, "glGetActiveUniformName");
-    glad_glGetActiveUniformsiv = (PFNGLGETACTIVEUNIFORMSIVPROC) load(userptr, "glGetActiveUniformsiv");
-    glad_glGetIntegeri_v = (PFNGLGETINTEGERI_VPROC) load(userptr, "glGetIntegeri_v");
-    glad_glGetUniformBlockIndex = (PFNGLGETUNIFORMBLOCKINDEXPROC) load(userptr, "glGetUniformBlockIndex");
-    glad_glGetUniformIndices = (PFNGLGETUNIFORMINDICESPROC) load(userptr, "glGetUniformIndices");
-    glad_glUniformBlockBinding = (PFNGLUNIFORMBLOCKBINDINGPROC) load(userptr, "glUniformBlockBinding");
-}
-static void glad_gl_load_GL_ARB_vertex_array_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_vertex_array_object) return;
-    glad_glBindVertexArray = (PFNGLBINDVERTEXARRAYPROC) load(userptr, "glBindVertexArray");
-    glad_glDeleteVertexArrays = (PFNGLDELETEVERTEXARRAYSPROC) load(userptr, "glDeleteVertexArrays");
-    glad_glGenVertexArrays = (PFNGLGENVERTEXARRAYSPROC) load(userptr, "glGenVertexArrays");
-    glad_glIsVertexArray = (PFNGLISVERTEXARRAYPROC) load(userptr, "glIsVertexArray");
-}
-static void glad_gl_load_GL_ARB_vertex_attrib_binding( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_vertex_attrib_binding) return;
-    glad_glBindVertexBuffer = (PFNGLBINDVERTEXBUFFERPROC) load(userptr, "glBindVertexBuffer");
-    glad_glVertexAttribBinding = (PFNGLVERTEXATTRIBBINDINGPROC) load(userptr, "glVertexAttribBinding");
-    glad_glVertexAttribFormat = (PFNGLVERTEXATTRIBFORMATPROC) load(userptr, "glVertexAttribFormat");
-    glad_glVertexAttribIFormat = (PFNGLVERTEXATTRIBIFORMATPROC) load(userptr, "glVertexAttribIFormat");
-    glad_glVertexAttribLFormat = (PFNGLVERTEXATTRIBLFORMATPROC) load(userptr, "glVertexAttribLFormat");
-    glad_glVertexBindingDivisor = (PFNGLVERTEXBINDINGDIVISORPROC) load(userptr, "glVertexBindingDivisor");
-}
-static void glad_gl_load_GL_ARB_vertex_buffer_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_vertex_buffer_object) return;
-    glad_glBindBufferARB = (PFNGLBINDBUFFERARBPROC) load(userptr, "glBindBufferARB");
-    glad_glBufferDataARB = (PFNGLBUFFERDATAARBPROC) load(userptr, "glBufferDataARB");
-    glad_glBufferSubDataARB = (PFNGLBUFFERSUBDATAARBPROC) load(userptr, "glBufferSubDataARB");
-    glad_glDeleteBuffersARB = (PFNGLDELETEBUFFERSARBPROC) load(userptr, "glDeleteBuffersARB");
-    glad_glGenBuffersARB = (PFNGLGENBUFFERSARBPROC) load(userptr, "glGenBuffersARB");
-    glad_glGetBufferParameterivARB = (PFNGLGETBUFFERPARAMETERIVARBPROC) load(userptr, "glGetBufferParameterivARB");
-    glad_glGetBufferPointervARB = (PFNGLGETBUFFERPOINTERVARBPROC) load(userptr, "glGetBufferPointervARB");
-    glad_glGetBufferSubDataARB = (PFNGLGETBUFFERSUBDATAARBPROC) load(userptr, "glGetBufferSubDataARB");
-    glad_glIsBufferARB = (PFNGLISBUFFERARBPROC) load(userptr, "glIsBufferARB");
-    glad_glMapBufferARB = (PFNGLMAPBUFFERARBPROC) load(userptr, "glMapBufferARB");
-    glad_glUnmapBufferARB = (PFNGLUNMAPBUFFERARBPROC) load(userptr, "glUnmapBufferARB");
-}
-static void glad_gl_load_GL_ARB_vertex_program( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_vertex_program) return;
-    glad_glBindProgramARB = (PFNGLBINDPROGRAMARBPROC) load(userptr, "glBindProgramARB");
-    glad_glDeleteProgramsARB = (PFNGLDELETEPROGRAMSARBPROC) load(userptr, "glDeleteProgramsARB");
-    glad_glDisableVertexAttribArrayARB = (PFNGLDISABLEVERTEXATTRIBARRAYARBPROC) load(userptr, "glDisableVertexAttribArrayARB");
-    glad_glEnableVertexAttribArrayARB = (PFNGLENABLEVERTEXATTRIBARRAYARBPROC) load(userptr, "glEnableVertexAttribArrayARB");
-    glad_glGenProgramsARB = (PFNGLGENPROGRAMSARBPROC) load(userptr, "glGenProgramsARB");
-    glad_glGetProgramEnvParameterdvARB = (PFNGLGETPROGRAMENVPARAMETERDVARBPROC) load(userptr, "glGetProgramEnvParameterdvARB");
-    glad_glGetProgramEnvParameterfvARB = (PFNGLGETPROGRAMENVPARAMETERFVARBPROC) load(userptr, "glGetProgramEnvParameterfvARB");
-    glad_glGetProgramLocalParameterdvARB = (PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC) load(userptr, "glGetProgramLocalParameterdvARB");
-    glad_glGetProgramLocalParameterfvARB = (PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC) load(userptr, "glGetProgramLocalParameterfvARB");
-    glad_glGetProgramStringARB = (PFNGLGETPROGRAMSTRINGARBPROC) load(userptr, "glGetProgramStringARB");
-    glad_glGetProgramivARB = (PFNGLGETPROGRAMIVARBPROC) load(userptr, "glGetProgramivARB");
-    glad_glGetVertexAttribPointervARB = (PFNGLGETVERTEXATTRIBPOINTERVARBPROC) load(userptr, "glGetVertexAttribPointervARB");
-    glad_glGetVertexAttribdvARB = (PFNGLGETVERTEXATTRIBDVARBPROC) load(userptr, "glGetVertexAttribdvARB");
-    glad_glGetVertexAttribfvARB = (PFNGLGETVERTEXATTRIBFVARBPROC) load(userptr, "glGetVertexAttribfvARB");
-    glad_glGetVertexAttribivARB = (PFNGLGETVERTEXATTRIBIVARBPROC) load(userptr, "glGetVertexAttribivARB");
-    glad_glIsProgramARB = (PFNGLISPROGRAMARBPROC) load(userptr, "glIsProgramARB");
-    glad_glProgramEnvParameter4dARB = (PFNGLPROGRAMENVPARAMETER4DARBPROC) load(userptr, "glProgramEnvParameter4dARB");
-    glad_glProgramEnvParameter4dvARB = (PFNGLPROGRAMENVPARAMETER4DVARBPROC) load(userptr, "glProgramEnvParameter4dvARB");
-    glad_glProgramEnvParameter4fARB = (PFNGLPROGRAMENVPARAMETER4FARBPROC) load(userptr, "glProgramEnvParameter4fARB");
-    glad_glProgramEnvParameter4fvARB = (PFNGLPROGRAMENVPARAMETER4FVARBPROC) load(userptr, "glProgramEnvParameter4fvARB");
-    glad_glProgramLocalParameter4dARB = (PFNGLPROGRAMLOCALPARAMETER4DARBPROC) load(userptr, "glProgramLocalParameter4dARB");
-    glad_glProgramLocalParameter4dvARB = (PFNGLPROGRAMLOCALPARAMETER4DVARBPROC) load(userptr, "glProgramLocalParameter4dvARB");
-    glad_glProgramLocalParameter4fARB = (PFNGLPROGRAMLOCALPARAMETER4FARBPROC) load(userptr, "glProgramLocalParameter4fARB");
-    glad_glProgramLocalParameter4fvARB = (PFNGLPROGRAMLOCALPARAMETER4FVARBPROC) load(userptr, "glProgramLocalParameter4fvARB");
-    glad_glProgramStringARB = (PFNGLPROGRAMSTRINGARBPROC) load(userptr, "glProgramStringARB");
-    glad_glVertexAttrib1dARB = (PFNGLVERTEXATTRIB1DARBPROC) load(userptr, "glVertexAttrib1dARB");
-    glad_glVertexAttrib1dvARB = (PFNGLVERTEXATTRIB1DVARBPROC) load(userptr, "glVertexAttrib1dvARB");
-    glad_glVertexAttrib1fARB = (PFNGLVERTEXATTRIB1FARBPROC) load(userptr, "glVertexAttrib1fARB");
-    glad_glVertexAttrib1fvARB = (PFNGLVERTEXATTRIB1FVARBPROC) load(userptr, "glVertexAttrib1fvARB");
-    glad_glVertexAttrib1sARB = (PFNGLVERTEXATTRIB1SARBPROC) load(userptr, "glVertexAttrib1sARB");
-    glad_glVertexAttrib1svARB = (PFNGLVERTEXATTRIB1SVARBPROC) load(userptr, "glVertexAttrib1svARB");
-    glad_glVertexAttrib2dARB = (PFNGLVERTEXATTRIB2DARBPROC) load(userptr, "glVertexAttrib2dARB");
-    glad_glVertexAttrib2dvARB = (PFNGLVERTEXATTRIB2DVARBPROC) load(userptr, "glVertexAttrib2dvARB");
-    glad_glVertexAttrib2fARB = (PFNGLVERTEXATTRIB2FARBPROC) load(userptr, "glVertexAttrib2fARB");
-    glad_glVertexAttrib2fvARB = (PFNGLVERTEXATTRIB2FVARBPROC) load(userptr, "glVertexAttrib2fvARB");
-    glad_glVertexAttrib2sARB = (PFNGLVERTEXATTRIB2SARBPROC) load(userptr, "glVertexAttrib2sARB");
-    glad_glVertexAttrib2svARB = (PFNGLVERTEXATTRIB2SVARBPROC) load(userptr, "glVertexAttrib2svARB");
-    glad_glVertexAttrib3dARB = (PFNGLVERTEXATTRIB3DARBPROC) load(userptr, "glVertexAttrib3dARB");
-    glad_glVertexAttrib3dvARB = (PFNGLVERTEXATTRIB3DVARBPROC) load(userptr, "glVertexAttrib3dvARB");
-    glad_glVertexAttrib3fARB = (PFNGLVERTEXATTRIB3FARBPROC) load(userptr, "glVertexAttrib3fARB");
-    glad_glVertexAttrib3fvARB = (PFNGLVERTEXATTRIB3FVARBPROC) load(userptr, "glVertexAttrib3fvARB");
-    glad_glVertexAttrib3sARB = (PFNGLVERTEXATTRIB3SARBPROC) load(userptr, "glVertexAttrib3sARB");
-    glad_glVertexAttrib3svARB = (PFNGLVERTEXATTRIB3SVARBPROC) load(userptr, "glVertexAttrib3svARB");
-    glad_glVertexAttrib4NbvARB = (PFNGLVERTEXATTRIB4NBVARBPROC) load(userptr, "glVertexAttrib4NbvARB");
-    glad_glVertexAttrib4NivARB = (PFNGLVERTEXATTRIB4NIVARBPROC) load(userptr, "glVertexAttrib4NivARB");
-    glad_glVertexAttrib4NsvARB = (PFNGLVERTEXATTRIB4NSVARBPROC) load(userptr, "glVertexAttrib4NsvARB");
-    glad_glVertexAttrib4NubARB = (PFNGLVERTEXATTRIB4NUBARBPROC) load(userptr, "glVertexAttrib4NubARB");
-    glad_glVertexAttrib4NubvARB = (PFNGLVERTEXATTRIB4NUBVARBPROC) load(userptr, "glVertexAttrib4NubvARB");
-    glad_glVertexAttrib4NuivARB = (PFNGLVERTEXATTRIB4NUIVARBPROC) load(userptr, "glVertexAttrib4NuivARB");
-    glad_glVertexAttrib4NusvARB = (PFNGLVERTEXATTRIB4NUSVARBPROC) load(userptr, "glVertexAttrib4NusvARB");
-    glad_glVertexAttrib4bvARB = (PFNGLVERTEXATTRIB4BVARBPROC) load(userptr, "glVertexAttrib4bvARB");
-    glad_glVertexAttrib4dARB = (PFNGLVERTEXATTRIB4DARBPROC) load(userptr, "glVertexAttrib4dARB");
-    glad_glVertexAttrib4dvARB = (PFNGLVERTEXATTRIB4DVARBPROC) load(userptr, "glVertexAttrib4dvARB");
-    glad_glVertexAttrib4fARB = (PFNGLVERTEXATTRIB4FARBPROC) load(userptr, "glVertexAttrib4fARB");
-    glad_glVertexAttrib4fvARB = (PFNGLVERTEXATTRIB4FVARBPROC) load(userptr, "glVertexAttrib4fvARB");
-    glad_glVertexAttrib4ivARB = (PFNGLVERTEXATTRIB4IVARBPROC) load(userptr, "glVertexAttrib4ivARB");
-    glad_glVertexAttrib4sARB = (PFNGLVERTEXATTRIB4SARBPROC) load(userptr, "glVertexAttrib4sARB");
-    glad_glVertexAttrib4svARB = (PFNGLVERTEXATTRIB4SVARBPROC) load(userptr, "glVertexAttrib4svARB");
-    glad_glVertexAttrib4ubvARB = (PFNGLVERTEXATTRIB4UBVARBPROC) load(userptr, "glVertexAttrib4ubvARB");
-    glad_glVertexAttrib4uivARB = (PFNGLVERTEXATTRIB4UIVARBPROC) load(userptr, "glVertexAttrib4uivARB");
-    glad_glVertexAttrib4usvARB = (PFNGLVERTEXATTRIB4USVARBPROC) load(userptr, "glVertexAttrib4usvARB");
-    glad_glVertexAttribPointerARB = (PFNGLVERTEXATTRIBPOINTERARBPROC) load(userptr, "glVertexAttribPointerARB");
-}
-static void glad_gl_load_GL_ARB_vertex_shader( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_ARB_vertex_shader) return;
-    glad_glBindAttribLocationARB = (PFNGLBINDATTRIBLOCATIONARBPROC) load(userptr, "glBindAttribLocationARB");
-    glad_glDisableVertexAttribArrayARB = (PFNGLDISABLEVERTEXATTRIBARRAYARBPROC) load(userptr, "glDisableVertexAttribArrayARB");
-    glad_glEnableVertexAttribArrayARB = (PFNGLENABLEVERTEXATTRIBARRAYARBPROC) load(userptr, "glEnableVertexAttribArrayARB");
-    glad_glGetActiveAttribARB = (PFNGLGETACTIVEATTRIBARBPROC) load(userptr, "glGetActiveAttribARB");
-    glad_glGetAttribLocationARB = (PFNGLGETATTRIBLOCATIONARBPROC) load(userptr, "glGetAttribLocationARB");
-    glad_glGetVertexAttribPointervARB = (PFNGLGETVERTEXATTRIBPOINTERVARBPROC) load(userptr, "glGetVertexAttribPointervARB");
-    glad_glGetVertexAttribdvARB = (PFNGLGETVERTEXATTRIBDVARBPROC) load(userptr, "glGetVertexAttribdvARB");
-    glad_glGetVertexAttribfvARB = (PFNGLGETVERTEXATTRIBFVARBPROC) load(userptr, "glGetVertexAttribfvARB");
-    glad_glGetVertexAttribivARB = (PFNGLGETVERTEXATTRIBIVARBPROC) load(userptr, "glGetVertexAttribivARB");
-    glad_glVertexAttrib1dARB = (PFNGLVERTEXATTRIB1DARBPROC) load(userptr, "glVertexAttrib1dARB");
-    glad_glVertexAttrib1dvARB = (PFNGLVERTEXATTRIB1DVARBPROC) load(userptr, "glVertexAttrib1dvARB");
-    glad_glVertexAttrib1fARB = (PFNGLVERTEXATTRIB1FARBPROC) load(userptr, "glVertexAttrib1fARB");
-    glad_glVertexAttrib1fvARB = (PFNGLVERTEXATTRIB1FVARBPROC) load(userptr, "glVertexAttrib1fvARB");
-    glad_glVertexAttrib1sARB = (PFNGLVERTEXATTRIB1SARBPROC) load(userptr, "glVertexAttrib1sARB");
-    glad_glVertexAttrib1svARB = (PFNGLVERTEXATTRIB1SVARBPROC) load(userptr, "glVertexAttrib1svARB");
-    glad_glVertexAttrib2dARB = (PFNGLVERTEXATTRIB2DARBPROC) load(userptr, "glVertexAttrib2dARB");
-    glad_glVertexAttrib2dvARB = (PFNGLVERTEXATTRIB2DVARBPROC) load(userptr, "glVertexAttrib2dvARB");
-    glad_glVertexAttrib2fARB = (PFNGLVERTEXATTRIB2FARBPROC) load(userptr, "glVertexAttrib2fARB");
-    glad_glVertexAttrib2fvARB = (PFNGLVERTEXATTRIB2FVARBPROC) load(userptr, "glVertexAttrib2fvARB");
-    glad_glVertexAttrib2sARB = (PFNGLVERTEXATTRIB2SARBPROC) load(userptr, "glVertexAttrib2sARB");
-    glad_glVertexAttrib2svARB = (PFNGLVERTEXATTRIB2SVARBPROC) load(userptr, "glVertexAttrib2svARB");
-    glad_glVertexAttrib3dARB = (PFNGLVERTEXATTRIB3DARBPROC) load(userptr, "glVertexAttrib3dARB");
-    glad_glVertexAttrib3dvARB = (PFNGLVERTEXATTRIB3DVARBPROC) load(userptr, "glVertexAttrib3dvARB");
-    glad_glVertexAttrib3fARB = (PFNGLVERTEXATTRIB3FARBPROC) load(userptr, "glVertexAttrib3fARB");
-    glad_glVertexAttrib3fvARB = (PFNGLVERTEXATTRIB3FVARBPROC) load(userptr, "glVertexAttrib3fvARB");
-    glad_glVertexAttrib3sARB = (PFNGLVERTEXATTRIB3SARBPROC) load(userptr, "glVertexAttrib3sARB");
-    glad_glVertexAttrib3svARB = (PFNGLVERTEXATTRIB3SVARBPROC) load(userptr, "glVertexAttrib3svARB");
-    glad_glVertexAttrib4NbvARB = (PFNGLVERTEXATTRIB4NBVARBPROC) load(userptr, "glVertexAttrib4NbvARB");
-    glad_glVertexAttrib4NivARB = (PFNGLVERTEXATTRIB4NIVARBPROC) load(userptr, "glVertexAttrib4NivARB");
-    glad_glVertexAttrib4NsvARB = (PFNGLVERTEXATTRIB4NSVARBPROC) load(userptr, "glVertexAttrib4NsvARB");
-    glad_glVertexAttrib4NubARB = (PFNGLVERTEXATTRIB4NUBARBPROC) load(userptr, "glVertexAttrib4NubARB");
-    glad_glVertexAttrib4NubvARB = (PFNGLVERTEXATTRIB4NUBVARBPROC) load(userptr, "glVertexAttrib4NubvARB");
-    glad_glVertexAttrib4NuivARB = (PFNGLVERTEXATTRIB4NUIVARBPROC) load(userptr, "glVertexAttrib4NuivARB");
-    glad_glVertexAttrib4NusvARB = (PFNGLVERTEXATTRIB4NUSVARBPROC) load(userptr, "glVertexAttrib4NusvARB");
-    glad_glVertexAttrib4bvARB = (PFNGLVERTEXATTRIB4BVARBPROC) load(userptr, "glVertexAttrib4bvARB");
-    glad_glVertexAttrib4dARB = (PFNGLVERTEXATTRIB4DARBPROC) load(userptr, "glVertexAttrib4dARB");
-    glad_glVertexAttrib4dvARB = (PFNGLVERTEXATTRIB4DVARBPROC) load(userptr, "glVertexAttrib4dvARB");
-    glad_glVertexAttrib4fARB = (PFNGLVERTEXATTRIB4FARBPROC) load(userptr, "glVertexAttrib4fARB");
-    glad_glVertexAttrib4fvARB = (PFNGLVERTEXATTRIB4FVARBPROC) load(userptr, "glVertexAttrib4fvARB");
-    glad_glVertexAttrib4ivARB = (PFNGLVERTEXATTRIB4IVARBPROC) load(userptr, "glVertexAttrib4ivARB");
-    glad_glVertexAttrib4sARB = (PFNGLVERTEXATTRIB4SARBPROC) load(userptr, "glVertexAttrib4sARB");
-    glad_glVertexAttrib4svARB = (PFNGLVERTEXATTRIB4SVARBPROC) load(userptr, "glVertexAttrib4svARB");
-    glad_glVertexAttrib4ubvARB = (PFNGLVERTEXATTRIB4UBVARBPROC) load(userptr, "glVertexAttrib4ubvARB");
-    glad_glVertexAttrib4uivARB = (PFNGLVERTEXATTRIB4UIVARBPROC) load(userptr, "glVertexAttrib4uivARB");
-    glad_glVertexAttrib4usvARB = (PFNGLVERTEXATTRIB4USVARBPROC) load(userptr, "glVertexAttrib4usvARB");
-    glad_glVertexAttribPointerARB = (PFNGLVERTEXATTRIBPOINTERARBPROC) load(userptr, "glVertexAttribPointerARB");
-}
-static void glad_gl_load_GL_EXT_draw_instanced( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_EXT_draw_instanced) return;
-    glad_glDrawArraysInstancedEXT = (PFNGLDRAWARRAYSINSTANCEDEXTPROC) load(userptr, "glDrawArraysInstancedEXT");
-    glad_glDrawElementsInstancedEXT = (PFNGLDRAWELEMENTSINSTANCEDEXTPROC) load(userptr, "glDrawElementsInstancedEXT");
-}
-static void glad_gl_load_GL_EXT_fog_coord( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_EXT_fog_coord) return;
-    glad_glFogCoordPointerEXT = (PFNGLFOGCOORDPOINTEREXTPROC) load(userptr, "glFogCoordPointerEXT");
-    glad_glFogCoorddEXT = (PFNGLFOGCOORDDEXTPROC) load(userptr, "glFogCoorddEXT");
-    glad_glFogCoorddvEXT = (PFNGLFOGCOORDDVEXTPROC) load(userptr, "glFogCoorddvEXT");
-    glad_glFogCoordfEXT = (PFNGLFOGCOORDFEXTPROC) load(userptr, "glFogCoordfEXT");
-    glad_glFogCoordfvEXT = (PFNGLFOGCOORDFVEXTPROC) load(userptr, "glFogCoordfvEXT");
-}
-static void glad_gl_load_GL_EXT_framebuffer_blit( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_EXT_framebuffer_blit) return;
-    glad_glBlitFramebufferEXT = (PFNGLBLITFRAMEBUFFEREXTPROC) load(userptr, "glBlitFramebufferEXT");
-}
-static void glad_gl_load_GL_EXT_framebuffer_multisample( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_EXT_framebuffer_multisample) return;
-    glad_glRenderbufferStorageMultisampleEXT = (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC) load(userptr, "glRenderbufferStorageMultisampleEXT");
-}
-static void glad_gl_load_GL_EXT_framebuffer_object( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_EXT_framebuffer_object) return;
-    glad_glBindFramebufferEXT = (PFNGLBINDFRAMEBUFFEREXTPROC) load(userptr, "glBindFramebufferEXT");
-    glad_glBindRenderbufferEXT = (PFNGLBINDRENDERBUFFEREXTPROC) load(userptr, "glBindRenderbufferEXT");
-    glad_glCheckFramebufferStatusEXT = (PFNGLCHECKFRAMEBUFFERSTATUSEXTPROC) load(userptr, "glCheckFramebufferStatusEXT");
-    glad_glDeleteFramebuffersEXT = (PFNGLDELETEFRAMEBUFFERSEXTPROC) load(userptr, "glDeleteFramebuffersEXT");
-    glad_glDeleteRenderbuffersEXT = (PFNGLDELETERENDERBUFFERSEXTPROC) load(userptr, "glDeleteRenderbuffersEXT");
-    glad_glFramebufferRenderbufferEXT = (PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC) load(userptr, "glFramebufferRenderbufferEXT");
-    glad_glFramebufferTexture1DEXT = (PFNGLFRAMEBUFFERTEXTURE1DEXTPROC) load(userptr, "glFramebufferTexture1DEXT");
-    glad_glFramebufferTexture2DEXT = (PFNGLFRAMEBUFFERTEXTURE2DEXTPROC) load(userptr, "glFramebufferTexture2DEXT");
-    glad_glFramebufferTexture3DEXT = (PFNGLFRAMEBUFFERTEXTURE3DEXTPROC) load(userptr, "glFramebufferTexture3DEXT");
-    glad_glGenFramebuffersEXT = (PFNGLGENFRAMEBUFFERSEXTPROC) load(userptr, "glGenFramebuffersEXT");
-    glad_glGenRenderbuffersEXT = (PFNGLGENRENDERBUFFERSEXTPROC) load(userptr, "glGenRenderbuffersEXT");
-    glad_glGenerateMipmapEXT = (PFNGLGENERATEMIPMAPEXTPROC) load(userptr, "glGenerateMipmapEXT");
-    glad_glGetFramebufferAttachmentParameterivEXT = (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC) load(userptr, "glGetFramebufferAttachmentParameterivEXT");
-    glad_glGetRenderbufferParameterivEXT = (PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC) load(userptr, "glGetRenderbufferParameterivEXT");
-    glad_glIsFramebufferEXT = (PFNGLISFRAMEBUFFEREXTPROC) load(userptr, "glIsFramebufferEXT");
-    glad_glIsRenderbufferEXT = (PFNGLISRENDERBUFFEREXTPROC) load(userptr, "glIsRenderbufferEXT");
-    glad_glRenderbufferStorageEXT = (PFNGLRENDERBUFFERSTORAGEEXTPROC) load(userptr, "glRenderbufferStorageEXT");
-}
-static void glad_gl_load_GL_OES_fixed_point( GLADuserptrloadfunc load, void* userptr) {
-    if(!GLAD_GL_OES_fixed_point) return;
-    glad_glAccumxOES = (PFNGLACCUMXOESPROC) load(userptr, "glAccumxOES");
-    glad_glAlphaFuncxOES = (PFNGLALPHAFUNCXOESPROC) load(userptr, "glAlphaFuncxOES");
-    glad_glBitmapxOES = (PFNGLBITMAPXOESPROC) load(userptr, "glBitmapxOES");
-    glad_glBlendColorxOES = (PFNGLBLENDCOLORXOESPROC) load(userptr, "glBlendColorxOES");
-    glad_glClearAccumxOES = (PFNGLCLEARACCUMXOESPROC) load(userptr, "glClearAccumxOES");
-    glad_glClearColorxOES = (PFNGLCLEARCOLORXOESPROC) load(userptr, "glClearColorxOES");
-    glad_glClearDepthxOES = (PFNGLCLEARDEPTHXOESPROC) load(userptr, "glClearDepthxOES");
-    glad_glClipPlanexOES = (PFNGLCLIPPLANEXOESPROC) load(userptr, "glClipPlanexOES");
-    glad_glColor3xOES = (PFNGLCOLOR3XOESPROC) load(userptr, "glColor3xOES");
-    glad_glColor3xvOES = (PFNGLCOLOR3XVOESPROC) load(userptr, "glColor3xvOES");
-    glad_glColor4xOES = (PFNGLCOLOR4XOESPROC) load(userptr, "glColor4xOES");
-    glad_glColor4xvOES = (PFNGLCOLOR4XVOESPROC) load(userptr, "glColor4xvOES");
-    glad_glConvolutionParameterxOES = (PFNGLCONVOLUTIONPARAMETERXOESPROC) load(userptr, "glConvolutionParameterxOES");
-    glad_glConvolutionParameterxvOES = (PFNGLCONVOLUTIONPARAMETERXVOESPROC) load(userptr, "glConvolutionParameterxvOES");
-    glad_glDepthRangexOES = (PFNGLDEPTHRANGEXOESPROC) load(userptr, "glDepthRangexOES");
-    glad_glEvalCoord1xOES = (PFNGLEVALCOORD1XOESPROC) load(userptr, "glEvalCoord1xOES");
-    glad_glEvalCoord1xvOES = (PFNGLEVALCOORD1XVOESPROC) load(userptr, "glEvalCoord1xvOES");
-    glad_glEvalCoord2xOES = (PFNGLEVALCOORD2XOESPROC) load(userptr, "glEvalCoord2xOES");
-    glad_glEvalCoord2xvOES = (PFNGLEVALCOORD2XVOESPROC) load(userptr, "glEvalCoord2xvOES");
-    glad_glFeedbackBufferxOES = (PFNGLFEEDBACKBUFFERXOESPROC) load(userptr, "glFeedbackBufferxOES");
-    glad_glFogxOES = (PFNGLFOGXOESPROC) load(userptr, "glFogxOES");
-    glad_glFogxvOES = (PFNGLFOGXVOESPROC) load(userptr, "glFogxvOES");
-    glad_glFrustumxOES = (PFNGLFRUSTUMXOESPROC) load(userptr, "glFrustumxOES");
-    glad_glGetClipPlanexOES = (PFNGLGETCLIPPLANEXOESPROC) load(userptr, "glGetClipPlanexOES");
-    glad_glGetConvolutionParameterxvOES = (PFNGLGETCONVOLUTIONPARAMETERXVOESPROC) load(userptr, "glGetConvolutionParameterxvOES");
-    glad_glGetFixedvOES = (PFNGLGETFIXEDVOESPROC) load(userptr, "glGetFixedvOES");
-    glad_glGetHistogramParameterxvOES = (PFNGLGETHISTOGRAMPARAMETERXVOESPROC) load(userptr, "glGetHistogramParameterxvOES");
-    glad_glGetLightxOES = (PFNGLGETLIGHTXOESPROC) load(userptr, "glGetLightxOES");
-    glad_glGetMapxvOES = (PFNGLGETMAPXVOESPROC) load(userptr, "glGetMapxvOES");
-    glad_glGetMaterialxOES = (PFNGLGETMATERIALXOESPROC) load(userptr, "glGetMaterialxOES");
-    glad_glGetPixelMapxv = (PFNGLGETPIXELMAPXVPROC) load(userptr, "glGetPixelMapxv");
-    glad_glGetTexEnvxvOES = (PFNGLGETTEXENVXVOESPROC) load(userptr, "glGetTexEnvxvOES");
-    glad_glGetTexGenxvOES = (PFNGLGETTEXGENXVOESPROC) load(userptr, "glGetTexGenxvOES");
-    glad_glGetTexLevelParameterxvOES = (PFNGLGETTEXLEVELPARAMETERXVOESPROC) load(userptr, "glGetTexLevelParameterxvOES");
-    glad_glGetTexParameterxvOES = (PFNGLGETTEXPARAMETERXVOESPROC) load(userptr, "glGetTexParameterxvOES");
-    glad_glIndexxOES = (PFNGLINDEXXOESPROC) load(userptr, "glIndexxOES");
-    glad_glIndexxvOES = (PFNGLINDEXXVOESPROC) load(userptr, "glIndexxvOES");
-    glad_glLightModelxOES = (PFNGLLIGHTMODELXOESPROC) load(userptr, "glLightModelxOES");
-    glad_glLightModelxvOES = (PFNGLLIGHTMODELXVOESPROC) load(userptr, "glLightModelxvOES");
-    glad_glLightxOES = (PFNGLLIGHTXOESPROC) load(userptr, "glLightxOES");
-    glad_glLightxvOES = (PFNGLLIGHTXVOESPROC) load(userptr, "glLightxvOES");
-    glad_glLineWidthxOES = (PFNGLLINEWIDTHXOESPROC) load(userptr, "glLineWidthxOES");
-    glad_glLoadMatrixxOES = (PFNGLLOADMATRIXXOESPROC) load(userptr, "glLoadMatrixxOES");
-    glad_glLoadTransposeMatrixxOES = (PFNGLLOADTRANSPOSEMATRIXXOESPROC) load(userptr, "glLoadTransposeMatrixxOES");
-    glad_glMap1xOES = (PFNGLMAP1XOESPROC) load(userptr, "glMap1xOES");
-    glad_glMap2xOES = (PFNGLMAP2XOESPROC) load(userptr, "glMap2xOES");
-    glad_glMapGrid1xOES = (PFNGLMAPGRID1XOESPROC) load(userptr, "glMapGrid1xOES");
-    glad_glMapGrid2xOES = (PFNGLMAPGRID2XOESPROC) load(userptr, "glMapGrid2xOES");
-    glad_glMaterialxOES = (PFNGLMATERIALXOESPROC) load(userptr, "glMaterialxOES");
-    glad_glMaterialxvOES = (PFNGLMATERIALXVOESPROC) load(userptr, "glMaterialxvOES");
-    glad_glMultMatrixxOES = (PFNGLMULTMATRIXXOESPROC) load(userptr, "glMultMatrixxOES");
-    glad_glMultTransposeMatrixxOES = (PFNGLMULTTRANSPOSEMATRIXXOESPROC) load(userptr, "glMultTransposeMatrixxOES");
-    glad_glMultiTexCoord1xOES = (PFNGLMULTITEXCOORD1XOESPROC) load(userptr, "glMultiTexCoord1xOES");
-    glad_glMultiTexCoord1xvOES = (PFNGLMULTITEXCOORD1XVOESPROC) load(userptr, "glMultiTexCoord1xvOES");
-    glad_glMultiTexCoord2xOES = (PFNGLMULTITEXCOORD2XOESPROC) load(userptr, "glMultiTexCoord2xOES");
-    glad_glMultiTexCoord2xvOES = (PFNGLMULTITEXCOORD2XVOESPROC) load(userptr, "glMultiTexCoord2xvOES");
-    glad_glMultiTexCoord3xOES = (PFNGLMULTITEXCOORD3XOESPROC) load(userptr, "glMultiTexCoord3xOES");
-    glad_glMultiTexCoord3xvOES = (PFNGLMULTITEXCOORD3XVOESPROC) load(userptr, "glMultiTexCoord3xvOES");
-    glad_glMultiTexCoord4xOES = (PFNGLMULTITEXCOORD4XOESPROC) load(userptr, "glMultiTexCoord4xOES");
-    glad_glMultiTexCoord4xvOES = (PFNGLMULTITEXCOORD4XVOESPROC) load(userptr, "glMultiTexCoord4xvOES");
-    glad_glNormal3xOES = (PFNGLNORMAL3XOESPROC) load(userptr, "glNormal3xOES");
-    glad_glNormal3xvOES = (PFNGLNORMAL3XVOESPROC) load(userptr, "glNormal3xvOES");
-    glad_glOrthoxOES = (PFNGLORTHOXOESPROC) load(userptr, "glOrthoxOES");
-    glad_glPassThroughxOES = (PFNGLPASSTHROUGHXOESPROC) load(userptr, "glPassThroughxOES");
-    glad_glPixelMapx = (PFNGLPIXELMAPXPROC) load(userptr, "glPixelMapx");
-    glad_glPixelStorex = (PFNGLPIXELSTOREXPROC) load(userptr, "glPixelStorex");
-    glad_glPixelTransferxOES = (PFNGLPIXELTRANSFERXOESPROC) load(userptr, "glPixelTransferxOES");
-    glad_glPixelZoomxOES = (PFNGLPIXELZOOMXOESPROC) load(userptr, "glPixelZoomxOES");
-    glad_glPointParameterxvOES = (PFNGLPOINTPARAMETERXVOESPROC) load(userptr, "glPointParameterxvOES");
-    glad_glPointSizexOES = (PFNGLPOINTSIZEXOESPROC) load(userptr, "glPointSizexOES");
-    glad_glPolygonOffsetxOES = (PFNGLPOLYGONOFFSETXOESPROC) load(userptr, "glPolygonOffsetxOES");
-    glad_glPrioritizeTexturesxOES = (PFNGLPRIORITIZETEXTURESXOESPROC) load(userptr, "glPrioritizeTexturesxOES");
-    glad_glRasterPos2xOES = (PFNGLRASTERPOS2XOESPROC) load(userptr, "glRasterPos2xOES");
-    glad_glRasterPos2xvOES = (PFNGLRASTERPOS2XVOESPROC) load(userptr, "glRasterPos2xvOES");
-    glad_glRasterPos3xOES = (PFNGLRASTERPOS3XOESPROC) load(userptr, "glRasterPos3xOES");
-    glad_glRasterPos3xvOES = (PFNGLRASTERPOS3XVOESPROC) load(userptr, "glRasterPos3xvOES");
-    glad_glRasterPos4xOES = (PFNGLRASTERPOS4XOESPROC) load(userptr, "glRasterPos4xOES");
-    glad_glRasterPos4xvOES = (PFNGLRASTERPOS4XVOESPROC) load(userptr, "glRasterPos4xvOES");
-    glad_glRectxOES = (PFNGLRECTXOESPROC) load(userptr, "glRectxOES");
-    glad_glRectxvOES = (PFNGLRECTXVOESPROC) load(userptr, "glRectxvOES");
-    glad_glRotatexOES = (PFNGLROTATEXOESPROC) load(userptr, "glRotatexOES");
-    glad_glScalexOES = (PFNGLSCALEXOESPROC) load(userptr, "glScalexOES");
-    glad_glTexCoord1xOES = (PFNGLTEXCOORD1XOESPROC) load(userptr, "glTexCoord1xOES");
-    glad_glTexCoord1xvOES = (PFNGLTEXCOORD1XVOESPROC) load(userptr, "glTexCoord1xvOES");
-    glad_glTexCoord2xOES = (PFNGLTEXCOORD2XOESPROC) load(userptr, "glTexCoord2xOES");
-    glad_glTexCoord2xvOES = (PFNGLTEXCOORD2XVOESPROC) load(userptr, "glTexCoord2xvOES");
-    glad_glTexCoord3xOES = (PFNGLTEXCOORD3XOESPROC) load(userptr, "glTexCoord3xOES");
-    glad_glTexCoord3xvOES = (PFNGLTEXCOORD3XVOESPROC) load(userptr, "glTexCoord3xvOES");
-    glad_glTexCoord4xOES = (PFNGLTEXCOORD4XOESPROC) load(userptr, "glTexCoord4xOES");
-    glad_glTexCoord4xvOES = (PFNGLTEXCOORD4XVOESPROC) load(userptr, "glTexCoord4xvOES");
-    glad_glTexEnvxOES = (PFNGLTEXENVXOESPROC) load(userptr, "glTexEnvxOES");
-    glad_glTexEnvxvOES = (PFNGLTEXENVXVOESPROC) load(userptr, "glTexEnvxvOES");
-    glad_glTexGenxOES = (PFNGLTEXGENXOESPROC) load(userptr, "glTexGenxOES");
-    glad_glTexGenxvOES = (PFNGLTEXGENXVOESPROC) load(userptr, "glTexGenxvOES");
-    glad_glTexParameterxOES = (PFNGLTEXPARAMETERXOESPROC) load(userptr, "glTexParameterxOES");
-    glad_glTexParameterxvOES = (PFNGLTEXPARAMETERXVOESPROC) load(userptr, "glTexParameterxvOES");
-    glad_glTranslatexOES = (PFNGLTRANSLATEXOESPROC) load(userptr, "glTranslatexOES");
-    glad_glVertex2xOES = (PFNGLVERTEX2XOESPROC) load(userptr, "glVertex2xOES");
-    glad_glVertex2xvOES = (PFNGLVERTEX2XVOESPROC) load(userptr, "glVertex2xvOES");
-    glad_glVertex3xOES = (PFNGLVERTEX3XOESPROC) load(userptr, "glVertex3xOES");
-    glad_glVertex3xvOES = (PFNGLVERTEX3XVOESPROC) load(userptr, "glVertex3xvOES");
-    glad_glVertex4xOES = (PFNGLVERTEX4XOESPROC) load(userptr, "glVertex4xOES");
-    glad_glVertex4xvOES = (PFNGLVERTEX4XVOESPROC) load(userptr, "glVertex4xvOES");
-}
-
-
+static void glad_gl_load_GL_VERSION_1_0(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_1_0) return;
+  glad_glBlendFunc = (PFNGLBLENDFUNCPROC)load(userptr, "glBlendFunc");
+  glad_glClear = (PFNGLCLEARPROC)load(userptr, "glClear");
+  glad_glClearColor = (PFNGLCLEARCOLORPROC)load(userptr, "glClearColor");
+  glad_glClearDepth = (PFNGLCLEARDEPTHPROC)load(userptr, "glClearDepth");
+  glad_glClearStencil = (PFNGLCLEARSTENCILPROC)load(userptr, "glClearStencil");
+  glad_glColorMask = (PFNGLCOLORMASKPROC)load(userptr, "glColorMask");
+  glad_glCullFace = (PFNGLCULLFACEPROC)load(userptr, "glCullFace");
+  glad_glDepthFunc = (PFNGLDEPTHFUNCPROC)load(userptr, "glDepthFunc");
+  glad_glDepthMask = (PFNGLDEPTHMASKPROC)load(userptr, "glDepthMask");
+  glad_glDepthRange = (PFNGLDEPTHRANGEPROC)load(userptr, "glDepthRange");
+  glad_glDisable = (PFNGLDISABLEPROC)load(userptr, "glDisable");
+  glad_glDrawBuffer = (PFNGLDRAWBUFFERPROC)load(userptr, "glDrawBuffer");
+  glad_glEnable = (PFNGLENABLEPROC)load(userptr, "glEnable");
+  glad_glFinish = (PFNGLFINISHPROC)load(userptr, "glFinish");
+  glad_glFlush = (PFNGLFLUSHPROC)load(userptr, "glFlush");
+  glad_glFrontFace = (PFNGLFRONTFACEPROC)load(userptr, "glFrontFace");
+  glad_glGetBooleanv = (PFNGLGETBOOLEANVPROC)load(userptr, "glGetBooleanv");
+  glad_glGetDoublev = (PFNGLGETDOUBLEVPROC)load(userptr, "glGetDoublev");
+  glad_glGetError = (PFNGLGETERRORPROC)load(userptr, "glGetError");
+  glad_glGetFloatv = (PFNGLGETFLOATVPROC)load(userptr, "glGetFloatv");
+  glad_glGetIntegerv = (PFNGLGETINTEGERVPROC)load(userptr, "glGetIntegerv");
+  glad_glGetString = (PFNGLGETSTRINGPROC)load(userptr, "glGetString");
+  glad_glGetTexImage = (PFNGLGETTEXIMAGEPROC)load(userptr, "glGetTexImage");
+  glad_glGetTexLevelParameterfv = (PFNGLGETTEXLEVELPARAMETERFVPROC)load(
+      userptr, "glGetTexLevelParameterfv");
+  glad_glGetTexLevelParameteriv = (PFNGLGETTEXLEVELPARAMETERIVPROC)load(
+      userptr, "glGetTexLevelParameteriv");
+  glad_glGetTexParameterfv =
+      (PFNGLGETTEXPARAMETERFVPROC)load(userptr, "glGetTexParameterfv");
+  glad_glGetTexParameteriv =
+      (PFNGLGETTEXPARAMETERIVPROC)load(userptr, "glGetTexParameteriv");
+  glad_glHint = (PFNGLHINTPROC)load(userptr, "glHint");
+  glad_glIsEnabled = (PFNGLISENABLEDPROC)load(userptr, "glIsEnabled");
+  glad_glLineWidth = (PFNGLLINEWIDTHPROC)load(userptr, "glLineWidth");
+  glad_glLogicOp = (PFNGLLOGICOPPROC)load(userptr, "glLogicOp");
+  glad_glPixelStoref = (PFNGLPIXELSTOREFPROC)load(userptr, "glPixelStoref");
+  glad_glPixelStorei = (PFNGLPIXELSTOREIPROC)load(userptr, "glPixelStorei");
+  glad_glPointSize = (PFNGLPOINTSIZEPROC)load(userptr, "glPointSize");
+  glad_glPolygonMode = (PFNGLPOLYGONMODEPROC)load(userptr, "glPolygonMode");
+  glad_glReadBuffer = (PFNGLREADBUFFERPROC)load(userptr, "glReadBuffer");
+  glad_glReadPixels = (PFNGLREADPIXELSPROC)load(userptr, "glReadPixels");
+  glad_glScissor = (PFNGLSCISSORPROC)load(userptr, "glScissor");
+  glad_glStencilFunc = (PFNGLSTENCILFUNCPROC)load(userptr, "glStencilFunc");
+  glad_glStencilMask = (PFNGLSTENCILMASKPROC)load(userptr, "glStencilMask");
+  glad_glStencilOp = (PFNGLSTENCILOPPROC)load(userptr, "glStencilOp");
+  glad_glTexImage1D = (PFNGLTEXIMAGE1DPROC)load(userptr, "glTexImage1D");
+  glad_glTexImage2D = (PFNGLTEXIMAGE2DPROC)load(userptr, "glTexImage2D");
+  glad_glTexParameterf =
+      (PFNGLTEXPARAMETERFPROC)load(userptr, "glTexParameterf");
+  glad_glTexParameterfv =
+      (PFNGLTEXPARAMETERFVPROC)load(userptr, "glTexParameterfv");
+  glad_glTexParameteri =
+      (PFNGLTEXPARAMETERIPROC)load(userptr, "glTexParameteri");
+  glad_glTexParameteriv =
+      (PFNGLTEXPARAMETERIVPROC)load(userptr, "glTexParameteriv");
+  glad_glViewport = (PFNGLVIEWPORTPROC)load(userptr, "glViewport");
+}
+static void glad_gl_load_GL_VERSION_1_1(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_1_1) return;
+  glad_glBindTexture = (PFNGLBINDTEXTUREPROC)load(userptr, "glBindTexture");
+  glad_glCopyTexImage1D =
+      (PFNGLCOPYTEXIMAGE1DPROC)load(userptr, "glCopyTexImage1D");
+  glad_glCopyTexImage2D =
+      (PFNGLCOPYTEXIMAGE2DPROC)load(userptr, "glCopyTexImage2D");
+  glad_glCopyTexSubImage1D =
+      (PFNGLCOPYTEXSUBIMAGE1DPROC)load(userptr, "glCopyTexSubImage1D");
+  glad_glCopyTexSubImage2D =
+      (PFNGLCOPYTEXSUBIMAGE2DPROC)load(userptr, "glCopyTexSubImage2D");
+  glad_glDeleteTextures =
+      (PFNGLDELETETEXTURESPROC)load(userptr, "glDeleteTextures");
+  glad_glDrawArrays = (PFNGLDRAWARRAYSPROC)load(userptr, "glDrawArrays");
+  glad_glDrawElements = (PFNGLDRAWELEMENTSPROC)load(userptr, "glDrawElements");
+  glad_glGenTextures = (PFNGLGENTEXTURESPROC)load(userptr, "glGenTextures");
+  glad_glGetPointerv = (PFNGLGETPOINTERVPROC)load(userptr, "glGetPointerv");
+  glad_glIsTexture = (PFNGLISTEXTUREPROC)load(userptr, "glIsTexture");
+  glad_glPolygonOffset =
+      (PFNGLPOLYGONOFFSETPROC)load(userptr, "glPolygonOffset");
+  glad_glTexSubImage1D =
+      (PFNGLTEXSUBIMAGE1DPROC)load(userptr, "glTexSubImage1D");
+  glad_glTexSubImage2D =
+      (PFNGLTEXSUBIMAGE2DPROC)load(userptr, "glTexSubImage2D");
+}
+static void glad_gl_load_GL_VERSION_1_2(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_1_2) return;
+  glad_glCopyTexSubImage3D =
+      (PFNGLCOPYTEXSUBIMAGE3DPROC)load(userptr, "glCopyTexSubImage3D");
+  glad_glDrawRangeElements =
+      (PFNGLDRAWRANGEELEMENTSPROC)load(userptr, "glDrawRangeElements");
+  glad_glTexImage3D = (PFNGLTEXIMAGE3DPROC)load(userptr, "glTexImage3D");
+  glad_glTexSubImage3D =
+      (PFNGLTEXSUBIMAGE3DPROC)load(userptr, "glTexSubImage3D");
+}
+static void glad_gl_load_GL_VERSION_1_3(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_1_3) return;
+  glad_glActiveTexture =
+      (PFNGLACTIVETEXTUREPROC)load(userptr, "glActiveTexture");
+  glad_glCompressedTexImage1D =
+      (PFNGLCOMPRESSEDTEXIMAGE1DPROC)load(userptr, "glCompressedTexImage1D");
+  glad_glCompressedTexImage2D =
+      (PFNGLCOMPRESSEDTEXIMAGE2DPROC)load(userptr, "glCompressedTexImage2D");
+  glad_glCompressedTexImage3D =
+      (PFNGLCOMPRESSEDTEXIMAGE3DPROC)load(userptr, "glCompressedTexImage3D");
+  glad_glCompressedTexSubImage1D = (PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC)load(
+      userptr, "glCompressedTexSubImage1D");
+  glad_glCompressedTexSubImage2D = (PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC)load(
+      userptr, "glCompressedTexSubImage2D");
+  glad_glCompressedTexSubImage3D = (PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC)load(
+      userptr, "glCompressedTexSubImage3D");
+  glad_glGetCompressedTexImage =
+      (PFNGLGETCOMPRESSEDTEXIMAGEPROC)load(userptr, "glGetCompressedTexImage");
+  glad_glSampleCoverage =
+      (PFNGLSAMPLECOVERAGEPROC)load(userptr, "glSampleCoverage");
+}
+static void glad_gl_load_GL_VERSION_1_4(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_1_4) return;
+  glad_glBlendColor = (PFNGLBLENDCOLORPROC)load(userptr, "glBlendColor");
+  glad_glBlendEquation =
+      (PFNGLBLENDEQUATIONPROC)load(userptr, "glBlendEquation");
+  glad_glBlendFuncSeparate =
+      (PFNGLBLENDFUNCSEPARATEPROC)load(userptr, "glBlendFuncSeparate");
+  glad_glMultiDrawArrays =
+      (PFNGLMULTIDRAWARRAYSPROC)load(userptr, "glMultiDrawArrays");
+  glad_glMultiDrawElements =
+      (PFNGLMULTIDRAWELEMENTSPROC)load(userptr, "glMultiDrawElements");
+  glad_glPointParameterf =
+      (PFNGLPOINTPARAMETERFPROC)load(userptr, "glPointParameterf");
+  glad_glPointParameterfv =
+      (PFNGLPOINTPARAMETERFVPROC)load(userptr, "glPointParameterfv");
+  glad_glPointParameteri =
+      (PFNGLPOINTPARAMETERIPROC)load(userptr, "glPointParameteri");
+  glad_glPointParameteriv =
+      (PFNGLPOINTPARAMETERIVPROC)load(userptr, "glPointParameteriv");
+}
+static void glad_gl_load_GL_VERSION_1_5(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_1_5) return;
+  glad_glBeginQuery = (PFNGLBEGINQUERYPROC)load(userptr, "glBeginQuery");
+  glad_glBindBuffer = (PFNGLBINDBUFFERPROC)load(userptr, "glBindBuffer");
+  glad_glBufferData = (PFNGLBUFFERDATAPROC)load(userptr, "glBufferData");
+  glad_glBufferSubData =
+      (PFNGLBUFFERSUBDATAPROC)load(userptr, "glBufferSubData");
+  glad_glDeleteBuffers =
+      (PFNGLDELETEBUFFERSPROC)load(userptr, "glDeleteBuffers");
+  glad_glDeleteQueries =
+      (PFNGLDELETEQUERIESPROC)load(userptr, "glDeleteQueries");
+  glad_glEndQuery = (PFNGLENDQUERYPROC)load(userptr, "glEndQuery");
+  glad_glGenBuffers = (PFNGLGENBUFFERSPROC)load(userptr, "glGenBuffers");
+  glad_glGenQueries = (PFNGLGENQUERIESPROC)load(userptr, "glGenQueries");
+  glad_glGetBufferParameteriv =
+      (PFNGLGETBUFFERPARAMETERIVPROC)load(userptr, "glGetBufferParameteriv");
+  glad_glGetBufferPointerv =
+      (PFNGLGETBUFFERPOINTERVPROC)load(userptr, "glGetBufferPointerv");
+  glad_glGetBufferSubData =
+      (PFNGLGETBUFFERSUBDATAPROC)load(userptr, "glGetBufferSubData");
+  glad_glGetQueryObjectiv =
+      (PFNGLGETQUERYOBJECTIVPROC)load(userptr, "glGetQueryObjectiv");
+  glad_glGetQueryObjectuiv =
+      (PFNGLGETQUERYOBJECTUIVPROC)load(userptr, "glGetQueryObjectuiv");
+  glad_glGetQueryiv = (PFNGLGETQUERYIVPROC)load(userptr, "glGetQueryiv");
+  glad_glIsBuffer = (PFNGLISBUFFERPROC)load(userptr, "glIsBuffer");
+  glad_glIsQuery = (PFNGLISQUERYPROC)load(userptr, "glIsQuery");
+  glad_glMapBuffer = (PFNGLMAPBUFFERPROC)load(userptr, "glMapBuffer");
+  glad_glUnmapBuffer = (PFNGLUNMAPBUFFERPROC)load(userptr, "glUnmapBuffer");
+}
+static void glad_gl_load_GL_VERSION_2_0(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_2_0) return;
+  glad_glAttachShader = (PFNGLATTACHSHADERPROC)load(userptr, "glAttachShader");
+  glad_glBindAttribLocation =
+      (PFNGLBINDATTRIBLOCATIONPROC)load(userptr, "glBindAttribLocation");
+  glad_glBlendEquationSeparate =
+      (PFNGLBLENDEQUATIONSEPARATEPROC)load(userptr, "glBlendEquationSeparate");
+  glad_glCompileShader =
+      (PFNGLCOMPILESHADERPROC)load(userptr, "glCompileShader");
+  glad_glCreateProgram =
+      (PFNGLCREATEPROGRAMPROC)load(userptr, "glCreateProgram");
+  glad_glCreateShader = (PFNGLCREATESHADERPROC)load(userptr, "glCreateShader");
+  glad_glDeleteProgram =
+      (PFNGLDELETEPROGRAMPROC)load(userptr, "glDeleteProgram");
+  glad_glDeleteShader = (PFNGLDELETESHADERPROC)load(userptr, "glDeleteShader");
+  glad_glDetachShader = (PFNGLDETACHSHADERPROC)load(userptr, "glDetachShader");
+  glad_glDisableVertexAttribArray = (PFNGLDISABLEVERTEXATTRIBARRAYPROC)load(
+      userptr, "glDisableVertexAttribArray");
+  glad_glDrawBuffers = (PFNGLDRAWBUFFERSPROC)load(userptr, "glDrawBuffers");
+  glad_glEnableVertexAttribArray = (PFNGLENABLEVERTEXATTRIBARRAYPROC)load(
+      userptr, "glEnableVertexAttribArray");
+  glad_glGetActiveAttrib =
+      (PFNGLGETACTIVEATTRIBPROC)load(userptr, "glGetActiveAttrib");
+  glad_glGetActiveUniform =
+      (PFNGLGETACTIVEUNIFORMPROC)load(userptr, "glGetActiveUniform");
+  glad_glGetAttachedShaders =
+      (PFNGLGETATTACHEDSHADERSPROC)load(userptr, "glGetAttachedShaders");
+  glad_glGetAttribLocation =
+      (PFNGLGETATTRIBLOCATIONPROC)load(userptr, "glGetAttribLocation");
+  glad_glGetProgramInfoLog =
+      (PFNGLGETPROGRAMINFOLOGPROC)load(userptr, "glGetProgramInfoLog");
+  glad_glGetProgramiv = (PFNGLGETPROGRAMIVPROC)load(userptr, "glGetProgramiv");
+  glad_glGetShaderInfoLog =
+      (PFNGLGETSHADERINFOLOGPROC)load(userptr, "glGetShaderInfoLog");
+  glad_glGetShaderSource =
+      (PFNGLGETSHADERSOURCEPROC)load(userptr, "glGetShaderSource");
+  glad_glGetShaderiv = (PFNGLGETSHADERIVPROC)load(userptr, "glGetShaderiv");
+  glad_glGetUniformLocation =
+      (PFNGLGETUNIFORMLOCATIONPROC)load(userptr, "glGetUniformLocation");
+  glad_glGetUniformfv = (PFNGLGETUNIFORMFVPROC)load(userptr, "glGetUniformfv");
+  glad_glGetUniformiv = (PFNGLGETUNIFORMIVPROC)load(userptr, "glGetUniformiv");
+  glad_glGetVertexAttribPointerv = (PFNGLGETVERTEXATTRIBPOINTERVPROC)load(
+      userptr, "glGetVertexAttribPointerv");
+  glad_glGetVertexAttribdv =
+      (PFNGLGETVERTEXATTRIBDVPROC)load(userptr, "glGetVertexAttribdv");
+  glad_glGetVertexAttribfv =
+      (PFNGLGETVERTEXATTRIBFVPROC)load(userptr, "glGetVertexAttribfv");
+  glad_glGetVertexAttribiv =
+      (PFNGLGETVERTEXATTRIBIVPROC)load(userptr, "glGetVertexAttribiv");
+  glad_glIsProgram = (PFNGLISPROGRAMPROC)load(userptr, "glIsProgram");
+  glad_glIsShader = (PFNGLISSHADERPROC)load(userptr, "glIsShader");
+  glad_glLinkProgram = (PFNGLLINKPROGRAMPROC)load(userptr, "glLinkProgram");
+  glad_glShaderSource = (PFNGLSHADERSOURCEPROC)load(userptr, "glShaderSource");
+  glad_glStencilFuncSeparate =
+      (PFNGLSTENCILFUNCSEPARATEPROC)load(userptr, "glStencilFuncSeparate");
+  glad_glStencilMaskSeparate =
+      (PFNGLSTENCILMASKSEPARATEPROC)load(userptr, "glStencilMaskSeparate");
+  glad_glStencilOpSeparate =
+      (PFNGLSTENCILOPSEPARATEPROC)load(userptr, "glStencilOpSeparate");
+  glad_glUniform1f = (PFNGLUNIFORM1FPROC)load(userptr, "glUniform1f");
+  glad_glUniform1fv = (PFNGLUNIFORM1FVPROC)load(userptr, "glUniform1fv");
+  glad_glUniform1i = (PFNGLUNIFORM1IPROC)load(userptr, "glUniform1i");
+  glad_glUniform1iv = (PFNGLUNIFORM1IVPROC)load(userptr, "glUniform1iv");
+  glad_glUniform2f = (PFNGLUNIFORM2FPROC)load(userptr, "glUniform2f");
+  glad_glUniform2fv = (PFNGLUNIFORM2FVPROC)load(userptr, "glUniform2fv");
+  glad_glUniform2i = (PFNGLUNIFORM2IPROC)load(userptr, "glUniform2i");
+  glad_glUniform2iv = (PFNGLUNIFORM2IVPROC)load(userptr, "glUniform2iv");
+  glad_glUniform3f = (PFNGLUNIFORM3FPROC)load(userptr, "glUniform3f");
+  glad_glUniform3fv = (PFNGLUNIFORM3FVPROC)load(userptr, "glUniform3fv");
+  glad_glUniform3i = (PFNGLUNIFORM3IPROC)load(userptr, "glUniform3i");
+  glad_glUniform3iv = (PFNGLUNIFORM3IVPROC)load(userptr, "glUniform3iv");
+  glad_glUniform4f = (PFNGLUNIFORM4FPROC)load(userptr, "glUniform4f");
+  glad_glUniform4fv = (PFNGLUNIFORM4FVPROC)load(userptr, "glUniform4fv");
+  glad_glUniform4i = (PFNGLUNIFORM4IPROC)load(userptr, "glUniform4i");
+  glad_glUniform4iv = (PFNGLUNIFORM4IVPROC)load(userptr, "glUniform4iv");
+  glad_glUniformMatrix2fv =
+      (PFNGLUNIFORMMATRIX2FVPROC)load(userptr, "glUniformMatrix2fv");
+  glad_glUniformMatrix3fv =
+      (PFNGLUNIFORMMATRIX3FVPROC)load(userptr, "glUniformMatrix3fv");
+  glad_glUniformMatrix4fv =
+      (PFNGLUNIFORMMATRIX4FVPROC)load(userptr, "glUniformMatrix4fv");
+  glad_glUseProgram = (PFNGLUSEPROGRAMPROC)load(userptr, "glUseProgram");
+  glad_glValidateProgram =
+      (PFNGLVALIDATEPROGRAMPROC)load(userptr, "glValidateProgram");
+  glad_glVertexAttrib1d =
+      (PFNGLVERTEXATTRIB1DPROC)load(userptr, "glVertexAttrib1d");
+  glad_glVertexAttrib1dv =
+      (PFNGLVERTEXATTRIB1DVPROC)load(userptr, "glVertexAttrib1dv");
+  glad_glVertexAttrib1f =
+      (PFNGLVERTEXATTRIB1FPROC)load(userptr, "glVertexAttrib1f");
+  glad_glVertexAttrib1fv =
+      (PFNGLVERTEXATTRIB1FVPROC)load(userptr, "glVertexAttrib1fv");
+  glad_glVertexAttrib1s =
+      (PFNGLVERTEXATTRIB1SPROC)load(userptr, "glVertexAttrib1s");
+  glad_glVertexAttrib1sv =
+      (PFNGLVERTEXATTRIB1SVPROC)load(userptr, "glVertexAttrib1sv");
+  glad_glVertexAttrib2d =
+      (PFNGLVERTEXATTRIB2DPROC)load(userptr, "glVertexAttrib2d");
+  glad_glVertexAttrib2dv =
+      (PFNGLVERTEXATTRIB2DVPROC)load(userptr, "glVertexAttrib2dv");
+  glad_glVertexAttrib2f =
+      (PFNGLVERTEXATTRIB2FPROC)load(userptr, "glVertexAttrib2f");
+  glad_glVertexAttrib2fv =
+      (PFNGLVERTEXATTRIB2FVPROC)load(userptr, "glVertexAttrib2fv");
+  glad_glVertexAttrib2s =
+      (PFNGLVERTEXATTRIB2SPROC)load(userptr, "glVertexAttrib2s");
+  glad_glVertexAttrib2sv =
+      (PFNGLVERTEXATTRIB2SVPROC)load(userptr, "glVertexAttrib2sv");
+  glad_glVertexAttrib3d =
+      (PFNGLVERTEXATTRIB3DPROC)load(userptr, "glVertexAttrib3d");
+  glad_glVertexAttrib3dv =
+      (PFNGLVERTEXATTRIB3DVPROC)load(userptr, "glVertexAttrib3dv");
+  glad_glVertexAttrib3f =
+      (PFNGLVERTEXATTRIB3FPROC)load(userptr, "glVertexAttrib3f");
+  glad_glVertexAttrib3fv =
+      (PFNGLVERTEXATTRIB3FVPROC)load(userptr, "glVertexAttrib3fv");
+  glad_glVertexAttrib3s =
+      (PFNGLVERTEXATTRIB3SPROC)load(userptr, "glVertexAttrib3s");
+  glad_glVertexAttrib3sv =
+      (PFNGLVERTEXATTRIB3SVPROC)load(userptr, "glVertexAttrib3sv");
+  glad_glVertexAttrib4Nbv =
+      (PFNGLVERTEXATTRIB4NBVPROC)load(userptr, "glVertexAttrib4Nbv");
+  glad_glVertexAttrib4Niv =
+      (PFNGLVERTEXATTRIB4NIVPROC)load(userptr, "glVertexAttrib4Niv");
+  glad_glVertexAttrib4Nsv =
+      (PFNGLVERTEXATTRIB4NSVPROC)load(userptr, "glVertexAttrib4Nsv");
+  glad_glVertexAttrib4Nub =
+      (PFNGLVERTEXATTRIB4NUBPROC)load(userptr, "glVertexAttrib4Nub");
+  glad_glVertexAttrib4Nubv =
+      (PFNGLVERTEXATTRIB4NUBVPROC)load(userptr, "glVertexAttrib4Nubv");
+  glad_glVertexAttrib4Nuiv =
+      (PFNGLVERTEXATTRIB4NUIVPROC)load(userptr, "glVertexAttrib4Nuiv");
+  glad_glVertexAttrib4Nusv =
+      (PFNGLVERTEXATTRIB4NUSVPROC)load(userptr, "glVertexAttrib4Nusv");
+  glad_glVertexAttrib4bv =
+      (PFNGLVERTEXATTRIB4BVPROC)load(userptr, "glVertexAttrib4bv");
+  glad_glVertexAttrib4d =
+      (PFNGLVERTEXATTRIB4DPROC)load(userptr, "glVertexAttrib4d");
+  glad_glVertexAttrib4dv =
+      (PFNGLVERTEXATTRIB4DVPROC)load(userptr, "glVertexAttrib4dv");
+  glad_glVertexAttrib4f =
+      (PFNGLVERTEXATTRIB4FPROC)load(userptr, "glVertexAttrib4f");
+  glad_glVertexAttrib4fv =
+      (PFNGLVERTEXATTRIB4FVPROC)load(userptr, "glVertexAttrib4fv");
+  glad_glVertexAttrib4iv =
+      (PFNGLVERTEXATTRIB4IVPROC)load(userptr, "glVertexAttrib4iv");
+  glad_glVertexAttrib4s =
+      (PFNGLVERTEXATTRIB4SPROC)load(userptr, "glVertexAttrib4s");
+  glad_glVertexAttrib4sv =
+      (PFNGLVERTEXATTRIB4SVPROC)load(userptr, "glVertexAttrib4sv");
+  glad_glVertexAttrib4ubv =
+      (PFNGLVERTEXATTRIB4UBVPROC)load(userptr, "glVertexAttrib4ubv");
+  glad_glVertexAttrib4uiv =
+      (PFNGLVERTEXATTRIB4UIVPROC)load(userptr, "glVertexAttrib4uiv");
+  glad_glVertexAttrib4usv =
+      (PFNGLVERTEXATTRIB4USVPROC)load(userptr, "glVertexAttrib4usv");
+  glad_glVertexAttribPointer =
+      (PFNGLVERTEXATTRIBPOINTERPROC)load(userptr, "glVertexAttribPointer");
+}
+static void glad_gl_load_GL_VERSION_2_1(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_2_1) return;
+  glad_glUniformMatrix2x3fv =
+      (PFNGLUNIFORMMATRIX2X3FVPROC)load(userptr, "glUniformMatrix2x3fv");
+  glad_glUniformMatrix2x4fv =
+      (PFNGLUNIFORMMATRIX2X4FVPROC)load(userptr, "glUniformMatrix2x4fv");
+  glad_glUniformMatrix3x2fv =
+      (PFNGLUNIFORMMATRIX3X2FVPROC)load(userptr, "glUniformMatrix3x2fv");
+  glad_glUniformMatrix3x4fv =
+      (PFNGLUNIFORMMATRIX3X4FVPROC)load(userptr, "glUniformMatrix3x4fv");
+  glad_glUniformMatrix4x2fv =
+      (PFNGLUNIFORMMATRIX4X2FVPROC)load(userptr, "glUniformMatrix4x2fv");
+  glad_glUniformMatrix4x3fv =
+      (PFNGLUNIFORMMATRIX4X3FVPROC)load(userptr, "glUniformMatrix4x3fv");
+}
+static void glad_gl_load_GL_VERSION_3_0(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_3_0) return;
+  glad_glBeginConditionalRender = (PFNGLBEGINCONDITIONALRENDERPROC)load(
+      userptr, "glBeginConditionalRender");
+  glad_glBeginTransformFeedback = (PFNGLBEGINTRANSFORMFEEDBACKPROC)load(
+      userptr, "glBeginTransformFeedback");
+  glad_glBindBufferBase =
+      (PFNGLBINDBUFFERBASEPROC)load(userptr, "glBindBufferBase");
+  glad_glBindBufferRange =
+      (PFNGLBINDBUFFERRANGEPROC)load(userptr, "glBindBufferRange");
+  glad_glBindFragDataLocation =
+      (PFNGLBINDFRAGDATALOCATIONPROC)load(userptr, "glBindFragDataLocation");
+  glad_glBindFramebuffer =
+      (PFNGLBINDFRAMEBUFFERPROC)load(userptr, "glBindFramebuffer");
+  glad_glBindRenderbuffer =
+      (PFNGLBINDRENDERBUFFERPROC)load(userptr, "glBindRenderbuffer");
+  glad_glBindVertexArray =
+      (PFNGLBINDVERTEXARRAYPROC)load(userptr, "glBindVertexArray");
+  glad_glBlitFramebuffer =
+      (PFNGLBLITFRAMEBUFFERPROC)load(userptr, "glBlitFramebuffer");
+  glad_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC)load(
+      userptr, "glCheckFramebufferStatus");
+  glad_glClampColor = (PFNGLCLAMPCOLORPROC)load(userptr, "glClampColor");
+  glad_glClearBufferfi =
+      (PFNGLCLEARBUFFERFIPROC)load(userptr, "glClearBufferfi");
+  glad_glClearBufferfv =
+      (PFNGLCLEARBUFFERFVPROC)load(userptr, "glClearBufferfv");
+  glad_glClearBufferiv =
+      (PFNGLCLEARBUFFERIVPROC)load(userptr, "glClearBufferiv");
+  glad_glClearBufferuiv =
+      (PFNGLCLEARBUFFERUIVPROC)load(userptr, "glClearBufferuiv");
+  glad_glColorMaski = (PFNGLCOLORMASKIPROC)load(userptr, "glColorMaski");
+  glad_glDeleteFramebuffers =
+      (PFNGLDELETEFRAMEBUFFERSPROC)load(userptr, "glDeleteFramebuffers");
+  glad_glDeleteRenderbuffers =
+      (PFNGLDELETERENDERBUFFERSPROC)load(userptr, "glDeleteRenderbuffers");
+  glad_glDeleteVertexArrays =
+      (PFNGLDELETEVERTEXARRAYSPROC)load(userptr, "glDeleteVertexArrays");
+  glad_glDisablei = (PFNGLDISABLEIPROC)load(userptr, "glDisablei");
+  glad_glEnablei = (PFNGLENABLEIPROC)load(userptr, "glEnablei");
+  glad_glEndConditionalRender =
+      (PFNGLENDCONDITIONALRENDERPROC)load(userptr, "glEndConditionalRender");
+  glad_glEndTransformFeedback =
+      (PFNGLENDTRANSFORMFEEDBACKPROC)load(userptr, "glEndTransformFeedback");
+  glad_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC)load(
+      userptr, "glFlushMappedBufferRange");
+  glad_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC)load(
+      userptr, "glFramebufferRenderbuffer");
+  glad_glFramebufferTexture1D =
+      (PFNGLFRAMEBUFFERTEXTURE1DPROC)load(userptr, "glFramebufferTexture1D");
+  glad_glFramebufferTexture2D =
+      (PFNGLFRAMEBUFFERTEXTURE2DPROC)load(userptr, "glFramebufferTexture2D");
+  glad_glFramebufferTexture3D =
+      (PFNGLFRAMEBUFFERTEXTURE3DPROC)load(userptr, "glFramebufferTexture3D");
+  glad_glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC)load(
+      userptr, "glFramebufferTextureLayer");
+  glad_glGenFramebuffers =
+      (PFNGLGENFRAMEBUFFERSPROC)load(userptr, "glGenFramebuffers");
+  glad_glGenRenderbuffers =
+      (PFNGLGENRENDERBUFFERSPROC)load(userptr, "glGenRenderbuffers");
+  glad_glGenVertexArrays =
+      (PFNGLGENVERTEXARRAYSPROC)load(userptr, "glGenVertexArrays");
+  glad_glGenerateMipmap =
+      (PFNGLGENERATEMIPMAPPROC)load(userptr, "glGenerateMipmap");
+  glad_glGetBooleani_v =
+      (PFNGLGETBOOLEANI_VPROC)load(userptr, "glGetBooleani_v");
+  glad_glGetFragDataLocation =
+      (PFNGLGETFRAGDATALOCATIONPROC)load(userptr, "glGetFragDataLocation");
+  glad_glGetFramebufferAttachmentParameteriv =
+      (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC)load(
+          userptr, "glGetFramebufferAttachmentParameteriv");
+  glad_glGetIntegeri_v =
+      (PFNGLGETINTEGERI_VPROC)load(userptr, "glGetIntegeri_v");
+  glad_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC)load(
+      userptr, "glGetRenderbufferParameteriv");
+  glad_glGetStringi = (PFNGLGETSTRINGIPROC)load(userptr, "glGetStringi");
+  glad_glGetTexParameterIiv =
+      (PFNGLGETTEXPARAMETERIIVPROC)load(userptr, "glGetTexParameterIiv");
+  glad_glGetTexParameterIuiv =
+      (PFNGLGETTEXPARAMETERIUIVPROC)load(userptr, "glGetTexParameterIuiv");
+  glad_glGetTransformFeedbackVarying =
+      (PFNGLGETTRANSFORMFEEDBACKVARYINGPROC)load(
+          userptr, "glGetTransformFeedbackVarying");
+  glad_glGetUniformuiv =
+      (PFNGLGETUNIFORMUIVPROC)load(userptr, "glGetUniformuiv");
+  glad_glGetVertexAttribIiv =
+      (PFNGLGETVERTEXATTRIBIIVPROC)load(userptr, "glGetVertexAttribIiv");
+  glad_glGetVertexAttribIuiv =
+      (PFNGLGETVERTEXATTRIBIUIVPROC)load(userptr, "glGetVertexAttribIuiv");
+  glad_glIsEnabledi = (PFNGLISENABLEDIPROC)load(userptr, "glIsEnabledi");
+  glad_glIsFramebuffer =
+      (PFNGLISFRAMEBUFFERPROC)load(userptr, "glIsFramebuffer");
+  glad_glIsRenderbuffer =
+      (PFNGLISRENDERBUFFERPROC)load(userptr, "glIsRenderbuffer");
+  glad_glIsVertexArray =
+      (PFNGLISVERTEXARRAYPROC)load(userptr, "glIsVertexArray");
+  glad_glMapBufferRange =
+      (PFNGLMAPBUFFERRANGEPROC)load(userptr, "glMapBufferRange");
+  glad_glRenderbufferStorage =
+      (PFNGLRENDERBUFFERSTORAGEPROC)load(userptr, "glRenderbufferStorage");
+  glad_glRenderbufferStorageMultisample =
+      (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC)load(
+          userptr, "glRenderbufferStorageMultisample");
+  glad_glTexParameterIiv =
+      (PFNGLTEXPARAMETERIIVPROC)load(userptr, "glTexParameterIiv");
+  glad_glTexParameterIuiv =
+      (PFNGLTEXPARAMETERIUIVPROC)load(userptr, "glTexParameterIuiv");
+  glad_glTransformFeedbackVaryings = (PFNGLTRANSFORMFEEDBACKVARYINGSPROC)load(
+      userptr, "glTransformFeedbackVaryings");
+  glad_glUniform1ui = (PFNGLUNIFORM1UIPROC)load(userptr, "glUniform1ui");
+  glad_glUniform1uiv = (PFNGLUNIFORM1UIVPROC)load(userptr, "glUniform1uiv");
+  glad_glUniform2ui = (PFNGLUNIFORM2UIPROC)load(userptr, "glUniform2ui");
+  glad_glUniform2uiv = (PFNGLUNIFORM2UIVPROC)load(userptr, "glUniform2uiv");
+  glad_glUniform3ui = (PFNGLUNIFORM3UIPROC)load(userptr, "glUniform3ui");
+  glad_glUniform3uiv = (PFNGLUNIFORM3UIVPROC)load(userptr, "glUniform3uiv");
+  glad_glUniform4ui = (PFNGLUNIFORM4UIPROC)load(userptr, "glUniform4ui");
+  glad_glUniform4uiv = (PFNGLUNIFORM4UIVPROC)load(userptr, "glUniform4uiv");
+  glad_glVertexAttribI1i =
+      (PFNGLVERTEXATTRIBI1IPROC)load(userptr, "glVertexAttribI1i");
+  glad_glVertexAttribI1iv =
+      (PFNGLVERTEXATTRIBI1IVPROC)load(userptr, "glVertexAttribI1iv");
+  glad_glVertexAttribI1ui =
+      (PFNGLVERTEXATTRIBI1UIPROC)load(userptr, "glVertexAttribI1ui");
+  glad_glVertexAttribI1uiv =
+      (PFNGLVERTEXATTRIBI1UIVPROC)load(userptr, "glVertexAttribI1uiv");
+  glad_glVertexAttribI2i =
+      (PFNGLVERTEXATTRIBI2IPROC)load(userptr, "glVertexAttribI2i");
+  glad_glVertexAttribI2iv =
+      (PFNGLVERTEXATTRIBI2IVPROC)load(userptr, "glVertexAttribI2iv");
+  glad_glVertexAttribI2ui =
+      (PFNGLVERTEXATTRIBI2UIPROC)load(userptr, "glVertexAttribI2ui");
+  glad_glVertexAttribI2uiv =
+      (PFNGLVERTEXATTRIBI2UIVPROC)load(userptr, "glVertexAttribI2uiv");
+  glad_glVertexAttribI3i =
+      (PFNGLVERTEXATTRIBI3IPROC)load(userptr, "glVertexAttribI3i");
+  glad_glVertexAttribI3iv =
+      (PFNGLVERTEXATTRIBI3IVPROC)load(userptr, "glVertexAttribI3iv");
+  glad_glVertexAttribI3ui =
+      (PFNGLVERTEXATTRIBI3UIPROC)load(userptr, "glVertexAttribI3ui");
+  glad_glVertexAttribI3uiv =
+      (PFNGLVERTEXATTRIBI3UIVPROC)load(userptr, "glVertexAttribI3uiv");
+  glad_glVertexAttribI4bv =
+      (PFNGLVERTEXATTRIBI4BVPROC)load(userptr, "glVertexAttribI4bv");
+  glad_glVertexAttribI4i =
+      (PFNGLVERTEXATTRIBI4IPROC)load(userptr, "glVertexAttribI4i");
+  glad_glVertexAttribI4iv =
+      (PFNGLVERTEXATTRIBI4IVPROC)load(userptr, "glVertexAttribI4iv");
+  glad_glVertexAttribI4sv =
+      (PFNGLVERTEXATTRIBI4SVPROC)load(userptr, "glVertexAttribI4sv");
+  glad_glVertexAttribI4ubv =
+      (PFNGLVERTEXATTRIBI4UBVPROC)load(userptr, "glVertexAttribI4ubv");
+  glad_glVertexAttribI4ui =
+      (PFNGLVERTEXATTRIBI4UIPROC)load(userptr, "glVertexAttribI4ui");
+  glad_glVertexAttribI4uiv =
+      (PFNGLVERTEXATTRIBI4UIVPROC)load(userptr, "glVertexAttribI4uiv");
+  glad_glVertexAttribI4usv =
+      (PFNGLVERTEXATTRIBI4USVPROC)load(userptr, "glVertexAttribI4usv");
+  glad_glVertexAttribIPointer =
+      (PFNGLVERTEXATTRIBIPOINTERPROC)load(userptr, "glVertexAttribIPointer");
+}
+static void glad_gl_load_GL_VERSION_3_1(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_3_1) return;
+  glad_glBindBufferBase =
+      (PFNGLBINDBUFFERBASEPROC)load(userptr, "glBindBufferBase");
+  glad_glBindBufferRange =
+      (PFNGLBINDBUFFERRANGEPROC)load(userptr, "glBindBufferRange");
+  glad_glCopyBufferSubData =
+      (PFNGLCOPYBUFFERSUBDATAPROC)load(userptr, "glCopyBufferSubData");
+  glad_glDrawArraysInstanced =
+      (PFNGLDRAWARRAYSINSTANCEDPROC)load(userptr, "glDrawArraysInstanced");
+  glad_glDrawElementsInstanced =
+      (PFNGLDRAWELEMENTSINSTANCEDPROC)load(userptr, "glDrawElementsInstanced");
+  glad_glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC)load(
+      userptr, "glGetActiveUniformBlockName");
+  glad_glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC)load(
+      userptr, "glGetActiveUniformBlockiv");
+  glad_glGetActiveUniformName =
+      (PFNGLGETACTIVEUNIFORMNAMEPROC)load(userptr, "glGetActiveUniformName");
+  glad_glGetActiveUniformsiv =
+      (PFNGLGETACTIVEUNIFORMSIVPROC)load(userptr, "glGetActiveUniformsiv");
+  glad_glGetIntegeri_v =
+      (PFNGLGETINTEGERI_VPROC)load(userptr, "glGetIntegeri_v");
+  glad_glGetUniformBlockIndex =
+      (PFNGLGETUNIFORMBLOCKINDEXPROC)load(userptr, "glGetUniformBlockIndex");
+  glad_glGetUniformIndices =
+      (PFNGLGETUNIFORMINDICESPROC)load(userptr, "glGetUniformIndices");
+  glad_glPrimitiveRestartIndex =
+      (PFNGLPRIMITIVERESTARTINDEXPROC)load(userptr, "glPrimitiveRestartIndex");
+  glad_glTexBuffer = (PFNGLTEXBUFFERPROC)load(userptr, "glTexBuffer");
+  glad_glUniformBlockBinding =
+      (PFNGLUNIFORMBLOCKBINDINGPROC)load(userptr, "glUniformBlockBinding");
+}
+static void glad_gl_load_GL_VERSION_3_2(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_3_2) return;
+  glad_glClientWaitSync =
+      (PFNGLCLIENTWAITSYNCPROC)load(userptr, "glClientWaitSync");
+  glad_glDeleteSync = (PFNGLDELETESYNCPROC)load(userptr, "glDeleteSync");
+  glad_glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC)load(
+      userptr, "glDrawElementsBaseVertex");
+  glad_glDrawElementsInstancedBaseVertex =
+      (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC)load(
+          userptr, "glDrawElementsInstancedBaseVertex");
+  glad_glDrawRangeElementsBaseVertex =
+      (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC)load(
+          userptr, "glDrawRangeElementsBaseVertex");
+  glad_glFenceSync = (PFNGLFENCESYNCPROC)load(userptr, "glFenceSync");
+  glad_glFramebufferTexture =
+      (PFNGLFRAMEBUFFERTEXTUREPROC)load(userptr, "glFramebufferTexture");
+  glad_glGetBufferParameteri64v = (PFNGLGETBUFFERPARAMETERI64VPROC)load(
+      userptr, "glGetBufferParameteri64v");
+  glad_glGetInteger64i_v =
+      (PFNGLGETINTEGER64I_VPROC)load(userptr, "glGetInteger64i_v");
+  glad_glGetInteger64v =
+      (PFNGLGETINTEGER64VPROC)load(userptr, "glGetInteger64v");
+  glad_glGetMultisamplefv =
+      (PFNGLGETMULTISAMPLEFVPROC)load(userptr, "glGetMultisamplefv");
+  glad_glGetSynciv = (PFNGLGETSYNCIVPROC)load(userptr, "glGetSynciv");
+  glad_glIsSync = (PFNGLISSYNCPROC)load(userptr, "glIsSync");
+  glad_glMultiDrawElementsBaseVertex =
+      (PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC)load(
+          userptr, "glMultiDrawElementsBaseVertex");
+  glad_glProvokingVertex =
+      (PFNGLPROVOKINGVERTEXPROC)load(userptr, "glProvokingVertex");
+  glad_glSampleMaski = (PFNGLSAMPLEMASKIPROC)load(userptr, "glSampleMaski");
+  glad_glTexImage2DMultisample =
+      (PFNGLTEXIMAGE2DMULTISAMPLEPROC)load(userptr, "glTexImage2DMultisample");
+  glad_glTexImage3DMultisample =
+      (PFNGLTEXIMAGE3DMULTISAMPLEPROC)load(userptr, "glTexImage3DMultisample");
+  glad_glWaitSync = (PFNGLWAITSYNCPROC)load(userptr, "glWaitSync");
+}
+static void glad_gl_load_GL_VERSION_3_3(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_3_3) return;
+  glad_glBindFragDataLocationIndexed =
+      (PFNGLBINDFRAGDATALOCATIONINDEXEDPROC)load(
+          userptr, "glBindFragDataLocationIndexed");
+  glad_glBindSampler = (PFNGLBINDSAMPLERPROC)load(userptr, "glBindSampler");
+  glad_glDeleteSamplers =
+      (PFNGLDELETESAMPLERSPROC)load(userptr, "glDeleteSamplers");
+  glad_glGenSamplers = (PFNGLGENSAMPLERSPROC)load(userptr, "glGenSamplers");
+  glad_glGetFragDataIndex =
+      (PFNGLGETFRAGDATAINDEXPROC)load(userptr, "glGetFragDataIndex");
+  glad_glGetQueryObjecti64v =
+      (PFNGLGETQUERYOBJECTI64VPROC)load(userptr, "glGetQueryObjecti64v");
+  glad_glGetQueryObjectui64v =
+      (PFNGLGETQUERYOBJECTUI64VPROC)load(userptr, "glGetQueryObjectui64v");
+  glad_glGetSamplerParameterIiv = (PFNGLGETSAMPLERPARAMETERIIVPROC)load(
+      userptr, "glGetSamplerParameterIiv");
+  glad_glGetSamplerParameterIuiv = (PFNGLGETSAMPLERPARAMETERIUIVPROC)load(
+      userptr, "glGetSamplerParameterIuiv");
+  glad_glGetSamplerParameterfv =
+      (PFNGLGETSAMPLERPARAMETERFVPROC)load(userptr, "glGetSamplerParameterfv");
+  glad_glGetSamplerParameteriv =
+      (PFNGLGETSAMPLERPARAMETERIVPROC)load(userptr, "glGetSamplerParameteriv");
+  glad_glIsSampler = (PFNGLISSAMPLERPROC)load(userptr, "glIsSampler");
+  glad_glQueryCounter = (PFNGLQUERYCOUNTERPROC)load(userptr, "glQueryCounter");
+  glad_glSamplerParameterIiv =
+      (PFNGLSAMPLERPARAMETERIIVPROC)load(userptr, "glSamplerParameterIiv");
+  glad_glSamplerParameterIuiv =
+      (PFNGLSAMPLERPARAMETERIUIVPROC)load(userptr, "glSamplerParameterIuiv");
+  glad_glSamplerParameterf =
+      (PFNGLSAMPLERPARAMETERFPROC)load(userptr, "glSamplerParameterf");
+  glad_glSamplerParameterfv =
+      (PFNGLSAMPLERPARAMETERFVPROC)load(userptr, "glSamplerParameterfv");
+  glad_glSamplerParameteri =
+      (PFNGLSAMPLERPARAMETERIPROC)load(userptr, "glSamplerParameteri");
+  glad_glSamplerParameteriv =
+      (PFNGLSAMPLERPARAMETERIVPROC)load(userptr, "glSamplerParameteriv");
+  glad_glVertexAttribDivisor =
+      (PFNGLVERTEXATTRIBDIVISORPROC)load(userptr, "glVertexAttribDivisor");
+  glad_glVertexAttribP1ui =
+      (PFNGLVERTEXATTRIBP1UIPROC)load(userptr, "glVertexAttribP1ui");
+  glad_glVertexAttribP1uiv =
+      (PFNGLVERTEXATTRIBP1UIVPROC)load(userptr, "glVertexAttribP1uiv");
+  glad_glVertexAttribP2ui =
+      (PFNGLVERTEXATTRIBP2UIPROC)load(userptr, "glVertexAttribP2ui");
+  glad_glVertexAttribP2uiv =
+      (PFNGLVERTEXATTRIBP2UIVPROC)load(userptr, "glVertexAttribP2uiv");
+  glad_glVertexAttribP3ui =
+      (PFNGLVERTEXATTRIBP3UIPROC)load(userptr, "glVertexAttribP3ui");
+  glad_glVertexAttribP3uiv =
+      (PFNGLVERTEXATTRIBP3UIVPROC)load(userptr, "glVertexAttribP3uiv");
+  glad_glVertexAttribP4ui =
+      (PFNGLVERTEXATTRIBP4UIPROC)load(userptr, "glVertexAttribP4ui");
+  glad_glVertexAttribP4uiv =
+      (PFNGLVERTEXATTRIBP4UIVPROC)load(userptr, "glVertexAttribP4uiv");
+}
+static void glad_gl_load_GL_VERSION_4_0(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_4_0) return;
+  glad_glBeginQueryIndexed =
+      (PFNGLBEGINQUERYINDEXEDPROC)load(userptr, "glBeginQueryIndexed");
+  glad_glBindTransformFeedback =
+      (PFNGLBINDTRANSFORMFEEDBACKPROC)load(userptr, "glBindTransformFeedback");
+  glad_glBlendEquationSeparatei = (PFNGLBLENDEQUATIONSEPARATEIPROC)load(
+      userptr, "glBlendEquationSeparatei");
+  glad_glBlendEquationi =
+      (PFNGLBLENDEQUATIONIPROC)load(userptr, "glBlendEquationi");
+  glad_glBlendFuncSeparatei =
+      (PFNGLBLENDFUNCSEPARATEIPROC)load(userptr, "glBlendFuncSeparatei");
+  glad_glBlendFunci = (PFNGLBLENDFUNCIPROC)load(userptr, "glBlendFunci");
+  glad_glDeleteTransformFeedbacks = (PFNGLDELETETRANSFORMFEEDBACKSPROC)load(
+      userptr, "glDeleteTransformFeedbacks");
+  glad_glDrawArraysIndirect =
+      (PFNGLDRAWARRAYSINDIRECTPROC)load(userptr, "glDrawArraysIndirect");
+  glad_glDrawElementsIndirect =
+      (PFNGLDRAWELEMENTSINDIRECTPROC)load(userptr, "glDrawElementsIndirect");
+  glad_glDrawTransformFeedback =
+      (PFNGLDRAWTRANSFORMFEEDBACKPROC)load(userptr, "glDrawTransformFeedback");
+  glad_glDrawTransformFeedbackStream =
+      (PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC)load(
+          userptr, "glDrawTransformFeedbackStream");
+  glad_glEndQueryIndexed =
+      (PFNGLENDQUERYINDEXEDPROC)load(userptr, "glEndQueryIndexed");
+  glad_glGenTransformFeedbacks =
+      (PFNGLGENTRANSFORMFEEDBACKSPROC)load(userptr, "glGenTransformFeedbacks");
+  glad_glGetActiveSubroutineName = (PFNGLGETACTIVESUBROUTINENAMEPROC)load(
+      userptr, "glGetActiveSubroutineName");
+  glad_glGetActiveSubroutineUniformName =
+      (PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC)load(
+          userptr, "glGetActiveSubroutineUniformName");
+  glad_glGetActiveSubroutineUniformiv =
+      (PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)load(
+          userptr, "glGetActiveSubroutineUniformiv");
+  glad_glGetProgramStageiv =
+      (PFNGLGETPROGRAMSTAGEIVPROC)load(userptr, "glGetProgramStageiv");
+  glad_glGetQueryIndexediv =
+      (PFNGLGETQUERYINDEXEDIVPROC)load(userptr, "glGetQueryIndexediv");
+  glad_glGetSubroutineIndex =
+      (PFNGLGETSUBROUTINEINDEXPROC)load(userptr, "glGetSubroutineIndex");
+  glad_glGetSubroutineUniformLocation =
+      (PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC)load(
+          userptr, "glGetSubroutineUniformLocation");
+  glad_glGetUniformSubroutineuiv = (PFNGLGETUNIFORMSUBROUTINEUIVPROC)load(
+      userptr, "glGetUniformSubroutineuiv");
+  glad_glGetUniformdv = (PFNGLGETUNIFORMDVPROC)load(userptr, "glGetUniformdv");
+  glad_glIsTransformFeedback =
+      (PFNGLISTRANSFORMFEEDBACKPROC)load(userptr, "glIsTransformFeedback");
+  glad_glMinSampleShading =
+      (PFNGLMINSAMPLESHADINGPROC)load(userptr, "glMinSampleShading");
+  glad_glPatchParameterfv =
+      (PFNGLPATCHPARAMETERFVPROC)load(userptr, "glPatchParameterfv");
+  glad_glPatchParameteri =
+      (PFNGLPATCHPARAMETERIPROC)load(userptr, "glPatchParameteri");
+  glad_glPauseTransformFeedback = (PFNGLPAUSETRANSFORMFEEDBACKPROC)load(
+      userptr, "glPauseTransformFeedback");
+  glad_glResumeTransformFeedback = (PFNGLRESUMETRANSFORMFEEDBACKPROC)load(
+      userptr, "glResumeTransformFeedback");
+  glad_glUniform1d = (PFNGLUNIFORM1DPROC)load(userptr, "glUniform1d");
+  glad_glUniform1dv = (PFNGLUNIFORM1DVPROC)load(userptr, "glUniform1dv");
+  glad_glUniform2d = (PFNGLUNIFORM2DPROC)load(userptr, "glUniform2d");
+  glad_glUniform2dv = (PFNGLUNIFORM2DVPROC)load(userptr, "glUniform2dv");
+  glad_glUniform3d = (PFNGLUNIFORM3DPROC)load(userptr, "glUniform3d");
+  glad_glUniform3dv = (PFNGLUNIFORM3DVPROC)load(userptr, "glUniform3dv");
+  glad_glUniform4d = (PFNGLUNIFORM4DPROC)load(userptr, "glUniform4d");
+  glad_glUniform4dv = (PFNGLUNIFORM4DVPROC)load(userptr, "glUniform4dv");
+  glad_glUniformMatrix2dv =
+      (PFNGLUNIFORMMATRIX2DVPROC)load(userptr, "glUniformMatrix2dv");
+  glad_glUniformMatrix2x3dv =
+      (PFNGLUNIFORMMATRIX2X3DVPROC)load(userptr, "glUniformMatrix2x3dv");
+  glad_glUniformMatrix2x4dv =
+      (PFNGLUNIFORMMATRIX2X4DVPROC)load(userptr, "glUniformMatrix2x4dv");
+  glad_glUniformMatrix3dv =
+      (PFNGLUNIFORMMATRIX3DVPROC)load(userptr, "glUniformMatrix3dv");
+  glad_glUniformMatrix3x2dv =
+      (PFNGLUNIFORMMATRIX3X2DVPROC)load(userptr, "glUniformMatrix3x2dv");
+  glad_glUniformMatrix3x4dv =
+      (PFNGLUNIFORMMATRIX3X4DVPROC)load(userptr, "glUniformMatrix3x4dv");
+  glad_glUniformMatrix4dv =
+      (PFNGLUNIFORMMATRIX4DVPROC)load(userptr, "glUniformMatrix4dv");
+  glad_glUniformMatrix4x2dv =
+      (PFNGLUNIFORMMATRIX4X2DVPROC)load(userptr, "glUniformMatrix4x2dv");
+  glad_glUniformMatrix4x3dv =
+      (PFNGLUNIFORMMATRIX4X3DVPROC)load(userptr, "glUniformMatrix4x3dv");
+  glad_glUniformSubroutinesuiv =
+      (PFNGLUNIFORMSUBROUTINESUIVPROC)load(userptr, "glUniformSubroutinesuiv");
+}
+static void glad_gl_load_GL_VERSION_4_1(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_4_1) return;
+  glad_glActiveShaderProgram =
+      (PFNGLACTIVESHADERPROGRAMPROC)load(userptr, "glActiveShaderProgram");
+  glad_glBindProgramPipeline =
+      (PFNGLBINDPROGRAMPIPELINEPROC)load(userptr, "glBindProgramPipeline");
+  glad_glClearDepthf = (PFNGLCLEARDEPTHFPROC)load(userptr, "glClearDepthf");
+  glad_glCreateShaderProgramv =
+      (PFNGLCREATESHADERPROGRAMVPROC)load(userptr, "glCreateShaderProgramv");
+  glad_glDeleteProgramPipelines = (PFNGLDELETEPROGRAMPIPELINESPROC)load(
+      userptr, "glDeleteProgramPipelines");
+  glad_glDepthRangeArrayv =
+      (PFNGLDEPTHRANGEARRAYVPROC)load(userptr, "glDepthRangeArrayv");
+  glad_glDepthRangeIndexed =
+      (PFNGLDEPTHRANGEINDEXEDPROC)load(userptr, "glDepthRangeIndexed");
+  glad_glDepthRangef = (PFNGLDEPTHRANGEFPROC)load(userptr, "glDepthRangef");
+  glad_glGenProgramPipelines =
+      (PFNGLGENPROGRAMPIPELINESPROC)load(userptr, "glGenProgramPipelines");
+  glad_glGetDoublei_v = (PFNGLGETDOUBLEI_VPROC)load(userptr, "glGetDoublei_v");
+  glad_glGetFloati_v = (PFNGLGETFLOATI_VPROC)load(userptr, "glGetFloati_v");
+  glad_glGetProgramBinary =
+      (PFNGLGETPROGRAMBINARYPROC)load(userptr, "glGetProgramBinary");
+  glad_glGetProgramPipelineInfoLog = (PFNGLGETPROGRAMPIPELINEINFOLOGPROC)load(
+      userptr, "glGetProgramPipelineInfoLog");
+  glad_glGetProgramPipelineiv =
+      (PFNGLGETPROGRAMPIPELINEIVPROC)load(userptr, "glGetProgramPipelineiv");
+  glad_glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC)load(
+      userptr, "glGetShaderPrecisionFormat");
+  glad_glGetVertexAttribLdv =
+      (PFNGLGETVERTEXATTRIBLDVPROC)load(userptr, "glGetVertexAttribLdv");
+  glad_glIsProgramPipeline =
+      (PFNGLISPROGRAMPIPELINEPROC)load(userptr, "glIsProgramPipeline");
+  glad_glProgramBinary =
+      (PFNGLPROGRAMBINARYPROC)load(userptr, "glProgramBinary");
+  glad_glProgramParameteri =
+      (PFNGLPROGRAMPARAMETERIPROC)load(userptr, "glProgramParameteri");
+  glad_glProgramUniform1d =
+      (PFNGLPROGRAMUNIFORM1DPROC)load(userptr, "glProgramUniform1d");
+  glad_glProgramUniform1dv =
+      (PFNGLPROGRAMUNIFORM1DVPROC)load(userptr, "glProgramUniform1dv");
+  glad_glProgramUniform1f =
+      (PFNGLPROGRAMUNIFORM1FPROC)load(userptr, "glProgramUniform1f");
+  glad_glProgramUniform1fv =
+      (PFNGLPROGRAMUNIFORM1FVPROC)load(userptr, "glProgramUniform1fv");
+  glad_glProgramUniform1i =
+      (PFNGLPROGRAMUNIFORM1IPROC)load(userptr, "glProgramUniform1i");
+  glad_glProgramUniform1iv =
+      (PFNGLPROGRAMUNIFORM1IVPROC)load(userptr, "glProgramUniform1iv");
+  glad_glProgramUniform1ui =
+      (PFNGLPROGRAMUNIFORM1UIPROC)load(userptr, "glProgramUniform1ui");
+  glad_glProgramUniform1uiv =
+      (PFNGLPROGRAMUNIFORM1UIVPROC)load(userptr, "glProgramUniform1uiv");
+  glad_glProgramUniform2d =
+      (PFNGLPROGRAMUNIFORM2DPROC)load(userptr, "glProgramUniform2d");
+  glad_glProgramUniform2dv =
+      (PFNGLPROGRAMUNIFORM2DVPROC)load(userptr, "glProgramUniform2dv");
+  glad_glProgramUniform2f =
+      (PFNGLPROGRAMUNIFORM2FPROC)load(userptr, "glProgramUniform2f");
+  glad_glProgramUniform2fv =
+      (PFNGLPROGRAMUNIFORM2FVPROC)load(userptr, "glProgramUniform2fv");
+  glad_glProgramUniform2i =
+      (PFNGLPROGRAMUNIFORM2IPROC)load(userptr, "glProgramUniform2i");
+  glad_glProgramUniform2iv =
+      (PFNGLPROGRAMUNIFORM2IVPROC)load(userptr, "glProgramUniform2iv");
+  glad_glProgramUniform2ui =
+      (PFNGLPROGRAMUNIFORM2UIPROC)load(userptr, "glProgramUniform2ui");
+  glad_glProgramUniform2uiv =
+      (PFNGLPROGRAMUNIFORM2UIVPROC)load(userptr, "glProgramUniform2uiv");
+  glad_glProgramUniform3d =
+      (PFNGLPROGRAMUNIFORM3DPROC)load(userptr, "glProgramUniform3d");
+  glad_glProgramUniform3dv =
+      (PFNGLPROGRAMUNIFORM3DVPROC)load(userptr, "glProgramUniform3dv");
+  glad_glProgramUniform3f =
+      (PFNGLPROGRAMUNIFORM3FPROC)load(userptr, "glProgramUniform3f");
+  glad_glProgramUniform3fv =
+      (PFNGLPROGRAMUNIFORM3FVPROC)load(userptr, "glProgramUniform3fv");
+  glad_glProgramUniform3i =
+      (PFNGLPROGRAMUNIFORM3IPROC)load(userptr, "glProgramUniform3i");
+  glad_glProgramUniform3iv =
+      (PFNGLPROGRAMUNIFORM3IVPROC)load(userptr, "glProgramUniform3iv");
+  glad_glProgramUniform3ui =
+      (PFNGLPROGRAMUNIFORM3UIPROC)load(userptr, "glProgramUniform3ui");
+  glad_glProgramUniform3uiv =
+      (PFNGLPROGRAMUNIFORM3UIVPROC)load(userptr, "glProgramUniform3uiv");
+  glad_glProgramUniform4d =
+      (PFNGLPROGRAMUNIFORM4DPROC)load(userptr, "glProgramUniform4d");
+  glad_glProgramUniform4dv =
+      (PFNGLPROGRAMUNIFORM4DVPROC)load(userptr, "glProgramUniform4dv");
+  glad_glProgramUniform4f =
+      (PFNGLPROGRAMUNIFORM4FPROC)load(userptr, "glProgramUniform4f");
+  glad_glProgramUniform4fv =
+      (PFNGLPROGRAMUNIFORM4FVPROC)load(userptr, "glProgramUniform4fv");
+  glad_glProgramUniform4i =
+      (PFNGLPROGRAMUNIFORM4IPROC)load(userptr, "glProgramUniform4i");
+  glad_glProgramUniform4iv =
+      (PFNGLPROGRAMUNIFORM4IVPROC)load(userptr, "glProgramUniform4iv");
+  glad_glProgramUniform4ui =
+      (PFNGLPROGRAMUNIFORM4UIPROC)load(userptr, "glProgramUniform4ui");
+  glad_glProgramUniform4uiv =
+      (PFNGLPROGRAMUNIFORM4UIVPROC)load(userptr, "glProgramUniform4uiv");
+  glad_glProgramUniformMatrix2dv = (PFNGLPROGRAMUNIFORMMATRIX2DVPROC)load(
+      userptr, "glProgramUniformMatrix2dv");
+  glad_glProgramUniformMatrix2fv = (PFNGLPROGRAMUNIFORMMATRIX2FVPROC)load(
+      userptr, "glProgramUniformMatrix2fv");
+  glad_glProgramUniformMatrix2x3dv = (PFNGLPROGRAMUNIFORMMATRIX2X3DVPROC)load(
+      userptr, "glProgramUniformMatrix2x3dv");
+  glad_glProgramUniformMatrix2x3fv = (PFNGLPROGRAMUNIFORMMATRIX2X3FVPROC)load(
+      userptr, "glProgramUniformMatrix2x3fv");
+  glad_glProgramUniformMatrix2x4dv = (PFNGLPROGRAMUNIFORMMATRIX2X4DVPROC)load(
+      userptr, "glProgramUniformMatrix2x4dv");
+  glad_glProgramUniformMatrix2x4fv = (PFNGLPROGRAMUNIFORMMATRIX2X4FVPROC)load(
+      userptr, "glProgramUniformMatrix2x4fv");
+  glad_glProgramUniformMatrix3dv = (PFNGLPROGRAMUNIFORMMATRIX3DVPROC)load(
+      userptr, "glProgramUniformMatrix3dv");
+  glad_glProgramUniformMatrix3fv = (PFNGLPROGRAMUNIFORMMATRIX3FVPROC)load(
+      userptr, "glProgramUniformMatrix3fv");
+  glad_glProgramUniformMatrix3x2dv = (PFNGLPROGRAMUNIFORMMATRIX3X2DVPROC)load(
+      userptr, "glProgramUniformMatrix3x2dv");
+  glad_glProgramUniformMatrix3x2fv = (PFNGLPROGRAMUNIFORMMATRIX3X2FVPROC)load(
+      userptr, "glProgramUniformMatrix3x2fv");
+  glad_glProgramUniformMatrix3x4dv = (PFNGLPROGRAMUNIFORMMATRIX3X4DVPROC)load(
+      userptr, "glProgramUniformMatrix3x4dv");
+  glad_glProgramUniformMatrix3x4fv = (PFNGLPROGRAMUNIFORMMATRIX3X4FVPROC)load(
+      userptr, "glProgramUniformMatrix3x4fv");
+  glad_glProgramUniformMatrix4dv = (PFNGLPROGRAMUNIFORMMATRIX4DVPROC)load(
+      userptr, "glProgramUniformMatrix4dv");
+  glad_glProgramUniformMatrix4fv = (PFNGLPROGRAMUNIFORMMATRIX4FVPROC)load(
+      userptr, "glProgramUniformMatrix4fv");
+  glad_glProgramUniformMatrix4x2dv = (PFNGLPROGRAMUNIFORMMATRIX4X2DVPROC)load(
+      userptr, "glProgramUniformMatrix4x2dv");
+  glad_glProgramUniformMatrix4x2fv = (PFNGLPROGRAMUNIFORMMATRIX4X2FVPROC)load(
+      userptr, "glProgramUniformMatrix4x2fv");
+  glad_glProgramUniformMatrix4x3dv = (PFNGLPROGRAMUNIFORMMATRIX4X3DVPROC)load(
+      userptr, "glProgramUniformMatrix4x3dv");
+  glad_glProgramUniformMatrix4x3fv = (PFNGLPROGRAMUNIFORMMATRIX4X3FVPROC)load(
+      userptr, "glProgramUniformMatrix4x3fv");
+  glad_glReleaseShaderCompiler =
+      (PFNGLRELEASESHADERCOMPILERPROC)load(userptr, "glReleaseShaderCompiler");
+  glad_glScissorArrayv =
+      (PFNGLSCISSORARRAYVPROC)load(userptr, "glScissorArrayv");
+  glad_glScissorIndexed =
+      (PFNGLSCISSORINDEXEDPROC)load(userptr, "glScissorIndexed");
+  glad_glScissorIndexedv =
+      (PFNGLSCISSORINDEXEDVPROC)load(userptr, "glScissorIndexedv");
+  glad_glShaderBinary = (PFNGLSHADERBINARYPROC)load(userptr, "glShaderBinary");
+  glad_glUseProgramStages =
+      (PFNGLUSEPROGRAMSTAGESPROC)load(userptr, "glUseProgramStages");
+  glad_glValidateProgramPipeline = (PFNGLVALIDATEPROGRAMPIPELINEPROC)load(
+      userptr, "glValidateProgramPipeline");
+  glad_glVertexAttribL1d =
+      (PFNGLVERTEXATTRIBL1DPROC)load(userptr, "glVertexAttribL1d");
+  glad_glVertexAttribL1dv =
+      (PFNGLVERTEXATTRIBL1DVPROC)load(userptr, "glVertexAttribL1dv");
+  glad_glVertexAttribL2d =
+      (PFNGLVERTEXATTRIBL2DPROC)load(userptr, "glVertexAttribL2d");
+  glad_glVertexAttribL2dv =
+      (PFNGLVERTEXATTRIBL2DVPROC)load(userptr, "glVertexAttribL2dv");
+  glad_glVertexAttribL3d =
+      (PFNGLVERTEXATTRIBL3DPROC)load(userptr, "glVertexAttribL3d");
+  glad_glVertexAttribL3dv =
+      (PFNGLVERTEXATTRIBL3DVPROC)load(userptr, "glVertexAttribL3dv");
+  glad_glVertexAttribL4d =
+      (PFNGLVERTEXATTRIBL4DPROC)load(userptr, "glVertexAttribL4d");
+  glad_glVertexAttribL4dv =
+      (PFNGLVERTEXATTRIBL4DVPROC)load(userptr, "glVertexAttribL4dv");
+  glad_glVertexAttribLPointer =
+      (PFNGLVERTEXATTRIBLPOINTERPROC)load(userptr, "glVertexAttribLPointer");
+  glad_glViewportArrayv =
+      (PFNGLVIEWPORTARRAYVPROC)load(userptr, "glViewportArrayv");
+  glad_glViewportIndexedf =
+      (PFNGLVIEWPORTINDEXEDFPROC)load(userptr, "glViewportIndexedf");
+  glad_glViewportIndexedfv =
+      (PFNGLVIEWPORTINDEXEDFVPROC)load(userptr, "glViewportIndexedfv");
+}
+static void glad_gl_load_GL_VERSION_4_2(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_4_2) return;
+  glad_glBindImageTexture =
+      (PFNGLBINDIMAGETEXTUREPROC)load(userptr, "glBindImageTexture");
+  glad_glDrawArraysInstancedBaseInstance =
+      (PFNGLDRAWARRAYSINSTANCEDBASEINSTANCEPROC)load(
+          userptr, "glDrawArraysInstancedBaseInstance");
+  glad_glDrawElementsInstancedBaseInstance =
+      (PFNGLDRAWELEMENTSINSTANCEDBASEINSTANCEPROC)load(
+          userptr, "glDrawElementsInstancedBaseInstance");
+  glad_glDrawElementsInstancedBaseVertexBaseInstance =
+      (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXBASEINSTANCEPROC)load(
+          userptr, "glDrawElementsInstancedBaseVertexBaseInstance");
+  glad_glDrawTransformFeedbackInstanced =
+      (PFNGLDRAWTRANSFORMFEEDBACKINSTANCEDPROC)load(
+          userptr, "glDrawTransformFeedbackInstanced");
+  glad_glDrawTransformFeedbackStreamInstanced =
+      (PFNGLDRAWTRANSFORMFEEDBACKSTREAMINSTANCEDPROC)load(
+          userptr, "glDrawTransformFeedbackStreamInstanced");
+  glad_glGetActiveAtomicCounterBufferiv =
+      (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC)load(
+          userptr, "glGetActiveAtomicCounterBufferiv");
+  glad_glGetInternalformativ =
+      (PFNGLGETINTERNALFORMATIVPROC)load(userptr, "glGetInternalformativ");
+  glad_glMemoryBarrier =
+      (PFNGLMEMORYBARRIERPROC)load(userptr, "glMemoryBarrier");
+  glad_glTexStorage1D = (PFNGLTEXSTORAGE1DPROC)load(userptr, "glTexStorage1D");
+  glad_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC)load(userptr, "glTexStorage2D");
+  glad_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC)load(userptr, "glTexStorage3D");
+}
+static void glad_gl_load_GL_VERSION_4_3(GLADuserptrloadfunc load,
+                                        void *userptr) {
+  if (!GLAD_GL_VERSION_4_3) return;
+  glad_glBindVertexBuffer =
+      (PFNGLBINDVERTEXBUFFERPROC)load(userptr, "glBindVertexBuffer");
+  glad_glClearBufferData =
+      (PFNGLCLEARBUFFERDATAPROC)load(userptr, "glClearBufferData");
+  glad_glClearBufferSubData =
+      (PFNGLCLEARBUFFERSUBDATAPROC)load(userptr, "glClearBufferSubData");
+  glad_glCopyImageSubData =
+      (PFNGLCOPYIMAGESUBDATAPROC)load(userptr, "glCopyImageSubData");
+  glad_glDebugMessageCallback =
+      (PFNGLDEBUGMESSAGECALLBACKPROC)load(userptr, "glDebugMessageCallback");
+  glad_glDebugMessageControl =
+      (PFNGLDEBUGMESSAGECONTROLPROC)load(userptr, "glDebugMessageControl");
+  glad_glDebugMessageInsert =
+      (PFNGLDEBUGMESSAGEINSERTPROC)load(userptr, "glDebugMessageInsert");
+  glad_glDispatchCompute =
+      (PFNGLDISPATCHCOMPUTEPROC)load(userptr, "glDispatchCompute");
+  glad_glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC)load(
+      userptr, "glDispatchComputeIndirect");
+  glad_glFramebufferParameteri =
+      (PFNGLFRAMEBUFFERPARAMETERIPROC)load(userptr, "glFramebufferParameteri");
+  glad_glGetDebugMessageLog =
+      (PFNGLGETDEBUGMESSAGELOGPROC)load(userptr, "glGetDebugMessageLog");
+  glad_glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC)load(
+      userptr, "glGetFramebufferParameteriv");
+  glad_glGetInternalformati64v =
+      (PFNGLGETINTERNALFORMATI64VPROC)load(userptr, "glGetInternalformati64v");
+  glad_glGetObjectLabel =
+      (PFNGLGETOBJECTLABELPROC)load(userptr, "glGetObjectLabel");
+  glad_glGetObjectPtrLabel =
+      (PFNGLGETOBJECTPTRLABELPROC)load(userptr, "glGetObjectPtrLabel");
+  glad_glGetPointerv = (PFNGLGETPOINTERVPROC)load(userptr, "glGetPointerv");
+  glad_glGetProgramInterfaceiv =
+      (PFNGLGETPROGRAMINTERFACEIVPROC)load(userptr, "glGetProgramInterfaceiv");
+  glad_glGetProgramResourceIndex = (PFNGLGETPROGRAMRESOURCEINDEXPROC)load(
+      userptr, "glGetProgramResourceIndex");
+  glad_glGetProgramResourceLocation = (PFNGLGETPROGRAMRESOURCELOCATIONPROC)load(
+      userptr, "glGetProgramResourceLocation");
+  glad_glGetProgramResourceLocationIndex =
+      (PFNGLGETPROGRAMRESOURCELOCATIONINDEXPROC)load(
+          userptr, "glGetProgramResourceLocationIndex");
+  glad_glGetProgramResourceName = (PFNGLGETPROGRAMRESOURCENAMEPROC)load(
+      userptr, "glGetProgramResourceName");
+  glad_glGetProgramResourceiv =
+      (PFNGLGETPROGRAMRESOURCEIVPROC)load(userptr, "glGetProgramResourceiv");
+  glad_glInvalidateBufferData =
+      (PFNGLINVALIDATEBUFFERDATAPROC)load(userptr, "glInvalidateBufferData");
+  glad_glInvalidateBufferSubData = (PFNGLINVALIDATEBUFFERSUBDATAPROC)load(
+      userptr, "glInvalidateBufferSubData");
+  glad_glInvalidateFramebuffer =
+      (PFNGLINVALIDATEFRAMEBUFFERPROC)load(userptr, "glInvalidateFramebuffer");
+  glad_glInvalidateSubFramebuffer = (PFNGLINVALIDATESUBFRAMEBUFFERPROC)load(
+      userptr, "glInvalidateSubFramebuffer");
+  glad_glInvalidateTexImage =
+      (PFNGLINVALIDATETEXIMAGEPROC)load(userptr, "glInvalidateTexImage");
+  glad_glInvalidateTexSubImage =
+      (PFNGLINVALIDATETEXSUBIMAGEPROC)load(userptr, "glInvalidateTexSubImage");
+  glad_glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC)load(
+      userptr, "glMultiDrawArraysIndirect");
+  glad_glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC)load(
+      userptr, "glMultiDrawElementsIndirect");
+  glad_glObjectLabel = (PFNGLOBJECTLABELPROC)load(userptr, "glObjectLabel");
+  glad_glObjectPtrLabel =
+      (PFNGLOBJECTPTRLABELPROC)load(userptr, "glObjectPtrLabel");
+  glad_glPopDebugGroup =
+      (PFNGLPOPDEBUGGROUPPROC)load(userptr, "glPopDebugGroup");
+  glad_glPushDebugGroup =
+      (PFNGLPUSHDEBUGGROUPPROC)load(userptr, "glPushDebugGroup");
+  glad_glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC)load(
+      userptr, "glShaderStorageBlockBinding");
+  glad_glTexBufferRange =
+      (PFNGLTEXBUFFERRANGEPROC)load(userptr, "glTexBufferRange");
+  glad_glTexStorage2DMultisample = (PFNGLTEXSTORAGE2DMULTISAMPLEPROC)load(
+      userptr, "glTexStorage2DMultisample");
+  glad_glTexStorage3DMultisample = (PFNGLTEXSTORAGE3DMULTISAMPLEPROC)load(
+      userptr, "glTexStorage3DMultisample");
+  glad_glTextureView = (PFNGLTEXTUREVIEWPROC)load(userptr, "glTextureView");
+  glad_glVertexAttribBinding =
+      (PFNGLVERTEXATTRIBBINDINGPROC)load(userptr, "glVertexAttribBinding");
+  glad_glVertexAttribFormat =
+      (PFNGLVERTEXATTRIBFORMATPROC)load(userptr, "glVertexAttribFormat");
+  glad_glVertexAttribIFormat =
+      (PFNGLVERTEXATTRIBIFORMATPROC)load(userptr, "glVertexAttribIFormat");
+  glad_glVertexAttribLFormat =
+      (PFNGLVERTEXATTRIBLFORMATPROC)load(userptr, "glVertexAttribLFormat");
+  glad_glVertexBindingDivisor =
+      (PFNGLVERTEXBINDINGDIVISORPROC)load(userptr, "glVertexBindingDivisor");
+}
+static void glad_gl_load_GL_ARB_ES2_compatibility(GLADuserptrloadfunc load,
+                                                  void *userptr) {
+  if (!GLAD_GL_ARB_ES2_compatibility) return;
+  glad_glClearDepthf = (PFNGLCLEARDEPTHFPROC)load(userptr, "glClearDepthf");
+  glad_glDepthRangef = (PFNGLDEPTHRANGEFPROC)load(userptr, "glDepthRangef");
+  glad_glGetShaderPrecisionFormat = (PFNGLGETSHADERPRECISIONFORMATPROC)load(
+      userptr, "glGetShaderPrecisionFormat");
+  glad_glReleaseShaderCompiler =
+      (PFNGLRELEASESHADERCOMPILERPROC)load(userptr, "glReleaseShaderCompiler");
+  glad_glShaderBinary = (PFNGLSHADERBINARYPROC)load(userptr, "glShaderBinary");
+}
+static void glad_gl_load_GL_ARB_ES3_1_compatibility(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_ES3_1_compatibility) return;
+  glad_glMemoryBarrierByRegion =
+      (PFNGLMEMORYBARRIERBYREGIONPROC)load(userptr, "glMemoryBarrierByRegion");
+}
+static void glad_gl_load_GL_ARB_ES3_2_compatibility(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_ES3_2_compatibility) return;
+  glad_glPrimitiveBoundingBoxARB = (PFNGLPRIMITIVEBOUNDINGBOXARBPROC)load(
+      userptr, "glPrimitiveBoundingBoxARB");
+}
+static void glad_gl_load_GL_ARB_blend_func_extended(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_blend_func_extended) return;
+  glad_glBindFragDataLocationIndexed =
+      (PFNGLBINDFRAGDATALOCATIONINDEXEDPROC)load(
+          userptr, "glBindFragDataLocationIndexed");
+  glad_glGetFragDataIndex =
+      (PFNGLGETFRAGDATAINDEXPROC)load(userptr, "glGetFragDataIndex");
+}
+static void glad_gl_load_GL_ARB_buffer_storage(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_ARB_buffer_storage) return;
+  glad_glBufferStorage =
+      (PFNGLBUFFERSTORAGEPROC)load(userptr, "glBufferStorage");
+}
+static void glad_gl_load_GL_ARB_clear_buffer_object(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_clear_buffer_object) return;
+  glad_glClearBufferData =
+      (PFNGLCLEARBUFFERDATAPROC)load(userptr, "glClearBufferData");
+  glad_glClearBufferSubData =
+      (PFNGLCLEARBUFFERSUBDATAPROC)load(userptr, "glClearBufferSubData");
+}
+static void glad_gl_load_GL_ARB_clear_texture(GLADuserptrloadfunc load,
+                                              void *userptr) {
+  if (!GLAD_GL_ARB_clear_texture) return;
+  glad_glClearTexImage =
+      (PFNGLCLEARTEXIMAGEPROC)load(userptr, "glClearTexImage");
+  glad_glClearTexSubImage =
+      (PFNGLCLEARTEXSUBIMAGEPROC)load(userptr, "glClearTexSubImage");
+}
+static void glad_gl_load_GL_ARB_color_buffer_float(GLADuserptrloadfunc load,
+                                                   void *userptr) {
+  if (!GLAD_GL_ARB_color_buffer_float) return;
+  glad_glClampColorARB =
+      (PFNGLCLAMPCOLORARBPROC)load(userptr, "glClampColorARB");
+}
+static void glad_gl_load_GL_ARB_compute_shader(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_ARB_compute_shader) return;
+  glad_glDispatchCompute =
+      (PFNGLDISPATCHCOMPUTEPROC)load(userptr, "glDispatchCompute");
+  glad_glDispatchComputeIndirect = (PFNGLDISPATCHCOMPUTEINDIRECTPROC)load(
+      userptr, "glDispatchComputeIndirect");
+}
+static void glad_gl_load_GL_ARB_compute_variable_group_size(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_ARB_compute_variable_group_size) return;
+  glad_glDispatchComputeGroupSizeARB =
+      (PFNGLDISPATCHCOMPUTEGROUPSIZEARBPROC)load(
+          userptr, "glDispatchComputeGroupSizeARB");
+}
+static void glad_gl_load_GL_ARB_copy_buffer(GLADuserptrloadfunc load,
+                                            void *userptr) {
+  if (!GLAD_GL_ARB_copy_buffer) return;
+  glad_glCopyBufferSubData =
+      (PFNGLCOPYBUFFERSUBDATAPROC)load(userptr, "glCopyBufferSubData");
+}
+static void glad_gl_load_GL_ARB_copy_image(GLADuserptrloadfunc load,
+                                           void *userptr) {
+  if (!GLAD_GL_ARB_copy_image) return;
+  glad_glCopyImageSubData =
+      (PFNGLCOPYIMAGESUBDATAPROC)load(userptr, "glCopyImageSubData");
+}
+static void glad_gl_load_GL_ARB_debug_output(GLADuserptrloadfunc load,
+                                             void *userptr) {
+  if (!GLAD_GL_ARB_debug_output) return;
+  glad_glDebugMessageCallbackARB = (PFNGLDEBUGMESSAGECALLBACKARBPROC)load(
+      userptr, "glDebugMessageCallbackARB");
+  glad_glDebugMessageControlARB = (PFNGLDEBUGMESSAGECONTROLARBPROC)load(
+      userptr, "glDebugMessageControlARB");
+  glad_glDebugMessageInsertARB =
+      (PFNGLDEBUGMESSAGEINSERTARBPROC)load(userptr, "glDebugMessageInsertARB");
+  glad_glGetDebugMessageLogARB =
+      (PFNGLGETDEBUGMESSAGELOGARBPROC)load(userptr, "glGetDebugMessageLogARB");
+}
+static void glad_gl_load_GL_ARB_direct_state_access(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_direct_state_access) return;
+  glad_glBindTextureUnit =
+      (PFNGLBINDTEXTUREUNITPROC)load(userptr, "glBindTextureUnit");
+  glad_glBlitNamedFramebuffer =
+      (PFNGLBLITNAMEDFRAMEBUFFERPROC)load(userptr, "glBlitNamedFramebuffer");
+  glad_glCheckNamedFramebufferStatus =
+      (PFNGLCHECKNAMEDFRAMEBUFFERSTATUSPROC)load(
+          userptr, "glCheckNamedFramebufferStatus");
+  glad_glClearNamedBufferData =
+      (PFNGLCLEARNAMEDBUFFERDATAPROC)load(userptr, "glClearNamedBufferData");
+  glad_glClearNamedBufferSubData = (PFNGLCLEARNAMEDBUFFERSUBDATAPROC)load(
+      userptr, "glClearNamedBufferSubData");
+  glad_glClearNamedFramebufferfi = (PFNGLCLEARNAMEDFRAMEBUFFERFIPROC)load(
+      userptr, "glClearNamedFramebufferfi");
+  glad_glClearNamedFramebufferfv = (PFNGLCLEARNAMEDFRAMEBUFFERFVPROC)load(
+      userptr, "glClearNamedFramebufferfv");
+  glad_glClearNamedFramebufferiv = (PFNGLCLEARNAMEDFRAMEBUFFERIVPROC)load(
+      userptr, "glClearNamedFramebufferiv");
+  glad_glClearNamedFramebufferuiv = (PFNGLCLEARNAMEDFRAMEBUFFERUIVPROC)load(
+      userptr, "glClearNamedFramebufferuiv");
+  glad_glCompressedTextureSubImage1D =
+      (PFNGLCOMPRESSEDTEXTURESUBIMAGE1DPROC)load(
+          userptr, "glCompressedTextureSubImage1D");
+  glad_glCompressedTextureSubImage2D =
+      (PFNGLCOMPRESSEDTEXTURESUBIMAGE2DPROC)load(
+          userptr, "glCompressedTextureSubImage2D");
+  glad_glCompressedTextureSubImage3D =
+      (PFNGLCOMPRESSEDTEXTURESUBIMAGE3DPROC)load(
+          userptr, "glCompressedTextureSubImage3D");
+  glad_glCopyNamedBufferSubData = (PFNGLCOPYNAMEDBUFFERSUBDATAPROC)load(
+      userptr, "glCopyNamedBufferSubData");
+  glad_glCopyTextureSubImage1D =
+      (PFNGLCOPYTEXTURESUBIMAGE1DPROC)load(userptr, "glCopyTextureSubImage1D");
+  glad_glCopyTextureSubImage2D =
+      (PFNGLCOPYTEXTURESUBIMAGE2DPROC)load(userptr, "glCopyTextureSubImage2D");
+  glad_glCopyTextureSubImage3D =
+      (PFNGLCOPYTEXTURESUBIMAGE3DPROC)load(userptr, "glCopyTextureSubImage3D");
+  glad_glCreateBuffers =
+      (PFNGLCREATEBUFFERSPROC)load(userptr, "glCreateBuffers");
+  glad_glCreateFramebuffers =
+      (PFNGLCREATEFRAMEBUFFERSPROC)load(userptr, "glCreateFramebuffers");
+  glad_glCreateProgramPipelines = (PFNGLCREATEPROGRAMPIPELINESPROC)load(
+      userptr, "glCreateProgramPipelines");
+  glad_glCreateQueries =
+      (PFNGLCREATEQUERIESPROC)load(userptr, "glCreateQueries");
+  glad_glCreateRenderbuffers =
+      (PFNGLCREATERENDERBUFFERSPROC)load(userptr, "glCreateRenderbuffers");
+  glad_glCreateSamplers =
+      (PFNGLCREATESAMPLERSPROC)load(userptr, "glCreateSamplers");
+  glad_glCreateTextures =
+      (PFNGLCREATETEXTURESPROC)load(userptr, "glCreateTextures");
+  glad_glCreateTransformFeedbacks = (PFNGLCREATETRANSFORMFEEDBACKSPROC)load(
+      userptr, "glCreateTransformFeedbacks");
+  glad_glCreateVertexArrays =
+      (PFNGLCREATEVERTEXARRAYSPROC)load(userptr, "glCreateVertexArrays");
+  glad_glDisableVertexArrayAttrib = (PFNGLDISABLEVERTEXARRAYATTRIBPROC)load(
+      userptr, "glDisableVertexArrayAttrib");
+  glad_glEnableVertexArrayAttrib = (PFNGLENABLEVERTEXARRAYATTRIBPROC)load(
+      userptr, "glEnableVertexArrayAttrib");
+  glad_glFlushMappedNamedBufferRange =
+      (PFNGLFLUSHMAPPEDNAMEDBUFFERRANGEPROC)load(
+          userptr, "glFlushMappedNamedBufferRange");
+  glad_glGenerateTextureMipmap =
+      (PFNGLGENERATETEXTUREMIPMAPPROC)load(userptr, "glGenerateTextureMipmap");
+  glad_glGetCompressedTextureImage = (PFNGLGETCOMPRESSEDTEXTUREIMAGEPROC)load(
+      userptr, "glGetCompressedTextureImage");
+  glad_glGetNamedBufferParameteri64v =
+      (PFNGLGETNAMEDBUFFERPARAMETERI64VPROC)load(
+          userptr, "glGetNamedBufferParameteri64v");
+  glad_glGetNamedBufferParameteriv = (PFNGLGETNAMEDBUFFERPARAMETERIVPROC)load(
+      userptr, "glGetNamedBufferParameteriv");
+  glad_glGetNamedBufferPointerv = (PFNGLGETNAMEDBUFFERPOINTERVPROC)load(
+      userptr, "glGetNamedBufferPointerv");
+  glad_glGetNamedBufferSubData =
+      (PFNGLGETNAMEDBUFFERSUBDATAPROC)load(userptr, "glGetNamedBufferSubData");
+  glad_glGetNamedFramebufferAttachmentParameteriv =
+      (PFNGLGETNAMEDFRAMEBUFFERATTACHMENTPARAMETERIVPROC)load(
+          userptr, "glGetNamedFramebufferAttachmentParameteriv");
+  glad_glGetNamedFramebufferParameteriv =
+      (PFNGLGETNAMEDFRAMEBUFFERPARAMETERIVPROC)load(
+          userptr, "glGetNamedFramebufferParameteriv");
+  glad_glGetNamedRenderbufferParameteriv =
+      (PFNGLGETNAMEDRENDERBUFFERPARAMETERIVPROC)load(
+          userptr, "glGetNamedRenderbufferParameteriv");
+  glad_glGetQueryBufferObjecti64v = (PFNGLGETQUERYBUFFEROBJECTI64VPROC)load(
+      userptr, "glGetQueryBufferObjecti64v");
+  glad_glGetQueryBufferObjectiv = (PFNGLGETQUERYBUFFEROBJECTIVPROC)load(
+      userptr, "glGetQueryBufferObjectiv");
+  glad_glGetQueryBufferObjectui64v = (PFNGLGETQUERYBUFFEROBJECTUI64VPROC)load(
+      userptr, "glGetQueryBufferObjectui64v");
+  glad_glGetQueryBufferObjectuiv = (PFNGLGETQUERYBUFFEROBJECTUIVPROC)load(
+      userptr, "glGetQueryBufferObjectuiv");
+  glad_glGetTextureImage =
+      (PFNGLGETTEXTUREIMAGEPROC)load(userptr, "glGetTextureImage");
+  glad_glGetTextureLevelParameterfv = (PFNGLGETTEXTURELEVELPARAMETERFVPROC)load(
+      userptr, "glGetTextureLevelParameterfv");
+  glad_glGetTextureLevelParameteriv = (PFNGLGETTEXTURELEVELPARAMETERIVPROC)load(
+      userptr, "glGetTextureLevelParameteriv");
+  glad_glGetTextureParameterIiv = (PFNGLGETTEXTUREPARAMETERIIVPROC)load(
+      userptr, "glGetTextureParameterIiv");
+  glad_glGetTextureParameterIuiv = (PFNGLGETTEXTUREPARAMETERIUIVPROC)load(
+      userptr, "glGetTextureParameterIuiv");
+  glad_glGetTextureParameterfv =
+      (PFNGLGETTEXTUREPARAMETERFVPROC)load(userptr, "glGetTextureParameterfv");
+  glad_glGetTextureParameteriv =
+      (PFNGLGETTEXTUREPARAMETERIVPROC)load(userptr, "glGetTextureParameteriv");
+  glad_glGetTransformFeedbacki64_v = (PFNGLGETTRANSFORMFEEDBACKI64_VPROC)load(
+      userptr, "glGetTransformFeedbacki64_v");
+  glad_glGetTransformFeedbacki_v = (PFNGLGETTRANSFORMFEEDBACKI_VPROC)load(
+      userptr, "glGetTransformFeedbacki_v");
+  glad_glGetTransformFeedbackiv = (PFNGLGETTRANSFORMFEEDBACKIVPROC)load(
+      userptr, "glGetTransformFeedbackiv");
+  glad_glGetVertexArrayIndexed64iv = (PFNGLGETVERTEXARRAYINDEXED64IVPROC)load(
+      userptr, "glGetVertexArrayIndexed64iv");
+  glad_glGetVertexArrayIndexediv = (PFNGLGETVERTEXARRAYINDEXEDIVPROC)load(
+      userptr, "glGetVertexArrayIndexediv");
+  glad_glGetVertexArrayiv =
+      (PFNGLGETVERTEXARRAYIVPROC)load(userptr, "glGetVertexArrayiv");
+  glad_glInvalidateNamedFramebufferData =
+      (PFNGLINVALIDATENAMEDFRAMEBUFFERDATAPROC)load(
+          userptr, "glInvalidateNamedFramebufferData");
+  glad_glInvalidateNamedFramebufferSubData =
+      (PFNGLINVALIDATENAMEDFRAMEBUFFERSUBDATAPROC)load(
+          userptr, "glInvalidateNamedFramebufferSubData");
+  glad_glMapNamedBuffer =
+      (PFNGLMAPNAMEDBUFFERPROC)load(userptr, "glMapNamedBuffer");
+  glad_glMapNamedBufferRange =
+      (PFNGLMAPNAMEDBUFFERRANGEPROC)load(userptr, "glMapNamedBufferRange");
+  glad_glNamedBufferData =
+      (PFNGLNAMEDBUFFERDATAPROC)load(userptr, "glNamedBufferData");
+  glad_glNamedBufferStorage =
+      (PFNGLNAMEDBUFFERSTORAGEPROC)load(userptr, "glNamedBufferStorage");
+  glad_glNamedBufferSubData =
+      (PFNGLNAMEDBUFFERSUBDATAPROC)load(userptr, "glNamedBufferSubData");
+  glad_glNamedFramebufferDrawBuffer = (PFNGLNAMEDFRAMEBUFFERDRAWBUFFERPROC)load(
+      userptr, "glNamedFramebufferDrawBuffer");
+  glad_glNamedFramebufferDrawBuffers =
+      (PFNGLNAMEDFRAMEBUFFERDRAWBUFFERSPROC)load(
+          userptr, "glNamedFramebufferDrawBuffers");
+  glad_glNamedFramebufferParameteri = (PFNGLNAMEDFRAMEBUFFERPARAMETERIPROC)load(
+      userptr, "glNamedFramebufferParameteri");
+  glad_glNamedFramebufferReadBuffer = (PFNGLNAMEDFRAMEBUFFERREADBUFFERPROC)load(
+      userptr, "glNamedFramebufferReadBuffer");
+  glad_glNamedFramebufferRenderbuffer =
+      (PFNGLNAMEDFRAMEBUFFERRENDERBUFFERPROC)load(
+          userptr, "glNamedFramebufferRenderbuffer");
+  glad_glNamedFramebufferTexture = (PFNGLNAMEDFRAMEBUFFERTEXTUREPROC)load(
+      userptr, "glNamedFramebufferTexture");
+  glad_glNamedFramebufferTextureLayer =
+      (PFNGLNAMEDFRAMEBUFFERTEXTURELAYERPROC)load(
+          userptr, "glNamedFramebufferTextureLayer");
+  glad_glNamedRenderbufferStorage = (PFNGLNAMEDRENDERBUFFERSTORAGEPROC)load(
+      userptr, "glNamedRenderbufferStorage");
+  glad_glNamedRenderbufferStorageMultisample =
+      (PFNGLNAMEDRENDERBUFFERSTORAGEMULTISAMPLEPROC)load(
+          userptr, "glNamedRenderbufferStorageMultisample");
+  glad_glTextureBuffer =
+      (PFNGLTEXTUREBUFFERPROC)load(userptr, "glTextureBuffer");
+  glad_glTextureBufferRange =
+      (PFNGLTEXTUREBUFFERRANGEPROC)load(userptr, "glTextureBufferRange");
+  glad_glTextureParameterIiv =
+      (PFNGLTEXTUREPARAMETERIIVPROC)load(userptr, "glTextureParameterIiv");
+  glad_glTextureParameterIuiv =
+      (PFNGLTEXTUREPARAMETERIUIVPROC)load(userptr, "glTextureParameterIuiv");
+  glad_glTextureParameterf =
+      (PFNGLTEXTUREPARAMETERFPROC)load(userptr, "glTextureParameterf");
+  glad_glTextureParameterfv =
+      (PFNGLTEXTUREPARAMETERFVPROC)load(userptr, "glTextureParameterfv");
+  glad_glTextureParameteri =
+      (PFNGLTEXTUREPARAMETERIPROC)load(userptr, "glTextureParameteri");
+  glad_glTextureParameteriv =
+      (PFNGLTEXTUREPARAMETERIVPROC)load(userptr, "glTextureParameteriv");
+  glad_glTextureStorage1D =
+      (PFNGLTEXTURESTORAGE1DPROC)load(userptr, "glTextureStorage1D");
+  glad_glTextureStorage2D =
+      (PFNGLTEXTURESTORAGE2DPROC)load(userptr, "glTextureStorage2D");
+  glad_glTextureStorage2DMultisample =
+      (PFNGLTEXTURESTORAGE2DMULTISAMPLEPROC)load(
+          userptr, "glTextureStorage2DMultisample");
+  glad_glTextureStorage3D =
+      (PFNGLTEXTURESTORAGE3DPROC)load(userptr, "glTextureStorage3D");
+  glad_glTextureStorage3DMultisample =
+      (PFNGLTEXTURESTORAGE3DMULTISAMPLEPROC)load(
+          userptr, "glTextureStorage3DMultisample");
+  glad_glTextureSubImage1D =
+      (PFNGLTEXTURESUBIMAGE1DPROC)load(userptr, "glTextureSubImage1D");
+  glad_glTextureSubImage2D =
+      (PFNGLTEXTURESUBIMAGE2DPROC)load(userptr, "glTextureSubImage2D");
+  glad_glTextureSubImage3D =
+      (PFNGLTEXTURESUBIMAGE3DPROC)load(userptr, "glTextureSubImage3D");
+  glad_glTransformFeedbackBufferBase =
+      (PFNGLTRANSFORMFEEDBACKBUFFERBASEPROC)load(
+          userptr, "glTransformFeedbackBufferBase");
+  glad_glTransformFeedbackBufferRange =
+      (PFNGLTRANSFORMFEEDBACKBUFFERRANGEPROC)load(
+          userptr, "glTransformFeedbackBufferRange");
+  glad_glUnmapNamedBuffer =
+      (PFNGLUNMAPNAMEDBUFFERPROC)load(userptr, "glUnmapNamedBuffer");
+  glad_glVertexArrayAttribBinding = (PFNGLVERTEXARRAYATTRIBBINDINGPROC)load(
+      userptr, "glVertexArrayAttribBinding");
+  glad_glVertexArrayAttribFormat = (PFNGLVERTEXARRAYATTRIBFORMATPROC)load(
+      userptr, "glVertexArrayAttribFormat");
+  glad_glVertexArrayAttribIFormat = (PFNGLVERTEXARRAYATTRIBIFORMATPROC)load(
+      userptr, "glVertexArrayAttribIFormat");
+  glad_glVertexArrayAttribLFormat = (PFNGLVERTEXARRAYATTRIBLFORMATPROC)load(
+      userptr, "glVertexArrayAttribLFormat");
+  glad_glVertexArrayBindingDivisor = (PFNGLVERTEXARRAYBINDINGDIVISORPROC)load(
+      userptr, "glVertexArrayBindingDivisor");
+  glad_glVertexArrayElementBuffer = (PFNGLVERTEXARRAYELEMENTBUFFERPROC)load(
+      userptr, "glVertexArrayElementBuffer");
+  glad_glVertexArrayVertexBuffer = (PFNGLVERTEXARRAYVERTEXBUFFERPROC)load(
+      userptr, "glVertexArrayVertexBuffer");
+  glad_glVertexArrayVertexBuffers = (PFNGLVERTEXARRAYVERTEXBUFFERSPROC)load(
+      userptr, "glVertexArrayVertexBuffers");
+}
+static void glad_gl_load_GL_ARB_draw_buffers(GLADuserptrloadfunc load,
+                                             void *userptr) {
+  if (!GLAD_GL_ARB_draw_buffers) return;
+  glad_glDrawBuffersARB =
+      (PFNGLDRAWBUFFERSARBPROC)load(userptr, "glDrawBuffersARB");
+}
+static void glad_gl_load_GL_ARB_draw_buffers_blend(GLADuserptrloadfunc load,
+                                                   void *userptr) {
+  if (!GLAD_GL_ARB_draw_buffers_blend) return;
+  glad_glBlendEquationSeparateiARB = (PFNGLBLENDEQUATIONSEPARATEIARBPROC)load(
+      userptr, "glBlendEquationSeparateiARB");
+  glad_glBlendEquationiARB =
+      (PFNGLBLENDEQUATIONIARBPROC)load(userptr, "glBlendEquationiARB");
+  glad_glBlendFuncSeparateiARB =
+      (PFNGLBLENDFUNCSEPARATEIARBPROC)load(userptr, "glBlendFuncSeparateiARB");
+  glad_glBlendFunciARB =
+      (PFNGLBLENDFUNCIARBPROC)load(userptr, "glBlendFunciARB");
+}
+static void glad_gl_load_GL_ARB_draw_elements_base_vertex(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_ARB_draw_elements_base_vertex) return;
+  glad_glDrawElementsBaseVertex = (PFNGLDRAWELEMENTSBASEVERTEXPROC)load(
+      userptr, "glDrawElementsBaseVertex");
+  glad_glDrawElementsInstancedBaseVertex =
+      (PFNGLDRAWELEMENTSINSTANCEDBASEVERTEXPROC)load(
+          userptr, "glDrawElementsInstancedBaseVertex");
+  glad_glDrawRangeElementsBaseVertex =
+      (PFNGLDRAWRANGEELEMENTSBASEVERTEXPROC)load(
+          userptr, "glDrawRangeElementsBaseVertex");
+  glad_glMultiDrawElementsBaseVertex =
+      (PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC)load(
+          userptr, "glMultiDrawElementsBaseVertex");
+}
+static void glad_gl_load_GL_ARB_draw_indirect(GLADuserptrloadfunc load,
+                                              void *userptr) {
+  if (!GLAD_GL_ARB_draw_indirect) return;
+  glad_glDrawArraysIndirect =
+      (PFNGLDRAWARRAYSINDIRECTPROC)load(userptr, "glDrawArraysIndirect");
+  glad_glDrawElementsIndirect =
+      (PFNGLDRAWELEMENTSINDIRECTPROC)load(userptr, "glDrawElementsIndirect");
+}
+static void glad_gl_load_GL_ARB_draw_instanced(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_ARB_draw_instanced) return;
+  glad_glDrawArraysInstancedARB = (PFNGLDRAWARRAYSINSTANCEDARBPROC)load(
+      userptr, "glDrawArraysInstancedARB");
+  glad_glDrawElementsInstancedARB = (PFNGLDRAWELEMENTSINSTANCEDARBPROC)load(
+      userptr, "glDrawElementsInstancedARB");
+}
+static void glad_gl_load_GL_ARB_fragment_program(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_fragment_program) return;
+  glad_glBindProgramARB =
+      (PFNGLBINDPROGRAMARBPROC)load(userptr, "glBindProgramARB");
+  glad_glDeleteProgramsARB =
+      (PFNGLDELETEPROGRAMSARBPROC)load(userptr, "glDeleteProgramsARB");
+  glad_glGenProgramsARB =
+      (PFNGLGENPROGRAMSARBPROC)load(userptr, "glGenProgramsARB");
+  glad_glGetProgramEnvParameterdvARB =
+      (PFNGLGETPROGRAMENVPARAMETERDVARBPROC)load(
+          userptr, "glGetProgramEnvParameterdvARB");
+  glad_glGetProgramEnvParameterfvARB =
+      (PFNGLGETPROGRAMENVPARAMETERFVARBPROC)load(
+          userptr, "glGetProgramEnvParameterfvARB");
+  glad_glGetProgramLocalParameterdvARB =
+      (PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC)load(
+          userptr, "glGetProgramLocalParameterdvARB");
+  glad_glGetProgramLocalParameterfvARB =
+      (PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC)load(
+          userptr, "glGetProgramLocalParameterfvARB");
+  glad_glGetProgramStringARB =
+      (PFNGLGETPROGRAMSTRINGARBPROC)load(userptr, "glGetProgramStringARB");
+  glad_glGetProgramivARB =
+      (PFNGLGETPROGRAMIVARBPROC)load(userptr, "glGetProgramivARB");
+  glad_glIsProgramARB = (PFNGLISPROGRAMARBPROC)load(userptr, "glIsProgramARB");
+  glad_glProgramEnvParameter4dARB = (PFNGLPROGRAMENVPARAMETER4DARBPROC)load(
+      userptr, "glProgramEnvParameter4dARB");
+  glad_glProgramEnvParameter4dvARB = (PFNGLPROGRAMENVPARAMETER4DVARBPROC)load(
+      userptr, "glProgramEnvParameter4dvARB");
+  glad_glProgramEnvParameter4fARB = (PFNGLPROGRAMENVPARAMETER4FARBPROC)load(
+      userptr, "glProgramEnvParameter4fARB");
+  glad_glProgramEnvParameter4fvARB = (PFNGLPROGRAMENVPARAMETER4FVARBPROC)load(
+      userptr, "glProgramEnvParameter4fvARB");
+  glad_glProgramLocalParameter4dARB = (PFNGLPROGRAMLOCALPARAMETER4DARBPROC)load(
+      userptr, "glProgramLocalParameter4dARB");
+  glad_glProgramLocalParameter4dvARB =
+      (PFNGLPROGRAMLOCALPARAMETER4DVARBPROC)load(
+          userptr, "glProgramLocalParameter4dvARB");
+  glad_glProgramLocalParameter4fARB = (PFNGLPROGRAMLOCALPARAMETER4FARBPROC)load(
+      userptr, "glProgramLocalParameter4fARB");
+  glad_glProgramLocalParameter4fvARB =
+      (PFNGLPROGRAMLOCALPARAMETER4FVARBPROC)load(
+          userptr, "glProgramLocalParameter4fvARB");
+  glad_glProgramStringARB =
+      (PFNGLPROGRAMSTRINGARBPROC)load(userptr, "glProgramStringARB");
+}
+static void glad_gl_load_GL_ARB_framebuffer_no_attachments(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_ARB_framebuffer_no_attachments) return;
+  glad_glFramebufferParameteri =
+      (PFNGLFRAMEBUFFERPARAMETERIPROC)load(userptr, "glFramebufferParameteri");
+  glad_glGetFramebufferParameteriv = (PFNGLGETFRAMEBUFFERPARAMETERIVPROC)load(
+      userptr, "glGetFramebufferParameteriv");
+}
+static void glad_gl_load_GL_ARB_framebuffer_object(GLADuserptrloadfunc load,
+                                                   void *userptr) {
+  if (!GLAD_GL_ARB_framebuffer_object) return;
+  glad_glBindFramebuffer =
+      (PFNGLBINDFRAMEBUFFERPROC)load(userptr, "glBindFramebuffer");
+  glad_glBindRenderbuffer =
+      (PFNGLBINDRENDERBUFFERPROC)load(userptr, "glBindRenderbuffer");
+  glad_glBlitFramebuffer =
+      (PFNGLBLITFRAMEBUFFERPROC)load(userptr, "glBlitFramebuffer");
+  glad_glCheckFramebufferStatus = (PFNGLCHECKFRAMEBUFFERSTATUSPROC)load(
+      userptr, "glCheckFramebufferStatus");
+  glad_glDeleteFramebuffers =
+      (PFNGLDELETEFRAMEBUFFERSPROC)load(userptr, "glDeleteFramebuffers");
+  glad_glDeleteRenderbuffers =
+      (PFNGLDELETERENDERBUFFERSPROC)load(userptr, "glDeleteRenderbuffers");
+  glad_glFramebufferRenderbuffer = (PFNGLFRAMEBUFFERRENDERBUFFERPROC)load(
+      userptr, "glFramebufferRenderbuffer");
+  glad_glFramebufferTexture1D =
+      (PFNGLFRAMEBUFFERTEXTURE1DPROC)load(userptr, "glFramebufferTexture1D");
+  glad_glFramebufferTexture2D =
+      (PFNGLFRAMEBUFFERTEXTURE2DPROC)load(userptr, "glFramebufferTexture2D");
+  glad_glFramebufferTexture3D =
+      (PFNGLFRAMEBUFFERTEXTURE3DPROC)load(userptr, "glFramebufferTexture3D");
+  glad_glFramebufferTextureLayer = (PFNGLFRAMEBUFFERTEXTURELAYERPROC)load(
+      userptr, "glFramebufferTextureLayer");
+  glad_glGenFramebuffers =
+      (PFNGLGENFRAMEBUFFERSPROC)load(userptr, "glGenFramebuffers");
+  glad_glGenRenderbuffers =
+      (PFNGLGENRENDERBUFFERSPROC)load(userptr, "glGenRenderbuffers");
+  glad_glGenerateMipmap =
+      (PFNGLGENERATEMIPMAPPROC)load(userptr, "glGenerateMipmap");
+  glad_glGetFramebufferAttachmentParameteriv =
+      (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVPROC)load(
+          userptr, "glGetFramebufferAttachmentParameteriv");
+  glad_glGetRenderbufferParameteriv = (PFNGLGETRENDERBUFFERPARAMETERIVPROC)load(
+      userptr, "glGetRenderbufferParameteriv");
+  glad_glIsFramebuffer =
+      (PFNGLISFRAMEBUFFERPROC)load(userptr, "glIsFramebuffer");
+  glad_glIsRenderbuffer =
+      (PFNGLISRENDERBUFFERPROC)load(userptr, "glIsRenderbuffer");
+  glad_glRenderbufferStorage =
+      (PFNGLRENDERBUFFERSTORAGEPROC)load(userptr, "glRenderbufferStorage");
+  glad_glRenderbufferStorageMultisample =
+      (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEPROC)load(
+          userptr, "glRenderbufferStorageMultisample");
+}
+static void glad_gl_load_GL_ARB_geometry_shader4(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_geometry_shader4) return;
+  glad_glFramebufferTextureARB =
+      (PFNGLFRAMEBUFFERTEXTUREARBPROC)load(userptr, "glFramebufferTextureARB");
+  glad_glFramebufferTextureFaceARB = (PFNGLFRAMEBUFFERTEXTUREFACEARBPROC)load(
+      userptr, "glFramebufferTextureFaceARB");
+  glad_glFramebufferTextureLayerARB = (PFNGLFRAMEBUFFERTEXTURELAYERARBPROC)load(
+      userptr, "glFramebufferTextureLayerARB");
+  glad_glProgramParameteriARB =
+      (PFNGLPROGRAMPARAMETERIARBPROC)load(userptr, "glProgramParameteriARB");
+}
+static void glad_gl_load_GL_ARB_get_program_binary(GLADuserptrloadfunc load,
+                                                   void *userptr) {
+  if (!GLAD_GL_ARB_get_program_binary) return;
+  glad_glGetProgramBinary =
+      (PFNGLGETPROGRAMBINARYPROC)load(userptr, "glGetProgramBinary");
+  glad_glProgramBinary =
+      (PFNGLPROGRAMBINARYPROC)load(userptr, "glProgramBinary");
+  glad_glProgramParameteri =
+      (PFNGLPROGRAMPARAMETERIPROC)load(userptr, "glProgramParameteri");
+}
+static void glad_gl_load_GL_ARB_get_texture_sub_image(GLADuserptrloadfunc load,
+                                                      void *userptr) {
+  if (!GLAD_GL_ARB_get_texture_sub_image) return;
+  glad_glGetCompressedTextureSubImage =
+      (PFNGLGETCOMPRESSEDTEXTURESUBIMAGEPROC)load(
+          userptr, "glGetCompressedTextureSubImage");
+  glad_glGetTextureSubImage =
+      (PFNGLGETTEXTURESUBIMAGEPROC)load(userptr, "glGetTextureSubImage");
+}
+static void glad_gl_load_GL_ARB_gl_spirv(GLADuserptrloadfunc load,
+                                         void *userptr) {
+  if (!GLAD_GL_ARB_gl_spirv) return;
+  glad_glSpecializeShaderARB =
+      (PFNGLSPECIALIZESHADERARBPROC)load(userptr, "glSpecializeShaderARB");
+}
+static void glad_gl_load_GL_ARB_gpu_shader_fp64(GLADuserptrloadfunc load,
+                                                void *userptr) {
+  if (!GLAD_GL_ARB_gpu_shader_fp64) return;
+  glad_glGetUniformdv = (PFNGLGETUNIFORMDVPROC)load(userptr, "glGetUniformdv");
+  glad_glUniform1d = (PFNGLUNIFORM1DPROC)load(userptr, "glUniform1d");
+  glad_glUniform1dv = (PFNGLUNIFORM1DVPROC)load(userptr, "glUniform1dv");
+  glad_glUniform2d = (PFNGLUNIFORM2DPROC)load(userptr, "glUniform2d");
+  glad_glUniform2dv = (PFNGLUNIFORM2DVPROC)load(userptr, "glUniform2dv");
+  glad_glUniform3d = (PFNGLUNIFORM3DPROC)load(userptr, "glUniform3d");
+  glad_glUniform3dv = (PFNGLUNIFORM3DVPROC)load(userptr, "glUniform3dv");
+  glad_glUniform4d = (PFNGLUNIFORM4DPROC)load(userptr, "glUniform4d");
+  glad_glUniform4dv = (PFNGLUNIFORM4DVPROC)load(userptr, "glUniform4dv");
+  glad_glUniformMatrix2dv =
+      (PFNGLUNIFORMMATRIX2DVPROC)load(userptr, "glUniformMatrix2dv");
+  glad_glUniformMatrix2x3dv =
+      (PFNGLUNIFORMMATRIX2X3DVPROC)load(userptr, "glUniformMatrix2x3dv");
+  glad_glUniformMatrix2x4dv =
+      (PFNGLUNIFORMMATRIX2X4DVPROC)load(userptr, "glUniformMatrix2x4dv");
+  glad_glUniformMatrix3dv =
+      (PFNGLUNIFORMMATRIX3DVPROC)load(userptr, "glUniformMatrix3dv");
+  glad_glUniformMatrix3x2dv =
+      (PFNGLUNIFORMMATRIX3X2DVPROC)load(userptr, "glUniformMatrix3x2dv");
+  glad_glUniformMatrix3x4dv =
+      (PFNGLUNIFORMMATRIX3X4DVPROC)load(userptr, "glUniformMatrix3x4dv");
+  glad_glUniformMatrix4dv =
+      (PFNGLUNIFORMMATRIX4DVPROC)load(userptr, "glUniformMatrix4dv");
+  glad_glUniformMatrix4x2dv =
+      (PFNGLUNIFORMMATRIX4X2DVPROC)load(userptr, "glUniformMatrix4x2dv");
+  glad_glUniformMatrix4x3dv =
+      (PFNGLUNIFORMMATRIX4X3DVPROC)load(userptr, "glUniformMatrix4x3dv");
+}
+static void glad_gl_load_GL_ARB_gpu_shader_int64(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_gpu_shader_int64) return;
+  glad_glGetUniformi64vARB =
+      (PFNGLGETUNIFORMI64VARBPROC)load(userptr, "glGetUniformi64vARB");
+  glad_glGetUniformui64vARB =
+      (PFNGLGETUNIFORMUI64VARBPROC)load(userptr, "glGetUniformui64vARB");
+  glad_glGetnUniformi64vARB =
+      (PFNGLGETNUNIFORMI64VARBPROC)load(userptr, "glGetnUniformi64vARB");
+  glad_glGetnUniformui64vARB =
+      (PFNGLGETNUNIFORMUI64VARBPROC)load(userptr, "glGetnUniformui64vARB");
+  glad_glProgramUniform1i64ARB =
+      (PFNGLPROGRAMUNIFORM1I64ARBPROC)load(userptr, "glProgramUniform1i64ARB");
+  glad_glProgramUniform1i64vARB = (PFNGLPROGRAMUNIFORM1I64VARBPROC)load(
+      userptr, "glProgramUniform1i64vARB");
+  glad_glProgramUniform1ui64ARB = (PFNGLPROGRAMUNIFORM1UI64ARBPROC)load(
+      userptr, "glProgramUniform1ui64ARB");
+  glad_glProgramUniform1ui64vARB = (PFNGLPROGRAMUNIFORM1UI64VARBPROC)load(
+      userptr, "glProgramUniform1ui64vARB");
+  glad_glProgramUniform2i64ARB =
+      (PFNGLPROGRAMUNIFORM2I64ARBPROC)load(userptr, "glProgramUniform2i64ARB");
+  glad_glProgramUniform2i64vARB = (PFNGLPROGRAMUNIFORM2I64VARBPROC)load(
+      userptr, "glProgramUniform2i64vARB");
+  glad_glProgramUniform2ui64ARB = (PFNGLPROGRAMUNIFORM2UI64ARBPROC)load(
+      userptr, "glProgramUniform2ui64ARB");
+  glad_glProgramUniform2ui64vARB = (PFNGLPROGRAMUNIFORM2UI64VARBPROC)load(
+      userptr, "glProgramUniform2ui64vARB");
+  glad_glProgramUniform3i64ARB =
+      (PFNGLPROGRAMUNIFORM3I64ARBPROC)load(userptr, "glProgramUniform3i64ARB");
+  glad_glProgramUniform3i64vARB = (PFNGLPROGRAMUNIFORM3I64VARBPROC)load(
+      userptr, "glProgramUniform3i64vARB");
+  glad_glProgramUniform3ui64ARB = (PFNGLPROGRAMUNIFORM3UI64ARBPROC)load(
+      userptr, "glProgramUniform3ui64ARB");
+  glad_glProgramUniform3ui64vARB = (PFNGLPROGRAMUNIFORM3UI64VARBPROC)load(
+      userptr, "glProgramUniform3ui64vARB");
+  glad_glProgramUniform4i64ARB =
+      (PFNGLPROGRAMUNIFORM4I64ARBPROC)load(userptr, "glProgramUniform4i64ARB");
+  glad_glProgramUniform4i64vARB = (PFNGLPROGRAMUNIFORM4I64VARBPROC)load(
+      userptr, "glProgramUniform4i64vARB");
+  glad_glProgramUniform4ui64ARB = (PFNGLPROGRAMUNIFORM4UI64ARBPROC)load(
+      userptr, "glProgramUniform4ui64ARB");
+  glad_glProgramUniform4ui64vARB = (PFNGLPROGRAMUNIFORM4UI64VARBPROC)load(
+      userptr, "glProgramUniform4ui64vARB");
+  glad_glUniform1i64ARB =
+      (PFNGLUNIFORM1I64ARBPROC)load(userptr, "glUniform1i64ARB");
+  glad_glUniform1i64vARB =
+      (PFNGLUNIFORM1I64VARBPROC)load(userptr, "glUniform1i64vARB");
+  glad_glUniform1ui64ARB =
+      (PFNGLUNIFORM1UI64ARBPROC)load(userptr, "glUniform1ui64ARB");
+  glad_glUniform1ui64vARB =
+      (PFNGLUNIFORM1UI64VARBPROC)load(userptr, "glUniform1ui64vARB");
+  glad_glUniform2i64ARB =
+      (PFNGLUNIFORM2I64ARBPROC)load(userptr, "glUniform2i64ARB");
+  glad_glUniform2i64vARB =
+      (PFNGLUNIFORM2I64VARBPROC)load(userptr, "glUniform2i64vARB");
+  glad_glUniform2ui64ARB =
+      (PFNGLUNIFORM2UI64ARBPROC)load(userptr, "glUniform2ui64ARB");
+  glad_glUniform2ui64vARB =
+      (PFNGLUNIFORM2UI64VARBPROC)load(userptr, "glUniform2ui64vARB");
+  glad_glUniform3i64ARB =
+      (PFNGLUNIFORM3I64ARBPROC)load(userptr, "glUniform3i64ARB");
+  glad_glUniform3i64vARB =
+      (PFNGLUNIFORM3I64VARBPROC)load(userptr, "glUniform3i64vARB");
+  glad_glUniform3ui64ARB =
+      (PFNGLUNIFORM3UI64ARBPROC)load(userptr, "glUniform3ui64ARB");
+  glad_glUniform3ui64vARB =
+      (PFNGLUNIFORM3UI64VARBPROC)load(userptr, "glUniform3ui64vARB");
+  glad_glUniform4i64ARB =
+      (PFNGLUNIFORM4I64ARBPROC)load(userptr, "glUniform4i64ARB");
+  glad_glUniform4i64vARB =
+      (PFNGLUNIFORM4I64VARBPROC)load(userptr, "glUniform4i64vARB");
+  glad_glUniform4ui64ARB =
+      (PFNGLUNIFORM4UI64ARBPROC)load(userptr, "glUniform4ui64ARB");
+  glad_glUniform4ui64vARB =
+      (PFNGLUNIFORM4UI64VARBPROC)load(userptr, "glUniform4ui64vARB");
+}
+static void glad_gl_load_GL_ARB_instanced_arrays(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_instanced_arrays) return;
+  glad_glVertexAttribDivisorARB = (PFNGLVERTEXATTRIBDIVISORARBPROC)load(
+      userptr, "glVertexAttribDivisorARB");
+}
+static void glad_gl_load_GL_ARB_internalformat_query(GLADuserptrloadfunc load,
+                                                     void *userptr) {
+  if (!GLAD_GL_ARB_internalformat_query) return;
+  glad_glGetInternalformativ =
+      (PFNGLGETINTERNALFORMATIVPROC)load(userptr, "glGetInternalformativ");
+}
+static void glad_gl_load_GL_ARB_internalformat_query2(GLADuserptrloadfunc load,
+                                                      void *userptr) {
+  if (!GLAD_GL_ARB_internalformat_query2) return;
+  glad_glGetInternalformati64v =
+      (PFNGLGETINTERNALFORMATI64VPROC)load(userptr, "glGetInternalformati64v");
+}
+static void glad_gl_load_GL_ARB_map_buffer_range(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_map_buffer_range) return;
+  glad_glFlushMappedBufferRange = (PFNGLFLUSHMAPPEDBUFFERRANGEPROC)load(
+      userptr, "glFlushMappedBufferRange");
+  glad_glMapBufferRange =
+      (PFNGLMAPBUFFERRANGEPROC)load(userptr, "glMapBufferRange");
+}
+static void glad_gl_load_GL_ARB_multi_bind(GLADuserptrloadfunc load,
+                                           void *userptr) {
+  if (!GLAD_GL_ARB_multi_bind) return;
+  glad_glBindBuffersBase =
+      (PFNGLBINDBUFFERSBASEPROC)load(userptr, "glBindBuffersBase");
+  glad_glBindBuffersRange =
+      (PFNGLBINDBUFFERSRANGEPROC)load(userptr, "glBindBuffersRange");
+  glad_glBindImageTextures =
+      (PFNGLBINDIMAGETEXTURESPROC)load(userptr, "glBindImageTextures");
+  glad_glBindSamplers = (PFNGLBINDSAMPLERSPROC)load(userptr, "glBindSamplers");
+  glad_glBindTextures = (PFNGLBINDTEXTURESPROC)load(userptr, "glBindTextures");
+  glad_glBindVertexBuffers =
+      (PFNGLBINDVERTEXBUFFERSPROC)load(userptr, "glBindVertexBuffers");
+}
+static void glad_gl_load_GL_ARB_multi_draw_indirect(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_multi_draw_indirect) return;
+  glad_glMultiDrawArraysIndirect = (PFNGLMULTIDRAWARRAYSINDIRECTPROC)load(
+      userptr, "glMultiDrawArraysIndirect");
+  glad_glMultiDrawElementsIndirect = (PFNGLMULTIDRAWELEMENTSINDIRECTPROC)load(
+      userptr, "glMultiDrawElementsIndirect");
+}
+static void glad_gl_load_GL_ARB_multisample(GLADuserptrloadfunc load,
+                                            void *userptr) {
+  if (!GLAD_GL_ARB_multisample) return;
+  glad_glSampleCoverageARB =
+      (PFNGLSAMPLECOVERAGEARBPROC)load(userptr, "glSampleCoverageARB");
+}
+static void glad_gl_load_GL_ARB_multitexture(GLADuserptrloadfunc load,
+                                             void *userptr) {
+  if (!GLAD_GL_ARB_multitexture) return;
+  glad_glActiveTextureARB =
+      (PFNGLACTIVETEXTUREARBPROC)load(userptr, "glActiveTextureARB");
+  glad_glClientActiveTextureARB = (PFNGLCLIENTACTIVETEXTUREARBPROC)load(
+      userptr, "glClientActiveTextureARB");
+  glad_glMultiTexCoord1dARB =
+      (PFNGLMULTITEXCOORD1DARBPROC)load(userptr, "glMultiTexCoord1dARB");
+  glad_glMultiTexCoord1dvARB =
+      (PFNGLMULTITEXCOORD1DVARBPROC)load(userptr, "glMultiTexCoord1dvARB");
+  glad_glMultiTexCoord1fARB =
+      (PFNGLMULTITEXCOORD1FARBPROC)load(userptr, "glMultiTexCoord1fARB");
+  glad_glMultiTexCoord1fvARB =
+      (PFNGLMULTITEXCOORD1FVARBPROC)load(userptr, "glMultiTexCoord1fvARB");
+  glad_glMultiTexCoord1iARB =
+      (PFNGLMULTITEXCOORD1IARBPROC)load(userptr, "glMultiTexCoord1iARB");
+  glad_glMultiTexCoord1ivARB =
+      (PFNGLMULTITEXCOORD1IVARBPROC)load(userptr, "glMultiTexCoord1ivARB");
+  glad_glMultiTexCoord1sARB =
+      (PFNGLMULTITEXCOORD1SARBPROC)load(userptr, "glMultiTexCoord1sARB");
+  glad_glMultiTexCoord1svARB =
+      (PFNGLMULTITEXCOORD1SVARBPROC)load(userptr, "glMultiTexCoord1svARB");
+  glad_glMultiTexCoord2dARB =
+      (PFNGLMULTITEXCOORD2DARBPROC)load(userptr, "glMultiTexCoord2dARB");
+  glad_glMultiTexCoord2dvARB =
+      (PFNGLMULTITEXCOORD2DVARBPROC)load(userptr, "glMultiTexCoord2dvARB");
+  glad_glMultiTexCoord2fARB =
+      (PFNGLMULTITEXCOORD2FARBPROC)load(userptr, "glMultiTexCoord2fARB");
+  glad_glMultiTexCoord2fvARB =
+      (PFNGLMULTITEXCOORD2FVARBPROC)load(userptr, "glMultiTexCoord2fvARB");
+  glad_glMultiTexCoord2iARB =
+      (PFNGLMULTITEXCOORD2IARBPROC)load(userptr, "glMultiTexCoord2iARB");
+  glad_glMultiTexCoord2ivARB =
+      (PFNGLMULTITEXCOORD2IVARBPROC)load(userptr, "glMultiTexCoord2ivARB");
+  glad_glMultiTexCoord2sARB =
+      (PFNGLMULTITEXCOORD2SARBPROC)load(userptr, "glMultiTexCoord2sARB");
+  glad_glMultiTexCoord2svARB =
+      (PFNGLMULTITEXCOORD2SVARBPROC)load(userptr, "glMultiTexCoord2svARB");
+  glad_glMultiTexCoord3dARB =
+      (PFNGLMULTITEXCOORD3DARBPROC)load(userptr, "glMultiTexCoord3dARB");
+  glad_glMultiTexCoord3dvARB =
+      (PFNGLMULTITEXCOORD3DVARBPROC)load(userptr, "glMultiTexCoord3dvARB");
+  glad_glMultiTexCoord3fARB =
+      (PFNGLMULTITEXCOORD3FARBPROC)load(userptr, "glMultiTexCoord3fARB");
+  glad_glMultiTexCoord3fvARB =
+      (PFNGLMULTITEXCOORD3FVARBPROC)load(userptr, "glMultiTexCoord3fvARB");
+  glad_glMultiTexCoord3iARB =
+      (PFNGLMULTITEXCOORD3IARBPROC)load(userptr, "glMultiTexCoord3iARB");
+  glad_glMultiTexCoord3ivARB =
+      (PFNGLMULTITEXCOORD3IVARBPROC)load(userptr, "glMultiTexCoord3ivARB");
+  glad_glMultiTexCoord3sARB =
+      (PFNGLMULTITEXCOORD3SARBPROC)load(userptr, "glMultiTexCoord3sARB");
+  glad_glMultiTexCoord3svARB =
+      (PFNGLMULTITEXCOORD3SVARBPROC)load(userptr, "glMultiTexCoord3svARB");
+  glad_glMultiTexCoord4dARB =
+      (PFNGLMULTITEXCOORD4DARBPROC)load(userptr, "glMultiTexCoord4dARB");
+  glad_glMultiTexCoord4dvARB =
+      (PFNGLMULTITEXCOORD4DVARBPROC)load(userptr, "glMultiTexCoord4dvARB");
+  glad_glMultiTexCoord4fARB =
+      (PFNGLMULTITEXCOORD4FARBPROC)load(userptr, "glMultiTexCoord4fARB");
+  glad_glMultiTexCoord4fvARB =
+      (PFNGLMULTITEXCOORD4FVARBPROC)load(userptr, "glMultiTexCoord4fvARB");
+  glad_glMultiTexCoord4iARB =
+      (PFNGLMULTITEXCOORD4IARBPROC)load(userptr, "glMultiTexCoord4iARB");
+  glad_glMultiTexCoord4ivARB =
+      (PFNGLMULTITEXCOORD4IVARBPROC)load(userptr, "glMultiTexCoord4ivARB");
+  glad_glMultiTexCoord4sARB =
+      (PFNGLMULTITEXCOORD4SARBPROC)load(userptr, "glMultiTexCoord4sARB");
+  glad_glMultiTexCoord4svARB =
+      (PFNGLMULTITEXCOORD4SVARBPROC)load(userptr, "glMultiTexCoord4svARB");
+}
+static void glad_gl_load_GL_ARB_occlusion_query(GLADuserptrloadfunc load,
+                                                void *userptr) {
+  if (!GLAD_GL_ARB_occlusion_query) return;
+  glad_glBeginQueryARB =
+      (PFNGLBEGINQUERYARBPROC)load(userptr, "glBeginQueryARB");
+  glad_glDeleteQueriesARB =
+      (PFNGLDELETEQUERIESARBPROC)load(userptr, "glDeleteQueriesARB");
+  glad_glEndQueryARB = (PFNGLENDQUERYARBPROC)load(userptr, "glEndQueryARB");
+  glad_glGenQueriesARB =
+      (PFNGLGENQUERIESARBPROC)load(userptr, "glGenQueriesARB");
+  glad_glGetQueryObjectivARB =
+      (PFNGLGETQUERYOBJECTIVARBPROC)load(userptr, "glGetQueryObjectivARB");
+  glad_glGetQueryObjectuivARB =
+      (PFNGLGETQUERYOBJECTUIVARBPROC)load(userptr, "glGetQueryObjectuivARB");
+  glad_glGetQueryivARB =
+      (PFNGLGETQUERYIVARBPROC)load(userptr, "glGetQueryivARB");
+  glad_glIsQueryARB = (PFNGLISQUERYARBPROC)load(userptr, "glIsQueryARB");
+}
+static void glad_gl_load_GL_ARB_sample_locations(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_sample_locations) return;
+  glad_glEvaluateDepthValuesARB = (PFNGLEVALUATEDEPTHVALUESARBPROC)load(
+      userptr, "glEvaluateDepthValuesARB");
+  glad_glFramebufferSampleLocationsfvARB =
+      (PFNGLFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)load(
+          userptr, "glFramebufferSampleLocationsfvARB");
+  glad_glNamedFramebufferSampleLocationsfvARB =
+      (PFNGLNAMEDFRAMEBUFFERSAMPLELOCATIONSFVARBPROC)load(
+          userptr, "glNamedFramebufferSampleLocationsfvARB");
+}
+static void glad_gl_load_GL_ARB_sample_shading(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_ARB_sample_shading) return;
+  glad_glMinSampleShadingARB =
+      (PFNGLMINSAMPLESHADINGARBPROC)load(userptr, "glMinSampleShadingARB");
+}
+static void glad_gl_load_GL_ARB_shader_atomic_counters(GLADuserptrloadfunc load,
+                                                       void *userptr) {
+  if (!GLAD_GL_ARB_shader_atomic_counters) return;
+  glad_glGetActiveAtomicCounterBufferiv =
+      (PFNGLGETACTIVEATOMICCOUNTERBUFFERIVPROC)load(
+          userptr, "glGetActiveAtomicCounterBufferiv");
+}
+static void glad_gl_load_GL_ARB_shader_image_load_store(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_ARB_shader_image_load_store) return;
+  glad_glBindImageTexture =
+      (PFNGLBINDIMAGETEXTUREPROC)load(userptr, "glBindImageTexture");
+  glad_glMemoryBarrier =
+      (PFNGLMEMORYBARRIERPROC)load(userptr, "glMemoryBarrier");
+}
+static void glad_gl_load_GL_ARB_shader_objects(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_ARB_shader_objects) return;
+  glad_glAttachObjectARB =
+      (PFNGLATTACHOBJECTARBPROC)load(userptr, "glAttachObjectARB");
+  glad_glCompileShaderARB =
+      (PFNGLCOMPILESHADERARBPROC)load(userptr, "glCompileShaderARB");
+  glad_glCreateProgramObjectARB = (PFNGLCREATEPROGRAMOBJECTARBPROC)load(
+      userptr, "glCreateProgramObjectARB");
+  glad_glCreateShaderObjectARB =
+      (PFNGLCREATESHADEROBJECTARBPROC)load(userptr, "glCreateShaderObjectARB");
+  glad_glDeleteObjectARB =
+      (PFNGLDELETEOBJECTARBPROC)load(userptr, "glDeleteObjectARB");
+  glad_glDetachObjectARB =
+      (PFNGLDETACHOBJECTARBPROC)load(userptr, "glDetachObjectARB");
+  glad_glGetActiveUniformARB =
+      (PFNGLGETACTIVEUNIFORMARBPROC)load(userptr, "glGetActiveUniformARB");
+  glad_glGetAttachedObjectsARB =
+      (PFNGLGETATTACHEDOBJECTSARBPROC)load(userptr, "glGetAttachedObjectsARB");
+  glad_glGetHandleARB = (PFNGLGETHANDLEARBPROC)load(userptr, "glGetHandleARB");
+  glad_glGetInfoLogARB =
+      (PFNGLGETINFOLOGARBPROC)load(userptr, "glGetInfoLogARB");
+  glad_glGetObjectParameterfvARB = (PFNGLGETOBJECTPARAMETERFVARBPROC)load(
+      userptr, "glGetObjectParameterfvARB");
+  glad_glGetObjectParameterivARB = (PFNGLGETOBJECTPARAMETERIVARBPROC)load(
+      userptr, "glGetObjectParameterivARB");
+  glad_glGetShaderSourceARB =
+      (PFNGLGETSHADERSOURCEARBPROC)load(userptr, "glGetShaderSourceARB");
+  glad_glGetUniformLocationARB =
+      (PFNGLGETUNIFORMLOCATIONARBPROC)load(userptr, "glGetUniformLocationARB");
+  glad_glGetUniformfvARB =
+      (PFNGLGETUNIFORMFVARBPROC)load(userptr, "glGetUniformfvARB");
+  glad_glGetUniformivARB =
+      (PFNGLGETUNIFORMIVARBPROC)load(userptr, "glGetUniformivARB");
+  glad_glLinkProgramARB =
+      (PFNGLLINKPROGRAMARBPROC)load(userptr, "glLinkProgramARB");
+  glad_glShaderSourceARB =
+      (PFNGLSHADERSOURCEARBPROC)load(userptr, "glShaderSourceARB");
+  glad_glUniform1fARB = (PFNGLUNIFORM1FARBPROC)load(userptr, "glUniform1fARB");
+  glad_glUniform1fvARB =
+      (PFNGLUNIFORM1FVARBPROC)load(userptr, "glUniform1fvARB");
+  glad_glUniform1iARB = (PFNGLUNIFORM1IARBPROC)load(userptr, "glUniform1iARB");
+  glad_glUniform1ivARB =
+      (PFNGLUNIFORM1IVARBPROC)load(userptr, "glUniform1ivARB");
+  glad_glUniform2fARB = (PFNGLUNIFORM2FARBPROC)load(userptr, "glUniform2fARB");
+  glad_glUniform2fvARB =
+      (PFNGLUNIFORM2FVARBPROC)load(userptr, "glUniform2fvARB");
+  glad_glUniform2iARB = (PFNGLUNIFORM2IARBPROC)load(userptr, "glUniform2iARB");
+  glad_glUniform2ivARB =
+      (PFNGLUNIFORM2IVARBPROC)load(userptr, "glUniform2ivARB");
+  glad_glUniform3fARB = (PFNGLUNIFORM3FARBPROC)load(userptr, "glUniform3fARB");
+  glad_glUniform3fvARB =
+      (PFNGLUNIFORM3FVARBPROC)load(userptr, "glUniform3fvARB");
+  glad_glUniform3iARB = (PFNGLUNIFORM3IARBPROC)load(userptr, "glUniform3iARB");
+  glad_glUniform3ivARB =
+      (PFNGLUNIFORM3IVARBPROC)load(userptr, "glUniform3ivARB");
+  glad_glUniform4fARB = (PFNGLUNIFORM4FARBPROC)load(userptr, "glUniform4fARB");
+  glad_glUniform4fvARB =
+      (PFNGLUNIFORM4FVARBPROC)load(userptr, "glUniform4fvARB");
+  glad_glUniform4iARB = (PFNGLUNIFORM4IARBPROC)load(userptr, "glUniform4iARB");
+  glad_glUniform4ivARB =
+      (PFNGLUNIFORM4IVARBPROC)load(userptr, "glUniform4ivARB");
+  glad_glUniformMatrix2fvARB =
+      (PFNGLUNIFORMMATRIX2FVARBPROC)load(userptr, "glUniformMatrix2fvARB");
+  glad_glUniformMatrix3fvARB =
+      (PFNGLUNIFORMMATRIX3FVARBPROC)load(userptr, "glUniformMatrix3fvARB");
+  glad_glUniformMatrix4fvARB =
+      (PFNGLUNIFORMMATRIX4FVARBPROC)load(userptr, "glUniformMatrix4fvARB");
+  glad_glUseProgramObjectARB =
+      (PFNGLUSEPROGRAMOBJECTARBPROC)load(userptr, "glUseProgramObjectARB");
+  glad_glValidateProgramARB =
+      (PFNGLVALIDATEPROGRAMARBPROC)load(userptr, "glValidateProgramARB");
+}
+static void glad_gl_load_GL_ARB_shader_storage_buffer_object(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_ARB_shader_storage_buffer_object) return;
+  glad_glShaderStorageBlockBinding = (PFNGLSHADERSTORAGEBLOCKBINDINGPROC)load(
+      userptr, "glShaderStorageBlockBinding");
+}
+static void glad_gl_load_GL_ARB_shading_language_include(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_ARB_shading_language_include) return;
+  glad_glCompileShaderIncludeARB = (PFNGLCOMPILESHADERINCLUDEARBPROC)load(
+      userptr, "glCompileShaderIncludeARB");
+  glad_glDeleteNamedStringARB =
+      (PFNGLDELETENAMEDSTRINGARBPROC)load(userptr, "glDeleteNamedStringARB");
+  glad_glGetNamedStringARB =
+      (PFNGLGETNAMEDSTRINGARBPROC)load(userptr, "glGetNamedStringARB");
+  glad_glGetNamedStringivARB =
+      (PFNGLGETNAMEDSTRINGIVARBPROC)load(userptr, "glGetNamedStringivARB");
+  glad_glIsNamedStringARB =
+      (PFNGLISNAMEDSTRINGARBPROC)load(userptr, "glIsNamedStringARB");
+  glad_glNamedStringARB =
+      (PFNGLNAMEDSTRINGARBPROC)load(userptr, "glNamedStringARB");
+}
+static void glad_gl_load_GL_ARB_tessellation_shader(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_tessellation_shader) return;
+  glad_glPatchParameterfv =
+      (PFNGLPATCHPARAMETERFVPROC)load(userptr, "glPatchParameterfv");
+  glad_glPatchParameteri =
+      (PFNGLPATCHPARAMETERIPROC)load(userptr, "glPatchParameteri");
+}
+static void glad_gl_load_GL_ARB_texture_compression(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_texture_compression) return;
+  glad_glCompressedTexImage1DARB = (PFNGLCOMPRESSEDTEXIMAGE1DARBPROC)load(
+      userptr, "glCompressedTexImage1DARB");
+  glad_glCompressedTexImage2DARB = (PFNGLCOMPRESSEDTEXIMAGE2DARBPROC)load(
+      userptr, "glCompressedTexImage2DARB");
+  glad_glCompressedTexImage3DARB = (PFNGLCOMPRESSEDTEXIMAGE3DARBPROC)load(
+      userptr, "glCompressedTexImage3DARB");
+  glad_glCompressedTexSubImage1DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE1DARBPROC)load(
+      userptr, "glCompressedTexSubImage1DARB");
+  glad_glCompressedTexSubImage2DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE2DARBPROC)load(
+      userptr, "glCompressedTexSubImage2DARB");
+  glad_glCompressedTexSubImage3DARB = (PFNGLCOMPRESSEDTEXSUBIMAGE3DARBPROC)load(
+      userptr, "glCompressedTexSubImage3DARB");
+  glad_glGetCompressedTexImageARB = (PFNGLGETCOMPRESSEDTEXIMAGEARBPROC)load(
+      userptr, "glGetCompressedTexImageARB");
+}
+static void glad_gl_load_GL_ARB_texture_multisample(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_texture_multisample) return;
+  glad_glGetMultisamplefv =
+      (PFNGLGETMULTISAMPLEFVPROC)load(userptr, "glGetMultisamplefv");
+  glad_glSampleMaski = (PFNGLSAMPLEMASKIPROC)load(userptr, "glSampleMaski");
+  glad_glTexImage2DMultisample =
+      (PFNGLTEXIMAGE2DMULTISAMPLEPROC)load(userptr, "glTexImage2DMultisample");
+  glad_glTexImage3DMultisample =
+      (PFNGLTEXIMAGE3DMULTISAMPLEPROC)load(userptr, "glTexImage3DMultisample");
+}
+static void glad_gl_load_GL_ARB_texture_storage(GLADuserptrloadfunc load,
+                                                void *userptr) {
+  if (!GLAD_GL_ARB_texture_storage) return;
+  glad_glTexStorage1D = (PFNGLTEXSTORAGE1DPROC)load(userptr, "glTexStorage1D");
+  glad_glTexStorage2D = (PFNGLTEXSTORAGE2DPROC)load(userptr, "glTexStorage2D");
+  glad_glTexStorage3D = (PFNGLTEXSTORAGE3DPROC)load(userptr, "glTexStorage3D");
+}
+static void glad_gl_load_GL_ARB_texture_view(GLADuserptrloadfunc load,
+                                             void *userptr) {
+  if (!GLAD_GL_ARB_texture_view) return;
+  glad_glTextureView = (PFNGLTEXTUREVIEWPROC)load(userptr, "glTextureView");
+}
+static void glad_gl_load_GL_ARB_timer_query(GLADuserptrloadfunc load,
+                                            void *userptr) {
+  if (!GLAD_GL_ARB_timer_query) return;
+  glad_glGetQueryObjecti64v =
+      (PFNGLGETQUERYOBJECTI64VPROC)load(userptr, "glGetQueryObjecti64v");
+  glad_glGetQueryObjectui64v =
+      (PFNGLGETQUERYOBJECTUI64VPROC)load(userptr, "glGetQueryObjectui64v");
+  glad_glQueryCounter = (PFNGLQUERYCOUNTERPROC)load(userptr, "glQueryCounter");
+}
+static void glad_gl_load_GL_ARB_transpose_matrix(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_ARB_transpose_matrix) return;
+  glad_glLoadTransposeMatrixdARB = (PFNGLLOADTRANSPOSEMATRIXDARBPROC)load(
+      userptr, "glLoadTransposeMatrixdARB");
+  glad_glLoadTransposeMatrixfARB = (PFNGLLOADTRANSPOSEMATRIXFARBPROC)load(
+      userptr, "glLoadTransposeMatrixfARB");
+  glad_glMultTransposeMatrixdARB = (PFNGLMULTTRANSPOSEMATRIXDARBPROC)load(
+      userptr, "glMultTransposeMatrixdARB");
+  glad_glMultTransposeMatrixfARB = (PFNGLMULTTRANSPOSEMATRIXFARBPROC)load(
+      userptr, "glMultTransposeMatrixfARB");
+}
+static void glad_gl_load_GL_ARB_uniform_buffer_object(GLADuserptrloadfunc load,
+                                                      void *userptr) {
+  if (!GLAD_GL_ARB_uniform_buffer_object) return;
+  glad_glBindBufferBase =
+      (PFNGLBINDBUFFERBASEPROC)load(userptr, "glBindBufferBase");
+  glad_glBindBufferRange =
+      (PFNGLBINDBUFFERRANGEPROC)load(userptr, "glBindBufferRange");
+  glad_glGetActiveUniformBlockName = (PFNGLGETACTIVEUNIFORMBLOCKNAMEPROC)load(
+      userptr, "glGetActiveUniformBlockName");
+  glad_glGetActiveUniformBlockiv = (PFNGLGETACTIVEUNIFORMBLOCKIVPROC)load(
+      userptr, "glGetActiveUniformBlockiv");
+  glad_glGetActiveUniformName =
+      (PFNGLGETACTIVEUNIFORMNAMEPROC)load(userptr, "glGetActiveUniformName");
+  glad_glGetActiveUniformsiv =
+      (PFNGLGETACTIVEUNIFORMSIVPROC)load(userptr, "glGetActiveUniformsiv");
+  glad_glGetIntegeri_v =
+      (PFNGLGETINTEGERI_VPROC)load(userptr, "glGetIntegeri_v");
+  glad_glGetUniformBlockIndex =
+      (PFNGLGETUNIFORMBLOCKINDEXPROC)load(userptr, "glGetUniformBlockIndex");
+  glad_glGetUniformIndices =
+      (PFNGLGETUNIFORMINDICESPROC)load(userptr, "glGetUniformIndices");
+  glad_glUniformBlockBinding =
+      (PFNGLUNIFORMBLOCKBINDINGPROC)load(userptr, "glUniformBlockBinding");
+}
+static void glad_gl_load_GL_ARB_vertex_array_object(GLADuserptrloadfunc load,
+                                                    void *userptr) {
+  if (!GLAD_GL_ARB_vertex_array_object) return;
+  glad_glBindVertexArray =
+      (PFNGLBINDVERTEXARRAYPROC)load(userptr, "glBindVertexArray");
+  glad_glDeleteVertexArrays =
+      (PFNGLDELETEVERTEXARRAYSPROC)load(userptr, "glDeleteVertexArrays");
+  glad_glGenVertexArrays =
+      (PFNGLGENVERTEXARRAYSPROC)load(userptr, "glGenVertexArrays");
+  glad_glIsVertexArray =
+      (PFNGLISVERTEXARRAYPROC)load(userptr, "glIsVertexArray");
+}
+static void glad_gl_load_GL_ARB_vertex_attrib_binding(GLADuserptrloadfunc load,
+                                                      void *userptr) {
+  if (!GLAD_GL_ARB_vertex_attrib_binding) return;
+  glad_glBindVertexBuffer =
+      (PFNGLBINDVERTEXBUFFERPROC)load(userptr, "glBindVertexBuffer");
+  glad_glVertexAttribBinding =
+      (PFNGLVERTEXATTRIBBINDINGPROC)load(userptr, "glVertexAttribBinding");
+  glad_glVertexAttribFormat =
+      (PFNGLVERTEXATTRIBFORMATPROC)load(userptr, "glVertexAttribFormat");
+  glad_glVertexAttribIFormat =
+      (PFNGLVERTEXATTRIBIFORMATPROC)load(userptr, "glVertexAttribIFormat");
+  glad_glVertexAttribLFormat =
+      (PFNGLVERTEXATTRIBLFORMATPROC)load(userptr, "glVertexAttribLFormat");
+  glad_glVertexBindingDivisor =
+      (PFNGLVERTEXBINDINGDIVISORPROC)load(userptr, "glVertexBindingDivisor");
+}
+static void glad_gl_load_GL_ARB_vertex_buffer_object(GLADuserptrloadfunc load,
+                                                     void *userptr) {
+  if (!GLAD_GL_ARB_vertex_buffer_object) return;
+  glad_glBindBufferARB =
+      (PFNGLBINDBUFFERARBPROC)load(userptr, "glBindBufferARB");
+  glad_glBufferDataARB =
+      (PFNGLBUFFERDATAARBPROC)load(userptr, "glBufferDataARB");
+  glad_glBufferSubDataARB =
+      (PFNGLBUFFERSUBDATAARBPROC)load(userptr, "glBufferSubDataARB");
+  glad_glDeleteBuffersARB =
+      (PFNGLDELETEBUFFERSARBPROC)load(userptr, "glDeleteBuffersARB");
+  glad_glGenBuffersARB =
+      (PFNGLGENBUFFERSARBPROC)load(userptr, "glGenBuffersARB");
+  glad_glGetBufferParameterivARB = (PFNGLGETBUFFERPARAMETERIVARBPROC)load(
+      userptr, "glGetBufferParameterivARB");
+  glad_glGetBufferPointervARB =
+      (PFNGLGETBUFFERPOINTERVARBPROC)load(userptr, "glGetBufferPointervARB");
+  glad_glGetBufferSubDataARB =
+      (PFNGLGETBUFFERSUBDATAARBPROC)load(userptr, "glGetBufferSubDataARB");
+  glad_glIsBufferARB = (PFNGLISBUFFERARBPROC)load(userptr, "glIsBufferARB");
+  glad_glMapBufferARB = (PFNGLMAPBUFFERARBPROC)load(userptr, "glMapBufferARB");
+  glad_glUnmapBufferARB =
+      (PFNGLUNMAPBUFFERARBPROC)load(userptr, "glUnmapBufferARB");
+}
+static void glad_gl_load_GL_ARB_vertex_program(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_ARB_vertex_program) return;
+  glad_glBindProgramARB =
+      (PFNGLBINDPROGRAMARBPROC)load(userptr, "glBindProgramARB");
+  glad_glDeleteProgramsARB =
+      (PFNGLDELETEPROGRAMSARBPROC)load(userptr, "glDeleteProgramsARB");
+  glad_glDisableVertexAttribArrayARB =
+      (PFNGLDISABLEVERTEXATTRIBARRAYARBPROC)load(
+          userptr, "glDisableVertexAttribArrayARB");
+  glad_glEnableVertexAttribArrayARB = (PFNGLENABLEVERTEXATTRIBARRAYARBPROC)load(
+      userptr, "glEnableVertexAttribArrayARB");
+  glad_glGenProgramsARB =
+      (PFNGLGENPROGRAMSARBPROC)load(userptr, "glGenProgramsARB");
+  glad_glGetProgramEnvParameterdvARB =
+      (PFNGLGETPROGRAMENVPARAMETERDVARBPROC)load(
+          userptr, "glGetProgramEnvParameterdvARB");
+  glad_glGetProgramEnvParameterfvARB =
+      (PFNGLGETPROGRAMENVPARAMETERFVARBPROC)load(
+          userptr, "glGetProgramEnvParameterfvARB");
+  glad_glGetProgramLocalParameterdvARB =
+      (PFNGLGETPROGRAMLOCALPARAMETERDVARBPROC)load(
+          userptr, "glGetProgramLocalParameterdvARB");
+  glad_glGetProgramLocalParameterfvARB =
+      (PFNGLGETPROGRAMLOCALPARAMETERFVARBPROC)load(
+          userptr, "glGetProgramLocalParameterfvARB");
+  glad_glGetProgramStringARB =
+      (PFNGLGETPROGRAMSTRINGARBPROC)load(userptr, "glGetProgramStringARB");
+  glad_glGetProgramivARB =
+      (PFNGLGETPROGRAMIVARBPROC)load(userptr, "glGetProgramivARB");
+  glad_glGetVertexAttribPointervARB = (PFNGLGETVERTEXATTRIBPOINTERVARBPROC)load(
+      userptr, "glGetVertexAttribPointervARB");
+  glad_glGetVertexAttribdvARB =
+      (PFNGLGETVERTEXATTRIBDVARBPROC)load(userptr, "glGetVertexAttribdvARB");
+  glad_glGetVertexAttribfvARB =
+      (PFNGLGETVERTEXATTRIBFVARBPROC)load(userptr, "glGetVertexAttribfvARB");
+  glad_glGetVertexAttribivARB =
+      (PFNGLGETVERTEXATTRIBIVARBPROC)load(userptr, "glGetVertexAttribivARB");
+  glad_glIsProgramARB = (PFNGLISPROGRAMARBPROC)load(userptr, "glIsProgramARB");
+  glad_glProgramEnvParameter4dARB = (PFNGLPROGRAMENVPARAMETER4DARBPROC)load(
+      userptr, "glProgramEnvParameter4dARB");
+  glad_glProgramEnvParameter4dvARB = (PFNGLPROGRAMENVPARAMETER4DVARBPROC)load(
+      userptr, "glProgramEnvParameter4dvARB");
+  glad_glProgramEnvParameter4fARB = (PFNGLPROGRAMENVPARAMETER4FARBPROC)load(
+      userptr, "glProgramEnvParameter4fARB");
+  glad_glProgramEnvParameter4fvARB = (PFNGLPROGRAMENVPARAMETER4FVARBPROC)load(
+      userptr, "glProgramEnvParameter4fvARB");
+  glad_glProgramLocalParameter4dARB = (PFNGLPROGRAMLOCALPARAMETER4DARBPROC)load(
+      userptr, "glProgramLocalParameter4dARB");
+  glad_glProgramLocalParameter4dvARB =
+      (PFNGLPROGRAMLOCALPARAMETER4DVARBPROC)load(
+          userptr, "glProgramLocalParameter4dvARB");
+  glad_glProgramLocalParameter4fARB = (PFNGLPROGRAMLOCALPARAMETER4FARBPROC)load(
+      userptr, "glProgramLocalParameter4fARB");
+  glad_glProgramLocalParameter4fvARB =
+      (PFNGLPROGRAMLOCALPARAMETER4FVARBPROC)load(
+          userptr, "glProgramLocalParameter4fvARB");
+  glad_glProgramStringARB =
+      (PFNGLPROGRAMSTRINGARBPROC)load(userptr, "glProgramStringARB");
+  glad_glVertexAttrib1dARB =
+      (PFNGLVERTEXATTRIB1DARBPROC)load(userptr, "glVertexAttrib1dARB");
+  glad_glVertexAttrib1dvARB =
+      (PFNGLVERTEXATTRIB1DVARBPROC)load(userptr, "glVertexAttrib1dvARB");
+  glad_glVertexAttrib1fARB =
+      (PFNGLVERTEXATTRIB1FARBPROC)load(userptr, "glVertexAttrib1fARB");
+  glad_glVertexAttrib1fvARB =
+      (PFNGLVERTEXATTRIB1FVARBPROC)load(userptr, "glVertexAttrib1fvARB");
+  glad_glVertexAttrib1sARB =
+      (PFNGLVERTEXATTRIB1SARBPROC)load(userptr, "glVertexAttrib1sARB");
+  glad_glVertexAttrib1svARB =
+      (PFNGLVERTEXATTRIB1SVARBPROC)load(userptr, "glVertexAttrib1svARB");
+  glad_glVertexAttrib2dARB =
+      (PFNGLVERTEXATTRIB2DARBPROC)load(userptr, "glVertexAttrib2dARB");
+  glad_glVertexAttrib2dvARB =
+      (PFNGLVERTEXATTRIB2DVARBPROC)load(userptr, "glVertexAttrib2dvARB");
+  glad_glVertexAttrib2fARB =
+      (PFNGLVERTEXATTRIB2FARBPROC)load(userptr, "glVertexAttrib2fARB");
+  glad_glVertexAttrib2fvARB =
+      (PFNGLVERTEXATTRIB2FVARBPROC)load(userptr, "glVertexAttrib2fvARB");
+  glad_glVertexAttrib2sARB =
+      (PFNGLVERTEXATTRIB2SARBPROC)load(userptr, "glVertexAttrib2sARB");
+  glad_glVertexAttrib2svARB =
+      (PFNGLVERTEXATTRIB2SVARBPROC)load(userptr, "glVertexAttrib2svARB");
+  glad_glVertexAttrib3dARB =
+      (PFNGLVERTEXATTRIB3DARBPROC)load(userptr, "glVertexAttrib3dARB");
+  glad_glVertexAttrib3dvARB =
+      (PFNGLVERTEXATTRIB3DVARBPROC)load(userptr, "glVertexAttrib3dvARB");
+  glad_glVertexAttrib3fARB =
+      (PFNGLVERTEXATTRIB3FARBPROC)load(userptr, "glVertexAttrib3fARB");
+  glad_glVertexAttrib3fvARB =
+      (PFNGLVERTEXATTRIB3FVARBPROC)load(userptr, "glVertexAttrib3fvARB");
+  glad_glVertexAttrib3sARB =
+      (PFNGLVERTEXATTRIB3SARBPROC)load(userptr, "glVertexAttrib3sARB");
+  glad_glVertexAttrib3svARB =
+      (PFNGLVERTEXATTRIB3SVARBPROC)load(userptr, "glVertexAttrib3svARB");
+  glad_glVertexAttrib4NbvARB =
+      (PFNGLVERTEXATTRIB4NBVARBPROC)load(userptr, "glVertexAttrib4NbvARB");
+  glad_glVertexAttrib4NivARB =
+      (PFNGLVERTEXATTRIB4NIVARBPROC)load(userptr, "glVertexAttrib4NivARB");
+  glad_glVertexAttrib4NsvARB =
+      (PFNGLVERTEXATTRIB4NSVARBPROC)load(userptr, "glVertexAttrib4NsvARB");
+  glad_glVertexAttrib4NubARB =
+      (PFNGLVERTEXATTRIB4NUBARBPROC)load(userptr, "glVertexAttrib4NubARB");
+  glad_glVertexAttrib4NubvARB =
+      (PFNGLVERTEXATTRIB4NUBVARBPROC)load(userptr, "glVertexAttrib4NubvARB");
+  glad_glVertexAttrib4NuivARB =
+      (PFNGLVERTEXATTRIB4NUIVARBPROC)load(userptr, "glVertexAttrib4NuivARB");
+  glad_glVertexAttrib4NusvARB =
+      (PFNGLVERTEXATTRIB4NUSVARBPROC)load(userptr, "glVertexAttrib4NusvARB");
+  glad_glVertexAttrib4bvARB =
+      (PFNGLVERTEXATTRIB4BVARBPROC)load(userptr, "glVertexAttrib4bvARB");
+  glad_glVertexAttrib4dARB =
+      (PFNGLVERTEXATTRIB4DARBPROC)load(userptr, "glVertexAttrib4dARB");
+  glad_glVertexAttrib4dvARB =
+      (PFNGLVERTEXATTRIB4DVARBPROC)load(userptr, "glVertexAttrib4dvARB");
+  glad_glVertexAttrib4fARB =
+      (PFNGLVERTEXATTRIB4FARBPROC)load(userptr, "glVertexAttrib4fARB");
+  glad_glVertexAttrib4fvARB =
+      (PFNGLVERTEXATTRIB4FVARBPROC)load(userptr, "glVertexAttrib4fvARB");
+  glad_glVertexAttrib4ivARB =
+      (PFNGLVERTEXATTRIB4IVARBPROC)load(userptr, "glVertexAttrib4ivARB");
+  glad_glVertexAttrib4sARB =
+      (PFNGLVERTEXATTRIB4SARBPROC)load(userptr, "glVertexAttrib4sARB");
+  glad_glVertexAttrib4svARB =
+      (PFNGLVERTEXATTRIB4SVARBPROC)load(userptr, "glVertexAttrib4svARB");
+  glad_glVertexAttrib4ubvARB =
+      (PFNGLVERTEXATTRIB4UBVARBPROC)load(userptr, "glVertexAttrib4ubvARB");
+  glad_glVertexAttrib4uivARB =
+      (PFNGLVERTEXATTRIB4UIVARBPROC)load(userptr, "glVertexAttrib4uivARB");
+  glad_glVertexAttrib4usvARB =
+      (PFNGLVERTEXATTRIB4USVARBPROC)load(userptr, "glVertexAttrib4usvARB");
+  glad_glVertexAttribPointerARB = (PFNGLVERTEXATTRIBPOINTERARBPROC)load(
+      userptr, "glVertexAttribPointerARB");
+}
+static void glad_gl_load_GL_ARB_vertex_shader(GLADuserptrloadfunc load,
+                                              void *userptr) {
+  if (!GLAD_GL_ARB_vertex_shader) return;
+  glad_glBindAttribLocationARB =
+      (PFNGLBINDATTRIBLOCATIONARBPROC)load(userptr, "glBindAttribLocationARB");
+  glad_glDisableVertexAttribArrayARB =
+      (PFNGLDISABLEVERTEXATTRIBARRAYARBPROC)load(
+          userptr, "glDisableVertexAttribArrayARB");
+  glad_glEnableVertexAttribArrayARB = (PFNGLENABLEVERTEXATTRIBARRAYARBPROC)load(
+      userptr, "glEnableVertexAttribArrayARB");
+  glad_glGetActiveAttribARB =
+      (PFNGLGETACTIVEATTRIBARBPROC)load(userptr, "glGetActiveAttribARB");
+  glad_glGetAttribLocationARB =
+      (PFNGLGETATTRIBLOCATIONARBPROC)load(userptr, "glGetAttribLocationARB");
+  glad_glGetVertexAttribPointervARB = (PFNGLGETVERTEXATTRIBPOINTERVARBPROC)load(
+      userptr, "glGetVertexAttribPointervARB");
+  glad_glGetVertexAttribdvARB =
+      (PFNGLGETVERTEXATTRIBDVARBPROC)load(userptr, "glGetVertexAttribdvARB");
+  glad_glGetVertexAttribfvARB =
+      (PFNGLGETVERTEXATTRIBFVARBPROC)load(userptr, "glGetVertexAttribfvARB");
+  glad_glGetVertexAttribivARB =
+      (PFNGLGETVERTEXATTRIBIVARBPROC)load(userptr, "glGetVertexAttribivARB");
+  glad_glVertexAttrib1dARB =
+      (PFNGLVERTEXATTRIB1DARBPROC)load(userptr, "glVertexAttrib1dARB");
+  glad_glVertexAttrib1dvARB =
+      (PFNGLVERTEXATTRIB1DVARBPROC)load(userptr, "glVertexAttrib1dvARB");
+  glad_glVertexAttrib1fARB =
+      (PFNGLVERTEXATTRIB1FARBPROC)load(userptr, "glVertexAttrib1fARB");
+  glad_glVertexAttrib1fvARB =
+      (PFNGLVERTEXATTRIB1FVARBPROC)load(userptr, "glVertexAttrib1fvARB");
+  glad_glVertexAttrib1sARB =
+      (PFNGLVERTEXATTRIB1SARBPROC)load(userptr, "glVertexAttrib1sARB");
+  glad_glVertexAttrib1svARB =
+      (PFNGLVERTEXATTRIB1SVARBPROC)load(userptr, "glVertexAttrib1svARB");
+  glad_glVertexAttrib2dARB =
+      (PFNGLVERTEXATTRIB2DARBPROC)load(userptr, "glVertexAttrib2dARB");
+  glad_glVertexAttrib2dvARB =
+      (PFNGLVERTEXATTRIB2DVARBPROC)load(userptr, "glVertexAttrib2dvARB");
+  glad_glVertexAttrib2fARB =
+      (PFNGLVERTEXATTRIB2FARBPROC)load(userptr, "glVertexAttrib2fARB");
+  glad_glVertexAttrib2fvARB =
+      (PFNGLVERTEXATTRIB2FVARBPROC)load(userptr, "glVertexAttrib2fvARB");
+  glad_glVertexAttrib2sARB =
+      (PFNGLVERTEXATTRIB2SARBPROC)load(userptr, "glVertexAttrib2sARB");
+  glad_glVertexAttrib2svARB =
+      (PFNGLVERTEXATTRIB2SVARBPROC)load(userptr, "glVertexAttrib2svARB");
+  glad_glVertexAttrib3dARB =
+      (PFNGLVERTEXATTRIB3DARBPROC)load(userptr, "glVertexAttrib3dARB");
+  glad_glVertexAttrib3dvARB =
+      (PFNGLVERTEXATTRIB3DVARBPROC)load(userptr, "glVertexAttrib3dvARB");
+  glad_glVertexAttrib3fARB =
+      (PFNGLVERTEXATTRIB3FARBPROC)load(userptr, "glVertexAttrib3fARB");
+  glad_glVertexAttrib3fvARB =
+      (PFNGLVERTEXATTRIB3FVARBPROC)load(userptr, "glVertexAttrib3fvARB");
+  glad_glVertexAttrib3sARB =
+      (PFNGLVERTEXATTRIB3SARBPROC)load(userptr, "glVertexAttrib3sARB");
+  glad_glVertexAttrib3svARB =
+      (PFNGLVERTEXATTRIB3SVARBPROC)load(userptr, "glVertexAttrib3svARB");
+  glad_glVertexAttrib4NbvARB =
+      (PFNGLVERTEXATTRIB4NBVARBPROC)load(userptr, "glVertexAttrib4NbvARB");
+  glad_glVertexAttrib4NivARB =
+      (PFNGLVERTEXATTRIB4NIVARBPROC)load(userptr, "glVertexAttrib4NivARB");
+  glad_glVertexAttrib4NsvARB =
+      (PFNGLVERTEXATTRIB4NSVARBPROC)load(userptr, "glVertexAttrib4NsvARB");
+  glad_glVertexAttrib4NubARB =
+      (PFNGLVERTEXATTRIB4NUBARBPROC)load(userptr, "glVertexAttrib4NubARB");
+  glad_glVertexAttrib4NubvARB =
+      (PFNGLVERTEXATTRIB4NUBVARBPROC)load(userptr, "glVertexAttrib4NubvARB");
+  glad_glVertexAttrib4NuivARB =
+      (PFNGLVERTEXATTRIB4NUIVARBPROC)load(userptr, "glVertexAttrib4NuivARB");
+  glad_glVertexAttrib4NusvARB =
+      (PFNGLVERTEXATTRIB4NUSVARBPROC)load(userptr, "glVertexAttrib4NusvARB");
+  glad_glVertexAttrib4bvARB =
+      (PFNGLVERTEXATTRIB4BVARBPROC)load(userptr, "glVertexAttrib4bvARB");
+  glad_glVertexAttrib4dARB =
+      (PFNGLVERTEXATTRIB4DARBPROC)load(userptr, "glVertexAttrib4dARB");
+  glad_glVertexAttrib4dvARB =
+      (PFNGLVERTEXATTRIB4DVARBPROC)load(userptr, "glVertexAttrib4dvARB");
+  glad_glVertexAttrib4fARB =
+      (PFNGLVERTEXATTRIB4FARBPROC)load(userptr, "glVertexAttrib4fARB");
+  glad_glVertexAttrib4fvARB =
+      (PFNGLVERTEXATTRIB4FVARBPROC)load(userptr, "glVertexAttrib4fvARB");
+  glad_glVertexAttrib4ivARB =
+      (PFNGLVERTEXATTRIB4IVARBPROC)load(userptr, "glVertexAttrib4ivARB");
+  glad_glVertexAttrib4sARB =
+      (PFNGLVERTEXATTRIB4SARBPROC)load(userptr, "glVertexAttrib4sARB");
+  glad_glVertexAttrib4svARB =
+      (PFNGLVERTEXATTRIB4SVARBPROC)load(userptr, "glVertexAttrib4svARB");
+  glad_glVertexAttrib4ubvARB =
+      (PFNGLVERTEXATTRIB4UBVARBPROC)load(userptr, "glVertexAttrib4ubvARB");
+  glad_glVertexAttrib4uivARB =
+      (PFNGLVERTEXATTRIB4UIVARBPROC)load(userptr, "glVertexAttrib4uivARB");
+  glad_glVertexAttrib4usvARB =
+      (PFNGLVERTEXATTRIB4USVARBPROC)load(userptr, "glVertexAttrib4usvARB");
+  glad_glVertexAttribPointerARB = (PFNGLVERTEXATTRIBPOINTERARBPROC)load(
+      userptr, "glVertexAttribPointerARB");
+}
+static void glad_gl_load_GL_EXT_draw_instanced(GLADuserptrloadfunc load,
+                                               void *userptr) {
+  if (!GLAD_GL_EXT_draw_instanced) return;
+  glad_glDrawArraysInstancedEXT = (PFNGLDRAWARRAYSINSTANCEDEXTPROC)load(
+      userptr, "glDrawArraysInstancedEXT");
+  glad_glDrawElementsInstancedEXT = (PFNGLDRAWELEMENTSINSTANCEDEXTPROC)load(
+      userptr, "glDrawElementsInstancedEXT");
+}
+static void glad_gl_load_GL_EXT_fog_coord(GLADuserptrloadfunc load,
+                                          void *userptr) {
+  if (!GLAD_GL_EXT_fog_coord) return;
+  glad_glFogCoordPointerEXT =
+      (PFNGLFOGCOORDPOINTEREXTPROC)load(userptr, "glFogCoordPointerEXT");
+  glad_glFogCoorddEXT = (PFNGLFOGCOORDDEXTPROC)load(userptr, "glFogCoorddEXT");
+  glad_glFogCoorddvEXT =
+      (PFNGLFOGCOORDDVEXTPROC)load(userptr, "glFogCoorddvEXT");
+  glad_glFogCoordfEXT = (PFNGLFOGCOORDFEXTPROC)load(userptr, "glFogCoordfEXT");
+  glad_glFogCoordfvEXT =
+      (PFNGLFOGCOORDFVEXTPROC)load(userptr, "glFogCoordfvEXT");
+}
+static void glad_gl_load_GL_EXT_framebuffer_blit(GLADuserptrloadfunc load,
+                                                 void *userptr) {
+  if (!GLAD_GL_EXT_framebuffer_blit) return;
+  glad_glBlitFramebufferEXT =
+      (PFNGLBLITFRAMEBUFFEREXTPROC)load(userptr, "glBlitFramebufferEXT");
+}
+static void glad_gl_load_GL_EXT_framebuffer_multisample(
+    GLADuserptrloadfunc load, void *userptr) {
+  if (!GLAD_GL_EXT_framebuffer_multisample) return;
+  glad_glRenderbufferStorageMultisampleEXT =
+      (PFNGLRENDERBUFFERSTORAGEMULTISAMPLEEXTPROC)load(
+          userptr, "glRenderbufferStorageMultisampleEXT");
+}
+static void glad_gl_load_GL_EXT_framebuffer_object(GLADuserptrloadfunc load,
+                                                   void *userptr) {
+  if (!GLAD_GL_EXT_framebuffer_object) return;
+  glad_glBindFramebufferEXT =
+      (PFNGLBINDFRAMEBUFFEREXTPROC)load(userptr, "glBindFramebufferEXT");
+  glad_glBindRenderbufferEXT =
+      (PFNGLBINDRENDERBUFFEREXTPROC)load(userptr, "glBindRenderbufferEXT");
+  glad_glCheckFramebufferStatusEXT = (PFNGLCHECKFRAMEBUFFERSTATUSEXTPROC)load(
+      userptr, "glCheckFramebufferStatusEXT");
+  glad_glDeleteFramebuffersEXT =
+      (PFNGLDELETEFRAMEBUFFERSEXTPROC)load(userptr, "glDeleteFramebuffersEXT");
+  glad_glDeleteRenderbuffersEXT = (PFNGLDELETERENDERBUFFERSEXTPROC)load(
+      userptr, "glDeleteRenderbuffersEXT");
+  glad_glFramebufferRenderbufferEXT = (PFNGLFRAMEBUFFERRENDERBUFFEREXTPROC)load(
+      userptr, "glFramebufferRenderbufferEXT");
+  glad_glFramebufferTexture1DEXT = (PFNGLFRAMEBUFFERTEXTURE1DEXTPROC)load(
+      userptr, "glFramebufferTexture1DEXT");
+  glad_glFramebufferTexture2DEXT = (PFNGLFRAMEBUFFERTEXTURE2DEXTPROC)load(
+      userptr, "glFramebufferTexture2DEXT");
+  glad_glFramebufferTexture3DEXT = (PFNGLFRAMEBUFFERTEXTURE3DEXTPROC)load(
+      userptr, "glFramebufferTexture3DEXT");
+  glad_glGenFramebuffersEXT =
+      (PFNGLGENFRAMEBUFFERSEXTPROC)load(userptr, "glGenFramebuffersEXT");
+  glad_glGenRenderbuffersEXT =
+      (PFNGLGENRENDERBUFFERSEXTPROC)load(userptr, "glGenRenderbuffersEXT");
+  glad_glGenerateMipmapEXT =
+      (PFNGLGENERATEMIPMAPEXTPROC)load(userptr, "glGenerateMipmapEXT");
+  glad_glGetFramebufferAttachmentParameterivEXT =
+      (PFNGLGETFRAMEBUFFERATTACHMENTPARAMETERIVEXTPROC)load(
+          userptr, "glGetFramebufferAttachmentParameterivEXT");
+  glad_glGetRenderbufferParameterivEXT =
+      (PFNGLGETRENDERBUFFERPARAMETERIVEXTPROC)load(
+          userptr, "glGetRenderbufferParameterivEXT");
+  glad_glIsFramebufferEXT =
+      (PFNGLISFRAMEBUFFEREXTPROC)load(userptr, "glIsFramebufferEXT");
+  glad_glIsRenderbufferEXT =
+      (PFNGLISRENDERBUFFEREXTPROC)load(userptr, "glIsRenderbufferEXT");
+  glad_glRenderbufferStorageEXT = (PFNGLRENDERBUFFERSTORAGEEXTPROC)load(
+      userptr, "glRenderbufferStorageEXT");
+}
+static void glad_gl_load_GL_OES_fixed_point(GLADuserptrloadfunc load,
+                                            void *userptr) {
+  if (!GLAD_GL_OES_fixed_point) return;
+  glad_glAccumxOES = (PFNGLACCUMXOESPROC)load(userptr, "glAccumxOES");
+  glad_glAlphaFuncxOES =
+      (PFNGLALPHAFUNCXOESPROC)load(userptr, "glAlphaFuncxOES");
+  glad_glBitmapxOES = (PFNGLBITMAPXOESPROC)load(userptr, "glBitmapxOES");
+  glad_glBlendColorxOES =
+      (PFNGLBLENDCOLORXOESPROC)load(userptr, "glBlendColorxOES");
+  glad_glClearAccumxOES =
+      (PFNGLCLEARACCUMXOESPROC)load(userptr, "glClearAccumxOES");
+  glad_glClearColorxOES =
+      (PFNGLCLEARCOLORXOESPROC)load(userptr, "glClearColorxOES");
+  glad_glClearDepthxOES =
+      (PFNGLCLEARDEPTHXOESPROC)load(userptr, "glClearDepthxOES");
+  glad_glClipPlanexOES =
+      (PFNGLCLIPPLANEXOESPROC)load(userptr, "glClipPlanexOES");
+  glad_glColor3xOES = (PFNGLCOLOR3XOESPROC)load(userptr, "glColor3xOES");
+  glad_glColor3xvOES = (PFNGLCOLOR3XVOESPROC)load(userptr, "glColor3xvOES");
+  glad_glColor4xOES = (PFNGLCOLOR4XOESPROC)load(userptr, "glColor4xOES");
+  glad_glColor4xvOES = (PFNGLCOLOR4XVOESPROC)load(userptr, "glColor4xvOES");
+  glad_glConvolutionParameterxOES = (PFNGLCONVOLUTIONPARAMETERXOESPROC)load(
+      userptr, "glConvolutionParameterxOES");
+  glad_glConvolutionParameterxvOES = (PFNGLCONVOLUTIONPARAMETERXVOESPROC)load(
+      userptr, "glConvolutionParameterxvOES");
+  glad_glDepthRangexOES =
+      (PFNGLDEPTHRANGEXOESPROC)load(userptr, "glDepthRangexOES");
+  glad_glEvalCoord1xOES =
+      (PFNGLEVALCOORD1XOESPROC)load(userptr, "glEvalCoord1xOES");
+  glad_glEvalCoord1xvOES =
+      (PFNGLEVALCOORD1XVOESPROC)load(userptr, "glEvalCoord1xvOES");
+  glad_glEvalCoord2xOES =
+      (PFNGLEVALCOORD2XOESPROC)load(userptr, "glEvalCoord2xOES");
+  glad_glEvalCoord2xvOES =
+      (PFNGLEVALCOORD2XVOESPROC)load(userptr, "glEvalCoord2xvOES");
+  glad_glFeedbackBufferxOES =
+      (PFNGLFEEDBACKBUFFERXOESPROC)load(userptr, "glFeedbackBufferxOES");
+  glad_glFogxOES = (PFNGLFOGXOESPROC)load(userptr, "glFogxOES");
+  glad_glFogxvOES = (PFNGLFOGXVOESPROC)load(userptr, "glFogxvOES");
+  glad_glFrustumxOES = (PFNGLFRUSTUMXOESPROC)load(userptr, "glFrustumxOES");
+  glad_glGetClipPlanexOES =
+      (PFNGLGETCLIPPLANEXOESPROC)load(userptr, "glGetClipPlanexOES");
+  glad_glGetConvolutionParameterxvOES =
+      (PFNGLGETCONVOLUTIONPARAMETERXVOESPROC)load(
+          userptr, "glGetConvolutionParameterxvOES");
+  glad_glGetFixedvOES = (PFNGLGETFIXEDVOESPROC)load(userptr, "glGetFixedvOES");
+  glad_glGetHistogramParameterxvOES = (PFNGLGETHISTOGRAMPARAMETERXVOESPROC)load(
+      userptr, "glGetHistogramParameterxvOES");
+  glad_glGetLightxOES = (PFNGLGETLIGHTXOESPROC)load(userptr, "glGetLightxOES");
+  glad_glGetMapxvOES = (PFNGLGETMAPXVOESPROC)load(userptr, "glGetMapxvOES");
+  glad_glGetMaterialxOES =
+      (PFNGLGETMATERIALXOESPROC)load(userptr, "glGetMaterialxOES");
+  glad_glGetPixelMapxv =
+      (PFNGLGETPIXELMAPXVPROC)load(userptr, "glGetPixelMapxv");
+  glad_glGetTexEnvxvOES =
+      (PFNGLGETTEXENVXVOESPROC)load(userptr, "glGetTexEnvxvOES");
+  glad_glGetTexGenxvOES =
+      (PFNGLGETTEXGENXVOESPROC)load(userptr, "glGetTexGenxvOES");
+  glad_glGetTexLevelParameterxvOES = (PFNGLGETTEXLEVELPARAMETERXVOESPROC)load(
+      userptr, "glGetTexLevelParameterxvOES");
+  glad_glGetTexParameterxvOES =
+      (PFNGLGETTEXPARAMETERXVOESPROC)load(userptr, "glGetTexParameterxvOES");
+  glad_glIndexxOES = (PFNGLINDEXXOESPROC)load(userptr, "glIndexxOES");
+  glad_glIndexxvOES = (PFNGLINDEXXVOESPROC)load(userptr, "glIndexxvOES");
+  glad_glLightModelxOES =
+      (PFNGLLIGHTMODELXOESPROC)load(userptr, "glLightModelxOES");
+  glad_glLightModelxvOES =
+      (PFNGLLIGHTMODELXVOESPROC)load(userptr, "glLightModelxvOES");
+  glad_glLightxOES = (PFNGLLIGHTXOESPROC)load(userptr, "glLightxOES");
+  glad_glLightxvOES = (PFNGLLIGHTXVOESPROC)load(userptr, "glLightxvOES");
+  glad_glLineWidthxOES =
+      (PFNGLLINEWIDTHXOESPROC)load(userptr, "glLineWidthxOES");
+  glad_glLoadMatrixxOES =
+      (PFNGLLOADMATRIXXOESPROC)load(userptr, "glLoadMatrixxOES");
+  glad_glLoadTransposeMatrixxOES = (PFNGLLOADTRANSPOSEMATRIXXOESPROC)load(
+      userptr, "glLoadTransposeMatrixxOES");
+  glad_glMap1xOES = (PFNGLMAP1XOESPROC)load(userptr, "glMap1xOES");
+  glad_glMap2xOES = (PFNGLMAP2XOESPROC)load(userptr, "glMap2xOES");
+  glad_glMapGrid1xOES = (PFNGLMAPGRID1XOESPROC)load(userptr, "glMapGrid1xOES");
+  glad_glMapGrid2xOES = (PFNGLMAPGRID2XOESPROC)load(userptr, "glMapGrid2xOES");
+  glad_glMaterialxOES = (PFNGLMATERIALXOESPROC)load(userptr, "glMaterialxOES");
+  glad_glMaterialxvOES =
+      (PFNGLMATERIALXVOESPROC)load(userptr, "glMaterialxvOES");
+  glad_glMultMatrixxOES =
+      (PFNGLMULTMATRIXXOESPROC)load(userptr, "glMultMatrixxOES");
+  glad_glMultTransposeMatrixxOES = (PFNGLMULTTRANSPOSEMATRIXXOESPROC)load(
+      userptr, "glMultTransposeMatrixxOES");
+  glad_glMultiTexCoord1xOES =
+      (PFNGLMULTITEXCOORD1XOESPROC)load(userptr, "glMultiTexCoord1xOES");
+  glad_glMultiTexCoord1xvOES =
+      (PFNGLMULTITEXCOORD1XVOESPROC)load(userptr, "glMultiTexCoord1xvOES");
+  glad_glMultiTexCoord2xOES =
+      (PFNGLMULTITEXCOORD2XOESPROC)load(userptr, "glMultiTexCoord2xOES");
+  glad_glMultiTexCoord2xvOES =
+      (PFNGLMULTITEXCOORD2XVOESPROC)load(userptr, "glMultiTexCoord2xvOES");
+  glad_glMultiTexCoord3xOES =
+      (PFNGLMULTITEXCOORD3XOESPROC)load(userptr, "glMultiTexCoord3xOES");
+  glad_glMultiTexCoord3xvOES =
+      (PFNGLMULTITEXCOORD3XVOESPROC)load(userptr, "glMultiTexCoord3xvOES");
+  glad_glMultiTexCoord4xOES =
+      (PFNGLMULTITEXCOORD4XOESPROC)load(userptr, "glMultiTexCoord4xOES");
+  glad_glMultiTexCoord4xvOES =
+      (PFNGLMULTITEXCOORD4XVOESPROC)load(userptr, "glMultiTexCoord4xvOES");
+  glad_glNormal3xOES = (PFNGLNORMAL3XOESPROC)load(userptr, "glNormal3xOES");
+  glad_glNormal3xvOES = (PFNGLNORMAL3XVOESPROC)load(userptr, "glNormal3xvOES");
+  glad_glOrthoxOES = (PFNGLORTHOXOESPROC)load(userptr, "glOrthoxOES");
+  glad_glPassThroughxOES =
+      (PFNGLPASSTHROUGHXOESPROC)load(userptr, "glPassThroughxOES");
+  glad_glPixelMapx = (PFNGLPIXELMAPXPROC)load(userptr, "glPixelMapx");
+  glad_glPixelStorex = (PFNGLPIXELSTOREXPROC)load(userptr, "glPixelStorex");
+  glad_glPixelTransferxOES =
+      (PFNGLPIXELTRANSFERXOESPROC)load(userptr, "glPixelTransferxOES");
+  glad_glPixelZoomxOES =
+      (PFNGLPIXELZOOMXOESPROC)load(userptr, "glPixelZoomxOES");
+  glad_glPointParameterxvOES =
+      (PFNGLPOINTPARAMETERXVOESPROC)load(userptr, "glPointParameterxvOES");
+  glad_glPointSizexOES =
+      (PFNGLPOINTSIZEXOESPROC)load(userptr, "glPointSizexOES");
+  glad_glPolygonOffsetxOES =
+      (PFNGLPOLYGONOFFSETXOESPROC)load(userptr, "glPolygonOffsetxOES");
+  glad_glPrioritizeTexturesxOES = (PFNGLPRIORITIZETEXTURESXOESPROC)load(
+      userptr, "glPrioritizeTexturesxOES");
+  glad_glRasterPos2xOES =
+      (PFNGLRASTERPOS2XOESPROC)load(userptr, "glRasterPos2xOES");
+  glad_glRasterPos2xvOES =
+      (PFNGLRASTERPOS2XVOESPROC)load(userptr, "glRasterPos2xvOES");
+  glad_glRasterPos3xOES =
+      (PFNGLRASTERPOS3XOESPROC)load(userptr, "glRasterPos3xOES");
+  glad_glRasterPos3xvOES =
+      (PFNGLRASTERPOS3XVOESPROC)load(userptr, "glRasterPos3xvOES");
+  glad_glRasterPos4xOES =
+      (PFNGLRASTERPOS4XOESPROC)load(userptr, "glRasterPos4xOES");
+  glad_glRasterPos4xvOES =
+      (PFNGLRASTERPOS4XVOESPROC)load(userptr, "glRasterPos4xvOES");
+  glad_glRectxOES = (PFNGLRECTXOESPROC)load(userptr, "glRectxOES");
+  glad_glRectxvOES = (PFNGLRECTXVOESPROC)load(userptr, "glRectxvOES");
+  glad_glRotatexOES = (PFNGLROTATEXOESPROC)load(userptr, "glRotatexOES");
+  glad_glScalexOES = (PFNGLSCALEXOESPROC)load(userptr, "glScalexOES");
+  glad_glTexCoord1xOES =
+      (PFNGLTEXCOORD1XOESPROC)load(userptr, "glTexCoord1xOES");
+  glad_glTexCoord1xvOES =
+      (PFNGLTEXCOORD1XVOESPROC)load(userptr, "glTexCoord1xvOES");
+  glad_glTexCoord2xOES =
+      (PFNGLTEXCOORD2XOESPROC)load(userptr, "glTexCoord2xOES");
+  glad_glTexCoord2xvOES =
+      (PFNGLTEXCOORD2XVOESPROC)load(userptr, "glTexCoord2xvOES");
+  glad_glTexCoord3xOES =
+      (PFNGLTEXCOORD3XOESPROC)load(userptr, "glTexCoord3xOES");
+  glad_glTexCoord3xvOES =
+      (PFNGLTEXCOORD3XVOESPROC)load(userptr, "glTexCoord3xvOES");
+  glad_glTexCoord4xOES =
+      (PFNGLTEXCOORD4XOESPROC)load(userptr, "glTexCoord4xOES");
+  glad_glTexCoord4xvOES =
+      (PFNGLTEXCOORD4XVOESPROC)load(userptr, "glTexCoord4xvOES");
+  glad_glTexEnvxOES = (PFNGLTEXENVXOESPROC)load(userptr, "glTexEnvxOES");
+  glad_glTexEnvxvOES = (PFNGLTEXENVXVOESPROC)load(userptr, "glTexEnvxvOES");
+  glad_glTexGenxOES = (PFNGLTEXGENXOESPROC)load(userptr, "glTexGenxOES");
+  glad_glTexGenxvOES = (PFNGLTEXGENXVOESPROC)load(userptr, "glTexGenxvOES");
+  glad_glTexParameterxOES =
+      (PFNGLTEXPARAMETERXOESPROC)load(userptr, "glTexParameterxOES");
+  glad_glTexParameterxvOES =
+      (PFNGLTEXPARAMETERXVOESPROC)load(userptr, "glTexParameterxvOES");
+  glad_glTranslatexOES =
+      (PFNGLTRANSLATEXOESPROC)load(userptr, "glTranslatexOES");
+  glad_glVertex2xOES = (PFNGLVERTEX2XOESPROC)load(userptr, "glVertex2xOES");
+  glad_glVertex2xvOES = (PFNGLVERTEX2XVOESPROC)load(userptr, "glVertex2xvOES");
+  glad_glVertex3xOES = (PFNGLVERTEX3XOESPROC)load(userptr, "glVertex3xOES");
+  glad_glVertex3xvOES = (PFNGLVERTEX3XVOESPROC)load(userptr, "glVertex3xvOES");
+  glad_glVertex4xOES = (PFNGLVERTEX4XOESPROC)load(userptr, "glVertex4xOES");
+  glad_glVertex4xvOES = (PFNGLVERTEX4XVOESPROC)load(userptr, "glVertex4xvOES");
+}
 
 #if defined(GL_ES_VERSION_3_0) || defined(GL_VERSION_3_0)
 #define GLAD_GL_IS_SOME_NEW_VERSION 1
@@ -8313,378 +11017,488 @@ static void glad_gl_load_GL_OES_fixed_point( GLADuserptrloadfunc load, void* use
 #define GLAD_GL_IS_SOME_NEW_VERSION 0
 #endif
 
-static int glad_gl_get_extensions( int version, const char **out_exts, unsigned int *out_num_exts_i, char ***out_exts_i) {
+static int glad_gl_get_extensions(int version, const char **out_exts,
+                                  unsigned int *out_num_exts_i,
+                                  char ***out_exts_i) {
 #if GLAD_GL_IS_SOME_NEW_VERSION
-    if(GLAD_VERSION_MAJOR(version) < 3) {
+  if (GLAD_VERSION_MAJOR(version) < 3) {
 #else
-    (void) version;
-    (void) out_num_exts_i;
-    (void) out_exts_i;
+  (void)version;
+  (void)out_num_exts_i;
+  (void)out_exts_i;
 #endif
-        if (glad_glGetString == NULL) {
-            return 0;
-        }
-        *out_exts = (const char *)glad_glGetString(GL_EXTENSIONS);
+    if (glad_glGetString == NULL) {
+      return 0;
+    }
+    *out_exts = (const char *)glad_glGetString(GL_EXTENSIONS);
 #if GLAD_GL_IS_SOME_NEW_VERSION
-    } else {
-        unsigned int index = 0;
-        unsigned int num_exts_i = 0;
-        char **exts_i = NULL;
-        if (glad_glGetStringi == NULL || glad_glGetIntegerv == NULL) {
-            return 0;
-        }
-        glad_glGetIntegerv(GL_NUM_EXTENSIONS, (int*) &num_exts_i);
-        if (num_exts_i > 0) {
-            exts_i = (char **) GLAD_MALLOC(num_exts_i * (sizeof *exts_i));
-        }
-        if (exts_i == NULL) {
-            return 0;
-        }
-        for(index = 0; index < num_exts_i; index++) {
-            const char *gl_str_tmp = (const char*) glad_glGetStringi(GL_EXTENSIONS, index);
-            size_t len = strlen(gl_str_tmp) + 1;
-
-            char *local_str = (char*) GLAD_MALLOC(len * sizeof(char));
-            if(local_str != NULL) {
-                memcpy(local_str, gl_str_tmp, len * sizeof(char));
-            }
-
-            exts_i[index] = local_str;
-        }
-
-        *out_num_exts_i = num_exts_i;
-        *out_exts_i = exts_i;
-    }
-#endif
-    return 1;
-}
-static void glad_gl_free_extensions(char **exts_i, unsigned int num_exts_i) {
-    if (exts_i != NULL) {
-        unsigned int index;
-        for(index = 0; index < num_exts_i; index++) {
-            GLAD_FREE((void *) (exts_i[index]));
-        }
-        GLAD_FREE((void *)exts_i);
-        exts_i = NULL;
-    }
-}
-static int glad_gl_has_extension(int version, const char *exts, unsigned int num_exts_i, char **exts_i, const char *ext) {
-    if(GLAD_VERSION_MAJOR(version) < 3 || !GLAD_GL_IS_SOME_NEW_VERSION) {
-        const char *extensions;
-        const char *loc;
-        const char *terminator;
-        extensions = exts;
-        if(extensions == NULL || ext == NULL) {
-            return 0;
-        }
-        while(1) {
-            loc = strstr(extensions, ext);
-            if(loc == NULL) {
-                return 0;
-            }
-            terminator = loc + strlen(ext);
-            if((loc == extensions || *(loc - 1) == ' ') &&
-                (*terminator == ' ' || *terminator == '\0')) {
-                return 1;
-            }
-            extensions = terminator;
-        }
-    } else {
-        unsigned int index;
-        for(index = 0; index < num_exts_i; index++) {
-            const char *e = exts_i[index];
-            if(strcmp(e, ext) == 0) {
-                return 1;
-            }
-        }
-    }
-    return 0;
-}
-
-static GLADapiproc glad_gl_get_proc_from_userptr(void *userptr, const char* name) {
-    return (GLAD_GNUC_EXTENSION (GLADapiproc (*)(const char *name)) userptr)(name);
-}
-
-static int glad_gl_find_extensions_gl( int version) {
-    const char *exts = NULL;
+  } else {
+    unsigned int index = 0;
     unsigned int num_exts_i = 0;
     char **exts_i = NULL;
-    if (!glad_gl_get_extensions(version, &exts, &num_exts_i, &exts_i)) return 0;
+    if (glad_glGetStringi == NULL || glad_glGetIntegerv == NULL) {
+      return 0;
+    }
+    glad_glGetIntegerv(GL_NUM_EXTENSIONS, (int *)&num_exts_i);
+    if (num_exts_i > 0) {
+      exts_i = (char **)GLAD_MALLOC(num_exts_i * (sizeof *exts_i));
+    }
+    if (exts_i == NULL) {
+      return 0;
+    }
+    for (index = 0; index < num_exts_i; index++) {
+      const char *gl_str_tmp =
+          (const char *)glad_glGetStringi(GL_EXTENSIONS, index);
+      size_t len = strlen(gl_str_tmp) + 1;
 
-    GLAD_GL_ARB_ES2_compatibility = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_ES2_compatibility");
-    GLAD_GL_ARB_ES3_1_compatibility = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_ES3_1_compatibility");
-    GLAD_GL_ARB_ES3_2_compatibility = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_ES3_2_compatibility");
-    GLAD_GL_ARB_ES3_compatibility = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_ES3_compatibility");
-    GLAD_GL_ARB_blend_func_extended = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_blend_func_extended");
-    GLAD_GL_ARB_buffer_storage = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_buffer_storage");
-    GLAD_GL_ARB_clear_buffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_clear_buffer_object");
-    GLAD_GL_ARB_clear_texture = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_clear_texture");
-    GLAD_GL_ARB_color_buffer_float = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_color_buffer_float");
-    GLAD_GL_ARB_compatibility = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_compatibility");
-    GLAD_GL_ARB_compressed_texture_pixel_storage = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_compressed_texture_pixel_storage");
-    GLAD_GL_ARB_compute_shader = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_compute_shader");
-    GLAD_GL_ARB_compute_variable_group_size = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_compute_variable_group_size");
-    GLAD_GL_ARB_copy_buffer = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_copy_buffer");
-    GLAD_GL_ARB_copy_image = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_copy_image");
-    GLAD_GL_ARB_debug_output = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_debug_output");
-    GLAD_GL_ARB_depth_buffer_float = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_depth_buffer_float");
-    GLAD_GL_ARB_depth_clamp = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_depth_clamp");
-    GLAD_GL_ARB_depth_texture = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_depth_texture");
-    GLAD_GL_ARB_direct_state_access = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_direct_state_access");
-    GLAD_GL_ARB_draw_buffers = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_draw_buffers");
-    GLAD_GL_ARB_draw_buffers_blend = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_draw_buffers_blend");
-    GLAD_GL_ARB_draw_elements_base_vertex = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_draw_elements_base_vertex");
-    GLAD_GL_ARB_draw_indirect = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_draw_indirect");
-    GLAD_GL_ARB_draw_instanced = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_draw_instanced");
-    GLAD_GL_ARB_enhanced_layouts = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_enhanced_layouts");
-    GLAD_GL_ARB_explicit_attrib_location = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_explicit_attrib_location");
-    GLAD_GL_ARB_explicit_uniform_location = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_explicit_uniform_location");
-    GLAD_GL_ARB_fragment_coord_conventions = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_fragment_coord_conventions");
-    GLAD_GL_ARB_fragment_layer_viewport = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_fragment_layer_viewport");
-    GLAD_GL_ARB_fragment_program = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_fragment_program");
-    GLAD_GL_ARB_fragment_program_shadow = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_fragment_program_shadow");
-    GLAD_GL_ARB_fragment_shader = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_fragment_shader");
-    GLAD_GL_ARB_fragment_shader_interlock = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_fragment_shader_interlock");
-    GLAD_GL_ARB_framebuffer_no_attachments = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_framebuffer_no_attachments");
-    GLAD_GL_ARB_framebuffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_framebuffer_object");
-    GLAD_GL_ARB_framebuffer_sRGB = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_framebuffer_sRGB");
-    GLAD_GL_ARB_geometry_shader4 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_geometry_shader4");
-    GLAD_GL_ARB_get_program_binary = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_get_program_binary");
-    GLAD_GL_ARB_get_texture_sub_image = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_get_texture_sub_image");
-    GLAD_GL_ARB_gl_spirv = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_gl_spirv");
-    GLAD_GL_ARB_gpu_shader5 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_gpu_shader5");
-    GLAD_GL_ARB_gpu_shader_fp64 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_gpu_shader_fp64");
-    GLAD_GL_ARB_gpu_shader_int64 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_gpu_shader_int64");
-    GLAD_GL_ARB_half_float_pixel = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_half_float_pixel");
-    GLAD_GL_ARB_half_float_vertex = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_half_float_vertex");
-    GLAD_GL_ARB_instanced_arrays = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_instanced_arrays");
-    GLAD_GL_ARB_internalformat_query = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_internalformat_query");
-    GLAD_GL_ARB_internalformat_query2 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_internalformat_query2");
-    GLAD_GL_ARB_map_buffer_range = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_map_buffer_range");
-    GLAD_GL_ARB_multi_bind = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_multi_bind");
-    GLAD_GL_ARB_multi_draw_indirect = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_multi_draw_indirect");
-    GLAD_GL_ARB_multisample = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_multisample");
-    GLAD_GL_ARB_multitexture = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_multitexture");
-    GLAD_GL_ARB_occlusion_query = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_occlusion_query");
-    GLAD_GL_ARB_occlusion_query2 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_occlusion_query2");
-    GLAD_GL_ARB_pipeline_statistics_query = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_pipeline_statistics_query");
-    GLAD_GL_ARB_query_buffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_query_buffer_object");
-    GLAD_GL_ARB_sample_locations = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_sample_locations");
-    GLAD_GL_ARB_sample_shading = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_sample_shading");
-    GLAD_GL_ARB_seamless_cube_map = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_seamless_cube_map");
-    GLAD_GL_ARB_seamless_cubemap_per_texture = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_seamless_cubemap_per_texture");
-    GLAD_GL_ARB_shader_atomic_counter_ops = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_atomic_counter_ops");
-    GLAD_GL_ARB_shader_atomic_counters = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_atomic_counters");
-    GLAD_GL_ARB_shader_bit_encoding = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_bit_encoding");
-    GLAD_GL_ARB_shader_clock = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_clock");
-    GLAD_GL_ARB_shader_image_load_store = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_image_load_store");
-    GLAD_GL_ARB_shader_image_size = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_image_size");
-    GLAD_GL_ARB_shader_objects = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_objects");
-    GLAD_GL_ARB_shader_storage_buffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_storage_buffer_object");
-    GLAD_GL_ARB_shader_texture_lod = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shader_texture_lod");
-    GLAD_GL_ARB_shading_language_100 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_100");
-    GLAD_GL_ARB_shading_language_420pack = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_420pack");
-    GLAD_GL_ARB_shading_language_include = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_include");
-    GLAD_GL_ARB_shading_language_packing = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_packing");
-    GLAD_GL_ARB_spirv_extensions = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_spirv_extensions");
-    GLAD_GL_ARB_tessellation_shader = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_tessellation_shader");
-    GLAD_GL_ARB_texture_border_clamp = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_border_clamp");
-    GLAD_GL_ARB_texture_buffer_object_rgb32 = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_buffer_object_rgb32");
-    GLAD_GL_ARB_texture_compression = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_compression");
-    GLAD_GL_ARB_texture_cube_map = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_cube_map");
-    GLAD_GL_ARB_texture_cube_map_array = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_cube_map_array");
-    GLAD_GL_ARB_texture_env_add = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_env_add");
-    GLAD_GL_ARB_texture_filter_anisotropic = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_filter_anisotropic");
-    GLAD_GL_ARB_texture_filter_minmax = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_filter_minmax");
-    GLAD_GL_ARB_texture_float = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_float");
-    GLAD_GL_ARB_texture_mirror_clamp_to_edge = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_mirror_clamp_to_edge");
-    GLAD_GL_ARB_texture_mirrored_repeat = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_mirrored_repeat");
-    GLAD_GL_ARB_texture_multisample = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_multisample");
-    GLAD_GL_ARB_texture_non_power_of_two = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_non_power_of_two");
-    GLAD_GL_ARB_texture_rg = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_rg");
-    GLAD_GL_ARB_texture_storage = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_storage");
-    GLAD_GL_ARB_texture_swizzle = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_swizzle");
-    GLAD_GL_ARB_texture_view = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_texture_view");
-    GLAD_GL_ARB_timer_query = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_timer_query");
-    GLAD_GL_ARB_transpose_matrix = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_transpose_matrix");
-    GLAD_GL_ARB_uniform_buffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_uniform_buffer_object");
-    GLAD_GL_ARB_vertex_array_bgra = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_vertex_array_bgra");
-    GLAD_GL_ARB_vertex_array_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_vertex_array_object");
-    GLAD_GL_ARB_vertex_attrib_binding = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_vertex_attrib_binding");
-    GLAD_GL_ARB_vertex_buffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_vertex_buffer_object");
-    GLAD_GL_ARB_vertex_program = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_vertex_program");
-    GLAD_GL_ARB_vertex_shader = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_ARB_vertex_shader");
-    GLAD_GL_EXT_draw_instanced = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_draw_instanced");
-    GLAD_GL_EXT_fog_coord = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_fog_coord");
-    GLAD_GL_EXT_framebuffer_blit = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_blit");
-    GLAD_GL_EXT_framebuffer_multisample = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_multisample");
-    GLAD_GL_EXT_framebuffer_object = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_object");
-    GLAD_GL_EXT_framebuffer_sRGB = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_sRGB");
-    GLAD_GL_EXT_texture_compression_s3tc = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_texture_compression_s3tc");
-    GLAD_GL_EXT_texture_filter_anisotropic = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_texture_filter_anisotropic");
-    GLAD_GL_EXT_texture_mirror_clamp = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_EXT_texture_mirror_clamp");
-    GLAD_GL_KHR_texture_compression_astc_hdr = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_KHR_texture_compression_astc_hdr");
-    GLAD_GL_KHR_texture_compression_astc_ldr = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_KHR_texture_compression_astc_ldr");
-    GLAD_GL_OES_compressed_paletted_texture = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_OES_compressed_paletted_texture");
-    GLAD_GL_OES_fixed_point = glad_gl_has_extension(version, exts, num_exts_i, exts_i, "GL_OES_fixed_point");
+      char *local_str = (char *)GLAD_MALLOC(len * sizeof(char));
+      if (local_str != NULL) {
+        memcpy(local_str, gl_str_tmp, len * sizeof(char));
+      }
 
-    glad_gl_free_extensions(exts_i, num_exts_i);
+      exts_i[index] = local_str;
+    }
 
-    return 1;
+    *out_num_exts_i = num_exts_i;
+    *out_exts_i = exts_i;
+  }
+#endif
+  return 1;
+}
+static void glad_gl_free_extensions(char **exts_i, unsigned int num_exts_i) {
+  if (exts_i != NULL) {
+    unsigned int index;
+    for (index = 0; index < num_exts_i; index++) {
+      GLAD_FREE((void *)(exts_i[index]));
+    }
+    GLAD_FREE((void *)exts_i);
+    exts_i = NULL;
+  }
+}
+static int glad_gl_has_extension(int version, const char *exts,
+                                 unsigned int num_exts_i, char **exts_i,
+                                 const char *ext) {
+  if (GLAD_VERSION_MAJOR(version) < 3 || !GLAD_GL_IS_SOME_NEW_VERSION) {
+    const char *extensions;
+    const char *loc;
+    const char *terminator;
+    extensions = exts;
+    if (extensions == NULL || ext == NULL) {
+      return 0;
+    }
+    while (1) {
+      loc = strstr(extensions, ext);
+      if (loc == NULL) {
+        return 0;
+      }
+      terminator = loc + strlen(ext);
+      if ((loc == extensions || *(loc - 1) == ' ') &&
+          (*terminator == ' ' || *terminator == '\0')) {
+        return 1;
+      }
+      extensions = terminator;
+    }
+  } else {
+    unsigned int index;
+    for (index = 0; index < num_exts_i; index++) {
+      const char *e = exts_i[index];
+      if (strcmp(e, ext) == 0) {
+        return 1;
+      }
+    }
+  }
+  return 0;
+}
+
+static GLADapiproc glad_gl_get_proc_from_userptr(void *userptr,
+                                                 const char *name) {
+  return (GLAD_GNUC_EXTENSION(GLADapiproc(*)(const char *name)) userptr)(name);
+}
+
+static int glad_gl_find_extensions_gl(int version) {
+  const char *exts = NULL;
+  unsigned int num_exts_i = 0;
+  char **exts_i = NULL;
+  if (!glad_gl_get_extensions(version, &exts, &num_exts_i, &exts_i)) return 0;
+
+  GLAD_GL_ARB_ES2_compatibility = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_ES2_compatibility");
+  GLAD_GL_ARB_ES3_1_compatibility = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_ES3_1_compatibility");
+  GLAD_GL_ARB_ES3_2_compatibility = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_ES3_2_compatibility");
+  GLAD_GL_ARB_ES3_compatibility = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_ES3_compatibility");
+  GLAD_GL_ARB_blend_func_extended = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_blend_func_extended");
+  GLAD_GL_ARB_buffer_storage = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_buffer_storage");
+  GLAD_GL_ARB_clear_buffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_clear_buffer_object");
+  GLAD_GL_ARB_clear_texture = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_clear_texture");
+  GLAD_GL_ARB_color_buffer_float = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_color_buffer_float");
+  GLAD_GL_ARB_compatibility = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_compatibility");
+  GLAD_GL_ARB_compressed_texture_pixel_storage =
+      glad_gl_has_extension(version, exts, num_exts_i, exts_i,
+                            "GL_ARB_compressed_texture_pixel_storage");
+  GLAD_GL_ARB_compute_shader = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_compute_shader");
+  GLAD_GL_ARB_compute_variable_group_size = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_compute_variable_group_size");
+  GLAD_GL_ARB_copy_buffer = glad_gl_has_extension(version, exts, num_exts_i,
+                                                  exts_i, "GL_ARB_copy_buffer");
+  GLAD_GL_ARB_copy_image = glad_gl_has_extension(version, exts, num_exts_i,
+                                                 exts_i, "GL_ARB_copy_image");
+  GLAD_GL_ARB_debug_output = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_debug_output");
+  GLAD_GL_ARB_depth_buffer_float = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_depth_buffer_float");
+  GLAD_GL_ARB_depth_clamp = glad_gl_has_extension(version, exts, num_exts_i,
+                                                  exts_i, "GL_ARB_depth_clamp");
+  GLAD_GL_ARB_depth_texture = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_depth_texture");
+  GLAD_GL_ARB_direct_state_access = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_direct_state_access");
+  GLAD_GL_ARB_draw_buffers = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_draw_buffers");
+  GLAD_GL_ARB_draw_buffers_blend = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_draw_buffers_blend");
+  GLAD_GL_ARB_draw_elements_base_vertex = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_draw_elements_base_vertex");
+  GLAD_GL_ARB_draw_indirect = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_draw_indirect");
+  GLAD_GL_ARB_draw_instanced = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_draw_instanced");
+  GLAD_GL_ARB_enhanced_layouts = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_enhanced_layouts");
+  GLAD_GL_ARB_explicit_attrib_location = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_explicit_attrib_location");
+  GLAD_GL_ARB_explicit_uniform_location = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_explicit_uniform_location");
+  GLAD_GL_ARB_fragment_coord_conventions = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_fragment_coord_conventions");
+  GLAD_GL_ARB_fragment_layer_viewport = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_fragment_layer_viewport");
+  GLAD_GL_ARB_fragment_program = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_fragment_program");
+  GLAD_GL_ARB_fragment_program_shadow = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_fragment_program_shadow");
+  GLAD_GL_ARB_fragment_shader = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_fragment_shader");
+  GLAD_GL_ARB_fragment_shader_interlock = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_fragment_shader_interlock");
+  GLAD_GL_ARB_framebuffer_no_attachments = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_framebuffer_no_attachments");
+  GLAD_GL_ARB_framebuffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_framebuffer_object");
+  GLAD_GL_ARB_framebuffer_sRGB = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_framebuffer_sRGB");
+  GLAD_GL_ARB_geometry_shader4 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_geometry_shader4");
+  GLAD_GL_ARB_get_program_binary = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_get_program_binary");
+  GLAD_GL_ARB_get_texture_sub_image = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_get_texture_sub_image");
+  GLAD_GL_ARB_gl_spirv = glad_gl_has_extension(version, exts, num_exts_i,
+                                               exts_i, "GL_ARB_gl_spirv");
+  GLAD_GL_ARB_gpu_shader5 = glad_gl_has_extension(version, exts, num_exts_i,
+                                                  exts_i, "GL_ARB_gpu_shader5");
+  GLAD_GL_ARB_gpu_shader_fp64 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_gpu_shader_fp64");
+  GLAD_GL_ARB_gpu_shader_int64 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_gpu_shader_int64");
+  GLAD_GL_ARB_half_float_pixel = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_half_float_pixel");
+  GLAD_GL_ARB_half_float_vertex = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_half_float_vertex");
+  GLAD_GL_ARB_instanced_arrays = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_instanced_arrays");
+  GLAD_GL_ARB_internalformat_query = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_internalformat_query");
+  GLAD_GL_ARB_internalformat_query2 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_internalformat_query2");
+  GLAD_GL_ARB_map_buffer_range = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_map_buffer_range");
+  GLAD_GL_ARB_multi_bind = glad_gl_has_extension(version, exts, num_exts_i,
+                                                 exts_i, "GL_ARB_multi_bind");
+  GLAD_GL_ARB_multi_draw_indirect = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_multi_draw_indirect");
+  GLAD_GL_ARB_multisample = glad_gl_has_extension(version, exts, num_exts_i,
+                                                  exts_i, "GL_ARB_multisample");
+  GLAD_GL_ARB_multitexture = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_multitexture");
+  GLAD_GL_ARB_occlusion_query = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_occlusion_query");
+  GLAD_GL_ARB_occlusion_query2 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_occlusion_query2");
+  GLAD_GL_ARB_pipeline_statistics_query = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_pipeline_statistics_query");
+  GLAD_GL_ARB_query_buffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_query_buffer_object");
+  GLAD_GL_ARB_sample_locations = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_sample_locations");
+  GLAD_GL_ARB_sample_shading = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_sample_shading");
+  GLAD_GL_ARB_seamless_cube_map = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_seamless_cube_map");
+  GLAD_GL_ARB_seamless_cubemap_per_texture = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_seamless_cubemap_per_texture");
+  GLAD_GL_ARB_shader_atomic_counter_ops = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_atomic_counter_ops");
+  GLAD_GL_ARB_shader_atomic_counters = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_atomic_counters");
+  GLAD_GL_ARB_shader_bit_encoding = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_bit_encoding");
+  GLAD_GL_ARB_shader_clock = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_clock");
+  GLAD_GL_ARB_shader_image_load_store = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_image_load_store");
+  GLAD_GL_ARB_shader_image_size = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_image_size");
+  GLAD_GL_ARB_shader_objects = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_objects");
+  GLAD_GL_ARB_shader_storage_buffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_storage_buffer_object");
+  GLAD_GL_ARB_shader_texture_lod = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shader_texture_lod");
+  GLAD_GL_ARB_shading_language_100 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_100");
+  GLAD_GL_ARB_shading_language_420pack = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_420pack");
+  GLAD_GL_ARB_shading_language_include = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_include");
+  GLAD_GL_ARB_shading_language_packing = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_shading_language_packing");
+  GLAD_GL_ARB_spirv_extensions = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_spirv_extensions");
+  GLAD_GL_ARB_tessellation_shader = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_tessellation_shader");
+  GLAD_GL_ARB_texture_border_clamp = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_border_clamp");
+  GLAD_GL_ARB_texture_buffer_object_rgb32 = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_buffer_object_rgb32");
+  GLAD_GL_ARB_texture_compression = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_compression");
+  GLAD_GL_ARB_texture_cube_map = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_cube_map");
+  GLAD_GL_ARB_texture_cube_map_array = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_cube_map_array");
+  GLAD_GL_ARB_texture_env_add = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_env_add");
+  GLAD_GL_ARB_texture_filter_anisotropic = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_filter_anisotropic");
+  GLAD_GL_ARB_texture_filter_minmax = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_filter_minmax");
+  GLAD_GL_ARB_texture_float = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_float");
+  GLAD_GL_ARB_texture_mirror_clamp_to_edge = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_mirror_clamp_to_edge");
+  GLAD_GL_ARB_texture_mirrored_repeat = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_mirrored_repeat");
+  GLAD_GL_ARB_texture_multisample = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_multisample");
+  GLAD_GL_ARB_texture_non_power_of_two = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_non_power_of_two");
+  GLAD_GL_ARB_texture_rg = glad_gl_has_extension(version, exts, num_exts_i,
+                                                 exts_i, "GL_ARB_texture_rg");
+  GLAD_GL_ARB_texture_storage = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_storage");
+  GLAD_GL_ARB_texture_swizzle = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_swizzle");
+  GLAD_GL_ARB_texture_view = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_texture_view");
+  GLAD_GL_ARB_timer_query = glad_gl_has_extension(version, exts, num_exts_i,
+                                                  exts_i, "GL_ARB_timer_query");
+  GLAD_GL_ARB_transpose_matrix = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_transpose_matrix");
+  GLAD_GL_ARB_uniform_buffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_uniform_buffer_object");
+  GLAD_GL_ARB_vertex_array_bgra = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_vertex_array_bgra");
+  GLAD_GL_ARB_vertex_array_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_vertex_array_object");
+  GLAD_GL_ARB_vertex_attrib_binding = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_vertex_attrib_binding");
+  GLAD_GL_ARB_vertex_buffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_vertex_buffer_object");
+  GLAD_GL_ARB_vertex_program = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_vertex_program");
+  GLAD_GL_ARB_vertex_shader = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_ARB_vertex_shader");
+  GLAD_GL_EXT_draw_instanced = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_draw_instanced");
+  GLAD_GL_EXT_fog_coord = glad_gl_has_extension(version, exts, num_exts_i,
+                                                exts_i, "GL_EXT_fog_coord");
+  GLAD_GL_EXT_framebuffer_blit = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_blit");
+  GLAD_GL_EXT_framebuffer_multisample = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_multisample");
+  GLAD_GL_EXT_framebuffer_object = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_object");
+  GLAD_GL_EXT_framebuffer_sRGB = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_framebuffer_sRGB");
+  GLAD_GL_EXT_texture_compression_s3tc = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_texture_compression_s3tc");
+  GLAD_GL_EXT_texture_filter_anisotropic = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_texture_filter_anisotropic");
+  GLAD_GL_EXT_texture_mirror_clamp = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_EXT_texture_mirror_clamp");
+  GLAD_GL_KHR_texture_compression_astc_hdr = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_KHR_texture_compression_astc_hdr");
+  GLAD_GL_KHR_texture_compression_astc_ldr = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_KHR_texture_compression_astc_ldr");
+  GLAD_GL_OES_compressed_paletted_texture = glad_gl_has_extension(
+      version, exts, num_exts_i, exts_i, "GL_OES_compressed_paletted_texture");
+  GLAD_GL_OES_fixed_point = glad_gl_has_extension(version, exts, num_exts_i,
+                                                  exts_i, "GL_OES_fixed_point");
+
+  glad_gl_free_extensions(exts_i, num_exts_i);
+
+  return 1;
 }
 
 static int glad_gl_find_core_gl(void) {
-    int i;
-    const char* version;
-    const char* prefixes[] = {
-        "OpenGL ES-CM ",
-        "OpenGL ES-CL ",
-        "OpenGL ES ",
-        "OpenGL SC ",
-        NULL
-    };
-    int major = 0;
-    int minor = 0;
-    version = (const char*) glad_glGetString(GL_VERSION);
-    if (!version) return 0;
-    for (i = 0;  prefixes[i];  i++) {
-        const size_t length = strlen(prefixes[i]);
-        if (strncmp(version, prefixes[i], length) == 0) {
-            version += length;
-            break;
-        }
+  int i;
+  const char *version;
+  const char *prefixes[] = {"OpenGL ES-CM ", "OpenGL ES-CL ", "OpenGL ES ",
+                            "OpenGL SC ", NULL};
+  int major = 0;
+  int minor = 0;
+  version = (const char *)glad_glGetString(GL_VERSION);
+  if (!version) return 0;
+  for (i = 0; prefixes[i]; i++) {
+    const size_t length = strlen(prefixes[i]);
+    if (strncmp(version, prefixes[i], length) == 0) {
+      version += length;
+      break;
     }
+  }
 
-    GLAD_IMPL_UTIL_SSCANF(version, "%d.%d", &major, &minor);
+  GLAD_IMPL_UTIL_SSCANF(version, "%d.%d", &major, &minor);
 
-    GLAD_GL_VERSION_1_0 = (major == 1 && minor >= 0) || major > 1;
-    GLAD_GL_VERSION_1_1 = (major == 1 && minor >= 1) || major > 1;
-    GLAD_GL_VERSION_1_2 = (major == 1 && minor >= 2) || major > 1;
-    GLAD_GL_VERSION_1_3 = (major == 1 && minor >= 3) || major > 1;
-    GLAD_GL_VERSION_1_4 = (major == 1 && minor >= 4) || major > 1;
-    GLAD_GL_VERSION_1_5 = (major == 1 && minor >= 5) || major > 1;
-    GLAD_GL_VERSION_2_0 = (major == 2 && minor >= 0) || major > 2;
-    GLAD_GL_VERSION_2_1 = (major == 2 && minor >= 1) || major > 2;
-    GLAD_GL_VERSION_3_0 = (major == 3 && minor >= 0) || major > 3;
-    GLAD_GL_VERSION_3_1 = (major == 3 && minor >= 1) || major > 3;
-    GLAD_GL_VERSION_3_2 = (major == 3 && minor >= 2) || major > 3;
-    GLAD_GL_VERSION_3_3 = (major == 3 && minor >= 3) || major > 3;
-    GLAD_GL_VERSION_4_0 = (major == 4 && minor >= 0) || major > 4;
-    GLAD_GL_VERSION_4_1 = (major == 4 && minor >= 1) || major > 4;
-    GLAD_GL_VERSION_4_2 = (major == 4 && minor >= 2) || major > 4;
-    GLAD_GL_VERSION_4_3 = (major == 4 && minor >= 3) || major > 4;
+  GLAD_GL_VERSION_1_0 = (major == 1 && minor >= 0) || major > 1;
+  GLAD_GL_VERSION_1_1 = (major == 1 && minor >= 1) || major > 1;
+  GLAD_GL_VERSION_1_2 = (major == 1 && minor >= 2) || major > 1;
+  GLAD_GL_VERSION_1_3 = (major == 1 && minor >= 3) || major > 1;
+  GLAD_GL_VERSION_1_4 = (major == 1 && minor >= 4) || major > 1;
+  GLAD_GL_VERSION_1_5 = (major == 1 && minor >= 5) || major > 1;
+  GLAD_GL_VERSION_2_0 = (major == 2 && minor >= 0) || major > 2;
+  GLAD_GL_VERSION_2_1 = (major == 2 && minor >= 1) || major > 2;
+  GLAD_GL_VERSION_3_0 = (major == 3 && minor >= 0) || major > 3;
+  GLAD_GL_VERSION_3_1 = (major == 3 && minor >= 1) || major > 3;
+  GLAD_GL_VERSION_3_2 = (major == 3 && minor >= 2) || major > 3;
+  GLAD_GL_VERSION_3_3 = (major == 3 && minor >= 3) || major > 3;
+  GLAD_GL_VERSION_4_0 = (major == 4 && minor >= 0) || major > 4;
+  GLAD_GL_VERSION_4_1 = (major == 4 && minor >= 1) || major > 4;
+  GLAD_GL_VERSION_4_2 = (major == 4 && minor >= 2) || major > 4;
+  GLAD_GL_VERSION_4_3 = (major == 4 && minor >= 3) || major > 4;
 
-    return GLAD_MAKE_VERSION(major, minor);
+  return GLAD_MAKE_VERSION(major, minor);
 }
 
-int gladLoadGLUserPtr( GLADuserptrloadfunc load, void *userptr) {
-    int version;
+int gladLoadGLUserPtr(GLADuserptrloadfunc load, void *userptr) {
+  int version;
 
-    glad_glGetString = (PFNGLGETSTRINGPROC) load(userptr, "glGetString");
-    if(glad_glGetString == NULL) return 0;
-    if(glad_glGetString(GL_VERSION) == NULL) return 0;
-    version = glad_gl_find_core_gl();
+  glad_glGetString = (PFNGLGETSTRINGPROC)load(userptr, "glGetString");
+  if (glad_glGetString == NULL) return 0;
+  if (glad_glGetString(GL_VERSION) == NULL) return 0;
+  version = glad_gl_find_core_gl();
 
-    glad_gl_load_GL_VERSION_1_0(load, userptr);
-    glad_gl_load_GL_VERSION_1_1(load, userptr);
-    glad_gl_load_GL_VERSION_1_2(load, userptr);
-    glad_gl_load_GL_VERSION_1_3(load, userptr);
-    glad_gl_load_GL_VERSION_1_4(load, userptr);
-    glad_gl_load_GL_VERSION_1_5(load, userptr);
-    glad_gl_load_GL_VERSION_2_0(load, userptr);
-    glad_gl_load_GL_VERSION_2_1(load, userptr);
-    glad_gl_load_GL_VERSION_3_0(load, userptr);
-    glad_gl_load_GL_VERSION_3_1(load, userptr);
-    glad_gl_load_GL_VERSION_3_2(load, userptr);
-    glad_gl_load_GL_VERSION_3_3(load, userptr);
-    glad_gl_load_GL_VERSION_4_0(load, userptr);
-    glad_gl_load_GL_VERSION_4_1(load, userptr);
-    glad_gl_load_GL_VERSION_4_2(load, userptr);
-    glad_gl_load_GL_VERSION_4_3(load, userptr);
+  glad_gl_load_GL_VERSION_1_0(load, userptr);
+  glad_gl_load_GL_VERSION_1_1(load, userptr);
+  glad_gl_load_GL_VERSION_1_2(load, userptr);
+  glad_gl_load_GL_VERSION_1_3(load, userptr);
+  glad_gl_load_GL_VERSION_1_4(load, userptr);
+  glad_gl_load_GL_VERSION_1_5(load, userptr);
+  glad_gl_load_GL_VERSION_2_0(load, userptr);
+  glad_gl_load_GL_VERSION_2_1(load, userptr);
+  glad_gl_load_GL_VERSION_3_0(load, userptr);
+  glad_gl_load_GL_VERSION_3_1(load, userptr);
+  glad_gl_load_GL_VERSION_3_2(load, userptr);
+  glad_gl_load_GL_VERSION_3_3(load, userptr);
+  glad_gl_load_GL_VERSION_4_0(load, userptr);
+  glad_gl_load_GL_VERSION_4_1(load, userptr);
+  glad_gl_load_GL_VERSION_4_2(load, userptr);
+  glad_gl_load_GL_VERSION_4_3(load, userptr);
 
-    if (!glad_gl_find_extensions_gl(version)) return 0;
-    glad_gl_load_GL_ARB_ES2_compatibility(load, userptr);
-    glad_gl_load_GL_ARB_ES3_1_compatibility(load, userptr);
-    glad_gl_load_GL_ARB_ES3_2_compatibility(load, userptr);
-    glad_gl_load_GL_ARB_blend_func_extended(load, userptr);
-    glad_gl_load_GL_ARB_buffer_storage(load, userptr);
-    glad_gl_load_GL_ARB_clear_buffer_object(load, userptr);
-    glad_gl_load_GL_ARB_clear_texture(load, userptr);
-    glad_gl_load_GL_ARB_color_buffer_float(load, userptr);
-    glad_gl_load_GL_ARB_compute_shader(load, userptr);
-    glad_gl_load_GL_ARB_compute_variable_group_size(load, userptr);
-    glad_gl_load_GL_ARB_copy_buffer(load, userptr);
-    glad_gl_load_GL_ARB_copy_image(load, userptr);
-    glad_gl_load_GL_ARB_debug_output(load, userptr);
-    glad_gl_load_GL_ARB_direct_state_access(load, userptr);
-    glad_gl_load_GL_ARB_draw_buffers(load, userptr);
-    glad_gl_load_GL_ARB_draw_buffers_blend(load, userptr);
-    glad_gl_load_GL_ARB_draw_elements_base_vertex(load, userptr);
-    glad_gl_load_GL_ARB_draw_indirect(load, userptr);
-    glad_gl_load_GL_ARB_draw_instanced(load, userptr);
-    glad_gl_load_GL_ARB_fragment_program(load, userptr);
-    glad_gl_load_GL_ARB_framebuffer_no_attachments(load, userptr);
-    glad_gl_load_GL_ARB_framebuffer_object(load, userptr);
-    glad_gl_load_GL_ARB_geometry_shader4(load, userptr);
-    glad_gl_load_GL_ARB_get_program_binary(load, userptr);
-    glad_gl_load_GL_ARB_get_texture_sub_image(load, userptr);
-    glad_gl_load_GL_ARB_gl_spirv(load, userptr);
-    glad_gl_load_GL_ARB_gpu_shader_fp64(load, userptr);
-    glad_gl_load_GL_ARB_gpu_shader_int64(load, userptr);
-    glad_gl_load_GL_ARB_instanced_arrays(load, userptr);
-    glad_gl_load_GL_ARB_internalformat_query(load, userptr);
-    glad_gl_load_GL_ARB_internalformat_query2(load, userptr);
-    glad_gl_load_GL_ARB_map_buffer_range(load, userptr);
-    glad_gl_load_GL_ARB_multi_bind(load, userptr);
-    glad_gl_load_GL_ARB_multi_draw_indirect(load, userptr);
-    glad_gl_load_GL_ARB_multisample(load, userptr);
-    glad_gl_load_GL_ARB_multitexture(load, userptr);
-    glad_gl_load_GL_ARB_occlusion_query(load, userptr);
-    glad_gl_load_GL_ARB_sample_locations(load, userptr);
-    glad_gl_load_GL_ARB_sample_shading(load, userptr);
-    glad_gl_load_GL_ARB_shader_atomic_counters(load, userptr);
-    glad_gl_load_GL_ARB_shader_image_load_store(load, userptr);
-    glad_gl_load_GL_ARB_shader_objects(load, userptr);
-    glad_gl_load_GL_ARB_shader_storage_buffer_object(load, userptr);
-    glad_gl_load_GL_ARB_shading_language_include(load, userptr);
-    glad_gl_load_GL_ARB_tessellation_shader(load, userptr);
-    glad_gl_load_GL_ARB_texture_compression(load, userptr);
-    glad_gl_load_GL_ARB_texture_multisample(load, userptr);
-    glad_gl_load_GL_ARB_texture_storage(load, userptr);
-    glad_gl_load_GL_ARB_texture_view(load, userptr);
-    glad_gl_load_GL_ARB_timer_query(load, userptr);
-    glad_gl_load_GL_ARB_transpose_matrix(load, userptr);
-    glad_gl_load_GL_ARB_uniform_buffer_object(load, userptr);
-    glad_gl_load_GL_ARB_vertex_array_object(load, userptr);
-    glad_gl_load_GL_ARB_vertex_attrib_binding(load, userptr);
-    glad_gl_load_GL_ARB_vertex_buffer_object(load, userptr);
-    glad_gl_load_GL_ARB_vertex_program(load, userptr);
-    glad_gl_load_GL_ARB_vertex_shader(load, userptr);
-    glad_gl_load_GL_EXT_draw_instanced(load, userptr);
-    glad_gl_load_GL_EXT_fog_coord(load, userptr);
-    glad_gl_load_GL_EXT_framebuffer_blit(load, userptr);
-    glad_gl_load_GL_EXT_framebuffer_multisample(load, userptr);
-    glad_gl_load_GL_EXT_framebuffer_object(load, userptr);
-    glad_gl_load_GL_OES_fixed_point(load, userptr);
+  if (!glad_gl_find_extensions_gl(version)) return 0;
+  glad_gl_load_GL_ARB_ES2_compatibility(load, userptr);
+  glad_gl_load_GL_ARB_ES3_1_compatibility(load, userptr);
+  glad_gl_load_GL_ARB_ES3_2_compatibility(load, userptr);
+  glad_gl_load_GL_ARB_blend_func_extended(load, userptr);
+  glad_gl_load_GL_ARB_buffer_storage(load, userptr);
+  glad_gl_load_GL_ARB_clear_buffer_object(load, userptr);
+  glad_gl_load_GL_ARB_clear_texture(load, userptr);
+  glad_gl_load_GL_ARB_color_buffer_float(load, userptr);
+  glad_gl_load_GL_ARB_compute_shader(load, userptr);
+  glad_gl_load_GL_ARB_compute_variable_group_size(load, userptr);
+  glad_gl_load_GL_ARB_copy_buffer(load, userptr);
+  glad_gl_load_GL_ARB_copy_image(load, userptr);
+  glad_gl_load_GL_ARB_debug_output(load, userptr);
+  glad_gl_load_GL_ARB_direct_state_access(load, userptr);
+  glad_gl_load_GL_ARB_draw_buffers(load, userptr);
+  glad_gl_load_GL_ARB_draw_buffers_blend(load, userptr);
+  glad_gl_load_GL_ARB_draw_elements_base_vertex(load, userptr);
+  glad_gl_load_GL_ARB_draw_indirect(load, userptr);
+  glad_gl_load_GL_ARB_draw_instanced(load, userptr);
+  glad_gl_load_GL_ARB_fragment_program(load, userptr);
+  glad_gl_load_GL_ARB_framebuffer_no_attachments(load, userptr);
+  glad_gl_load_GL_ARB_framebuffer_object(load, userptr);
+  glad_gl_load_GL_ARB_geometry_shader4(load, userptr);
+  glad_gl_load_GL_ARB_get_program_binary(load, userptr);
+  glad_gl_load_GL_ARB_get_texture_sub_image(load, userptr);
+  glad_gl_load_GL_ARB_gl_spirv(load, userptr);
+  glad_gl_load_GL_ARB_gpu_shader_fp64(load, userptr);
+  glad_gl_load_GL_ARB_gpu_shader_int64(load, userptr);
+  glad_gl_load_GL_ARB_instanced_arrays(load, userptr);
+  glad_gl_load_GL_ARB_internalformat_query(load, userptr);
+  glad_gl_load_GL_ARB_internalformat_query2(load, userptr);
+  glad_gl_load_GL_ARB_map_buffer_range(load, userptr);
+  glad_gl_load_GL_ARB_multi_bind(load, userptr);
+  glad_gl_load_GL_ARB_multi_draw_indirect(load, userptr);
+  glad_gl_load_GL_ARB_multisample(load, userptr);
+  glad_gl_load_GL_ARB_multitexture(load, userptr);
+  glad_gl_load_GL_ARB_occlusion_query(load, userptr);
+  glad_gl_load_GL_ARB_sample_locations(load, userptr);
+  glad_gl_load_GL_ARB_sample_shading(load, userptr);
+  glad_gl_load_GL_ARB_shader_atomic_counters(load, userptr);
+  glad_gl_load_GL_ARB_shader_image_load_store(load, userptr);
+  glad_gl_load_GL_ARB_shader_objects(load, userptr);
+  glad_gl_load_GL_ARB_shader_storage_buffer_object(load, userptr);
+  glad_gl_load_GL_ARB_shading_language_include(load, userptr);
+  glad_gl_load_GL_ARB_tessellation_shader(load, userptr);
+  glad_gl_load_GL_ARB_texture_compression(load, userptr);
+  glad_gl_load_GL_ARB_texture_multisample(load, userptr);
+  glad_gl_load_GL_ARB_texture_storage(load, userptr);
+  glad_gl_load_GL_ARB_texture_view(load, userptr);
+  glad_gl_load_GL_ARB_timer_query(load, userptr);
+  glad_gl_load_GL_ARB_transpose_matrix(load, userptr);
+  glad_gl_load_GL_ARB_uniform_buffer_object(load, userptr);
+  glad_gl_load_GL_ARB_vertex_array_object(load, userptr);
+  glad_gl_load_GL_ARB_vertex_attrib_binding(load, userptr);
+  glad_gl_load_GL_ARB_vertex_buffer_object(load, userptr);
+  glad_gl_load_GL_ARB_vertex_program(load, userptr);
+  glad_gl_load_GL_ARB_vertex_shader(load, userptr);
+  glad_gl_load_GL_EXT_draw_instanced(load, userptr);
+  glad_gl_load_GL_EXT_fog_coord(load, userptr);
+  glad_gl_load_GL_EXT_framebuffer_blit(load, userptr);
+  glad_gl_load_GL_EXT_framebuffer_multisample(load, userptr);
+  glad_gl_load_GL_EXT_framebuffer_object(load, userptr);
+  glad_gl_load_GL_OES_fixed_point(load, userptr);
 
-
-
-    return version;
+  return version;
 }
 
-
-int gladLoadGL( GLADloadfunc load) {
-    return gladLoadGLUserPtr( glad_gl_get_proc_from_userptr, GLAD_GNUC_EXTENSION (void*) load);
+int gladLoadGL(GLADloadfunc load) {
+  return gladLoadGLUserPtr(glad_gl_get_proc_from_userptr,
+                           GLAD_GNUC_EXTENSION(void *) load);
 }
-
-
-
- 
-
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif /* GLAD_GL_IMPLEMENTATION */
-
