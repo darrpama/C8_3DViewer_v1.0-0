@@ -117,8 +117,8 @@ void LoadSettings(App *app) {
     app->scene.model.wires.color.b = setts.wires_color_b;
     app->scene.model.wires.color.a = setts.wires_color_a;
     app->scene.model.edgeCount = setts.edges_count;
+    fclose(infile);
   }
-  fclose(infile);
 }
 
 void DrawSaveSettings(App *app) { DrawSubmitButton(&app->ui.saveSettings); }
