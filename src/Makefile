@@ -77,11 +77,12 @@ test_lib.a: parser.o helpers.o
 	ranlib test_lib.a
 
 gcov_report:
-	$(CC) $(FLAGS) --coverage modules/parser/parser.c modules/parser/helpers.c tests/unit_tests.c -o gcov_report -lcheck
-	./gcov_report
-	lcov -t "./gcov_report" -o gcov_report.info --no-external -c -d .
-	genhtml -o eval_report gcov_report.info
-	open ./gcov_report/index.html
+	$(CC) $(FLAGS) --coverage modules/parser/parser.c modules/parser/helpers.c tests/unit_tests.c -o gcov_report.o -lcheck
+	@./gcov_report.o
+	@lcov -t gcov_report -o gcov_report.info -c -d .
+	@genhtml -o gcov_report gcov_report.info
+	@open ./gcov_report/index.html
+
 
 clean:
 	rm -rf s21_3d_viewer
