@@ -148,6 +148,8 @@ typedef struct UI {
   SubmitButton bgColorRose;
   SubmitButton bgColorBeige;
   SubmitButton bgColorWhite;
+  // save settings
+  SubmitButton saveSettings;
 } UI;
 
 typedef struct Icons {
@@ -251,15 +253,21 @@ void UpdateWiresUI(App *app);
 void DrawWiresUI(App *app);
 void InitWiresUI(App *app);
 
-// view/scene/save_gif.c
-void InitSaveGifButton(App *app);
-void DrawSaveGifButton(App *app);
-void UpdateSaveGifButton(App *app);
-void SaveGif(App *app, int frames);
+// view/scene/save_pic.c
+void InitSavePicButton(App *app);
+void DrawSavePicButton(App *app);
+void UpdateSavePicButton(App *app);
+void SavePic(App *app, char *extention);
 
 // view/scene/bg_color.c
 void InitBgColor(App *app);
 void DrawBgColor(App *app);
 void UpdateBgColor(App *app);
+
+// view/scene/save_settings.c
+void DrawSaveSettings(App *app);
+void UpdateSaveSettings(App *app);
+void InitSaveSettings(App *app);
+void LoadSettings(App *app);
 
 #endif  // __S21_3D_VIEWER_H_

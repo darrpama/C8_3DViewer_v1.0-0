@@ -9,6 +9,12 @@ void InitApp(App *app) {
   InitScene(app);
 }
 
+void ClearMemory(App *app) {
+  UnloadModel(app->scene.model.rModel);
+  UnloadTexture(app->ui.saveGifBtn.icon);
+  UnloadTexture(app->ui.uploadBtn.button.icon);
+}
+
 int main() {
   App app;
   InitApp(&app);
@@ -25,9 +31,7 @@ int main() {
     EndDrawing();
   }
   
-  // UnloadObj(&app.scene.model.obj);
-  UnloadModel(app.scene.model.rModel);
-
+  ClearMemory(app);
   CloseWindow();
   
   return 0;

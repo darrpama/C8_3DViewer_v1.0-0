@@ -10,7 +10,6 @@ static void drawPanel() {
     DrawText("BACKGROUND", left + 5, top + 5, 14, BLACK);
 }
 
-
 void DrawBgColor(App *app) {
     drawPanel();
     DrawSubmitButton(&app->ui.bgColorPurple);
