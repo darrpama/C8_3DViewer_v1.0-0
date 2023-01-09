@@ -253,11 +253,11 @@ void UpdateWiresUI(App *app);
 void DrawWiresUI(App *app);
 void InitWiresUI(App *app);
 
-// view/scene/save_gif.c
-void InitSaveGifButton(App *app);
-void DrawSaveGifButton(App *app);
-void UpdateSaveGifButton(App *app);
-void SaveGif(App *app, int frames);
+// view/scene/save_pic.c
+void InitSavePicButton(App *app);
+void DrawSavePicButton(App *app);
+void UpdateSavePicButton(App *app);
+void SavePic(App *app, char *extention);
 
 // view/scene/bg_color.c
 void InitBgColor(App *app);
