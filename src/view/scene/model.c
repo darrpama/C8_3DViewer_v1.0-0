@@ -70,13 +70,14 @@ void DrawModelOnScene(App *app) {
 
   if (app->scene.model.wires.visible == true) {
     if (app->scene.model.wires.viewType == SOLID_LINES) {
-      DrawModelWiresEx(
+      DrawModelSolidWiresEx(
         app->scene.model.rModel, 
         app->scene.model.position, 
         app->scene.model.rotation, 
         0.0f,
         app->scene.model.scale, 
-        app->scene.model.wires.color
+        app->scene.model.wires.color,
+        app->scene.model.wires.size
       );
     }
     if (app->scene.model.wires.viewType == DASHED_LINES) {
@@ -86,7 +87,8 @@ void DrawModelOnScene(App *app) {
         app->scene.model.rotation, 
         0.0f,
         app->scene.model.scale, 
-        app->scene.model.wires.color
+        app->scene.model.wires.color,
+        app->scene.model.wires.size
       );
     }
   }
@@ -101,7 +103,7 @@ void UpdateModel(App *app) {
 
 void InitModel(App *app) {
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
-  Vector3 scale = { 1.0f, 1.0f, 1.0f };
+  Vector3 scale = { 21.0f, 21.0f, 21.0f };
   // MODEL GENERAL
   Model model = { 0 };
   model = LoadModel("assets/models/cube.obj");
@@ -117,9 +119,10 @@ void InitModel(App *app) {
   app->scene.model.vertices.color = ColorAlpha(DARKPURPLE, 0.5);
   app->scene.model.vertices.size = 1;
   app->scene.model.vertices.viewType = CIRCLE_POINTS;
-  app->scene.model.vertices.visible = true;
+  app->scene.model.vertices.visible = false;
   // MODEL WIRES
   app->scene.model.wires.color = LIGHTGRAY;
   app->scene.model.wires.viewType = SOLID_LINES;
-  app->scene.model.wires.visible = false;
+  app->scene.model.wires.visible = true;
+  app->scene.model.wires.size = 2;
 }

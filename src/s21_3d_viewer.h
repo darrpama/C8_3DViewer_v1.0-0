@@ -142,6 +142,12 @@ typedef struct UI {
   SubmitButton wireColorBlack;
   // gif ui
   IconButton saveGifBtn;
+  // bgColor ui
+  SubmitButton bgColorPurple;
+  SubmitButton bgColorLavender;
+  SubmitButton bgColorRose;
+  SubmitButton bgColorBeige;
+  SubmitButton bgColorWhite;
 } UI;
 
 typedef struct Icons {
@@ -150,12 +156,14 @@ typedef struct Icons {
 
 typedef struct Settings {
   Icons icons;
+  Color bgColor;
 } Settings;
 
 typedef struct Wires {
   bool visible;
   int viewType;
   Color color;
+  float size;
 } Wires;
 
 typedef struct Vertices {
@@ -248,5 +256,10 @@ void InitSaveGifButton(App *app);
 void DrawSaveGifButton(App *app);
 void UpdateSaveGifButton(App *app);
 void SaveGif(App *app, int frames);
+
+// view/scene/bg_color.c
+void InitBgColor(App *app);
+void DrawBgColor(App *app);
+void UpdateBgColor(App *app);
 
 #endif  // __S21_3D_VIEWER_H_
