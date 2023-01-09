@@ -48,7 +48,7 @@ START_TEST(test02) {
     v 0.000000 2.000000 0.000000 1\n\
     v 0.000000 0.000000 0.000000 1\n\
     v 2.000000 0.000000 0.000000 1\n\
-    v 2.000000 2.000000 0.000000 1\n\
+    v 2.002000 2.000000 0.000000 1\n\
     f 1 2 3 4\n\
     f 8 7 6 5\n\
     f 4 3 7 8\n\
@@ -64,7 +64,7 @@ START_TEST(test02) {
     ck_assert_uint_eq(obj.num_vertices, 8);
     
     int edgesCount = GetEdgesCount(fileName);
-    ck_assert_uint_eq(edgesCount, 8);
+    ck_assert_uint_eq(edgesCount, 12);
 
     remove(fileName);
     UnloadObj(&obj);
@@ -77,6 +77,7 @@ int main(void) {
     SRunner *sr = srunner_create(s1);
     suite_add_tcase(s1, tc1);
     tcase_add_test(tc1, test01);
+    tcase_add_test(tc1, test02);
 
     srunner_run_all(sr, CK_ENV);
     srunner_free(sr);

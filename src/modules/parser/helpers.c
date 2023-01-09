@@ -105,7 +105,6 @@ int tryParseDouble(const char *s, const char *s_end, double *result) {
             curr++;
             end_not_reached = (curr != s_end);
         }
-    } else if (*curr == 'e' || *curr == 'E') {
     } else {
         {
             double a = 1.0;
@@ -150,31 +149,6 @@ int tryParseDouble(const char *s, const char *s_end, double *result) {
             *result = (sign == '+' ? 1 : -1) * (mantissa * a * b);
         }
         return 1;
-    }
-
-    if (*curr == 'e' || *curr == 'E') {
-        curr++;
-        end_not_reached = (curr != s_end);
-        if (end_not_reached && (*curr == '+' || *curr == '-')) {
-            exp_sign = *curr;
-            curr++;
-        } else if (IS_DIGIT(*curr)) { /* Pass through. */
-        } else {
-            return 0;
-        }
-
-        read = 0;
-        end_not_reached = (curr != s_end);
-        while (end_not_reached && IS_DIGIT(*curr)) {
-            exponent *= 10;
-            exponent += (int)(*curr - 0x30);
-            curr++;
-            read++;
-            end_not_reached = (curr != s_end);
-        }
-        if (read == 0) {
-            return 1;
-        }
     }
 
     {
