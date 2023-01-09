@@ -9,7 +9,7 @@ static int screenshotCounter = 0;
 
 void savePicHandler(App *app) {
   // int x, y, n;
-  SavePic(app, ".jpg");
+  SavePic(app, ".png");
   // app->scene.camera.fovy += 0.01f;
   // int out_w = APP_SCREEN_WIDTH;
   // int out_h = APP_SCREEN_HEIGHT;
@@ -55,7 +55,7 @@ void InitSavePicButton(App *app) {
 
 void SavePic(App *app, char *extention) {
   /* Need to add function to hide ui here */
-    Image image = LoadImageFromScreen();
+    // Image image = LoadImageFromScreen();
     app->scene.camera.fovy += 0.01;
     app->scene.camera.fovy -= 0.01;
     char filename[20];
@@ -63,9 +63,9 @@ void SavePic(App *app, char *extention) {
     screenshotCounter++;
     strncat(filename, extention, 5);
 
-    // unsigned char *imgData = rlReadScreenPixels(APP_SCREEN_HEIGHT, APP_SCREEN_WIDTH);
-    // Image image = {imgData, APP_SCREEN_HEIGHT, APP_SCREEN_WIDTH, 1, PIXELFORMAT_UNCOMPRESSED_R8G8B8A8};
+    unsigned char *imgData = rlReadScreenPixels(2560, 1440);
+    Image image = {imgData, 2560, 1440, 1, PIXELFORMAT_UNCOMPRESSED_R8G8B8A8};
 
     ExportImage(image, filename);
-    // free(imgData);
+    free(imgData);
 }
