@@ -55,7 +55,7 @@ void drawFileInfo(App *app) {
 }
 
 void DrawInfo(App *app) {
-  DrawFPS(20, 10);
+  DrawFPS(GetScreenWidth()-100, GetScreenHeight()-25);
   drawHelpInfo();
   drawCameraInfo(app);
   drawFileInfo(app);

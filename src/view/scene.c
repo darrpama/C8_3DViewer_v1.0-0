@@ -44,6 +44,7 @@ void DrawScene(App *app) {
   DrawSaveGifButton(app); // gif button
   DrawWiresUI(app);
   DrawBgColor(app);
+  DrawSaveSettings(app);
 }
 
 void UpdateScene(App *app) {
@@ -58,6 +59,7 @@ void UpdateScene(App *app) {
   UpdateSaveGifButton(app); // gif button
   UpdateWiresUI(app);
   UpdateBgColor(app);
+  UpdateSaveSettings(app);
 }
 
 void InitScene(App *app) {
@@ -69,4 +71,6 @@ void InitScene(App *app) {
   InitVerticesUI(app);
   InitSaveGifButton(app); // gif button
   InitWiresUI(app);
+  InitSaveSettings(app);
+  LoadSettings(app);
 }

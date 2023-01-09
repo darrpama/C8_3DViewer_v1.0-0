@@ -103,7 +103,7 @@ void UpdateModel(App *app) {
 
 void InitModel(App *app) {
   Vector3 default_val = { 0.0f, 0.0f, 0.0f };
-  Vector3 scale = { 21.0f, 21.0f, 21.0f };
+  Vector3 scale = { 1.0f, 1.0f, 1.0f };
   // MODEL GENERAL
   Model model = { 0 };
   model = LoadModel("assets/models/cube.obj");

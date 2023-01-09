@@ -148,6 +148,8 @@ typedef struct UI {
   SubmitButton bgColorRose;
   SubmitButton bgColorBeige;
   SubmitButton bgColorWhite;
+  // save settings
+  SubmitButton saveSettings;
 } UI;
 
 typedef struct Icons {
@@ -261,5 +263,11 @@ void SaveGif(App *app, int frames);
 void InitBgColor(App *app);
 void DrawBgColor(App *app);
 void UpdateBgColor(App *app);
+
+// view/scene/save_settings.c
+void DrawSaveSettings(App *app);
+void UpdateSaveSettings(App *app);
+void InitSaveSettings(App *app);
+void LoadSettings(App *app);
 
 #endif  // __S21_3D_VIEWER_H_
