@@ -36,6 +36,41 @@ START_TEST(test01) {
 }
 END_TEST
 
+
+START_TEST(test02) {
+    Obj obj = {0};
+    const char *fileName = "testCube.obj";
+    const char *fileText = "\
+    v 0.000000 2.000000 2.000000 1\n\
+    v 0.000000 0.000000 2.000000 1\n\
+    v 2.000000 0.000000 2.000000 1\n\
+    v 2.000000 2.000000 2.000000 1\n\
+    v 0.000000 2.000000 0.000000 1\n\
+    v 0.000000 0.000000 0.000000 1\n\
+    v 2.000000 0.000000 0.000000 1\n\
+    v 2.000000 2.000000 0.000000 1\n\
+    f 1 2 3 4\n\
+    f 8 7 6 5\n\
+    f 4 3 7 8\n\
+    f 5 1 4 8\n\
+    f 5 6 2 1\n\
+    f 2 6 7 3\0";
+
+    FILE *file = fopen(fileName, "w");
+    fputs(fileText, file);
+    fclose(file);
+
+    obj = ParseObj(fileName);
+    ck_assert_uint_eq(obj.num_vertices, 8);
+    
+    int edgesCount = GetEdgesCount(fileName);
+    ck_assert_uint_eq(edgesCount, 8);
+
+    remove(fileName);
+    UnloadObj(&obj);
+}
+END_TEST
+
 int main(void) {
     Suite *s1 = suite_create("Core");
     TCase *tc1 = tcase_create("Core");
