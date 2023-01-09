@@ -29,7 +29,7 @@ SRC=$(PROJECT_NAME).c \
 	view/scene/upload_file.c \
 	view/scene/vertices.c \
 	view/ui.c \
-	view/scene/save_gif.c
+	view/scene/save_picture.c
 
 all: clean $(PROJECT_NAME) 
 	./$(PROJECT_NAME)
