@@ -18,8 +18,6 @@ void ClearMemory(App *app) {
 int main() {
   App app;
   InitApp(&app);
-  
-  SetConfigFlags(FLAG_MSAA_4X_HINT);
 
   while (!WindowShouldClose()) {
   
@@ -31,7 +29,7 @@ int main() {
     EndDrawing();
   }
   
-  ClearMemory(app);
+  ClearMemory(&app);
   CloseWindow();
   
   return 0;
