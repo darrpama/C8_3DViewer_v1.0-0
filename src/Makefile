@@ -31,7 +31,7 @@ SRC=$(PROJECT_NAME).c \
 	view/scene/wires.c \
 	view/ui.c \
 	view/scene/save_settings.c \
-	view/scene/bg_color.c
+	view/scene/bg_color.c \
 	view/scene/save_picture.c
 
 all: clean $(PROJECT_NAME) 
