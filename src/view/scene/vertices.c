@@ -21,7 +21,8 @@ void drawDotSizeInput(App *app) {
   int width = TRANSFORM_PANEL_WIDTH;
   int top = 470;
   int left = GetScreenWidth() - 20 - width;
-  DrawText("Point size", left + TRANSFORM_PANEL_WIDTH - 120, top, 14, Fade(BLACK, 0.5f));
+  DrawText("Point size", left + TRANSFORM_PANEL_WIDTH - 120, top, 14,
+           Fade(BLACK, 0.5f));
   DrawSubmitButton(&app->ui.dotSize.minusBtn);
   DrawSubmitButton(&app->ui.dotSize.plusBtn);
   DrawInputText(&app->ui.dotSize.input, &app->ui.currentInputText);
@@ -31,7 +32,8 @@ void drawDotColors(App *app) {
   int width = TRANSFORM_PANEL_WIDTH;
   int top = 515;
   int left = GetScreenWidth() - 20 - width;
-  DrawText("Point colors", left + TRANSFORM_PANEL_WIDTH - 120, top, 14, Fade(BLACK, 0.5f));
+  DrawText("Point colors", left + TRANSFORM_PANEL_WIDTH - 120, top, 14,
+           Fade(BLACK, 0.5f));
   DrawSubmitButton(&app->ui.pointColorRed);
   DrawSubmitButton(&app->ui.pointColorGreen);
   DrawSubmitButton(&app->ui.pointColorBlue);
@@ -40,7 +42,8 @@ void drawDotColors(App *app) {
   DrawSubmitButton(&app->ui.pointColorBlack);
 }
 
-static void changeViewButtonHandler(App *app, SubmitButton btn, bool visible, int viewType) {
+static void changeViewButtonHandler(App *app, SubmitButton btn, bool visible,
+                                    int viewType) {
   if (CheckCollisionPointRec(GetMousePosition(), btn.area))
     btn.mouseOn = true;
   else
@@ -64,8 +67,10 @@ void paintDot(App *app, SubmitButton btn, Color color) {
 static void updateDotSize(App *app) {
   HandleInputText(&app->ui.dotSize.input, &app->ui.currentInputText);
   HandleKeys(app, &app->ui.dotSize.input, app->ui.currentInputText);
-  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.dotSize.plusBtn, &app->ui.dotSize);
-  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.dotSize.minusBtn, &app->ui.dotSize);
+  HandleIncreaseDecreaseButton(INCREASE_VALUE, &app->ui.dotSize.plusBtn,
+                               &app->ui.dotSize);
+  HandleIncreaseDecreaseButton(DECREASE_VALUE, &app->ui.dotSize.minusBtn,
+                               &app->ui.dotSize);
 }
 
 static void updateDotColors(App *app) {
@@ -85,36 +90,63 @@ void updateDotButtons(App *app) {
 
 void initVerticeViewButtons(App *app) {
   int top = 394;
-  InitSubmitButton(&app->ui.noPointViewButton, (Rectangle){GetScreenWidth() - 185, top, 140, 20}, "No", LIGHTGRAY, BLACK, 12);
-  InitSubmitButton(&app->ui.circleViewButton, (Rectangle){GetScreenWidth() - 185, top + 25, 140, 20}, "Circle", LIGHTGRAY, BLACK, 12);
-  InitSubmitButton(&app->ui.squareViewButton, (Rectangle){GetScreenWidth() - 185, top + 50, 140, 20}, "Square", LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.noPointViewButton,
+                   (Rectangle){GetScreenWidth() - 185, top, 140, 20}, "No",
+                   LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.circleViewButton,
+                   (Rectangle){GetScreenWidth() - 185, top + 25, 140, 20},
+                   "Circle", LIGHTGRAY, BLACK, 12);
+  InitSubmitButton(&app->ui.squareViewButton,
+                   (Rectangle){GetScreenWidth() - 185, top + 50, 140, 20},
+                   "Square", LIGHTGRAY, BLACK, 12);
 }
 
 void initDotSizeUI(App *app) {
   int inputTextWidth = 100;
   int inputTextTop = 485;
 
-  InitSubmitButton(&app->ui.dotSize.minusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100, inputTextTop, 24, 24 }, "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
-  InitSubmitButton(&app->ui.dotSize.plusBtn, (Rectangle){ GetScreenWidth() - inputTextWidth - 100 + 26, inputTextTop, 24, 24 }, "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
-  InitInputText(
-    &app->ui.dotSize.input,
-    POINT_SIZE,
-    DOUBLE_NUMBER_INPUT,
-    (Rectangle) { GetScreenWidth() - inputTextWidth - 25, inputTextTop, inputTextWidth, 20 },
-    " ", "1"
-  ); 
+  InitSubmitButton(&app->ui.dotSize.minusBtn,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 100,
+                               inputTextTop, 24, 24},
+                   "-", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitSubmitButton(&app->ui.dotSize.plusBtn,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 100 + 26,
+                               inputTextTop, 24, 24},
+                   "+", ColorAlpha(GRAY, 0.2), BLACK, 12);
+  InitInputText(&app->ui.dotSize.input, POINT_SIZE, DOUBLE_NUMBER_INPUT,
+                (Rectangle){GetScreenWidth() - inputTextWidth - 25,
+                            inputTextTop, inputTextWidth, 20},
+                " ", "1");
 }
 
 void initDotColors(App *app) {
   int inputTextWidth = 100;
   int inputTextTop = 535;
 
-  InitSubmitButton(&app->ui.pointColorRed, (Rectangle){ GetScreenWidth() - inputTextWidth - 95, inputTextTop, 24, 24 }, " ", ColorAlpha(RED, 0.7), BLACK, 12);
-  InitSubmitButton(&app->ui.pointColorGreen, (Rectangle){ GetScreenWidth() - inputTextWidth - 95 + 26, inputTextTop, 24, 24 }, " ", ColorAlpha(GREEN, 0.7), BLACK, 12);
-  InitSubmitButton(&app->ui.pointColorBlue, (Rectangle){ GetScreenWidth() - inputTextWidth - 95 + 52, inputTextTop, 24, 24 }, " ", ColorAlpha(BLUE, 0.7), BLACK, 12);
-  InitSubmitButton(&app->ui.pointColorViolet, (Rectangle){ GetScreenWidth() - inputTextWidth - 95 + 78, inputTextTop, 24, 24 }, " ", ColorAlpha(VIOLET, 0.7), BLACK, 12);
-  InitSubmitButton(&app->ui.pointColorGray, (Rectangle){ GetScreenWidth() - inputTextWidth - 95 + 104, inputTextTop, 24, 24 }, " ", ColorAlpha(GRAY, 0.7), BLACK, 12);
-  InitSubmitButton(&app->ui.pointColorBlack, (Rectangle){ GetScreenWidth() - inputTextWidth - 95 + 130, inputTextTop, 24, 24 }, " ", ColorAlpha(BLACK, 0.7), BLACK, 12);
+  InitSubmitButton(
+      &app->ui.pointColorRed,
+      (Rectangle){GetScreenWidth() - inputTextWidth - 95, inputTextTop, 24, 24},
+      " ", ColorAlpha(RED, 0.7), BLACK, 12);
+  InitSubmitButton(&app->ui.pointColorGreen,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 95 + 26,
+                               inputTextTop, 24, 24},
+                   " ", ColorAlpha(GREEN, 0.7), BLACK, 12);
+  InitSubmitButton(&app->ui.pointColorBlue,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 95 + 52,
+                               inputTextTop, 24, 24},
+                   " ", ColorAlpha(BLUE, 0.7), BLACK, 12);
+  InitSubmitButton(&app->ui.pointColorViolet,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 95 + 78,
+                               inputTextTop, 24, 24},
+                   " ", ColorAlpha(VIOLET, 0.7), BLACK, 12);
+  InitSubmitButton(&app->ui.pointColorGray,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 95 + 104,
+                               inputTextTop, 24, 24},
+                   " ", ColorAlpha(GRAY, 0.7), BLACK, 12);
+  InitSubmitButton(&app->ui.pointColorBlack,
+                   (Rectangle){GetScreenWidth() - inputTextWidth - 95 + 130,
+                               inputTextTop, 24, 24},
+                   " ", ColorAlpha(BLACK, 0.7), BLACK, 12);
 }
 
 void UpdateVerticesUI(App *app) {

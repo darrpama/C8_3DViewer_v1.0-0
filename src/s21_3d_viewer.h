@@ -2,14 +2,14 @@
 #define __S21_3D_VIEWER_H_
 
 // standart libs
+#include <libgen.h>
 #include <pwd.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <string.h>
-#include <libgen.h>
 
 #include "configs.h"
 
@@ -197,17 +197,20 @@ typedef struct App {
   Scene scene;
 } App;
 
-
 // view/ui.c
-void HandleIncreaseDecreaseButton(int type, SubmitButton *btn, InputTextWithButtons *transform);
+void HandleIncreaseDecreaseButton(int type, SubmitButton *btn,
+                                  InputTextWithButtons *transform);
 // SubmitButton
 void DrawSubmitButton(SubmitButton *btn);
-void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label, Color bgColor, Color textColor, int fontSize);
+void InitSubmitButton(SubmitButton *btn, Rectangle area, const char *label,
+                      Color bgColor, Color textColor, int fontSize);
 // IconButton
-void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area, Color bgColor);
+void InitIconButton(Texture2D icon, IconButton *btn, Rectangle area,
+                    Color bgColor);
 void DrawIconButton(IconButton *btn);
 // InputText
-void InitInputText(InputText *inputText, int type, int category, Rectangle area, char *label, char *text);
+void InitInputText(InputText *inputText, int type, int category, Rectangle area,
+                   char *label, char *text);
 void DrawInputText(InputText *inputText, int *currentInputText);
 void HandleInputText(InputText *inputText, int *currentInputText);
 void HandleKeys(App *app, InputText *input, int currentInputText);

@@ -21,17 +21,16 @@ int main() {
   InitApp(&app);
 
   while (!WindowShouldClose()) {
-  
     UpdateCamera(&app.scene.camera);
     UpdateScene(&app);
-    
+
     BeginDrawing();
-      DrawScene(&app);
+    DrawScene(&app);
     EndDrawing();
   }
-  
+
   ClearMemory(&app);
   CloseWindow();
-  
+
   return 0;
 }

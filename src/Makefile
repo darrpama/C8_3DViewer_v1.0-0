@@ -44,6 +44,9 @@ TEST_SRC_O =\
 all: clean $(PROJECT_NAME) 
 	./$(PROJECT_NAME)
 
+dvi:
+	texi2dvi dvi.tex
+
 dist:
 	rm -rf ./../s21_3d_viewer_1_0/
 	mkdir ./../s21_3d_viewer_1_0/
@@ -60,7 +63,7 @@ install: $(PROJECT_NAME)
 $(PROJECT_NAME): 
 	$(CC) $(FLAGS) $(LIBS2) $(RAYLIB) $(SRC) -o $(PROJECT_NAME) $(LIBS)
 
-test: test_lib.a
+tests: test_lib.a
 	$(CC) $(FLAGS) tests/unit_tests.c test_lib.a -o unit_tests.out $(LIBS)
 
 parser.o:

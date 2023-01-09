@@ -32,10 +32,10 @@ void DrawScene(App *app) {
   ClearBackground(app->settings.bgColor);
 
   BeginMode3D(app->scene.camera);
-    DrawGrid(20, 10.0f);
-    DrawModelOnScene(app);
+  DrawGrid(20, 10.0f);
+  DrawModelOnScene(app);
   EndMode3D();
-  
+
   DrawUploadFile(app);
   DrawInfo(app);
   DrawTransformPanel(app);
@@ -44,7 +44,7 @@ void DrawScene(App *app) {
   DrawWiresUI(app);
   DrawBgColor(app);
   DrawSaveSettings(app);
-  DrawSavePicButton(app); // gif button
+  DrawSavePicButton(app);  // gif button
 }
 
 void UpdateScene(App *app) {
@@ -59,7 +59,7 @@ void UpdateScene(App *app) {
   UpdateWiresUI(app);
   UpdateBgColor(app);
   UpdateSaveSettings(app);
-  UpdateSavePicButton(app); // gif button
+  UpdateSavePicButton(app);  // gif button
 }
 
 void InitScene(App *app) {
@@ -72,5 +72,5 @@ void InitScene(App *app) {
   InitWiresUI(app);
   InitSaveSettings(app);
   LoadSettings(app);
-  InitSavePicButton(app); // gif button
+  InitSavePicButton(app);  // gif button
 }

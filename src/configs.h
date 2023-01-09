@@ -13,16 +13,15 @@
 
 // SIZES
 #ifdef __linux__
-  #define APP_SCREEN_WIDTH 1366
-  #define APP_SCREEN_HEIGHT 768
+#define APP_SCREEN_WIDTH 1366
+#define APP_SCREEN_HEIGHT 768
 #else
-  #define APP_SCREEN_WIDTH 1366
-  #define APP_SCREEN_HEIGHT 768
+#define APP_SCREEN_WIDTH 1366
+#define APP_SCREEN_HEIGHT 768
 #endif
 
 #define GIF_SCREEN_WIDTH 640
 #define GIF_SCREEN_HEIGHT 480
-
 
 // KEYBOARDS
 #define SHIFT_NOT_PRESSED \
@@ -30,5 +29,7 @@
 #define SHIFT_PRESSED \
   (IsKeyDown(KEY_LEFT_SHIFT) || IsKeyDown(KEY_RIGHT_SHIFT)) ? 1 : 0
 
-#define CTRL_NOT_PRESSED (!IsKeyDown(KEY_LEFT_CONTROL) && !IsKeyDown(KEY_LEFT_CONTROL)) ? 1 : 0
-#define CTRL_PRESSED (IsKeyDown(KEY_LEFT_CONTROL) || IsKeyDown(KEY_LEFT_CONTROL)) ? 1 : 0
+#define CTRL_NOT_PRESSED \
+  (!IsKeyDown(KEY_LEFT_CONTROL) && !IsKeyDown(KEY_LEFT_CONTROL)) ? 1 : 0
+#define CTRL_PRESSED \
+  (IsKeyDown(KEY_LEFT_CONTROL) || IsKeyDown(KEY_LEFT_CONTROL)) ? 1 : 0
